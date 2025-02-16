@@ -37,10 +37,10 @@ dependencies:
     id: sb
     version: 0.1.0
     reason: This IG uses SMART base computable guideline capabilities
-  smart.who.int.trust
+  smart.who.int.trust:
     id: trust
     version: dev
-    reason: This IG uses SMART base clinical capabilities
+    reason: This IG uses SMART trust infrastructure
 
 meta:
   profile:
