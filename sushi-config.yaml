@@ -1,5 +1,5 @@
-id: smart.who.int.ig-empty
-canonical: http://smart.who.int/ig-empty
+id: smart.who.int.smart-trust-phw
+canonical: http://smart.who.int/trust-phw
 name: IGEmpty
 title: Empty IG
 description: An empty Implementation Guide to be used as a starting point for building SMART Guidelines Implementation Guides
@@ -37,8 +37,8 @@ dependencies:
     id: sb
     version: 0.1.0
     reason: This IG uses SMART base computable guideline capabilities
-  smart.who.int.base-clinical:
-    id: sbc
+  smart.who.int.trust
+    id: trust
     version: dev
     reason: This IG uses SMART base clinical capabilities
 
