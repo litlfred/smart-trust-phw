@@ -1,0 +1,55 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+participant "Holder\n(as VHL Holder)" as Holder
+participant "Issuer\n(as PCF Consent Recorder,\n as VHL Sharer)" as Issuer
+participant "Consent Repository" as PCFConsentRepository
+participant "Receiver\n(as VHL Receiver)" as Receiver
+
+activate Holder
+activate Issuer
+
+
+group optional consent selection
+  Holder -> Holder : Select selective disclosure parameters (e.g. all vaccines)
+  Holder -> Issuer : Send consent directives			
+  Issuer -> ConsentRepository: PCF transaction Access Consent request [ITI-108]\n(Issuer as PCF Consent Recorder)
+  ConsentRepository -> Issuer: PCF transaction Access Consent response [ITI-108]\n(Issuer as PCF Consent Recorder)			
+end group
+
+Holder -> Holder : Select VHL authorization mechanism parameters (e.g. expiration, PIN)
+Holder -> Issuer : Generate VHL request [ITI-YY3] \n(as VHL Holder and VHL Sharer)				
+alt use reference architecture
+  Issuer -> DocumentGenerator: Generate document request\n IPA [DocumentReference/$docref]
+  DocumentGenerator -> Issuer: Generate document response\n IPA [DocumentReference/$docref]
+Issuer -> Issuer: Process any selective disclosure directives\nto redact content\nwhen generating doc
+
+else use bespoke means
+  Issuer -> Issuer : generate document
+end
+
+group optional signing
+  alt use reference architecture			
+    Issuer -> DocumentSigner: Sign document request
+    DocumentSigner -> DocumentSigner: generate digital signatures\n for verification and\nselective disclosure
+    DocumentSigner -> Issuer: return document manifest containing\n redacted generated doc, signed collateral
+  else use bespoke means
+    Issuer -> Issuer: generate doc and signed collateral
+  end					
+end 
+					
+Issuer -> Issuer : generate VHL authorization mechanism		
+		
+Issuer -> Holder : Generate VHL response [ITI-YY3] \n(as  VHL Sharer and VHL Holder)
+deactivate Issuer
+... time passes ...				
+
+Holder -> Receiver : Provide VHL  [ITI-YY6]\n (as VHL Holder and VHL Receiver)
+Receiver -> Issuer : Request VHL Documents request [ITI-YY4]\n (as VHL Receiver and VHL Sharer)
+Receiver -> Issuer : Request VHL Documents response [ITI-YY4]\n (as VHL Receiver and VHL Sharer)
+loop
+ Receiver -> Issuer : Request VHL Document request [ITI-YY5]\n (as VHL Receiver and VHL Sharer)
+ Issuer -> Receiver : Request VHL Document response [ITI-YY5]\n (as VHL Sharer and VHL Receiver)
+end loop
+
+@enduml
