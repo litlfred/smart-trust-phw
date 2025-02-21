@@ -1,0 +1,26 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+participant "Issuer" as Issuer
+participant "Holder\(as VHL Holder)" as Holder 
+participant "Receiver\(as VHL Receiver)" as Receiver
+
+activate Holder
+activate Issuer
+
+
+		
+
+Holder -> Issuer : Generate VHL request [ITI-YY3] \n(as VHL Holder and VHL Sharer)
+Issuer -> Holder : Generate VHL response [ITI-YY3] \n(as  VHL Sharere and VHL Holder)
+
+activate Receiver
+Holder -> Receiver : Provide VHL  [ITI-YY6]\n (as VHL Holder and VHL Receiver)
+Receiver -> Issuer : Request VHL Documents request [ITI-YY4]\n (as VHL Receiver and VHL Sharer)
+Receiver -> Issuer : Request VHL Documents response [ITI-YY4]\n (as VHL Receiver and VHL Sharer)
+loop
+ Receiver -> Issuer : Request VHL Document request [ITI-YY5]\n (as VHL Receiver and VHL Sharer)
+ Issuer -> Receiver : Request VHL Document response [ITI-YY5]\n (as VHL Sharer and VHL Receiver)
+end loop
+
+@enduml
