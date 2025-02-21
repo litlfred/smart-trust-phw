@@ -20,9 +20,9 @@ loop routine synchronization
   ... time passes ...					
   TrustNetworkAnchor -> TrustNetworkAnchor: Validate keys\n and publish at distribution endpoint
   ... time passes ...		
-  activate TrustNetworkParticipant		
+
   TrustNetworkParticipant -> TrustNetworkAnchor: Retrieve keys
-  deactivate TrustNetworkParticipant		 			
+  deactivate TrustNetworkParticipantt		 			
   deactivate TrustNetworkAnchor		 			
 end
 
