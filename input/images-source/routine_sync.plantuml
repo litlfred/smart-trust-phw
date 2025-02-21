@@ -1,0 +1,29 @@
+@startuml
+
+title Routine Synchronization
+!include ./style.iuml
+participant "Issuer" as Issuer
+participant "Trust Network\nAnchor" as TrustNetworkAnchor
+participant "Trust Network\nParticipant" as TrustNetworkParticipant
+
+
+
+autonumber "<b>00:</b>"
+
+
+loop routine synchronization
+  activate TrustNetworkAnchor
+  activate Issuer		
+  Issuer -> Issuer : generate public-private key pairs\nfor signing VDHCs or VHLs,\n or mTLS
+  Issuer -> TrustNetworkAnchor: send public keys			
+  deactivate Issuer
+  ... time passes ...					
+  TrustNetworkAnchor -> TrustNetworkAnchor: Validate keys\n and publish at distribution endpoint
+  ... time passes ...		
+  activate TrustNetworkParticipant		
+  TrustNetworkParticipant -> TrustNetworkAnchor: Retrieve keys
+  deactivate TrustNetworkParticipant		 			
+  deactivate TrustNetworkAnchor		 			
+end
+
+@enduml
