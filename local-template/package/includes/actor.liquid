@@ -1,0 +1,19 @@
+{% assign title = "" %}
+{% assign status = "" %}
+{% assign version = "" %}
+
+{% for ext in actordef.extension %}
+  {% if ext.url == "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title" %}
+    {% assign title = ext.valueString %}
+  {% endif %}
+  {% if ext.url == "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status" %}
+    {% assign status = ext.valueCode %}
+  {% endif %}
+  {% if ext.url == "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version" %}
+    {% assign version = ext.valueString %}
+  {% endif %}
+{% endfor %}
+
+<h2>{{ title }}</h2>
+<p><strong>Status:</strong> {{ status }}</p>
+<p><strong>Version:</strong> {{ version }}</p>

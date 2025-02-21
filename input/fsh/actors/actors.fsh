@@ -37,7 +37,7 @@ Usage: #definition
 * status = $pubStatus#active
 * publisher = "WHO"
 * type = $actorType#system
-* baseDefinition = Canonical(TrustNetworkParticipant)
+//* baseDefinition = Canonical(TrustNetworkParticipant)
 
 Instance: Issuer
 InstanceOf: ActorDefinition
@@ -48,4 +48,4 @@ Usage: #definition
 * status = $pubStatus#active
 * publisher = "WHO"
 * type = $actorType#system
-* baseDefinition = Canonical(TrustNetworkParticipant)
+//* baseDefinition = Canonical(TrustNetworkParticipant)
