@@ -17,6 +17,9 @@ publisher:
   url: http://who.int
   # email: test@example.org
 
+parameters:
+  produce-jekyll-data: true
+
 dependencies:
 #  hl7.fhir.core:
 #    id: r4b
