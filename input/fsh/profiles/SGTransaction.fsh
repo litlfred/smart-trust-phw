@@ -29,12 +29,13 @@ Description: "SMART Guidelines Transaction Definition"
     SGDocumentation named responseActions 1.. MS and
     SGDocumentation named securityConsiderations 1..1 MS
 
-* link.extension[requestTrigger].valueCoding =   $DocumentationSection#request-trigger
-* link.extension[requestSemantics].valueCoding =   $DocumentationSection#request-semantics
-* link.extension[requestActions].valueCoding =   $DocumentationSection#request-semantics
+* link.extension[requestTrigger].extension[code].valueCoding =   $DocumentationSection#request-trigger
+* link.extension[requestSemantics].extension[code].valueCoding =   $DocumentationSection#request-semantics
+* link.extension[requestActions].extension[code].valueCoding =   $DocumentationSection#request-actions
 
-* link.extension[responseTrigger].valueCoding =   $DocumentationSection#response-trigger
-* link.extension[responseSemantics].valueCoding =   $DocumentationSection#response-semantics
-* link.extension[responseActions].valueCoding =   $DocumentationSection#response-semantics
+* link.extension[responseTrigger].extension[code].valueCoding =   $DocumentationSection#response-trigger
+* link.extension[responseSemantics].extension[code].valueCoding =   $DocumentationSection#response-semantics
+* link.extension[responseActions].extension[code].valueCoding =   $DocumentationSection#response-actions
 
+* link.extension[securityConsiderations].extension[code].valueCoding = $DocumentationSection#security-considerations
 
