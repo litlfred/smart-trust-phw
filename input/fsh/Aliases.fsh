@@ -12,3 +12,6 @@ Alias: $action-type = http://terminology.hl7.org/CodeSystem/action-type
 
 Alias: $pubStatus = http://hl7.org/fhir/publication-status
 Alias: $actorType = http://hl7.org/fhir/examplescenario-actor-type
+Alias: $SGcode = http://smart.who.int/base/StructureDefinition/Sgcode
+
+Alias: $DocumentationSection = http://smart.who.int/base/CodeSystem/DocumentationSection

@@ -1,5 +1,5 @@
 Instance: TrustNetworkAnchor
-InstanceOf: ActorDefinition
+InstanceOf: SGActor
 Usage: #definition
 * name = "Trust Network Anchor"
 * title = "Trust Network Anchor"
@@ -9,7 +9,7 @@ Usage: #definition
 * type = $actorType#system
 
 Instance: TrustNetworkParticipant
-InstanceOf: ActorDefinition
+InstanceOf: SGActor
 Usage: #definition
 * name = "Trust Network Participant"
 * title = "Trust Network Participant"
@@ -19,7 +19,7 @@ Usage: #definition
 * type = $actorType#system
 
 Instance: Holder
-InstanceOf: ActorDefinition
+InstanceOf: SGActor
 Usage: #definition
 * name = "Holder"
 * title = "Holder"
@@ -29,7 +29,7 @@ Usage: #definition
 * type = $actorType#person
 
 Instance: Receiver
-InstanceOf: ActorDefinition
+InstanceOf: SGActor
 Usage: #definition
 * name = "Receiver"
 * title = "Receiver"
@@ -40,7 +40,7 @@ Usage: #definition
 * derivedFrom = Canonical(TrustNetworkParticipant)
 
 Instance: Issuer
-InstanceOf: ActorDefinition
+InstanceOf: SGActor
 Usage: #definition
 * name = "Issuer"
 * title = "Issuer"

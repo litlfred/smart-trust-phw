@@ -11,8 +11,8 @@ activate Issuer
 
 
 group optional consent selection
-  Holder -> Holder : Select selective disclosure parameters (e.g. all vaccines)
-  Holder -> Issuer : Send consent directives			
+  Holder -> Issuer : Select selective disclosure parameters (e.g. all vaccines)
+  Holder -> Issuer : Select consent directives			
   Issuer -> ConsentRepository: PCF transaction Access Consent request [ITI-108]\n(Issuer as PCF Consent Recorder)
   ConsentRepository -> Issuer: PCF transaction Access Consent response [ITI-108]\n(Issuer as PCF Consent Recorder)			
 end group
