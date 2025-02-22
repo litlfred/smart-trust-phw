@@ -5,6 +5,7 @@ Usage: #definition
 * title = "Trust Network Anchor"
 * description = "Trust Anchor which receives and distributes PKI-material within a Trust Network"
 * status = $pubStatus#active
+* experimental = true
 * publisher = "WHO"
 * type = $actorType#system
 
@@ -15,6 +16,7 @@ Usage: #definition
 * title = "Trust Network Participant"
 * description = "Trust Network Participant which publishes and or receives PKI-material within a Trust Network"
 * status = $pubStatus#active
+* experimental = true
 * publisher = "WHO"
 * type = $actorType#system
 
@@ -25,6 +27,7 @@ Usage: #definition
 * title = "Holder"
 * description = "Holder (person) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://build.fhir.org/ig/IHE/ITI.VHL/branches/master/index.html)"
 * status = $pubStatus#active
+* experimental = true
 * publisher = "WHO"
 * type = $actorType#person
 
@@ -35,6 +38,7 @@ Usage: #definition
 * title = "Receiver"
 * description = "Receiver (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://build.fhir.org/ig/IHE/ITI.VHL/branches/master/index.html)"
 * status = $pubStatus#active
+* experimental = true
 * publisher = "WHO"
 * type = $actorType#system
 * derivedFrom = Canonical(TrustNetworkParticipant)
@@ -46,6 +50,7 @@ Usage: #definition
 * title = "Issuer"
 * description = "Issuer (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://build.fhir.org/ig/IHE/ITI.VHL/branches/master/index.html)"
 * status = $pubStatus#active
+* experimental = true
 * publisher = "WHO"
 * type = $actorType#system
 * derivedFrom = Canonical(TrustNetworkParticipant)

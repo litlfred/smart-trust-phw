@@ -17,6 +17,9 @@ Description: "SMART Guidelines Transaction Definition"
 * node[target].nodeId = "target"
 
 * link 1..1
+* link.sourceId = "source"
+* link.targetId = "target"
+
 * link.extension contains  
     SGDocumentation named requestTrigger 1.. MS and
     SGDocumentation named requestSemantics 1.. MS and
