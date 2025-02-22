@@ -1,0 +1,139 @@
+{
+  "resourceType" : "GraphDefinition",
+  "id" : "GenerateVHL",
+  "meta" : {
+    "profile" : ["http://smart.who.int/trust-phw/StructureDefinition/SGTransaction"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: GraphDefinition GenerateVHL</b></p><a name=\"GenerateVHL\"> </a><a name=\"hcGenerateVHL\"> </a><a name=\"GenerateVHL-en-US\"> </a><p><b>name</b>: GenerateVHL</p><p><b>title</b>: Generate VHL Request</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>publisher</b>: WHO</p><p><b>description</b>: </p><div><p>A Holder requests an Issuer to generate a VHL</p>\n</div><blockquote><p><b>node</b></p><p><b>SGActorExt</b>: <a href=\"ActorDefinition-Holder.html\">ActorDefinition Holder</a></p><p><b>nodeId</b>: source</p><p><b>type</b>: ActorDefinition</p></blockquote><blockquote><p><b>node</b></p><p><b>SGActorExt</b>: <a href=\"ActorDefinition-Issuer.html\">ActorDefinition Issuer</a></p><p><b>nodeId</b>: target</p><p><b>type</b>: ActorDefinition</p></blockquote><blockquote><p><b>link</b></p><blockquote><p><b>SGDocumentation</b></p><ul><li>http://smart.who.int/base/StructureDefinition/Sgcode: DocumentationSection request-trigger: request-trigger</li><li>http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown: </li></ul></blockquote><div><p>A Holder wishes to request a VHL from an Issuer.</p>\n<p>Optionally: The holder has selected consent and selective disclosure directives.</p>\n</div><blockquote><p><b>SGDocumentation</b></p><ul><li>http://smart.who.int/base/StructureDefinition/Sgcode: DocumentationSection request-semantics: request-semantics</li><li>http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown: </li></ul></blockquote><div><p>none defined. up to a content profile to define</p>\n</div><blockquote><p><b>SGDocumentation</b></p><ul><li>http://smart.who.int/base/StructureDefinition/Sgcode: DocumentationSection request-actions: request-actions</li><li>http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown: </li></ul></blockquote><div><p>The Issuer will generate a VHL</p>\n</div><blockquote><p><b>SGDocumentation</b></p><ul><li>http://smart.who.int/base/StructureDefinition/Sgcode: DocumentationSection response-trigger: response-trigger</li><li>http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown: </li></ul></blockquote><div><p>Issuer has performed any necceasry document generation, digital signatures and has generated a VHL according to a content profile.</p>\n</div><blockquote><p><b>SGDocumentation</b></p><ul><li>http://smart.who.int/base/StructureDefinition/Sgcode: DocumentationSection response-semantics: response-semantics</li><li>http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown: </li></ul></blockquote><div><p>none defined. up to content profile to define</p>\n</div><blockquote><p><b>SGDocumentation</b></p><ul><li>http://smart.who.int/base/StructureDefinition/Sgcode: DocumentationSection response-actions: response-actions</li><li>http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown: </li></ul></blockquote><div><p>The Holder accepts the VHL for storage on wallet or other utilization</p>\n</div><blockquote><p><b>SGDocumentation</b></p><ul><li>http://smart.who.int/base/StructureDefinition/Sgcode: DocumentationSection security-considerations: security-considerations</li><li>http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown: </li></ul></blockquote><div><p>Depends on the content profile</p>\n</div><p><b>sourceId</b>: source</p><p><b>targetId</b>: target</p></blockquote></div>"
+  },
+  "name" : "GenerateVHL",
+  "title" : "Generate VHL Request",
+  "status" : "active",
+  "experimental" : true,
+  "publisher" : "WHO",
+  "description" : "A Holder requests an Issuer to generate a VHL",
+  "node" : [{
+    "extension" : [{
+      "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGActorExt",
+      "valueReference" : {
+        "reference" : "ActorDefinition/Holder"
+      }
+    }],
+    "nodeId" : "source",
+    "type" : "ActorDefinition"
+  },
+  {
+    "extension" : [{
+      "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGActorExt",
+      "valueReference" : {
+        "reference" : "ActorDefinition/Issuer"
+      }
+    }],
+    "nodeId" : "target",
+    "type" : "ActorDefinition"
+  }],
+  "link" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+        "valueCoding" : {
+          "system" : "http://smart.who.int/trust-phw/CodeSystem/DocumentationSection",
+          "code" : "request-trigger"
+        }
+      },
+      {
+        "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown",
+        "valueMarkdown" : "A Holder wishes to request a VHL from an Issuer.\n\nOptionally: The holder has selected consent and selective disclosure directives. "
+      }],
+      "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGDocumentation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+        "valueCoding" : {
+          "system" : "http://smart.who.int/trust-phw/CodeSystem/DocumentationSection",
+          "code" : "request-semantics"
+        }
+      },
+      {
+        "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown",
+        "valueMarkdown" : "none defined. up to a content profile to define "
+      }],
+      "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGDocumentation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+        "valueCoding" : {
+          "system" : "http://smart.who.int/trust-phw/CodeSystem/DocumentationSection",
+          "code" : "request-actions"
+        }
+      },
+      {
+        "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown",
+        "valueMarkdown" : "The Issuer will generate a VHL"
+      }],
+      "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGDocumentation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+        "valueCoding" : {
+          "system" : "http://smart.who.int/trust-phw/CodeSystem/DocumentationSection",
+          "code" : "response-trigger"
+        }
+      },
+      {
+        "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown",
+        "valueMarkdown" : "Issuer has performed any necceasry document generation, digital signatures and has generated a VHL according to a content profile."
+      }],
+      "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGDocumentation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+        "valueCoding" : {
+          "system" : "http://smart.who.int/trust-phw/CodeSystem/DocumentationSection",
+          "code" : "response-semantics"
+        }
+      },
+      {
+        "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown",
+        "valueMarkdown" : "none defined. up to content profile to define "
+      }],
+      "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGDocumentation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+        "valueCoding" : {
+          "system" : "http://smart.who.int/trust-phw/CodeSystem/DocumentationSection",
+          "code" : "response-actions"
+        }
+      },
+      {
+        "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown",
+        "valueMarkdown" : "The Holder accepts the VHL for storage on wallet or other utilization"
+      }],
+      "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGDocumentation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+        "valueCoding" : {
+          "system" : "http://smart.who.int/trust-phw/CodeSystem/DocumentationSection",
+          "code" : "security-considerations"
+        }
+      },
+      {
+        "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown",
+        "valueMarkdown" : "Depends on the content profile "
+      }],
+      "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGDocumentation"
+    }],
+    "sourceId" : "source",
+    "targetId" : "target"
+  }]
+}
