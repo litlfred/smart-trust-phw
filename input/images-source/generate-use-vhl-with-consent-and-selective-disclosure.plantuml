@@ -1,16 +1,20 @@
 @startuml
 skinparam svgDimensionStyle false
 hide footbox
-participant "Holder\n(as VHL Holder)" as Holder
-participant "Issuer\n(as PCF Consent Recorder,\n as VHL Sharer)" as Issuer
-participant "Consent Repository" as PCFConsentRepository
-participant "Receiver\n(as VHL Receiver)" as Receiver
+Title Generate and Use VHL with Consent and Selective Disclosure
+
+
+
+participant "[[system-actors.html#Holder Holder]]\n(as VHL Holder)" as Holder
+participant "[[system-actors.html#Issuer Issuer]]\n(as PCF Consent Recorder,\n as VHL Sharer)" as Issuer
+participant "[[system-actors.html#ConsentRegistry Consent Registry]]" as PCFConsentRegistry
+participant "[[system-actors.html#Receiver Receiver]]\n(as VHL Receiver)" as Receiver
 
 activate Holder
 activate Issuer
 
 
-Holder -> Issuer : [[#consent-selection.png Select consent directives]]			
+Holder -> Issuer : (Optional) [[#consent-selection Select consent directives]]			
 
 
 Holder -> Issuer : Generate VHL request [ITI-YY3] \n(as VHL Holder and VHL Sharer)				
@@ -22,7 +26,7 @@ Issuer -> Issuer: Process any selective disclosure directives\nto redact content
 else use bespoke means
   Issuer -> Issuer : generate document
 end
-
+		
 group optional signing
   alt use reference architecture			
     Issuer -> DocumentSigner: Sign document request

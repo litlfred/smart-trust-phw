@@ -54,3 +54,41 @@ Usage: #definition
 * publisher = "WHO"
 * type = $actorType#system
 * derivedFrom = Canonical(TrustNetworkParticipant)
+
+
+Instance: Holder
+InstanceOf: SGActor
+Usage: #definition
+* name = "Holder"
+* title = "Holder"
+* description = "Holder (person) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://build.fhir.org/ig/IHE/ITI.VHL/branches/master/index.html)"
+* status = $pubStatus#active
+* experimental = true
+* publisher = "WHO"
+* type = $actorType#person
+
+Instance: Receiver
+InstanceOf: SGActor
+Usage: #definition
+* name = "Receiver"
+* title = "Receiver"
+* description = "Receiver (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://build.fhir.org/ig/IHE/ITI.VHL/branches/master/index.html)"
+* status = $pubStatus#active
+* experimental = true
+* publisher = "WHO"
+* type = $actorType#system
+* derivedFrom = Canonical(TrustNetworkParticipant)
+
+Instance: ConsentRegistry
+InstanceOf: SGActor
+Usage: #definition
+* name = "ConsentRegistry"
+* title = "Consent Registry"
+* description = "[IHE PCF Consent Registry](https://profiles.ihe.net/ITI/PCF/volume-1.html#153112-consent-registry) actor"
+* status = $pubStatus#active
+* experimental = true
+* publisher = "IHE"
+* type = $actorType#system
+
+
+
