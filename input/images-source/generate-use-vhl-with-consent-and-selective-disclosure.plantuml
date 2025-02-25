@@ -10,14 +10,9 @@ activate Holder
 activate Issuer
 
 
-group optional consent selection
-  Holder -> Issuer : Select selective disclosure parameters (e.g. all vaccines)
-  Holder -> Issuer : Select consent directives			
-  Issuer -> ConsentRepository: PCF transaction Access Consent request [ITI-108]\n(Issuer as PCF Consent Recorder)
-  ConsentRepository -> Issuer: PCF transaction Access Consent response [ITI-108]\n(Issuer as PCF Consent Recorder)			
-end group
+Holder -> Issuer : [[#consent-selection.png Select consent directives]]			
 
-Holder -> Holder : Select VHL authorization mechanism parameters (e.g. expiration, PIN)
+
 Holder -> Issuer : Generate VHL request [ITI-YY3] \n(as VHL Holder and VHL Sharer)				
 alt use reference architecture
   Issuer -> DocumentGenerator: Generate document request\n IPA [DocumentReference/$docref]

@@ -16,7 +16,8 @@ group optional consent selection
   ConsentRepository -> Issuer: PCF transaction Access Consent response [ITI-108]\n(Issuer as PCF Consent Recorder)			
 end group
 
-Holder -> Holder : Select VHL authorization mechanism parameters (e.g. expiration, PIN)
+
+		
 Holder -> Issuer : Generate VHL request [ITI-YY3] \n(as VHL Holder and VHL Sharer)				
 alt use reference architecture
   Issuer -> DocumentGenerator: Generate document request\n IPA [DocumentReference/$docref]

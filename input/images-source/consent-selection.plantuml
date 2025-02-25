@@ -1,0 +1,12 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+participant "Holder\n(as VHL Holder)" as Holder
+participant "Issuer\n(as PCF Consent Recorder,\n as VHL Sharer)" as Issuer
+participant "Consent Repository" as PCFConsentRepository
+
+Holder -> Issuer : Select consent directives			
+Issuer -> ConsentRepository: PCF transaction Access Consent request [ITI-108]\n(Issuer as PCF Consent Recorder)
+ConsentRepository -> Issuer: PCF transaction Access Consent response [ITI-108]\n(Issuer as PCF Consent Recorder)			
+
+@enduml
