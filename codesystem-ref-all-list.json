@@ -1,0 +1,143 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/compartment-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CompartmentType",
+      "title" : "Compartment Type",
+      "description" : "Which type a compartment definition describes.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.787",
+        "2.16.840.1.113883.4.642.1.770"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-compartment-type.html" : "Compartment Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/examplescenario-actor-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ExampleScenarioActorType",
+      "title" : "Example Scenario Actor Type",
+      "description" : "The type of actor - system or human.",
+      "oids" : ["2.16.840.1.113883.4.642.4.859"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-examplescenario-actor-type.html" : "Example Scenario Actor Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/fhir-old-types",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "FHIROldTypes",
+      "title" : "Old FHIR Types",
+      "description" : "An old resource name no longer used in this version of FHIR (deleted or renamed).",
+      "oids" : ["2.16.840.1.113883.4.642.4.2113"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-version-independent-all-resource-types.html" : "Version Independent Resource Types (All)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/fhir-types",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "FHIRTypes",
+      "title" : "All FHIR Types",
+      "description" : "One of the types defined as part of this version of FHIR.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1802"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-all-resource-types.html" : "All Resource Types"
+    },
+    {
+      "url" : "http://hl7.org/fhir/graph-compartment-rule",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "GraphCompartmentRule",
+      "title" : "Graph Compartment Rule",
+      "description" : "How a compartment must be linked.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.1.276",
+        "2.16.840.1.113883.4.642.4.281"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-graph-compartment-rule.html" : "Graph Compartment Rule"
+    },
+    {
+      "url" : "http://hl7.org/fhir/graph-compartment-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "GraphCompartmentUse",
+      "title" : "Graph Compartment Use",
+      "description" : "Defines how a compartment rule is used.",
+      "oids" : ["2.16.840.1.113883.4.642.4.283"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-graph-compartment-use.html" : "Graph Compartment Use"
+    },
+    {
+      "url" : "http://hl7.org/fhir/publication-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "oids" : ["2.16.840.1.113883.4.642.4.4"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-publication-status.html" : "PublicationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/version-algorithm",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "VersionAlgorithm",
+      "title" : "Version Algorithm",
+      "description" : "Indicates the mechanism used to compare versions to determine which is more current.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1989"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-version-algorithm.html" : "Version Algorithm"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages",
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-jurisdiction.html" : "Jurisdiction ValueSet"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166:-2",
+      "version" : "2013-11",
+      "status" : "active",
+      "name" : "Iso3166_2",
+      "title" : "ISO 3166 Part 2 Country Subdivision Codes",
+      "description" : "Identifies the coding system published in the ISO 3166-2 Standard for Country Subdivision codes. This standard is released periodically, and a new OID will be assigned by ISO for new editions.",
+      "oids" : ["1.0.3166.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-jurisdiction.html" : "Jurisdiction ValueSet"
+    }
+  ]
+}

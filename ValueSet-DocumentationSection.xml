@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DocumentationSection"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DocumentationSection</b></p><a name="DocumentationSection"> </a><a name="hcDocumentationSection"> </a><a name="DocumentationSection-en-US"> </a><ul><li>Include all codes defined in <code>http://smart.who.int/trust-phw/CodeSystem/DocumentationSection</code></li></ul></div>
+  </text>
+  <url value="http://smart.who.int/trust-phw/ValueSet/DocumentationSection"/>
+  <version value="0.1.0"/>
+  <name value="DocumentationSection"/>
+  <title value="Smart Guidelines Documentation Section"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-02-26T20:20:00+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://smart.who.int/trust-phw/CodeSystem/DocumentationSection"/>
+    </include>
+  </compose>
+</ValueSet>

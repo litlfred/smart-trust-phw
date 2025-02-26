@@ -1,0 +1,26 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-smart.who.int.trust-phw.json	17644	-	0	0	0	0	0	0	5	78	0	0	0	0	0	0	0	1	0	0	75	125	0	0	0	3	0	0
+fsh-generated/resources/ActorDefinition-ConsentRegistry.json	522	12	0	0	1	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	19	59	0	0	0	0	0	0
+fsh-generated/resources/ActorDefinition-Holder.json	606	8	0	0	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	27	47	0	0	0	0	0	0
+fsh-generated/resources/ActorDefinition-Issuer.json	707	8	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	17	46	0	0	0	0	0	0
+fsh-generated/resources/ActorDefinition-Receiver.json	717	7	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	18	48	0	0	0	0	0	0
+fsh-generated/resources/ActorDefinition-TrustNetworkAnchor.json	512	8	0	0	0	0	0	0	1	7	0	0	0	0	0	0	0	0	0	0	17	46	0	0	0	0	0	1
+fsh-generated/resources/ActorDefinition-TrustNetworkParticipant.json	546	8	0	0	1	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	17	24	0	0	0	3	0	0
+fsh-generated/resources/CodeSystem-DocumentationSections.json	1126	12	0	0	0	0	0	0	0	12	0	0	1	0	0	0	0	0	0	0	20	7712	0	0	0	1	0	0
+fsh-generated/resources/GraphDefinition-GenerateVHL.json	5651	21	0	0	0	0	0	0	1	449	0	0	0	0	0	0	0	0	0	0	25	41	0	0	0	0	0	0
+fsh-generated/resources/Requirements-accept-mtls-connection.json	397	9	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	17	41	0	0	0	0	0	0
+fsh-generated/resources/Requirements-distribute-pki-material.json	443	10	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	16	27	0	0	0	0	0	0
+fsh-generated/resources/Requirements-initiate-mtls-connection.json	407	11	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	17	47	0	0	0	1	0	0
+fsh-generated/resources/Requirements-provide-a-vhl-to-a-receiver.json	413	11	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	16	25	0	0	0	0	0	0
+fsh-generated/resources/Requirements-publish-pki-material.json	381	13	0	0	1	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	20	23	0	0	0	0	0	0
+fsh-generated/resources/Requirements-receive-a-vhl.json	381	9	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	17	24	0	0	0	0	0	0
+fsh-generated/resources/Requirements-receive-pki-material.json	434	8	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	17	31	0	0	0	0	0	0
+fsh-generated/resources/Requirements-retrieve-pki-material.json	391	7	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	17	24	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-SGActor.json	1402	10	0	43	0	0	0	0	0	43	0	0	0	0	0	0	0	1	0	0	93	900	0	0	0	4	0	0
+fsh-generated/resources/StructureDefinition-SGActorExt.json	1502	10	0	42	0	0	0	0	0	17	0	0	0	0	0	0	0	0	0	0	38	197	0	0	0	1	0	1
+fsh-generated/resources/StructureDefinition-SGDocumentation.json	2006	9	0	63	0	0	0	0	0	13	0	0	0	0	0	0	0	1	0	0	48	114	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-SGGraphDefinition.json	2474	9	0	88	0	0	0	0	0	63	0	0	0	0	0	0	0	0	0	0	131	328	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-SGMarkdown.json	1366	11	0	58	0	0	0	0	0	17	0	0	0	0	0	0	0	0	0	0	38	86	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-SGTransaction.json	9576	16	0	181	1	0	0	0	0	109	0	0	1	0	0	0	0	2	0	0	489	1051	0	0	0	25	1	2
+fsh-generated/resources/StructureDefinition-SelectiveDisclosure.json	2364	15	0	65	0	0	0	0	0	19	0	0	0	0	0	0	0	0	0	0	42	118	0	0	0	2	0	0
+fsh-generated/resources/ValueSet-DocumentationSection.json	532	14	0	0	0	0	0	0	0	200	0	0	0	0	0	0	0	0	0	0	17	13599	0	0	0	0	0	0

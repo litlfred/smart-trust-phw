@@ -1,0 +1,1041 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "smart.who.int.trust-phw"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://smart.who.int/base/StructureDefinition/SGImplementationGuide"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/base/StructureDefinition/SGImplementationGuide>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.trust-phw</b></p><a name=\"smart.who.int.trust-phw\"> </a><a name=\"hcsmart.who.int.trust-phw\"> </a><a name=\"smart.who.int.trust-phw-en-US\"> </a><h2>IGEmpty</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw</pre><div><p>An empty Implementation Guide to be used as a starting point for building SMART Guidelines Implementation Guides</p>\n</div></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IGEmpty"] ; # 
+  fhir:title [ fhir:v "Empty IG"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-02-26T20:20:00+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "An empty Implementation Guide to be used as a starting point for building SMART Guidelines Implementation Guides"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "smart.who.int.trust-phw"] ; # 
+  fhir:license [ fhir:v "CC-BY-SA-3.0-IGO"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7_terminology" ] ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology" ] ;
+     fhir:version [ fhir:v "5.5.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_extensions_r4" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "5.1.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_cql" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/cql/ImplementationGuide/hl7.fhir.uv.cql"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cql/ImplementationGuide/hl7.fhir.uv.cql>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.cql" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_crmi" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.crmi" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_sdc" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.sdc" ] ;
+     fhir:version [ fhir:v "3.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_cpg" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.cpg" ] ;
+     fhir:version [ fhir:v "2.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_cqfmeasures" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.cqfmeasures" ] ;
+     fhir:version [ fhir:v "5.0.0" ]
+  ] [
+     fhir:id [ fhir:v "sb" ] ;
+     fhir:uri [
+       fhir:v "http://smart.who.int/base/ImplementationGuide/smart.who.int.base"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/base/ImplementationGuide/smart.who.int.base>
+     ] ;
+     fhir:packageId [ fhir:v "smart.who.int.base" ] ;
+     fhir:version [ fhir:v "0.1.0" ] ;
+     fhir:reason [ fhir:v "This IG uses SMART base computable guideline capabilities" ]
+  ] [
+     fhir:id [ fhir:v "trust" ] ;
+     fhir:uri [
+       fhir:v "http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust>
+     ] ;
+     fhir:packageId [ fhir:v "smart.who.int.trust" ] ;
+     fhir:version [ fhir:v "dev" ] ;
+     fhir:reason [ fhir:v "This IG uses SMART trust infrastructure" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "hl7.fhir.uv.tools.r5#0.3.0"
+       ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/Requirements/accept-mtls-connection> ;
+         fhir:reference [ fhir:v "Requirements/accept-mtls-connection" ]
+       ] ;
+       fhir:name [ fhir:v "Accept mTLS" ] ;
+       fhir:description [ fhir:v "Accept an mTLS in order to conduct further transactions under a secure channel" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ActorDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/ActorDefinition/ConsentRegistry> ;
+         fhir:reference [ fhir:v "ActorDefinition/ConsentRegistry" ]
+       ] ;
+       fhir:name [ fhir:v "Consent Registry" ] ;
+       fhir:description [ fhir:v "[IHE PCF Consent Registry](https://profiles.ihe.net/ITI/PCF/volume-1.html#153112-consent-registry) actor" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://smart.who.int/trust-phw/StructureDefinition/SGActor"^^xsd:anyURI ;
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGActor>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/Requirements/distribute-pki-material> ;
+         fhir:reference [ fhir:v "Requirements/distribute-pki-material" ]
+       ] ;
+       fhir:name [ fhir:v "Distribute PKI material" ] ;
+       fhir:description [ fhir:v "Make received trust material available through a distrubution point to a Trust Network Participant" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "GraphDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/GraphDefinition/GenerateVHL> ;
+         fhir:reference [ fhir:v "GraphDefinition/GenerateVHL" ]
+       ] ;
+       fhir:name [ fhir:v "Generate VHL Request" ] ;
+       fhir:description [ fhir:v "A Holder requests an Issuer to generate a VHL" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://smart.who.int/trust-phw/StructureDefinition/SGTransaction"^^xsd:anyURI ;
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGTransaction>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ActorDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/ActorDefinition/Holder> ;
+         fhir:reference [ fhir:v "ActorDefinition/Holder" ]
+       ] ;
+       fhir:name [ fhir:v "Holder" ] ;
+       fhir:description [ fhir:v "Holder (person) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://build.fhir.org/ig/IHE/ITI.VHL/branches/master/index.html)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://smart.who.int/trust-phw/StructureDefinition/SGActor"^^xsd:anyURI ;
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGActor>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/Requirements/initiate-mtls-connection> ;
+         fhir:reference [ fhir:v "Requirements/initiate-mtls-connection" ]
+       ] ;
+       fhir:name [ fhir:v "Initiate mTLS" ] ;
+       fhir:description [ fhir:v "Initiate an mTLS in order to conduct further transactions under a secure channel" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ActorDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/ActorDefinition/Issuer> ;
+         fhir:reference [ fhir:v "ActorDefinition/Issuer" ]
+       ] ;
+       fhir:name [ fhir:v "Issuer" ] ;
+       fhir:description [ fhir:v "Issuer (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://build.fhir.org/ig/IHE/ITI.VHL/branches/master/index.html)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://smart.who.int/trust-phw/StructureDefinition/SGActor"^^xsd:anyURI ;
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGActor>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/Requirements/provide-a-vhl-to-a-receiver> ;
+         fhir:reference [ fhir:v "Requirements/provide-a-vhl-to-a-receiver" ]
+       ] ;
+       fhir:name [ fhir:v "Provide VHL or VDHC" ] ;
+       fhir:description [ fhir:v "Is able to provide a VHL authorization mechanism or a VDHC to a VHL Receiver" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/Requirements/publish-pki-material> ;
+         fhir:reference [ fhir:v "Requirements/publish-pki-material" ]
+       ] ;
+       fhir:name [ fhir:v "Publish PKI material" ] ;
+       fhir:description [ fhir:v "Publish trust material to a Trust Anchor" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/Requirements/receive-pki-material> ;
+         fhir:reference [ fhir:v "Requirements/receive-pki-material" ]
+       ] ;
+       fhir:name [ fhir:v "Receive PKI material" ] ;
+       fhir:description [ fhir:v "Receive trust material from a Trust Network Participant, for distribution within the Trust Network" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/Requirements/receive-a-vhl> ;
+         fhir:reference [ fhir:v "Requirements/receive-a-vhl" ]
+       ] ;
+       fhir:name [ fhir:v "Receive VHL or VDHC" ] ;
+       fhir:description [ fhir:v "Is able to receive a VHL authorization mechanism or a VDHC from a Holder" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ActorDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/ActorDefinition/Receiver> ;
+         fhir:reference [ fhir:v "ActorDefinition/Receiver" ]
+       ] ;
+       fhir:name [ fhir:v "Receiver" ] ;
+       fhir:description [ fhir:v "Receiver (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://build.fhir.org/ig/IHE/ITI.VHL/branches/master/index.html)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://smart.who.int/trust-phw/StructureDefinition/SGActor"^^xsd:anyURI ;
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGActor>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/Requirements/retrieve-pki-material> ;
+         fhir:reference [ fhir:v "Requirements/retrieve-pki-material" ]
+       ] ;
+       fhir:name [ fhir:v "Retrieve PKI material" ] ;
+       fhir:description [ fhir:v "Retrieve PKI material from a distribution point" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure> ;
+         fhir:reference [ fhir:v "StructureDefinition/SelectiveDisclosure" ]
+       ] ;
+       fhir:name [ fhir:v "SelectiveDisclosure" ] ;
+       fhir:description [ fhir:v "Guidance that a document signing service with selective disclosure support (e.g. SD-JWT) should perform a selective disclosure of the content of the containing node of the extension in the JSON representation of the FHIR instance.\n\nThe code value should be from a code system containing appropriate disclosure statements for the use case.  The disclosure statement should describe the content that is to be disclosed at that node.  For example a code such as 'disclose-date-of-birth' or 'disclose-vaccine-history'." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGActor> ;
+         fhir:reference [ fhir:v "StructureDefinition/SGActor" ]
+       ] ;
+       fhir:name [ fhir:v "SGActor" ] ;
+       fhir:description [ fhir:v "Smart Guidelines Actor" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGActorExt> ;
+         fhir:reference [ fhir:v "StructureDefinition/SGActorExt" ]
+       ] ;
+       fhir:name [ fhir:v "SGActorExt" ] ;
+       fhir:description [ fhir:v "Smart Guidelines Actor Reference extension" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGDocumentation> ;
+         fhir:reference [ fhir:v "StructureDefinition/SGDocumentation" ]
+       ] ;
+       fhir:name [ fhir:v "SGDocumentation" ] ;
+       fhir:description [ fhir:v "Smart Guidelines Documentation extension" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGGraphDefinition> ;
+         fhir:reference [ fhir:v "StructureDefinition/SGGraphDefinition" ]
+       ] ;
+       fhir:name [ fhir:v "SGGraphDefinition" ] ;
+       fhir:description [ fhir:v "SMART Guidelines Transaction Definition" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown> ;
+         fhir:reference [ fhir:v "StructureDefinition/SGMarkdown" ]
+       ] ;
+       fhir:name [ fhir:v "SGMarkdown" ] ;
+       fhir:description [ fhir:v "Smart Guidelines markdown extension" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGTransaction> ;
+         fhir:reference [ fhir:v "StructureDefinition/SGTransaction" ]
+       ] ;
+       fhir:name [ fhir:v "SGTransaction" ] ;
+       fhir:description [ fhir:v "SMART Guidelines Transaction Definition" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/ValueSet/DocumentationSection> ;
+         fhir:reference [ fhir:v "ValueSet/DocumentationSection" ]
+       ] ;
+       fhir:name [ fhir:v "Smart Guidelines Documentation Section" ] ;
+       fhir:description [ fhir:v "CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/CodeSystem/DocumentationSections> ;
+         fhir:reference [ fhir:v "CodeSystem/DocumentationSections" ]
+       ] ;
+       fhir:name [ fhir:v "Smart Guidelines Documentation Section" ] ;
+       fhir:description [ fhir:v "CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ActorDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkAnchor> ;
+         fhir:reference [ fhir:v "ActorDefinition/TrustNetworkAnchor" ]
+       ] ;
+       fhir:name [ fhir:v "Trust Network Anchor" ] ;
+       fhir:description [ fhir:v "Trust Anchor which receives and distributes PKI-material within a Trust Network" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://smart.who.int/trust-phw/StructureDefinition/SGActor"^^xsd:anyURI ;
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGActor>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ActorDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkParticipant> ;
+         fhir:reference [ fhir:v "ActorDefinition/TrustNetworkParticipant" ]
+       ] ;
+       fhir:name [ fhir:v "Trust Network Participant" ] ;
+       fhir:description [ fhir:v "Trust Network Participant which publishes and or receives PKI-material within a Trust Network" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://smart.who.int/trust-phw/StructureDefinition/SGActor"^^xsd:anyURI ;
+         fhir:link <http://smart.who.int/trust-phw/StructureDefinition/SGActor>
+       ] )
+     ] ) ;
+     fhir:page [
+       fhir:source [
+         a fhir:url ;
+         fhir:v "toc.html"^^xsd:anyURI
+       ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "index.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "changes.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "changes.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Changes" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "dependencies.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "dependencies.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Dependencies" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "references.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "references.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "References" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "adapting.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "adapting.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Adapting Guidelines for Country use" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "license.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "license.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "License" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "business-requirements.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "business-requirements.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Business Requirements" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "concepts.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "concepts.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Concepts" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "personas.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "personas.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Generic Personas" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "scenarios.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "scenarios.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "User Scenarios" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "business-processes.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "business-processes.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Business Processes" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "dictionary.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "dictionary.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Data Dictionary" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "decision-logic.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "decision-logic.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Decision-support logic" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "indicators.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "indicators.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Indicator and Performance Metrics" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "functional-requirements.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "functional-requirements.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Functional Requirements" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "non-functional-requirements.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "non-functional-requirements.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Non-functional Requirements" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "data-models-and-exchange.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "data-models-and-exchange.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Data Models and Exchange" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "system-actors.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "system-actors.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "System Actors" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "sequence-diagrams.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "sequence-diagrams.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Sequence Diagrams" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "transactions.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "transactions.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Transactions" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "indicators-measures.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "indicators-measures.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Indicators and Measures" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "codings.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "codings.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Codings" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "deployment.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "deployment.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Deployment" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "security-privacy.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "security-privacy.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Security and Privacy Considerations" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "testing.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "testing.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Testing" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "test-data.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "test-data.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Test Data" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "reference-implementations.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "reference-implementations.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Reference Implementations" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "trust_domain.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "trust_domain.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Trust Domains" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "downloads.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Downloads" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "indices.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "indices.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Indices" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "artifacts.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "artifacts.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Artifact Index" ] ;
+           fhir:generation [ fhir:v "html" ]
+         ] [
+           fhir:source [
+             a fhir:url ;
+             fhir:v "maps.html"^^xsd:anyURI
+           ] ;
+           fhir:name [ fhir:v "maps.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Mappings" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2023+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "ci-build" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "produce-jekyll-data" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "http://smart.who.int/trust-phw/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

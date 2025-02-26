@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/trust-phw/Requirements/accept-mtls-connection> a fhir:Requirements ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "accept-mtls-connection"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Requirements accept-mtls-connection</b></p><a name=\"accept-mtls-connection\"> </a><a name=\"hcaccept-mtls-connection\"> </a><a name=\"accept-mtls-connection-en-US\"> </a><p>These requirements apply to the actor <a href=\"ActorDefinition-Issuer.html\">Issuer</a></p><table class=\"grid\"/></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://smart.who.int/trust-phw/Requirements/accept-mtls-connection"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "Accept mTLS"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-02-26T20:20:00+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Accept an mTLS in order to conduct further transactions under a secure channel"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:actor ( [
+     fhir:v "http://smart.who.int/trust-phw/ActorDefinition/Issuer"^^xsd:anyURI ;
+     fhir:link <http://smart.who.int/trust-phw/ActorDefinition/Issuer>
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

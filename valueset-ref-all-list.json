@@ -1,0 +1,209 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllLanguages",
+      "title" : "All Languages",
+      "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.21"],
+      "sources" : ["2.16.840.1.113883.4.642.3.21"],
+      "uses" : {
+      },
+      "StructureDefinition-SGActor.html" : "SGActor",
+      "StructureDefinition-SGTransaction.html" : "SGTransaction",
+      "StructureDefinition-SGGraphDefinition.html" : "SGGraphDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-resource-types",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllResourceTypes",
+      "title" : "All Resource Types",
+      "description" : "All fhir resource types (including abstract resources)",
+      "systems" : ["http://hl7.org/fhir/fhir-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3294"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3294"],
+      "uses" : {
+      },
+      "StructureDefinition-SGTransaction.html" : "SGTransaction",
+      "StructureDefinition-SGGraphDefinition.html" : "SGGraphDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/compartment-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CompartmentType",
+      "title" : "Compartment Type",
+      "description" : "Which type a compartment definition describes.",
+      "systems" : ["http://hl7.org/fhir/compartment-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.786",
+        "2.16.840.1.113883.4.642.3.769"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.786",
+        "2.16.840.1.113883.4.642.3.769"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SGTransaction.html" : "SGTransaction",
+      "StructureDefinition-SGGraphDefinition.html" : "SGGraphDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/examplescenario-actor-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ExampleScenarioActorType",
+      "title" : "Example Scenario Actor Type",
+      "description" : "The type of actor - system or human.",
+      "systems" : ["http://hl7.org/fhir/examplescenario-actor-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.858"],
+      "sources" : ["2.16.840.1.113883.4.642.3.858"],
+      "uses" : {
+      },
+      "StructureDefinition-SGActor.html" : "SGActor"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/graph-compartment-rule",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "GraphCompartmentRule",
+      "title" : "Graph Compartment Rule",
+      "description" : "How a compartment must be linked.",
+      "systems" : ["http://hl7.org/fhir/graph-compartment-rule"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.280",
+        "2.16.840.1.113883.4.642.3.275"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.280",
+        "2.16.840.1.113883.4.642.3.275"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SGTransaction.html" : "SGTransaction",
+      "StructureDefinition-SGGraphDefinition.html" : "SGGraphDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/graph-compartment-use",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "GraphCompartmentUse",
+      "title" : "Graph Compartment Use",
+      "description" : "Defines how a compartment rule is used.",
+      "systems" : ["http://hl7.org/fhir/graph-compartment-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.282"],
+      "sources" : ["2.16.840.1.113883.4.642.3.282"],
+      "uses" : {
+      },
+      "StructureDefinition-SGTransaction.html" : "SGTransaction",
+      "StructureDefinition-SGGraphDefinition.html" : "SGGraphDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "JurisdictionValueSet",
+      "title" : "Jurisdiction ValueSet",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.48"],
+      "sources" : ["2.16.840.1.113883.4.642.3.48"],
+      "uses" : {
+      },
+      "StructureDefinition-SGActor.html" : "SGActor",
+      "StructureDefinition-SGTransaction.html" : "SGTransaction",
+      "StructureDefinition-SGGraphDefinition.html" : "SGGraphDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SGActor.html" : "SGActor",
+      "StructureDefinition-SGTransaction.html" : "SGTransaction",
+      "StructureDefinition-SGGraphDefinition.html" : "SGGraphDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "systems" : ["http://hl7.org/fhir/publication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3"],
+      "uses" : {
+      },
+      "StructureDefinition-SGActor.html" : "SGActor",
+      "StructureDefinition-SGTransaction.html" : "SGTransaction",
+      "StructureDefinition-SGGraphDefinition.html" : "SGGraphDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/version-algorithm",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "VersionAlgorithm",
+      "title" : "Version Algorithm",
+      "description" : "Indicates the mechanism used to compare versions to determine which is more current.",
+      "systems" : ["http://hl7.org/fhir/version-algorithm"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3103"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3103"],
+      "uses" : {
+      },
+      "StructureDefinition-SGActor.html" : "SGActor",
+      "StructureDefinition-SGTransaction.html" : "SGTransaction",
+      "StructureDefinition-SGGraphDefinition.html" : "SGGraphDefinition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/version-independent-all-resource-types",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "VersionIndependentResourceTypesAll",
+      "title" : "Version Independent Resource Types (All)",
+      "description" : "Current and past FHIR resource types (deleted or renamed), including abstract types",
+      "systems" : [
+        "http://hl7.org/fhir/fhir-types",
+        "http://hl7.org/fhir/fhir-old-types"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.4.3324"],
+      "sources" : ["2.16.840.1.113883.4.642.4.3324"],
+      "uses" : {
+      },
+      "StructureDefinition-SGTransaction.html" : "SGTransaction",
+      "StructureDefinition-SGGraphDefinition.html" : "SGGraphDefinition"
+    },
+    {
+      "url" : "http://smart.who.int/trust-phw/ValueSet/DocumentationSection",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "DocumentationSection",
+      "title" : "Smart Guidelines Documentation Section",
+      "description" : "CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts",
+      "systems" : [
+        "http://smart.who.int/trust-phw/CodeSystem/DocumentationSection"
+      ]
+    }
+  ]
+}

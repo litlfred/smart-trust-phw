@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Requirements xmlns="http://hl7.org/fhir">
+  <id value="accept-mtls-connection"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Requirements accept-mtls-connection</b></p><a name="accept-mtls-connection"> </a><a name="hcaccept-mtls-connection"> </a><a name="accept-mtls-connection-en-US"> </a><p>These requirements apply to the actor <a href="ActorDefinition-Issuer.html">Issuer</a></p><table class="grid"/></div>
+  </text>
+  <url value="http://smart.who.int/trust-phw/Requirements/accept-mtls-connection"/>
+  <version value="0.1.0"/>
+  <title value="Accept mTLS"/>
+  <status value="active"/>
+  <date value="2025-02-26T20:20:00+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="Accept an mTLS in order to conduct further transactions under a secure channel"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <actor value="http://smart.who.int/trust-phw/ActorDefinition/Issuer"/>
+</Requirements>

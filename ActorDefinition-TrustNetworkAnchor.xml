@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActorDefinition xmlns="http://hl7.org/fhir">
+  <id value="TrustNetworkAnchor"/>
+  <meta>
+    <profile value="http://smart.who.int/trust-phw/StructureDefinition/SGActor"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActorDefinition TrustNetworkAnchor</b></p><a name="TrustNetworkAnchor"> </a><a name="hcTrustNetworkAnchor"> </a><a name="TrustNetworkAnchor-en-US"> </a><table class="grid"><tr><td><b>Actor: Trust Network Anchor </b></td><td>Trust Network Anchor</td><td>Type: system </td></tr><tr><td colspan="3"/></tr></table></div>
+  </text>
+  <url value="http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkAnchor"/>
+  <version value="0.1.0"/>
+  <name value="Trust Network Anchor"/>
+  <title value="Trust Network Anchor"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-02-26T20:20:00+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="Trust Anchor which receives and distributes PKI-material within a Trust Network"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <type value="system"/>
+</ActorDefinition>

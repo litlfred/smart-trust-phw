@@ -1,0 +1,169 @@
+[
+  {
+    "id" : "ConsentRegistry",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/trust-phw/ActorDefinition/ConsentRegistry",
+    "version" : "0.1.0",
+    "name" : "ConsentRegistry"
+  },
+  {
+    "id" : "Holder",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/trust-phw/ActorDefinition/Holder",
+    "version" : "0.1.0",
+    "name" : "Holder"
+  },
+  {
+    "id" : "Issuer",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/trust-phw/ActorDefinition/Issuer",
+    "version" : "0.1.0",
+    "name" : "Issuer"
+  },
+  {
+    "id" : "Receiver",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/trust-phw/ActorDefinition/Receiver",
+    "version" : "0.1.0",
+    "name" : "Receiver"
+  },
+  {
+    "id" : "TrustNetworkAnchor",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkAnchor",
+    "version" : "0.1.0",
+    "name" : "Trust Network Anchor"
+  },
+  {
+    "id" : "TrustNetworkParticipant",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkParticipant",
+    "version" : "0.1.0",
+    "name" : "Trust Network Participant"
+  },
+  {
+    "id" : "DocumentationSections",
+    "type" : "CodeSystem",
+    "url" : "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections",
+    "version" : "0.1.0",
+    "name" : "DocumentationSections"
+  },
+  {
+    "id" : "GenerateVHL",
+    "type" : "GraphDefinition",
+    "url" : "http://smart.who.int/trust-phw/GraphDefinition/GenerateVHL",
+    "version" : "0.1.0",
+    "name" : "GenerateVHL"
+  },
+  {
+    "id" : "smart.who.int.trust-phw",
+    "type" : "ImplementationGuide",
+    "url" : "http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw",
+    "version" : "0.1.0",
+    "name" : "IGEmpty"
+  },
+  {
+    "id" : "accept-mtls-connection",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/trust-phw/Requirements/accept-mtls-connection",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "distribute-pki-material",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/trust-phw/Requirements/distribute-pki-material",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "initiate-mtls-connection",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/trust-phw/Requirements/initiate-mtls-connection",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "provide-a-vhl-to-a-receiver",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/trust-phw/Requirements/provide-a-vhl-to-a-receiver",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "publish-pki-material",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/trust-phw/Requirements/publish-pki-material",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "receive-a-vhl",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/trust-phw/Requirements/receive-a-vhl",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "receive-pki-material",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/trust-phw/Requirements/receive-pki-material",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "retrieve-pki-material",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/trust-phw/Requirements/retrieve-pki-material",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "SGActor",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGActor",
+    "version" : "0.1.0",
+    "name" : "SGActor"
+  },
+  {
+    "id" : "SGActorExt",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGActorExt",
+    "version" : "0.1.0",
+    "name" : "SGActorExt"
+  },
+  {
+    "id" : "SGDocumentation",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGDocumentation",
+    "version" : "0.1.0",
+    "name" : "SGDocumentation"
+  },
+  {
+    "id" : "SGGraphDefinition",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGGraphDefinition",
+    "version" : "0.1.0",
+    "name" : "SGGraphDefinition"
+  },
+  {
+    "id" : "SGMarkdown",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGMarkdown",
+    "version" : "0.1.0",
+    "name" : "SGMarkdown"
+  },
+  {
+    "id" : "SGTransaction",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/trust-phw/StructureDefinition/SGTransaction",
+    "version" : "0.1.0",
+    "name" : "SGTransaction"
+  },
+  {
+    "id" : "SelectiveDisclosure",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure",
+    "version" : "0.1.0",
+    "name" : "SelectiveDisclosure"
+  },
+  {
+    "id" : "DocumentationSection",
+    "type" : "ValueSet",
+    "url" : "http://smart.who.int/trust-phw/ValueSet/DocumentationSection",
+    "version" : "0.1.0",
+    "name" : "DocumentationSection"
+  }
+]

@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/trust-phw/Requirements/receive-pki-material> a fhir:Requirements ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "receive-pki-material"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Requirements receive-pki-material</b></p><a name=\"receive-pki-material\"> </a><a name=\"hcreceive-pki-material\"> </a><a name=\"receive-pki-material-en-US\"> </a><p>These requirements apply to the actor <a href=\"ActorDefinition-TrustNetworkAnchor.html\">Trust Network Anchor</a></p><table class=\"grid\"/></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://smart.who.int/trust-phw/Requirements/receive-pki-material"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "Receive PKI material"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-02-26T20:20:00+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Receive trust material from a Trust Network Participant, for distribution within the Trust Network"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:actor ( [
+     fhir:v "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkAnchor"^^xsd:anyURI ;
+     fhir:link <http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkAnchor>
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
