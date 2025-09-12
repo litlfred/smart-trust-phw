@@ -1,0 +1,19 @@
+{
+  "url" : "http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw",
+  "name" : "IGEmpty",
+  "title" : "Empty IG",
+  "description" : "An empty Implementation Guide to be used as a starting point for building SMART Guidelines Implementation Guides",
+  "status" : "draft",
+  "package-id" : "smart.who.int.trust-phw",
+  "ig-ver" : "0.1.0",
+  "date" : "Fri, 12 Sep, 2025 13:07:00 +0000",
+  "dateISO8601" : "2025-09-12T13:07:00+00:00",
+  "errs" : 442,
+  "warnings" : 59,
+  "hints" : 89,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 3442183328
+}
