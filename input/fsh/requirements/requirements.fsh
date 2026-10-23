@@ -78,7 +78,7 @@ Usage: #definition
 * status = $pubStatus#active
 * publisher = "WHO"
 * description = "Is able to receive a VHL authorization mechanism or a VDHC from a Holder"
-* actor[+] = Canonical(Issuer)
+* actor[+] = Canonical(Receiver)
 
 
 
