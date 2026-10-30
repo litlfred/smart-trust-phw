@@ -4,7 +4,7 @@
     <bpmn:participant id="PHW.H.Participant" name="H. Revocation and Suspension under a Data Sharing Agreement (DSA P13)" processRef="PHW.H" />
   </bpmn:collaboration>
   <bpmn:process id="PHW.H" name="H. Revocation and Suspension under a Data Sharing Agreement (DSA P13)" isExecutable="false">
-    <bpmn:documentation>Stops access under a data sharing agreement. Grant credentials are stopped by the W3C Bitstring Status List (`revocation` is final, `suspension` can be lifted). OAuth tokens and clients are stopped by revocation (RFC 7009) and by disabling the client. Keys are stopped by removing them from the trust list or by CRL. The decision is human and the mechanisms are computable, for computable and document-only agreements alike. Trust-anchor neutral: WHO GDHCN is one accepted anchor among others (a national X.509 PKI, the party's own did:web, or a local list); UDAP (HL7 FAST UDAP Security) is not approved and OpenID Federation is out of scope. Source: the data sharing agreement (DSA) process analysis for litlfred/folio-assistant#2702, §2 and §4.</bpmn:documentation>
+    <bpmn:documentation>Stops access under a data sharing agreement. Grant credentials are stopped by the W3C Bitstring Status List (`revocation` is final, `suspension` can be lifted). OAuth tokens and clients are stopped by revocation (RFC 7009) and by disabling the client. Keys are stopped by removing them from the trust list or by CRL. The decision is human and the mechanisms are computable, for computable and document-only agreements alike. Trust-anchor neutral: WHO GDHCN is one accepted anchor among others (a national X.509 PKI, the party's own did:web, or a local list); UDAP, as profiled by HL7 SSRAA (Security for Scalable Registration, Authentication, and Authorization IG), is approved for X.509 certificate-based registration and authentication (owner, 2026-10-30 20:28Z), and OpenID Federation is out of scope. Source: the data sharing agreement (DSA) process analysis for litlfred/folio-assistant#2702, §2 and §4.</bpmn:documentation>
     <bpmn:laneSet id="PHW.H.LaneSet">
       <bpmn:lane id="PHW.Lane.DataProvider" name="Data Provider (decides)">
         <bpmn:documentation>The data provider, which decides what to stop. The decision is human; the mechanisms are computable.</bpmn:documentation>
@@ -24,7 +24,7 @@
         <bpmn:flowNodeRef>PHW.H.3</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="PHW.Lane.TrustAnchor" name="Trust Anchor (GDHCN or another accepted anchor)">
-        <bpmn:documentation>Any trust anchor the agreement accepts. Trust-anchor neutral: WHO GDHCN is one accepted anchor among others (a national X.509 PKI, the party's own did:web, or a local list); UDAP (HL7 FAST UDAP Security) is not approved and OpenID Federation is out of scope.</bpmn:documentation>
+        <bpmn:documentation>Any trust anchor the agreement accepts. Trust-anchor neutral: WHO GDHCN is one accepted anchor among others (a national X.509 PKI, the party's own did:web, or a local list); UDAP, as profiled by HL7 SSRAA (Security for Scalable Registration, Authentication, and Authorization IG), is approved for X.509 certificate-based registration and authentication (owner, 2026-10-30 20:28Z), and OpenID Federation is out of scope.</bpmn:documentation>
         <bpmn:flowNodeRef>PHW.H.4</bpmn:flowNodeRef>
       </bpmn:lane>
     </bpmn:laneSet>
