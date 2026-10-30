@@ -60,7 +60,7 @@
       <bpmn:outgoing>PHW.C.Flow5</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:serviceTask id="PHW.C.5" name="C5. Query active patient Consent [ITI-108] Access Consent: Search">
-      <bpmn:documentation>VHL Sharer (grouped with PCF Consent Authorization Server) queries the PCF Consent Registry via `[ITI-108]` Access Consent: Search (`GET [base]/Consent?patient=...&amp;status=active`).</bpmn:documentation>
+      <bpmn:documentation>VHL Sharer (grouped with PCF Consent Authorization Server) queries the PCF Consent Registry via `[ITI-108]` Access Consent: Search (`GET [base]/Consent?patient=...&amp;status=active`). Only Consents whose `Consent.policy.uri` names the agreement version in force are counted (rule 2). Results may be served from a cache, but an entry ends at its TTL, at its Consents&apos; `provision.period.end`, or as soon as a Consent in it is withdrawn (rule 4). With no matching Consent, the jurisdiction&apos;s PCF implicit default policy decides (rule 4) (owner consent rules, 2026-10-30 19:27Z).</bpmn:documentation>
       <bpmn:incoming>PHW.C.Flow5</bpmn:incoming>
       <bpmn:outgoing>PHW.C.Flow6</bpmn:outgoing>
     </bpmn:serviceTask>

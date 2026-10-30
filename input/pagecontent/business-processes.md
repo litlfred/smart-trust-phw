@@ -40,6 +40,15 @@ The following table summarizes the three BPMN 2.0 business processes defined in 
 | `PHW.A.5` | PCF Consent Registry | Validate, version & persist Consent + Provenance `[ITI-108]` Access Consent | **`[ITI-108]` Access Consent** responder (`IHE.PCF.consentRegistry`), assigning `Consent.id` and `Consent.meta.versionId` |
 | `PHW.A.6` | VHL Holder (Patient / Personal Health Wallet) | Confirm recorded `Consent.id` & `versionId` `[ITI-108]` Access Consent response | **`[ITI-108]` Access Consent** response (`201 Created` / `200 OK`) |
 
+##### Consent rules, from the person's side
+
+Process A is the person-side view of the data sharing agreement's consent process (P9). The owner set four rules on 2026-10-30:
+
+1. **Legal basis.** Only an agreement whose legal basis is consent asks for consent. Treatment, public-health law and research waivers do not rest on consent.
+2. **Version pinning.** The person consents to one fixed version of the agreement: `Consent.policy.uri` is that version's URL. If the agreement is amended to widen use, the new version needs new consent. An amendment that narrows use does not.
+3. **Plain language.** The person is shown the agreement's plain-language summary, published and hashed with the agreement. That summary is what they consent to (task `PHW.A.1`).
+4. **Scale.** Where the person has recorded nothing, the jurisdiction's chosen PCF implicit default policy applies: opt-in (for example `Policy-deny`) or opt-out (for example `Policy-basic-normal` or `Policy-all-normal`). Registry lookups may be cached (task `PHW.C.5`), but withdrawing a Consent (`status` becomes `inactive`, task `PHW.A.4`) ends every cached result that holds it at once.
+
 #### B. Issue Consent-Backed Verifiable Health Link
 
 * **Process ID**: `PHW.B`
