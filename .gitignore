@@ -4,10 +4,11 @@ temp
 template
 output
 fsh-generated
+input-cache
 
 # Don't commit this because it's so large #
 ###########################################
-/input-cache
+/input-cache/publisher.jar
 
 # Windows generated files #
 ###########################
@@ -17,19 +18,10 @@ Thumbs.db
 ######################
 .DS_Store
 .DS_Store?
-**/.index.json
 
 # backup files #
 ################
 *.bak
-
-# java settings 
-################
-
-
-.vscode/
-.idea/
-.idea/*
 
 # word #
 ########
@@ -47,3 +39,38 @@ auto-save-list
 tramp
 .\#*
 .swp
+
+# Python #
+##########
+__pycache__/
+*.py[cod]
+*$py.class
+
+# BEGIN index mounts (generated from index.config.json — do not edit)
+/smart-base/
+/fhir-harness/
+/folio-assistant-core/
+/cat-harness/
+/cat-harness-tools/
+/bootstrap/
+/bootstrap-tools/
+# END index mounts
+
+# smart-trust-phw site build: generated, never committed
+/output-ast/
+/input-cache/txcache/
+/fhir-artifact-index/sidecars/
+
+node_modules/
+
+# BEGIN built at publish (smart-trust-phw.json `builtAtPublish`)
+# Owner, 2026-10-14 (B1): computed at the checkout's pins, so no commit of this
+# instance can hold it current.
+/docs/
+/ns/context/v1.jsonld
+/fhir-artifact-index/index.json
+/fhir-artifact-index/menu.json
+/fhir-artifact-index/releases.json
+/fhir-artifact-index/package.tgz
+/document-kinds/dak.coverage.smart-trust-phw.json
+# END built at publish

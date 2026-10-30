@@ -25,7 +25,7 @@ InstanceOf: SGActor
 Usage: #definition
 * name = "Holder"
 * title = "Holder"
-* description = "Holder (person) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://build.fhir.org/ig/IHE/ITI.VHL/branches/master/index.html)"
+* description = "Holder (person) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://profiles.ihe.net/ITI/VHL/index.html)"
 * status = $pubStatus#active
 * experimental = true
 * publisher = "WHO"
@@ -36,7 +36,7 @@ InstanceOf: SGActor
 Usage: #definition
 * name = "Receiver"
 * title = "Receiver"
-* description = "Receiver (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://build.fhir.org/ig/IHE/ITI.VHL/branches/master/index.html)"
+* description = "Receiver (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://profiles.ihe.net/ITI/VHL/index.html)"
 * status = $pubStatus#active
 * experimental = true
 * publisher = "WHO"
@@ -48,7 +48,7 @@ InstanceOf: SGActor
 Usage: #definition
 * name = "Issuer"
 * title = "Issuer"
-* description = "Issuer (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://build.fhir.org/ig/IHE/ITI.VHL/branches/master/index.html)"
+* description = "Issuer (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://profiles.ihe.net/ITI/VHL/index.html)"
 * status = $pubStatus#active
 * experimental = true
 * publisher = "WHO"

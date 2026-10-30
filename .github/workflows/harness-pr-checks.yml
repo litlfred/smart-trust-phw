@@ -1,0 +1,52 @@
+# smart-trust-phw's harness checks on every pull request.
+#
+# Owner, 2026-10-14: "There should be CI running", and ("1") through ONE
+# reusable workflow the harness owns, not a copy per repository; and "A
+# harnessed repo should run not just core but all of the checks in the
+# dependency harness".
+#
+# The 2026-10-06 ruling that this fork's workflows are "defined, not run on
+# events" was about the WHO IG builds inherited from upstream (fhirbuild,
+# release, site-publish, ...), which stay manual and are not touched here; it
+# switched the harness gates off with them, and nothing turned them back on.
+#
+# This repository is its own index (index.config.json mounts smart-base's
+# closure beside its own instance at '.'), so the checks run in INDEX mode:
+# the PR's merge commit is the root, mounted from its own lock, as smart-ra#59
+# does. Layer mode swapped it into the folio-assistant index, whose pinned copy
+# of this IG has drifted from its main.
+#
+# The checks themselves live in cat-harness-tools
+# (`.github/workflows/layer-pr-checks.yml`): this repository mounted from its
+# own lock; typecheck; and the gates of smart-trust-phw and its whole dependency
+# harness, failing only on what this PR newly breaks.
+name: Harness PR checks
+
+on:
+  pull_request:
+    # Draft PRs run only the fast tier (bean dft1, cat-harness-tools#616);
+    # ready_for_review re-runs the full tier the moment a PR is marked ready.
+    types: [opened, synchronize, reopened, ready_for_review]
+  # main's own run keeps main's answer, the gate seconds and the cone records
+  # in caches every PR can read (cat-harness-tools#406, #411); a run on a PR
+  # can only read caches saved from its own PR or from main.
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: harness-pr-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    uses: litlfred/cat-harness-tools/.github/workflows/layer-pr-checks.yml@main
+    with:
+      # On a draft PR: prepare and typecheck only; the full tier runs on ready_for_review.
+      draft-fast-tier: true
+      mode: index
+      path-in-repo: .
+      tools-ref: main

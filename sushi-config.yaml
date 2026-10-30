@@ -47,6 +47,16 @@ dependencies:
    uri: https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd 
    version: 3.8.0
 
+  ihe.iti.pcf:
+    id: IHE_ITI_PCF
+    uri: https://profiles.ihe.net/ITI/PCF/ImplementationGuide/ihe.iti.pcf
+    version: 1.1.0
+
+  ihe.iti.vhl:
+    id: IHE_ITI_VHL
+    uri: https://profiles.ihe.net/ITI/VHL/ImplementationGuide/ihe.iti.vhl
+    version: 1.0.0-comment
+
   smart.who.int.pcmt:
     version: 0.1.0
   smart.who.int.base:
