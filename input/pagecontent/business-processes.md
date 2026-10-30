@@ -1,6 +1,6 @@
 This page describes the core business processes and workflows for the **Personal Health Wallet (PHW)** Implementation Guide, integrating **IHE IT Infrastructure Privacy Consent on FHIR (PCF) v1.1.0** (`https://profiles.ihe.net/ITI/PCF/1.1.0/`) and **IHE IT Infrastructure Verifiable Health Links (VHL) v1.0.0-comment** (`https://profiles.ihe.net/ITI/VHL/1.0.0-comment/`).
 
-A business process is a set of related activities or tasks performed together by system actors and human personas to achieve a health information exchange objective. Each workflow below is authored in **BPMN 2.0** (`input/business-processes/PHW.A.bpmn`, `input/business-processes/PHW.B.bpmn`, `input/business-processes/PHW.C.bpmn`) with full BPMN Diagram Interchange (`bpmndi:BPMNDiagram`) layout and rendered to SVG (`input/images/PHW.A.svg`, `input/images/PHW.B.svg`, `input/images/PHW.C.svg`).
+A business process is a set of related activities or tasks performed together by system actors and human personas to achieve a health information exchange objective. Each workflow below is authored in **BPMN 2.0** (`input/business-processes/PHW.A.bpmn`, `input/business-processes/PHW.B.bpmn`, `input/business-processes/PHW.C.bpmn`) with full BPMN Diagram Interchange (`bpmndi:BPMNDiagram`) layout and rendered to SVG (`input/images/PHW.A.svg`, `input/images/PHW.B.svg`, `input/images/PHW.C.svg`). The data sharing agreement processes D to H, below, take the same form.
 
 ### Architectural Principles
 
@@ -11,7 +11,7 @@ A business process is a set of related activities or tasks performed together by
 
 ### Overview of Key Business Processes
 
-The following table summarizes the three BPMN 2.0 business processes defined in this Implementation Guide.
+The following table summarizes the three BPMN 2.0 consent and Verifiable Health Link business processes defined in this Implementation Guide. The data sharing agreement processes are summarized in their own section below.
 
 | # | Process Name | Process ID | Personas | Objectives |
 | --- | --- | --- | --- | --- |
@@ -91,3 +91,138 @@ Process A is the person-side view of the data sharing agreement's consent proces
 | `PHW.C.8` | VHL Sharer (grouped with PCF Consent Authorization Server) | Return authorized manifest & documents `[ITI-YY5]` Retrieve Manifest (`permit`) | **`[ITI-YY5]` Retrieve Manifest** (`200 OK` `Bundle` of `DocumentReference` / clinical resources when decision is `permit`) |
 | `PHW.C.9` | VHL Sharer (grouped with PCF Consent Authorization Server) | Refuse disclosure with `OperationOutcome` `[ITI-YY5]` (`deny` or `unknown`) | **`[ITI-YY5]` Retrieve Manifest** (`403 Forbidden` `OperationOutcome` when decision is `deny` or `unknown`) |
 | `PHW.C.10` | VHL Receiver (Verifier / Relying Party) | Process clinical documents or refusal notice `[ITI-YY5]` response | **`[ITI-YY5]` Retrieve Manifest** consumer (`IHE.VHL.VHLReceiver`) |
+
+### Data Sharing Agreement Processes (Server to Server)
+
+Processes D to H implement a **data sharing agreement** (DSA) between a data provider and a data recipient. Each one is a technical process from the DSA process analysis for [folio-assistant#2702](https://github.com/litlfred/folio-assistant/issues/2702) (P4, P5, P11, P12 and P13). The owner chose this IG as their home on 2026-10-30 (19:59Z). They apply to every agreement, whether it is **computable** (a W3C ODRL 2.2 `Agreement` derived from the legal text) or **document-only** (a signed PDF). The only difference is where the access rule comes from: the ODRL `Agreement`, or a configuration an administrator sets by hand from the PDF.
+
+**What every process relies on:**
+
+* **The agreement's fixed-version URL.** Each agreement version is published at an immutable URL, with its SHA-256, and catalogued as a DCAT 3 `dcat:Distribution` with `spdx:checksum` (DCAT 3 §6.8, §6.8.20). For a computable agreement this URL is also the ODRL `uid`. Tokens, grants, Consents and audit records cite this URL, never a "latest" URL.
+* **Grants are W3C Verifiable Credentials 2.0.** A grant cites the agreement through `relatedResource` (VC DM 2.0 §5.3), and its status is a W3C Bitstring Status List entry. litlfred/smart-trust-tools verifies it.
+* **Pluggable trust anchors.** WHO GDHCN is one option. The others are a national X.509 PKI, the party's own `did:web`, or a local list. **HL7 UDAP is not approved**, and **OpenID Federation is out of scope**.
+* **No invented fields.** Where no standard has a slot, the text says so as a **gap** or **open point**.
+
+| # | Process Name | Process ID | DSA process | Objectives |
+| --- | --- | --- | --- | --- |
+| D | Register a Server Client under a Data Sharing Agreement | PHW.D | P4 | Register the recipient's server as an OAuth client (RFC 7591, or by an administrator), authenticated by mTLS (RFC 8705) or a JWT assertion (RFC 7523), and record which agreement versions it may act under. |
+| E | Server-to-Server Access under a Data Sharing Agreement | PHW.E | P5 | Issue a short-lived, key-bound token (DPoP, RFC 9449) for an RFC 9396 `authorization_details` request whose `identifier` (§2.2) is the agreement's fixed-version URL, after the access decision. |
+| F | Access Decision under a Data Sharing Agreement | PHW.F | P11 | Run `permits()` on the verified grant and the agreement. A consent-based agreement also needs an active PCF Consent. The result is `permit`, `deny` or `unknown`, and unknown is never permit. |
+| G | Audit, Provenance and Duty Checks under a Data Sharing Agreement | PHW.G | P12 | Record each decision as a W3C PROV-O record that cites the agreement, and as an IHE ATNA audit event (`[ITI-20]`). Record duty fulfilment and review it. |
+| H | Revocation and Suspension under a Data Sharing Agreement | PHW.H | P13 | Stop grants (Bitstring Status List), tokens and clients (RFC 7009), and keys (trust list or CRL). |
+
+In the tables, † marks a section number cited from standing knowledge and not re-checked when this page was written. The RFC 9396, RFC 9449, RFC 8693, W3C VC 2.0, W3C Bitstring Status List and DCAT 3 sections were checked against the published specifications on 2026-10-30.
+
+#### D. Register a Server Client under a Data Sharing Agreement
+
+* **Process ID**: `PHW.D`
+* **BPMN Source**: `input/business-processes/PHW.D.bpmn`
+* **Objective**: Register the data recipient's server as an OAuth client of the data provider's authorization server. It is bound to a key published under a trust anchor the agreement accepts, and to the agreement versions it may act under.
+
+<figure style="width:100%">
+  <img src="PHW.D.svg" alt="Process D — Register a Server Client under a Data Sharing Agreement (DSA P4)" style="width:100%; max-width:1100px;" />
+</figure>
+
+| Activity ID | Lane / Actor | Task Name | Standard and section |
+| --- | --- | --- | --- |
+| `PHW.D.1` | Data Recipient System (OAuth client) | Prepare client key or certificate under an accepted trust anchor | Key published under an accepted anchor (DSA P3): DID Core 1.0 + `did:web`, or RFC 5280 |
+| `PHW.D.2` | Data Recipient System (OAuth client) | Send dynamic client registration request | RFC 7591 §3.1†; `private_key_jwt` metadata RFC 7523 §2.2†; `tls_client_auth` RFC 8705 §2.1†. RFC 7592 is Experimental and needs owner approval |
+| `PHW.D.3` | Data Provider Administrator (person) | Enter client by hand, scopes from the signed agreement text | Document-only route. The change record cites the agreement URL and its SHA-256 |
+| `PHW.D.4` | Provider Authorization Server | Validate client key or certificate against the accepted trust anchor | DID document, RFC 5280 §6† path validation, or a local list |
+| `PHW.D.5` | Trust Anchor (GDHCN or another accepted anchor) | Return trust list or certificate status | GDHCN `did:web:tng-cdn.who.int:v2:trustlist`; CRL RFC 5280 §5† |
+| `PHW.D.6` | Provider Authorization Server | Record which agreement versions the client may act under | **Gap:** RFC 7591 has no metadata field for this, so it is the server's own configuration. It is keyed by the fixed-version URL, the same value as RFC 9396 `identifier` (§2.2) |
+| `PHW.D.7` | Provider Authorization Server | Issue client_id | RFC 7591 §3.2.1† |
+| `PHW.D.8` | Data Recipient System (OAuth client) | Read authorization server metadata | RFC 8414 §3† |
+
+#### E. Server-to-Server Access under a Data Sharing Agreement
+
+* **Process ID**: `PHW.E`
+* **BPMN Source**: `input/business-processes/PHW.E.bpmn`
+* **Objective**: The client asks for a token for the data the agreement covers, and names the agreement in RFC 9396 `authorization_details`. The authorization server decides with process F and issues a key-bound token. The resource server checks the token on every call and records the call with process G.
+
+<figure style="width:100%">
+  <img src="PHW.E.svg" alt="Process E — Server-to-Server Access under a Data Sharing Agreement (DSA P5)" style="width:100%; max-width:1100px;" />
+</figure>
+
+| Activity ID | Lane / Actor | Task Name | Standard and section |
+| --- | --- | --- | --- |
+| `PHW.E.1` | Data Recipient System (OAuth client) | Request token with authorization_details naming the agreement, plus DPoP proof or mTLS | RFC 9396 §2 (`type` defined by the API), §2.2 (`actions`, `locations`, `datatypes`, `identifier` = fixed-version URL); DPoP proof `jti`, `htm`, `htu`, `iat` RFC 9449 §4.2; mTLS RFC 8705†; across domains Token Exchange RFC 8693 §2.1 |
+| `PHW.E.2` | Provider Authorization Server | Authenticate client (private_key_jwt or mTLS) and check DPoP proof | RFC 7523 §2.2†; RFC 8705 §2†; RFC 9449 §4.3† |
+| `PHW.E.3` | Provider Authorization Server | Decide access under the agreement | Process F |
+| `PHW.E.4` | Provider Authorization Server | Issue short-lived key-bound token with granted details | `cnf` / `jkt` RFC 9449 §6.1; granted details RFC 9396 §7, may be fewer than asked §7.1 |
+| `PHW.E.5` | Provider Authorization Server | Refuse token request (deny or unknown) | RFC 6749 §5.2†; `invalid_authorization_details` RFC 9396 §5† |
+| `PHW.E.6` | Data Recipient System (OAuth client) | Call the API with token and DPoP proof | RFC 9449 §4.2 (`ath`) |
+| `PHW.E.7` | Provider Resource Server | Validate token, key binding and granted details on every call | Introspection RFC 7662 §2†; details RFC 9396 §9.2; key binding RFC 9449 §6.2 |
+| `PHW.E.8` | Provider Resource Server | Record audit and provenance | Process G |
+| `PHW.E.9` | Provider Resource Server | Return data or refusal | — |
+| `PHW.E.10` | Data Recipient System (OAuth client) | Process response | Duties recorded in process G |
+
+**Gaps and open points in E.** RFC 9396 has no field that holds an agreement's URL **and** its hash. The fixed-version URL goes in `identifier`, and the SHA-256 published with that version fixes the bytes. No checked standard parameter carries the W3C VC 2.0 grant in a server-to-server token request. Until one is chosen, the client registration recorded in `PHW.D.6` stands in for the grant. For a document-only agreement, scopes set by the administrator replace RAR details, and `identifier` can still carry the agreement URL for audit.
+
+#### F. Access Decision under a Data Sharing Agreement
+
+* **Process ID**: `PHW.F`
+* **BPMN Source**: `input/business-processes/PHW.F.bpmn`
+* **Objective**: Decide one request under an agreement: `permit`, `deny` or `unknown`. Unknown is never permit. Processes E and I call it.
+
+<figure style="width:100%">
+  <img src="PHW.F.svg" alt="Process F — Access Decision under a Data Sharing Agreement (DSA P11)" style="width:100%; max-width:1100px;" />
+</figure>
+
+| Activity ID | Lane / Actor | Task Name | Standard and section |
+| --- | --- | --- | --- |
+| `PHW.F.1` | Policy Decision Point (`permits()`) | Collect inputs: verified requester, agreement version, grant, request | Grant: W3C VC 2.0 `issuer` §4.7, `credentialSubject` §4.8, validity §4.9, `credentialStatus` §4.10, `relatedResource` §5.3; principal: RFC 8693 `act` §4.1; purpose: HL7 PurposeOfUse |
+| `PHW.F.2` | Policy Decision Point | Verify the grant with smart-trust-tools against the accepted trust anchor | litlfred/smart-trust-tools |
+| `PHW.F.3` | Trust Anchor (GDHCN or another accepted anchor) | Return trust list (DID document, X.509 roots or local list) | DID Core 1.0 + `did:web`; RFC 5280† |
+| `PHW.F.4` | Policy Decision Point | Check grant status in the Bitstring Status List | W3C Bitstring Status List §2.1 (`revocation`, `suspension`) |
+| `PHW.F.5` | Grant Issuer Status List | Return status list credential | W3C Bitstring Status List |
+| `PHW.F.6` | Policy Decision Point | Fetch the agreement at its fixed-version URL; check SHA-256 and status | SHA-256 against the catalogue's `spdx:checksum`; a mismatch gives `unknown` |
+| `PHW.F.7` | Agreement Publisher (DCAT catalogue) | Return DCAT distribution with spdx:checksum and status | DCAT 3 §6.8, §6.8.11, §6.8.20, §6.17; status §6.4.30 (RDF term unverified); versions §6.4.24, §11 |
+| `PHW.F.8` | Policy Decision Point | Search active Consents for this agreement `[ITI-108]` Access Consent: Search | **`[ITI-108]`**. A Consent counts when `Consent.policy.uri` equals the ODRL `uid`, or names an earlier version reached by `dcat:previousVersion` across narrowing amendments (fhir-harness#227, #228) |
+| `PHW.F.9` | PCF Consent Registry | Return matching Consents `[ITI-108]` Access Consent | **`[ITI-108]`** responder (`IHE.PCF.consentRegistry`) |
+| `PHW.F.10` | Policy Decision Point | Evaluate `permits()`: agreement + Consents + default policy | ODRL 2.2; `consentToOdrl()`; any deny wins; document-only: the configuration from `PHW.D.3` |
+| `PHW.F.11` | Policy Enforcement Point | Receive permit, deny or unknown; hand the decision to audit | Process G |
+
+The consent path follows consent rules 1, 2 and 4 under process A. An agreement carries `odrl:obtainConsent` only when consent is its legal basis. The harness's non-strict mode, which allows `unknown` and logs it, must not be used on data gated by an agreement.
+
+#### G. Audit, Provenance and Duty Checks under a Data Sharing Agreement
+
+* **Process ID**: `PHW.G`
+* **BPMN Source**: `input/business-processes/PHW.G.bpmn`
+* **Objective**: Record every decision twice, in a W3C PROV-O record and in an IHE ATNA audit event. Both cite the same agreement URL. Then check the agreement's duties against what was recorded.
+
+<figure style="width:100%">
+  <img src="PHW.G.svg" alt="Process G — Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12)" style="width:100%; max-width:1100px;" />
+</figure>
+
+| Activity ID | Lane / Actor | Task Name | Standard and section |
+| --- | --- | --- | --- |
+| `PHW.G.1` | Enforcement and Decision Points | Write PROV-O record citing the agreement | W3C PROV-O: `prov:used` = the agreement's DCAT distribution with `spdx:checksum` (DCAT 3 §6.8, §6.8.20; bean yy40), plus the grant or token id; `prov:wasAssociatedWith`; `prov:actedOnBehalfOf` |
+| `PHW.G.2` | Provenance Log | Append to hash-chained log | **Local extension** (bean B4), not a standard |
+| `PHW.G.3` | Enforcement and Decision Points | Send ATNA audit event citing the agreement `[ITI-20]` Record Audit Event | **`[ITI-20]`** Record Audit Event (IHE ATNA, Final Text; ITI TF-2: 3.20†). Grouping as in VHL Volume 1 §1:XX.3 and §1:XX.6.1 |
+| `PHW.G.4` | ATNA Audit Record Repository | Store audit event `[ITI-20]` | **`[ITI-20]`** |
+| `PHW.G.5` | Data Recipient (duty performer) | Record duty fulfilment with evidence hash | ODRL 2.2 duty §2.6.3 |
+| `PHW.G.6` | Enforcement and Decision Points | Compare duties with records | An unmet duty gives `deny`, and an unknowable one gives `unknown` |
+| `PHW.G.7` | Auditor (person) | Periodic human review and report to the provider | `odrl:inform`, or a clause in the PDF |
+
+**Audit.** The ATNA event cites the agreement's fixed-version URL, the requester, the purpose of use, the data or documents released, and the decision. ATNA is reached in the same way the VHL profile reaches it. VHL Volume 1 §1:XX.3, Table XX.3-1, requires the VHL Sharer and VHL Receiver to be grouped with an ATNA Secure Node or Secure Application. §1:XX.6.1 covers the secure channel (`[ITI-19]`) and audit logging. Those sections are from the IHE/ITI.VHL source at commit `48201473`, as snapshotted in litlfred/smart-trust-tools `library/`. **IHE BALP (Basic Audit Log Patterns) is Trial Implementation and needs owner approval** before this IG names its AuditEvent patterns. The PROV-O record (`PHW.G.1`) cites the same agreement URL, so the two logs agree.
+
+#### H. Revocation and Suspension under a Data Sharing Agreement
+
+* **Process ID**: `PHW.H`
+* **BPMN Source**: `input/business-processes/PHW.H.bpmn`
+* **Objective**: Stop access under an agreement. A person decides; the mechanism is computable.
+
+<figure style="width:100%">
+  <img src="PHW.H.svg" alt="Process H — Revocation and Suspension under a Data Sharing Agreement (DSA P13)" style="width:100%; max-width:1100px;" />
+</figure>
+
+| Activity ID | Lane / Actor | Task Name | Standard and section |
+| --- | --- | --- | --- |
+| `PHW.H.1` | Data Provider (decides) | Decide what to stop: revoke (final) or suspend (reversible) | — |
+| `PHW.H.2` | Grant Issuer (W3C Bitstring Status List) | Set the grant's bit in the Bitstring Status List | W3C Bitstring Status List §2.1. The IETF Token Status List is a draft and is not used |
+| `PHW.H.3` | Provider Authorization Server | Revoke tokens and disable the client | RFC 7009 §2†; introspection `active: false` RFC 7662 §2.2†; the client from process D |
+| `PHW.H.4` | Trust Anchor (GDHCN or another accepted anchor) | Remove key from trust list or revoke certificate (CRL) | RFC 5280 §5†; GDHCN key (DSC) deletion |
+| `PHW.H.5` | Data Provider (decides) | Record the revocation or suspension | Process G |
+
+A withdrawn Consent needs no step in H: the person sets `status` to `inactive` (`PHW.A.4`), and `PHW.F.8` then finds no active Consent. A VHL or HCERT QR code cannot be revoked on its own. It expires (`exp`, claim key 4), and the VHL Sharer can stop serving the link.
