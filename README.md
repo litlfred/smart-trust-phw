@@ -16,7 +16,7 @@ Please see these [instructions](https://smart.who.int/ig-starter-kit/ig_setup.ht
 
 ## Changes and feedback
 
-Feedback and issues about this empty framework can be submitted via the [issues](issues) page, and will be incorporated into subsequent releases.
+Feedback and issues about this empty framework can be submitted via the [issues](https://github.com/WorldHealthOrganization/smart-trust-phw/issues) page, and will be incorporated into subsequent releases.
 
   
  
