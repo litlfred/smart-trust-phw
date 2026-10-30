@@ -4,7 +4,7 @@
     <bpmn:participant id="PHW.A.Participant" name="A. Record and Manage Patient Privacy Consent" processRef="PHW.A" />
   </bpmn:collaboration>
   <bpmn:process id="PHW.A" name="A. Record and Manage Patient Privacy Consent" isExecutable="false">
-    <bpmn:documentation>Captures, updates, or revokes a patient privacy consent directive (`IHE.PCF.consentBasic` or `IHE.PCF.consentIntermediate`) in a PCF Consent Registry using the IHE PCF Access Consent `[ITI-108]` transaction (`Post`, `Put`, `Delete`). Trust-anchor neutral: applicable across any trust network (including the WHO GDHCN or national/regional trust anchors) with no IUA claim.</bpmn:documentation>
+    <bpmn:documentation>Captures, updates, or revokes a patient privacy consent directive (`IHE.PCF.consentBasic` or `IHE.PCF.consentIntermediate`) in a PCF Consent Registry using the IHE PCF Access Consent `[ITI-108]` transaction (`Post`, `Put`, `Delete`). Trust-anchor neutral: applicable across any trust network (including the WHO GDHCN or national/regional trust anchors) with no IUA claim. This is the person-side view of DSA process P9 (individual consent linked to the agreement). It applies only to agreements whose legal basis is consent (rule 1): treatment, public-health law and research waivers do not rest on consent. Where the person has recorded nothing, the jurisdiction&apos;s chosen PCF implicit default policy applies, opt-in (for example `Policy-deny`) or opt-out (for example `Policy-basic-normal` or `Policy-all-normal`) (rule 4) (owner consent rules, 2026-10-30 19:27Z).</bpmn:documentation>
     <bpmn:laneSet id="PHW.A.LaneSet">
       <bpmn:lane id="PHW.Lane.Holder" name="VHL Holder (Patient / Personal Health Wallet)">
         <bpmn:documentation>Personas: VHL Holder (Patient using a Personal Health Wallet to author, update, or revoke privacy consent directives).</bpmn:documentation>
@@ -30,12 +30,12 @@
       <bpmn:outgoing>PHW.A.Flow1</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:userTask id="PHW.A.1" name="A1. Select base policy &amp; disclosure scope (PCF Basic / Intermediate Consent)">
-      <bpmn:documentation>Holder selects the base policy URI (`Consent.policy.uri`), permitted purpose of use (`PCFPurposeOfUseVS`), authorized actors, validity period, and covered clinical data.</bpmn:documentation>
+      <bpmn:documentation>Holder selects the base policy URI (`Consent.policy.uri`), permitted purpose of use (`PCFPurposeOfUseVS`), authorized actors, validity period, and covered clinical data. The Holder is shown the agreement&apos;s plain-language summary, published and hashed with the agreement; that summary is what the person consents to (rule 3). `Consent.policy.uri` is the agreement&apos;s fixed-version URL, not a moving one (rule 2) (owner consent rules, 2026-10-30 19:27Z).</bpmn:documentation>
       <bpmn:incoming>PHW.A.Flow1</bpmn:incoming>
       <bpmn:outgoing>PHW.A.Flow2</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:serviceTask id="PHW.A.2" name="A2. Construct FHIR Consent &amp; Provenance (IHE.PCF.consentBasic / Intermediate)">
-      <bpmn:documentation>Consent Recorder constructs a FHIR `Consent` resource (`status: active | inactive`, `scope: patient-privacy`, `category: LOINC#59284-0`) and accompanying `IHE.PCF.provenance` resource.</bpmn:documentation>
+      <bpmn:documentation>Consent Recorder constructs a FHIR `Consent` resource (`status: active | inactive`, `scope: patient-privacy`, `category: LOINC#59284-0`) and accompanying `IHE.PCF.provenance` resource. `Consent.policy.uri` carries the agreement&apos;s fixed-version URL, so the Consent counts only for that version (rule 2).</bpmn:documentation>
       <bpmn:incoming>PHW.A.Flow2</bpmn:incoming>
       <bpmn:outgoing>PHW.A.Flow3</bpmn:outgoing>
     </bpmn:serviceTask>
@@ -51,7 +51,7 @@
       <bpmn:outgoing>PHW.A.Flow6</bpmn:outgoing>
     </bpmn:sendTask>
     <bpmn:sendTask id="PHW.A.4" name="A4. Update or revoke directive [ITI-108] Access Consent: Put / Delete">
-      <bpmn:documentation>Initiates IHE PCF `[ITI-108]` Access Consent (`PUT [base]/Consent/[id]` or `DELETE [base]/Consent/[id]`) to update or revoke an existing consent directive.</bpmn:documentation>
+      <bpmn:documentation>Initiates IHE PCF `[ITI-108]` Access Consent (`PUT [base]/Consent/[id]` or `DELETE [base]/Consent/[id]`) to update or revoke an existing consent directive. Withdrawal sets `Consent.status` to `inactive` (`PUT`); `DELETE` is for a directive recorded in error. If the agreement is amended to widen use, its new version needs a new Consent; an amendment that narrows use does not (rule 2). Withdrawal ends any cached registry result that holds this Consent at once (rule 4) (owner consent rules, 2026-10-30 19:27Z).</bpmn:documentation>
       <bpmn:incoming>PHW.A.Flow5</bpmn:incoming>
       <bpmn:outgoing>PHW.A.Flow7</bpmn:outgoing>
     </bpmn:sendTask>
