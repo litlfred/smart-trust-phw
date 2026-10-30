@@ -1,0 +1,269 @@
+{
+  "$schema": "folio-index-config/v1",
+  "instances": [
+    {
+      "name": "smart-base",
+      "source": {
+        "remote": {
+          "repository": "litlfred/smart-base",
+          "ref": "c89c20575e904f6726fea44cfb1fd99e52a355db",
+          "overrides": {
+            "smart-base": {
+              "path": "smart-base",
+              "directories": [
+                "smart-base-qa-checkers",
+                "smart-base-block-kinds",
+                "smart-base-content-adapters",
+                "smart-base-translations",
+                "library",
+                "methodologies",
+                "processes",
+                "smart-base-house-processes",
+                "smart-base-artifact-index",
+                "tools",
+                "smart-base-themes",
+                "smart-base-docs",
+                "smart-base-document-kinds",
+                "smart-base-findings",
+                "smart-base-external-schemas",
+                "smart-base-platform",
+                "smart-base-typologies",
+                "smart-base-validators",
+                "smart-base-schemas",
+                "smart-base-content",
+                "smart-base-scripts",
+                "smart-base-skills",
+                "smart-base-scenarios",
+                "smart-base-code-lists"
+              ],
+              "whole": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-30",
+              "ref": "c89c20575e904f6726fea44cfb1fd99e52a355db",
+              "evidence": "Owner card 2026-10-30 15:44Z 'A: Approve, take all advice' on PCF1-PCF4 (issue #2702, epic folio-assistant-negd, bean folio-assistant-nr5p)"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "fhir-harness",
+      "source": {
+        "remote": {
+          "repository": "litlfred/fhir-harness",
+          "ref": "d45d99170823f2bbf6cd310ab062935403175e7b",
+          "overrides": {
+            "fhir-harness": {
+              "whole": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-30",
+              "ref": "d45d99170823f2bbf6cd310ab062935403175e7b",
+              "evidence": "Owner card 2026-10-30 15:44Z 'A: Approve, take all advice' on PCF1-PCF4 (issue #2702, epic folio-assistant-negd, bean folio-assistant-nr5p)"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "folio-assistant-core",
+      "source": {
+        "remote": {
+          "repository": "litlfred/folio-assistant-core",
+          "ref": "f53b0d096dc9bb5d3471bf97a78a79a1e6cbae24",
+          "overrides": {
+            "folio-assistant-core": {
+              "whole": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-30",
+              "ref": "f53b0d096dc9bb5d3471bf97a78a79a1e6cbae24",
+              "evidence": "Owner card 2026-10-30 15:44Z 'A: Approve, take all advice' on PCF1-PCF4 (issue #2702, epic folio-assistant-negd, bean folio-assistant-nr5p)"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "cat-harness",
+      "source": {
+        "remote": {
+          "repository": "litlfred/cat-harness",
+          "ref": "ecc231a49258ae62f75f54e0d5c3258a2df8bb7c",
+          "overrides": {
+            "cat-harness": {
+              "whole": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-30",
+              "ref": "ecc231a49258ae62f75f54e0d5c3258a2df8bb7c",
+              "evidence": "Owner card 2026-10-30 15:44Z 'A: Approve, take all advice' on PCF1-PCF4 (issue #2702, epic folio-assistant-negd, bean folio-assistant-nr5p)"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "cat-harness-tools",
+      "source": {
+        "remote": {
+          "repository": "litlfred/cat-harness-tools",
+          "ref": "9326f5d78c02761a15e3e465333f01f89251ac2b",
+          "overrides": {
+            "cat-harness-tools": {
+              "whole": true
+            },
+            "cat-harness": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-30",
+              "ref": "9326f5d78c02761a15e3e465333f01f89251ac2b",
+              "evidence": "Owner card 2026-10-30 15:44Z 'A: Approve, take all advice' on PCF1-PCF4 (issue #2702, epic folio-assistant-negd, bean folio-assistant-nr5p)"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "bootstrap",
+      "source": {
+        "remote": {
+          "repository": "litlfred/bootstrap",
+          "ref": "3ce2b5d641779ca78432971abb919e6e3afdc60a",
+          "overrides": {
+            "bootstrap": {
+              "whole": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-30",
+              "ref": "3ce2b5d641779ca78432971abb919e6e3afdc60a",
+              "evidence": "Owner card 2026-10-30 15:44Z 'A: Approve, take all advice' on PCF1-PCF4 (issue #2702, epic folio-assistant-negd, bean folio-assistant-nr5p)"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "bootstrap-tools",
+      "source": {
+        "remote": {
+          "repository": "litlfred/bootstrap-tools",
+          "ref": "fdceeca33492a0bc434edc1f80c95895180ee587",
+          "overrides": {
+            "bootstrap-tools": {
+              "whole": true
+            },
+            "bootstrap": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-30",
+              "ref": "fdceeca33492a0bc434edc1f80c95895180ee587",
+              "evidence": "Owner card 2026-10-30 15:44Z 'A: Approve, take all advice' on PCF1-PCF4 (issue #2702, epic folio-assistant-negd, bean folio-assistant-nr5p)"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "smart-trust-phw",
+      "source": {
+        "local": {
+          "at": "."
+        }
+      }
+    }
+  ],
+  "site": {
+    "landing": "smart-base",
+    "agentRun": true
+  },
+  "contentTypes": {
+    "dak": {
+      "resourceType": "DAK",
+      "resourceDefinition": "http://smart.who.int/base/StructureDefinition/DAK",
+      "id": "smart.who.int.trust-phw",
+      "name": "trust-phw",
+      "title": "GDHCN Trust Network - Personal Health Wallet",
+      "description": "Describes common workflows and specifications for usage of personal health wallets on the WHO GDHCN Trust Network",
+      "version": "0.1.0",
+      "status": "draft",
+      "publicationUrl": "http://smart.who.int/trust-phw",
+      "license": "CC-BY-SA-3.0-IGO",
+      "copyrightYear": "2023+",
+      "publisher": {
+        "name": "WHO",
+        "url": "http://who.int"
+      }
+    },
+    "ig": {
+      "_comment": "What this repository is, per the content types its layers register (beans folio-assistant-nr5p, folio-assistant-cz17). `dak`: smart-base's DAK content type (`smart-base/schemas/dak-content-type.ts`, indexSection `dak`), replacing `dak.json`. `ig`: fhir-harness's `ig` content type; `include` is everything the harness reads in this repository.",
+      "include": [
+        "sushi-config.yaml",
+        "ig.ini",
+        "input/business-processes/",
+        "input/cql/",
+        "input/data/",
+        "input/decision-logic/",
+        "input/dictionary/",
+        "input/examples/",
+        "input/extensions/",
+        "input/fsh/",
+        "input/history/",
+        "input/ignoreWarnings.txt",
+        "input/images/",
+        "input/images-source/",
+        "input/indicators/",
+        "input/maps/",
+        "input/models/",
+        "input/pagecontent/",
+        "input/profiles/",
+        "input/resources/",
+        "input/scenarios/",
+        "input/scheduling-logic/",
+        "input/system-requirements/",
+        "input/testing/",
+        "input/vocabulary/",
+        "fsh-generated/"
+      ]
+    }
+  },
+  "mountApprovers": [
+    "litlfred"
+  ]
+}

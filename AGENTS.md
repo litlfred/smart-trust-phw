@@ -49,11 +49,25 @@ skill:
 
 ## The one rule
 
-**Mounted artefact indexes are generated copies, never hand-edited.**
-`fhir-artifact-index/` is written at publish by fhir-harness's `ig-index:build`
-from the IG's AST, and `library/` snapshots of external specifications (such as
-IHE PCF 1.1.0 and IHE VHL 1.0.0-comment, `folio-assistant-sl5v`, PCF2) carry
-checked SHA-256 fixity (`check:materialized-fixity`).
+**The mounted graphs are generated from the IG's AST at publish, never authored.**
+`fhir-artifact-index/` is not committed: fhir-harness's `ig-index:build`
+writes its `index.json`, `menu.json`, `releases.json` and `package.tgz` at
+publish from the IG's AST (fhir-harness#124), so never commit, hand-edit or
+re-ingest them. `document-kinds/` holds this IG's DAK coverage report,
+generated at publish from `fhir-artifact-index/` by `smart-base:document-kinds`.
+`fhir-artifact-index/` is declared `readOnly`. A hand edit silently changes
+what this repository claims upstream published; `check:materialized-fixity`
+and the writers' `--check` catch one. `library/` snapshots of external
+specifications (such as IHE PCF 1.1.0 and IHE VHL 1.0.0-comment,
+`folio-assistant-sl5v`, PCF2) carry checked SHA-256 fixity the same way.
+
+## What an index mounts from here
+
+folio-assistant mounts two directories, `fhir-artifact-index/` and
+`document-kinds/`, plus this file and the README as declared assets. The IG
+source (`input/`) is not mounted. Neither is `docs/`, which is built at publish
+by `smart-trust-phw:pages` (fhir-harness's `gen-ig-pages.ts`) and never
+committed. `fhir-ast/` is restored from its cache branch by `ig-cache.sh`.
 
 ## Before running SUSHI
 

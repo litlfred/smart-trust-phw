@@ -1,14 +1,12 @@
+# This workflow calls a remote workflow for setting up a release publication, 
+# This workflow is triggered by the creation of a GitHub release and requires a file called publication-request.json in the branch.
+
 name: Release build
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-  pull-requests: write
-  
+# Manual trigger only (owner decision, 2026-10-06): GitHub workflows here are
+# defined, not run automatically. Start it from the Actions tab.
+# (workflow_call, if present, is kept so other repositories can call it.)
 on:
-  release:
-    types: [created]
   workflow_dispatch:
 
 jobs:
@@ -18,7 +16,7 @@ jobs:
       file_exists: ${{ steps.checkfile.outputs.exists }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.release.tag_name }}
 
@@ -35,5 +33,4 @@ jobs:
     needs: check
     if: needs.check.outputs.file_exists == 'true'
     uses: WorldHealthOrganization/smart-html/.github/workflows/release.yml@main
-#    with:
-#      tag_name: ${{ github.event.release.tag_name }}
+  

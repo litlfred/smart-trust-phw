@@ -36,3 +36,17 @@ Alias: $doseNumberCodeableConcept = http://smart.who.int/icvp/StructureDefinitio
 Alias: $DVCRelationshipStatus = http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus
 
 Alias: $ICVPCore = http://smart.who.int/trust-phw/CodeSystem/ICVP.Core
+
+// IHE ITI PCF 1.1.0 and VHL 1.0.0-comment (FHIR R4 packages; referenced by canonical URL only)
+Alias: $IHE_PCF_ConsentBasic = https://profiles.ihe.net/ITI/PCF/StructureDefinition/IHE.PCF.consentBasic
+Alias: $IHE_PCF_ConsentIntermediate = https://profiles.ihe.net/ITI/PCF/StructureDefinition/IHE.PCF.consentIntermediate
+Alias: $IHE_PCF_ConsentAdvanced = https://profiles.ihe.net/ITI/PCF/StructureDefinition/IHE.PCF.consentAdvanced
+Alias: $IHE_PCF_ConsentRecorder = https://profiles.ihe.net/ITI/PCF/CapabilityStatement/IHE.PCF.consentRecorder
+Alias: $IHE_PCF_ConsentRegistry = https://profiles.ihe.net/ITI/PCF/CapabilityStatement/IHE.PCF.consentRegistry
+Alias: $IHE_PCF_ConsentAuthorizationServer = https://profiles.ihe.net/ITI/PCF/CapabilityStatement/IHE.PCF.consentAuthorizationServer
+Alias: $IHE_PCF_BasicPurposeVS = https://profiles.ihe.net/ITI/PCF/ValueSet/BasicPurposeVS
+Alias: $IHE_PCF_AdvancedSecurityTagVS = https://profiles.ihe.net/ITI/PCF/ValueSet/AdvancedSecurityTagVS
+Alias: $IHE_VHL_TrustAnchor = https://profiles.ihe.net/ITI/VHL/CapabilityStatement/IHE.VHL.TrustAnchor
+Alias: $IHE_VHL_Sharer = https://profiles.ihe.net/ITI/VHL/CapabilityStatement/VHLSharerCapabilityStatement
+Alias: $IHE_VHL_Receiver = https://profiles.ihe.net/ITI/VHL/CapabilityStatement/VHLReceiverCapabilityStatement
+Alias: $IHE_VHL_GenerateVHL = https://profiles.ihe.net/ITI/VHL/OperationDefinition/generate-vhl
