@@ -1,0 +1,482 @@
+[
+  {
+    "outputFile": "ActorDefinition-ConsentRegistry.json",
+    "fshName": "ConsentRegistry",
+    "fshType": "Instance",
+    "fshFile": "actors/actors.fsh",
+    "startLine": 59,
+    "endLine": 68
+  },
+  {
+    "outputFile": "ActorDefinition-Holder.json",
+    "fshName": "Holder",
+    "fshType": "Instance",
+    "fshFile": "actors/actors.fsh",
+    "startLine": 23,
+    "endLine": 32
+  },
+  {
+    "outputFile": "ActorDefinition-Issuer.json",
+    "fshName": "Issuer",
+    "fshType": "Instance",
+    "fshFile": "actors/actors.fsh",
+    "startLine": 46,
+    "endLine": 56
+  },
+  {
+    "outputFile": "ActorDefinition-Receiver.json",
+    "fshName": "Receiver",
+    "fshType": "Instance",
+    "fshFile": "actors/actors.fsh",
+    "startLine": 34,
+    "endLine": 44
+  },
+  {
+    "outputFile": "ActorDefinition-TrustNetworkAnchor.json",
+    "fshName": "TrustNetworkAnchor",
+    "fshType": "Instance",
+    "fshFile": "actors/actors.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ActorDefinition-TrustNetworkParticipant.json",
+    "fshName": "TrustNetworkParticipant",
+    "fshType": "Instance",
+    "fshFile": "actors/actors.fsh",
+    "startLine": 12,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Binary-DVCExample.json",
+    "fshName": "DVCExample",
+    "fshType": "Instance",
+    "fshFile": "examples/ModelDVCExample.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "Bundle-DVCDocExample.json",
+    "fshName": "DVCDocExample",
+    "fshType": "Instance",
+    "fshFile": "examples/DVCDocExample.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "Bundle-DVCDocSDExample.json",
+    "fshName": "DVCDocSDExample",
+    "fshType": "Instance",
+    "fshFile": "examples/DVCDocSDExample.fsh",
+    "startLine": 2,
+    "endLine": 16
+  },
+  {
+    "outputFile": "CodeSystem-DVCRelationshipStatus.json",
+    "fshName": "DVCRelationshipStatus",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/DVCRelationshipStatus.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "CodeSystem-DisclosureStatements.json",
+    "fshName": "DisclosureStatements",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/DisclosureStatements.fsh",
+    "startLine": 1,
+    "endLine": 52
+  },
+  {
+    "outputFile": "CodeSystem-DocumentationSections.json",
+    "fshName": "DocumentationSections",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/DocumentationSections.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "CodeSystem-HL.TYPE.json",
+    "fshName": "HL.TYPE",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/HL.TYPE.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "CodeSystem-ICVP.Core.json",
+    "fshName": "ICVP.Core",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/ICVP.Core.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "ConceptMap-ICVP.Core.ConceptMap.json",
+    "fshName": "ICVP.Core.ConceptMap",
+    "fshType": "Instance",
+    "fshFile": "conceptmaps/ICVP.Core.ConceptMap.fsh",
+    "startLine": 1,
+    "endLine": 102
+  },
+  {
+    "outputFile": "Organization-ExampleManufacturerOrg.json",
+    "fshName": "ExampleManufacturerOrg",
+    "fshType": "Instance",
+    "fshFile": "examples/ModelDVCExample.fsh",
+    "startLine": 21,
+    "endLine": 24
+  },
+  {
+    "outputFile": "Questionnaire-PreQual.json",
+    "fshName": "PreQual",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/DVCPreQual.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Requirements-accept-mtls-connection.json",
+    "fshName": "accept-mtls-connection",
+    "fshType": "Instance",
+    "fshFile": "requirements/requirements.fsh",
+    "startLine": 44,
+    "endLine": 51
+  },
+  {
+    "outputFile": "Requirements-distribute-pki-material.json",
+    "fshName": "distribute-pki-material",
+    "fshType": "Instance",
+    "fshFile": "requirements/requirements.fsh",
+    "startLine": 23,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Requirements-initiate-mtls-connection.json",
+    "fshName": "initiate-mtls-connection",
+    "fshType": "Instance",
+    "fshFile": "requirements/requirements.fsh",
+    "startLine": 54,
+    "endLine": 61
+  },
+  {
+    "outputFile": "Requirements-provide-a-vhl-to-a-receiver.json",
+    "fshName": "provide-a-vhl-to-a-receiver",
+    "fshType": "Instance",
+    "fshFile": "requirements/requirements.fsh",
+    "startLine": 64,
+    "endLine": 71
+  },
+  {
+    "outputFile": "Requirements-publish-pki-material.json",
+    "fshName": "publish-pki-material",
+    "fshType": "Instance",
+    "fshFile": "requirements/requirements.fsh",
+    "startLine": 3,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Requirements-receive-a-vhl.json",
+    "fshName": "receive-a-vhl",
+    "fshType": "Instance",
+    "fshFile": "requirements/requirements.fsh",
+    "startLine": 74,
+    "endLine": 81
+  },
+  {
+    "outputFile": "Requirements-receive-pki-material.json",
+    "fshName": "receive-pki-material",
+    "fshType": "Instance",
+    "fshFile": "requirements/requirements.fsh",
+    "startLine": 14,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Requirements-retrieve-pki-material.json",
+    "fshName": "retrieve-pki-material",
+    "fshType": "Instance",
+    "fshFile": "requirements/requirements.fsh",
+    "startLine": 32,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-Bundle-uv-ips-DVC.json",
+    "fshName": "Bundle-uv-ips-DVC",
+    "fshType": "Profile",
+    "fshFile": "profiles/Bundle-uv-ips-DVC.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-Bundle-uv-ips-PreQual.json",
+    "fshName": "Bundle-uv-ips-PreQual",
+    "fshType": "Profile",
+    "fshFile": "profiles/Bundle-uv-ips-PreQual.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-Composition-uv-ips-DVC.json",
+    "fshName": "Composition-uv-ips-DVC",
+    "fshType": "Profile",
+    "fshFile": "profiles/Composition-uv-ips-DVC.fsh",
+    "startLine": 4,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-Composition-uv-ips-PreQual.json",
+    "fshName": "Composition-uv-ips-PreQual",
+    "fshType": "Profile",
+    "fshFile": "profiles/Composition-uv-ips-PreQual.fsh",
+    "startLine": 4,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-DVC.json",
+    "fshName": "DVC",
+    "fshType": "Logical",
+    "fshFile": "models/DVC.fsh",
+    "startLine": 1,
+    "endLine": 48
+  },
+  {
+    "outputFile": "StructureDefinition-DVCBundle.json",
+    "fshName": "DVCBundle",
+    "fshType": "Profile",
+    "fshFile": "profiles/DVCBundle.fsh",
+    "startLine": 14,
+    "endLine": 41
+  },
+  {
+    "outputFile": "StructureDefinition-DVCComposition.json",
+    "fshName": "DVCComposition",
+    "fshType": "Profile",
+    "fshFile": "profiles/DVCComposition.fsh",
+    "startLine": 10,
+    "endLine": 55
+  },
+  {
+    "outputFile": "StructureDefinition-DVCImmunization.json",
+    "fshName": "DVCImmunization",
+    "fshType": "Profile",
+    "fshFile": "profiles/DVCImmunization.fsh",
+    "startLine": 11,
+    "endLine": 36
+  },
+  {
+    "outputFile": "StructureDefinition-DVCMin.json",
+    "fshName": "DVCMin",
+    "fshType": "Logical",
+    "fshFile": "models/DVCMin.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
+    "outputFile": "StructureDefinition-DVCMinPreQual.json",
+    "fshName": "DVCMinPreQual",
+    "fshType": "Logical",
+    "fshFile": "models/DVCMinPreQual.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-DVCMinVaccineDetails.json",
+    "fshName": "DVCMinVaccineDetails",
+    "fshType": "Logical",
+    "fshFile": "models/DVCMinVaccineDetails.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-DVCMinVaccineDetailsPreQual.json",
+    "fshName": "DVCMinVaccineDetailsPreQual",
+    "fshType": "Logical",
+    "fshFile": "models/DVCMinVaccineDetailsPreQual.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-DVCPatient.json",
+    "fshName": "DVCPatient",
+    "fshType": "Profile",
+    "fshFile": "profiles/DVCPatient.fsh",
+    "startLine": 11,
+    "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-DVCPreQual.json",
+    "fshName": "DVCPreQual",
+    "fshType": "Logical",
+    "fshFile": "models/DVCPreQual.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-DVCSD.json",
+    "fshName": "DVCSD",
+    "fshType": "Profile",
+    "fshFile": "profiles/DVCSD.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-DVCSDBundle.json",
+    "fshName": "DVCSDBundle",
+    "fshType": "Profile",
+    "fshFile": "profiles/DVCBundle.fsh",
+    "startLine": 3,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-DVCSDComposition.json",
+    "fshName": "DVCSDComposition",
+    "fshType": "Profile",
+    "fshFile": "profiles/DVCComposition.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-DVCSDImmunization.json",
+    "fshName": "DVCSDImmunization",
+    "fshType": "Profile",
+    "fshFile": "profiles/DVCImmunization.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-DVCSDPatient.json",
+    "fshName": "DVCSDPatient",
+    "fshType": "Profile",
+    "fshFile": "profiles/DVCPatient.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-DVCVaccineDetails.json",
+    "fshName": "DVCVaccineDetails",
+    "fshType": "Logical",
+    "fshFile": "models/DVCVaccineDetails.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-DVCVaccineDetailsPreQual.json",
+    "fshName": "DVCVaccineDetailsPreQual",
+    "fshType": "Logical",
+    "fshFile": "models/DVCVaccineDetailsPreQual.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-DoseNumberCodeableConcept.json",
+    "fshName": "DoseNumberCodeableConcept",
+    "fshType": "Extension",
+    "fshFile": "profiles/DVCImmunization.fsh",
+    "startLine": 46,
+    "endLine": 48
+  },
+  {
+    "outputFile": "StructureDefinition-HealthLinkPayload.json",
+    "fshName": "HealthLinkPayload",
+    "fshType": "Logical",
+    "fshFile": "models/HealthLinkPayload.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-Immunization-uv-ips-DVC.json",
+    "fshName": "Immunization-uv-ips-DVC",
+    "fshType": "Profile",
+    "fshFile": "profiles/Immunization-uv-ips-DVC.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-Immunization-uv-ips-PreQual.json",
+    "fshName": "Immunization-uv-ips-PreQual",
+    "fshType": "Profile",
+    "fshFile": "profiles/Immunization-uv-ips-PreQual.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "StructureDefinition-SGActorExt.json",
+    "fshName": "SGActorExt",
+    "fshType": "Extension",
+    "fshFile": "extensions/SGActor.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-SMARTHealthLinkPayload.json",
+    "fshName": "SMARTHealthLinkPayload",
+    "fshType": "Logical",
+    "fshFile": "models/SmartHealthLinkPayload.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-SelectiveDisclosure.json",
+    "fshName": "SelectiveDisclosure",
+    "fshType": "Extension",
+    "fshFile": "extensions/SelectiveDisclosure.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-SmartHealthLink.json",
+    "fshName": "SmartHealthLink",
+    "fshType": "Logical",
+    "fshFile": "models/SmartHealthLink.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-VaccineDetailsSD.json",
+    "fshName": "VaccineDetailsSD",
+    "fshType": "Profile",
+    "fshFile": "profiles/VaccineDetailsSD.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-VerifiableHealthLinkPayload.json",
+    "fshName": "VerifiableHealthLinkPayload",
+    "fshType": "Logical",
+    "fshFile": "models/VerifiableHealthLinkPayload.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-DVCRelationshipStatus.json",
+    "fshName": "DVCRelationshipStatus",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/DVCRelationshipStatus.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "ValueSet-DVCVaccines.json",
+    "fshName": "DVCVaccines",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/DVCVaccines.fsh",
+    "startLine": 1,
+    "endLine": 116
+  },
+  {
+    "outputFile": "ValueSet-DisclosureStatements.json",
+    "fshName": "DisclosureStatements",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/DisclosureStatements.fsh",
+    "startLine": 2,
+    "endLine": 8
+  },
+  {
+    "outputFile": "ValueSet-HL.TYPE.json",
+    "fshName": "HL.TYPE",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HL.TYPE.fsh",
+    "startLine": 1,
+    "endLine": 9
+  }
+]

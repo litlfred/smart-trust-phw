@@ -1,0 +1,11 @@
+{
+  "http://hl7.org/fhir/ValueSet/document-classcodes" : null,
+  "http://hl7.org/fhir/ValueSet/http-verb|4.0.1" : null,
+  "http://hl7.org/fhir/ValueSet/immunization-status|4.0.1" : null,
+  "http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1" : null,
+  "http://hl7.org/fhir/ValueSet/document-relationship-type|4.0.1" : null,
+  "http://hl7.org/fhir/ValueSet/bundle-type|4.0.1" : null,
+  "http://hl7.org/fhir/ValueSet/composition-attestation-mode|4.0.1" : null,
+  "http://hl7.org/fhir/ValueSet/composition-status|4.0.1" : null,
+  "http://hl7.org/fhir/ValueSet/list-mode|4.0.1" : null
+}

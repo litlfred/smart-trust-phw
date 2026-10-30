@@ -1,0 +1,1069 @@
+{
+  "$schema": "ig-ast/v1",
+  "authority": "cache",
+  "provisional": [
+    "indices",
+    "dependencies",
+    "versions"
+  ],
+  "provisionalUntil": "a full IG Publisher run",
+  "generatedAt": "2026-10-30T16:41:27.795623Z",
+  "ig": {
+    "root": ".",
+    "version": "5.0.0"
+  },
+  "inputDigestMode": {
+    "mode": "git"
+  },
+  "inputs": {
+    "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+    "sourceRevision": "9d78dac501a6aae9e428e84b6d58de80d2488d4f",
+    "inputDigest": "97332df979f60789105e8582d81ec2af2975bd5ffb292b3a5f010ca183a74e48"
+  },
+  "packages": [
+    {
+      "id": "hl7.fhir.r5.core",
+      "version": "5.0.0",
+      "canonical": "http://hl7.org/fhir",
+      "fhirVersion": "5.0.0",
+      "dependencies": []
+    },
+    {
+      "id": "hl7.fhir.us.cqfmeasures",
+      "version": "5.0.0",
+      "canonical": "http://hl7.org/fhir/us/cqfmeasures",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.cql#1.0.0",
+        "hl7.fhir.uv.crmi#1.0.0",
+        "hl7.fhir.uv.extensions.r4#5.1.0",
+        "hl7.terminology.r4#6.0.2"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.cpg",
+      "version": "2.0.0",
+      "canonical": "http://hl7.org/fhir/uv/cpg",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.1.0",
+        "hl7.terminology.r4#6.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.cql",
+      "version": "1.0.0",
+      "canonical": "http://hl7.org/fhir/uv/cql",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.1.0",
+        "hl7.terminology#5.5.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.crmi",
+      "version": "1.0.0",
+      "canonical": "http://hl7.org/fhir/uv/crmi",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.1.0",
+        "hl7.terminology#5.5.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r4",
+      "version": "1.0.0",
+      "canonical": "http://hl7.org/fhir/extensions",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r4",
+      "version": "5.1.0",
+      "canonical": "http://hl7.org/fhir/extensions",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r4",
+      "version": "5.2.0",
+      "canonical": "http://hl7.org/fhir/extensions",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r4",
+      "version": "5.3.0",
+      "canonical": "http://hl7.org/fhir/extensions",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#7.1.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.extensions.r5",
+      "version": "5.4.0",
+      "canonical": "http://hl7.org/fhir/extensions",
+      "fhirVersion": "5.0.0",
+      "dependencies": [
+        "hl7.fhir.r5.core#5.0.0",
+        "hl7.terminology.r5#7.5.0"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.ips",
+      "version": "2.0.0-ballot",
+      "canonical": "http://hl7.org/fhir/uv/ips",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.1.0",
+        "hl7.terminology.r4#6.0.2"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.sdc",
+      "version": "3.0.0",
+      "canonical": "http://hl7.org/fhir/uv/sdc",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.r4.examples#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.fhir.uv.tools.r5",
+      "version": "1.3.0",
+      "canonical": "http://hl7.org/fhir/tools",
+      "fhirVersion": "5.0.0",
+      "dependencies": [
+        "hl7.fhir.r5.core#5.0.0",
+        "hl7.fhir.uv.extensions.r5#5.3.0",
+        "hl7.terminology.r5#7.4.0"
+      ]
+    },
+    {
+      "id": "hl7.terminology",
+      "version": "5.5.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "3.1.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "5.3.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "6.0.2",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "6.1.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "6.3.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.2.0"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "6.4.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.2.0"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "6.5.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.2.0"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r4",
+      "version": "7.1.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.2.0"
+      ]
+    },
+    {
+      "id": "hl7.terminology.r5",
+      "version": "7.3.0",
+      "canonical": "http://terminology.hl7.org",
+      "fhirVersion": "5.0.0",
+      "dependencies": [
+        "hl7.fhir.r5.core#5.0.0",
+        "hl7.fhir.uv.extensions.r5#5.3.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.balp",
+      "version": "1.1.0",
+      "canonical": "https://profiles.ihe.net/ITI/BALP",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    },
+    {
+      "id": "ihe.iti.balp",
+      "version": "1.1.3",
+      "canonical": "https://profiles.ihe.net/ITI/BALP",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.terminology.r4#5.3.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.balp",
+      "version": "1.1.4",
+      "canonical": "https://profiles.ihe.net/ITI/BALP",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.2.0",
+        "hl7.terminology.r4#6.5.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.mcsd",
+      "version": "3.8.0",
+      "canonical": "https://profiles.ihe.net/ITI/mCSD",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.terminology.r4#3.1.0",
+        "ihe.iti.balp#1.1.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.mcsd",
+      "version": "4.0.0",
+      "canonical": "https://profiles.ihe.net/ITI/mCSD",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.2.0",
+        "hl7.terminology.r4#6.3.0",
+        "ihe.iti.balp#1.1.3"
+      ]
+    },
+    {
+      "id": "ihe.iti.pcf",
+      "version": "1.1.0",
+      "canonical": "https://profiles.ihe.net/ITI/PCF",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#1.0.0",
+        "hl7.terminology.r4#5.3.0",
+        "ihe.iti.balp#1.1.x",
+        "us.nlm.vsac#0.9.0"
+      ]
+    },
+    {
+      "id": "ihe.iti.vhl",
+      "version": "1.0.0-comment",
+      "canonical": "https://profiles.ihe.net/ITI/VHL",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.3.0",
+        "hl7.terminology.r4#7.1.0"
+      ]
+    },
+    {
+      "id": "smart.who.int.base",
+      "version": "0.1.0",
+      "canonical": "http://smart.who.int/base",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.cql#1.0.0",
+        "hl7.fhir.uv.crmi#1.0.0",
+        "hl7.fhir.uv.extensions.r4#5.1.0",
+        "hl7.fhir.uv.sdc#3.0.0",
+        "hl7.terminology#5.5.0"
+      ]
+    },
+    {
+      "id": "smart.who.int.base",
+      "version": "0.2.0",
+      "canonical": "http://smart.who.int/base",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.cql#1.0.0",
+        "hl7.fhir.uv.crmi#1.0.0",
+        "hl7.fhir.uv.extensions.r4#5.1.0",
+        "hl7.fhir.uv.extensions.r5#5.2.0",
+        "hl7.fhir.uv.sdc#3.0.0",
+        "hl7.terminology#5.5.0"
+      ]
+    },
+    {
+      "id": "smart.who.int.pcmt",
+      "version": "0.1.0",
+      "canonical": "http://smart.who.int/pcmt",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1",
+        "hl7.fhir.uv.extensions.r4#5.2.0",
+        "hl7.terminology.r4#6.4.0",
+        "ihe.iti.mcsd#4.0.0",
+        "smart.who.int.base#0.1.0"
+      ]
+    },
+    {
+      "id": "smart.who.int.pcmt-vaxprequal",
+      "version": "0.2.0",
+      "canonical": "http://smart.who.int/pcmt-vaxprequal",
+      "fhirVersion": "5.0.0",
+      "dependencies": [
+        "hl7.fhir.r5.core#5.0.0",
+        "hl7.fhir.uv.extensions.r5#5.3.0",
+        "hl7.terminology.r5#7.3.0",
+        "ihe.iti.mcsd#4.0.0",
+        "smart.who.int.base#0.1.0",
+        "smart.who.int.pcmt#0.1.0"
+      ]
+    },
+    {
+      "id": "us.nlm.vsac",
+      "version": "0.9.0",
+      "canonical": "http://fhir.org/packages/us.nlm.vsac",
+      "fhirVersion": "4.0.1",
+      "dependencies": [
+        "hl7.fhir.r4.core#4.0.1"
+      ]
+    }
+  ],
+  "terminology": {
+    "server": {
+      "address": "https://tx.fhir.org/r5",
+      "version": "0.18.2"
+    },
+    "expansions": [
+      {
+        "valueSet": "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus|0.1.0",
+        "builtFrom": {
+          "used-codesystem": [
+            "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus|0.1.0"
+          ]
+        },
+        "codeSystems": [
+          "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus"
+        ]
+      },
+      {
+        "valueSet": "http://smart.who.int/trust-phw/ValueSet/DVCVaccines|0.1.0",
+        "builtFrom": {
+          "used-codesystem": [
+            "http://id.who.int/icd/release/11/mms|2026-01"
+          ],
+          "used-valueset": [
+            "null"
+          ]
+        },
+        "codeSystems": [
+          "http://id.who.int/icd/release/11/mms"
+        ]
+      },
+      {
+        "valueSet": "http://smart.who.int/trust-phw/ValueSet/DisclosureStatements|0.1.0",
+        "builtFrom": {
+          "used-codesystem": [
+            "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements|0.1.0"
+          ]
+        },
+        "codeSystems": [
+          "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements"
+        ]
+      },
+      {
+        "valueSet": "http://smart.who.int/trust-phw/ValueSet/HL.TYPE|0.1.0",
+        "builtFrom": {
+          "used-codesystem": [
+            "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE|0.1.0"
+          ]
+        },
+        "codeSystems": [
+          "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE"
+        ]
+      }
+    ]
+  },
+  "toolchain": {
+    "publisher": "3.0.0",
+    "core": "7.0.1",
+    "sushi": "SUSHI v3.20.1 (implements FHIR Shorthand specification v3.0.0)",
+    "java": "21.0.3"
+  },
+  "resources": [
+    {
+      "key": "Binary/DVCExample",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Binary",
+      "id": "DVCExample",
+      "name": null,
+      "file": "resources/Binary/DVCExample--fd8b7e3a.json",
+      "source": "fsh-generated/resources/binary-DVCExample.json"
+    },
+    {
+      "key": "Bundle/DVCDocExample",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Bundle",
+      "id": "DVCDocExample",
+      "name": null,
+      "file": "resources/Bundle/DVCDocExample--56e045c0.json",
+      "source": "fsh-generated/resources/Bundle-DVCDocExample.json"
+    },
+    {
+      "key": "Bundle/DVCDocSDExample",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Bundle",
+      "id": "DVCDocSDExample",
+      "name": null,
+      "file": "resources/Bundle/DVCDocSDExample--21b2cb26.json",
+      "source": "fsh-generated/resources/Bundle-DVCDocSDExample.json"
+    },
+    {
+      "key": "Organization/ExampleManufacturerOrg",
+      "canonical": null,
+      "version": null,
+      "resourceType": "Organization",
+      "id": "ExampleManufacturerOrg",
+      "name": "Manufacturer A",
+      "file": "resources/Organization/ExampleManufacturerOrg--35cd219d.json",
+      "source": "fsh-generated/resources/Organization-ExampleManufacturerOrg.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/ActorDefinition/ConsentRegistry|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/ActorDefinition/ConsentRegistry",
+      "version": "0.1.0",
+      "resourceType": "ActorDefinition",
+      "id": "ConsentRegistry",
+      "name": "ConsentRegistry",
+      "file": "resources/ActorDefinition/ConsentRegistry--f0676388.json",
+      "source": "fsh-generated/resources/ActorDefinition-ConsentRegistry.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/ActorDefinition/Holder|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/ActorDefinition/Holder",
+      "version": "0.1.0",
+      "resourceType": "ActorDefinition",
+      "id": "Holder",
+      "name": "Holder",
+      "file": "resources/ActorDefinition/Holder--9c1606a8.json",
+      "source": "fsh-generated/resources/ActorDefinition-Holder.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/ActorDefinition/Issuer|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/ActorDefinition/Issuer",
+      "version": "0.1.0",
+      "resourceType": "ActorDefinition",
+      "id": "Issuer",
+      "name": "Issuer",
+      "file": "resources/ActorDefinition/Issuer--8214cf7f.json",
+      "source": "fsh-generated/resources/ActorDefinition-Issuer.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/ActorDefinition/Receiver|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/ActorDefinition/Receiver",
+      "version": "0.1.0",
+      "resourceType": "ActorDefinition",
+      "id": "Receiver",
+      "name": "Receiver",
+      "file": "resources/ActorDefinition/Receiver--1a2f8491.json",
+      "source": "fsh-generated/resources/ActorDefinition-Receiver.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkAnchor|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkAnchor",
+      "version": "0.1.0",
+      "resourceType": "ActorDefinition",
+      "id": "TrustNetworkAnchor",
+      "name": "Trust Network Anchor",
+      "file": "resources/ActorDefinition/TrustNetworkAnchor--26fc7455.json",
+      "source": "fsh-generated/resources/ActorDefinition-TrustNetworkAnchor.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkParticipant|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkParticipant",
+      "version": "0.1.0",
+      "resourceType": "ActorDefinition",
+      "id": "TrustNetworkParticipant",
+      "name": "Trust Network Participant",
+      "file": "resources/ActorDefinition/TrustNetworkParticipant--1d51a9bb.json",
+      "source": "fsh-generated/resources/ActorDefinition-TrustNetworkParticipant.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus",
+      "version": "0.1.0",
+      "resourceType": "CodeSystem",
+      "id": "DVCRelationshipStatus",
+      "name": "DVCRelationshipStatus",
+      "file": "resources/CodeSystem/DVCRelationshipStatus--a31b480d.json",
+      "source": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements",
+      "version": "0.1.0",
+      "resourceType": "CodeSystem",
+      "id": "DisclosureStatements",
+      "name": "DisclosureStatements",
+      "file": "resources/CodeSystem/DisclosureStatements--7652127c.json",
+      "source": "fsh-generated/resources/CodeSystem-DisclosureStatements.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections",
+      "version": "0.1.0",
+      "resourceType": "CodeSystem",
+      "id": "DocumentationSections",
+      "name": "DocumentationSections",
+      "file": "resources/CodeSystem/DocumentationSections--55c188d5.json",
+      "source": "fsh-generated/resources/CodeSystem-DocumentationSections.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE",
+      "version": "0.1.0",
+      "resourceType": "CodeSystem",
+      "id": "HL.TYPE",
+      "name": "HL_TYPE",
+      "file": "resources/CodeSystem/HL.TYPE--5f3c0eab.json",
+      "source": "fsh-generated/resources/CodeSystem-HL.TYPE.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core",
+      "version": "0.1.0",
+      "resourceType": "CodeSystem",
+      "id": "ICVP.Core",
+      "name": "ICVP_Core",
+      "file": "resources/CodeSystem/ICVP.Core--e55c6461.json",
+      "source": "fsh-generated/resources/CodeSystem-ICVP.Core.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap",
+      "version": "0.1.0",
+      "resourceType": "ConceptMap",
+      "id": "ICVP.Core.ConceptMap",
+      "name": "ICVP_Core_ConceptMap",
+      "file": "resources/ConceptMap/ICVP.Core.ConceptMap--f9d45b70.json",
+      "source": "fsh-generated/resources/ConceptMap-ICVP.Core.ConceptMap.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw",
+      "version": "0.1.0",
+      "resourceType": "ImplementationGuide",
+      "id": "smart.who.int.trust-phw",
+      "name": "trustphw",
+      "file": "resources/ImplementationGuide/smart.who.int.trust-phw--15d459b0.json",
+      "source": "fsh-generated/resources/ImplementationGuide-smart.who.int.trust-phw.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/Questionnaire/PreQual|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/Questionnaire/PreQual",
+      "version": "0.1.0",
+      "resourceType": "Questionnaire",
+      "id": "PreQual",
+      "name": null,
+      "file": "resources/Questionnaire/PreQual--8bf8953b.json",
+      "source": "fsh-generated/resources/Questionnaire-PreQual.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/Requirements/accept-mtls-connection|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/accept-mtls-connection",
+      "version": "0.1.0",
+      "resourceType": "Requirements",
+      "id": "accept-mtls-connection",
+      "name": null,
+      "file": "resources/Requirements/accept-mtls-connection--317cc515.json",
+      "source": "fsh-generated/resources/Requirements-accept-mtls-connection.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/Requirements/distribute-pki-material|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/distribute-pki-material",
+      "version": "0.1.0",
+      "resourceType": "Requirements",
+      "id": "distribute-pki-material",
+      "name": null,
+      "file": "resources/Requirements/distribute-pki-material--84fc2d1a.json",
+      "source": "fsh-generated/resources/Requirements-distribute-pki-material.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/Requirements/initiate-mtls-connection|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/initiate-mtls-connection",
+      "version": "0.1.0",
+      "resourceType": "Requirements",
+      "id": "initiate-mtls-connection",
+      "name": null,
+      "file": "resources/Requirements/initiate-mtls-connection--2cacad0c.json",
+      "source": "fsh-generated/resources/Requirements-initiate-mtls-connection.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/Requirements/provide-a-vhl-to-a-receiver|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/provide-a-vhl-to-a-receiver",
+      "version": "0.1.0",
+      "resourceType": "Requirements",
+      "id": "provide-a-vhl-to-a-receiver",
+      "name": null,
+      "file": "resources/Requirements/provide-a-vhl-to-a-receiver--78186493.json",
+      "source": "fsh-generated/resources/Requirements-provide-a-vhl-to-a-receiver.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/Requirements/publish-pki-material|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/publish-pki-material",
+      "version": "0.1.0",
+      "resourceType": "Requirements",
+      "id": "publish-pki-material",
+      "name": null,
+      "file": "resources/Requirements/publish-pki-material--181d4be3.json",
+      "source": "fsh-generated/resources/Requirements-publish-pki-material.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/Requirements/receive-a-vhl|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/receive-a-vhl",
+      "version": "0.1.0",
+      "resourceType": "Requirements",
+      "id": "receive-a-vhl",
+      "name": null,
+      "file": "resources/Requirements/receive-a-vhl--1888ec69.json",
+      "source": "fsh-generated/resources/Requirements-receive-a-vhl.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/Requirements/receive-pki-material|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/receive-pki-material",
+      "version": "0.1.0",
+      "resourceType": "Requirements",
+      "id": "receive-pki-material",
+      "name": null,
+      "file": "resources/Requirements/receive-pki-material--7162d27a.json",
+      "source": "fsh-generated/resources/Requirements-receive-pki-material.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/Requirements/retrieve-pki-material|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/retrieve-pki-material",
+      "version": "0.1.0",
+      "resourceType": "Requirements",
+      "id": "retrieve-pki-material",
+      "name": null,
+      "file": "resources/Requirements/retrieve-pki-material--780bb00f.json",
+      "source": "fsh-generated/resources/Requirements-retrieve-pki-material.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-DVC|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-DVC",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "Bundle-uv-ips-DVC",
+      "name": "Bundle-uv-ips-DVC",
+      "file": "resources/StructureDefinition/Bundle-uv-ips-DVC--7dd7f65e.json",
+      "source": "fsh-generated/resources/StructureDefinition-Bundle-uv-ips-DVC.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-PreQual|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-PreQual",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "Bundle-uv-ips-PreQual",
+      "name": "Bundle-uv-ips-PreQual",
+      "file": "resources/StructureDefinition/Bundle-uv-ips-PreQual--56ff251a.json",
+      "source": "fsh-generated/resources/StructureDefinition-Bundle-uv-ips-PreQual.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-DVC|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-DVC",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "Composition-uv-ips-DVC",
+      "name": "Composition-uv-ips-DVC",
+      "file": "resources/StructureDefinition/Composition-uv-ips-DVC--e720644a.json",
+      "source": "fsh-generated/resources/StructureDefinition-Composition-uv-ips-DVC.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-PreQual|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-PreQual",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "Composition-uv-ips-PreQual",
+      "name": "Composition-uv-ips-PreQual",
+      "file": "resources/StructureDefinition/Composition-uv-ips-PreQual--1ba3f132.json",
+      "source": "fsh-generated/resources/StructureDefinition-Composition-uv-ips-PreQual.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCBundle",
+      "name": "DVCBundle",
+      "file": "resources/StructureDefinition/DVCBundle--15c357af.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCBundle.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCComposition",
+      "name": "DVCComposition",
+      "file": "resources/StructureDefinition/DVCComposition--ca01cd04.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCComposition.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCImmunization",
+      "name": "DVCImmunization",
+      "file": "resources/StructureDefinition/DVCImmunization--f1cab872.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCImmunization.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinPreQual|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinPreQual",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCMinPreQual",
+      "name": "DVCMinPreQual",
+      "file": "resources/StructureDefinition/DVCMinPreQual--763fb6ec.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCMinPreQual.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetailsPreQual|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetailsPreQual",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCMinVaccineDetailsPreQual",
+      "name": "DVCMinVaccineDetailsPreQual",
+      "file": "resources/StructureDefinition/DVCMinVaccineDetailsPreQual--5595a504.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCMinVaccineDetailsPreQual.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCMinVaccineDetails",
+      "name": "DVCMinVaccineDetails",
+      "file": "resources/StructureDefinition/DVCMinVaccineDetails--018b8aaa.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCMinVaccineDetails.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCMin",
+      "name": "DVCMin",
+      "file": "resources/StructureDefinition/DVCMin--68da6fd9.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCMin.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCPatient",
+      "name": "DVCPatient",
+      "file": "resources/StructureDefinition/DVCPatient--e9936153.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCPatient.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCPreQual|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCPreQual",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCPreQual",
+      "name": "DVCPreQual",
+      "file": "resources/StructureDefinition/DVCPreQual--4f5c5243.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCPreQual.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCSDBundle",
+      "name": "DVCSDBundle",
+      "file": "resources/StructureDefinition/DVCSDBundle--55fd1094.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCSDBundle.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDComposition|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDComposition",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCSDComposition",
+      "name": "DVCSDComposition",
+      "file": "resources/StructureDefinition/DVCSDComposition--998fcaf4.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCSDComposition.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDImmunization|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDImmunization",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCSDImmunization",
+      "name": "DVCSDImmunization",
+      "file": "resources/StructureDefinition/DVCSDImmunization--0962296e.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCSDImmunization.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDPatient|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDPatient",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCSDPatient",
+      "name": "DVCSDPatient",
+      "file": "resources/StructureDefinition/DVCSDPatient--45922dee.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCSDPatient.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCSD|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSD",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCSD",
+      "name": "DVCSD",
+      "file": "resources/StructureDefinition/DVCSD--2dcb82c8.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCSD.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetailsPreQual|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetailsPreQual",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCVaccineDetailsPreQual",
+      "name": "DVCVaccineDetailsPreQual",
+      "file": "resources/StructureDefinition/DVCVaccineDetailsPreQual--ab60d10f.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCVaccineDetailsPreQual.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVCVaccineDetails",
+      "name": "DVCVaccineDetails",
+      "file": "resources/StructureDefinition/DVCVaccineDetails--9d81116b.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVCVaccineDetails.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DVC|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVC",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DVC",
+      "name": "DVC",
+      "file": "resources/StructureDefinition/DVC--739cc30a.json",
+      "source": "fsh-generated/resources/StructureDefinition-DVC.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/DoseNumberCodeableConcept|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DoseNumberCodeableConcept",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "DoseNumberCodeableConcept",
+      "name": "DoseNumberCodeableConcept",
+      "file": "resources/StructureDefinition/DoseNumberCodeableConcept--c16ada9d.json",
+      "source": "fsh-generated/resources/StructureDefinition-DoseNumberCodeableConcept.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/HealthLinkPayload|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/HealthLinkPayload",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "HealthLinkPayload",
+      "name": "HealthLinkPayload",
+      "file": "resources/StructureDefinition/HealthLinkPayload--f102ca06.json",
+      "source": "fsh-generated/resources/StructureDefinition-HealthLinkPayload.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "Immunization-uv-ips-DVC",
+      "name": "Immunization-uv-ips-DVC",
+      "file": "resources/StructureDefinition/Immunization-uv-ips-DVC--fb9fac06.json",
+      "source": "fsh-generated/resources/StructureDefinition-Immunization-uv-ips-DVC.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-PreQual|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-PreQual",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "Immunization-uv-ips-PreQual",
+      "name": "Immunization-uv-ips-PreQual",
+      "file": "resources/StructureDefinition/Immunization-uv-ips-PreQual--756dbac8.json",
+      "source": "fsh-generated/resources/StructureDefinition-Immunization-uv-ips-PreQual.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/SGActorExt|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/SGActorExt",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "SGActorExt",
+      "name": "SGActorExt",
+      "file": "resources/StructureDefinition/SGActorExt--b86797b2.json",
+      "source": "fsh-generated/resources/StructureDefinition-SGActorExt.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/SMARTHealthLinkPayload|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/SMARTHealthLinkPayload",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "SMARTHealthLinkPayload",
+      "name": "SMARTHealthLinkPayload",
+      "file": "resources/StructureDefinition/SMARTHealthLinkPayload--cd74c270.json",
+      "source": "fsh-generated/resources/StructureDefinition-SMARTHealthLinkPayload.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "SelectiveDisclosure",
+      "name": "SelectiveDisclosure",
+      "file": "resources/StructureDefinition/SelectiveDisclosure--53611120.json",
+      "source": "fsh-generated/resources/StructureDefinition-SelectiveDisclosure.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/SmartHealthLink|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/SmartHealthLink",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "SmartHealthLink",
+      "name": "SmartHealthLink",
+      "file": "resources/StructureDefinition/SmartHealthLink--63e0c088.json",
+      "source": "fsh-generated/resources/StructureDefinition-SmartHealthLink.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/VaccineDetailsSD|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/VaccineDetailsSD",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "VaccineDetailsSD",
+      "name": "VaccineDetailsSD",
+      "file": "resources/StructureDefinition/VaccineDetailsSD--ef0e88fa.json",
+      "source": "fsh-generated/resources/StructureDefinition-VaccineDetailsSD.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/StructureDefinition/VerifiableHealthLinkPayload|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/VerifiableHealthLinkPayload",
+      "version": "0.1.0",
+      "resourceType": "StructureDefinition",
+      "id": "VerifiableHealthLinkPayload",
+      "name": "VerifiableHealthLinkPayload",
+      "file": "resources/StructureDefinition/VerifiableHealthLinkPayload--454cfa71.json",
+      "source": "fsh-generated/resources/StructureDefinition-VerifiableHealthLinkPayload.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus",
+      "version": "0.1.0",
+      "resourceType": "ValueSet",
+      "id": "DVCRelationshipStatus",
+      "name": "DVCRelationshipStatus",
+      "file": "resources/ValueSet/DVCRelationshipStatus--aa018986.json",
+      "source": "fsh-generated/resources/ValueSet-DVCRelationshipStatus.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/ValueSet/DVCVaccines|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/ValueSet/DVCVaccines",
+      "version": "0.1.0",
+      "resourceType": "ValueSet",
+      "id": "DVCVaccines",
+      "name": "DVCVaccines",
+      "file": "resources/ValueSet/DVCVaccines--265a5dc0.json",
+      "source": "fsh-generated/resources/ValueSet-DVCVaccines.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/ValueSet/DisclosureStatements|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/ValueSet/DisclosureStatements",
+      "version": "0.1.0",
+      "resourceType": "ValueSet",
+      "id": "DisclosureStatements",
+      "name": "DisclosureStatements",
+      "file": "resources/ValueSet/DisclosureStatements--ef6b17d1.json",
+      "source": "fsh-generated/resources/ValueSet-DisclosureStatements.json"
+    },
+    {
+      "key": "http://smart.who.int/trust-phw/ValueSet/HL.TYPE|0.1.0",
+      "canonical": "http://smart.who.int/trust-phw/ValueSet/HL.TYPE",
+      "version": "0.1.0",
+      "resourceType": "ValueSet",
+      "id": "HL.TYPE",
+      "name": "HL_TYPE",
+      "file": "resources/ValueSet/HL.TYPE--4ccbb222.json",
+      "source": "fsh-generated/resources/ValueSet-HL.TYPE.json"
+    }
+  ]
+}
