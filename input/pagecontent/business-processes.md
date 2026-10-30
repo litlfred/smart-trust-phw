@@ -226,3 +226,56 @@ The consent path follows consent rules 1, 2 and 4 under process A. An agreement 
 | `PHW.H.5` | Data Provider (decides) | Record the revocation or suspension | Process G |
 
 A withdrawn Consent needs no step in H: the person sets `status` to `inactive` (`PHW.A.4`), and `PHW.F.8` then finds no active Consent. A VHL or HCERT QR code cannot be revoked on its own. It expires (`exp`, claim key 4), and the VHL Sharer can stop serving the link.
+
+### Verifiable Health Link Requests under an Existing Data Sharing Agreement
+
+The VHL Sharer is the organisation or system that holds the documents. It may already have a data sharing agreement with the organisation or application that receives a VHL. When that receiver resolves the link (`[ITI-YY5]` Retrieve Manifest, then `[ITI-68]`), the Sharer decides the request under that agreement. It uses the same decision as process F, audits as process G does, and revokes as process H does. The owner set this case on 2026-10-30 (20:01Z and 20:04Z):
+
+* **The link carries no agreement.** The VHL payload has no reference to an agreement and needs none. The person who shares the link does not bind the receiver to anything.
+* **The agreement is found from the receiver's verified identity** (option A). The Sharer authenticates the receiver with the VHL option in use, then maps that identity to the agreement(s) it holds with that receiver. No token naming the agreement is required.
+* **No verified identity, or no agreement: the normal VHL rules govern**, as in process C.
+
+| # | Process Name | Process ID | Objectives |
+| --- | --- | --- | --- |
+| I | Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement | PHW.I | Authenticate the VHL Receiver (`[ITI-YY5]`), find the agreement from its verified identity, decide under the agreement (process F), and record an IHE ATNA audit event (`[ITI-20]`) that cites the agreement. |
+
+#### I. Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement
+
+* **Process ID**: `PHW.I`
+* **BPMN Source**: `input/business-processes/PHW.I.bpmn`
+* **Objective**: Decide a VHL Receiver's `[ITI-YY5]` request under the data sharing agreement the VHL Sharer already holds with that receiver, and audit it with IHE ATNA. Trust-anchor neutral, with no IUA claim.
+
+<figure style="width:100%">
+  <img src="PHW.I.svg" alt="Process I — Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement (VHL [ITI-YY5], [ITI-YY2], ATNA [ITI-20])" style="width:100%; max-width:1100px;" />
+</figure>
+
+| Activity ID | Lane / Actor | Task Name | IHE VHL / ATNA transaction, standard and section |
+| --- | --- | --- | --- |
+| `PHW.I.1` | VHL Receiver | Send Retrieve Manifest authenticated by the VHL option in use `[ITI-YY5]` | **`[ITI-YY5]`**, with one of: HTTP Message Signatures, RFC 9421 (ITI-YY5 §2:3.YY5.4.1.3, §2:3.YY5.5.2; Sign Manifest Request Option, Vol 1 §1:XX.2.1); Verifiable Credential Option (ITI-YY5 §2:3.YY5.4.1.5); OAuth with SSRAA Option (ITI-YY5 §2:3.YY5.4.1.4, §2:3.YY5.5.3), which **needs owner approval** |
+| `PHW.I.2` | VHL Sharer | Authenticate the receiver against the trust list `[ITI-YY5]` | ITI-YY5 §2:3.YY5.4.1.7, step 2 |
+| `PHW.I.3` | Trust Anchor (GDHCN or another anchor) | Return receiver key `[ITI-YY2]` Retrieve Trust List with DID | **`[ITI-YY2]`** (`IHE.VHL.TrustAnchor`) |
+| `PHW.I.4` | VHL Sharer | Look up the data sharing agreement(s) held with this verified receiver | Verified identity (`keyid`, VC issuer DID, or SSRAA `client_id`) mapped to agreement fixed-version URL(s): the same configuration as `PHW.D.6`. **Open point** below |
+| `PHW.I.5` | VHL Sharer | Decide under the agreement (process F) | Process F, plus VHL's own checks in ITI-YY5 §2:3.YY5.4.1.7, step 3 |
+| `PHW.I.6` | VHL Sharer | Return manifest and documents `[ITI-YY5]` / `[ITI-68]` | **`[ITI-YY5]`** `200 OK`; **`[ITI-68]`** (MHD Document Responder, Vol 1 §1:XX.3) |
+| `PHW.I.7` | VHL Sharer | Refuse with OperationOutcome `[ITI-YY5]` (deny or unknown) | **`[ITI-YY5]`** `403 Forbidden` |
+| `PHW.I.8` | VHL Sharer | Apply the normal VHL rules (no agreement applies) | Unauthenticated: `401` (ITI-YY5 §2:3.YY5.4.1.7). Verified receiver, no agreement: process C from `PHW.C.5` |
+| `PHW.I.9` | VHL Sharer | Send ATNA audit event citing the agreement `[ITI-20]` Record Audit Event | **`[ITI-20]`** (IHE ATNA, Final Text; ITI TF-2: 3.20, cited from standing knowledge); grouping per VHL Vol 1 §1:XX.3, Table XX.3-1, and §1:XX.6.1 |
+| `PHW.I.10` | ATNA Audit Record Repository | Store audit event `[ITI-20]` | **`[ITI-20]`** |
+| `PHW.I.11` | VHL Receiver | Process documents or refusal `[ITI-YY5]` response | **`[ITI-YY5]`** consumer (`IHE.VHL.VHLReceiver`) |
+
+**Which VHL options identify the receiver.** VHL 1.0.0-comment names three authentication options for `[ITI-YY5]`. The table cites the IHE/ITI.VHL source at commit `48201473`, as snapshotted in litlfred/smart-trust-tools `library/`; the published 1.0.0-comment text has not been compared with it.
+
+| Option | VHL section | Identity the Sharer verifies | Status |
+| --- | --- | --- | --- |
+| HTTP Message Signatures (RFC 9421) | ITI-YY5 §2:3.YY5.4.1.3, §2:3.YY5.5.2; Vol 1 §1:XX.2.1 Sign Manifest Request Option | `keyid` in `Signature-Input`, resolved in the trust list | RFC 9421 is a final IETF standard |
+| Verifiable Credential Option | ITI-YY5 §2:3.YY5.4.1.5; Vol 1 §1:XX.2 | The DID URL in `proof.verificationMethod` of a self-issued W3C VC with a `DataIntegrityProof` | W3C VC 2.0 and Data Integrity 1.0 |
+| OAuth with SSRAA Option | ITI-YY5 §2:3.YY5.4.1.4, §2:3.YY5.5.3 | The `client_id` from SSRAA (UDAP) registration, and an `x5c` certificate chain | SSRAA is the HL7 UDAP Security IG. **UDAP is not approved**, so this option needs owner approval. VHL has no plain-OAuth option. The RFC 9396 route of process E is not a VHL option. |
+
+**Audit.** Once an agreement applies, `PHW.I.9` records an IHE ATNA audit event (`[ITI-20]` Record Audit Event). It cites the agreement's fixed-version URL, the receiver, the purpose of use, and the documents released (or the refusal). This follows the VHL profile's own ATNA grouping: Vol 1 §1:XX.3 requires the VHL Sharer and the VHL Receiver to be grouped with an ATNA Secure Node or Secure Application for `[ITI-YY5]`, and §1:XX.6.1 gives that grouping its audit logging. VHL itself says the Sharer SHOULD log access (ITI-YY5 §2:3.YY5.5.6) and MAY record the Audit Event – Accessed Health Data (ITI-YY5 §2:3.YY5.4.1.7). Under an agreement, the event is always recorded. **IHE BALP needs owner approval** (Trial Implementation). The PROV-O record of process G (`PHW.G.1`) cites the same agreement URL, so the ATNA log and the PROV log agree.
+
+**Open points (owner):**
+
+1. **The lookup has no standard element.** No existing VHL, OAuth or VC element maps a verified receiver to an agreement. The mapping is the Sharer's own configuration, keyed by the agreement's fixed-version URL, the same configuration as `PHW.D.6`. No field is invented.
+2. **Several agreements with one receiver.** This is not decided. The Sharer may hold more than one agreement with the same receiver, and process I does not say which one applies, or whether all must permit.
+3. **Purpose of use in the audit event.** `[ITI-YY5]` carries a purpose only in the SSRAA option (the `hl7-b2b` extension). Otherwise the purpose comes from the agreement, or from the PCF Consent recorded at `[ITI-YY3]` (`Consent.provision.purpose`). Which one the event records is open.
+4. **Possible ballot comment.** The VHL Verifiable Credential Option example uses `issuanceDate` and `expirationDate`, which are VC 1.1 terms. VC 2.0 uses `validFrom` and `validUntil`.
