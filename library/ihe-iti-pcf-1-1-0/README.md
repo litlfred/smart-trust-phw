@@ -3,7 +3,7 @@
 
 ingested source material — attributed to its document, not folio content
 
-Held in the library [`smart-trust-phw/library/`](../) as `ihe-iti-pcf-1-1-0`.
+Held in the library [`smart-trust-phw/library/`](../README.md) as `ihe-iti-pcf-1-1-0`.
 
 | | |
 |---|---|
