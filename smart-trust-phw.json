@@ -88,9 +88,7 @@
       "description": "L1 normative specification snapshots materialized for smart-trust-phw: IHE ITI Privacy Consent on FHIR (PCF) 1.1.0 (`ihe-iti-pcf-1-1-0`, CC BY 4.0) and IHE ITI Verifiable Health Links (VHL) 1.0.0-comment (`ihe-iti-vhl-1-0-0-comment`, CC BY 4.0). Every knowledge-graph reference to these upstream IHE specifications resolves through here, and `check:materialized-fixity` verifies their SHA-256 digests against `catalogue/`. Bean sl5v.",
       "graphTypologies": [
         "library"
-      ],
-      "readOnly": true,
-      "readOnlyBasis": "Materialized specification snapshots of upstream IHE ITI Technical Framework supplements (CC BY 4.0); `check:materialized-fixity` verifies their SHA-256 digests against `catalogue/`."
+      ]
     },
     {
       "id": "smart-trust-phw-catalogue",

@@ -3,7 +3,7 @@
 
 ingested source material — attributed to its document, not folio content
 
-Held in the library [`smart-trust-phw/library/`](../) as `ihe-iti-vhl-1-0-0-comment`.
+Held in the library [`smart-trust-phw/library/`](../README.md) as `ihe-iti-vhl-1-0-0-comment`.
 
 | | |
 |---|---|
