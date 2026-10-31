@@ -101,6 +101,18 @@
       ],
       "readOnly": true,
       "readOnlyBasis": "Records of content materialized from IHE ITI Technical Framework supplements (`profiles.ihe.net`); `check:materialized-fixity` verifies the SHA-256 digests recorded here against `library/`."
+    },
+    {
+      "id": "qa",
+      "path": "test/results/",
+      "storage": {
+        "branch": "cat/cat-harness/qa-reports",
+        "keyedBy": "commit"
+      },
+      "description": "What QA produced about THIS instance: today the `qa-results/v1` L1-completeness verdict `check-l1-complete.ts` writes for each entry in `library/` (`library-qa/<entry>.qa-results.json`). Derived script output, so it is kept on the `qa-reports` branch and not committed on main, as in every other instance that declares `qa`. Undeclared, the verdicts landed in an unmounted path, so `uml:overview:check` in the index read them as committed artefacts that moved (folio-assistant#2781).",
+      "graphTypologies": [
+        "qa"
+      ]
     }
   ],
   "avatar": {
