@@ -98,6 +98,8 @@ pages:
       title: User Scenarios
     business-processes.md:
       title: Business Processes
+    example-pilgrimage.md:
+      title: "Worked Example: IPS Pilgrimage (Hajj)"
     dictionary.md:
       title: Data Dictionary
     decision-logic.md:
@@ -158,6 +160,7 @@ menu:
     Generic Personas: personas.html
     User Scenarios: scenarios.html
     Business Processes: business-processes.html
+    "Worked Example: IPS Pilgrimage (Hajj)": example-pilgrimage.html
     Data Dictionary: dictionary.html
     Decision-support Logic: decision-logic.html
     Indicator and Performance Metrics: indicators.html
