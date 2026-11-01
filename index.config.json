@@ -241,6 +241,7 @@
         "input/data/",
         "input/decision-logic/",
         "input/dictionary/",
+        "input/dmn/",
         "input/examples/",
         "input/extensions/",
         "input/fsh/",

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PHW.DT.AgreementAccess: the DEFAULT rule for combining the results of
+  several data sharing agreements (and Consents) that are in force for one
+  request.
+
+  Owner decision D, card Q-DRAIN-4, 2026-11-01 07:54Z, with the 07:54Z
+  addition ("policy should be decided via DMN table") and the 07:55Z addition
+  ("D is default rule that can be overridden"). Used by process F
+  (PHW.F.10) and so by process I (PHW.I.5) and process E (PHW.E.3).
+
+  OMG DMN 1.5 (namespace https://www.omg.org/spec/DMN/20240513/MODEL/), the
+  version of the WHO SMART DAK decision tables (smart-base `extract-dak`).
+  Expressions are FEEL. Annotation columns `Annotations` and `Reference(s)`
+  follow the DAK decision-table layout.
+
+  One row of `policyResults` per agreement version or Consent version that
+  the Sharer evaluated. A row's `outcome` is "not-applicable" when the
+  policy's target, purpose or assignee does not cover the request; otherwise
+  it is the result of `decide()` for that policy alone: "permit", "deny" or
+  "unknown". A row's `conflict` is the policy's ODRL 2.2 `odrl:conflict`
+  value ("perm", "prohibit" or "invalid"), or null when the policy declares
+  none.
+
+  Override points:
+  1. The policies: when every applicable policy declares the same
+     `odrl:conflict`, that strategy is used. Undeclared counts as "prohibit"
+     (the owner's default). Different strategies among the applicable policies
+     give "invalid", following ODRL 2.2 (a merged policy with several conflict
+     values is void when its rules conflict).
+  2. The deployer: decision PHW.DT.AgreementAccess.Outcome may be replaced
+     by a jurisdiction's or Sharer's own DMN decision with the same input
+     (`policyResults`) and the same output (`outcome`, one of "deny",
+     "unknown", "permit", "not-applicable"). The replacement's location is
+     recorded in the ATNA and PROV records.
+-->
+<dmn:definitions xmlns:dmn="https://www.omg.org/spec/DMN/20240513/MODEL/"
+                 id="PHW.DT.AgreementAccess"
+                 name="Access decision under data sharing agreements"
+                 namespace="http://smart.who.int/trust-phw/dmn/PHW.DT.AgreementAccess"
+                 expressionLanguage="https://www.omg.org/spec/DMN/20240513/FEEL/"
+                 typeLanguage="https://www.omg.org/spec/DMN/20240513/FEEL/">
+
+  <dmn:itemDefinition id="PHW.DT.AgreementAccess.tOutcome" name="tOutcome">
+    <dmn:typeRef>string</dmn:typeRef>
+    <dmn:allowedValues>
+      <dmn:text>"deny","unknown","permit","not-applicable"</dmn:text>
+    </dmn:allowedValues>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="PHW.DT.AgreementAccess.tConflict" name="tConflict">
+    <dmn:typeRef>string</dmn:typeRef>
+    <dmn:allowedValues>
+      <dmn:text>"perm","prohibit","invalid"</dmn:text>
+    </dmn:allowedValues>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="PHW.DT.AgreementAccess.tPolicyResult" name="tPolicyResult">
+    <dmn:itemComponent id="PHW.DT.AgreementAccess.tPolicyResult.policy" name="policy">
+      <dmn:description>The fixed-version URL of the agreement (its ODRL `uid`), or the Consent's URL with `Consent.meta.versionId`.</dmn:description>
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="PHW.DT.AgreementAccess.tPolicyResult.outcome" name="outcome">
+      <dmn:description>"not-applicable" when the policy's target, purpose or assignee does not cover the request; otherwise `decide()` for this policy alone.</dmn:description>
+      <dmn:typeRef>tOutcome</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="PHW.DT.AgreementAccess.tPolicyResult.conflict" name="conflict" isCollection="false">
+      <dmn:description>The policy's ODRL 2.2 `odrl:conflict` value, or null when it declares none.</dmn:description>
+      <dmn:typeRef>tConflict</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="PHW.DT.AgreementAccess.tPolicyResults" name="tPolicyResults" isCollection="true">
+    <dmn:typeRef>tPolicyResult</dmn:typeRef>
+  </dmn:itemDefinition>
+
+  <dmn:inputData id="PHW.DT.AgreementAccess.PolicyResults" name="policyResults">
+    <dmn:description>One row per agreement or Consent the Sharer evaluated for this request (PHW.I.4, PHW.F.10).</dmn:description>
+    <dmn:variable id="PHW.DT.AgreementAccess.PolicyResults.var" name="policyResults" typeRef="tPolicyResults" />
+  </dmn:inputData>
+
+  <dmn:decision id="PHW.DT.AgreementAccess.Applicable" name="applicableResults">
+    <dmn:description>The rows whose policy covers the request. A policy that does not apply is left out; it is not a deny.</dmn:description>
+    <dmn:variable id="PHW.DT.AgreementAccess.Applicable.var" name="applicableResults" typeRef="tPolicyResults" />
+    <dmn:informationRequirement id="PHW.DT.AgreementAccess.Applicable.req">
+      <dmn:requiredInput href="#PHW.DT.AgreementAccess.PolicyResults" />
+    </dmn:informationRequirement>
+    <dmn:literalExpression id="PHW.DT.AgreementAccess.Applicable.expr">
+      <dmn:text>policyResults[item.outcome != "not-applicable"]</dmn:text>
+    </dmn:literalExpression>
+  </dmn:decision>
+
+  <dmn:decision id="PHW.DT.AgreementAccess.Strategy" name="conflictStrategy">
+    <dmn:description>Override point 1. The ODRL 2.2 conflict strategy in force: the one every applicable policy declares (an undeclared one counts as "prohibit", the owner's default D); "invalid" when they declare different ones; null when none applies.</dmn:description>
+    <dmn:variable id="PHW.DT.AgreementAccess.Strategy.var" name="conflictStrategy" typeRef="tConflict" />
+    <dmn:informationRequirement id="PHW.DT.AgreementAccess.Strategy.req">
+      <dmn:requiredDecision href="#PHW.DT.AgreementAccess.Applicable" />
+    </dmn:informationRequirement>
+    <dmn:literalExpression id="PHW.DT.AgreementAccess.Strategy.expr">
+      <dmn:text>if count(applicableResults) = 0 then null
+else if count(distinct values(for r in applicableResults return if r.conflict = null then "prohibit" else r.conflict)) = 1
+then (for r in applicableResults return if r.conflict = null then "prohibit" else r.conflict)[1]
+else "invalid"</dmn:text>
+    </dmn:literalExpression>
+  </dmn:decision>
+
+  <dmn:decision id="PHW.DT.AgreementAccess.Outcome" name="outcome">
+    <dmn:description>Override point 2: the default decision, which a deployer may replace with its own DMN decision taking `policyResults` and returning `outcome`. Run once per request.</dmn:description>
+    <dmn:question>Under the agreements and Consents in force with this receiver, is this request permitted?</dmn:question>
+    <dmn:allowedAnswers>"deny", "unknown", "permit" or "not-applicable"</dmn:allowedAnswers>
+    <dmn:variable id="PHW.DT.AgreementAccess.Outcome.var" name="outcome" typeRef="tOutcome" />
+    <dmn:informationRequirement id="PHW.DT.AgreementAccess.Outcome.req1">
+      <dmn:requiredDecision href="#PHW.DT.AgreementAccess.Applicable" />
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="PHW.DT.AgreementAccess.Outcome.req2">
+      <dmn:requiredDecision href="#PHW.DT.AgreementAccess.Strategy" />
+    </dmn:informationRequirement>
+    <dmn:usingTask href="../business-processes/PHW.F.bpmn#PHW.F.10" />
+    <dmn:usingTask href="../business-processes/PHW.I.bpmn#PHW.I.5" />
+    <dmn:decisionTable id="PHW.DT.AgreementAccess.Table" hitPolicy="PRIORITY" outputLabel="outcome">
+      <dmn:input id="PHW.DT.AgreementAccess.In.AnyApplicable" label="Any applicable policy">
+        <dmn:inputExpression id="PHW.DT.AgreementAccess.InExpr.AnyApplicable" typeRef="boolean">
+          <dmn:text>count(applicableResults) &gt; 0</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="PHW.DT.AgreementAccess.In.AnyDeny" label="Any applicable policy denies">
+        <dmn:inputExpression id="PHW.DT.AgreementAccess.InExpr.AnyDeny" typeRef="boolean">
+          <dmn:text>some r in applicableResults satisfies r.outcome = "deny"</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="PHW.DT.AgreementAccess.In.AnyUnknown" label="Any applicable policy unknown">
+        <dmn:inputExpression id="PHW.DT.AgreementAccess.InExpr.AnyUnknown" typeRef="boolean">
+          <dmn:text>some r in applicableResults satisfies r.outcome = "unknown"</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="PHW.DT.AgreementAccess.In.AnyPermit" label="Any applicable policy permits">
+        <dmn:inputExpression id="PHW.DT.AgreementAccess.InExpr.AnyPermit" typeRef="boolean">
+          <dmn:text>some r in applicableResults satisfies r.outcome = "permit"</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="PHW.DT.AgreementAccess.In.Strategy" label="ODRL conflict strategy">
+        <dmn:inputExpression id="PHW.DT.AgreementAccess.InExpr.Strategy" typeRef="tConflict">
+          <dmn:text>conflictStrategy</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="PHW.DT.AgreementAccess.Out.Outcome" name="outcome" label="Outcome" typeRef="tOutcome">
+        <dmn:outputValues>
+          <dmn:text>"deny","unknown","permit","not-applicable"</dmn:text>
+        </dmn:outputValues>
+      </dmn:output>
+      <dmn:annotation name="Annotations" />
+      <dmn:annotation name="Reference(s)" />
+
+      <dmn:rule id="PHW.DT.AgreementAccess.Rule.ProhibitWins">
+        <dmn:description>A prohibition applies and the strategy is prohibit (the default) or invalid.</dmn:description>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R1.1"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R1.2"><dmn:text>true</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R1.3"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R1.4"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R1.5"><dmn:text>"prohibit","invalid"</dmn:text></dmn:inputEntry>
+        <dmn:outputEntry id="PHW.DT.AgreementAccess.R1.out"><dmn:text>"deny"</dmn:text></dmn:outputEntry>
+        <dmn:annotationEntry><dmn:text>prohibit: the prohibition overrides every permission. invalid: if another policy permits, the rules conflict and the merged policy is void, so nothing is permitted; if none permits, the deny stands. Refused with 403 at PHW.I.7.</dmn:text></dmn:annotationEntry>
+        <dmn:annotationEntry><dmn:text>W3C ODRL 2.2 Information Model, Policy Conflict Strategy (#conflict); owner decision D, Q-DRAIN-4, 2026-11-01 07:54Z</dmn:text></dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="PHW.DT.AgreementAccess.Rule.PermDenyAlone">
+        <dmn:description>Strategy perm, a prohibition applies, and no policy permits.</dmn:description>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R2.1"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R2.2"><dmn:text>true</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R2.3"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R2.4"><dmn:text>false</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R2.5"><dmn:text>"perm"</dmn:text></dmn:inputEntry>
+        <dmn:outputEntry id="PHW.DT.AgreementAccess.R2.out"><dmn:text>"deny"</dmn:text></dmn:outputEntry>
+        <dmn:annotationEntry><dmn:text>perm lets a permission override a prohibition, but there is no permission here to prefer.</dmn:text></dmn:annotationEntry>
+        <dmn:annotationEntry><dmn:text>W3C ODRL 2.2 Information Model, Policy Conflict Strategy (#conflict)</dmn:text></dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="PHW.DT.AgreementAccess.Rule.Unknown">
+        <dmn:description>An applicable policy could not be decided.</dmn:description>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R3.1"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R3.2"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R3.3"><dmn:text>true</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R3.4"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R3.5"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:outputEntry id="PHW.DT.AgreementAccess.R3.out"><dmn:text>"unknown"</dmn:text></dmn:outputEntry>
+        <dmn:annotationEntry><dmn:text>Unknown is never permit: the undecided policy may hold a prohibition, or duties the Sharer cannot check. Refused with 403 at PHW.I.7. Loses to a deny by priority.</dmn:text></dmn:annotationEntry>
+        <dmn:annotationEntry><dmn:text>fhir-harness pcf-consent §3 (decide(): unknown is never permit); process F</dmn:text></dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="PHW.DT.AgreementAccess.Rule.Permit">
+        <dmn:description>At least one applicable policy permits.</dmn:description>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R4.1"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R4.2"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R4.3"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R4.4"><dmn:text>true</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R4.5"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:outputEntry id="PHW.DT.AgreementAccess.R4.out"><dmn:text>"permit"</dmn:text></dmn:outputEntry>
+        <dmn:annotationEntry><dmn:text>Wins only when no rule of higher priority matches: no deny (or strategy perm) and no unknown. The duties of every permitting policy apply.</dmn:text></dmn:annotationEntry>
+        <dmn:annotationEntry><dmn:text>Owner decision D, Q-DRAIN-4, 2026-11-01 07:54Z</dmn:text></dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="PHW.DT.AgreementAccess.Rule.NotApplicable">
+        <dmn:description>No policy covers the request.</dmn:description>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R5.1"><dmn:text>false</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R5.2"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R5.3"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R5.4"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:inputEntry id="PHW.DT.AgreementAccess.R5.5"><dmn:text>-</dmn:text></dmn:inputEntry>
+        <dmn:outputEntry id="PHW.DT.AgreementAccess.R5.out"><dmn:text>"not-applicable"</dmn:text></dmn:outputEntry>
+        <dmn:annotationEntry><dmn:text>No agreement applies, which is not a deny: the normal VHL rules govern (PHW.I.8; process C from PHW.C.5).</dmn:text></dmn:annotationEntry>
+        <dmn:annotationEntry><dmn:text>Owner rulings 2026-10-30 20:04Z and 2026-11-01 07:54Z</dmn:text></dmn:annotationEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
+  </dmn:decision>
+
+  <dmn:decision id="PHW.DT.AgreementAccess.Permitting" name="permittingPolicies">
+    <dmn:description>The policies whose duties apply when the outcome is permit, and which the ATNA event and the PROV-O record name as permitting. Not part of the replaceable decision.</dmn:description>
+    <dmn:variable id="PHW.DT.AgreementAccess.Permitting.var" name="permittingPolicies" />
+    <dmn:informationRequirement id="PHW.DT.AgreementAccess.Permitting.req">
+      <dmn:requiredDecision href="#PHW.DT.AgreementAccess.Applicable" />
+    </dmn:informationRequirement>
+    <dmn:literalExpression id="PHW.DT.AgreementAccess.Permitting.expr">
+      <dmn:text>applicableResults[item.outcome = "permit"].policy</dmn:text>
+    </dmn:literalExpression>
+  </dmn:decision>
+
+  <dmn:decision id="PHW.DT.AgreementAccess.Evaluated" name="evaluatedPolicies">
+    <dmn:description>Every policy evaluated, applicable or not, which the ATNA event and the PROV-O record cite.</dmn:description>
+    <dmn:variable id="PHW.DT.AgreementAccess.Evaluated.var" name="evaluatedPolicies" />
+    <dmn:informationRequirement id="PHW.DT.AgreementAccess.Evaluated.req">
+      <dmn:requiredInput href="#PHW.DT.AgreementAccess.PolicyResults" />
+    </dmn:informationRequirement>
+    <dmn:literalExpression id="PHW.DT.AgreementAccess.Evaluated.expr">
+      <dmn:text>policyResults.policy</dmn:text>
+    </dmn:literalExpression>
+  </dmn:decision>
+</dmn:definitions>

@@ -167,7 +167,7 @@ In the tables, † marks a section number cited from standing knowledge and not 
 
 * **Process ID**: `PHW.F`
 * **BPMN Source**: `input/business-processes/PHW.F.bpmn`
-* **Objective**: Decide one request under an agreement: `permit`, `deny` or `unknown`. Unknown is never permit. Processes E and I call it.
+* **Objective**: Decide one request under every agreement or Consent that applies to it: `permit`, `deny` or `unknown`. Unknown is never permit. Each policy is decided alone, then the results are combined by the DMN decision [`PHW.DT.AgreementAccess`](#combining-several-agreements-dmn-phwdtagreementaccess). Processes E and I call it.
 
 <figure style="width:100%">
   <img src="PHW.F.svg" alt="Process F — Access Decision under a Data Sharing Agreement (DSA P11)" style="width:100%; max-width:1100px;" />
@@ -175,7 +175,7 @@ In the tables, † marks a section number cited from standing knowledge and not 
 
 | Activity ID | Lane / Actor | Task Name | Standard and section |
 | --- | --- | --- | --- |
-| `PHW.F.1` | Policy Decision Point (`permits()`) | Collect inputs: verified requester, agreement version, grant, request | Grant: W3C VC 2.0 `issuer` §4.7, `credentialSubject` §4.8, validity §4.9, `credentialStatus` §4.10, `relatedResource` §5.3; principal: RFC 8693 `act` §4.1; purpose: HL7 PurposeOfUse |
+| `PHW.F.1` | Policy Decision Point (`permits()`) | Collect inputs: verified requester, agreement version, grant, request | Agreement versions: every one in force with the requester (`PHW.D.6`, `PHW.I.4`); a request MAY name some of them (RFC 9396 `authorization_details[].identifier` §2.2, or SSRAA `consent_policy` §5.2.1.1), which narrows the permissions it acts under. Grant: W3C VC 2.0 `issuer` §4.7, `credentialSubject` §4.8, validity §4.9, `credentialStatus` §4.10, `relatedResource` §5.3; principal: RFC 8693 `act` §4.1; purpose: HL7 PurposeOfUse |
 | `PHW.F.2` | Policy Decision Point | Verify the grant with smart-trust-tools against the accepted trust anchor | litlfred/smart-trust-tools |
 | `PHW.F.3` | Trust Anchor (GDHCN or another accepted anchor) | Return trust list (DID document, X.509 roots or local list) | DID Core 1.0 + `did:web`; RFC 5280† |
 | `PHW.F.4` | Policy Decision Point | Check grant status in the Bitstring Status List | W3C Bitstring Status List §2.1 (`revocation`, `suspension`) |
@@ -184,10 +184,53 @@ In the tables, † marks a section number cited from standing knowledge and not 
 | `PHW.F.7` | Agreement Publisher (DCAT catalogue) | Return DCAT distribution with spdx:checksum and status | DCAT 3 §6.8, §6.8.11, §6.8.20, §6.17; status §6.4.30 (RDF term unverified); versions §6.4.24, §11 |
 | `PHW.F.8` | Policy Decision Point | Search active Consents for this agreement `[ITI-108]` Access Consent: Search | **`[ITI-108]`**. A Consent counts when `Consent.policy.uri` equals the ODRL `uid`, or names an earlier version reached by `dcat:previousVersion` across narrowing amendments (fhir-harness#227, #228) |
 | `PHW.F.9` | PCF Consent Registry | Return matching Consents `[ITI-108]` Access Consent | **`[ITI-108]`** responder (`IHE.PCF.consentRegistry`) |
-| `PHW.F.10` | Policy Decision Point | Evaluate `permits()`: agreement + Consents + default policy | ODRL 2.2; `consentToOdrl()`; any deny wins; document-only: the configuration from `PHW.D.3` |
+| `PHW.F.10` | Policy Decision Point | Evaluate `permits()` per applicable policy; combine with DMN `PHW.DT.AgreementAccess` | ODRL 2.2; `consentToOdrl()`; document-only: the configuration from `PHW.D.3`. One result per agreement or Consent, combined by OMG DMN 1.5 decision [`PHW.DT.AgreementAccess`](#combining-several-agreements-dmn-phwdtagreementaccess) (`input/dmn/PHW.DT.AgreementAccess.dmn`; the BPMN task's `implementation` is the DMN 1.5 namespace) |
 | `PHW.F.11` | Policy Enforcement Point | Receive permit, deny or unknown; hand the decision to audit | Process G |
 
 The consent path follows consent rules 1, 2 and 4 under process A. An agreement carries `odrl:obtainConsent` only when consent is its legal basis. The harness's non-strict mode, which allows `unknown` and logs it, must not be used on data gated by an agreement.
+
+##### Combining several agreements (DMN `PHW.DT.AgreementAccess`)
+
+Several agreements, and several Consents, can be in force for one request at the same time. The owner decided how they combine on 2026-11-01 (decision D, card Q-DRAIN-4, 07:54Z), asked for the rule to be a DMN decision table (07:54Z), and made it a default that can be overridden (07:55Z).
+
+* **Only applicable policies count.** An agreement or Consent counts only if its target, purpose and assignee cover the request. Any other is **not applicable**, which is not a deny.
+* **Default: prohibit wins.** Among the applicable policies, the request is permitted if at least one permits and none prohibits. This is ODRL 2.2's own conflict strategy `odrl:prohibit` ("Prohibitions take preference over permissions"). An `unknown` is never permit.
+* **Duties.** The duties of every permitting agreement apply. A consent-based agreement still needs an active PCF Consent (`PHW.F.8`).
+* **Audit.** The ATNA event (`PHW.G.3`, `PHW.I.9`) and the PROV-O record (`PHW.G.1`) cite every agreement and Consent evaluated, and which of them permitted.
+
+The rule is the OMG DMN 1.5 decision `PHW.DT.AgreementAccess` in `input/dmn/PHW.DT.AgreementAccess.dmn`. DMN 1.5 (namespace `https://www.omg.org/spec/DMN/20240513/MODEL/`) is the version of the WHO SMART DAK decision tables, and the expressions are FEEL. Its `usingTask` links it to `PHW.F.10` and `PHW.I.5`. Its one input, `policyResults`, has one row per agreement or Consent evaluated:
+
+| Component | Type | Content |
+| --- | --- | --- |
+| `policy` | string | The agreement's fixed-version URL (its ODRL `uid`), or the Consent's URL with `Consent.meta.versionId` |
+| `outcome` | `"permit"`, `"deny"`, `"unknown"`, `"not-applicable"` | `not-applicable` when the policy's target, purpose or assignee does not cover the request; otherwise `decide()` for this policy alone |
+| `conflict` | `"perm"`, `"prohibit"`, `"invalid"`, or null | The policy's ODRL 2.2 `odrl:conflict`, or null when it declares none |
+
+Two FEEL literal expressions prepare the table: `applicableResults` = `policyResults[item.outcome != "not-applicable"]`, and `conflictStrategy`, the strategy in force (override 1 below). The decision table `outcome` then runs once per request, with hit policy **PRIORITY** and output values in the order `"deny"`, `"unknown"`, `"permit"`, `"not-applicable"`:
+
+| # | Any applicable | Any deny | Any unknown | Any permit | `conflictStrategy` | `outcome` | Annotation |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | – | true | – | – | `"prohibit"`, `"invalid"` | `"deny"` | Prohibition overrides permission. Under `invalid`, a permit and a deny conflict, so the merged policy is void and nothing is permitted. |
+| 2 | – | true | – | false | `"perm"` | `"deny"` | `perm` prefers a permission, but none permits. |
+| 3 | – | – | true | – | – | `"unknown"` | Unknown is never permit. |
+| 4 | – | – | – | true | – | `"permit"` | Wins only when rules 1 to 3 do not match. |
+| 5 | false | – | – | – | – | `"not-applicable"` | No agreement applies: normal VHL rules (`PHW.I.8`). |
+
+`deny` and `unknown` lead to `PHW.I.7` (403), `permit` to `PHW.I.6`, and `not-applicable` to `PHW.I.8`. Two more expressions, outside the table, give `evaluatedPolicies` (every `policy`) and `permittingPolicies` (the applicable ones that permitted) for the duties and the audit.
+
+**Why PRIORITY.** The owner's order (any deny, then any unknown, then any permit, then none applicable) is a ranking of outcomes, and PRIORITY is the DMN hit policy that returns the matching rule whose output comes first in the output's ordered `outputValues`. Each rule then states one condition, and the ranking resolves overlaps; for example, a request with a deny and an unknown matches rules 1 and 3, and `"deny"` wins. Rules with the same output never overlap (rules 1 and 2 differ in `conflictStrategy`), so the result does not depend on rule order. COLLECT was not used: its aggregators (`SUM`, `MIN`, `MAX`, `COUNT`) work on numbers, so the outcomes would have to be coded as numbers that no standard defines. FIRST would also work, but it hides the ranking in the rule order. Every combination of up to three policies, with every outcome and strategy, was checked against the owner's rule, and exactly one outcome results each time.
+
+**Why only one table.** Each row is decided by `decide()` for that policy alone (`PHW.F.10`, with the PCF Consent path of `PHW.F.8`), and applicability is a check of the ODRL target, purpose and assignee. Neither is a decision table, so there is no per-row DMN table. The DMN decision combines the rows once per request.
+
+**Override 1: the policies.** ODRL 2.2 lets each policy declare a conflict strategy with `odrl:conflict`: `odrl:perm` (permissions override prohibitions), `odrl:prohibit` (prohibitions override permissions) or `odrl:invalid` (the policy is void if any conflict is detected). These terms were checked against the ODRL 2.2 vocabulary and the pinned JSON-LD context (folio-assistant-core `scripts/test-fixtures/dsa-contexts/odrl-2.2.context.json`). When every applicable policy declares the same strategy, the table uses it. A policy that declares none counts as `prohibit`, the owner's default D. If the applicable policies declare different strategies, `conflictStrategy` is `invalid`. ODRL 2.2 says a policy with several conflict values (after a merge or inheritance) is void when its rules conflict (W3C ODRL Information Model 2.2, *Policy Conflict Strategy*). This IG treats the applicable policies of one request as merged. The only declaration that changes an outcome is `perm` declared by every applicable policy. ODRL's own default when nothing is declared is `invalid`, but the outcome is the same: with a conflict, `invalid` voids the policy and `prohibit` denies, and both are refused.
+
+**Override 2: the jurisdiction or Sharer.** A jurisdiction or a Sharer MAY replace the decision `outcome` with its own DMN decision. The replacement is well defined when it has the same contract:
+
+* **Input:** `policyResults`, as in the table above.
+* **Output:** `outcome`, one of `"deny"`, `"unknown"`, `"permit"`, `"not-applicable"`, with the same routing in process I.
+* **Fixed parts:** the replacement may not return `"permit"` when no row is `"permit"`, because unknown is never permit (process F). `evaluatedPolicies` and `permittingPolicies`, and so the duties and the audit, are not part of the replacement.
+
+The decision used, default or replacement, is recorded in the ATNA event and the PROV-O record by its DMN `namespace` and decision `id` and by its file's fixed-version URL and SHA-256. That is the same way an agreement is cited, since DMN 1.5 `definitions` has no version element of its own.
 
 #### G. Audit, Provenance and Duty Checks under a Data Sharing Agreement
 
@@ -238,10 +281,13 @@ The VHL Sharer is the organisation or system that holds the documents. It may al
 * **The link carries no agreement.** The VHL payload has no reference to an agreement and needs none. The person who shares the link does not bind the receiver to anything.
 * **The agreement is found from the receiver's verified identity** (option A). The Sharer authenticates the receiver with the VHL option in use, then maps that identity to the agreement(s) it holds with that receiver. No token naming the agreement is required.
 * **No verified identity, or no agreement: the normal VHL rules govern**, as in process C.
+* **Several agreements and Consents can be in force at once** (owner decision D, card Q-DRAIN-4, 2026-11-01 07:54Z). The Sharer evaluates every one held with the receiver. One whose target, purpose or assignee does not cover the request is not applicable, which is not a deny. The results are combined by the DMN decision [`PHW.DT.AgreementAccess`](#combining-several-agreements-dmn-phwdtagreementaccess). Its default is ODRL 2.2 `odrl:prohibit`: permit if at least one applicable policy permits and none prohibits. The policies' own `odrl:conflict`, or a deployer's replacement DMN decision, overrides that default (owner, 07:55Z).
+* **The receiver MAY name agreements.** With the OAuth with SSRAA option, the receiver can list one or more fixed-version URLs in `consent_policy` of the `hl7-b2b` extension (SSRAA §5.2.1.1, an optional array of policy URIs). On the server-to-server route of process E it can list them in `authorization_details[].identifier` (RFC 9396 §2.2). Naming narrows the permissions the receiver acts under, and never escapes another applicable agreement's prohibition. Naming is optional, so requests signed with HTTP Message Signatures, which have no field for it, still work. The Verifiable Credential Option's example credential has no field for it either (gap). W3C VC 2.0 `termsOfUse` would need a terms-of-use type that no checked standard defines, so this IG does not use it.
+* **Where Consents carry the policy, they are the policy.** In the [IPS Pilgrimage (Hajj) example](example-pilgrimage.html), the policy is coded in `Consent.policyRule`, so no separate agreement lookup is needed (owner, Q-DRAIN-5, 2026-11-01 07:44Z).
 
 | # | Process Name | Process ID | Objectives |
 | --- | --- | --- | --- |
-| I | Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement | PHW.I | Authenticate the VHL Receiver (`[ITI-YY5]`), find the agreement from its verified identity, decide under the agreement (process F), and record an IHE ATNA audit event (`[ITI-20]`) that cites the agreement. |
+| I | Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement | PHW.I | Authenticate the VHL Receiver (`[ITI-YY5]`), find the agreements and Consents in force from its verified identity, decide under every applicable one (process F, DMN `PHW.DT.AgreementAccess`), and record an IHE ATNA audit event (`[ITI-20]`) that cites every one evaluated. |
 
 #### I. Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement
 
@@ -258,12 +304,12 @@ The VHL Sharer is the organisation or system that holds the documents. It may al
 | `PHW.I.1` | VHL Receiver | Send Retrieve Manifest authenticated by the VHL option in use `[ITI-YY5]` | **`[ITI-YY5]`**, with one of: HTTP Message Signatures, RFC 9421 (ITI-YY5 §2:3.YY5.4.1.3, §2:3.YY5.5.2; Sign Manifest Request Option, Vol 1 §1:XX.2.1); Verifiable Credential Option (ITI-YY5 §2:3.YY5.4.1.5); OAuth with SSRAA Option (ITI-YY5 §2:3.YY5.4.1.4, §2:3.YY5.5.3; HL7 SSRAA §2, §3, §5.2), approved by the owner on 2026-10-30 |
 | `PHW.I.2` | VHL Sharer | Authenticate the receiver against the trust list `[ITI-YY5]` | ITI-YY5 §2:3.YY5.4.1.7, step 2; for SSRAA, the checks of ITI-YY5 §2:3.YY5.5.3 |
 | `PHW.I.3` | Trust Anchor (GDHCN or another anchor) | Return receiver key `[ITI-YY2]` Retrieve Trust List with DID | **`[ITI-YY2]`** (`IHE.VHL.TrustAnchor`) |
-| `PHW.I.4` | VHL Sharer | Look up the data sharing agreement(s) held with this verified receiver | Verified identity (`keyid`, VC issuer DID, or SSRAA `client_id` and certificate SAN URI, SSRAA §3.1, §3.4) mapped to agreement fixed-version URL(s): the same configuration as `PHW.D.6`. **Open point** below |
-| `PHW.I.5` | VHL Sharer | Decide under the agreement (process F) | Process F, plus VHL's own checks in ITI-YY5 §2:3.YY5.4.1.7, step 3 |
+| `PHW.I.4` | VHL Sharer | Find the agreements and Consents in force; mark which apply | Verified identity (`keyid`, VC issuer DID, or SSRAA `client_id` and certificate SAN URI, SSRAA §3.1, §3.4) mapped to the fixed-version URLs of **every** agreement held with this receiver: the same configuration as `PHW.D.6` (open point 1). Each is applicable only if its ODRL target, purpose and assignee cover the request; otherwise `not-applicable`, not a deny. Agreements the receiver names in SSRAA `consent_policy` (§5.2.1.1) narrow the permissions it acts under, never another agreement's prohibition. Where Consents carry the policy (`Consent.policyRule`), they are the policy and no lookup is needed. **Decided**, owner 2026-11-01 07:54Z |
+| `PHW.I.5` | VHL Sharer | Decide under every applicable agreement (process F) | Process F for each applicable agreement or Consent, combined by DMN [`PHW.DT.AgreementAccess`](#combining-several-agreements-dmn-phwdtagreementaccess) (default `odrl:prohibit`; overridable). The duties of every permitting agreement apply. Plus VHL's own checks in ITI-YY5 §2:3.YY5.4.1.7, step 3 |
 | `PHW.I.6` | VHL Sharer | Return manifest and documents `[ITI-YY5]` / `[ITI-68]` | **`[ITI-YY5]`** `200 OK`; **`[ITI-68]`** (MHD Document Responder, Vol 1 §1:XX.3) |
 | `PHW.I.7` | VHL Sharer | Refuse with OperationOutcome `[ITI-YY5]` (deny or unknown) | **`[ITI-YY5]`** `403 Forbidden` |
 | `PHW.I.8` | VHL Sharer | Apply the normal VHL rules (no agreement applies) | Unauthenticated: `401` (ITI-YY5 §2:3.YY5.4.1.7). Verified receiver, no agreement: process C from `PHW.C.5` |
-| `PHW.I.9` | VHL Sharer | Send ATNA audit event citing the agreement `[ITI-20]` Record Audit Event | **`[ITI-20]`** (IHE ATNA, Final Text; ITI TF-2: 3.20, cited from standing knowledge); grouping per VHL Vol 1 §1:XX.3, Table XX.3-1, and §1:XX.6.1 |
+| `PHW.I.9` | VHL Sharer | Send ATNA audit event citing the agreement `[ITI-20]` Record Audit Event | Cites every agreement and Consent evaluated, which permitted, and the combining DMN decision used. **`[ITI-20]`** (IHE ATNA, Final Text; ITI TF-2: 3.20, cited from standing knowledge); grouping per VHL Vol 1 §1:XX.3, Table XX.3-1, and §1:XX.6.1 |
 | `PHW.I.10` | ATNA Audit Record Repository | Store audit event `[ITI-20]` | **`[ITI-20]`** |
 | `PHW.I.11` | VHL Receiver | Process documents or refusal `[ITI-YY5]` response | **`[ITI-YY5]`** consumer (`IHE.VHL.VHLReceiver`) |
 
@@ -275,14 +321,14 @@ The VHL Sharer is the organisation or system that holds the documents. It may al
 | Verifiable Credential Option | ITI-YY5 §2:3.YY5.4.1.5; Vol 1 §1:XX.2 | The DID URL in `proof.verificationMethod` of a self-issued W3C VC with a `DataIntegrityProof` | W3C VC 2.0 and Data Integrity 1.0 |
 | OAuth with SSRAA Option | ITI-YY5 §2:3.YY5.4.1.4, §2:3.YY5.5.3 | The `client_id` from SSRAA (UDAP) registration (`PHW.D.9`, `PHW.D.10`), the `x5c` certificate chain of the JWT client assertion, and the certificate's SAN URI. The `hl7-b2b` extension (SSRAA §5.2.1.1) adds `organization_id` and `purpose_of_use` | HL7 SSRAA 2.0.0, the FHIR profile of UDAP. **Approved** by the owner, 2026-10-30 20:28Z. VHL has no plain-OAuth option. The RFC 9396 route of process E is not a VHL option. |
 
-**Audit.** Once an agreement applies, `PHW.I.9` records an IHE ATNA audit event (`[ITI-20]` Record Audit Event). It cites the agreement's fixed-version URL, the receiver, the purpose of use, and the documents released (or the refusal). This follows the VHL profile's own ATNA grouping: Vol 1 §1:XX.3 requires the VHL Sharer and the VHL Receiver to be grouped with an ATNA Secure Node or Secure Application for `[ITI-YY5]`, and §1:XX.6.1 gives that grouping its audit logging. VHL itself says the Sharer SHOULD log access (ITI-YY5 §2:3.YY5.5.6) and MAY record the Audit Event – Accessed Health Data (ITI-YY5 §2:3.YY5.4.1.7). Under an agreement, the event is always recorded. **IHE BALP needs owner approval** (Trial Implementation). The PROV-O record of process G (`PHW.G.1`) cites the same agreement URL, so the ATNA log and the PROV log agree.
+**Audit.** Once an agreement applies, `PHW.I.9` records an IHE ATNA audit event (`[ITI-20]` Record Audit Event). It cites the fixed-version URL of every agreement and Consent evaluated, which of them permitted, the combining DMN decision used (by namespace, decision id, and its file's fixed-version URL and SHA-256), the receiver, the purpose of use, and the documents released (or the refusal). This follows the VHL profile's own ATNA grouping: Vol 1 §1:XX.3 requires the VHL Sharer and the VHL Receiver to be grouped with an ATNA Secure Node or Secure Application for `[ITI-YY5]`, and §1:XX.6.1 gives that grouping its audit logging. VHL itself says the Sharer SHOULD log access (ITI-YY5 §2:3.YY5.5.6) and MAY record the Audit Event – Accessed Health Data (ITI-YY5 §2:3.YY5.4.1.7). Under an agreement, the event is always recorded. **IHE BALP needs owner approval** (Trial Implementation). The PROV-O record of process G (`PHW.G.1`) cites the same agreement URLs and DMN decision, so the ATNA log and the PROV log agree.
 
 **Open points (owner):**
 
 1. **The lookup has no standard element.** No existing VHL, OAuth or VC element maps a verified receiver to an agreement. The mapping is the Sharer's own configuration, keyed by the agreement's fixed-version URL, the same configuration as `PHW.D.6`. No field is invented.
-2. **Several agreements with one receiver.** This is not decided. The Sharer may hold more than one agreement with the same receiver, and process I does not say which one applies, or whether all must permit.
+2. **Several agreements with one receiver. Decided** (owner, 2026-11-01 07:54Z, card Q-DRAIN-4, option D; 07:55Z, overridable default). Every agreement and Consent held with the receiver is evaluated, and one that does not cover the request is not applicable. The results are combined by the DMN decision [`PHW.DT.AgreementAccess`](#combining-several-agreements-dmn-phwdtagreementaccess): by default permit if at least one applicable policy permits and none prohibits (ODRL 2.2 `odrl:prohibit`). Policies may declare another `odrl:conflict`, and a deployer may replace the decision under the same contract. The duties of every permitting agreement apply, and the audit cites every agreement evaluated.
 3. **Purpose of use in the audit event.** With the SSRAA option, the purpose can come from the token request: `purpose_of_use`, a required array of codes in the `hl7-b2b` extension of the receiver's JWT client assertion (SSRAA §5.2.1.1; HL7 v3 PurposeOfUse is encouraged, §5.2.1.2). SSRAA does not constrain the access token's format (§5.2.3), so the Sharer has the purpose directly when its own authorization server issued the token; how a separate authorization server would pass it on is not specified. Without SSRAA, `[ITI-YY5]` carries no purpose, and it comes from the agreement or from the PCF Consent recorded at `[ITI-YY3]` (`Consent.provision.purpose`). Which source the event records, and which one wins when they differ, is open.
 4. **Possible ballot comments.** The VHL Verifiable Credential Option example uses `issuanceDate` and `expirationDate`, which are VC 1.1 terms. VC 2.0 uses `validFrom` and `validUntil`. In the OAuth with SSRAA Option example (ITI-YY5 §2:3.YY5.4.1.4), the decoded client assertion gives `purpose_of_use` as a single string, where SSRAA §5.2.1.1 requires an array, and the token request omits the `udap=1` parameter that SSRAA §5.2.2.2 requires. VHL says its workflow is informative and SSRAA takes precedence.
-5. **`consent_policy` in `hl7-b2b`.** SSRAA §5.2.1.1 lets a client name policy URIs (`consent_policy`) and FHIR `Consent` URLs (`consent_reference`) in its token request. Whether a receiver may name the agreement's fixed-version URL there, to choose among several agreements (point 2), is not decided; process I does not use it, and nothing is added.
+5. **`consent_policy` in `hl7-b2b`. Decided** (owner, 2026-11-01 07:54Z, card Q-DRAIN-4, option D). SSRAA §5.2.1.1 lets a client name policy URIs in `consent_policy`, an optional array, and FHIR `Consent` URLs in `consent_reference`. A receiver MAY list one or more agreements' fixed-version URLs in `consent_policy`. This narrows the permissions it acts under (`PHW.I.4`) but never escapes another applicable agreement's prohibition. Naming is optional, so the HTTP Message Signatures and Verifiable Credential options, which have no such field, still work. Nothing is added to any standard.
 
 For a worked example of processes A, B, C, F and I in one case, see [Worked Example: IPS Pilgrimage (Hajj)](example-pilgrimage.html).
