@@ -331,4 +331,68 @@ The VHL Sharer is the organisation or system that holds the documents. It may al
 4. **Possible ballot comments.** The VHL Verifiable Credential Option example uses `issuanceDate` and `expirationDate`, which are VC 1.1 terms. VC 2.0 uses `validFrom` and `validUntil`. In the OAuth with SSRAA Option example (ITI-YY5 §2:3.YY5.4.1.4), the decoded client assertion gives `purpose_of_use` as a single string, where SSRAA §5.2.1.1 requires an array, and the token request omits the `udap=1` parameter that SSRAA §5.2.2.2 requires. VHL says its workflow is informative and SSRAA takes precedence.
 5. **`consent_policy` in `hl7-b2b`. Decided** (owner, 2026-11-01 07:54Z, card Q-DRAIN-4, option D). SSRAA §5.2.1.1 lets a client name policy URIs in `consent_policy`, an optional array, and FHIR `Consent` URLs in `consent_reference`. A receiver MAY list one or more agreements' fixed-version URLs in `consent_policy`. This narrows the permissions it acts under (`PHW.I.4`) but never escapes another applicable agreement's prohibition. Naming is optional, so the HTTP Message Signatures and Verifiable Credential options, which have no such field, still work. Nothing is added to any standard.
 
+### Shared Certificate Processes
+
+These two processes are shared blocks for any certificate type (BPMN reuse proposal, Q-BPMN-1 A). A trust domain or another IG calls them instead of copying their steps. Their steps come from the smart-icvp issuing and verifying diagrams.
+
+| # | Process Name | Process ID | Objectives |
+| --- | --- | --- | --- |
+| J | Issue a Verifiable Digital Health Certificate | PHW.J | Ask the holder for consent, collect what the certificate profile (a data input) needs, issue and sign the certificate, issue its VHL (process B), and deliver it to the wallet. |
+| K | Verify a Certificate and its Status | PHW.K | Receive the claim; redeem a VHL through process C, check by hand, or decode the QR code, get the issuer key from the Trust Anchor (`[ITI-YY2]`), verify the signature, and check the registry. |
+
+#### J. Issue a Verifiable Digital Health Certificate
+
+* **Process ID**: `PHW.J`
+* **BPMN Source**: `input/business-processes/PHW.J.bpmn`
+* **Objective**: Shared block B4 of the BPMN reuse proposal (Q-BPMN-1 A, 2026-11-01): one issuing process for every certificate type.
+
+<figure style="width:100%">
+  <img src="PHW.J.svg" alt="Process J — Issue a Verifiable Digital Health Certificate (calls process B)" style="width:100%; max-width:1100px;" />
+</figure>
+
+| Activity ID | Lane / Actor | Task Name | Source |
+| --- | --- | --- | --- |
+| `PHW.J.1` | Certificate Issuer (health worker or issuing system) | J1. Inform the holder and ask for consent to issue | smart-icvp: 'Inform traveller and request consent to digitize' and 'Counsel patient on consent'. This is consent to issue the certificate. Consent to share it later is recorded by process A and checked by process B. |
+| `PHW.J.2` | Certificate Issuer (health worker or issuing system) | J2. Collect the data the certificate profile needs | smart-icvp: 'Capture Vaccination Data', 'Collate ICVP data', 'Conduct data entry from physical card into system'. What is collected is set by the certificate profile input. |
+| `PHW.J.3` | Certificate Issuance Service | J3. Issue and sign the certificate | smart-icvp: 'Issue Digital ICVP Card'. Signed with the issuer's key registered with the trust anchor. |
+| `PHW.J.4` | Certificate Issuance Service | J4. Issue a consent-backed VHL (process B) | smart-icvp: 'Configure VHL'. Reuses process B: consent check [ITI-108] and Generate VHL [ITI-YY3]. |
+| `PHW.J.5` | Certificate Issuance Service | J5. Generate the QR code | smart-icvp: 'Generate QR Code'. |
+| `PHW.J.6` | Certificate Holder (person / Personal Health Wallet) | J6. Receive the certificate in the wallet | smart-icvp: 'Receive Digital ICVP Card', 'Digital ICVP Card issued and available for use'. |
+
+#### K. Verify a Certificate and its Status
+
+* **Process ID**: `PHW.K`
+* **BPMN Source**: `input/business-processes/PHW.K.bpmn`
+* **Objective**: Shared block B7 of the BPMN reuse proposal (Q-BPMN-1 A, 2026-11-01): one verifying process for every certificate type.
+
+<figure style="width:100%">
+  <img src="PHW.K.svg" alt="Process K — Verify a Certificate and its Status ([ITI-YY2]; calls process C)" style="width:100%; max-width:1100px;" />
+</figure>
+
+| Activity ID | Lane / Actor | Task Name | Source |
+| --- | --- | --- | --- |
+| `PHW.K.1` | Verifier (with or without a status checking application) | K1. Receive the claim | smart-icvp: 'Receive claim of vaccination status'. |
+| `PHW.K.VHL` | Certificate Holder (person / Personal Health Wallet) | K2. Present and redeem the VHL (process C) | Reuses process C: [ITI-YY4], [ITI-YY2], [ITI-YY5] with consent enforcement. |
+| `PHW.K.Manual` | Verifier (with or without a status checking application) | K3. Check by hand and decide the claim | smart-icvp: 'Perform Manual Check and decide the status of the claim'. Done by the Verifier when no checking application is used. |
+| `PHW.K.4` | Verifier (with or without a status checking application) | K4. Decode the QR code and find the key id | smart-icvp: 'Deserialize the QR Code and identify the Key Id'. |
+| `PHW.K.5` | Trust Anchor (GDHCN or another accepted anchor) | K5. Return the issuer's public key [ITI-YY2] | smart-icvp: 'Retrieve public key from WHO GDHCN'. [ITI-YY2] Retrieve Trust List with DID. |
+| `PHW.K.6` | Verifier (with or without a status checking application) | K6. Verify the signature and the claim | smart-icvp: 'Verify QR code signature' and 'Verify Certificate claim'. |
+| `PHW.K.7` | Issuing Public Health Authority (certificate registry) | K7. Find the certificate in the registry and return it | smart-icvp: 'Identify Certificate in Certificate Registry', 'Retrieve Certificate from Certificate Repository', 'Return Certificate'. |
+| `PHW.K.8` | Verifier (with or without a status checking application) | K8. Communicate the result | smart-icvp: 'Communicate Result back to Verifier'. |
+
+### Shared Processes and Their Addresses
+
+Another IG calls a process here with a BPMN call activity: it imports this IG's namespace with `bpmn:import` (`namespace="http://smart.who.int/trust-phw/bpmn"`) and sets `calledElement` to the process id, prefixed with the import's namespace prefix (Q-BPMN-2 A).
+
+| Shared block | What it does | Process ID |
+| --- | --- | --- |
+| B3 | Record and manage consent | `PHW.A` |
+| B4 | Issue a certificate | `PHW.J` |
+| B5 | Issue a consent-backed VHL | `PHW.B` |
+| B6 | Present and redeem a VHL | `PHW.C` |
+| B7 | Verify a certificate and its status | `PHW.K` |
+| B8 | Decide access under an agreement | `PHW.F`, `PHW.I` |
+| B9 | Audit and provenance | `PHW.G` |
+| B10 | Revoke or suspend | `PHW.H` |
+
 For a worked example of processes A, B, C, F and I in one case, see [Worked Example: IPS Pilgrimage (Hajj)](example-pilgrimage.html).
