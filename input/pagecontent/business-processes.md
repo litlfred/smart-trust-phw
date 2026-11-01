@@ -245,12 +245,17 @@ The decision used, default or replacement, is recorded in the ATNA event and the
 | Activity ID | Lane / Actor | Task Name | Standard and section |
 | --- | --- | --- | --- |
 | `PHW.G.1` | Enforcement and Decision Points | Write PROV-O record citing the agreement | W3C PROV-O: `prov:used` = the agreement's DCAT distribution with `spdx:checksum` (DCAT 3 §6.8, §6.8.20; bean yy40), plus the grant or token id; `prov:wasAssociatedWith`; `prov:actedOnBehalfOf` |
-| `PHW.G.2` | Provenance Log | Append to hash-chained log | **Local extension** (bean B4), not a standard |
 | `PHW.G.3` | Enforcement and Decision Points | Send ATNA audit event citing the agreement `[ITI-20]` Record Audit Event | **`[ITI-20]`** Record Audit Event (IHE ATNA, Final Text; ITI TF-2: 3.20†). Grouping as in VHL Volume 1 §1:XX.3 and §1:XX.6.1 |
-| `PHW.G.4` | ATNA Audit Record Repository | Store audit event `[ITI-20]` | **`[ITI-20]`** |
 | `PHW.G.5` | Data Recipient (duty performer) | Record duty fulfilment with evidence hash | ODRL 2.2 duty §2.6.3 |
 | `PHW.G.6` | Enforcement and Decision Points | Compare duties with records | An unmet duty gives `deny`, and an unknowable one gives `unknown` |
 | `PHW.G.7` | Auditor (person) | Periodic human review and report to the provider | `odrl:inform`, or a clause in the PDF |
+
+The Provenance Log and the ATNA Audit Record Repository are data stores, not lanes, because they only keep what the audit writers send (smart-trust-phw#22):
+
+| Data store | Written by | What it keeps | Standard and section |
+| --- | --- | --- | --- |
+| `PHW.G.ProvenanceLog` Provenance Log (W3C PROV-O, hash-chained) | `PHW.G.1` | One PROV-O record per decision; each carries the hash of the one before it | W3C PROV-O. The hash chain is a **local extension** (bean B4), not a standard |
+| `PHW.G.AuditRecordRepository` ATNA Audit Record Repository | `PHW.G.3` | One ATNA audit event per decision | **`[ITI-20]`** Record Audit Event |
 
 **Audit.** The ATNA event cites the agreement's fixed-version URL, the requester, the purpose of use, the data or documents released, and the decision. ATNA is reached in the same way the VHL profile reaches it. VHL Volume 1 §1:XX.3, Table XX.3-1, requires the VHL Sharer and VHL Receiver to be grouped with an ATNA Secure Node or Secure Application. §1:XX.6.1 covers the secure channel (`[ITI-19]`) and audit logging. Those sections are from the IHE/ITI.VHL source at commit `48201473`, as snapshotted in litlfred/smart-trust-tools `library/`. **IHE BALP (Basic Audit Log Patterns) is Trial Implementation and needs owner approval** before this IG names its AuditEvent patterns. The PROV-O record (`PHW.G.1`) cites the same agreement URL, so the two logs agree.
 
@@ -310,8 +315,9 @@ The VHL Sharer is the organisation or system that holds the documents. It may al
 | `PHW.I.7` | VHL Sharer | Refuse with OperationOutcome `[ITI-YY5]` (deny or unknown) | **`[ITI-YY5]`** `403 Forbidden` |
 | `PHW.I.8` | VHL Sharer | Apply the normal VHL rules (no agreement applies) | Unauthenticated: `401` (ITI-YY5 §2:3.YY5.4.1.7). Verified receiver, no agreement: process C from `PHW.C.5` |
 | `PHW.I.9` | VHL Sharer | Send ATNA audit event citing the agreement `[ITI-20]` Record Audit Event | Cites every agreement and Consent evaluated, which permitted, and the combining DMN decision used. **`[ITI-20]`** (IHE ATNA, Final Text; ITI TF-2: 3.20, cited from standing knowledge); grouping per VHL Vol 1 §1:XX.3, Table XX.3-1, and §1:XX.6.1 |
-| `PHW.I.10` | ATNA Audit Record Repository | Store audit event `[ITI-20]` | **`[ITI-20]`** |
 | `PHW.I.11` | VHL Receiver | Process documents or refusal `[ITI-YY5]` response | **`[ITI-YY5]`** consumer (`IHE.VHL.VHLReceiver`) |
+
+`PHW.I.9` writes the audit event to the ATNA Audit Record Repository (`PHW.I.AuditRecordRepository`), a data store as in process G, by **`[ITI-20]`**.
 
 **Which VHL options identify the receiver.** VHL 1.0.0-comment names three authentication options for `[ITI-YY5]`. The table cites the IHE/ITI.VHL source at commit `48201473`, as snapshotted in litlfred/smart-trust-tools `library/`; the published 1.0.0-comment text has not been compared with it.
 
