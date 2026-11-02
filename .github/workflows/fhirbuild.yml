@@ -13,6 +13,10 @@ name: FHIR CI Build
 on:
   workflow_dispatch:
 
+# Least privilege: the called build only reads the repository.
+permissions:
+  contents: read
+
 jobs:
   # This workflow contains a single job called "build"
   # litlfred/smart-base, not WorldHealthOrganization/smart-base (owner card
