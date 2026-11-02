@@ -7,6 +7,11 @@
       "ref": "b3500414e40fdb729c3497aaa1afb27d970eefb5"
     },
     {
+      "harness": "who-iris",
+      "repository": "litlfred/who-iris",
+      "ref": "4e0a4e5272e786ef7956d7ae65fcf85df9dfa602"
+    },
+    {
       "harness": "fhir-harness",
       "repository": "litlfred/fhir-harness",
       "ref": "a5e07932a24c331d20c99203e2ccb94aae13facd"
@@ -240,13 +245,36 @@
         "ref": "b3500414e40fdb729c3497aaa1afb27d970eefb5",
         "approver": "declared"
       }
-    }
-  ],
-  "unmounted": [
+    },
     {
       "instance": "who-iris",
-      "state": "missing",
-      "detail": "`smart-base` needs `who-iris`, which litlfred/smart-base@b3500414e40f neither holds nor pins as a gitlink"
+      "repository": "litlfred/who-iris",
+      "sha": "4e0a4e5272e786ef7956d7ae65fcf85df9dfa602",
+      "upstreamRoot": "",
+      "path": "who-iris",
+      "via": "who-iris",
+      "pinnedBy": "declared",
+      "declaration": {
+        "file": "who-iris.json",
+        "sha256": "1d4522a08435eb0bd85e3f939976724c4596f8dae81d28135db2dcb721b1c5bc"
+      },
+      "directories": [
+        {
+          "id": "*",
+          "path": "who-iris",
+          "upstreamPath": ".",
+          "treeDigest": "50ff8a97fb5051c3fc6e51024d9567a34cf61f8075b453f4aea1469b548c9cc0",
+          "files": 6553
+        }
+      ],
+      "trust": {
+        "basis": "consent",
+        "by": "litlfred",
+        "on": "2026-11-02",
+        "ref": "4e0a4e5272e786ef7956d7ae65fcf85df9dfa602",
+        "approver": "declared"
+      }
     }
-  ]
+  ],
+  "unmounted": []
 }
