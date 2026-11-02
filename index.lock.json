@@ -9,7 +9,7 @@
     {
       "harness": "who-iris",
       "repository": "litlfred/who-iris",
-      "ref": "04472dc8c3a66dfef6377c45a8b24a23acf88350"
+      "ref": "f524a7e98bde3b8f390f0163a81829b158ad11b2"
     },
     {
       "harness": "fhir-harness",
@@ -249,7 +249,7 @@
     {
       "instance": "who-iris",
       "repository": "litlfred/who-iris",
-      "sha": "04472dc8c3a66dfef6377c45a8b24a23acf88350",
+      "sha": "f524a7e98bde3b8f390f0163a81829b158ad11b2",
       "upstreamRoot": "",
       "path": "who-iris",
       "via": "who-iris",
@@ -263,7 +263,7 @@
           "id": "*",
           "path": "who-iris",
           "upstreamPath": ".",
-          "treeDigest": "81479b240c2bc68f7e68767cff178eefbab99f5d86d22060a579956f1f814fa6",
+          "treeDigest": "5e65e4402e71d7d6286320aff9324bdeb3a942ba8e11a2d6ad6ef261186ef98d",
           "files": 5573
         }
       ],
@@ -271,7 +271,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-02",
-        "ref": "04472dc8c3a66dfef6377c45a8b24a23acf88350",
+        "ref": "f524a7e98bde3b8f390f0163a81829b158ad11b2",
         "approver": "declared"
       }
     }
