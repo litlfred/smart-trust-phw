@@ -16,7 +16,7 @@ jobs:
       file_exists: ${{ steps.checkfile.outputs.exists }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           ref: ${{ github.event.release.tag_name }}
 
@@ -32,5 +32,5 @@ jobs:
   trigger:
     needs: check
     if: needs.check.outputs.file_exists == 'true'
-    uses: WorldHealthOrganization/smart-html/.github/workflows/release.yml@main
+    uses: WorldHealthOrganization/smart-html/.github/workflows/release.yml@4191acf30bd22abb4955952c53f51bb475b1c3d7 # main
   
