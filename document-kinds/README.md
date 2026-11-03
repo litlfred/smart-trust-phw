@@ -7,7 +7,7 @@ generated: "scripts/subgraph-readmes.ts of the bootstrap toolset (https://github
 
 # smart-trust-phw-document-kinds
 
-How this IG realises the document kinds of the layers it needs: today `dak.coverage.smart-trust-phw.json`, the DAK view of `fhir-artifact-index/`, which places each artefact in one of the ten DAK components by its FHIR resource type and lists what no rule places. GENERATED at publish by the DAK layer's `gen-document-kinds.ts` (`bun run cat smart-base:document-kinds`; declared `builtAtPublish`, because the index it reads is built at publish too, fhir-harness#124) into this directory, and not committed, because the report is about this IG (folio-assistant#2598). Bean nr5p.
+How this IG realises the document kinds of the layers it needs: `dak.coverage.smart-trust-phw.json`, the DAK view of `fhir-artifact-index/`, which places each artefact in one of the ten DAK components by its FHIR resource type and lists what no rule places. Generated at publish by `bun run cat smart-base:document-kinds` (`gen-document-kinds.ts`), after the index it reads, and not committed.
 
 Part of [GDHCN Trust Network - Personal Health Wallet](../README.md) 0.1.0, declared as `smart-trust-phw-document-kinds`, holding `document-kinds`.
 

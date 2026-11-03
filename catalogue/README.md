@@ -7,7 +7,7 @@ generated: "scripts/subgraph-readmes.ts of the bootstrap toolset (https://github
 
 # smart-trust-phw-catalogue
 
-Qualified Dublin Core (`folio-dublin-core/v1`) and catalogue node (`folio-catalogue-node/v1`) records. Two kinds of item: the upstream IHE ITI specifications materialized in `library/` (IHE ITI PCF 1.1.0 and IHE ITI VHL 1.0.0-comment; bean sl5v), and, since bean folio-assistant-djj5 (owner, 2026-11-03: references/ retired, "Library + catalogue only"), every cited work that is not ingested, as a `referenced` item whose record is the IG's bibliography entry for it (the key is the citation's: `#ref-<slug>`) (a capture of it, when one exists, is kept in the repository's `uploads/` data store, which is not part of the KG). `bun run cat check:catalogue` and `bun run cat check:materialized-fixity` verify every node, metadataRef, libraryId, localPath, and SHA-256 digest.
+Qualified Dublin Core (`folio-dublin-core/v1`) and catalogue node (`folio-catalogue-node/v1`) records for two kinds of item: the IHE ITI specifications materialized in `library/` (PCF 1.1.0 and VHL 1.0.0-comment), and every work the IG cites that is not ingested, as a `referenced` item whose record is the IG's bibliography entry, keyed by the citation's `#ref-<slug>`. A capture of a cited work, when one exists, is in the repository's `uploads/` data store, which is not part of the KG. `bun run cat check:catalogue` and `bun run cat check:materialized-fixity` verify every node, metadataRef, libraryId, localPath and SHA-256 digest.
 
 Part of [GDHCN Trust Network - Personal Health Wallet](../README.md) 0.1.0, declared as `smart-trust-phw-catalogue`, holding `catalogue`.
 
