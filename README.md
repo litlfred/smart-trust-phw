@@ -1,22 +1,19 @@
 <!--badges-->
-[![License: CC BY-IGO 3.0](https://licensebuttons.net/l/by-nc/3.0/igo/80x15.png)](https://creativecommons.org/licenses/by/3.0/igo)
-![CI Build](https://img.shields.io/github/actions/workflow/status/WorldHealthOrganization/smart-ig-empty/ghbuild.yml)  
-   
-![QA errors](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2FWorldHealthOrganization.github.io%2Fsmart-ig-empty%2Fqa.json&query=%24.errs&logoColor=red&label=QA%20errors&color=yellow)
-![QA warnings](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2FWorldHealthOrganization.github.io%2Fsmart-ig-empty%2Fqa.json&query=%24.warnings&logoColor=orange&label=QA%20warnings&color=yellow)
-![QA hints](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2FWorldHealthOrganization.github.io%2Fsmart-ig-empty%2Fqa.json&query=%24.hints&logoColor=yellow&label=QA%20hints&color=yellow)
-<!--/badges-->  
+[![License: CC BY-SA 3.0 IGO](https://img.shields.io/badge/license-CC%20BY--SA%203.0%20IGO-lightgrey)](https://creativecommons.org/licenses/by-sa/3.0/igo/)
+![QA errors](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2FWorldHealthOrganization.github.io%2Fsmart-trust-phw%2Fqa.json&query=%24.errs&logoColor=red&label=QA%20errors&color=yellow)
+![QA warnings](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2FWorldHealthOrganization.github.io%2Fsmart-trust-phw%2Fqa.json&query=%24.warnings&logoColor=orange&label=QA%20warnings&color=yellow)
+![QA hints](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2FWorldHealthOrganization.github.io%2Fsmart-trust-phw%2Fqa.json&query=%24.hints&logoColor=yellow&label=QA%20hints&color=yellow)
+<!--/badges-->
 
-# WHO SMART GUIDELINES - EMPTY IG
- 
-This is an empty framework, to be used to create SMART Implementation Guides.
- 
-Please see these [instructions](https://smart.who.int/ig-starter-kit/ig_setup.html#github-setup)
+# GDHCN Trust Network - Personal Health Wallet
 
+The WHO SMART Guidelines implementation guide for using personal health wallets
+on the WHO GDHCN Trust Network (package `smart.who.int.trust-phw`, FHIR R5).
+The FHIR IG source is under `input/`; `_genonce.sh` builds it with the IG
+Publisher.
 
-## Changes and feedback
+- Canonical: <http://smart.who.int/trust-phw>
+- Continuous build: <https://worldhealthorganization.github.io/smart-trust-phw>
+- Issues: <https://github.com/WorldHealthOrganization/smart-trust-phw/issues>
 
-Feedback and issues about this empty framework can be submitted via the [issues](https://github.com/WorldHealthOrganization/smart-trust-phw/issues) page, and will be incorporated into subsequent releases.
-
-  
- 
+Agents start at [`AGENTS.md`](AGENTS.md).

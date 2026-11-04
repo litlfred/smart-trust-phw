@@ -7,7 +7,7 @@ generated: "scripts/subgraph-readmes.ts of the bootstrap toolset (https://github
 
 # library
 
-L1 normative specification snapshots materialized for smart-trust-phw: IHE ITI Privacy Consent on FHIR (PCF) 1.1.0 (`ihe-iti-pcf-1-1-0`, CC BY 4.0) and IHE ITI Verifiable Health Links (VHL) 1.0.0-comment (`ihe-iti-vhl-1-0-0-comment`, CC BY 4.0). Every knowledge-graph reference to these upstream IHE specifications resolves through here, and `check:materialized-fixity` verifies their SHA-256 digests against `catalogue/`. Bean sl5v.
+L1 normative specification snapshots materialized for smart-trust-phw: IHE ITI Privacy Consent on FHIR (PCF) 1.1.0 (`ihe-iti-pcf-1-1-0`, CC BY 4.0) and IHE ITI Verifiable Health Links (VHL) 1.0.0-comment (`ihe-iti-vhl-1-0-0-comment`, CC BY 4.0). Every knowledge-graph reference to these IHE specifications resolves through here, and `check:materialized-fixity` verifies their SHA-256 digests against `catalogue/`.
 
 Part of [GDHCN Trust Network - Personal Health Wallet](../README.md) 0.1.0, declared as `library`, holding `library`.
 
