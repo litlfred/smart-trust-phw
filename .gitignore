@@ -75,3 +75,6 @@ node_modules/
 /fhir-artifact-index/package.tgz
 /document-kinds/dak.coverage.smart-trust-phw.json
 # END built at publish
+
+# Machine-local agent settings: never committed
+.claude/settings.local.json
