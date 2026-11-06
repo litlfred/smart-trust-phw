@@ -1,7 +1,14 @@
 # Proposal: bring smart-trust-phw into the repeatable instance process
 
-Status: **proposal, for the owner's choice.** No cleanup is made until the
-owner picks options. This document is the only change in its pull request.
+Status: **decided 2026-11-06.** The owner chose the Recommended bundle
+(C1, C2, C3, C4, C5, C7, C8, C9), C6 "not now", publishing the site, and
+`findings/` for this document. The chosen changes are made in the same pull
+request, one commit each. Follow-ups the owner asked for: move the guide to
+FHIR R4 4.0.1 with the R5 cross-version extensions (as smart-base), and a
+consent pull request (IHE PCF implied and explicit consent, an explicit
+consent process, consent directives optionally carried in issued documents,
+and the trust-domain consent codes shared with smart-trust-demo and
+smart-ips-pilgrimage).
 
 Where it lives: the brief asked for `docs/proposals/repeatable-process/`,
 but `docs/` here is declared as wholly generated at publish and is
@@ -137,6 +144,10 @@ two weeks of commits.
 
 ### C3. One source for each BPMN drawing, generated and checked — M
 
+*As made:* the drawings stay in `input/images/`, where the pages embed them,
+written by `tools/render-bpmn/render_bpmn.ts`; the copies beside the BPMN
+are removed.
+
 - **What:** keep `input/business-processes/PHW.*.bpmn` as the only
   source; render every `.svg` into one place with the harness's
   `render-bpmn` (as smart-ips-pilgrimage does), delete the other copy, and
@@ -207,6 +218,10 @@ Three options for whose story PHW tells:
 
 ### C7. Publish the site by an agent; retire the template workflow — S/M
 
+*As made:* `site-publish.yml` is deleted. At the 2026-11-05 pins
+`stage-local.ts` still writes a preview to `STAGING/<slug>/`; `branches/<slug>/`
+arrives with a later cat-harness-tools pin.
+
 - **What:** publish with `stage-local.ts` from an agent's checkout:
   `main` to the gh-pages root, every other branch to `branches/<slug>/`.
   Either delete `site-publish.yml` (as smart-ips-pilgrimage has no such
@@ -236,6 +251,11 @@ Three options for whose story PHW tells:
   index carries).
 
 ### C9. Translation readiness — M (after C3 and C4)
+
+*As made:* the templates sit where smart-base's extraction script writes them
+(`input/pagecontent/translations/`, `input/images/translations/`,
+`input/images-source/translations/`), as in smart-base itself, rather than in
+a new declared `translations/` directory.
 
 - **What:** declare a `translations/` directory (`translation-sources`, as
   smart-base does) for gettext templates extracted from the pages, BPMN
