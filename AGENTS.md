@@ -54,17 +54,72 @@ hand-edit or re-ingest them. `fhir-artifact-index/` is declared `readOnly`;
 
 ## What an index mounts from here
 
-Six directories, plus this file and the README. The IG source (`input/`) is
-not mounted.
+The folio-assistant index mounts four directories, plus this file and the
+README as declared assets. The IG source (`input/`) is not mounted.
+
+| directory | what it holds | committed |
+|---|---|---|
+| `library/` | IHE PCF and IHE VHL snapshots | yes |
+| `catalogue/` | records for `library/` and every work the IG cites | yes |
+| `fhir-artifact-index/` | the artefact index | `ig-identity.json` only |
+| `document-kinds/` | the DAK coverage report | no |
+
+Also declared, but not mounted by the index:
 
 | directory | what it holds | committed |
 |---|---|---|
 | `fhir-ast/` | the IG Publisher AST, restored from its cache branch by `ig-cache.sh` | no |
-| `fhir-artifact-index/` | the artefact index | `ig-identity.json` only |
-| `document-kinds/` | the DAK coverage report | no |
-| `docs/` | the artefact pages, built by `smart-trust-phw:pages` (fhir-harness's `gen-ig-pages.ts`) | no |
-| `library/` | IHE PCF and IHE VHL snapshots | yes |
-| `catalogue/` | records for `library/` and every work the IG cites | yes |
+| `docs/` | the artefact pages, built at publish by `smart-trust-phw:pages` (fhir-harness's `gen-ig-pages.ts`) | no |
+| `input/business-processes/` | the BPMN processes PHW.A to PHW.K | yes |
+| `tools/` | this instance's generators, each with a `--check` | yes |
+
+`findings/` holds authored review material, such as proposals; never put
+authored files in `docs/`, which is built at publish and gitignored.
+
+## Rules
+
+- **Only litlfred repositories are changed from here.** WHO repositories are
+  read-only.
+- **Every person is fictional.** Personas, patients and example people are
+  invented.
+- **Every dependency is pinned; add no packages.** Layers by commit in
+  `index.lock.json`, npm and Bun by `bun.lock`, GitHub Actions by commit SHA.
+  Re-pin only with the owner's consent recorded in `index.config.json`.
+- **Generated files are never edited.** The BPMN drawings in
+  `input/images/PHW.*.svg` are drawn from `input/business-processes/*.bpmn` by
+  `bun tools/render-bpmn/render_bpmn.ts`; CI runs its `--check`.
+- **No text in pictures.** Titles, captions and labels are text (page
+  Markdown, BPMN names, PlantUML source, `alt`), so they can be translated.
+- **gh-pages is published by an agent, not a workflow.** `main` publishes to
+  the root; any other branch to its preview folder.
+- No model identifiers in commits, PRs or code.
+
+## Cold start
+
+The layers are mounted from `index.lock.json` (the mounts are gitignored; the
+lock is committed). In a fresh container:
+
+```sh
+python3 -c "import json;[print(m['harness'],m['repository'],m['ref']) for m in json.load(open('index.lock.json'))['mounts']]" > /tmp/mounts.txt
+while read h r ref; do git clone -q --filter=blob:none --no-checkout https://github.com/$r $h && git -C $h checkout -q $ref && rm -rf $h/.git; done < /tmp/mounts.txt
+bun install --frozen-lockfile --ignore-scripts
+rm -rf smart-base && bun cat-harness-tools/scripts/run-script.ts mount:lock   # lays smart-base out from its subdirectory
+bun cat-harness-tools/scripts/run-script.ts mount:remote:check
+```
+
+Re-draw the BPMN processes with `bun tools/render-bpmn/render_bpmn.ts`
+(Chromium: set `PLAYWRIGHT_BROWSERS_PATH` where one is installed). Publish
+gh-pages with `bun cat-harness-tools/scripts/stage-local.ts --repo .`
+(`--plan` first). The site is built from the IG's AST on its cache branch,
+which `ig-ast-refresh.yml` refreshes on a push to `main`, so a preview shows
+`input/` as it was at `main`'s last refresh.
+
+## Builds
+
+`harness-pr-checks.yml` (the harness's checks, index mode) and
+`generated-checks.yml` (the BPMN drawings) run on every pull request;
+`ig-ast-refresh.yml` runs on a push to `main`. The WHO IG builds inherited
+from upstream (`fhirbuild.yml`, `release.yml`) run only by hand.
 
 ## Before running SUSHI
 

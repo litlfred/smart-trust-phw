@@ -15,5 +15,7 @@ Publisher.
 - Canonical: <http://smart.who.int/trust-phw>
 - Continuous build: <https://worldhealthorganization.github.io/smart-trust-phw>
 - Issues: <https://github.com/WorldHealthOrganization/smart-trust-phw/issues>
+- This fork's harnessed site: <https://litlfred.github.io/smart-trust-phw/>,
+  published from `main` by an agent (branch previews beside it)
 
 Agents start at [`AGENTS.md`](AGENTS.md).
