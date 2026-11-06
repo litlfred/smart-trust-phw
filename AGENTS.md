@@ -71,6 +71,7 @@ Also declared, but not mounted by the index:
 | `fhir-ast/` | the IG Publisher AST, restored from its cache branch by `ig-cache.sh` | no |
 | `docs/` | the artefact pages, built at publish by `smart-trust-phw:pages` (fhir-harness's `gen-ig-pages.ts`) | no |
 | `input/business-processes/` | the BPMN processes PHW.A to PHW.K | yes |
+| `scenarios/` | roles and example people and systems (every person fictional) | yes |
 | `tools/` | this instance's generators, each with a `--check` | yes |
 
 `findings/` holds authored review material, such as proposals; never put
@@ -87,7 +88,8 @@ authored files in `docs/`, which is built at publish and gitignored.
   Re-pin only with the owner's consent recorded in `index.config.json`.
 - **Generated files are never edited.** The BPMN drawings in
   `input/images/PHW.*.svg` are drawn from `input/business-processes/*.bpmn` by
-  `bun tools/render-bpmn/render_bpmn.ts`; CI runs its `--check`.
+  `bun tools/render-bpmn/render_bpmn.ts`, and `personas.md` from `scenarios/`
+  by `bun tools/personas/gen_personas.ts`; CI runs each `--check`.
 - **No text in pictures.** Titles, captions and labels are text (page
   Markdown, BPMN names, PlantUML source, `alt`), so they can be translated.
 - **gh-pages is published by an agent, not a workflow.** `main` publishes to

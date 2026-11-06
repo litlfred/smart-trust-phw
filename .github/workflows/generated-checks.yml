@@ -1,6 +1,6 @@
 name: Generated files are current
 
-# The BPMN drawings in input/images/ are generated from
+# Generated files: the BPMN drawings in input/images/ are generated from
 # input/business-processes/*.bpmn by tools/render-bpmn/render_bpmn.ts:
 # rebuild them at the pinned layers and fail if a committed one differs.
 # Actions are pinned by commit SHA; bun installs from bun.lock with install
@@ -31,3 +31,15 @@ jobs:
         run: node_modules/.bin/playwright install --with-deps chromium
       - name: The BPMN drawings are current
         run: bun tools/render-bpmn/render_bpmn.ts --check
+
+  personas-page:
+    # input/pagecontent/personas.md is written from scenarios/ by
+    # tools/personas/gen_personas.ts; it reads only this repository.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version: 1.4.4
+      - name: The personas page is current
+        run: bun tools/personas/gen_personas.ts --check

@@ -114,7 +114,15 @@
       "graphTypologies": [
         "code"
       ],
-      "description": "This instance's generators, each with a --check that CI runs: render-bpmn draws input/business-processes/*.bpmn into input/images/."
+      "description": "This instance's generators, each with a --check that CI runs: render-bpmn draws input/business-processes/*.bpmn into input/images/; personas writes input/pagecontent/personas.md from scenarios/."
+    },
+    {
+      "id": "scenarios",
+      "path": "scenarios/",
+      "graphTypologies": [
+        "scenarios"
+      ],
+      "description": "The roles the lanes of the business processes name (roles.json, each pointing to its ActorDefinition in input/fsh/actors/actors.fsh where one exists), and example people and systems that play them (actors/, each person with a meta.persona). tools/personas/gen_personas.ts writes the Generic Personas page from them. Every person is fictional."
     }
   ],
   "avatar": {
