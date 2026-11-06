@@ -1,21 +1,7 @@
-This page describes the decision support logic included in the WHO
-Digital Adaptation Kit (DAK) for <mark>[insert health domain here]</mark>(link forthcoming).
+This page lists the decision logic of this guide. Each decision is written in OMG Decision Model and Notation (DMN) 1.3, and names the business process tasks it serves.
 
-The decision-support logic component provides the decision logic and
-algorithms, as well as the scheduling of services, in accordance with
-WHO guidelines. The decision logic and algorithms in this implementation
-guide deconstruct the recommendations within the <mark>[insert health domain here]</mark> guidelines
-and guidance into a machine readable format that clearly labels the
-inputs and outputs that would be operationalized in a digital
-decision-support system.
+| Decision | Serves | What it decides |
+| --- | --- | --- |
+| [`PHW.DT.AgreementAccess`](business-processes.html#combining-several-agreements-dmn-phwdtagreementaccess) | Process F, task `PHW.F.10` | Whether a receiver gets access when several data sharing agreements, and the person's consent, apply to the same request. |
 
-### Decision Support Logic Overview
-The table below provides an overview of the decision-support tables and
-algorithms for the different business processes in an EIR. The structure
-of the decision-support tables is based on an adaptation of the Decision
-Model and Notation (DMN™), an industry standard for modelling and
-executing decision logic. These decision-support tables detail the
-business rules, data inputs and outputs to support EIR business
-processes.
-
-**Overview of decision support tables**
+Consent itself is decided by the three-valued evaluation described in the [business processes](business-processes.html#architectural-principles): `permit`, `deny` or `unknown`. A missing, expired or unreachable consent never gives `permit`.
