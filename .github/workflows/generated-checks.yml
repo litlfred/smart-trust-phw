@@ -43,3 +43,27 @@ jobs:
           bun-version: 1.4.4
       - name: The personas page is current
         run: bun tools/personas/gen_personas.ts --check
+
+  translation-templates:
+    # The gettext templates (.pot) the translation team works from are
+    # extracted from the page text, the BPMN drawings and the PlantUML
+    # sources by smart-base's extract_translations.py, read at the smart-base
+    # commit index.lock.json pins. Fail if a committed template differs
+    # (the POT-Creation-Date header aside).
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+      - name: smart-base's extraction script at the pinned commit
+        run: |
+          read -r repo ref < <(python3 -c "import json;m=next(m for m in json.load(open('index.lock.json'))['mounts'] if m['harness']=='smart-base');print(m['repository'],m['ref'])")
+          git clone -q --filter=blob:none --no-checkout "https://github.com/$repo" "$RUNNER_TEMP/smart-base"
+          git -C "$RUNNER_TEMP/smart-base" sparse-checkout set input/scripts
+          git -C "$RUNNER_TEMP/smart-base" checkout -q "$ref"
+      - name: The translation templates are current
+        run: |
+          python3 -I "$RUNNER_TEMP/smart-base/input/scripts/extract_translations.py" --ig-root . --canonical http://smart.who.int/trust-phw > /dev/null
+          git add -N input
+          if git diff -I '^"POT-Creation-Date: ' --exit-code -- '*.pot'; then echo "✓ translation templates current"; else echo "✗ re-run extract_translations.py (see AGENTS.md)"; exit 1; fi

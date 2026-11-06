@@ -116,10 +116,29 @@ gh-pages with `bun cat-harness-tools/scripts/stage-local.ts --repo .`
 which `ig-ast-refresh.yml` refreshes on a push to `main`, so a preview shows
 `input/` as it was at `main`'s last refresh.
 
+## Translations
+
+The translation team works from gettext templates: `input/pagecontent/translations/*.pot`
+(one per page), `input/images/translations/images.pot` (the BPMN drawings'
+labels) and `input/images-source/translations/diagrams.pot` (PlantUML). They are
+extracted, never hand-written, by smart-base's `input/scripts/extract_translations.py`
+at the smart-base commit `index.lock.json` pins:
+
+```sh
+git clone -q --filter=blob:none --no-checkout https://github.com/litlfred/smart-base /tmp/sb
+git -C /tmp/sb sparse-checkout set input/scripts && git -C /tmp/sb checkout -q <smart-base ref from index.lock.json>
+python3 -I /tmp/sb/input/scripts/extract_translations.py --ig-root . --canonical http://smart.who.int/trust-phw
+```
+
+Re-run it after changing a page, a BPMN label or a PlantUML source; CI fails
+on a stale template. Target languages are the UN languages: ar, es, fr, ru,
+zh. Pulling translations back needs a translation service registered for this
+guide (a secret only the owner sets).
+
 ## Builds
 
 `harness-pr-checks.yml` (the harness's checks, index mode) and
-`generated-checks.yml` (the BPMN drawings) run on every pull request;
+`generated-checks.yml` (BPMN drawings, personas page, translation templates) run on every pull request;
 `ig-ast-refresh.yml` runs on a push to `main`. The WHO IG builds inherited
 from upstream (`fhirbuild.yml`, `release.yml`) run only by hand.
 

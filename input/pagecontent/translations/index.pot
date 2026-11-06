@@ -1,0 +1,168 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: input/pagecontent/index.md:15
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:15
+msgid "Business Processes: eleven BPMN 2.0 processes:"
+msgstr ""
+
+#. Source: input/pagecontent/index.md:28
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:28
+msgid "Business Requirements: concepts, personas, business processes and decision logic."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:16
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:16
+msgid "Consent and verifiable health links: A record and manage consent, B issue a consent-backed link, C present and redeem a link."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:40
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:40
+msgid "Cross Version Analysis"
+msgstr ""
+
+#. Source: input/pagecontent/index.md:29
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:29
+msgid "Data Models and Exchange: actors, sequence diagrams, transactions and codings."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:17
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:17
+msgid "Data sharing agreements between servers: D register a client, E server-to-server access, F access decision, G audit and provenance, H revocation and suspension, I decide a link request under an agreement."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:19
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:19
+msgid "Decision-support Logic: the DMN decision , which combines several agreements for one receiver."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:36
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:36
+msgid "Dependencies"
+msgstr ""
+
+#. Source: input/pagecontent/index.md:30
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:30
+msgid "Deployment: security and privacy, testing, reference implementations and downloads."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:32
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:32
+msgid "Disclaimer"
+msgstr ""
+
+#. Source: input/pagecontent/index.md:9
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:9
+msgid "Every process is trust-anchor neutral: keys are published to, and trust lists read from, an abstract Trust Anchor. The WHO Global Digital Health Certification Network (GDHCN) is one possible Trust Anchor among others. The guide makes no claim of conformance to IHE Internet User Authorization (IUA)."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:44
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:44
+msgid "Global Profiles"
+msgstr ""
+
+#. Source: input/pagecontent/index.md:24
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:24
+msgid "How this guide is organised"
+msgstr ""
+
+#. Source: input/pagecontent/index.md:48
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:48
+msgid "IP Statements"
+msgstr ""
+
+#. Source: input/pagecontent/index.md:18
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:18
+msgid "Shared certificate processes: J issue a certificate, K verify a certificate and its status."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:5
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:5
+msgid "Summary"
+msgstr ""
+
+#. Source: input/pagecontent/index.md:11
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:11
+msgid "Supporting guidance, recommendations, resources and standards are listed in the Bibliography and on the Dependencies page."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:21
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:21
+msgid "System Actors, Sequence Diagrams and Transactions."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:22
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:22
+msgid "The logical models, profiles, value sets and examples are listed in the Artifact Index. An offline copy of the guide is on the Downloads page."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:26
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:26
+msgid "This guide follows the levels of knowledge representation:"
+msgstr ""
+
+#. Source: input/pagecontent/index.md:1
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:1
+msgid "This implementation guide is still being developed. Its content is for demonstration purposes only. {:.stu-note}"
+msgstr ""
+
+#. Source: input/pagecontent/index.md:7
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:7
+msgid "This implementation guide specifies how a Personal Health Wallet (PHW) lets a person record privacy consent, share health information through verifiable health links, and have that consent enforced when the information is used. It uses IHE Privacy Consent on FHIR (PCF) 1.1.0 for consent directives and IHE Verifiable Health Links (VHL) 1.0.0-comment for the links."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:34
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:34
+msgid "This specification is a working draft for demonstration and may not be used for any implementation purposes. It is provided without warranty of completeness or consistency, and the official publication supersedes it. No liability can be inferred from the use or misuse of this specification or its consequences."
+msgstr ""
+
+#. Source: input/pagecontent/index.md:13
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:13
+msgid "What this guide contains"
+msgstr ""
+
+#. Source: input/pagecontent/index.md:20
+#. URL: http://smart.who.int/trust-phw/index.html
+#: input/pagecontent/index.md:20
+msgid "Worked Example: IPS Pilgrimage (Hajj): processes A, B, C, F and I applied to one case."
+msgstr ""
+

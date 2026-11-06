@@ -1,0 +1,78 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: input/pagecontent/license.md:33
+#. URL: http://smart.who.int/trust-phw/license.html
+#: input/pagecontent/license.md:33
+msgid "3-clause BSD license Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:  Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer."
+msgstr ""
+
+#. Source: input/pagecontent/license.md:31
+#. URL: http://smart.who.int/trust-phw/license.html
+#: input/pagecontent/license.md:31
+msgid "Copyright(c) 2022 World Health Organization All rights reserved."
+msgstr ""
+
+#. Source: input/pagecontent/license.md:16
+#. URL: http://smart.who.int/trust-phw/license.html
+#: input/pagecontent/license.md:16
+msgid "Copyright(c) 2022 World Health Organization Some rights reserved."
+msgstr ""
+
+#. Source: input/pagecontent/license.md:29
+#. URL: http://smart.who.int/trust-phw/license.html
+#: input/pagecontent/license.md:29
+msgid "License details for Software"
+msgstr ""
+
+#. Source: input/pagecontent/license.md:40
+#. URL: http://smart.who.int/trust-phw/license.html
+#: input/pagecontent/license.md:40
+msgid "Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+msgstr ""
+
+#. Source: input/pagecontent/license.md:38
+#. URL: http://smart.who.int/trust-phw/license.html
+#: input/pagecontent/license.md:38
+msgid "Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution."
+msgstr ""
+
+#. Source: input/pagecontent/license.md:10
+#. URL: http://smart.who.int/trust-phw/license.html
+#: input/pagecontent/license.md:10
+msgid "SMART Guidelines license details"
+msgstr ""
+
+#. Source: input/pagecontent/license.md:7
+#. URL: http://smart.who.int/trust-phw/license.html
+#: input/pagecontent/license.md:7
+msgid "SMART Guidelines, including this one, are required to express the license their copyright license. All WHO-authored SMART Guidelines shall be subject to the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License. This includes all commons and dependencies authored by the WHO and this current guidance."
+msgstr ""
+
+#. Source: input/pagecontent/license.md:14
+#. URL: http://smart.who.int/trust-phw/license.html
+#: input/pagecontent/license.md:14
+msgid "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License."
+msgstr ""
+
+#. Source: input/pagecontent/license.md:18
+#. URL: http://smart.who.int/trust-phw/license.html
+#: input/pagecontent/license.md:18
+msgid "Under the terms of this licence, you may copy, redistribute and adapt the work for noncommercial purposes provided the work is appropriately cited, as indicated below. In any use of this work, there should be no suggestion that WHO endorses any specific organizations, products or services. The use of the WHO logo is not permitted. If you adapt the work, then you must license your work under the same or equivalent Creative Commons licence. If you create a translation of this work, you should add the following disclaimer along with the suggested citation: \"This translation was not created by the World Health Organization (WHO). WHO is not responsible for the content or accuracy of this translation. The original English edition shall be the binding and authentic edition.\" Any mediation relating to disputes arising under the licence shall be conducted in accordance with the mediation rules of the World Intellectual Property Organization. (http://www.wipo.int/amc/en/mediation/rules/)."
+msgstr ""
+
