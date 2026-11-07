@@ -61,6 +61,7 @@ __pycache__/
 /output-ast/
 /input-cache/txcache/
 /fhir-artifact-index/sidecars/
+/fhir-artifact-index/contexts/
 
 node_modules/
 
