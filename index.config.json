@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "e66d72273cc288bb45ecbb802670cd81721ae3fe",
+          "ref": "595945930a6cf3da7d916aa6f9ccb934ed5eb9a8",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -43,7 +43,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "e66d72273cc288bb45ecbb802670cd81721ae3fe",
+              "ref": "595945930a6cf3da7d916aa6f9ccb934ed5eb9a8",
               "evidence": "Owner litlfred, 2026-11-07, session https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f: 'repin + merge open 12 hrs' (re-pin smart-trust-phw's layers to their main tips)."
             }
           }
@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "23ebf43e3e6da0c7c2dbc80a8ce8f0b2330becc2",
+          "ref": "1524b3fc226e7bf407b4fd217866c63bc260ba29",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -102,8 +102,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "23ebf43e3e6da0c7c2dbc80a8ce8f0b2330becc2",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): fhir-harness held at phw main pin 23ebf43; its tip trips check:artefact-verification (stale declaration check:extracted-references) against cat-harness-tools e5a047b, harness-side, reported."
+              "ref": "1524b3fc226e7bf407b4fd217866c63bc260ba29",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "c36b85ce480280d0a2564d293f882c668a3388fe",
+          "ref": "6d76e105ff5512c2488af2424349c621b4773165",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -158,8 +158,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "c36b85ce480280d0a2564d293f882c668a3388fe",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): cat-harness and cat-harness-tools held at phw main pins; the tip of cat-harness-tools (4e79324) adds check:artefact-verification finding smart-base:processes:render:check undeclared, harness-side, reported."
+              "ref": "6d76e105ff5512c2488af2424349c621b4773165",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "e5a047b8d4cca622e7c53cd78fadcfc43e621a65",
+          "ref": "4e79324d5d3637bbc592b657f71f1ec3b6b86797",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -183,8 +183,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "e5a047b8d4cca622e7c53cd78fadcfc43e621a65",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): cat-harness and cat-harness-tools held at phw main pins; the tip of cat-harness-tools (4e79324) adds check:artefact-verification finding smart-base:processes:render:check undeclared, harness-side, reported."
+              "ref": "4e79324d5d3637bbc592b657f71f1ec3b6b86797",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
             }
           }
         }
