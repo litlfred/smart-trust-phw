@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-07 05:43+0000\n"
+"POT-Creation-Date: 2026-11-07 21:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,106 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
 
-#. Source: input/pagecontent/business-processes.md:91
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:91
-msgid ") + W3C PROV-O  citing  and"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:316
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:316
-msgid "****"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:312
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:312
-msgid "**** ()"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:319
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:319
-msgid "**** consumer ()"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:259
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:259
-msgid "**** Record Audit Event"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:249
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:249
-msgid "**** Record Audit Event (IHE ATNA, Final Text; ITI TF-2: 3.20†). Grouping as in VHL Volume 1 §1:XX.3 and §1:XX.6.1"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:187
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:187
-msgid "**** responder ()"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:310
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:310
-msgid "****, with one of: HTTP Message Signatures, RFC 9421 (ITI-YY5 §2:3.YY5.4.1.3, §2:3.YY5.5.2; Sign Manifest Request Option, Vol 1 §1:XX.2.1); Verifiable Credential Option (ITI-YY5 §2:3.YY5.4.1.5); OAuth with SSRAA Option (ITI-YY5 §2:3.YY5.4.1.4, §2:3.YY5.5.3; HL7 SSRAA §2, §3, §5.2), approved by the owner on 2026-10-30"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:186
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:186
-msgid "****. A Consent counts when  equals the ODRL , or names an earlier version reached by  across narrowing amendments (fhir-harness#227, #228)"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:91
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:91
-msgid "+ three-valued  ( \\"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:37
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:37
-msgid ", ,"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:207
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:207
-msgid ", , ,"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:208
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:208
-msgid ", , , or null"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:252
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:252
-msgid ", or a clause in the PDF"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:157
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:157
-msgid "/  RFC 9449 §6.1; granted details RFC 9396 §7, may be fewer than asked §7.1"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:315
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:315
-msgid ";  (MHD Document Responder, Vol 1 §1:XX.3)"
-msgstr ""
-
 #. Source: input/pagecontent/business-processes.md:3
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:3
-msgid "A business process is a set of related activities or tasks performed together by system actors and human personas to achieve a health information exchange objective. Each workflow below is authored in BPMN 2.0 (, , ) with full BPMN Diagram Interchange () layout and drawn from it to SVG ( and so on) by ; never edit a drawing, change the BPMN. The data sharing agreement processes D to H, below, take the same form."
+msgid "A business process is a set of related activities or tasks performed together by system actors and human personas to achieve a health information exchange objective. Each workflow below is authored in BPMN 2.0 ({code0}, {code1}, {code2}) with full BPMN Diagram Interchange ({code3}) layout and drawn from it to SVG ({code4} and so on) by {code5}; never edit a drawing, change the BPMN. The data sharing agreement processes D to H, below, take the same form."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:415
@@ -127,57 +31,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:281
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:281
-msgid "A withdrawn Consent needs no step in H: the person sets  to  (), and  then finds no active Consent. A VHL or HCERT QR code cannot be revoked on its own. It expires (, claim key 4), and the VHL Sharer can stop serving the link."
+msgid "A withdrawn Consent needs no step in H: the person sets {code0} to {code1} ({code2}), and {code3} then finds no active Consent. A VHL or HCERT QR code cannot be revoked on its own. It expires ({code4}, claim key 4), and the VHL Sharer can stop serving the link."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:24
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:24
 msgid "A. Record and Manage Patient Privacy Consent"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:39
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#. Source: input/pagecontent/business-processes.md:67
-#: input/pagecontent/business-processes.md:39
-#: input/pagecontent/business-processes.md:67
-msgid "Access Consent ( or )"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:38
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:38
-msgid "Access Consent ( or transaction  with )"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:68
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:68
-msgid "Access Consent responder ()"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:40
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:40
-msgid "Access Consent responder (), assigning  and"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:90
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:90
-msgid "Access Consent responder (), returning  and"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:41
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:41
-msgid "Access Consent response ( / )"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:89
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:89
-msgid "Access Consent: Search ()"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:111
@@ -237,19 +97,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:179
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:179
-msgid "Agreement versions: every one in force with the requester (, ); a request MAY name some of them (RFC 9396  §2.2, or SSRAA  §5.2.1.1), which narrows the permissions it acts under. Grant: W3C VC 2.0  §4.7,  §4.8, validity §4.9,  §4.10,  §5.3; principal: RFC 8693  §4.1; purpose: HL7 PurposeOfUse"
+msgid "Agreement versions: every one in force with the requester ({code0}, {code1}); a request MAY name some of them (RFC 9396 {code2} §2.2, or SSRAA {code3} §5.2.1.1), which narrows the permissions it acts under. Grant: W3C VC 2.0 {code4} §4.7, {code5} §4.8, validity §4.9, {code6} §4.10, {code7} §5.3; principal: RFC 8693 {code8} §4.1; purpose: HL7 PurposeOfUse"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:251
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:251
-msgid "An unmet duty gives , and an unknowable one gives"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:220
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:220
-msgid "and  lead to  (403),  to , and  to . Two more expressions, outside the table, give  (every ) and  (the applicable ones that permitted) for the duties and the audit."
+msgid "An unmet duty gives {code0}, and an unknowable one gives {code1}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:212
@@ -261,7 +115,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:438
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:438
-msgid "Another IG calls a process here with a BPMN call activity: it imports this IG's namespace with  () and sets  to the process id, prefixed with the import's namespace prefix (Q-BPMN-2 A)."
+msgid "Another IG calls a process here with a BPMN call activity: it imports this IG's namespace with {code0} ({code1}) and sets {code2} to the process id, prefixed with the import's namespace prefix (Q-BPMN-2 A)."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:212
@@ -309,13 +163,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:70
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:70
-msgid "Assemble & sign VHL payload bound to Consent  Generate VHL"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:259
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:259
-msgid "ATNA Audit Record Repository"
+msgid "Assemble & sign VHL payload bound to Consent {code0} Generate VHL"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:448
@@ -333,19 +181,19 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:331
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:331
-msgid "Audit. Once an agreement applies,  records an IHE ATNA audit event ( Record Audit Event). It cites the fixed-version URL of every agreement and Consent evaluated, which of them permitted, the combining DMN decision used (by namespace, decision id, and its file's fixed-version URL and SHA-256), the receiver, the purpose of use, and the documents released (or the refusal). This follows the VHL profile's own ATNA grouping: Vol 1 §1:XX.3 requires the VHL Sharer and the VHL Receiver to be grouped with an ATNA Secure Node or Secure Application for , and §1:XX.6.1 gives that grouping its audit logging. VHL itself says the Sharer SHOULD log access (ITI-YY5 §2:3.YY5.5.6) and MAY record the Audit Event – Accessed Health Data (ITI-YY5 §2:3.YY5.4.1.7). Under an agreement, the event is always recorded. IHE BALP needs owner approval (Trial Implementation). The PROV-O record of process G () cites the same agreement URLs and DMN decision, so the ATNA log and the PROV log agree."
+msgid "Audit. Once an agreement applies, {code0} records an IHE ATNA audit event ({code1} Record Audit Event). It cites the fixed-version URL of every agreement and Consent evaluated, which of them permitted, the combining DMN decision used (by namespace, decision id, and its file's fixed-version URL and SHA-256), the receiver, the purpose of use, and the documents released (or the refusal). This follows the VHL profile's own ATNA grouping: Vol 1 §1:XX.3 requires the VHL Sharer and the VHL Receiver to be grouped with an ATNA Secure Node or Secure Application for {code2}, and §1:XX.6.1 gives that grouping its audit logging. VHL itself says the Sharer SHOULD log access (ITI-YY5 §2:3.YY5.5.6) and MAY record the Audit Event – Accessed Health Data (ITI-YY5 §2:3.YY5.4.1.7). Under an agreement, the event is always recorded. IHE BALP needs owner approval (Trial Implementation). The PROV-O record of process G ({code3}) cites the same agreement URLs and DMN decision, so the ATNA log and the PROV log agree."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:200
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:200
-msgid "Audit. The ATNA event (, ) and the PROV-O record () cite every agreement and Consent evaluated, and which of them permitted."
+msgid "Audit. The ATNA event ({code0}, {code1}) and the PROV-O record ({code2}) cite every agreement and Consent evaluated, and which of them permitted."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:261
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:261
-msgid "Audit. The ATNA event cites the agreement's fixed-version URL, the requester, the purpose of use, the data or documents released, and the decision. ATNA is reached in the same way the VHL profile reaches it. VHL Volume 1 §1:XX.3, Table XX.3-1, requires the VHL Sharer and VHL Receiver to be grouped with an ATNA Secure Node or Secure Application. §1:XX.6.1 covers the secure channel () and audit logging. Those sections are from the IHE/ITI.VHL source at commit , as snapshotted in litlfred/smart-trust-tools . IHE BALP (Basic Audit Log Patterns) is Trial Implementation and needs owner approval before this IG names its AuditEvent patterns. The PROV-O record () cites the same agreement URL, so the two logs agree."
+msgid "Audit. The ATNA event cites the agreement's fixed-version URL, the requester, the purpose of use, the data or documents released, and the decision. ATNA is reached in the same way the VHL profile reaches it. VHL Volume 1 §1:XX.3, Table XX.3-1, requires the VHL Sharer and VHL Receiver to be grouped with an ATNA Secure Node or Secure Application. §1:XX.6.1 covers the secure channel ({code0}) and audit logging. Those sections are from the IHE/ITI.VHL source at commit {code1}, as snapshotted in litlfred/smart-trust-tools {code2}. IHE BALP (Basic Audit Log Patterns) is Trial Implementation and needs owner approval before this IG names its AuditEvent patterns. The PROV-O record ({code3}) cites the same agreement URL, so the two logs agree."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:252
@@ -363,13 +211,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:311
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:311
-msgid "Authenticate the receiver against the trust list"
+msgid "Authenticate the receiver against the trust list {code0}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:296
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:296
-msgid "Authenticate the VHL Receiver (), find the agreements and Consents in force from its verified identity, decide under every applicable one (process F, DMN ), and record an IHE ATNA audit event () that cites every one evaluated."
+msgid "Authenticate the VHL Receiver ({code0}), find the agreements and Consents in force from its verified identity, decide under every applicable one (process F, DMN {code1}), and record an IHE ATNA audit event ({code2}) that cites every one evaluated."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:52
@@ -429,7 +277,7 @@ msgstr ""
 #: input/pagecontent/business-processes.md:373
 #: input/pagecontent/business-processes.md:403
 #: input/pagecontent/business-processes.md:422
-msgid "BPMN Source:"
+msgid "BPMN Source: {code0}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:73
@@ -447,7 +295,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:18
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:18
-msgid "Capture, update, or revoke a patient privacy consent directive ( or ) in a PCF Consent Registry via  Access Consent (, , )."
+msgid "Capture, update, or revoke a patient privacy consent directive ({code0} or {code1}) in a PCF Consent Registry via {code2} Access Consent ({code3}, {code4}, {code5})."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:368
@@ -487,7 +335,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:318
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:318
-msgid "Cites every agreement and Consent evaluated, which permitted, and the combining DMN decision used. **** (IHE ATNA, Final Text; ITI TF-2: 3.20, cited from standing knowledge); grouping per VHL Vol 1 §1:XX.3, Table XX.3-1, and §1:XX.6.1"
+msgid "Cites every agreement and Consent evaluated, which permitted, and the combining DMN decision used. {code0} (IHE ATNA, Final Text; ITI TF-2: 3.20, cited from standing knowledge); grouping per VHL Vol 1 §1:XX.3, Table XX.3-1, and §1:XX.6.1"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:179
@@ -499,7 +347,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:193
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:193
-msgid "Combining several agreements (DMN )"
+msgid "Combining several agreements (DMN {code0})"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:251
@@ -523,7 +371,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:41
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:41
-msgid "Confirm recorded  &   Access Consent response"
+msgid "Confirm recorded {code0} & {code1} {code2} Access Consent response"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:391
@@ -541,7 +389,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:37
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:37
-msgid "Construct FHIR Consent & Provenance ( / )"
+msgid "Construct FHIR Consent & Provenance ({code0} / {code1})"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:204
@@ -553,7 +401,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:38
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:38
-msgid "Create consent directive  Access Consent: Post"
+msgid "Create consent directive {code0} Access Consent: Post"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:117
@@ -653,7 +501,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:198
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:198
-msgid "Default: prohibit wins. Among the applicable policies, the request is permitted if at least one permits and none prohibits. This is ODRL 2.2's own conflict strategy  (\"Prohibitions take preference over permissions\"). An  is never permit."
+msgid "Default: prohibit wins. Among the applicable policies, the request is permitted if at least one permits and none prohibits. This is ODRL 2.2's own conflict strategy {code0} (\"Prohibitions take preference over permissions\"). An {code1} is never permit."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:410
@@ -667,19 +515,19 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:181
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:181
-msgid "DID Core 1.0 + ; RFC 5280†"
+msgid "DID Core 1.0 + {code0}; RFC 5280†"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:132
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:132
-msgid "DID document, RFC 5280 §6† path validation, or a local list. UDAP route: UDAP DCR §4‡ (SSRAA §3.2.3): software statement signature,  chain to the trust community's anchor, requested parameters"
+msgid "DID document, RFC 5280 §6† path validation, or a local list. UDAP route: UDAP DCR §4‡ (SSRAA §3.2.3): software statement signature, {code0} chain to the trust community's anchor, requested parameters"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:137
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:137
-msgid "Discover UDAP server metadata ()"
+msgid "Discover UDAP server metadata ({code0})"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:431
@@ -713,7 +561,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:199
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:199
-msgid "Duties. The duties of every permitting agreement apply. A consent-based agreement still needs an active PCF Consent ()."
+msgid "Duties. The duties of every permitting agreement apply. A consent-based agreement still needs an active PCF Consent ({code0})."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:142
@@ -738,22 +586,22 @@ msgstr ""
 msgid "Enter client by hand, scopes from the signed agreement text"
 msgstr ""
 
-#. Source: input/pagecontent/business-processes.md:188
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:188
-msgid "Evaluate  per applicable policy; combine with DMN"
-msgstr ""
-
 #. Source: input/pagecontent/business-processes.md:91
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:91
-msgid "Evaluate PCF Consent (ODRL :  /  / ) & PROV-O log"
+msgid "Evaluate PCF Consent (ODRL {code0}: {code1} / {code2} / {code3}) & PROV-O log"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:188
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:188
+msgid "Evaluate {code0} per applicable policy; combine with DMN {code1}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:393
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:393
-msgid "Explicit and implied consent are described on the Consent page. Process L records an explicit consent. Process M adds the consent directives, explicit or implied, to a document when it is shared (process B, step B5a) or issued (process J, step J2a). Adding them is optional."
+msgid "Explicit and implied consent are described on the <a0>Consent</a0> page. Process L records an explicit consent. Process M adds the consent directives, explicit or implied, to a document when it is shared (process B, step B5a) or issued (process J, step J2a). Adding them is optional."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:431
@@ -765,7 +613,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:8
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:8
-msgid "Explicit IHE PCF and VHL Transaction Binding: Every cross-actor task names its normative IHE transaction ( Access Consent,  Submit PKI Material with DID,  Retrieve Trust List with DID,  Generate VHL,  Provide VHL,  Retrieve Manifest)."
+msgid "Explicit IHE PCF and VHL Transaction Binding: Every cross-actor task names its normative IHE transaction ({code0} Access Consent, {code1} Submit PKI Material with DID, {code2} Retrieve Trust List with DID, {code3} Generate VHL, {code4} Provide VHL, {code5} Retrieve Manifest)."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:167
@@ -797,13 +645,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:232
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:232
-msgid "Fixed parts: the replacement may not return  when no row is , because unknown is never permit (process F).  and , and so the duties and the audit, are not part of the replacement."
+msgid "Fixed parts: the replacement may not return {code0} when no row is {code1}, because unknown is never permit (process F). {code2} and {code3}, and so the duties and the audit, are not part of the replacement."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:453
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:453
-msgid "For a worked example of processes A, B, C, F and I in one case, see Worked Example: IPS Pilgrimage (Hajj)."
+msgid "For a worked example of processes A, B, C, F and I in one case, see <a0>Worked Example: IPS Pilgrimage (Hajj)</a0>."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:236
@@ -815,37 +663,19 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:134
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:134
-msgid "Gap: neither RFC 7591 nor the SSRAA software statement has a field for this, so it is the server's own configuration. It is keyed by the fixed-version URL, the same value as RFC 9396  (§2.2)"
+msgid "Gap: neither RFC 7591 nor the SSRAA software statement has a field for this, so it is the server's own configuration. It is keyed by the fixed-version URL, the same value as RFC 9396 {code0} (§2.2)"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:165
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:165
-msgid "Gaps and open points in E. RFC 9396 has no field that holds an agreement's URL and its hash. The fixed-version URL goes in , and the SHA-256 published with that version fixes the bytes. No checked standard parameter carries the W3C VC 2.0 grant in a server-to-server token request. Until one is chosen, the client registration recorded in  stands in for the grant. For a document-only agreement, scopes set by the administrator replace RAR details, and  can still carry the agreement URL for audit."
+msgid "Gaps and open points in E. RFC 9396 has no field that holds an agreement's URL and its hash. The fixed-version URL goes in {code0}, and the SHA-256 published with that version fixes the bytes. No checked standard parameter carries the W3C VC 2.0 grant in a server-to-server token request. Until one is chosen, the client registration recorded in {code1} stands in for the grant. For a document-only agreement, scopes set by the administrator replace RAR details, and {code2} can still carry the agreement URL for audit."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:133
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:133
-msgid "GDHCN ; CRL RFC 5280 §5†"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:66
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:66
-msgid "Generate VHL ()"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:70
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:70
-msgid "Generate VHL (), signing with  key material"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:71
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:71
-msgid "Generate VHL response received by"
+msgid "GDHCN {code0}; CRL RFC 5280 §5†"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:276
@@ -863,7 +693,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:103
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:103
-msgid "Grants are W3C Verifiable Credentials 2.0. A grant cites the agreement through  (VC DM 2.0 §5.3), and its status is a W3C Bitstring Status List entry. litlfred/smart-trust-tools verifies it."
+msgid "Grants are W3C Verifiable Credentials 2.0. A grant cites the agreement through {code0} (VC DM 2.0 §5.3), and its status is a W3C Bitstring Status List entry. litlfred/smart-trust-tools verifies it."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:263
@@ -881,13 +711,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:137
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:137
-msgid "HL7 SSRAA §2.1, §2.2, §2.3 (), §2.4; UDAP Server Metadata §1‡"
+msgid "HL7 SSRAA §2.1, §2.2, §2.3 ({code0}), §2.4; UDAP Server Metadata §1‡"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:138
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:138
-msgid "HL7 SSRAA §3.1 (claims;  = certificate SAN URI;  = ), §3.2.3 (request body,  = ), §3.3 (certifications); UDAP DCR §2‡"
+msgid "HL7 SSRAA §3.1 (claims; {code0} = certificate SAN URI; {code1} = {code2}), §3.2.3 (request body, {code3} = {code4}), §3.3 (certifications); UDAP DCR §2‡"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:413
@@ -950,18 +780,6 @@ msgstr ""
 msgid "IHE VHL / ATNA transaction, standard and section"
 msgstr ""
 
-#. Source: input/pagecontent/business-processes.md:327
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:327
-msgid "in , resolved in the trust list"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:339
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:339
-msgid "in . Decided (owner, 2026-11-01 07:54Z, card Q-DRAIN-4, option D). SSRAA §5.2.1.1 lets a client name policy URIs in , an optional array, and FHIR  URLs in . A receiver MAY list one or more agreements' fixed-version URLs in . This narrows the permissions it acts under () but never escapes another applicable agreement's prohibition. Naming is optional, so the HTTP Message Signatures and Verifiable Credential options, which have no such field, still work. Nothing is added to any standard."
-msgstr ""
-
 #. Source: input/pagecontent/business-processes.md:115
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:115
@@ -971,7 +789,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:230
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:230
-msgid "Input: , as in the table above."
+msgid "Input: {code0}, as in the table above."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:160
@@ -995,7 +813,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:110
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:110
-msgid "Issue a short-lived, key-bound token (DPoP, RFC 9449) for an RFC 9396  request whose  (§2.2) is the agreement's fixed-version URL, after the access decision."
+msgid "Issue a short-lived, key-bound token (DPoP, RFC 9449) for an RFC 9396 {code0} request whose {code1} (§2.2) is the agreement's fixed-version URL, after the access decision."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:347
@@ -1157,7 +975,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:129
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:129
-msgid "Key published under an accepted anchor (DSA P3): DID Core 1.0 + , or RFC 5280"
+msgid "Key published under an accepted anchor (DSA P3): DID Core 1.0 + {code0}, or RFC 5280"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:400
@@ -1277,13 +1095,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:218
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:218
-msgid "No agreement applies: normal VHL rules ()."
+msgid "No agreement applies: normal VHL rules ({code0})."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:9
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:9
-msgid "No IHE IUA Claim: Consent management and enforcement operate over IHE PCF  Access Consent and VHL – without claiming conformance to IHE Internet User Authorization (IUA )."
+msgid "No IHE IUA Claim: Consent management and enforcement operate over IHE PCF {code0} Access Consent and VHL {code1}–{code2} without claiming conformance to IHE Internet User Authorization (IUA {code3})."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:105
@@ -1313,31 +1131,31 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:28
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:28
-msgid "Objective: Capture, update, or revoke a patient privacy consent directive ( or ) in a PCF Consent Registry using the IHE PCF Access Consent  transaction (, , ), trust-anchor neutral and with no IUA claim."
+msgid "Objective: Capture, update, or revoke a patient privacy consent directive ({code0} or {code1}) in a PCF Consent Registry using the IHE PCF Access Consent {code2} transaction ({code3}, {code4}, {code5}), trust-anchor neutral and with no IUA claim."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:302
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:302
-msgid "Objective: Decide a VHL Receiver's  request under the data sharing agreement the VHL Sharer already holds with that receiver, and audit it with IHE ATNA. Trust-anchor neutral, with no IUA claim."
+msgid "Objective: Decide a VHL Receiver's {code0} request under the data sharing agreement the VHL Sharer already holds with that receiver, and audit it with IHE ATNA. Trust-anchor neutral, with no IUA claim."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:171
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:171
-msgid "Objective: Decide one request under every agreement or Consent that applies to it: ,  or . Unknown is never permit. Each policy is decided alone, then the results are combined by the DMN decision . Processes E and I call it."
+msgid "Objective: Decide one request under every agreement or Consent that applies to it: {code0}, {code1} or {code2}. Unknown is never permit. Each policy is decided alone, then the results are combined by the DMN decision <a0>{code3}</a0>. Processes E and I call it."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:77
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:77
-msgid "Objective: Present a Verifiable Health Link (), verify cryptographic signatures against a Trust Anchor's trust list (), request the health document manifest (), query active PCF Consent (), and enforce three-valued ( |  | ) ODRL consent evaluation with W3C PROV-O decision provenance. Trust-anchor neutral (WHO GDHCN is one possible Trust Anchor among others) and makes no IUA claim."
+msgid "Objective: Present a Verifiable Health Link ({code0}), verify cryptographic signatures against a Trust Anchor's trust list ({code1}), request the health document manifest ({code2}), query active PCF Consent ({code3}), and enforce three-valued ({code4} | {code5} | {code6}) ODRL consent evaluation with W3C PROV-O decision provenance. Trust-anchor neutral (WHO GDHCN is one possible Trust Anchor among others) and makes no IUA claim."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:56
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:56
-msgid "Objective: Publish VHL Sharer PKI signing keys to an abstract Trust Anchor (), verify or record an active patient privacy consent directive (), and generate a signed Verifiable Health Link () for storage in the Holder's Personal Health Wallet. Trust-anchor neutral (WHO GDHCN is one possible Trust Anchor among others)."
+msgid "Objective: Publish VHL Sharer PKI signing keys to an abstract Trust Anchor ({code0}), verify or record an active patient privacy consent directive ({code1}), and generate a signed Verifiable Health Link ({code2}) for storage in the Holder's Personal Health Wallet. Trust-anchor neutral (WHO GDHCN is one possible Trust Anchor among others)."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:240
@@ -1373,13 +1191,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:146
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:146
-msgid "Objective: The client asks for a token for the data the agreement covers, and names the agreement in RFC 9396 . The authorization server decides with process F and issues a key-bound token. The resource server checks the token on every call and records the call with process G."
+msgid "Objective: The client asks for a token for the data the agreement covers, and names the agreement in RFC 9396 {code0}. The authorization server decides with process F and issues a key-bound token. The resource server checks the token on every call and records the call with process G."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:404
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:404
-msgid "Objective: The holder gives explicit consent by their own act, recorded as an IHE PCF Consent whose  is the trust domain's consent code."
+msgid "Objective: The holder gives explicit consent by their own act, recorded as an IHE PCF Consent whose {code0} is the trust domain's consent code."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:16
@@ -1405,7 +1223,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:188
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:188
-msgid "ODRL 2.2; ; document-only: the configuration from . One result per agreement or Consent, combined by OMG DMN 1.5 decision  (; the BPMN task's  is the DMN 1.5 namespace)"
+msgid "ODRL 2.2; {code0}; document-only: the configuration from {code1}. One result per agreement or Consent, combined by OMG DMN 1.5 decision <a0>{code2}</a0> ({code3}; the BPMN task's {code4} is the DMN 1.5 namespace)"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:259
@@ -1453,25 +1271,25 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:398
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:398
-msgid "Optionally, before signing: find the active explicit Consents (), or else the trust domain's default as a ; add them as consent entries and list them in the Advance Directives section."
+msgid "Optionally, before signing: find the active explicit Consents ({code0}), or else the trust domain's default as a {code1}; add them as consent entries and list them in the Advance Directives section."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:231
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:231
-msgid "Output: , one of , , , , with the same routing in process I."
+msgid "Output: {code0}, one of {code1}, {code2}, {code3}, {code4}, with the same routing in process I."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:226
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:226
-msgid "Override 1: the policies. ODRL 2.2 lets each policy declare a conflict strategy with :  (permissions override prohibitions),  (prohibitions override permissions) or  (the policy is void if any conflict is detected). These terms were checked against the ODRL 2.2 vocabulary and the pinned JSON-LD context (folio-assistant-core ). When every applicable policy declares the same strategy, the table uses it. A policy that declares none counts as , the owner's default D. If the applicable policies declare different strategies,  is . ODRL 2.2 says a policy with several conflict values (after a merge or inheritance) is void when its rules conflict (W3C ODRL Information Model 2.2, Policy Conflict Strategy). This IG treats the applicable policies of one request as merged. The only declaration that changes an outcome is  declared by every applicable policy. ODRL's own default when nothing is declared is , but the outcome is the same: with a conflict,  voids the policy and  denies, and both are refused."
+msgid "Override 1: the policies. ODRL 2.2 lets each policy declare a conflict strategy with {code0}: {code1} (permissions override prohibitions), {code2} (prohibitions override permissions) or {code3} (the policy is void if any conflict is detected). These terms were checked against the ODRL 2.2 vocabulary and the pinned JSON-LD context (folio-assistant-core {code4}). When every applicable policy declares the same strategy, the table uses it. A policy that declares none counts as {code5}, the owner's default D. If the applicable policies declare different strategies, {code6} is {code7}. ODRL 2.2 says a policy with several conflict values (after a merge or inheritance) is void when its rules conflict (W3C ODRL Information Model 2.2, Policy Conflict Strategy). This IG treats the applicable policies of one request as merged. The only declaration that changes an outcome is {code8} declared by every applicable policy. ODRL's own default when nothing is declared is {code9}, but the outcome is the same: with a conflict, {code10} voids the policy and {code11} denies, and both are refused."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:228
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:228
-msgid "Override 2: the jurisdiction or Sharer. A jurisdiction or a Sharer MAY replace the decision  with its own DMN decision. The replacement is well defined when it has the same contract:"
+msgid "Override 2: the jurisdiction or Sharer. A jurisdiction or a Sharer MAY replace the decision {code0} with its own DMN decision. The replacement is well defined when it has the same contract:"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:12
@@ -1633,13 +1451,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:49
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:49
-msgid "Plain language. The person is shown the agreement's plain-language summary, published and hashed with the agreement. That summary is what they consent to (task )."
+msgid "Plain language. The person is shown the agreement's plain-language summary, published and hashed with the agreement. That summary is what they consent to (task {code0})."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:104
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:104
-msgid "Pluggable trust anchors. WHO GDHCN is one option. The others are a national X.509 PKI, the party's own , or a local list. UDAP, as profiled by HL7 SSRAA, is approved (owner, 2026-10-30 20:28Z) for X.509 certificate-based registration and authentication, which fits a national X.509 PKI as the anchor. OpenID Federation is out of scope."
+msgid "Pluggable trust anchors. WHO GDHCN is one option. The others are a national X.509 PKI, the party's own {code0}, or a local list. UDAP, as profiled by HL7 SSRAA, is approved (owner, 2026-10-30 20:28Z) for X.509 certificate-based registration and authentication, which fits a national X.509 PKI as the anchor. OpenID Federation is out of scope."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:180
@@ -1659,7 +1477,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:179
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:179
-msgid "Policy Decision Point ()"
+msgid "Policy Decision Point ({code0})"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:189
@@ -1671,13 +1489,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:338
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:338
-msgid "Possible ballot comments. The VHL Verifiable Credential Option example uses  and , which are VC 1.1 terms. VC 2.0 uses  and . In the OAuth with SSRAA Option example (ITI-YY5 §2:3.YY5.4.1.4), the decoded client assertion gives  as a single string, where SSRAA §5.2.1.1 requires an array, and the token request omits the  parameter that SSRAA §5.2.2.2 requires. VHL says its workflow is informative and SSRAA takes precedence."
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:215
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:215
-msgid "prefers a permission, but none permits."
+msgid "Possible ballot comments. The VHL Verifiable Credential Option example uses {code0} and {code1}, which are VC 1.1 terms. VC 2.0 uses {code2} and {code3}. In the OAuth with SSRAA Option example (ITI-YY5 §2:3.YY5.4.1.4), the decoded client assertion gives {code4} as a single string, where SSRAA §5.2.1.1 requires an array, and the token request omits the {code5} parameter that SSRAA §5.2.2.2 requires. VHL says its workflow is informative and SSRAA takes precedence."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:129
@@ -1689,7 +1501,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:20
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:20
-msgid "Present a VHL (), verify cryptographic trust via a Trust Anchor (), request the manifest (), query active PCF Consent (), and enforce three-valued ( /  / ) ODRL consent evaluation with PROV-O provenance."
+msgid "Present a VHL ({code0}), verify cryptographic trust via a Trust Anchor ({code1}), request the manifest ({code2}), query active PCF Consent ({code3}), and enforce three-valued ({code4} / {code5} / {code6}) ODRL consent evaluation with PROV-O provenance."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:445
@@ -1707,7 +1519,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:85
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:85
-msgid "Present VHL payload to Receiver  Provide VHL"
+msgid "Present VHL payload to Receiver {code0} Provide VHL"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:45
@@ -1719,13 +1531,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:94
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:94
-msgid "Process clinical documents or refusal notice  response"
+msgid "Process clinical documents or refusal notice {code0} response"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:319
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:319
-msgid "Process documents or refusal  response"
+msgid "Process documents or refusal {code0} response"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:156
@@ -1737,7 +1549,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:314
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:314
-msgid "Process F for each applicable agreement or Consent, combined by DMN  (default ; overridable). The duties of every permitting agreement apply. Plus VHL's own checks in ITI-YY5 §2:3.YY5.4.1.7, step 3"
+msgid "Process F for each applicable agreement or Consent, combined by DMN <a0>{code0}</a0> (default {code1}; overridable). The duties of every permitting agreement apply. Plus VHL's own checks in ITI-YY5 §2:3.YY5.4.1.7, step 3"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:161
@@ -1793,7 +1605,7 @@ msgstr ""
 #: input/pagecontent/business-processes.md:372
 #: input/pagecontent/business-processes.md:402
 #: input/pagecontent/business-processes.md:421
-msgid "Process ID:"
+msgid "Process ID: {code0}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:16
@@ -1819,25 +1631,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:98
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:98
-msgid "Processes D to H implement a data sharing agreement (DSA) between a data provider and a data recipient. Each one is a technical process from the DSA process analysis for folio-assistant#2702 (P4, P5, P11, P12 and P13). The owner chose this IG as their home on 2026-10-30 (19:59Z). They apply to every agreement, whether it is computable (a W3C ODRL 2.2  derived from the legal text) or document-only (a signed PDF). The only difference is where the access rule comes from: the ODRL , or a configuration an administrator sets by hand from the PDF."
+msgid "Processes D to H implement a data sharing agreement (DSA) between a data provider and a data recipient. Each one is a technical process from the DSA process analysis for <a0>folio-assistant#2702</a0> (P4, P5, P11, P12 and P13). The owner chose this IG as their home on 2026-10-30 (19:59Z). They apply to every agreement, whether it is computable (a W3C ODRL 2.2 {code0} derived from the legal text) or document-only (a signed PDF). The only difference is where the access rule comes from: the ODRL {code1}, or a configuration an administrator sets by hand from the PDF."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:214
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:214
-msgid "Prohibition overrides permission. Under , a permit and a deny conflict, so the merged policy is void and nothing is permitted."
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:258
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:258
-msgid "Provenance Log (W3C PROV-O, hash-chained)"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:85
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:85
-msgid "Provide VHL ()"
+msgid "Prohibition overrides permission. Under {code0}, a permit and a deny conflict, so the merged policy is void and nothing is permitted."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:132
@@ -1873,25 +1673,25 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:65
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:65
-msgid "Publish key in Trust Anchor trust list  (GDHCN or other anchor)"
+msgid "Publish key in Trust Anchor trust list {code0} (GDHCN or other anchor)"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:337
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:337
-msgid "Purpose of use in the audit event. With the SSRAA option, the purpose can come from the token request: , a required array of codes in the  extension of the receiver's JWT client assertion (SSRAA §5.2.1.1; HL7 v3 PurposeOfUse is encouraged, §5.2.1.2). SSRAA does not constrain the access token's format (§5.2.3), so the Sharer has the purpose directly when its own authorization server issued the token; how a separate authorization server would pass it on is not specified. Without SSRAA,  carries no purpose, and it comes from the agreement or from the PCF Consent recorded at  (). Which source the event records, and which one wins when they differ, is open."
+msgid "Purpose of use in the audit event. With the SSRAA option, the purpose can come from the token request: {code0}, a required array of codes in the {code1} extension of the receiver's JWT client assertion (SSRAA §5.2.1.1; HL7 v3 PurposeOfUse is encouraged, §5.2.1.2). SSRAA does not constrain the access token's format (§5.2.3), so the Sharer has the purpose directly when its own authorization server issued the token; how a separate authorization server would pass it on is not specified. Without SSRAA, {code2} carries no purpose, and it comes from the agreement or from the PCF Consent recorded at {code3} ({code4}). Which source the event records, and which one wins when they differ, is open."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:89
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:89
-msgid "Query active patient Consent  Access Consent: Search"
+msgid "Query active patient Consent {code0} Access Consent: Search"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:67
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:67
-msgid "Query or record active Consent  Access Consent: Search / Post"
+msgid "Query or record active Consent {code0} Access Consent: Search / Post"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:136
@@ -1909,7 +1709,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:348
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:348
-msgid "Receive the claim; redeem a VHL through process C, check by hand, or decode the QR code, get the issuer key from the Trust Anchor (), verify the signature, and check the registry."
+msgid "Receive the claim; redeem a VHL through process C, check by hand, or decode the QR code, get the issuer key from the Trust Anchor ({code0}), verify the signature, and check the registry."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:442
@@ -1939,7 +1739,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:112
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:112
-msgid "Record each decision as a W3C PROV-O record that cites the agreement, and as an IHE ATNA audit event (). Record duty fulfilment and review it."
+msgid "Record each decision as a W3C PROV-O record that cites the agreement, and as an IHE ATNA audit event ({code0}). Record duty fulfilment and review it."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:397
@@ -1969,7 +1769,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:93
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:93
-msgid "Refuse disclosure with   ( or )"
+msgid "Refuse disclosure with {code0} {code1} ({code2} or {code3})"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:158
@@ -1981,7 +1781,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:316
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:316
-msgid "Refuse with OperationOutcome  (deny or unknown)"
+msgid "Refuse with OperationOutcome {code0} (deny or unknown)"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:109
@@ -1993,13 +1793,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:109
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:109
-msgid "Register the recipient's server as an OAuth client (RFC 7591, UDAP via HL7 SSRAA, or by an administrator), authenticated by mTLS (RFC 8705) or a JWT assertion (RFC 7523; with UDAP,  with an  chain), and record which agreement versions it may act under."
+msgid "Register the recipient's server as an OAuth client (RFC 7591, UDAP via HL7 SSRAA, or by an administrator), authenticated by mTLS (RFC 8705) or a JWT assertion (RFC 7523; with UDAP, {code0} with an {code1} chain), and record which agreement versions it may act under."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:19
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:19
-msgid "Register VHL Sharer signing keys with a Trust Anchor (), verify or record active patient consent (), and generate a signed Verifiable Health Link () stored in the Holder's Personal Health Wallet."
+msgid "Register VHL Sharer signing keys with a Trust Anchor ({code0}), verify or record active patient consent ({code1}), and generate a signed Verifiable Health Link ({code2}) stored in the Holder's Personal Health Wallet."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:278
@@ -2017,63 +1817,31 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:86
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:86
-msgid "Request Trust Anchor key list  Retrieve Trust List with DID"
+msgid "Request Trust Anchor key list {code0} Retrieve Trust List with DID"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:66
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:66
-msgid "Request VHL generation  Generate VHL ()"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:92
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:92
-msgid "Retrieve Manifest (  of  / clinical resources when decision is )"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:93
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:93
-msgid "Retrieve Manifest (  when decision is  or )"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:88
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:88
-msgid "Retrieve Manifest ()"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:94
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:94
-msgid "Retrieve Manifest consumer ()"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:86
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#. Source: input/pagecontent/business-processes.md:87
-#: input/pagecontent/business-processes.md:86
-#: input/pagecontent/business-processes.md:87
-msgid "Retrieve Trust List with DID ()"
+msgid "Request VHL generation {code0} Generate VHL ({code1})"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:68
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:68
-msgid "Return active PCF Consent ( + )  Access Consent"
+msgid "Return active PCF Consent ({code0} + {code1}) {code2} Access Consent"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:90
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:90
-msgid "Return active PCF Consent Bundle  Access Consent"
+msgid "Return active PCF Consent Bundle {code0} Access Consent"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:92
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:92
-msgid "Return authorized manifest & documents  Retrieve Manifest ()"
+msgid "Return authorized manifest & documents {code0} Retrieve Manifest ({code1})"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:162
@@ -2091,25 +1859,25 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:315
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:315
-msgid "Return manifest and documents  /"
+msgid "Return manifest and documents {code0} / {code1}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:187
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:187
-msgid "Return matching Consents  Access Consent"
+msgid "Return matching Consents {code0} Access Consent"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:312
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:312
-msgid "Return receiver key  Retrieve Trust List with DID"
+msgid "Return receiver key {code0} Retrieve Trust List with DID"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:87
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:87
-msgid "Return signed trust list  (GDHCN or other Trust Anchor)"
+msgid "Return signed trust list {code0} (GDHCN or other Trust Anchor)"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:183
@@ -2163,13 +1931,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:158
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:158
-msgid "RFC 6749 §5.2†;  RFC 9396 §5†"
+msgid "RFC 6749 §5.2†; {code0} RFC 9396 §5†"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:277
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:277
-msgid "RFC 7009 §2†; introspection  RFC 7662 §2.2†; the client from process D"
+msgid "RFC 7009 §2†; introspection {code0} RFC 7662 §2.2†; the client from process D"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:155
@@ -2181,25 +1949,25 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:130
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:130
-msgid "RFC 7591 §3.1†;  metadata RFC 7523 §2.2†;  RFC 8705 §2.1†. RFC 7592 is Experimental and needs owner approval"
+msgid "RFC 7591 §3.1†; {code0} metadata RFC 7523 §2.2†; {code1} RFC 8705 §2.1†. RFC 7592 is Experimental and needs owner approval"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:135
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:135
-msgid "RFC 7591 §3.2.1†. UDAP route:  per UDAP DCR §5.1‡, error per §5.2‡ (SSRAA §3.2.3); modify or cancel per SSRAA §3.4"
+msgid "RFC 7591 §3.2.1†. UDAP route: {code0} per UDAP DCR §5.1‡, error per §5.2‡ (SSRAA §3.2.3); modify or cancel per SSRAA §3.4"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:136
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:136
-msgid "RFC 8414 §3†. UDAP route: already read in ; token requests use SSRAA §5.2.1–§5.2.2"
+msgid "RFC 8414 §3†. UDAP route: already read in {code0}; token requests use SSRAA §5.2.1–§5.2.2"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:154
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:154
-msgid "RFC 9396 §2 ( defined by the API), §2.2 (, , ,  = fixed-version URL); DPoP proof , , ,  RFC 9449 §4.2; mTLS RFC 8705†; across domains Token Exchange RFC 8693 §2.1"
+msgid "RFC 9396 §2 ({code0} defined by the API), §2.2 ({code1}, {code2}, {code3}, {code4} = fixed-version URL); DPoP proof {code5}, {code6}, {code7}, {code8} RFC 9449 §4.2; mTLS RFC 8705†; across domains Token Exchange RFC 8693 §2.1"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:327
@@ -2211,25 +1979,25 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:159
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:159
-msgid "RFC 9449 §4.2 ()"
+msgid "RFC 9449 §4.2 ({code0})"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:111
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:111
-msgid "Run  on the verified grant and the agreement. A consent-based agreement also needs an active PCF Consent. The result is ,  or , and unknown is never permit."
+msgid "Run {code0} on the verified grant and the agreement. A consent-based agreement also needs an active PCF Consent. The result is {code1}, {code2} or {code3}, and unknown is never permit."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:50
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:50
-msgid "Scale. Where the person has recorded nothing, the jurisdiction's chosen PCF implicit default policy applies: opt-in (for example ) or opt-out (for example  or ). Registry lookups may be cached (task ), but withdrawing a Consent ( becomes , task ) ends every cached result that holds it at once."
+msgid "Scale. Where the person has recorded nothing, the jurisdiction's chosen PCF implicit default policy applies: opt-in (for example {code0}) or opt-out (for example {code1} or {code2}). Registry lookups may be cached (task {code3}), but withdrawing a Consent ({code4} becomes {code5}, task {code6}) ends every cached result that holds it at once."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:186
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:186
-msgid "Search active Consents for this agreement  Access Consent: Search"
+msgid "Search active Consents for this agreement {code0} Access Consent: Search"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:36
@@ -2241,7 +2009,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:36
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:36
-msgid "Selection of base policy (),  purpose of use, authorized actors, validity period, and clinical data scope"
+msgid "Selection of base policy ({code0}), {code1} purpose of use, authorized actors, validity period, and clinical data scope"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:249
@@ -2249,7 +2017,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:318
 #: input/pagecontent/business-processes.md:249
 #: input/pagecontent/business-processes.md:318
-msgid "Send ATNA audit event citing the agreement  Record Audit Event"
+msgid "Send ATNA audit event citing the agreement {code0} Record Audit Event"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:130
@@ -2261,7 +2029,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:310
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:310
-msgid "Send Retrieve Manifest authenticated by the VHL option in use"
+msgid "Send Retrieve Manifest authenticated by the VHL option in use {code0}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:138
@@ -2285,13 +2053,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:290
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:290
-msgid "Several agreements and Consents can be in force at once (owner decision D, card Q-DRAIN-4, 2026-11-01 07:54Z). The Sharer evaluates every one held with the receiver. One whose target, purpose or assignee does not cover the request is not applicable, which is not a deny. The results are combined by the DMN decision . Its default is ODRL 2.2 : permit if at least one applicable policy permits and none prohibits. The policies' own , or a deployer's replacement DMN decision, overrides that default (owner, 07:55Z)."
+msgid "Several agreements and Consents can be in force at once (owner decision D, card Q-DRAIN-4, 2026-11-01 07:54Z). The Sharer evaluates every one held with the receiver. One whose target, purpose or assignee does not cover the request is not applicable, which is not a deny. The results are combined by the DMN decision <a0>{code0}</a0>. Its default is ODRL 2.2 {code1}: permit if at least one applicable policy permits and none prohibits. The policies' own {code2}, or a deployer's replacement DMN decision, overrides that default (owner, 07:55Z)."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:336
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:336
-msgid "Several agreements with one receiver. Decided (owner, 2026-11-01 07:54Z, card Q-DRAIN-4, option D; 07:55Z, overridable default). Every agreement and Consent held with the receiver is evaluated, and one that does not cover the request is not applicable. The results are combined by the DMN decision : by default permit if at least one applicable policy permits and none prohibits (ODRL 2.2 ). Policies may declare another , and a deployer may replace the decision under the same contract. The duties of every permitting agreement apply, and the audit cites every agreement evaluated."
+msgid "Several agreements with one receiver. Decided (owner, 2026-11-01 07:54Z, card Q-DRAIN-4, option D; 07:55Z, overridable default). Every agreement and Consent held with the receiver is evaluated, and one that does not cover the request is not applicable. The results are combined by the DMN decision <a0>{code0}</a0>: by default permit if at least one applicable policy permits and none prohibits (ODRL 2.2 {code1}). Policies may declare another {code2}, and a deployer may replace the decision under the same contract. The duties of every permitting agreement apply, and the audit cites every agreement evaluated."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:195
@@ -2303,7 +2071,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:184
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:184
-msgid "SHA-256 against the catalogue's ; a mismatch gives"
+msgid "SHA-256 against the catalogue's {code0}; a mismatch gives {code1}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:440
@@ -2327,7 +2095,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:397
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:397
-msgid "Show the trust domain's consent text (code and version); when the holder agrees, record the act as evidence and post a  with ; when the holder does not, the trust domain's default policy applies (implied consent)."
+msgid "Show the trust domain's consent text (code and version); when the holder agrees, record the act as evidence and post a {code0} with {code1}; when the holder does not, the trust domain's default policy applies (implied consent)."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:363
@@ -2453,7 +2221,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:71
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:71
-msgid "Store signed VHL in Personal Health Wallet  Generate VHL"
+msgid "Store signed VHL in Personal Health Wallet {code0} Generate VHL"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:206
@@ -2464,16 +2232,8 @@ msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:64
 #. URL: http://smart.who.int/trust-phw/business-processes.html
-#. Source: input/pagecontent/business-processes.md:65
 #: input/pagecontent/business-processes.md:64
-#: input/pagecontent/business-processes.md:65
-msgid "Submit PKI Material with DID ()"
-msgstr ""
-
-#. Source: input/pagecontent/business-processes.md:64
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:64
-msgid "Submit Sharer PKI signing key  Submit PKI Material with DID"
+msgid "Submit Sharer PKI signing key {code0} Submit PKI Material with DID"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:34
@@ -2506,12 +2266,6 @@ msgstr ""
 msgid "Task Name"
 msgstr ""
 
-#. Source: input/pagecontent/business-processes.md:329
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:329
-msgid "The  from SSRAA (UDAP) registration (, ), the  certificate chain of the JWT client assertion, and the certificate's SAN URI. The  extension (SSRAA §5.2.1.1) adds  and"
-msgstr ""
-
 #. Source: input/pagecontent/business-processes.md:288
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:288
@@ -2521,31 +2275,31 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:206
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:206
-msgid "The agreement's fixed-version URL (its ODRL ), or the Consent's URL with"
+msgid "The agreement's fixed-version URL (its ODRL {code0}), or the Consent's URL with {code1}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:102
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:102
-msgid "The agreement's fixed-version URL. Each agreement version is published at an immutable URL, with its SHA-256, and catalogued as a DCAT 3  with  (DCAT 3 §6.8, §6.8.20). For a computable agreement this URL is also the ODRL . Tokens, grants, Consents and audit records cite this URL, never a \"latest\" URL."
+msgid "The agreement's fixed-version URL. Each agreement version is published at an immutable URL, with its SHA-256, and catalogued as a DCAT 3 {code0} with {code1} (DCAT 3 §6.8, §6.8.20). For a computable agreement this URL is also the ODRL {code2}. Tokens, grants, Consents and audit records cite this URL, never a \"latest\" URL."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:191
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:191
-msgid "The consent path follows consent rules 1, 2 and 4 under process A. An agreement carries  only when consent is its legal basis. The harness's non-strict mode, which allows  and logs it, must not be used on data gated by an agreement."
+msgid "The consent path follows consent rules 1, 2 and 4 under process A. An agreement carries {code0} only when consent is its legal basis. The harness's non-strict mode, which allows {code1} and logs it, must not be used on data gated by an agreement."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:234
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:234
-msgid "The decision used, default or replacement, is recorded in the ATNA event and the PROV-O record by its DMN  and decision  and by its file's fixed-version URL and SHA-256. That is the same way an agreement is cited, since DMN 1.5  has no version element of its own."
+msgid "The decision used, default or replacement, is recorded in the ATNA event and the PROV-O record by its DMN {code0} and decision {code1} and by its file's fixed-version URL and SHA-256. That is the same way an agreement is cited, since DMN 1.5 {code2} has no version element of its own."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:328
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:328
-msgid "The DID URL in  of a self-issued W3C VC with a"
+msgid "The DID URL in {code0} of a self-issued W3C VC with a {code1}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:14
@@ -2569,13 +2323,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:335
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:335
-msgid "The lookup has no standard element. No existing VHL, OAuth or VC element maps a verified receiver to an agreement. The mapping is the Sharer's own configuration, keyed by the agreement's fixed-version URL, the same configuration as . No field is invented."
+msgid "The lookup has no standard element. No existing VHL, OAuth or VC element maps a verified receiver to an agreement. The mapping is the Sharer's own configuration, keyed by the agreement's fixed-version URL, the same configuration as {code0}. No field is invented."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:208
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:208
-msgid "The policy's ODRL 2.2 , or null when it declares none"
+msgid "The policy's ODRL 2.2 {code0}, or null when it declares none"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:254
@@ -2587,7 +2341,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:291
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:291
-msgid "The receiver MAY name agreements. With the OAuth with SSRAA option, the receiver can list one or more fixed-version URLs in  of the  extension (SSRAA §5.2.1.1, an optional array of policy URIs). On the server-to-server route of process E it can list them in  (RFC 9396 §2.2). Naming narrows the permissions the receiver acts under, and never escapes another applicable agreement's prohibition. With the Verifiable Credential Option, the receiver names the policies it acts under in the credential's W3C VC 2.0  (§5.5), one  entry per policy: . The policy is a code in a GDHCN Trust Domain's terms-of-use ValueSet, and the Sharer finds the Trust Domain from the ValueSet that holds it (owner, 2026-11-01, card Q-VC-2). Naming is optional, so requests signed with HTTP Message Signatures, which have no field for it, still work."
+msgid "The receiver MAY name agreements. With the OAuth with SSRAA option, the receiver can list one or more fixed-version URLs in {code0} of the {code1} extension (SSRAA §5.2.1.1, an optional array of policy URIs). On the server-to-server route of process E it can list them in {code2} (RFC 9396 §2.2). Naming narrows the permissions the receiver acts under, and never escapes another applicable agreement's prohibition. With the Verifiable Credential Option, the receiver names the policies it acts under in the credential's W3C VC 2.0 {code3} (§5.5), one <a0>{code4}</a0> entry per policy: {code5}. The policy is a code in a GDHCN <a1>Trust Domain</a1>'s terms-of-use ValueSet, and the Sharer finds the Trust Domain from the ValueSet that holds it (owner, 2026-11-01, card Q-VC-2). Naming is optional, so requests signed with HTTP Message Signatures, which have no field for it, still work."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:416
@@ -2599,7 +2353,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:202
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:202
-msgid "The rule is the OMG DMN 1.5 decision  in . DMN 1.5 (namespace ) is the version of the WHO SMART DAK decision tables, and the expressions are FEEL. Its  links it to  and . Its one input, , has one row per agreement or Consent evaluated:"
+msgid "The rule is the OMG DMN 1.5 decision {code0} in {code1}. DMN 1.5 (namespace {code2}) is the version of the WHO SMART DAK decision tables, and the expressions are FEEL. Its {code3} links it to {code4} and {code5}. Its one input, {code6}, has one row per agreement or Consent evaluated:"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:412
@@ -2611,13 +2365,19 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:285
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:285
-msgid "The VHL Sharer is the organisation or system that holds the documents. It may already have a data sharing agreement with the organisation or application that receives a VHL. When that receiver resolves the link ( Retrieve Manifest, then ), the Sharer decides the request under that agreement. It uses the same decision as process F, audits as process G does, and revokes as process H does. The owner set this case on 2026-10-30 (20:01Z and 20:04Z):"
+msgid "The VHL Sharer is the organisation or system that holds the documents. It may already have a data sharing agreement with the organisation or application that receives a VHL. When that receiver resolves the link ({code0} Retrieve Manifest, then {code1}), the Sharer decides the request under that agreement. It uses the same decision as process F, audits as process G does, and revokes as process H does. The owner set this case on 2026-10-30 (20:01Z and 20:04Z):"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:414
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:414
 msgid "The wallet confirmation or the signed form (a DocumentReference or QuestionnaireResponse): the Consent's source[x]."
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:329
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:329
+msgid "The {code0} from SSRAA (UDAP) registration ({code1}, {code2}), the {code3} certificate chain of the JWT client assertion, and the certificate's SAN URI. The {code4} extension (SSRAA §5.2.1.1) adds {code5} and {code6}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:343
@@ -2629,13 +2389,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:1
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:1
-msgid "This page describes the core business processes and workflows for the Personal Health Wallet (PHW) Implementation Guide, integrating IHE IT Infrastructure Privacy Consent on FHIR (PCF) v1.1.0 () and IHE IT Infrastructure Verifiable Health Links (VHL) v1.0.0-comment ()."
+msgid "This page describes the core business processes and workflows for the Personal Health Wallet (PHW) Implementation Guide, integrating IHE IT Infrastructure Privacy Consent on FHIR (PCF) v1.1.0 ({code0}) and IHE IT Infrastructure Verifiable Health Links (VHL) v1.0.0-comment ({code1})."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:10
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:10
-msgid "Three-Valued Consent Decision and PROV-O Provenance: During VHL redemption (Process C), patient privacy consent directives retrieved via  are translated to W3C ODRL 2.2 policies () and evaluated via three-valued  ( |  | ), recording a W3C PROV-O  citing  and ."
+msgid "Three-Valued Consent Decision and PROV-O Provenance: During VHL redemption (Process C), patient privacy consent directives retrieved via {code0} are translated to W3C ODRL 2.2 policies ({code1}) and evaluated via three-valued {code2} ({code3} | {code4} | {code5}), recording a W3C PROV-O {code6} citing {code7} and {code8}."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:214
@@ -2679,13 +2439,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:7
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:7
-msgid "Trust-Anchor Neutrality: Every process models PKI key publication () and trust list retrieval () against an abstract Trust Anchor actor (). The WHO Global Digital Health Certification Network (GDHCN) is one possible Trust Anchor implementation among others (such as national health PKI roots, regional cross-border trust networks, or bilateral federation anchors)."
+msgid "Trust-Anchor Neutrality: Every process models PKI key publication ({code0}) and trust list retrieval ({code1}) against an abstract Trust Anchor actor ({code2}). The WHO Global Digital Health Certification Network (GDHCN) is one possible Trust Anchor implementation among others (such as national health PKI roots, regional cross-border trust networks, or bilateral federation anchors)."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:210
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:210
-msgid "Two FEEL literal expressions prepare the table:  = , and , the strategy in force (override 1 below). The decision table  then runs once per request, with hit policy PRIORITY and output values in the order , , , :"
+msgid "Two FEEL literal expressions prepare the table: {code0} = {code1}, and {code2}, the strategy in force (override 1 below). The decision table {code3} then runs once per request, with hit policy PRIORITY and output values in the order {code4}, {code5}, {code6}, {code7}:"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:204
@@ -2697,13 +2457,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:140
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:140
-msgid "UDAP route (owner approval, 2026-10-30 20:28Z). UDAP is used as profiled by HL7 Security for Scalable Registration, Authentication, and Authorization (SSRAA),  2.0.0 (STU 2, canonical ), the IG that VHL's OAuth with SSRAA Option names. Its trust is X.509: the client's certificate chains to an anchor of a trust community, so a national X.509 PKI can serve as the anchor without GDHCN. SSRAA section numbers were read from the IG source (, tag , commit ): they follow its page order, and they agree with the IG's own cross-references, which is also how ITI-YY5 cites them (\"SSRAA Sections 2 and 3\", \"Section 5.2.1\"). The rendered pages at hl7.org were not reachable to check. SSRAA 2.0.0 is US realm; the source's  branch now builds a universal-realm successor,  3.0.0 (STU 3 post-ballot CI build), not yet published. ‡ marks a section of a UDAP.org specification (UDAP Dynamic Client Registration STU1, UDAP Server Metadata STU1, UDAP JWT-Based Client Authentication STU1) as SSRAA links it; udap.org was not reachable to check it."
+msgid "UDAP route (owner approval, 2026-10-30 20:28Z). UDAP is used as profiled by HL7 Security for Scalable Registration, Authentication, and Authorization (SSRAA), {code0} 2.0.0 (STU 2, canonical {code1}), the IG that VHL's OAuth with SSRAA Option names. Its trust is X.509: the client's certificate chains to an anchor of a trust community, so a national X.509 PKI can serve as the anchor without GDHCN. SSRAA section numbers were read from the IG source ({code2}, tag {code3}, commit {code4}): they follow its page order, and they agree with the IG's own cross-references, which is also how ITI-YY5 cites them (\"SSRAA Sections 2 and 3\", \"Section 5.2.1\"). The rendered pages at hl7.org were not reachable to check. SSRAA 2.0.0 is US realm; the source's {code5} branch now builds a universal-realm successor, {code6} 3.0.0 (STU 3 post-ballot CI build), not yet published. ‡ marks a section of a UDAP.org specification (UDAP Dynamic Client Registration STU1, UDAP Server Metadata STU1, UDAP JWT-Based Client Authentication STU1) as SSRAA links it; udap.org was not reachable to check it."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:317
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:317
-msgid "Unauthenticated:  (ITI-YY5 §2:3.YY5.4.1.7). Verified receiver, no agreement: process C from"
+msgid "Unauthenticated: {code0} (ITI-YY5 §2:3.YY5.4.1.7). Verified receiver, no agreement: process C from {code1}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:216
@@ -2715,7 +2475,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:39
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:39
-msgid "Update or revoke directive  Access Consent: Put / Delete"
+msgid "Update or revoke directive {code0} Access Consent: Put / Delete"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:132
@@ -2733,7 +2493,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:40
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:40
-msgid "Validate, version & persist Consent + Provenance  Access Consent"
+msgid "Validate, version & persist Consent + Provenance {code0} Access Consent"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:328
@@ -2751,7 +2511,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:313
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:313
-msgid "Verified identity (, VC issuer DID, or SSRAA  and certificate SAN URI, SSRAA §3.1, §3.4) mapped to the fixed-version URLs of every agreement held with this receiver: the same configuration as  (open point 1). Each is applicable only if its ODRL target, purpose and assignee cover the request; otherwise , not a deny. Agreements the receiver names in SSRAA  (§5.2.1.1), and policies it names in its VC's  (each checked against its Trust Domain's terms-of-use ValueSet, then matched to  by system and code), narrow the permissions it acts under, never another agreement's prohibition. Where Consents carry the policy (), they are the policy and no lookup is needed. Decided, owner 2026-11-01 07:54Z"
+msgid "Verified identity ({code0}, VC issuer DID, or SSRAA {code1} and certificate SAN URI, SSRAA §3.1, §3.4) mapped to the fixed-version URLs of every agreement held with this receiver: the same configuration as {code2} (open point 1). Each is applicable only if its ODRL target, purpose and assignee cover the request; otherwise {code3}, not a deny. Agreements the receiver names in SSRAA {code4} (§5.2.1.1), and policies it names in its VC's {code5} (each checked against its Trust Domain's terms-of-use ValueSet, then matched to {code6} by system and code), narrow the permissions it acts under, never another agreement's prohibition. Where Consents carry the policy ({code7}), they are the policy and no lookup is needed. Decided, owner 2026-11-01 07:54Z"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:382
@@ -2789,13 +2549,13 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:88
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:88
-msgid "Verify VHL signature & request manifest  Retrieve Manifest"
+msgid "Verify VHL signature & request manifest {code0} Retrieve Manifest"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:48
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:48
-msgid "Version pinning. The person consents to one fixed version of the agreement:  is that version's URL. If the agreement is amended to widen use, the new version needs new consent. An amendment that narrows use does not."
+msgid "Version pinning. The person consents to one fixed version of the agreement: {code0} is that version's URL. If the agreement is amended to widen use, the new version needs new consent. An amendment that narrows use does not."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:36
@@ -2887,7 +2647,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:182
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:182
-msgid "W3C Bitstring Status List §2.1 (, )"
+msgid "W3C Bitstring Status List §2.1 ({code0}, {code1})"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:276
@@ -2905,7 +2665,7 @@ msgstr ""
 #. Source: input/pagecontent/business-processes.md:248
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:248
-msgid "W3C PROV-O:  = the agreement's DCAT distribution with  (DCAT 3 §6.8, §6.8.20; bean yy40), plus the grant or token id; ;"
+msgid "W3C PROV-O: {code0} = the agreement's DCAT distribution with {code1} (DCAT 3 §6.8, §6.8.20; bean yy40), plus the grant or token id; {code2}; {code3}"
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:328
@@ -2932,34 +2692,28 @@ msgstr ""
 msgid "What it keeps"
 msgstr ""
 
-#. Source: input/pagecontent/business-processes.md:207
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:207
-msgid "when the policy's target, purpose or assignee does not cover the request; otherwise  for this policy alone"
-msgstr ""
-
 #. Source: input/pagecontent/business-processes.md:292
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:292
-msgid "Where Consents carry the policy, they are the policy. In the IPS Pilgrimage (Hajj) example, the policy is coded in , so no separate agreement lookup is needed (owner, Q-DRAIN-5, 2026-11-01 07:44Z)."
+msgid "Where Consents carry the policy, they are the policy. In the <a0>IPS Pilgrimage (Hajj) example</a0>, the policy is coded in {code0}, so no separate agreement lookup is needed (owner, Q-DRAIN-5, 2026-11-01 07:44Z)."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:323
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:323
-msgid "Which VHL options identify the receiver. VHL 1.0.0-comment names three authentication options for . The table cites the IHE/ITI.VHL source at commit , as snapshotted in litlfred/smart-trust-tools ; the published 1.0.0-comment text has not been compared with it."
+msgid "Which VHL options identify the receiver. VHL 1.0.0-comment names three authentication options for {code0}. The table cites the IHE/ITI.VHL source at commit {code1}, as snapshotted in litlfred/smart-trust-tools {code2}; the published 1.0.0-comment text has not been compared with it."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:224
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:224
-msgid "Why only one table. Each row is decided by  for that policy alone (, with the PCF Consent path of ), and applicability is a check of the ODRL target, purpose and assignee. Neither is a decision table, so there is no per-row DMN table. The DMN decision combines the rows once per request."
+msgid "Why only one table. Each row is decided by {code0} for that policy alone ({code1}, with the PCF Consent path of {code2}), and applicability is a check of the ODRL target, purpose and assignee. Neither is a decision table, so there is no per-row DMN table. The DMN decision combines the rows once per request."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:222
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:222
-msgid "Why PRIORITY. The owner's order (any deny, then any unknown, then any permit, then none applicable) is a ranking of outcomes, and PRIORITY is the DMN hit policy that returns the matching rule whose output comes first in the output's ordered . Each rule then states one condition, and the ranking resolves overlaps; for example, a request with a deny and an unknown matches rules 1 and 3, and  wins. Rules with the same output never overlap (rules 1 and 2 differ in ), so the result does not depend on rule order. COLLECT was not used: its aggregators (, , , ) work on numbers, so the outcomes would have to be coded as numbers that no standard defines. FIRST would also work, but it hides the ranking in the rule order. Every combination of up to three policies, with every outcome and strategy, was checked against the owner's rule, and exactly one outcome results each time."
+msgid "Why PRIORITY. The owner's order (any deny, then any unknown, then any permit, then none applicable) is a ranking of outcomes, and PRIORITY is the DMN hit policy that returns the matching rule whose output comes first in the output's ordered {code0}. Each rule then states one condition, and the ranking resolves overlaps; for example, a request with a deny and an unknown matches rules 1 and 3, and {code1} wins. Rules with the same output never overlap (rules 1 and 2 differ in {code2}), so the result does not depend on rule order. COLLECT was not used: its aggregators ({code3}, {code4}, {code5}, {code6}) work on numbers, so the outcomes would have to be coded as numbers that no standard defines. FIRST would also work, but it hides the ranking in the rule order. Every combination of up to three policies, with every outcome and strategy, was checked against the owner's rule, and exactly one outcome results each time."
 msgstr ""
 
 #. Source: input/pagecontent/business-processes.md:217
@@ -2986,15 +2740,237 @@ msgstr ""
 msgid "Write PROV-O record citing the agreement"
 msgstr ""
 
-#. Source: input/pagecontent/business-processes.md:321
-#. URL: http://smart.who.int/trust-phw/business-processes.html
-#: input/pagecontent/business-processes.md:321
-msgid "writes the audit event to the ATNA Audit Record Repository (), a data store as in process G, by ****."
-msgstr ""
-
 #. Source: input/pagecontent/business-processes.md:256
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:256
 msgid "Written by"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:91
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:91
+msgid "{code0} + three-valued {code1} ({code2} \\"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:157
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:157
+msgid "{code0} / {code1} RFC 9449 §6.1; granted details RFC 9396 §7, may be fewer than asked §7.1"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:38
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:38
+msgid "{code0} Access Consent ({code1} or transaction {code2} with {code3})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:39
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#. Source: input/pagecontent/business-processes.md:67
+#: input/pagecontent/business-processes.md:39
+#: input/pagecontent/business-processes.md:67
+msgid "{code0} Access Consent ({code1} or {code2})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:68
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:68
+msgid "{code0} Access Consent responder ({code1})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:40
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:40
+msgid "{code0} Access Consent responder ({code1}), assigning {code2} and {code3}"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:90
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:90
+msgid "{code0} Access Consent responder ({code1}), returning {code2} and {code3}"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:41
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:41
+msgid "{code0} Access Consent response ({code1} / {code2})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:89
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:89
+msgid "{code0} Access Consent: Search ({code1})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:220
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:220
+msgid "{code0} and {code1} lead to {code2} (403), {code3} to {code4}, and {code5} to {code6}. Two more expressions, outside the table, give {code7} (every {code8}) and {code9} (the applicable ones that permitted) for the duties and the audit."
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:259
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:259
+msgid "{code0} ATNA Audit Record Repository"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:319
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:319
+msgid "{code0} consumer ({code1})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:66
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:66
+msgid "{code0} Generate VHL ({code1})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:70
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:70
+msgid "{code0} Generate VHL ({code1}), signing with {code2} key material"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:71
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:71
+msgid "{code0} Generate VHL response received by {code1}"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:327
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:327
+msgid "{code0} in {code1}, resolved in the trust list"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:339
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:339
+msgid "{code0} in {code1}. Decided (owner, 2026-11-01 07:54Z, card Q-DRAIN-4, option D). SSRAA §5.2.1.1 lets a client name policy URIs in {code2}, an optional array, and FHIR {code3} URLs in {code4}. A receiver MAY list one or more agreements' fixed-version URLs in {code5}. This narrows the permissions it acts under ({code6}) but never escapes another applicable agreement's prohibition. Naming is optional, so the HTTP Message Signatures and Verifiable Credential options, which have no such field, still work. Nothing is added to any standard."
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:215
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:215
+msgid "{code0} prefers a permission, but none permits."
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:258
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:258
+msgid "{code0} Provenance Log (W3C PROV-O, hash-chained)"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:85
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:85
+msgid "{code0} Provide VHL ({code1})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:259
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:259
+msgid "{code0} Record Audit Event"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:249
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:249
+msgid "{code0} Record Audit Event (IHE ATNA, Final Text; ITI TF-2: 3.20†). Grouping as in VHL Volume 1 §1:XX.3 and §1:XX.6.1"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:187
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:187
+msgid "{code0} responder ({code1})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:92
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:92
+msgid "{code0} Retrieve Manifest ({code1} {code2} of {code3} / clinical resources when decision is {code4})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:93
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:93
+msgid "{code0} Retrieve Manifest ({code1} {code2} when decision is {code3} or {code4})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:88
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:88
+msgid "{code0} Retrieve Manifest ({code1})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:94
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:94
+msgid "{code0} Retrieve Manifest consumer ({code1})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:86
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#. Source: input/pagecontent/business-processes.md:87
+#: input/pagecontent/business-processes.md:86
+#: input/pagecontent/business-processes.md:87
+msgid "{code0} Retrieve Trust List with DID ({code1})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:64
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#. Source: input/pagecontent/business-processes.md:65
+#: input/pagecontent/business-processes.md:64
+#: input/pagecontent/business-processes.md:65
+msgid "{code0} Submit PKI Material with DID ({code1})"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:207
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:207
+msgid "{code0} when the policy's target, purpose or assignee does not cover the request; otherwise {code1} for this policy alone"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:321
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:321
+msgid "{code0} writes the audit event to the ATNA Audit Record Repository ({code1}), a data store as in process G, by {code2}."
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:315
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:315
+msgid "{code0} {code1}; {code2} (MHD Document Responder, Vol 1 §1:XX.3)"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:91
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:91
+msgid "{code0}) + W3C PROV-O {code1} citing {code2} and {code3}"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:252
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:252
+msgid "{code0}, or a clause in the PDF"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:310
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:310
+msgid "{code0}, with one of: HTTP Message Signatures, RFC 9421 (ITI-YY5 §2:3.YY5.4.1.3, §2:3.YY5.5.2; Sign Manifest Request Option, Vol 1 §1:XX.2.1); Verifiable Credential Option (ITI-YY5 §2:3.YY5.4.1.5); OAuth with SSRAA Option (ITI-YY5 §2:3.YY5.4.1.4, §2:3.YY5.5.3; HL7 SSRAA §2, §3, §5.2), approved by the owner on 2026-10-30"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:208
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:208
+msgid "{code0}, {code1}, {code2}, or null"
+msgstr ""
+
+#. Source: input/pagecontent/business-processes.md:186
+#. URL: http://smart.who.int/trust-phw/business-processes.html
+#: input/pagecontent/business-processes.md:186
+msgid "{code0}. A Consent counts when {code1} equals the ODRL {code2}, or names an earlier version reached by {code3} across narrowing amendments (fhir-harness#227, #228)"
 msgstr ""
 

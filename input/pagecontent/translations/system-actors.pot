@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"POT-Creation-Date: 2026-11-07 21:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 #. Source: input/pagecontent/system-actors.md:8
 #. URL: http://smart.who.int/trust-phw/system-actors.html
 #: input/pagecontent/system-actors.md:8
-msgid "Holder (person) of Verifiable Health Certificate or Verifiable Health Link"
+msgid "Holder (person) of <a0>Verifiable Health Certificate</a0> or <a1>Verifiable Health Link</a1>"
 msgstr ""
 
 #. Source: input/pagecontent/system-actors.md:13
@@ -43,7 +43,7 @@ msgstr ""
 #. Source: input/pagecontent/system-actors.md:14
 #. URL: http://smart.who.int/trust-phw/system-actors.html
 #: input/pagecontent/system-actors.md:14
-msgid "Issuer (system) of Verifiable Health Certificate or Verifiable Health Link"
+msgid "Issuer (system) of <a0>Verifiable Health Certificate</a0> or <a1>Verifiable Health Link</a1>"
 msgstr ""
 
 #. Source: input/pagecontent/system-actors.md:10
@@ -55,7 +55,7 @@ msgstr ""
 #. Source: input/pagecontent/system-actors.md:11
 #. URL: http://smart.who.int/trust-phw/system-actors.html
 #: input/pagecontent/system-actors.md:11
-msgid "Receiver (system) of Verifiable Health Certificate or Verifiable Health Link"
+msgid "Receiver (system) of <a0>Verifiable Health Certificate</a0> or <a1>Verifiable Health Link</a1>"
 msgstr ""
 
 #. Source: input/pagecontent/system-actors.md:1

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"POT-Creation-Date: 2026-11-07 21:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,37 +19,55 @@ msgstr ""
 #. Source: input/pagecontent/dependencies.md:5
 #. URL: http://smart.who.int/trust-phw/dependencies.html
 #: input/pagecontent/dependencies.md:5
-msgid "Audit Trail and Node Authentication (ATNA) Profile"
+msgid "<a0>Audit Trail and Node Authentication (ATNA) Profile</a0>"
 msgstr ""
 
 #. Source: input/pagecontent/dependencies.md:17
 #. URL: http://smart.who.int/trust-phw/dependencies.html
 #: input/pagecontent/dependencies.md:17
-msgid "Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) IPS Implementation Guide, published by HL7 International - Patient Care Work Group"
+msgid "<a0>Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) IPS Implementation Guide, published by HL7 International - Patient Care Work Group</a0>"
+msgstr ""
+
+#. Source: input/pagecontent/dependencies.md:9
+#. URL: http://smart.who.int/trust-phw/dependencies.html
+#: input/pagecontent/dependencies.md:9
+msgid "<a0>Mobile Care Services Discovery (mCSD) Profile</a0>"
+msgstr ""
+
+#. Source: input/pagecontent/dependencies.md:11
+#. URL: http://smart.who.int/trust-phw/dependencies.html
+#: input/pagecontent/dependencies.md:11
+msgid "<a0>Privacy Consent on FHIR (PCF) Profile</a0>"
+msgstr ""
+
+#. Source: input/pagecontent/dependencies.md:7
+#. URL: http://smart.who.int/trust-phw/dependencies.html
+#: input/pagecontent/dependencies.md:7
+msgid "<a0>Sharing Valuesets and Concept Maps (SVCM) Profile</a0>"
+msgstr ""
+
+#. Source: input/pagecontent/dependencies.md:13
+#. URL: http://smart.who.int/trust-phw/dependencies.html
+#: input/pagecontent/dependencies.md:13
+msgid "<a0>Verifiable Health Links (VHL) Profile</a0>"
+msgstr ""
+
+#. Source: input/pagecontent/dependencies.md:23
+#. URL: http://smart.who.int/trust-phw/dependencies.html
+#: input/pagecontent/dependencies.md:23
+msgid "<a0>WHO Family of International Classifications</a0>"
+msgstr ""
+
+#. Source: input/pagecontent/dependencies.md:21
+#. URL: http://smart.who.int/trust-phw/dependencies.html
+#: input/pagecontent/dependencies.md:21
+msgid "<a0>WHO International Classification of Diseases 11th Revision (ICD-11)</a0>"
 msgstr ""
 
 #. Source: input/pagecontent/dependencies.md:3
 #. URL: http://smart.who.int/trust-phw/dependencies.html
 #: input/pagecontent/dependencies.md:3
 msgid "Integrating the Healthcare Enterprise (IHE):"
-msgstr ""
-
-#. Source: input/pagecontent/dependencies.md:9
-#. URL: http://smart.who.int/trust-phw/dependencies.html
-#: input/pagecontent/dependencies.md:9
-msgid "Mobile Care Services Discovery (mCSD) Profile"
-msgstr ""
-
-#. Source: input/pagecontent/dependencies.md:11
-#. URL: http://smart.who.int/trust-phw/dependencies.html
-#: input/pagecontent/dependencies.md:11
-msgid "Privacy Consent on FHIR (PCF) Profile"
-msgstr ""
-
-#. Source: input/pagecontent/dependencies.md:7
-#. URL: http://smart.who.int/trust-phw/dependencies.html
-#: input/pagecontent/dependencies.md:7
-msgid "Sharing Valuesets and Concept Maps (SVCM) Profile"
 msgstr ""
 
 #. Source: input/pagecontent/dependencies.md:1
@@ -62,24 +80,6 @@ msgstr ""
 #. URL: http://smart.who.int/trust-phw/dependencies.html
 #: input/pagecontent/dependencies.md:15
 msgid "The International Patient Summary (IPS):"
-msgstr ""
-
-#. Source: input/pagecontent/dependencies.md:13
-#. URL: http://smart.who.int/trust-phw/dependencies.html
-#: input/pagecontent/dependencies.md:13
-msgid "Verifiable Health Links (VHL) Profile"
-msgstr ""
-
-#. Source: input/pagecontent/dependencies.md:23
-#. URL: http://smart.who.int/trust-phw/dependencies.html
-#: input/pagecontent/dependencies.md:23
-msgid "WHO Family of International Classifications"
-msgstr ""
-
-#. Source: input/pagecontent/dependencies.md:21
-#. URL: http://smart.who.int/trust-phw/dependencies.html
-#: input/pagecontent/dependencies.md:21
-msgid "WHO International Classification of Diseases 11th Revision (ICD-11)"
 msgstr ""
 
 #. Source: input/pagecontent/dependencies.md:19
