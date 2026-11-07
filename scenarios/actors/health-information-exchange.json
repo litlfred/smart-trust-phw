@@ -5,7 +5,8 @@
   "description": "The health information exchange that holds Lina's record: it records her consent in its Consent Registry, generates her links and enforces consent when a link is redeemed.",
   "roles": [
     "vhl-sharer",
-    "consent-registry"
+    "consent-registry",
+    "document-source"
   ],
   "capabilities": []
 }

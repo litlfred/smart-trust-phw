@@ -10,6 +10,7 @@ This page lists the roles the business processes of this guide name, and the exa
 | Consent Recorder | person, system | The person or system that records a consent directive for the holder (IHE PCF Consent Recorder): the wallet itself, or a health worker on the holder's behalf. |
 | Consent Registry | system | Holds consent directives and answers IHE PCF [ITI-108] Access Consent. Specializes the ActorDefinition ConsentRegistry (input/fsh/actors/actors.fsh). |
 | VHL Sharer | system | Holds the health information, generates verifiable health links, and enforces consent when a link is redeemed. Specializes the ActorDefinition Issuer (input/fsh/actors/actors.fsh). |
+| Document Source | system | The system that assembles a document about the holder before it is signed: the VHL Sharer when a document is shared, the Certificate Issuance Service when a certificate is issued. Adds the consent directives to it (process M). |
 | VHL Receiver | system | Receives a verifiable health link, checks its signature against the trust list, and retrieves the information. Specializes the ActorDefinition Receiver (input/fsh/actors/actors.fsh). |
 | Trust Anchor | system | Publishes the trust list of keys that participants use to check signatures. GDHCN is one possible anchor among others. Specializes the ActorDefinition TrustNetworkAnchor (input/fsh/actors/actors.fsh). |
 | Certificate Issuer | person, system | A health worker or issuing system that issues a verifiable digital health certificate. Specializes the ActorDefinition Issuer (input/fsh/actors/actors.fsh). |
@@ -112,7 +113,7 @@ Roles: Certificate Issuer, Consent Recorder.
 
 | System | Roles | Description |
 | --- | --- | --- |
-| Home health information exchange | VHL Sharer, Consent Registry | The health information exchange that holds Lina's record: it records her consent in its Consent Registry, generates her links and enforces consent when a link is redeemed. |
+| Home health information exchange | VHL Sharer, Consent Registry, Document Source | The health information exchange that holds Lina's record: it records her consent in its Consent Registry, generates her links and enforces consent when a link is redeemed. |
 | Lina's personal health wallet | Holder, Consent Recorder | The wallet app on Lina's phone: records her consent, holds her verifiable health links and certificates, and presents them as QR codes. |
 | Provider authorization service | Provider Authorization Server | The authorization server of the health information exchange: registers clients and decides access under data sharing agreements. |
 | Receiving clinic's record system | VHL Receiver, Data Recipient System | The record system of Dr Mei's clinic: reads verifiable health links, and as a registered client accesses data under a data sharing agreement. |

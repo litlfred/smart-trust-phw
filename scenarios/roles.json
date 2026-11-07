@@ -12,7 +12,8 @@
       "skills": [],
       "otherNames": [
         "VHL Holder (Patient / Personal Health Wallet)",
-        "Certificate Holder (person / Personal Health Wallet)"
+        "Certificate Holder (person / Personal Health Wallet)",
+        "Holder (person / Personal Health Wallet)"
       ]
     },
     {
@@ -25,7 +26,8 @@
       ],
       "skills": [],
       "otherNames": [
-        "PCF Consent Recorder (Wallet / VHL Sharer)"
+        "PCF Consent Recorder (Wallet / VHL Sharer)",
+        "PCF Consent Recorder (wallet or health worker)"
       ]
     },
     {
@@ -51,6 +53,18 @@
       "otherNames": [
         "VHL Sharer (grouped with PCF Consent Recorder)",
         "VHL Sharer (enforcement and decision point)"
+      ]
+    },
+    {
+      "id": "document-source",
+      "title": "Document Source",
+      "description": "The system that assembles a document about the holder before it is signed: the VHL Sharer when a document is shared, the Certificate Issuance Service when a certificate is issued. Adds the consent directives to it (process M).",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [],
+      "otherNames": [
+        "Document source (VHL Sharer or Certificate Issuance Service)"
       ]
     },
     {

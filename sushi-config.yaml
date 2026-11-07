@@ -94,6 +94,8 @@ pages:
       title: Concepts
     personas.md:
       title: Generic Personas
+    consent.md:
+      title: Consent
     business-processes.md:
       title: Business Processes
     example-pilgrimage.md:
@@ -140,6 +142,7 @@ menu:
   Business Requirements: 
     Concepts: concepts.html
     Generic Personas: personas.html
+    Consent: consent.html
     Business Processes: business-processes.html
     "Worked Example: IPS Pilgrimage (Hajj)": example-pilgrimage.html
     Decision-support Logic: decision-logic.html

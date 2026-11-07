@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"POT-Creation-Date: 2026-11-07 05:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,10 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
 
-#. Source: input/pagecontent/business-requirements.md:5
+#. Source: input/pagecontent/business-requirements.md:6
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
-#: input/pagecontent/business-requirements.md:5
-msgid "Business Processes: the BPMN 2.0 processes A to K."
+#: input/pagecontent/business-requirements.md:6
+msgid "Business Processes: the BPMN 2.0 processes A to M."
 msgstr ""
 
 #. Source: input/pagecontent/business-requirements.md:3
@@ -28,9 +28,15 @@ msgstr ""
 msgid "Concepts: the terms and key concepts this guide uses."
 msgstr ""
 
-#. Source: input/pagecontent/business-requirements.md:7
+#. Source: input/pagecontent/business-requirements.md:5
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
-#: input/pagecontent/business-requirements.md:7
+#: input/pagecontent/business-requirements.md:5
+msgid "Consent: explicit and implied consent, and consent directives in documents."
+msgstr ""
+
+#. Source: input/pagecontent/business-requirements.md:8
+#. URL: http://smart.who.int/trust-phw/business-requirements.html
+#: input/pagecontent/business-requirements.md:8
 msgid "Decision-support Logic: the DMN decisions the processes use."
 msgstr ""
 
@@ -46,9 +52,9 @@ msgstr ""
 msgid "This section holds the business requirements of this guide."
 msgstr ""
 
-#. Source: input/pagecontent/business-requirements.md:6
+#. Source: input/pagecontent/business-requirements.md:7
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
-#: input/pagecontent/business-requirements.md:6
+#: input/pagecontent/business-requirements.md:7
 msgid "Worked Example: IPS Pilgrimage (Hajj): processes A, B, C, F and I applied to one case."
 msgstr ""
 

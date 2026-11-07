@@ -12,10 +12,12 @@ Supporting guidance, recommendations, resources and standards are listed in the 
 
 ### What this guide contains
 
-- <a href="business-processes.html">Business Processes</a>: eleven BPMN 2.0 processes:
+- <a href="consent.html">Consent</a>: explicit and implied consent (IHE PCF), trust domains' consent codes, and consent directives in shared and issued documents.
+- <a href="business-processes.html">Business Processes</a>: thirteen BPMN 2.0 processes:
   - Consent and verifiable health links: A record and manage consent, B issue a consent-backed link, C present and redeem a link.
   - Data sharing agreements between servers: D register a client, E server-to-server access, F access decision, G audit and provenance, H revocation and suspension, I decide a link request under an agreement.
   - Shared certificate processes: J issue a certificate, K verify a certificate and its status.
+  - Consent: L record explicit consent, M add consent directives to a shared or issued document.
 - <a href="decision-logic.html">Decision-support Logic</a>: the DMN decision `PHW.DT.AgreementAccess`, which combines several agreements for one receiver.
 - <a href="example-pilgrimage.html">Worked Example: IPS Pilgrimage (Hajj)</a>: processes A, B, C, F and I applied to one case.
 - <a href="system-actors.html">System Actors</a>, <a href="sequence-diagrams.html">Sequence Diagrams</a> and <a href="transactions.html">Transactions</a>.
