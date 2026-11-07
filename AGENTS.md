@@ -128,7 +128,7 @@ The harness's generic process is [`translation-refresh`](https://github.com/litl
 | new and obsolete strings | none yet here: no locale catalogues exist, so there is no `po-status` step; when the first locale lands, merge with `msgmerge` (new msgids appended empty, obsolete kept as `#~`) |
 | FHIR terms | one CodeSystem supplement per locale, `input/fsh/translations/<locale>.fsh`; never edit a resource's own text |
 
-`generated-checks.yml` runs the template check. There is no officiality check or status report here yet. Translation watcher merge policy (owner, 2026-11-07): merge-when-green. The watcher merges its own refresh PR only when every check is green and the untainted round trip on the changed strings records no fail; anything red, uncertain or failing is left open and reported to the owner. Translations stay unofficial. This follows `translation-refresh` step 9.
+`generated-checks.yml` runs the template check. There is no officiality check or status report here yet. Merge policy: **merge-when-green** (owner, 2026-11-07). A refresh run merges its own refresh PR only when every check is green and the untainted round trip on the changed strings records no fail; anything red, uncertain or failing is left open and reported to the owner. Merging is not sign-off: the translations stay unofficial.
 
 To regenerate the templates:
 
