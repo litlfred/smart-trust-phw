@@ -50,3 +50,11 @@ Alias: $IHE_VHL_TrustAnchor = https://profiles.ihe.net/ITI/VHL/CapabilityStateme
 Alias: $IHE_VHL_Sharer = https://profiles.ihe.net/ITI/VHL/CapabilityStatement/VHLSharerCapabilityStatement
 Alias: $IHE_VHL_Receiver = https://profiles.ihe.net/ITI/VHL/CapabilityStatement/VHLReceiverCapabilityStatement
 Alias: $IHE_VHL_GenerateVHL = https://profiles.ihe.net/ITI/VHL/OperationDefinition/generate-vhl
+
+// Consent (IHE PCF 1.1.0 implicit policies, Volume 1 §1:53.2.1; HL7 terminology)
+Alias: $PCFPolicyBasicNormal = https://profiles.ihe.net/ITI/PCF/Policy-basic-normal
+Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
+Alias: $v3-ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
+Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
+Alias: $IPSHajjConsent = http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT
+Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode

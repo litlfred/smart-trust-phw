@@ -66,6 +66,7 @@ Process A is the person-side view of the data sharing agreement's consent proces
 | `PHW.B.3` | VHL Holder (Patient / Personal Health Wallet) | Request VHL generation `[ITI-YY3]` Generate VHL (`$generate-vhl`) | **`[ITI-YY3]` Generate VHL** (`https://profiles.ihe.net/ITI/VHL/OperationDefinition/GenerateVHL`) |
 | `PHW.B.4` | VHL Sharer (grouped with PCF Consent Recorder) | Query or record active Consent `[ITI-108]` Access Consent: Search / Post | **`[ITI-108]` Access Consent** (`GET [base]/Consent?patient=...&status=active` or `POST [base]/Consent`) |
 | `PHW.B.5` | PCF Consent Registry | Return active PCF Consent (`Consent.id` + `versionId`) `[ITI-108]` Access Consent | **`[ITI-108]` Access Consent** responder (`IHE.PCF.consentRegistry`) |
+| `PHW.B.5a` | VHL Sharer (grouped with PCF Consent Recorder) | B5a. Add the consent directives to the shared documents (process M, optional) | Optional (owner, 2026-11-07): before the VHL payload is assembled and signed, process M adds the consent directives the documents are shared under, explicit (the Consent returned at B5) or implied (the trust domain's default policy), as consent entries listed in each document's Advance Directives section. The copy in the document is evidence for the receiver; the Consent Registry copy is the one enforced. |
 | `PHW.B.6` | VHL Sharer (grouped with PCF Consent Recorder) | Assemble & sign VHL payload bound to Consent `[ITI-YY3]` Generate VHL | **`[ITI-YY3]` Generate VHL** (`IHE.VHL.VHLSharer`), signing with `[ITI-YY1]` key material |
 | `PHW.B.7` | VHL Holder (Patient / Personal Health Wallet) | Store signed VHL in Personal Health Wallet `[ITI-YY3]` Generate VHL | **`[ITI-YY3]` Generate VHL** response received by `VHLHolder` |
 
@@ -360,6 +361,7 @@ These two processes are shared blocks for any certificate type (BPMN reuse propo
 | --- | --- | --- | --- |
 | `PHW.J.1` | Certificate Issuer (health worker or issuing system) | J1. Inform the holder and ask for consent to issue | smart-icvp: 'Inform traveller and request consent to digitize' and 'Counsel patient on consent'. This is consent to issue the certificate. Consent to share it later is recorded by process A and checked by process B. |
 | `PHW.J.2` | Certificate Issuer (health worker or issuing system) | J2. Collect the data the certificate profile needs | smart-icvp: 'Capture Vaccination Data', 'Collate ICVP data', 'Conduct data entry from physical card into system'. What is collected is set by the certificate profile input. |
+| `PHW.J.2a` | Certificate Issuance Service | J2a. Add the consent directives to the certificate (process M, optional) | Optional (owner, 2026-11-07): before the certificate is signed, process M adds the consent directives it is issued under, explicit (PHWExplicitConsent, recorded by process L) or implied (PHWImpliedConsent, the trust domain's default policy), as consent entries listed in the Advance Directives section. The copy in the certificate is evidence for a receiver; the Consent Registry copy is the one enforced. |
 | `PHW.J.3` | Certificate Issuance Service | J3. Issue and sign the certificate | smart-icvp: 'Issue Digital ICVP Card'. Signed with the issuer's key registered with the trust anchor. |
 | `PHW.J.4` | Certificate Issuance Service | J4. Issue a consent-backed VHL (process B) | smart-icvp: 'Configure VHL'. Reuses process B: consent check [ITI-108] and Generate VHL [ITI-YY3]. |
 | `PHW.J.5` | Certificate Issuance Service | J5. Generate the QR code | smart-icvp: 'Generate QR Code'. |
@@ -386,6 +388,51 @@ These two processes are shared blocks for any certificate type (BPMN reuse propo
 | `PHW.K.7` | Issuing Public Health Authority (certificate registry) | K7. Find the certificate in the registry and return it | smart-icvp: 'Identify Certificate in Certificate Registry', 'Retrieve Certificate from Certificate Repository', 'Return Certificate'. |
 | `PHW.K.8` | Verifier (with or without a status checking application) | K8. Communicate the result | smart-icvp: 'Communicate Result back to Verifier'. |
 
+### Consent Processes
+
+Explicit and implied consent are described on the [Consent](consent.html) page. Process L records an explicit consent. Process M adds the consent directives, explicit or implied, to a document when it is shared (process B, step B5a) or issued (process J, step J2a). Adding them is optional.
+
+| # | Process Name | Process ID | Objectives |
+| --- | --- | --- | --- |
+| L | Record Explicit Consent | PHW.L | Show the trust domain's consent text (code and version); when the holder agrees, record the act as evidence and post a `PHWExplicitConsent` with `[ITI-108]`; when the holder does not, the trust domain's default policy applies (implied consent). |
+| M | Add Consent Directives to a Shared or Issued Document | PHW.M | Optionally, before signing: find the active explicit Consents (`[ITI-108]`), or else the trust domain's default as a `PHWImpliedConsent`; add them as consent entries and list them in the Advance Directives section. |
+
+#### L. Record Explicit Consent
+
+* **Process ID**: `PHW.L`
+* **BPMN Source**: `input/business-processes/PHW.L.bpmn`
+* **Objective**: The holder gives explicit consent by their own act, recorded as an IHE PCF Consent whose `policyRule` is the trust domain's consent code.
+
+<figure style="width:100%">
+  <img src="PHW.L.svg" alt="Process L — Record Explicit Consent ([ITI-108])" style="width:100%; max-width:1100px;" />
+</figure>
+
+| Activity ID | Lane / Actor | Task Name | Description |
+| --- | --- | --- | --- |
+| `PHW.L.1` | PCF Consent Recorder (wallet or health worker) | L1. Show the trust domain's consent text (code and version) | The text is the definition of the consent code in the trust domain's terms-of-use code system, at the version shown, in the holder's language. For Hajj: IPS.HAJJ.CONSENT, for example CONSENT-MYS at 2.1.0. |
+| `PHW.L.2` | Holder (person / Personal Health Wallet) | L2. Read the text and decide | The holder decides who may see what, for what purpose and for how long (provision.actor, provision.purpose, provision.period). |
+| `PHW.L.3` | PCF Consent Recorder (wallet or health worker) | L3. Record the holder's act as evidence | The wallet confirmation or the signed form (a DocumentReference or QuestionnaireResponse): the Consent's source[x]. |
+| `PHW.L.4` | PCF Consent Recorder (wallet or health worker) | L4. Post the explicit Consent [ITI-108] Access Consent | A PHWExplicitConsent: policyRule = the trust domain's consent code with the version shown; source = the evidence of L3; status active. |
+| `PHW.L.5` | PCF Consent Registry | L5. Store the Consent; return Consent.id and versionId [ITI-108] | The registry copy is the one enforced (processes C, F, I). |
+| `PHW.L.6` | Holder (person / Personal Health Wallet) | L6. Keep a copy in the wallet | So the holder can read back what they agreed to and withdraw it (process A, Delete or Put). |
+
+#### M. Add Consent Directives to a Shared or Issued Document
+
+* **Process ID**: `PHW.M`
+* **BPMN Source**: `input/business-processes/PHW.M.bpmn`
+* **Objective**: A shared or issued document can carry the consent directives it is shared under, explicit or implied, so the receiver can see them. The copy in the document is evidence; the Consent Registry copy is the one enforced.
+
+<figure style="width:100%">
+  <img src="PHW.M.svg" alt="Process M — Add Consent Directives to a Shared or Issued Document ([ITI-108])" style="width:100%; max-width:1100px;" />
+</figure>
+
+| Activity ID | Lane / Actor | Task Name | Description |
+| --- | --- | --- | --- |
+| `PHW.M.1` | Document source (VHL Sharer or Certificate Issuance Service) | M1. Search active Consents for the holder [ITI-108] Access Consent | Explicit consents for this trust domain: policyRule in the domain's terms-of-use ValueSet. |
+| `PHW.M.2` | PCF Consent Registry | M2. Return the active Consents [ITI-108] | With Consent.id and meta.versionId. |
+| `PHW.M.3` | Document source (VHL Sharer or Certificate Issuance Service) | M3. Add the explicit Consents, or the trust domain's default as an implied Consent | PHWExplicitConsent for each active explicit consent; when there is none, a PHWImpliedConsent naming the trust domain's default policy (normally an IHE PCF implicit policy) with the domain's published policy as source. |
+| `PHW.M.4` | Document source (VHL Sharer or Certificate Issuance Service) | M4. List them in the Advance Directives section | Composition.section (LOINC 42348-3) entries reference each consent entry, with a human-readable summary in the section text. |
+
 ### Shared Processes and Their Addresses
 
 Another IG calls a process here with a BPMN call activity: it imports this IG's namespace with `bpmn:import` (`namespace="http://smart.who.int/trust-phw/bpmn"`) and sets `calledElement` to the process id, prefixed with the import's namespace prefix (Q-BPMN-2 A).
@@ -400,5 +447,7 @@ Another IG calls a process here with a BPMN call activity: it imports this IG's 
 | B8 | Decide access under an agreement | `PHW.F`, `PHW.I` |
 | B9 | Audit and provenance | `PHW.G` |
 | B10 | Revoke or suspend | `PHW.H` |
+| B11 | Record explicit consent | `PHW.L` |
+| B12 | Add consent directives to a document | `PHW.M` |
 
 For a worked example of processes A, B, C, F and I in one case, see [Worked Example: IPS Pilgrimage (Hajj)](example-pilgrimage.html).

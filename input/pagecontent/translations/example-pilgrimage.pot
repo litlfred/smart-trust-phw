@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-07 05:37+0000\n"
+"POT-Creation-Date: 2026-11-07 05:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,9 +190,9 @@ msgstr ""
 msgid "G6. KSA's duties after receipt are not machine-readable."
 msgstr ""
 
-#. Source: input/pagecontent/example-pilgrimage.md:186
+#. Source: input/pagecontent/example-pilgrimage.md:98
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
-#: input/pagecontent/example-pilgrimage.md:186
+#: input/pagecontent/example-pilgrimage.md:98
 msgid "G6: approve DS4P obligation codes, or keep KSA's duties in the  text only?"
 msgstr ""
 
@@ -208,9 +208,9 @@ msgstr ""
 msgid "G8. Break the glass has no VHL."
 msgstr ""
 
-#. Source: input/pagecontent/example-pilgrimage.md:187
+#. Source: input/pagecontent/example-pilgrimage.md:99
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
-#: input/pagecontent/example-pilgrimage.md:187
+#: input/pagecontent/example-pilgrimage.md:99
 msgid "G8: is break the glass in scope now?"
 msgstr ""
 
@@ -260,9 +260,9 @@ msgstr ""
 msgid "Host use ()"
 msgstr ""
 
-#. Source: input/pagecontent/example-pilgrimage.md:182
+#. Source: input/pagecontent/example-pilgrimage.md:94
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
-#: input/pagecontent/example-pilgrimage.md:182
+#: input/pagecontent/example-pilgrimage.md:94
 msgid "How step 10 reads them: the origin HIE takes the active Consent whose  is its own release code () from its registry (). It matches  against the receiver as verified by trust in the  trust domain (),  against the purpose (; see G5), and  against today. That Consent's  result feeds the default DMN decision  ().  () binds the host Ministry of Health after receipt and is not part of the origin's decision. The audit event () cites each Consent read, by  code and version and by the  and  the registry assigned at ."
 msgstr ""
 
@@ -330,9 +330,9 @@ msgstr ""
 msgid "now requires  with an  code and  (CodeSystem version 2.1.0).  also satisfies R4 invariant , so no  is needed. It also requires  (an Organization by identifier, role ),  from v3 PurposeOfUse (), and . See the examples below."
 msgstr ""
 
-#. Source: input/pagecontent/example-pilgrimage.md:184
+#. Source: input/pagecontent/example-pilgrimage.md:96
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
-#: input/pagecontent/example-pilgrimage.md:184
+#: input/pagecontent/example-pilgrimage.md:96
 msgid "Open questions for the owner"
 msgstr ""
 
@@ -448,6 +448,12 @@ msgstr ""
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
 #: input/pagecontent/example-pilgrimage.md:28
 msgid "The Hajj encounter, mapped onto VHL and onto the activities of this guide. Steps that hit a gap name it; the gaps are listed in the next section."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:92
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:92
+msgid "The instances are in this guide's artefacts: PilgrimConsentOriginRelease and PilgrimConsentHostUse, both PHW Explicit Consent, with the pilgrim, the origin HIE and the host Ministry of Health."
 msgstr ""
 
 #. Source: input/pagecontent/example-pilgrimage.md:79
@@ -615,7 +621,7 @@ msgstr ""
 #. Source: input/pagecontent/example-pilgrimage.md:83
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
 #: input/pagecontent/example-pilgrimage.md:83
-msgid "The two Consents below match the  examples of smart-ips-pilgrimage#3. They are FHIR R4 resources on the IHE PCF 1.1.0 profile , which  is built on. This guide is now built on FHIR R4 4.0.1 too, but they are given here as FSH and are not yet instances of this guide. They were compiled with SUSHI 3.21.0 against  4.0.1 and  1.1.0, with no errors."
+msgid "The two Consents below match the  examples of smart-ips-pilgrimage#3. They are FHIR R4 resources on the IHE PCF 1.1.0 profile , which  is built on. This guide is built on FHIR R4 4.0.1 too, and the two are instances of its PHW Explicit Consent profile: each names a Hajj consent code in  and has the consent text the pilgrim was shown as its evidence."
 msgstr ""
 
 #. Source: input/pagecontent/example-pilgrimage.md:1

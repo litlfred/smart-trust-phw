@@ -29,6 +29,7 @@
         <bpmn:flowNodeRef>PHW.J.3</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>PHW.J.4</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>PHW.J.5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>PHW.J.2a</bpmn:flowNodeRef>
       </bpmn:lane>
     </bpmn:laneSet>
     <bpmn:startEvent id="PHW.J.Start" name="Certificate requested">
@@ -57,7 +58,7 @@
     </bpmn:userTask>
     <bpmn:serviceTask id="PHW.J.3" name="J3. Issue and sign the certificate">
       <bpmn:documentation>smart-icvp: 'Issue Digital ICVP Card'. Signed with the issuer's key registered with the trust anchor.</bpmn:documentation>
-      <bpmn:incoming>PHW.J.Flow5</bpmn:incoming>
+      <bpmn:incoming>PHW.J.2a.FlowOut</bpmn:incoming>
       <bpmn:outgoing>PHW.J.Flow6</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:callActivity id="PHW.J.4" name="J4. Issue a consent-backed VHL (process B)" calledElement="PHW.B">
@@ -79,11 +80,17 @@
       <bpmn:documentation>The holder has the signed certificate and its VHL.</bpmn:documentation>
       <bpmn:incoming>PHW.J.Flow9</bpmn:incoming>
     </bpmn:endEvent>
+    <bpmn:callActivity id="PHW.J.2a" name="J2a. Add the consent directives to the certificate (process M, optional)" calledElement="PHW.M">
+      <bpmn:documentation>Optional (owner, 2026-11-07): before the certificate is signed, process M adds the consent directives it is issued under, explicit (PHWExplicitConsent, recorded by process L) or implied (PHWImpliedConsent, the trust domain's default policy), as consent entries listed in the Advance Directives section. The copy in the certificate is evidence for a receiver; the Consent Registry copy is the one enforced.</bpmn:documentation>
+      <bpmn:incoming>PHW.J.Flow5</bpmn:incoming>
+      <bpmn:outgoing>PHW.J.2a.FlowOut</bpmn:outgoing>
+    </bpmn:callActivity>
     <bpmn:sequenceFlow id="PHW.J.Flow1" sourceRef="PHW.J.Start" targetRef="PHW.J.1" />
     <bpmn:sequenceFlow id="PHW.J.Flow2" sourceRef="PHW.J.1" targetRef="PHW.J.Gateway1" />
     <bpmn:sequenceFlow id="PHW.J.Flow3" name="Yes" sourceRef="PHW.J.Gateway1" targetRef="PHW.J.2" />
     <bpmn:sequenceFlow id="PHW.J.Flow4" name="No" sourceRef="PHW.J.Gateway1" targetRef="PHW.J.EndNo" />
-    <bpmn:sequenceFlow id="PHW.J.Flow5" sourceRef="PHW.J.2" targetRef="PHW.J.3" />
+    <bpmn:sequenceFlow id="PHW.J.Flow5" sourceRef="PHW.J.2" targetRef="PHW.J.2a" />
+    <bpmn:sequenceFlow id="PHW.J.2a.FlowOut" sourceRef="PHW.J.2a" targetRef="PHW.J.3" />
     <bpmn:sequenceFlow id="PHW.J.Flow6" sourceRef="PHW.J.3" targetRef="PHW.J.4" />
     <bpmn:sequenceFlow id="PHW.J.Flow7" sourceRef="PHW.J.4" targetRef="PHW.J.5" />
     <bpmn:sequenceFlow id="PHW.J.Flow8" sourceRef="PHW.J.5" targetRef="PHW.J.6" />
@@ -91,20 +98,25 @@
   </bpmn:process>
   <bpmndi:BPMNDiagram id="PHW.J.Diagram">
     <bpmndi:BPMNPlane id="PHW.J.Plane" bpmnElement="PHW.J.Collaboration">
-      <bpmndi:BPMNShape id="PHW.J.Participant_di" bpmnElement="PHW.J.Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="1985" height="450" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.Lane.Holder_di" bpmnElement="PHW.Lane.Holder" isHorizontal="true"><dc:Bounds x="150" y="60" width="1955" height="150" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.Lane.Issuer_di" bpmnElement="PHW.Lane.Issuer" isHorizontal="true"><dc:Bounds x="150" y="210" width="1955" height="150" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.Lane.IssuanceService_di" bpmnElement="PHW.Lane.IssuanceService" isHorizontal="true"><dc:Bounds x="150" y="360" width="1955" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.J.Participant_di" bpmnElement="PHW.J.Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="2220" height="450" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.Lane.Holder_di" bpmnElement="PHW.Lane.Holder" isHorizontal="true"><dc:Bounds x="150" y="60" width="2190" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.Lane.Issuer_di" bpmnElement="PHW.Lane.Issuer" isHorizontal="true"><dc:Bounds x="150" y="210" width="2190" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.Lane.IssuanceService_di" bpmnElement="PHW.Lane.IssuanceService" isHorizontal="true"><dc:Bounds x="150" y="360" width="2190" height="150" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="PHW.J.Start_di" bpmnElement="PHW.J.Start"><dc:Bounds x="267" y="267" width="36" height="36" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="PHW.J.1_di" bpmnElement="PHW.J.1"><dc:Bounds x="405" y="245" width="170" height="80" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="PHW.J.Gateway1_di" bpmnElement="PHW.J.Gateway1" isMarkerVisible="true"><dc:Bounds x="670" y="260" width="50" height="50" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="PHW.J.EndNo_di" bpmnElement="PHW.J.EndNo"><dc:Bounds x="677" y="117" width="36" height="36" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="PHW.J.2_di" bpmnElement="PHW.J.2"><dc:Bounds x="815" y="245" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.J.3_di" bpmnElement="PHW.J.3"><dc:Bounds x="1020" y="395" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.J.4_di" bpmnElement="PHW.J.4"><dc:Bounds x="1225" y="395" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.J.5_di" bpmnElement="PHW.J.5"><dc:Bounds x="1430" y="395" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.J.6_di" bpmnElement="PHW.J.6"><dc:Bounds x="1635" y="95" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.J.End_di" bpmnElement="PHW.J.End"><dc:Bounds x="1907" y="117" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.J.3_di" bpmnElement="PHW.J.3"><dc:Bounds x="1255" y="395" width="170" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.J.4_di" bpmnElement="PHW.J.4"><dc:Bounds x="1460" y="395" width="170" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.J.5_di" bpmnElement="PHW.J.5"><dc:Bounds x="1665" y="395" width="170" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.J.6_di" bpmnElement="PHW.J.6"><dc:Bounds x="1870" y="95" width="170" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.J.End_di" bpmnElement="PHW.J.End"><dc:Bounds x="2142" y="117" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.J.2a_di" bpmnElement="PHW.J.2a"><dc:Bounds x="1020" y="395" width="185" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="PHW.J.2a.FlowOut_di" bpmnElement="PHW.J.2a.FlowOut">
+        <di:waypoint x="1205" y="435" />
+        <di:waypoint x="1255" y="435" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.J.Flow1_di" bpmnElement="PHW.J.Flow1">
         <di:waypoint x="303" y="285" />
         <di:waypoint x="405" y="285" />
@@ -128,22 +140,22 @@
         <di:waypoint x="1020" y="435" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.J.Flow6_di" bpmnElement="PHW.J.Flow6">
-        <di:waypoint x="1190" y="435" />
-        <di:waypoint x="1225" y="435" />
+        <di:waypoint x="1425" y="435" />
+        <di:waypoint x="1460" y="435" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.J.Flow7_di" bpmnElement="PHW.J.Flow7">
-        <di:waypoint x="1395" y="435" />
-        <di:waypoint x="1430" y="435" />
+        <di:waypoint x="1630" y="435" />
+        <di:waypoint x="1665" y="435" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.J.Flow8_di" bpmnElement="PHW.J.Flow8">
-        <di:waypoint x="1600" y="435" />
-        <di:waypoint x="1617" y="435" />
-        <di:waypoint x="1617" y="135" />
-        <di:waypoint x="1635" y="135" />
+        <di:waypoint x="1835" y="435" />
+        <di:waypoint x="1852" y="435" />
+        <di:waypoint x="1852" y="135" />
+        <di:waypoint x="1870" y="135" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.J.Flow9_di" bpmnElement="PHW.J.Flow9">
-        <di:waypoint x="1805" y="135" />
-        <di:waypoint x="1907" y="135" />
+        <di:waypoint x="2040" y="135" />
+        <di:waypoint x="2142" y="135" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
