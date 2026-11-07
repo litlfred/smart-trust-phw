@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"POT-Creation-Date: 2026-11-07 21:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,25 +19,25 @@ msgstr ""
 #. Source: input/pagecontent/security-privacy.md:3
 #. URL: http://smart.who.int/trust-phw/security-privacy.html
 #: input/pagecontent/security-privacy.md:3
-msgid "Consent is enforced where the data is held. The VHL Sharer enforces the consent in its own Consent Registry (IHE PCF ). A copy of a consent carried inside a document is evidence only. See Process A and Process C."
+msgid "Consent is enforced where the data is held. The VHL Sharer enforces the consent in its own Consent Registry (IHE PCF {code0}). A copy of a consent carried inside a document is evidence only. See <a0>Process A</a0> and <a1>Process C</a1>."
 msgstr ""
 
 #. Source: input/pagecontent/security-privacy.md:6
 #. URL: http://smart.who.int/trust-phw/security-privacy.html
 #: input/pagecontent/security-privacy.md:6
-msgid "Decisions are recorded. Each access decision is recorded as W3C PROV-O provenance that cites  and . Process G covers audit under a data sharing agreement."
+msgid "Decisions are recorded. Each access decision is recorded as W3C PROV-O provenance that cites {code0} and {code1}. <a0>Process G</a0> covers audit under a data sharing agreement."
 msgstr ""
 
 #. Source: input/pagecontent/security-privacy.md:4
 #. URL: http://smart.who.int/trust-phw/security-privacy.html
 #: input/pagecontent/security-privacy.md:4
-msgid "No silent permit. A consent decision is ,  or . A missing, expired or unreachable consent never gives ."
+msgid "No silent permit. A consent decision is {code0}, {code1} or {code2}. A missing, expired or unreachable consent never gives {code3}."
 msgstr ""
 
 #. Source: input/pagecontent/security-privacy.md:7
 #. URL: http://smart.who.int/trust-phw/security-privacy.html
 #: input/pagecontent/security-privacy.md:7
-msgid "Revocation. Process H covers revoking and suspending access."
+msgid "Revocation. <a0>Process H</a0> covers revoking and suspending access."
 msgstr ""
 
 #. Source: input/pagecontent/security-privacy.md:1
@@ -49,6 +49,6 @@ msgstr ""
 #. Source: input/pagecontent/security-privacy.md:5
 #. URL: http://smart.who.int/trust-phw/security-privacy.html
 #: input/pagecontent/security-privacy.md:5
-msgid "Trust is checked against a Trust Anchor. Signatures on links and certificates are verified against the trust list of an abstract Trust Anchor (). The guide does not depend on one particular anchor."
+msgid "Trust is checked against a Trust Anchor. Signatures on links and certificates are verified against the trust list of an abstract Trust Anchor ({code0}). The guide does not depend on one particular anchor."
 msgstr ""
 

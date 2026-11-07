@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-07 05:43+0000\n"
+"POT-Creation-Date: 2026-11-07 21:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,7 +67,7 @@ msgstr ""
 #. Source: input/pagecontent/index.md:21
 #. URL: http://smart.who.int/trust-phw/index.html
 #: input/pagecontent/index.md:21
-msgid "Decision-support Logic: the DMN decision , which combines several agreements for one receiver."
+msgid "Decision-support Logic: the DMN decision {code0}, which combines several agreements for one receiver."
 msgstr ""
 
 #. Source: input/pagecontent/index.md:38
@@ -139,13 +139,13 @@ msgstr ""
 #. Source: input/pagecontent/index.md:24
 #. URL: http://smart.who.int/trust-phw/index.html
 #: input/pagecontent/index.md:24
-msgid "The logical models, profiles, value sets and examples are listed in the Artifact Index. An offline copy of the guide is on the Downloads page."
+msgid "The logical models, profiles, value sets and examples are listed in the <a0>Artifact Index</a0>. An offline copy of the guide is on the <a1>Downloads</a1> page."
 msgstr ""
 
 #. Source: input/pagecontent/index.md:28
 #. URL: http://smart.who.int/trust-phw/index.html
 #: input/pagecontent/index.md:28
-msgid "This guide follows the levels of knowledge representation:"
+msgid "This guide follows the <a0>levels of knowledge representation</a0>:"
 msgstr ""
 
 #. Source: input/pagecontent/index.md:1
