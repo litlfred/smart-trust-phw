@@ -7,14 +7,13 @@ generated: "scripts/subgraph-readmes.ts of the bootstrap toolset (https://github
 
 # tools
 
-This instance's generators, each with a --check that CI runs: render-bpmn draws input/business-processes/*.bpmn into input/images/; personas writes input/pagecontent/personas.md from scenarios/. publish/publish.sh publishes the site to gh-pages after checking that gh-pages exists, the mounts are fresh and input/ is the commit's.
+This instance's generators, each with a --check that CI runs: render-bpmn draws input/business-processes/*.bpmn into input/images/; personas writes input/pagecontent/personas.md from scenarios/. The site is published by the harness's stage-local.ts --fresh.
 
 Part of [GDHCN Trust Network - Personal Health Wallet](../README.md) 0.2.0, declared as `tools`, holding `code`.
 
 | file | what it is | used by |
 |---|---|---|
 | [`personas/`](personas/) | _nothing declares what this holds_ | |
-| [`publish/`](publish/) | _nothing declares what this holds_ | |
 | [`render-bpmn/`](render-bpmn/) | _nothing declares what this holds_ | |
 
 <!-- kg:subgraph:end -->

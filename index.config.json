@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "961679a369975afb6320647dde23d8e335bd84b5",
+          "ref": "23ebf43e3e6da0c7c2dbc80a8ce8f0b2330becc2",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -102,8 +102,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "961679a369975afb6320647dde23d8e335bd84b5",
-              "evidence": "Owner litlfred, 2026-11-07, session https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f: 'repin + merge open 12 hrs' (re-pin smart-trust-phw's layers to their main tips)."
+              "ref": "23ebf43e3e6da0c7c2dbc80a8ce8f0b2330becc2",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\"; ~05:25Z: \"repin + merge open 12 hrs\"; by card: \"Fix in harness\", \"Wait for #308\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned fhir-harness, folio-assistant-core, cat-harness and cat-harness-tools to their main tips (fhir-harness#308 ICD-11 txcache fix; cat-harness-tools#1665 prov-qaqc without beans), bootstrap layers unchanged until bootstrap-tools#82."
             }
           }
         }
@@ -114,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "cebc997cdc4e4ae9213da58aacdd38491c61650d",
+          "ref": "7e00ff66455f2eec234f718822b1ad61e7ea65f8",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -130,8 +130,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "cebc997cdc4e4ae9213da58aacdd38491c61650d",
-              "evidence": "Owner litlfred, 2026-11-07, session https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f: 'repin + merge open 12 hrs' (re-pin smart-trust-phw's layers to their main tips)."
+              "ref": "7e00ff66455f2eec234f718822b1ad61e7ea65f8",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\"; ~05:25Z: \"repin + merge open 12 hrs\"; by card: \"Fix in harness\", \"Wait for #308\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned fhir-harness, folio-assistant-core, cat-harness and cat-harness-tools to their main tips (fhir-harness#308 ICD-11 txcache fix; cat-harness-tools#1665 prov-qaqc without beans), bootstrap layers unchanged until bootstrap-tools#82."
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "d5272c0185483c3d67a82cc0252f90eb802705cc",
+          "ref": "c36b85ce480280d0a2564d293f882c668a3388fe",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -158,8 +158,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "d5272c0185483c3d67a82cc0252f90eb802705cc",
-              "evidence": "Owner litlfred, 2026-11-07, session https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f: 'repin + merge open 12 hrs' (re-pin smart-trust-phw's layers to their main tips)."
+              "ref": "c36b85ce480280d0a2564d293f882c668a3388fe",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\"; ~05:25Z: \"repin + merge open 12 hrs\"; by card: \"Fix in harness\", \"Wait for #308\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned fhir-harness, folio-assistant-core, cat-harness and cat-harness-tools to their main tips (fhir-harness#308 ICD-11 txcache fix; cat-harness-tools#1665 prov-qaqc without beans), bootstrap layers unchanged until bootstrap-tools#82."
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "33a81d1cb60ed8a5a372c6c442175436be674b1c",
+          "ref": "e5a047b8d4cca622e7c53cd78fadcfc43e621a65",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -183,8 +183,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "33a81d1cb60ed8a5a372c6c442175436be674b1c",
-              "evidence": "Owner litlfred, 2026-11-07, session https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f: 'repin + merge open 12 hrs' (re-pin smart-trust-phw's layers to their main tips)."
+              "ref": "e5a047b8d4cca622e7c53cd78fadcfc43e621a65",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\"; ~05:25Z: \"repin + merge open 12 hrs\"; by card: \"Fix in harness\", \"Wait for #308\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned fhir-harness, folio-assistant-core, cat-harness and cat-harness-tools to their main tips (fhir-harness#308 ICD-11 txcache fix; cat-harness-tools#1665 prov-qaqc without beans), bootstrap layers unchanged until bootstrap-tools#82."
             }
           }
         }
