@@ -766,7 +766,7 @@ msgstr "Obligations enregistrées dans le processus G"
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:199
 msgid "Duties. The duties of every permitting agreement apply. A consent-based agreement still needs an active PCF Consent ()."
-msgstr "Obligations. Les obligations de chaque accord qui autorise s’appliquent. Un accord fondé sur le consentement nécessite toujours un Consent PCF actif ()."
+msgstr "Obligations. Les obligations de chaque accord qui autorise s’appliquent. Un accord fondé sur le consentement nécessite tout de même un Consent PCF actif ()."
 
 #. Source: input/pagecontent/business-processes.md:142
 #. URL: http://smart.who.int/trust-phw/business-processes.html
@@ -874,7 +874,7 @@ msgstr "Lacune : ni RFC 7591 ni la déclaration logicielle SSRAA n’ont de cham
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:165
 msgid "Gaps and open points in E. RFC 9396 has no field that holds an agreement's URL and its hash. The fixed-version URL goes in , and the SHA-256 published with that version fixes the bytes. No checked standard parameter carries the W3C VC 2.0 grant in a server-to-server token request. Until one is chosen, the client registration recorded in  stands in for the grant. For a document-only agreement, scopes set by the administrator replace RAR details, and  can still carry the agreement URL for audit."
-msgstr "Lacunes et points ouverts dans E. RFC 9396 n’a aucun champ qui contienne l’URL d’un accord et son hachage. L’URL de version fixe va dans , et le SHA-256 publié avec cette version fixe les octets. Aucun paramètre standard vérifié ne transporte l’autorisation W3C VC 2.0 dans une requête de jeton de serveur à serveur. Tant qu’aucun n’est choisi, l’enregistrement du client consigné dans  tient lieu d’autorisation. Pour un accord portant uniquement sur des documents, les portées définies par l’administrateur remplacent les détails RAR, et  peut toujours transporter l’URL de l’accord à des fins d’audit."
+msgstr "Lacunes et points ouverts dans E. RFC 9396 n’a aucun champ qui contienne l’URL d’un accord et son hachage. L’URL de version fixe va dans , et le SHA-256 publié avec cette version fixe les octets. Aucun paramètre standard vérifié ne transporte l’autorisation W3C VC 2.0 dans une requête de jeton de serveur à serveur. Tant qu’aucun n’est choisi, l’enregistrement du client consigné dans  tient lieu d’autorisation. Pour un accord uniquement documentaire (« document seul »), les portées définies par l’administrateur remplacent les détails RAR, et  peut toujours transporter l’URL de l’accord à des fins d’audit."
 
 #. Source: input/pagecontent/business-processes.md:133
 #. URL: http://smart.who.int/trust-phw/business-processes.html
@@ -1288,7 +1288,7 @@ msgstr "Couloir / acteur"
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:47
 msgid "Legal basis. Only an agreement whose legal basis is consent asks for consent. Treatment, public-health law and research waivers do not rest on consent."
-msgstr "Base juridique. Seul un accord dont la base juridique est le consentement demande un consentement. Le traitement, le droit de la santé publique et les dérogations pour la recherche ne reposent pas sur le consentement."
+msgstr "Base juridique. Seul un accord dont la base juridique est le consentement demande un consentement. Les soins (traitement médical), le droit de la santé publique et les dérogations pour la recherche ne reposent pas sur le consentement."
 
 #. Source: input/pagecontent/business-processes.md:180
 #. URL: http://smart.who.int/trust-phw/business-processes.html
@@ -1408,13 +1408,13 @@ msgstr "Objectif : enregistrer le serveur du destinataire des données comme cli
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:354
 msgid "Objective: Shared block B4 of the BPMN reuse proposal (Q-BPMN-1 A, 2026-11-01): one issuing process for every certificate type."
-msgstr "Objectif : bloc partagé B4 de la proposition de réutilisation BPMN (Q-BPMN-1 A, 2026-11-01) : un seul processus d’émission pour chaque type de certificat."
+msgstr "Objectif : bloc partagé B4 de la proposition de réutilisation BPMN (Q-BPMN-1 A, 2026-11-01) : un seul processus d’émission pour tous les types de certificat."
 
 #. Source: input/pagecontent/business-processes.md:374
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:374
 msgid "Objective: Shared block B7 of the BPMN reuse proposal (Q-BPMN-1 A, 2026-11-01): one verifying process for every certificate type."
-msgstr "Objectif : bloc partagé B7 de la proposition de réutilisation BPMN (Q-BPMN-1 A, 2026-11-01) : un seul processus de vérification pour chaque type de certificat."
+msgstr "Objectif : bloc partagé B7 de la proposition de réutilisation BPMN (Q-BPMN-1 A, 2026-11-01) : un seul processus de vérification pour tous les types de certificat."
 
 #. Source: input/pagecontent/business-processes.md:267
 #. URL: http://smart.who.int/trust-phw/business-processes.html
@@ -1937,7 +1937,7 @@ msgstr "Publier la clé dans la liste de confiance de l'ancre de confiance  (GDH
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:337
 msgid "Purpose of use in the audit event. With the SSRAA option, the purpose can come from the token request: , a required array of codes in the  extension of the receiver's JWT client assertion (SSRAA §5.2.1.1; HL7 v3 PurposeOfUse is encouraged, §5.2.1.2). SSRAA does not constrain the access token's format (§5.2.3), so the Sharer has the purpose directly when its own authorization server issued the token; how a separate authorization server would pass it on is not specified. Without SSRAA,  carries no purpose, and it comes from the agreement or from the PCF Consent recorded at  (). Which source the event records, and which one wins when they differ, is open."
-msgstr "Finalité d'utilisation dans l'événement d'audit. Avec l'option SSRAA, la finalité peut provenir de la demande de jeton : , un tableau obligatoire de codes dans l'extension  de l'assertion client JWT du destinataire (SSRAA §5.2.1.1 ; HL7 v3 PurposeOfUse est recommandé, §5.2.1.2). SSRAA ne contraint pas le format du jeton d'accès (§5.2.3) ; le partageur dispose donc directement de la finalité lorsque son propre serveur d'autorisation a émis le jeton ; la manière dont un serveur d'autorisation distinct la transmettrait n'est pas spécifiée. Sans SSRAA,  ne porte aucune finalité, et celle-ci provient de l'accord ou du Consent PCF enregistré à  (). La source que l'événement enregistre, et celle qui l'emporte lorsqu'elles diffèrent, restent des questions ouvertes."
+msgstr "Finalité d'utilisation dans l'événement d'audit. Avec l'option SSRAA, la finalité peut provenir de la demande de jeton : , un tableau obligatoire de codes dans l'extension  de l'assertion client JWT du destinataire (SSRAA §5.2.1.1 ; l’utilisation de HL7 v3 PurposeOfUse est encouragée, §5.2.1.2). SSRAA ne contraint pas le format du jeton d'accès (§5.2.3) ; le partageur dispose donc directement de la finalité lorsque son propre serveur d'autorisation a émis le jeton ; la manière dont un serveur d'autorisation distinct la transmettrait n'est pas spécifiée. Sans SSRAA,  ne porte aucune finalité, et celle-ci provient de l'accord ou du Consent PCF enregistré à  (). La source que l'événement enregistre, et celle qui l'emporte lorsqu'elles diffèrent, restent des questions ouvertes."
 
 #. Source: input/pagecontent/business-processes.md:89
 #. URL: http://smart.who.int/trust-phw/business-processes.html
@@ -2385,7 +2385,7 @@ msgstr "Processus partagés et leurs adresses"
 #. URL: http://smart.who.int/trust-phw/business-processes.html
 #: input/pagecontent/business-processes.md:397
 msgid "Show the trust domain's consent text (code and version); when the holder agrees, record the act as evidence and post a  with ; when the holder does not, the trust domain's default policy applies (implied consent)."
-msgstr "Afficher le texte de consentement du domaine de confiance (code et version) ; lorsque le titulaire accepte, enregistrer l'acte comme preuve et publier un  avec  ; lorsque le titulaire n'accepte pas, la politique par défaut du domaine de confiance s'applique (consentement implicite)."
+msgstr "Afficher le texte de consentement du domaine de confiance (code et version) ; lorsque le titulaire accepte, enregistrer l'acte comme preuve et envoyer (POST) un  avec  ; lorsque le titulaire n'accepte pas, la politique par défaut du domaine de confiance s'applique (consentement implicite)."
 
 #. Source: input/pagecontent/business-processes.md:363
 #. URL: http://smart.who.int/trust-phw/business-processes.html
@@ -3164,7 +3164,7 @@ msgstr "Les concepts clés et les abréviations sont décrits ici."
 #. URL: http://smart.who.int/trust-phw/concepts.html
 #: input/pagecontent/concepts.md:4
 msgid "Term Description     Anatomical Therapeutic Chemical code (ATC) A unique code assigned to a medicine according to the organ or system it works on and how it works.   Certificate A document attesting a fact. In the context of the vaccination certificate, it attests to the fact that a vaccine has been administered to an individual.   Clinical practice guidelines (CPG) Clinical practice guidelines are statements that include recommendations intended to optimize patient care that are informed by a systematic review of evidence and an assessment of the benefits and harms of alternative care options.   Clinical Quality Language (CQL) This is a HL7 specification for the expression of clinical knowledge that can be used within both the Clinical Decision Support (CDS) and Clinical Quality Measurement (CQM) domains.   Data dictionary A centralized repository of information about the data elements that contains their definition, relationships, origin, usage, and type of data. For this digital adaptation kit, the data dictionary is provided as a spreadsheet.   Data element A unit of data that has specific and precise meaning.   Fast Healthcare Interoperability Resources (FHIR) A standard describing data formats and elements and an application programming interface for exchanging electronic health records.   Functional requirement Capabilities the system must have in order to meet the end-users’ needs and achieve tasks within the business process.   Implementation Guide (IG) A set of rules about how FHIR resources are used (or should be used) to solve a particular problem, with associated documentation to support and clarify the usage. This IG is based on WHO guidance, to support the adoption of open standards for interoperability.   Indicator Summary measures that capture relevant information on different attributes and dimensions of health status and performance of a health system.   International Patient Summary (IPS) An electronic health record extract containing essential healthcare information about a client.   Non-functional requirement General attributes and features of the digital system to ensure usability and overcome technical and physical constraints. Examples of non-functional requirements include ability to work offline, multiple language settings, and password protection.   Systemized Nomenclature of Medicine – Clinical Terms Global Patient Set (SNOMED CT GPS) A systematically organized computer-processable collection of medical terms providing codes, terms, synonyms and definitions used in clinical documentation and reporting."
-msgstr "Terme Description     Code anatomique, thérapeutique et chimique (ATC) Code unique attribué à un médicament selon l'organe ou le système sur lequel il agit et selon son mode d'action.   Certificat Document attestant un fait. Dans le contexte du certificat de vaccination, il atteste qu'un vaccin a été administré à une personne.   Lignes directrices de pratique clinique (CPG) Les lignes directrices de pratique clinique sont des énoncés comportant des recommandations destinées à optimiser les soins aux patients, fondées sur une revue systématique des données probantes et sur une évaluation des bénéfices et des risques des autres options de soins.   Clinical Quality Language (CQL) Spécification HL7 permettant d'exprimer des connaissances cliniques utilisables à la fois dans les domaines de l'aide à la décision clinique (CDS) et de la mesure de la qualité clinique (CQM).   Dictionnaire de données Référentiel centralisé d'informations sur les éléments de données, qui contient leur définition, leurs relations, leur origine, leur utilisation et leur type de données. Pour ce kit d'adaptation numérique, le dictionnaire de données est fourni sous forme de tableur.   Élément de données Unité de données ayant une signification spécifique et précise.   Fast Healthcare Interoperability Resources (FHIR) Norme décrivant des formats et des éléments de données ainsi qu'une interface de programmation d'applications pour l'échange de dossiers de santé électroniques.   Exigence fonctionnelle Capacités dont le système doit disposer pour répondre aux besoins des utilisateurs finaux et accomplir les tâches du processus métier.   Guide d'implémentation (IG) Ensemble de règles sur la manière dont les ressources FHIR sont utilisées (ou doivent être utilisées) pour résoudre un problème particulier, accompagné d'une documentation destinée à appuyer et à clarifier cette utilisation. Cet IG s'appuie sur les orientations de l'OMS, afin de soutenir l'adoption de normes ouvertes pour l'interopérabilité.   Indicateur Mesures synthétiques qui rendent compte d'informations pertinentes sur différents attributs et dimensions de l'état de santé et de la performance d'un système de santé.   Résumé international du patient (IPS) Extrait de dossier de santé électronique contenant les informations de santé essentielles relatives à un client.   Exigence non fonctionnelle Attributs et caractéristiques généraux du système numérique visant à garantir son ergonomie et à surmonter les contraintes techniques et physiques. Parmi les exigences non fonctionnelles figurent par exemple la capacité de fonctionner hors ligne, la prise en charge de plusieurs langues et la protection par mot de passe.   Systemized Nomenclature of Medicine – Clinical Terms Global Patient Set (SNOMED CT GPS) Ensemble de termes médicaux organisé de manière systématique et exploitable par ordinateur, fournissant des codes, des termes, des synonymes et des définitions utilisés dans la documentation et la notification cliniques."
+msgstr "Terme Description     Code anatomique, thérapeutique et chimique (ATC) Code unique attribué à un médicament selon l'organe ou le système sur lequel il agit et selon son mode d'action.   Certificat Document attestant un fait. Dans le contexte du certificat de vaccination, il atteste qu'un vaccin a été administré à une personne.   Lignes directrices de pratique clinique (CPG) Les lignes directrices de pratique clinique sont des énoncés comportant des recommandations destinées à optimiser les soins aux patients, fondées sur une revue systématique des données probantes et sur une évaluation des bénéfices et des préjudices des autres options de soins.   Clinical Quality Language (CQL) Spécification HL7 permettant d'exprimer des connaissances cliniques utilisables à la fois dans les domaines de l'aide à la décision clinique (CDS) et de la mesure de la qualité clinique (CQM).   Dictionnaire de données Référentiel centralisé d'informations sur les éléments de données, qui contient leur définition, leurs relations, leur origine, leur utilisation et leur type de données. Pour ce kit d'adaptation numérique, le dictionnaire de données est fourni sous forme de tableur.   Élément de données Unité de données ayant une signification spécifique et précise.   Fast Healthcare Interoperability Resources (FHIR) Norme décrivant des formats et des éléments de données ainsi qu'une interface de programmation d'applications pour l'échange de dossiers de santé électroniques.   Exigence fonctionnelle Capacités dont le système doit disposer pour répondre aux besoins des utilisateurs finaux et accomplir les tâches du processus métier.   Guide d'implémentation (IG) Ensemble de règles sur la manière dont les ressources FHIR sont utilisées (ou doivent être utilisées) pour résoudre un problème particulier, accompagné d'une documentation destinée à appuyer et à clarifier cette utilisation. Cet IG s'appuie sur les orientations de l'OMS, afin de soutenir l'adoption de normes ouvertes pour l'interopérabilité.   Indicateur Mesures synthétiques qui rendent compte d'informations pertinentes sur différents attributs et dimensions de l'état de santé et de la performance d'un système de santé.   Résumé international du patient (IPS) Extrait de dossier de santé électronique contenant les informations de santé essentielles relatives à un client.   Exigence non fonctionnelle Attributs et caractéristiques généraux du système numérique visant à garantir son ergonomie et à surmonter les contraintes techniques et physiques. Parmi les exigences non fonctionnelles figurent par exemple la capacité de fonctionner hors ligne, la prise en charge de plusieurs langues et la protection par mot de passe.   Systemized Nomenclature of Medicine – Clinical Terms Global Patient Set (SNOMED CT GPS) Ensemble de termes médicaux organisé de manière systématique et exploitable par ordinateur, fournissant des codes, des termes, des synonymes et des définitions utilisés dans la documentation et la notification cliniques."
 
 #. Source: input/pagecontent/concepts.md:69
 #. URL: http://smart.who.int/trust-phw/concepts.html
@@ -3680,7 +3680,7 @@ msgstr "XML"
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
 #: input/pagecontent/example-pilgrimage.md:18
 msgid "\"Patient-mediated\" then means three things, each an existing mechanism:"
-msgstr "« À l'initiative du patient » signifie alors trois choses, chacune étant un mécanisme existant :"
+msgstr "« Par l’intermédiaire du patient » signifie alors trois choses, chacune étant un mécanisme existant :"
 
 #. Source: input/pagecontent/example-pilgrimage.md:48
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
@@ -4731,7 +4731,7 @@ msgstr "Objectif. Émettre des certificats acceptés partout où vont ses patien
 #. URL: http://smart.who.int/trust-phw/personas.html
 #: input/pagecontent/personas.md:48
 msgid "Goal. Read a visitor's record quickly and know it is genuine and that she is allowed to read it."
-msgstr "Objectif. Lire rapidement le dossier d’une visiteuse et savoir qu’il est authentique et qu’elle est autorisée à le lire."
+msgstr "Objectif. Lire rapidement le dossier d’un visiteur et savoir qu’il est authentique et qu’elle-même est autorisée à le lire."
 
 #. Source: input/pagecontent/personas.md:31
 #. URL: http://smart.who.int/trust-phw/personas.html
@@ -5171,7 +5171,7 @@ msgstr "Les décisions sont consignées. Chaque décision d’accès est consign
 #. URL: http://smart.who.int/trust-phw/security-privacy.html
 #: input/pagecontent/security-privacy.md:4
 msgid "No silent permit. A consent decision is ,  or . A missing, expired or unreachable consent never gives ."
-msgstr "Pas d’autorisation implicite. Une décision de consentement est ,  ou . Un consentement manquant, expiré ou inaccessible ne donne jamais ."
+msgstr "Pas d’autorisation tacite. Une décision de consentement est ,  ou . Un consentement manquant, expiré ou inaccessible ne donne jamais ."
 
 #. Source: input/pagecontent/security-privacy.md:7
 #. URL: http://smart.who.int/trust-phw/security-privacy.html
@@ -5183,7 +5183,7 @@ msgstr "Révocation. Le processus H couvre la révocation et la suspension de l�
 #. URL: http://smart.who.int/trust-phw/security-privacy.html
 #: input/pagecontent/security-privacy.md:1
 msgid "Security and privacy are part of each process in this guide, not a separate layer:"
-msgstr "La sécurité et la confidentialité font partie de chaque processus de ce guide, et non d’une couche distincte :"
+msgstr "La sécurité et la confidentialité font partie de chaque processus de ce guide ; elles ne constituent pas une couche distincte :"
 
 #. Source: input/pagecontent/security-privacy.md:5
 #. URL: http://smart.who.int/trust-phw/security-privacy.html
