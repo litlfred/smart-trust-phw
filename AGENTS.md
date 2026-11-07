@@ -72,7 +72,7 @@ Also declared, but not mounted by the index:
 | `docs/` | the artefact pages, built at publish by `smart-trust-phw:pages` (fhir-harness's `gen-ig-pages.ts`) | no |
 | `input/business-processes/` | the BPMN processes PHW.A to PHW.K | yes |
 | `scenarios/` | roles and example people and systems (every person fictional) | yes |
-| `tools/` | this instance's generators, each with a `--check` | yes |
+| `tools/` | this instance's generators, each with a `--check`, and the publish script | yes |
 
 `findings/` holds authored review material, such as proposals; never put
 authored files in `docs/`, which is built at publish and gitignored.
@@ -111,8 +111,10 @@ bun cat-harness-tools/scripts/run-script.ts mount:remote:check
 
 Re-draw the BPMN processes with `bun tools/render-bpmn/render_bpmn.ts`
 (Chromium: set `PLAYWRIGHT_BROWSERS_PATH` where one is installed). Publish
-gh-pages with `bun cat-harness-tools/scripts/stage-local.ts --repo .`
-(`--plan` first). The site is built from the IG's AST on its cache branch,
+gh-pages with `bash tools/publish/publish.sh` (`--plan` to look first). It makes
+sure `gh-pages` exists on origin (a first publish fails without it), re-lays
+the mounts fresh (a build writes into them), removes build leftovers under
+`input/` (they make the cached AST stale), then runs `stage-local.ts`. The site is built from the IG's AST on its cache branch,
 which `ig-ast-refresh.yml` refreshes on a push to `main`, so a preview shows
 `input/` as it was at `main`'s last refresh.
 
