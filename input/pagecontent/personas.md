@@ -6,14 +6,14 @@ This page lists the roles the business processes of this guide name, and the exa
 
 | Role | Played by | Description |
 | --- | --- | --- |
-| Holder | person | The person who holds a Personal Health Wallet, records consent, and presents verifiable health links and certificates. |
+| Holder | person | The person who holds a Personal Health Wallet, records consent, and presents verifiable health links and certificates. Specializes the ActorDefinition Holder (input/fsh/actors/actors.fsh). |
 | Consent Recorder | person, system | The person or system that records a consent directive for the holder (IHE PCF Consent Recorder): the wallet itself, or a health worker on the holder's behalf. |
-| Consent Registry | system | Holds consent directives and answers IHE PCF [ITI-108] Access Consent. |
-| VHL Sharer | system | Holds the health information, generates verifiable health links, and enforces consent when a link is redeemed. |
-| VHL Receiver | system | Receives a verifiable health link, checks its signature against the trust list, and retrieves the information. |
-| Trust Anchor | system | Publishes the trust list of keys that participants use to check signatures. GDHCN is one possible anchor among others. |
-| Certificate Issuer | person, system | A health worker or issuing system that issues a verifiable digital health certificate. |
-| Verifier | person, system | Checks a certificate and its status, with or without a status checking application. |
+| Consent Registry | system | Holds consent directives and answers IHE PCF [ITI-108] Access Consent. Specializes the ActorDefinition ConsentRegistry (input/fsh/actors/actors.fsh). |
+| VHL Sharer | system | Holds the health information, generates verifiable health links, and enforces consent when a link is redeemed. Specializes the ActorDefinition Issuer (input/fsh/actors/actors.fsh). |
+| VHL Receiver | system | Receives a verifiable health link, checks its signature against the trust list, and retrieves the information. Specializes the ActorDefinition Receiver (input/fsh/actors/actors.fsh). |
+| Trust Anchor | system | Publishes the trust list of keys that participants use to check signatures. GDHCN is one possible anchor among others. Specializes the ActorDefinition TrustNetworkAnchor (input/fsh/actors/actors.fsh). |
+| Certificate Issuer | person, system | A health worker or issuing system that issues a verifiable digital health certificate. Specializes the ActorDefinition Issuer (input/fsh/actors/actors.fsh). |
+| Verifier | person, system | Checks a certificate and its status, with or without a status checking application. Specializes the ActorDefinition Receiver (input/fsh/actors/actors.fsh). |
 | Data Provider Administrator | person | The person at a data provider who registers clients under a data sharing agreement. |
 | Data Recipient System | system | A server that accesses data under a data sharing agreement (OAuth client) and performs the agreement's duties. |
 | Provider Authorization Server | system | Registers clients and decides access under a data sharing agreement (policy decision and enforcement). |
