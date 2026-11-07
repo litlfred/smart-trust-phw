@@ -5,7 +5,7 @@ title: GDHCN Trust Network - Personal Health Wallet
 description: Describes common workflows and specifications for usage of personal health wallets on the WHO GDHCN Trust Network
 status: draft # draft | active | retired | unknown
 experimental: false
-version: 0.1.0
+version: 0.2.0-litlfred # fork-only label (owner, 2026-11-07): never published to packages.fhir.org; dependents pin the fork build by commit and SHA-256
 #fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html, as smart-base
 #fhirVersion: 4.3.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
