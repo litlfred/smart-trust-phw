@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"POT-Creation-Date: 2026-11-07 05:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -615,7 +615,7 @@ msgstr ""
 #. Source: input/pagecontent/example-pilgrimage.md:83
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
 #: input/pagecontent/example-pilgrimage.md:83
-msgid "The two Consents below match the  examples of smart-ips-pilgrimage#3. They are FHIR R4 resources on the IHE PCF 1.1.0 profile , which  is built on. This guide is built on FHIR R5, where  has no , so they are given here as FSH and are not instances of this guide. They were compiled with SUSHI 3.21.0 against  4.0.1 and  1.1.0, with no errors."
+msgid "The two Consents below match the  examples of smart-ips-pilgrimage#3. They are FHIR R4 resources on the IHE PCF 1.1.0 profile , which  is built on. This guide is now built on FHIR R4 4.0.1 too, but they are given here as FSH and are not yet instances of this guide. They were compiled with SUSHI 3.21.0 against  4.0.1 and  1.1.0, with no errors."
 msgstr ""
 
 #. Source: input/pagecontent/example-pilgrimage.md:1

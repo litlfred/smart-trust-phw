@@ -150,6 +150,11 @@ Read fhir-harness's
 `fhir-cache-seed-npm` fills the package cache from npm and
 `fhir-package-mirror` at exact versions only. Never report "SUSHI cannot run
 here" before running the seeder, and never stand in another version for a pin.
-This IG is R5: when its build against `ihe.iti.pcf@1.1.0` hits an R4-in-R5
-cross-version resolver error, report it as `could-not-determine` with its exact
-diagnostic.
+This IG is FHIR R4 4.0.1, as smart-base, IHE PCF 1.1.0 and IHE VHL are. R5
+resources are pre-adopted: Requirements and ActorDefinition directly (with
+`hl7.fhir.uv.extensions.r4`), and Permission as a `Basic` with the R5
+cross-version extensions of `hl7.fhir.uv.xver-r5.r4`. Where
+`packages.fhir.org` is refused, `fhir-cache-seed-npm --mirror` with
+litlfred/fhir-package-mirror holds every package this IG needs; serve the
+mirror as a local registry (`FPL_REGISTRY`) for SUSHI's automatic
+`hl7.fhir.uv.tools.r4#latest`.

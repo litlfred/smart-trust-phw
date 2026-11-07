@@ -8,7 +8,7 @@
 # GDHCN Trust Network - Personal Health Wallet
 
 The WHO SMART Guidelines implementation guide for using personal health wallets
-on the WHO GDHCN Trust Network (package `smart.who.int.trust-phw`, FHIR R5).
+on the WHO GDHCN Trust Network (package `smart.who.int.trust-phw`, FHIR R4 4.0.1, as smart-base).
 The FHIR IG source is under `input/`; `_genonce.sh` builds it with the IG
 Publisher.
 
