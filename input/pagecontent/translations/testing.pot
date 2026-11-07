@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"POT-Creation-Date: 2026-11-07 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,7 @@ msgstr ""
 #. Source: input/pagecontent/testing.md:38
 #: input/pagecontent/testing.md:29
 #: input/pagecontent/testing.md:38
-msgid "From the same folder, run"
+msgid "From the same folder, run {code0}"
 msgstr ""
 
 #. Source: input/pagecontent/testing.md:26
@@ -79,7 +79,7 @@ msgstr ""
 #. Source: input/pagecontent/testing.md:20
 #. URL: http://smart.who.int/trust-phw/testing.html
 #: input/pagecontent/testing.md:20
-msgid "Prerequisites: Docker"
+msgid "Prerequisites: <a0>Docker</a0>"
 msgstr ""
 
 #. Source: input/pagecontent/testing.md:22
@@ -103,7 +103,7 @@ msgstr ""
 #. Source: input/pagecontent/testing.md:24
 #. URL: http://smart.who.int/trust-phw/testing.html
 #: input/pagecontent/testing.md:24
-msgid "The matchbox server configuration allows you to test the mappings. For more information: https://github.com/ahdis/matchbox"
+msgid "The matchbox server configuration allows you to test the mappings. For more information: <a0>https://github.com/ahdis/matchbox</a0>"
 msgstr ""
 
 #. Source: input/pagecontent/testing.md:11

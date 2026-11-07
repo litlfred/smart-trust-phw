@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"POT-Creation-Date: 2026-11-07 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. Source: input/pagecontent/adapting.md:9
 #. URL: http://smart.who.int/trust-phw/adapting.html
 #: input/pagecontent/adapting.md:9
-msgid "For more on layers of knowledge representation and how they are used in WHO’s SMART Guidelines approach, see WHO’s SMART Guidelines and this Lancet article00038-8/fulltext)."
+msgid "For more on layers of knowledge representation and how they are used in WHO’s SMART Guidelines approach, see <a0>WHO’s SMART Guidelines</a0> and this <a1>Lancet article</a1>00038-8/fulltext)."
 msgstr ""
 
 #. Source: input/pagecontent/adapting.md:1

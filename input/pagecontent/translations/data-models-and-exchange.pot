@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"POT-Creation-Date: 2026-11-07 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,36 +19,36 @@ msgstr ""
 #. Source: input/pagecontent/data-models-and-exchange.md:6
 #. URL: http://smart.who.int/trust-phw/data-models-and-exchange.html
 #: input/pagecontent/data-models-and-exchange.md:6
-msgid "Codings: the code systems and value sets."
+msgid "<a0>Codings</a0>: the code systems and value sets."
 msgstr ""
 
 #. Source: input/pagecontent/data-models-and-exchange.md:4
 #. URL: http://smart.who.int/trust-phw/data-models-and-exchange.html
 #: input/pagecontent/data-models-and-exchange.md:4
-msgid "Sequence Diagrams: the interactions between actors, in order."
+msgid "<a0>Sequence Diagrams</a0>: the interactions between actors, in order."
 msgstr ""
 
 #. Source: input/pagecontent/data-models-and-exchange.md:3
 #. URL: http://smart.who.int/trust-phw/data-models-and-exchange.html
 #: input/pagecontent/data-models-and-exchange.md:3
-msgid "System Actors: the software and human actors that exchange data."
+msgid "<a0>System Actors</a0>: the software and human actors that exchange data."
+msgstr ""
+
+#. Source: input/pagecontent/data-models-and-exchange.md:5
+#. URL: http://smart.who.int/trust-phw/data-models-and-exchange.html
+#: input/pagecontent/data-models-and-exchange.md:5
+msgid "<a0>Transactions</a0>: the transactions each actor takes part in."
 msgstr ""
 
 #. Source: input/pagecontent/data-models-and-exchange.md:8
 #. URL: http://smart.who.int/trust-phw/data-models-and-exchange.html
 #: input/pagecontent/data-models-and-exchange.md:8
-msgid "The logical models and profiles are listed in the Artifact Index."
+msgid "The logical models and profiles are listed in the <a0>Artifact Index</a0>."
 msgstr ""
 
 #. Source: input/pagecontent/data-models-and-exchange.md:1
 #. URL: http://smart.who.int/trust-phw/data-models-and-exchange.html
 #: input/pagecontent/data-models-and-exchange.md:1
 msgid "This section holds the data models and the data exchange between actors. It is part of the L3 machine-readable knowledge representation."
-msgstr ""
-
-#. Source: input/pagecontent/data-models-and-exchange.md:5
-#. URL: http://smart.who.int/trust-phw/data-models-and-exchange.html
-#: input/pagecontent/data-models-and-exchange.md:5
-msgid "Transactions: the transactions each actor takes part in."
 msgstr ""
 

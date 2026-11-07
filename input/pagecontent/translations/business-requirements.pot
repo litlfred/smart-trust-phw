@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-07 05:43+0000\n"
+"POT-Creation-Date: 2026-11-07 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,42 +19,42 @@ msgstr ""
 #. Source: input/pagecontent/business-requirements.md:6
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
 #: input/pagecontent/business-requirements.md:6
-msgid "Business Processes: the BPMN 2.0 processes A to M."
+msgid "<a0>Business Processes</a0>: the BPMN 2.0 processes A to M."
 msgstr ""
 
 #. Source: input/pagecontent/business-requirements.md:3
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
 #: input/pagecontent/business-requirements.md:3
-msgid "Concepts: the terms and key concepts this guide uses."
+msgid "<a0>Concepts</a0>: the terms and key concepts this guide uses."
 msgstr ""
 
 #. Source: input/pagecontent/business-requirements.md:5
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
 #: input/pagecontent/business-requirements.md:5
-msgid "Consent: explicit and implied consent, and consent directives in documents."
+msgid "<a0>Consent</a0>: explicit and implied consent, and consent directives in documents."
 msgstr ""
 
 #. Source: input/pagecontent/business-requirements.md:8
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
 #: input/pagecontent/business-requirements.md:8
-msgid "Decision-support Logic: the DMN decisions the processes use."
+msgid "<a0>Decision-support Logic</a0>: the DMN decisions the processes use."
 msgstr ""
 
 #. Source: input/pagecontent/business-requirements.md:4
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
 #: input/pagecontent/business-requirements.md:4
-msgid "Generic Personas: the people and systems that take part in the processes."
+msgid "<a0>Generic Personas</a0>: the people and systems that take part in the processes."
+msgstr ""
+
+#. Source: input/pagecontent/business-requirements.md:7
+#. URL: http://smart.who.int/trust-phw/business-requirements.html
+#: input/pagecontent/business-requirements.md:7
+msgid "<a0>Worked Example: IPS Pilgrimage (Hajj)</a0>: processes A, B, C, F and I applied to one case."
 msgstr ""
 
 #. Source: input/pagecontent/business-requirements.md:1
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
 #: input/pagecontent/business-requirements.md:1
 msgid "This section holds the business requirements of this guide."
-msgstr ""
-
-#. Source: input/pagecontent/business-requirements.md:7
-#. URL: http://smart.who.int/trust-phw/business-requirements.html
-#: input/pagecontent/business-requirements.md:7
-msgid "Worked Example: IPS Pilgrimage (Hajj): processes A, B, C, F and I applied to one case."
 msgstr ""
 

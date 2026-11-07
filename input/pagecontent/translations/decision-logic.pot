@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"POT-Creation-Date: 2026-11-07 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. Source: input/pagecontent/decision-logic.md:7
 #. URL: http://smart.who.int/trust-phw/decision-logic.html
 #: input/pagecontent/decision-logic.md:7
-msgid "Consent itself is decided by the three-valued evaluation described in the business processes: ,  or . A missing, expired or unreachable consent never gives ."
+msgid "Consent itself is decided by the three-valued evaluation described in the <a0>business processes</a0>: {code0}, {code1} or {code2}. A missing, expired or unreachable consent never gives {code3}."
 msgstr ""
 
 #. Source: input/pagecontent/decision-logic.md:3
@@ -31,7 +31,7 @@ msgstr ""
 #. Source: input/pagecontent/decision-logic.md:5
 #. URL: http://smart.who.int/trust-phw/decision-logic.html
 #: input/pagecontent/decision-logic.md:5
-msgid "Process F, task"
+msgid "Process F, task {code0}"
 msgstr ""
 
 #. Source: input/pagecontent/decision-logic.md:3
