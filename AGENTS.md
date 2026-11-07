@@ -120,22 +120,23 @@ which `ig-ast-refresh.yml` refreshes on a push to `main`, so a preview shows
 
 ## Translations
 
-The translation team works from gettext templates: `input/pagecontent/translations/*.pot`
-(one per page), `input/images/translations/images.pot` (the BPMN drawings'
-labels) and `input/images-source/translations/diagrams.pot` (PlantUML). They are
-extracted, never hand-written, by smart-base's `input/scripts/extract_translations.py`
-at the smart-base commit `index.lock.json` pins:
+The harness's generic process is [`translation-refresh`](https://github.com/litlfred/cat-harness/blob/HEAD/skills/library/library-core/translation-refresh.md) and `translation-manager` §"Translating into several locales as a team"; this section names what that skill leaves to the instance. Locales: ar, es, fr, ru, zh, all unofficial (agent, no human sign-off). Each locale is its own PR to main.
+
+| step | here |
+|---|---|
+| templates | smart-base's `input/scripts/extract_translations.py` at the smart-base commit `index.lock.json` pins (`translation-templates` in `generated-checks.yml` re-extracts and fails on a stale template): pages `input/pagecontent/*.md` → `input/pagecontent/translations/*.pot`; BPMN drawing labels `input/images/*.svg` → `input/images/translations/images.pot`; PlantUML `input/images-source/*.plantuml` → `input/images-source/translations/diagrams.pot` |
+| new and obsolete strings | none yet here: no locale catalogues exist, so there is no `po-status` step; when the first locale lands, merge with `msgmerge` (new msgids appended empty, obsolete kept as `#~`) |
+| FHIR terms | one CodeSystem supplement per locale, `input/fsh/translations/<locale>.fsh`; never edit a resource's own text |
+
+`generated-checks.yml` runs the template check. There is no officiality check or status report here yet. Merge window: none on record, so a refresh run opens PRs and merges nothing unless the owner sets one.
+
+To regenerate the templates:
 
 ```sh
 git clone -q --filter=blob:none --no-checkout https://github.com/litlfred/smart-base /tmp/sb
 git -C /tmp/sb sparse-checkout set input/scripts && git -C /tmp/sb checkout -q <smart-base ref from index.lock.json>
 python3 -I /tmp/sb/input/scripts/extract_translations.py --ig-root . --canonical http://smart.who.int/trust-phw
 ```
-
-Re-run it after changing a page, a BPMN label or a PlantUML source; CI fails
-on a stale template. Target languages are the UN languages: ar, es, fr, ru,
-zh. Pulling translations back needs a translation service registered for this
-guide (a secret only the owner sets).
 
 ## Builds
 
