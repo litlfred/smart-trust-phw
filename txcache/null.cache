@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "language": "en", "url": "http://hl7.org/fhir/ValueSet/narrative-status|5.0.0"}####
+e: {
+  "source" : tx.fhir.org,
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "meta" : {
+    "lastUpdated" : "2023-03-26T15:21:02.749+11:00",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/narrative-status",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.3.55"
+  }],
+  "version" : "5.0.0",
+  "name" : "NarrativeStatus",
+  "title" : "NarrativeStatus",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-03-26T15:21:02+11:00",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.org/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@lists.hl7.org"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "immutable" : true,
+  "expansion" : {
+    "identifier" : "urn:uuid:c2354f9f-34ba-4623-8bb9-88d3f808c80e",
+    "timestamp" : "2026-10-30T16:39:49.308Z",
+    "total" : 4,
+    "parameter" : [{
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://hl7.org/fhir/narrative-status|5.0.0"
+    }],
+    "contains" : [{
+      "system" : "http://hl7.org/fhir/narrative-status",
+      "code" : "generated",
+      "display" : "Generated"
+    },
+    {
+      "system" : "http://hl7.org/fhir/narrative-status",
+      "code" : "extensions",
+      "display" : "Extensions"
+    },
+    {
+      "system" : "http://hl7.org/fhir/narrative-status",
+      "code" : "additional",
+      "display" : "Additional"
+    },
+    {
+      "system" : "http://hl7.org/fhir/narrative-status",
+      "code" : "empty",
+      "display" : "Empty"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

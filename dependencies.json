@@ -1,0 +1,933 @@
+{
+  "$schema" : "ig-ast-dependencies/v1",
+  "authority" : "cache",
+  "edges" : 103,
+  "resolvedInIg" : 46,
+  "dependencies" : [{
+    "source" : "Bundle/DVCDocExample",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle",
+    "targetVersion" : null,
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle|0.1.0",
+    "path" : "Bundle.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "Bundle/DVCDocSDExample",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle",
+    "targetVersion" : null,
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle|0.1.0",
+    "path" : "Bundle.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ActorDefinition/ConsentRegistry|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/base/StructureDefinition/SGActor",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "ActorDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ActorDefinition/Holder|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/base/StructureDefinition/SGActor",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "ActorDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ActorDefinition/Issuer|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/base/StructureDefinition/SGActor",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "ActorDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ActorDefinition/Receiver|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/base/StructureDefinition/SGActor",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "ActorDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkAnchor|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/base/StructureDefinition/SGActor",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "ActorDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkParticipant|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/base/StructureDefinition/SGActor",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "ActorDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap|0.1.0",
+    "kind" : "has scope",
+    "target" : "http://hl7.org/fhir/administrative-gender",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap|0.1.0",
+    "kind" : "has scope",
+    "target" : "http://id.who.int/icd/release/11/mms",
+    "targetVersion" : "1.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap|0.1.0",
+    "kind" : "has scope",
+    "target" : "http://loinc.org",
+    "targetVersion" : "3.1.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap|0.1.0",
+    "kind" : "has scope",
+    "target" : "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap|0.1.0",
+    "kind" : "has target",
+    "target" : "http://hl7.org/fhir/administrative-gender",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap|0.1.0",
+    "kind" : "has target",
+    "target" : "http://id.who.int/icd/release/11/mms",
+    "targetVersion" : "1.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap|0.1.0",
+    "kind" : "has target",
+    "target" : "http://loinc.org",
+    "targetVersion" : "3.1.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap|0.1.0",
+    "kind" : "has target",
+    "target" : "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/base/StructureDefinition/SGImplementationGuide",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "ImplementationGuide.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/Questionnaire/PreQual|0.1.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds",
+    "targetVersion" : "0.2.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/Questionnaire/PreQual|0.1.0",
+    "kind" : "binds to",
+    "target" : "http://terminology.hl7.org/ValueSet/v2-0001",
+    "targetVersion" : "3.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/Questionnaire/PreQual|0.1.0",
+    "kind" : "binds to",
+    "target" : "http://terminology.hl7.org/ValueSet/v2-0203",
+    "targetVersion" : "3.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/Questionnaire/PreQual|0.1.0",
+    "kind" : "binds to",
+    "target" : "http://terminology.hl7.org/ValueSet/v3-Country",
+    "targetVersion" : "3.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/Questionnaire/PreQual|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "Questionnaire.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-DVC|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips",
+    "targetVersion" : "2.0.0-ballot",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-DVC|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-DVC",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-DVC|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-DVC|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-PreQual|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-DVC",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-DVC|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-PreQual|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-PreQual",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-PreQual|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-PreQual|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-PreQual",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-PreQual|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-DVC|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips",
+    "targetVersion" : "2.0.0-ballot",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-DVC|0.1.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-PreQual|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-DVC",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-DVC|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-PreQual|0.1.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-PreQual",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-PreQual|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Bundle",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Composition",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition|0.1.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition|0.1.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition|0.1.0",
+    "kind" : "uses",
+    "target" : "http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips",
+    "targetVersion" : "2.0.0-ballot",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Immunization",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization|0.1.0",
+    "kind" : "refers to",
+    "target" : "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization",
+    "targetVersion" : "4.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization|0.1.0",
+    "kind" : "refers to",
+    "target" : "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner",
+    "targetVersion" : "4.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/ProductID",
+    "targetVersion" : "0.1.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCMinPreQual|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCMin",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCMin|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetailsPreQual|0.1.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds",
+    "targetVersion" : "0.2.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetailsPreQual|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCMin|0.1.0",
+    "kind" : "binds to",
+    "target" : "http://hl7.org/fhir/ValueSet/iso3166-1-3",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCMin|0.1.0",
+    "kind" : "binds to",
+    "target" : "http://terminology.hl7.org/ValueSet/v2-0203",
+    "targetVersion" : "3.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCMin|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient|0.1.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Patient",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient|0.1.0",
+    "kind" : "uses",
+    "target" : "http://hl7.org/fhir/StructureDefinition/patient-nationality",
+    "targetVersion" : "5.4.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCPreQual|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVC",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVC|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCPreQual|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "StructureDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCPreQual|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "StructureDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDComposition",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDComposition|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDImmunization",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDImmunization|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDPatient",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDPatient|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDComposition|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDComposition|0.1.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDImmunization",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDImmunization|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDComposition|0.1.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDPatient",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDPatient|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDComposition|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDImmunization|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDImmunization|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDPatient|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSDPatient|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSD|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVC",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVC|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSD|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCSD|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/VaccineDetailsSD",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/VaccineDetailsSD|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetailsPreQual|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetailsPreQual|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "StructureDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetailsPreQual|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "StructureDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetailsPreQual|0.1.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+    "targetVersion" : "0.2.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "StructureDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "StructureDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails|0.1.0",
+    "kind" : "refers to",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Organization",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVC|0.1.0",
+    "kind" : "binds to",
+    "target" : "http://hl7.org/fhir/ValueSet/iso3166-1-3",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVC|0.1.0",
+    "kind" : "binds to",
+    "target" : "http://terminology.hl7.org/ValueSet/v2-0203",
+    "targetVersion" : "3.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVC|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVC|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "StructureDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DVC|0.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "StructureDefinition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/DoseNumberCodeableConcept|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/HealthLinkPayload|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips",
+    "targetVersion" : "2.0.0-ballot",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/pcmt/StructureDefinition/ProductID",
+    "targetVersion" : "0.1.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-PreQual|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/SGActorExt|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/SGActorExt|0.1.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/base/StructureDefinition/SGActor",
+    "targetVersion" : "0.2.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/SMARTHealthLinkPayload|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/HealthLinkPayload",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/HealthLinkPayload|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/SmartHealthLink|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Base",
+    "targetVersion" : "5.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/VaccineDetailsSD|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/VaccineDetailsSD|0.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/VerifiableHealthLinkPayload|0.1.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/trust-phw/ValueSet/HL.TYPE",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/ValueSet/HL.TYPE|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/StructureDefinition/VerifiableHealthLinkPayload|0.1.0",
+    "kind" : "derives from",
+    "target" : "http://smart.who.int/trust-phw/StructureDefinition/HealthLinkPayload",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/StructureDefinition/HealthLinkPayload|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus|0.1.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ValueSet/DVCVaccines|0.1.0",
+    "kind" : "includes from",
+    "target" : "http://id.who.int/icd/release/11/mms",
+    "targetVersion" : "1.0.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ValueSet/DisclosureStatements|0.1.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/trust-phw/ValueSet/HL.TYPE|0.1.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE",
+    "targetVersion" : "0.1.0",
+    "resolved" : "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE|0.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  }]
+}
