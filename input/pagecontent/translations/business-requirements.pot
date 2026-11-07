@@ -1,0 +1,54 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: input/pagecontent/business-requirements.md:5
+#. URL: http://smart.who.int/trust-phw/business-requirements.html
+#: input/pagecontent/business-requirements.md:5
+msgid "Business Processes: the BPMN 2.0 processes A to K."
+msgstr ""
+
+#. Source: input/pagecontent/business-requirements.md:3
+#. URL: http://smart.who.int/trust-phw/business-requirements.html
+#: input/pagecontent/business-requirements.md:3
+msgid "Concepts: the terms and key concepts this guide uses."
+msgstr ""
+
+#. Source: input/pagecontent/business-requirements.md:7
+#. URL: http://smart.who.int/trust-phw/business-requirements.html
+#: input/pagecontent/business-requirements.md:7
+msgid "Decision-support Logic: the DMN decisions the processes use."
+msgstr ""
+
+#. Source: input/pagecontent/business-requirements.md:4
+#. URL: http://smart.who.int/trust-phw/business-requirements.html
+#: input/pagecontent/business-requirements.md:4
+msgid "Generic Personas: the people and systems that take part in the processes."
+msgstr ""
+
+#. Source: input/pagecontent/business-requirements.md:1
+#. URL: http://smart.who.int/trust-phw/business-requirements.html
+#: input/pagecontent/business-requirements.md:1
+msgid "This section holds the business requirements of this guide."
+msgstr ""
+
+#. Source: input/pagecontent/business-requirements.md:6
+#. URL: http://smart.who.int/trust-phw/business-requirements.html
+#: input/pagecontent/business-requirements.md:6
+msgid "Worked Example: IPS Pilgrimage (Hajj): processes A, B, C, F and I applied to one case."
+msgstr ""
+

@@ -1,0 +1,706 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: input/pagecontent/example-pilgrimage.md:18
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:18
+msgid "\"Patient-mediated\" then means three things, each an existing mechanism:"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:48
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:48
+msgid "(a) , ; (b)  → , ; (c) ; (d) ,  or"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:49
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:49
+msgid "(with )"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:45
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#. Source: input/pagecontent/example-pilgrimage.md:48
+#: input/pagecontent/example-pilgrimage.md:45
+#: input/pagecontent/example-pilgrimage.md:48
+msgid ", ,"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:36
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#. Source: input/pagecontent/example-pilgrimage.md:38
+#: input/pagecontent/example-pilgrimage.md:36
+#: input/pagecontent/example-pilgrimage.md:38
+msgid ", , , ,"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:88
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:88
+msgid "2025-05-01 to 2025-08-31 stands in for the Hajj period (Hajj 1446/2025, as the  2.1.0 text says), with time for follow-up care."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:72
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:72
+msgid "A rule in the implementation guide, not a new field: the Sharer enforces the registry copy (PCF ); the IPS copy is evidence, carrying its  so that KSA can cite it."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:32
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#. Source: input/pagecontent/example-pilgrimage.md:42
+#: input/pagecontent/example-pilgrimage.md:32
+#: input/pagecontent/example-pilgrimage.md:42
+msgid "Actor"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:76
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:76
+msgid "allows \"any follow up care\" and says nothing about retention or onward sharing. Nothing in VHL, IPS or PCF carries such obligations with the document."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:40
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:40
+msgid "At the encounter in KSA"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:49
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:49
+msgid "Audit. The origin HIE records an audit event. It cites the governing Consents by  code and CodeSystem version, the  and  of each Consent read for the decision, which of them permitted, the DMN decision used, the receiver, the purpose, and the documents released or the refusal."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:30
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:30
+msgid "Before Hajj"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:90
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:90
+msgid "Both Consents permit the same recipient, for the same purpose and period. They differ in which Hajj consent they are (), and so in the text the pilgrim was shown () and in whom they bind: the first lets the origin release the IPS, and the second lets the host use it. Only existing elements are used:  (with ), ,  and . There is no , because there is no separate agreement."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:73
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:73
+msgid "Choose one VHL option: OAuth with SSRAA (UDAP), approved for process D and I, which is X.509-based like mTLS; or HTTP Message Signatures (RFC 9421). KSA publishes the matching key in the trust domain ()."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:11
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:11
+msgid "Consent"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:36
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:36
+msgid "Counselling and consent. A counsellor explains the plain-language text of each consent (consent rule 3). The wallet records both Consents in the origin's Consent Registry. Each Consent's  names which Hajj consent it is ( or ), and its  names the  version whose text the pilgrim was shown. That version pins the text, which is the role consent rule 2 gives  elsewhere."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:79
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:79
+msgid "Depend on IHE VHL and cite it as what it is: 1.0.0-comment, a public-comment ballot. The guide's  already matches VHL's Include DocumentReference Option. FHIR R4 with PCF 1.1.0 already matches the approved PCF version."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:76
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:76
+msgid "Either HL7 Data Segmentation for Privacy (DS4P) obligation codes in  (needs owner approval: not final), or, with approved standards only, KSA keeps following the  text it is bound by and audits against it in process G, with no labels on the document."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:85
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:85
+msgid "Every name, identifier, URL and date is a fictional example:"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:81
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:81
+msgid "Example consents"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:9
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:9
+msgid "For Hajj, there is no separate data sharing agreement for the Sharer to look up. The pilgrim's two Consents are the policy, and each is coded in  (owner, Q-DRAIN-5, 2026-11-01 07:44Z). That is how the IPS Pilgrimage guide models them since smart-ips-pilgrimage#3.  holds a code from that guide's  CodeSystem, with  set to the CodeSystem version whose consent text the pilgrim was shown. Any arrangement between KSA and the origin country, such as a memorandum of understanding, stays outside the computable decision. Each Consent binds the party it names:"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:71
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:71
+msgid "G1. The Hajj consents are not computable as written. Resolved by smart-ips-pilgrimage#3."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:72
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:72
+msgid "G2. Which copy of a consent counts."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:47
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:47
+msgid "G3, G4, G5"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:73
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:73
+msgid "G3. mTLS is not a VHL option."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:74
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:74
+msgid "G4. The facility and the clinician are invisible."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:75
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:75
+msgid "G5. The purpose of use is not carried."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:76
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:76
+msgid "G6. KSA's duties after receipt are not machine-readable."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:186
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:186
+msgid "G6: approve DS4P obligation codes, or keep KSA's duties in the  text only?"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:77
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:77
+msgid "G7. What the audit event cites. Resolved by smart-ips-pilgrimage#3."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:78
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:78
+msgid "G8. Break the glass has no VHL."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:187
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:187
+msgid "G8: is break the glass in scope now?"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:79
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:79
+msgid "G9. Versions and status."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:32
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#. Source: input/pagecontent/example-pilgrimage.md:42
+#. Source: input/pagecontent/example-pilgrimage.md:69
+#: input/pagecontent/example-pilgrimage.md:32
+#: input/pagecontent/example-pilgrimage.md:42
+#: input/pagecontent/example-pilgrimage.md:69
+msgid "Gap"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:65
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:65
+msgid "Gaps"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:75
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:75
+msgid "has no purpose parameter, so the decision assumes  from the Consent's . This is open point 3 of process I."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:75
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:75
+msgid "HL7 SSRAA  in  (SSRAA §5.2.1.1), with HL7 v3 PurposeOfUse codes."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:74
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:74
+msgid "HL7 SSRAA: the  extension carries  and the requesting user (SSRAA §5.2.1.1)."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:14
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:14
+msgid "Host use ()"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:182
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:182
+msgid "How step 10 reads them: the origin HIE takes the active Consent whose  is its own release code () from its registry (). It matches  against the receiver as verified by trust in the  trust domain (),  against the purpose (; see G5), and  against today. That Consent's  result feeds the default DMN decision  ().  () binds the host Ministry of Health after receipt and is not part of the origin's decision. The audit event () cites each Consent read, by  code and version and by the  and  the registry assigned at ."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:78
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:78
+msgid "In phase 2 of the IPS Pilgrimage guide (process 5.0) the pilgrim may be unconscious: no QR code and no passcode, so the lookup is by pilgrimage number, outside VHL entirely."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:37
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:37
+msgid "IPS. The origin HIE generates the Hajj IPS Bundle, with both Consents as entries, and signs it."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:74
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:74
+msgid "is limited to healthcare facilities in the Hajj district, but the request comes from one national KSA EMR. With HTTP Message Signatures, the Sharer sees only KSA, so it cannot check the district limit and the audit cannot name who looked."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:78
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:78
+msgid "Its own search transaction (likely IHE PDQm  with IHE MHD ), a separate opt-in Consent (the wallet's \"break the glass\" setting), and the emergency purpose of use . Not specified today."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:46
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#. Source: input/pagecontent/example-pilgrimage.md:47
+#. Source: input/pagecontent/example-pilgrimage.md:51
+#: input/pagecontent/example-pilgrimage.md:46
+#: input/pagecontent/example-pilgrimage.md:47
+#: input/pagecontent/example-pilgrimage.md:51
+msgid "KSA EMR"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:45
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:45
+msgid "KSA EMR, Trust Anchor"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:52
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:52
+msgid "KSA follows  after receipt. Its duties (for example, keep the IPS for follow-up care only) come from that Consent's text. Nothing machine-readable travels with the document to say so yet."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:52
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:52
+msgid "KSA Ministry of Health"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:14
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:14
+msgid "KSA, which follows it after receipt (step 14). The origin does not enforce it."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:71
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:71
+msgid "now requires  with an  code and  (CodeSystem version 2.1.0).  also satisfies R4 invariant , so no  is needed. It also requires  (an Organization by identifier, role ),  from v3 PurposeOfUse (), and . See the examples below."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:184
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:184
+msgid "Open questions for the owner"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:67
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:67
+msgid "Ordered by how much each one blocks a computable decision. Each row names the existing standard that would close it. Nothing here invents a field."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:37
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#. Source: input/pagecontent/example-pilgrimage.md:50
+#: input/pagecontent/example-pilgrimage.md:37
+#: input/pagecontent/example-pilgrimage.md:50
+msgid "Origin HIE"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:48
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:48
+msgid "Origin HIE, Consent Registry"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:35
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:35
+msgid "Origin HIE, KSA EMR"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:34
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:34
+msgid "Origin HIE, Trust Anchor"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:49
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:49
+msgid "Origin HIE, writing to the Audit Record Repository"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:13
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:13
+msgid "Origin release (, for example )"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:32
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#. Source: input/pagecontent/example-pilgrimage.md:42
+#: input/pagecontent/example-pilgrimage.md:32
+#: input/pagecontent/example-pilgrimage.md:42
+msgid "PHW activities"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:44
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:44
+msgid "Pilgrim"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:36
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:36
+msgid "Pilgrim, Consent Recorder, Consent Registry"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:38
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:38
+msgid "Pilgrim, Origin HIE"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:52
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:52
+msgid "process G (, )"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:35
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:35
+msgid "Registration. With the OAuth with SSRAA option, KSA's EMR registers with the origin HIE by UDAP (HL7 SSRAA), using a certificate that chains to an anchor of the  trust domain. With HTTP Message Signatures, nothing is registered: the origin reads KSA's key from the trust list. No agreement URL is involved."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:32
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#. Source: input/pagecontent/example-pilgrimage.md:42
+#: input/pagecontent/example-pilgrimage.md:32
+#: input/pagecontent/example-pilgrimage.md:42
+msgid "Step"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:77
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:77
+msgid "That guide now states it, as process I gives it (): the Consents by  code and CodeSystem version, each Consent's  and , receiver, purpose and documents released or the refusal. KSA, as an ATNA Secure Node (VHL Vol 1 §1:XX.3), also audits what it receives. IHE BALP patterns need owner approval."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:3
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:3
+msgid "The case: during Hajj, the host country (KSA) is the VHL Receiver. It asks the pilgrim's origin country (for example Malaysia) for the pilgrim's International Patient Summary (IPS) over a Verifiable Health Link (VHL). The origin country's health information exchange (HIE) is the VHL Sharer. The IPS carries two consent statements from the pilgrim, and those two Consents are the policy for the exchange."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:26
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:26
+msgid "The flow, step by step"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:28
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:28
+msgid "The Hajj encounter, mapped onto VHL and onto the activities of this guide. Steps that hit a gap name it; the gaps are listed in the next section."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:79
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:79
+msgid "The IPS Pilgrimage guide does not depend on VHL. It describes the VHL steps in its own transaction pages, partly in older SMART Health Links wording (\"modified ITI-67\"). Its  notes on FHIR R5 (, ) are for later."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:73
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:73
+msgid "The IPS Pilgrimage guide's sequence diagram still authenticates the KSA node with mTLS (). Since smart-ips-pilgrimage#3, its transaction page says that mTLS is not one of VHL 's three options and recommends OAuth with SSRAA. How KSA's certificate or key is published in the  trust domain is still not specified."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:46
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:46
+msgid "The KSA EMR registers the pilgrim with the pilgrimage number."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:47
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:47
+msgid "The KSA EMR sends Retrieve Manifest with the passcode, authenticated by one VHL option. The IPS Pilgrimage guide uses mTLS node authentication () today, which is not one of VHL's options."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:45
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:45
+msgid "The KSA EMR verifies the HCERT/CWT signature against the trust list."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:51
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:51
+msgid "The KSA EMR verifies the IPS signature, stores a copy and shows it."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:14
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:14
+msgid "The KSA Ministry of Health may use the IPS for care during Hajj and any follow-up."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:59
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:59
+msgid "the KSA Ministry of Health, as verified by trust in the  trust domain, is the consented actor ();"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:57
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:57
+msgid "the link has not expired;"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:48
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:48
+msgid "The origin HIE decides. (a) It authenticates KSA by trust in the  trust domain. There is no agreement lookup: the Consents are the policy. (b) It searches its own registry for the pilgrim's active origin-release Consent ( = ). (c) It evaluates that Consent with  (see the conditions below). The result is the Consent's row in the default DMN decision , whose  routes the request. (d) Anything missing gives , and  is never ."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:13
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:13
+msgid "The origin HIE may release the IPS to the KSA Ministry of Health, as information recipient, for treatment, during the Hajj period."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:50
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:50
+msgid "The origin HIE returns the  and its s (, VHL's Include DocumentReference Option), then the IPS."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:13
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:13
+msgid "The origin HIE. It enforces this Consent from its own Consent Registry () at step 10. The Consent's  result is one row of the default DMN decision  ()."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:58
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:58
+msgid "the origin-release Consent is active in the origin's own registry;"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:63
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:63
+msgid "The origin-release Consent is found by its  code (), and its  names the consent text the pilgrim was shown. The KSA-use Consent binds KSA, not the origin, so the origin does not need it to permit. With only one Consent applicable, the default DMN decision returns that Consent's own result."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:5
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:5
+msgid "The page does not change the IPS Pilgrimage guide. The gaps below say what that guide, or the specifications it uses, would need. Gap G1 has since been resolved in that guide by smart-ips-pilgrimage#3."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:56
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:56
+msgid "the passcode is valid;"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:21
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:21
+msgid "The pilgrim carries the link (the VHL QR code, , process C)."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:22
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:22
+msgid "The pilgrim is present at the encounter. Giving the passcode (the VHL  flag; ITI-YY5 §2:3.YY5.5.8) is the in-person act."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:20
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:20
+msgid "The pilgrim records the consents (PCF , process A)."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:44
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:44
+msgid "The pilgrim shows the QR code and gives the passcode."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:7
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:7
+msgid "The pilgrim's consents are the policy"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:87
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:87
+msgid "The pilgrim, the Malaysian HIE and the Saudi Ministry of Health are stand-ins, as in smart-ips-pilgrimage#3. Their identifiers are  URLs."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:60
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:60
+msgid "the purpose is treatment ( = );"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:16
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:16
+msgid "The receiver is identified by trust: its key or certificate is accepted in the  trust domain (, ). There is no agreement lookup at ."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:24
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:24
+msgid "The registry copy is enforced; the IPS copy is evidence. The IPS Bundle also carries copies of both Consents. They travel with the data as evidence for KSA. The Sharer does not enforce them: it enforces the copy in its own Consent Registry. The IPS is signed once, when it is issued, so its copy cannot show a later withdrawal (consent rule 4)."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:72
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:72
+msgid "The specifications do not say whether the Sharer enforces the registry copy or the copy inside the IPS, or what KSA should do with its copy."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:83
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:83
+msgid "The two Consents below match the  examples of smart-ips-pilgrimage#3. They are FHIR R4 resources on the IHE PCF 1.1.0 profile , which  is built on. This guide is built on FHIR R5, where  has no , so they are given here as FSH and are not instances of this guide. They were compiled with SUSHI 3.21.0 against  4.0.1 and  1.1.0, with no errors."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:1
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:1
+msgid "This page is a worked example. It applies the business processes A, B, C, F and I of this guide to one case: the IPS Pilgrimage (Hajj) implementation guide (, FHIR R4, IHE PCF 1.1.0). It follows the analysis written for folio-assistant#2702 on 2026-10-30."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:61
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:61
+msgid "today is inside the Hajj period ()."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:32
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#. Source: input/pagecontent/example-pilgrimage.md:42
+#: input/pagecontent/example-pilgrimage.md:32
+#: input/pagecontent/example-pilgrimage.md:42
+msgid "Transaction"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:34
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:34
+msgid "Trust. The origin HIE publishes its signing keys to the  trust domain. GDHCN is the trust anchor here, as one option among others. KSA must also publish its own keys or certificates there, so that the origin can authenticate it at step 9."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:38
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:38
+msgid "VHL. The wallet asks for a VHL with a passcode and an expiry. The Sharer checks that the Consents are active, then signs the link. The link's expiry should not run past the Consents' ."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:71
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:71
+msgid "Was: the consent type sat in , the examples had display names only, and  was , so  would return  every time. Still open in that guide: the consent texts for two origin countries (, ) are placeholders (consent rule 3)."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:77
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:77
+msgid "Was: the IPS Pilgrimage guide had  at the origin HIE but did not say what the event contains."
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:69
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:69
+msgid "What is missing"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:11
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:11
+msgid "What it allows"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:69
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:69
+msgid "What would close it"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:54
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:54
+msgid "When does step 10 permit? Only when every one of these holds:"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:11
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:11
+msgid "Who is bound, and where it is checked"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:37
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:37
+msgid "— (IPS Pilgrimage guide)"
+msgstr ""
+
+#. Source: input/pagecontent/example-pilgrimage.md:46
+#. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
+#: input/pagecontent/example-pilgrimage.md:46
+msgid "— (IPS Pilgrimage guide, step 03)"
+msgstr ""
+

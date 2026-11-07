@@ -1,0 +1,582 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-06 09:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: input/pagecontent/personas.md:51
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:51
+msgid "A clear answer: allowed, refused, or unknown"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:15
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:15
+msgid "A health worker or issuing system that issues a verifiable digital health certificate. Specializes the ActorDefinition Issuer (input/fsh/actors/actors.fsh)."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:52
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:52
+msgid "A record she can trust, signed by a known issuer"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:18
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:18
+msgid "A server that accesses data under a data sharing agreement (OAuth client) and performs the agreement's duties."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:119
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:119
+msgid "A trust anchor that publishes the trust list of participants' keys; GDHCN or another accepted anchor."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:39
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:39
+msgid "Agreements that exist only as PDFs"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:24
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:24
+msgid "Ana (data provider administrator)"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:20
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:20
+msgid "Auditor"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:15
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:15
+msgid "Certificate Issuer"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:16
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:16
+msgid "Checks a certificate and its status, with or without a status checking application. Specializes the ActorDefinition Receiver (input/fsh/actors/actors.fsh)."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:91
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:91
+msgid "Consent forms she cannot read back later"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:10
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:10
+msgid "Consent Recorder"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:11
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:11
+msgid "Consent Registry"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:17
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:17
+msgid "Data Provider Administrator"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:18
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:18
+msgid "Data Recipient System"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:7
+#. URL: http://smart.who.int/trust-phw/personas.html
+#. Source: input/pagecontent/personas.md:113
+#: input/pagecontent/personas.md:7
+#: input/pagecontent/personas.md:113
+msgid "Description"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:41
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:41
+msgid "Dr Mei (receiving clinician)"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:69
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:69
+msgid "Duty checks he can run himself"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:22
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:22
+msgid "Example people"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:111
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:111
+msgid "Example systems"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:37
+#. URL: http://smart.who.int/trust-phw/personas.html
+#. Source: input/pagecontent/personas.md:54
+#. Source: input/pagecontent/personas.md:71
+#. Source: input/pagecontent/personas.md:89
+#. Source: input/pagecontent/personas.md:107
+#: input/pagecontent/personas.md:37
+#: input/pagecontent/personas.md:54
+#: input/pagecontent/personas.md:71
+#: input/pagecontent/personas.md:89
+#: input/pagecontent/personas.md:107
+msgid "Frustrations"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:100
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:100
+msgid "Goal. Issue certificates that are accepted wherever his patients go, without extra paperwork."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:47
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:47
+msgid "Goal. Read a visitor's record quickly and know it is genuine and that she is allowed to read it."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:30
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:30
+msgid "Goal. Register only the clients an agreement allows, and revoke them the moment it ends."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:81
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:81
+msgid "Goal. Share her health information only with the people who need it, for as long as they need it."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:64
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:64
+msgid "Goal. Show, for any access, which consent and which agreement allowed it."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:9
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:9
+msgid "Holder"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:116
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:116
+msgid "Holder, Consent Recorder"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:11
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:11
+msgid "Holds consent directives and answers IHE PCF [ITI-108] Access Consent. Specializes the ActorDefinition ConsentRegistry (input/fsh/actors/actors.fsh)."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:12
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:12
+msgid "Holds the health information, generates verifiable health links, and enforces consent when a link is redeemed. Specializes the ActorDefinition Issuer (input/fsh/actors/actors.fsh)."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:115
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:115
+msgid "Home health information exchange"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:58
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:58
+msgid "Kofi (auditor)"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:75
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:75
+msgid "Lina (wallet holder)"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:116
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:116
+msgid "Lina's personal health wallet"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:56
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:56
+msgid "Links that fail without saying why"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:73
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:73
+msgid "Logs that say who, but not why"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:32
+#. URL: http://smart.who.int/trust-phw/personas.html
+#. Source: input/pagecontent/personas.md:49
+#. Source: input/pagecontent/personas.md:66
+#. Source: input/pagecontent/personas.md:83
+#. Source: input/pagecontent/personas.md:102
+#: input/pagecontent/personas.md:32
+#: input/pagecontent/personas.md:49
+#: input/pagecontent/personas.md:66
+#: input/pagecontent/personas.md:83
+#: input/pagecontent/personas.md:102
+msgid "Needs"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:92
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:92
+msgid "Not knowing whether a withdrawal took effect"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:94
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:94
+msgid "Nurse Tomás (clinic nurse)"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:86
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:86
+msgid "One link that works abroad as well as at home"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:35
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:35
+msgid "One place to suspend a client"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:109
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:109
+msgid "Patients who were never asked what they agreed to"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:9
+#. URL: http://smart.who.int/trust-phw/personas.html
+#. Source: input/pagecontent/personas.md:17
+#. Source: input/pagecontent/personas.md:20
+#: input/pagecontent/personas.md:9
+#: input/pagecontent/personas.md:17
+#: input/pagecontent/personas.md:20
+msgid "person"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:10
+#. URL: http://smart.who.int/trust-phw/personas.html
+#. Source: input/pagecontent/personas.md:15
+#. Source: input/pagecontent/personas.md:16
+#: input/pagecontent/personas.md:10
+#: input/pagecontent/personas.md:15
+#: input/pagecontent/personas.md:16
+msgid "person, system"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:77
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:77
+msgid "Persona: a 34-year-old teacher who keeps her health records in a personal health wallet on her phone and travels for work. Fictional."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:96
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:96
+msgid "Persona: a nurse at a community clinic who vaccinates, issues certificates, and records consent for patients who ask for help with the wallet. Fictional."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:60
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:60
+msgid "Persona: an auditor who checks that every access under a data sharing agreement was allowed and its duties were done. Fictional."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:43
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:43
+msgid "Persona: an emergency physician who treats visitors from other countries and reads their records through verifiable health links. Fictional."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:26
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:26
+msgid "Persona: the administrator who registers partner servers under the data sharing agreements her health information exchange signs. Fictional."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:7
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:7
+msgid "Played by"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:68
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:68
+msgid "Provenance that cites the consent and its version"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:19
+#. URL: http://smart.who.int/trust-phw/personas.html
+#. Source: input/pagecontent/personas.md:117
+#: input/pagecontent/personas.md:19
+#: input/pagecontent/personas.md:117
+msgid "Provider Authorization Server"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:117
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:117
+msgid "Provider authorization service"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:14
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:14
+msgid "Publishes the trust list of keys that participants use to check signatures. GDHCN is one possible anchor among others. Specializes the ActorDefinition TrustNetworkAnchor (input/fsh/actors/actors.fsh)."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:13
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:13
+msgid "Receives a verifiable health link, checks its signature against the trust list, and retrieves the information. Specializes the ActorDefinition Receiver (input/fsh/actors/actors.fsh)."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:118
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:118
+msgid "Receiving clinic's record system"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:19
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:19
+msgid "Registers clients and decides access under a data sharing agreement (policy decision and enforcement)."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:7
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:7
+msgid "Role"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:5
+#. URL: http://smart.who.int/trust-phw/personas.html
+#. Source: input/pagecontent/personas.md:113
+#: input/pagecontent/personas.md:5
+#: input/pagecontent/personas.md:113
+msgid "Roles"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:62
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:62
+msgid "Roles: Auditor."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:98
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:98
+msgid "Roles: Certificate Issuer, Consent Recorder."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:28
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:28
+msgid "Roles: Data Provider Administrator."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:79
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:79
+msgid "Roles: Holder, Consent Recorder."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:45
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:45
+msgid "Roles: Verifier."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:11
+#. URL: http://smart.who.int/trust-phw/personas.html
+#. Source: input/pagecontent/personas.md:12
+#. Source: input/pagecontent/personas.md:13
+#. Source: input/pagecontent/personas.md:14
+#. Source: input/pagecontent/personas.md:18
+#. Source: input/pagecontent/personas.md:19
+#: input/pagecontent/personas.md:11
+#: input/pagecontent/personas.md:12
+#: input/pagecontent/personas.md:13
+#: input/pagecontent/personas.md:14
+#: input/pagecontent/personas.md:18
+#: input/pagecontent/personas.md:19
+msgid "system"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:113
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:113
+msgid "System"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:34
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:34
+msgid "The agreement's terms in a form the server can check"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:117
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:117
+msgid "The authorization server of the health information exchange: registers clients and decides access under data sharing agreements."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:115
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:115
+msgid "The health information exchange that holds Lina's record: it records her consent in its Consent Registry, generates her links and enforces consent when a link is redeemed."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:17
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:17
+msgid "The person at a data provider who registers clients under a data sharing agreement."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:10
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:10
+msgid "The person or system that records a consent directive for the holder (IHE PCF Consent Recorder): the wallet itself, or a health worker on the holder's behalf."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:9
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:9
+msgid "The person who holds a Personal Health Wallet, records consent, and presents verifiable health links and certificates. Specializes the ActorDefinition Holder (input/fsh/actors/actors.fsh)."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:20
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:20
+msgid "The person who reviews audit and provenance records under a data sharing agreement."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:118
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:118
+msgid "The record system of Dr Mei's clinic: reads verifiable health links, and as a registered client accesses data under a data sharing agreement."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:116
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:116
+msgid "The wallet app on Lina's phone: records her consent, holds her verifiable health links and certificates, and presents them as QR codes."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:3
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:3
+msgid "This page lists the roles the business processes of this guide name, and the example people and systems that play them. Every person is fictional."
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:105
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:105
+msgid "To know a certificate was issued correctly"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:87
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:87
+msgid "To know when her record was read, and by whom"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:104
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:104
+msgid "To record a patient's consent in one step, and show it back to them"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:85
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:85
+msgid "To see who can read her record, and to withdraw that at any time"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:14
+#. URL: http://smart.who.int/trust-phw/personas.html
+#. Source: input/pagecontent/personas.md:119
+#: input/pagecontent/personas.md:14
+#: input/pagecontent/personas.md:119
+msgid "Trust Anchor"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:119
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:119
+msgid "Trust anchor service"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:16
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:16
+msgid "Verifier"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:13
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:13
+msgid "VHL Receiver"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:118
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:118
+msgid "VHL Receiver, Data Recipient System"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:12
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:12
+msgid "VHL Sharer"
+msgstr ""
+
+#. Source: input/pagecontent/personas.md:115
+#. URL: http://smart.who.int/trust-phw/personas.html
+#: input/pagecontent/personas.md:115
+msgid "VHL Sharer, Consent Registry"
+msgstr ""
+
