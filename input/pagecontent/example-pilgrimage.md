@@ -80,7 +80,7 @@ Ordered by how much each one blocks a computable decision. Each row names the ex
 
 ### Example consents
 
-The two Consents below match the `HajjConsent` examples of [smart-ips-pilgrimage#3](https://github.com/litlfred/smart-ips-pilgrimage/pull/3). They are **FHIR R4** resources on the IHE PCF 1.1.0 profile `IHE.PCF.consentIntermediate`, which `HajjConsent` is built on. This guide is built on FHIR R5, where `Consent` has no `policyRule`, so they are given here as FSH and are not instances of this guide. They were compiled with SUSHI 3.21.0 against `hl7.fhir.r4.core` 4.0.1 and `ihe.iti.pcf` 1.1.0, with no errors.
+The two Consents below match the `HajjConsent` examples of [smart-ips-pilgrimage#3](https://github.com/litlfred/smart-ips-pilgrimage/pull/3). They are **FHIR R4** resources on the IHE PCF 1.1.0 profile `IHE.PCF.consentIntermediate`, which `HajjConsent` is built on. This guide is now built on FHIR R4 4.0.1 too, but they are given here as FSH and are not yet instances of this guide. They were compiled with SUSHI 3.21.0 against `hl7.fhir.r4.core` 4.0.1 and `ihe.iti.pcf` 1.1.0, with no errors.
 
 Every name, identifier, URL and date is a fictional example:
 

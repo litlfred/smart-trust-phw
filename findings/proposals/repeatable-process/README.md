@@ -325,8 +325,16 @@ a new declared `translations/` directory.
 9. **CI.** One reusable `layer-pr-checks.yml` call in index mode, pinned to
    the lock's commit; draft PRs run the fast tier. Actions pinned by SHA,
    least-privilege `permissions:`.
-10. **Publish.** An agent runs `stage-local.ts`: `main` to the gh-pages
-    root, other branches to `branches/<slug>/`.
+10. **Publish.** An agent publishes: `main` to the gh-pages root, other
+    branches to their preview folder. Before `stage-local.ts`, the publish
+    script (`tools/publish/publish.sh` in smart-trust-phw) checks three things
+    that each made a first publish fail: `gh-pages` exists on origin (else it
+    starts it as an empty orphan branch with `.nojekyll`); the mounts are laid
+    fresh from `index.lock.json` (a build writes into them); and `input/` is
+    exactly the commit's (a build draws SVGs beside the BPMN, and any
+    untracked input makes the cached AST stale). The site is built from the
+    AST that `ig-ast-refresh.yml` caches on a push to `main`, so publish
+    `main` after that run succeeds.
 11. **Cold start.** `AGENTS.md`: what the instance is, its rules, the
     commands that lay down the mounts, and how to publish.
 12. **Translate.** Extract `.pot` templates from text sources into a
