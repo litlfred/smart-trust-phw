@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "23ebf43e3e6da0c7c2dbc80a8ce8f0b2330becc2",
+          "ref": "1524b3fc226e7bf407b4fd217866c63bc260ba29",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -102,8 +102,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "23ebf43e3e6da0c7c2dbc80a8ce8f0b2330becc2",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\"; ~05:25Z: \"repin + merge open 12 hrs\"; by card: \"Fix in harness\", \"Wait for #308\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned fhir-harness, folio-assistant-core, cat-harness and cat-harness-tools to their main tips (fhir-harness#308 ICD-11 txcache fix; cat-harness-tools#1665 prov-qaqc without beans), bootstrap layers unchanged until bootstrap-tools#82."
+              "ref": "1524b3fc226e7bf407b4fd217866c63bc260ba29",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "c36b85ce480280d0a2564d293f882c668a3388fe",
+          "ref": "6d76e105ff5512c2488af2424349c621b4773165",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -158,8 +158,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "c36b85ce480280d0a2564d293f882c668a3388fe",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\"; ~05:25Z: \"repin + merge open 12 hrs\"; by card: \"Fix in harness\", \"Wait for #308\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned fhir-harness, folio-assistant-core, cat-harness and cat-harness-tools to their main tips (fhir-harness#308 ICD-11 txcache fix; cat-harness-tools#1665 prov-qaqc without beans), bootstrap layers unchanged until bootstrap-tools#82."
+              "ref": "6d76e105ff5512c2488af2424349c621b4773165",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "e5a047b8d4cca622e7c53cd78fadcfc43e621a65",
+          "ref": "4e79324d5d3637bbc592b657f71f1ec3b6b86797",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -183,8 +183,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "e5a047b8d4cca622e7c53cd78fadcfc43e621a65",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\"; ~05:25Z: \"repin + merge open 12 hrs\"; by card: \"Fix in harness\", \"Wait for #308\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned fhir-harness, folio-assistant-core, cat-harness and cat-harness-tools to their main tips (fhir-harness#308 ICD-11 txcache fix; cat-harness-tools#1665 prov-qaqc without beans), bootstrap layers unchanged until bootstrap-tools#82."
+              "ref": "4e79324d5d3637bbc592b657f71f1ec3b6b86797",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
             }
           }
         }
@@ -195,7 +195,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "12fa6d57dfad06ae73e234f116145dfc8d77ad50",
+          "ref": "6efa90e5ec6fb0f9dd3391cd7a75e7345f7be774",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -205,8 +205,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "12fa6d57dfad06ae73e234f116145dfc8d77ad50",
-              "evidence": "Owner litlfred, 2026-11-07, session https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f: 'repin + merge open 12 hrs' (re-pin smart-trust-phw's layers to their main tips)."
+              "ref": "6efa90e5ec6fb0f9dd3391cd7a75e7345f7be774",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
             }
           }
         }
@@ -217,7 +217,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "9f478d4d9fcd87842e9a4f5b886232ec806e657e",
+          "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -229,9 +229,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-05",
-              "ref": "9f478d4d9fcd87842e9a4f5b886232ec806e657e",
-              "evidence": "Owner litlfred, 2026-11-05: card '1. Freeze one set' — re-pin all site PRs to one fixed set of layer commits; 'merge when green' (bean folio-assistant-rpc6)."
+              "on": "2026-11-07",
+              "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
             }
           }
         }
