@@ -4510,7 +4510,7 @@ msgstr "Это руководство по внедрению всё ещё на
 #. URL: http://smart.who.int/trust-phw/index.html
 #: input/pagecontent/index.md:7
 msgid "This implementation guide specifies how a Personal Health Wallet (PHW) lets a person record privacy consent, share health information through verifiable health links, and have that consent enforced when the information is used. It uses IHE Privacy Consent on FHIR (PCF) 1.1.0 for consent directives and IHE Verifiable Health Links (VHL) 1.0.0-comment for the links."
-msgstr "Это руководство по внедрению определяет, как персональный кошелёк медицинских данных (Personal Health Wallet, PHW) позволяет человеку регистрировать согласие на обработку данных (privacy consent), предоставлять медицинскую информацию через проверяемые ссылки на медицинские данные и обеспечивать соблюдение этого согласия при использовании информации. Для распоряжений о согласии используется IHE Privacy Consent on FHIR (PCF) 1.1.0, а для ссылок — IHE Verifiable Health Links (VHL) 1.0.0-comment."
+msgstr "Это руководство по внедрению определяет, как персональный кошелёк медицинских данных (Personal Health Wallet, PHW) позволяет человеку регистрировать согласие в отношении конфиденциальности (privacy consent), предоставлять медицинскую информацию через проверяемые ссылки на медицинские данные и обеспечивать соблюдение этого согласия при использовании информации. Для распоряжений о согласии используется IHE Privacy Consent on FHIR (PCF) 1.1.0, а для ссылок — IHE Verifiable Health Links (VHL) 1.0.0-comment."
 
 #. Source: input/pagecontent/index.md:36
 #. URL: http://smart.who.int/trust-phw/index.html

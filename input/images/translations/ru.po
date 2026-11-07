@@ -299,7 +299,7 @@ msgstr "[ITI-YY5] Retrieve"
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "A. Record and Manage Patient Privacy Consent"
-msgstr "A. Запись согласия пациента на обработку данных и управление им"
+msgstr "A. Регистрация согласия пациента в отношении конфиденциальности и управление им"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
