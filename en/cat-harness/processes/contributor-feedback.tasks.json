@@ -1,0 +1,963 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_ContributorFeedback",
+ "tasks": {
+  "Task_StartRow": {
+   "id": "Task_StartRow",
+   "name": "Start a change-set row",
+   "type": "bpmn:UserTask",
+   "lane": "Authoring Committee",
+   "skills": [
+    {
+     "name": "review-sheet-script"
+    }
+   ],
+   "role": {
+    "name": "authoring-committee",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-folio-assistant-core-scenarios-roles-json-authoring-committee",
+    "title": "Authoring Committee",
+    "skills": [
+     {
+      "name": "review-sheet-script"
+     }
+    ]
+   }
+  },
+  "Task_Propose": {
+   "id": "Task_Propose",
+   "name": "Propose a direction",
+   "type": "bpmn:ServiceTask",
+   "lane": "Authoring agent",
+   "skills": [
+    {
+     "name": "review-sheet-script"
+    }
+   ],
+   "role": {
+    "name": "authoring-agent",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-authoring-agent",
+    "title": "Authoring agent",
+    "skills": [
+     {
+      "name": "adopt-methodology-from-source"
+     },
+     {
+      "name": "agent-permissions"
+     },
+     {
+      "name": "ask-the-person"
+     },
+     {
+      "name": "bean-coordination"
+     },
+     {
+      "name": "before-after-preview"
+     },
+     {
+      "name": "blocked-build-dependencies"
+     },
+     {
+      "name": "bpmn-authoring"
+     },
+     {
+      "name": "branch-archaeology"
+     },
+     {
+      "name": "ci-health"
+     },
+     {
+      "name": "confirmation-waiver"
+     },
+     {
+      "name": "content-author"
+     },
+     {
+      "name": "content-graph"
+     },
+     {
+      "name": "content-plan"
+     },
+     {
+      "name": "continual-progress"
+     },
+     {
+      "name": "coordinate"
+     },
+     {
+      "name": "crdm-detect"
+     },
+     {
+      "name": "crdm-requirements-workflow"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "decision-comparison"
+     },
+     {
+      "name": "deletion-requires-confirmation"
+     },
+     {
+      "name": "delivery-summary"
+     },
+     {
+      "name": "directory-conventions"
+     },
+     {
+      "name": "feature-staging"
+     },
+     {
+      "name": "folio-init"
+     },
+     {
+      "name": "gate-tree-mutation"
+     },
+     {
+      "name": "generalise-the-fix"
+     },
+     {
+      "name": "github-state-inspection"
+     },
+     {
+      "name": "graph-detanglement"
+     },
+     {
+      "name": "issue-working"
+     },
+     {
+      "name": "kg-affordances"
+     },
+     {
+      "name": "kg-separation"
+     },
+     {
+      "name": "library-ingestion"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "methodology-adoption"
+     },
+     {
+      "name": "opening-brief"
+     },
+     {
+      "name": "placement"
+     },
+     {
+      "name": "platform-gates"
+     },
+     {
+      "name": "pr-description"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "prepare-merge-auto"
+     },
+     {
+      "name": "related-work-coordination"
+     },
+     {
+      "name": "session-context"
+     },
+     {
+      "name": "session-state-machine"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "sub-kg-lifecycle"
+     },
+     {
+      "name": "symbiotic-interaction"
+     },
+     {
+      "name": "test-data-sets"
+     },
+     {
+      "name": "todo-manager"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "upstream-version-adoption"
+     },
+     {
+      "name": "voice-authoring-guidance"
+     },
+     {
+      "name": "watch"
+     },
+     {
+      "name": "wireframe-design-review"
+     },
+     {
+      "name": "workflow-state"
+     }
+    ]
+   }
+  },
+  "Task_ReadyForAgent": {
+   "id": "Task_ReadyForAgent",
+   "name": "Set Ready for agent to Yes",
+   "type": "bpmn:UserTask",
+   "lane": "Editor",
+   "skills": [
+    {
+     "name": "review-sheet-script"
+    }
+   ],
+   "role": {
+    "name": "editor",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-editor",
+    "title": "Editor",
+    "skills": [
+     {
+      "name": "bpmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "content-author",
+      "via": "author"
+     },
+     {
+      "name": "content-plan",
+      "via": "author"
+     },
+     {
+      "name": "content-review",
+      "via": "author"
+     },
+     {
+      "name": "content-validate"
+     },
+     {
+      "name": "decision-audit",
+      "via": "author"
+     },
+     {
+      "name": "dmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "evidence-appraisal",
+      "via": "author"
+     },
+     {
+      "name": "kg-affordances",
+      "via": "author"
+     },
+     {
+      "name": "staging-review",
+      "via": "author"
+     },
+     {
+      "name": "todo-manager",
+      "via": "author"
+     },
+     {
+      "name": "voice-authoring-guidance"
+     }
+    ]
+   }
+  },
+  "Task_EditInPullRequest": {
+   "id": "Task_EditInPullRequest",
+   "name": "Edit the document in the row's pull request",
+   "type": "bpmn:ServiceTask",
+   "lane": "Authoring agent",
+   "skills": [
+    {
+     "name": "review-sheet-script"
+    }
+   ],
+   "role": {
+    "name": "authoring-agent",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-authoring-agent",
+    "title": "Authoring agent",
+    "skills": [
+     {
+      "name": "adopt-methodology-from-source"
+     },
+     {
+      "name": "agent-permissions"
+     },
+     {
+      "name": "ask-the-person"
+     },
+     {
+      "name": "bean-coordination"
+     },
+     {
+      "name": "before-after-preview"
+     },
+     {
+      "name": "blocked-build-dependencies"
+     },
+     {
+      "name": "bpmn-authoring"
+     },
+     {
+      "name": "branch-archaeology"
+     },
+     {
+      "name": "ci-health"
+     },
+     {
+      "name": "confirmation-waiver"
+     },
+     {
+      "name": "content-author"
+     },
+     {
+      "name": "content-graph"
+     },
+     {
+      "name": "content-plan"
+     },
+     {
+      "name": "continual-progress"
+     },
+     {
+      "name": "coordinate"
+     },
+     {
+      "name": "crdm-detect"
+     },
+     {
+      "name": "crdm-requirements-workflow"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "decision-comparison"
+     },
+     {
+      "name": "deletion-requires-confirmation"
+     },
+     {
+      "name": "delivery-summary"
+     },
+     {
+      "name": "directory-conventions"
+     },
+     {
+      "name": "feature-staging"
+     },
+     {
+      "name": "folio-init"
+     },
+     {
+      "name": "gate-tree-mutation"
+     },
+     {
+      "name": "generalise-the-fix"
+     },
+     {
+      "name": "github-state-inspection"
+     },
+     {
+      "name": "graph-detanglement"
+     },
+     {
+      "name": "issue-working"
+     },
+     {
+      "name": "kg-affordances"
+     },
+     {
+      "name": "kg-separation"
+     },
+     {
+      "name": "library-ingestion"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "methodology-adoption"
+     },
+     {
+      "name": "opening-brief"
+     },
+     {
+      "name": "placement"
+     },
+     {
+      "name": "platform-gates"
+     },
+     {
+      "name": "pr-description"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "prepare-merge-auto"
+     },
+     {
+      "name": "related-work-coordination"
+     },
+     {
+      "name": "session-context"
+     },
+     {
+      "name": "session-state-machine"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "sub-kg-lifecycle"
+     },
+     {
+      "name": "symbiotic-interaction"
+     },
+     {
+      "name": "test-data-sets"
+     },
+     {
+      "name": "todo-manager"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "upstream-version-adoption"
+     },
+     {
+      "name": "voice-authoring-guidance"
+     },
+     {
+      "name": "watch"
+     },
+     {
+      "name": "wireframe-design-review"
+     },
+     {
+      "name": "workflow-state"
+     }
+    ]
+   }
+  },
+  "Task_AnswerPreview": {
+   "id": "Task_AnswerPreview",
+   "name": "Review the preview and answer",
+   "type": "bpmn:UserTask",
+   "lane": "Authoring Committee",
+   "skills": [
+    {
+     "name": "review-sheet-script"
+    }
+   ],
+   "role": {
+    "name": "authoring-committee",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-folio-assistant-core-scenarios-roles-json-authoring-committee",
+    "title": "Authoring Committee",
+    "skills": [
+     {
+      "name": "review-sheet-script"
+     }
+    ]
+   }
+  },
+  "Task_QaGate": {
+   "id": "Task_QaGate",
+   "name": "QA gate: review dispositions against the people and the pull request",
+   "type": "bpmn:ServiceTask",
+   "lane": "QA reviewer (independent)",
+   "skills": [
+    {
+     "name": "review-sheet-script"
+    }
+   ],
+   "role": {
+    "name": "qc-reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-qc-reviewer",
+    "title": "QC reviewer",
+    "skills": [
+     {
+      "name": "adjudication",
+      "via": "reviewer"
+     },
+     {
+      "name": "content-feedback",
+      "via": "reviewer"
+     },
+     {
+      "name": "content-publish"
+     },
+     {
+      "name": "content-review",
+      "via": "reviewer"
+     },
+     {
+      "name": "decision-audit",
+      "via": "reviewer"
+     },
+     {
+      "name": "evidence-review"
+     },
+     {
+      "name": "narrative-asserts-code",
+      "via": "reviewer"
+     },
+     {
+      "name": "rendered-impact",
+      "via": "reviewer"
+     },
+     {
+      "name": "staging-review",
+      "via": "reviewer"
+     },
+     {
+      "name": "translation-manager",
+      "via": "reviewer"
+     },
+     {
+      "name": "untainted-verification"
+     },
+     {
+      "name": "visual-diff",
+      "via": "reviewer"
+     },
+     {
+      "name": "voice-overlay-review",
+      "via": "reviewer"
+     }
+    ]
+   }
+  },
+  "Task_ReadyForMerge": {
+   "id": "Task_ReadyForMerge",
+   "name": "Set Ready for merge to Yes",
+   "type": "bpmn:UserTask",
+   "lane": "Editor",
+   "skills": [
+    {
+     "name": "review-sheet-script"
+    }
+   ],
+   "role": {
+    "name": "editor",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-editor",
+    "title": "Editor",
+    "skills": [
+     {
+      "name": "bpmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "content-author",
+      "via": "author"
+     },
+     {
+      "name": "content-plan",
+      "via": "author"
+     },
+     {
+      "name": "content-review",
+      "via": "author"
+     },
+     {
+      "name": "content-validate"
+     },
+     {
+      "name": "decision-audit",
+      "via": "author"
+     },
+     {
+      "name": "dmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "evidence-appraisal",
+      "via": "author"
+     },
+     {
+      "name": "kg-affordances",
+      "via": "author"
+     },
+     {
+      "name": "staging-review",
+      "via": "author"
+     },
+     {
+      "name": "todo-manager",
+      "via": "author"
+     },
+     {
+      "name": "voice-authoring-guidance"
+     }
+    ]
+   }
+  },
+  "Task_Merge": {
+   "id": "Task_Merge",
+   "name": "Merge the pull request",
+   "type": "bpmn:ServiceTask",
+   "lane": "Authoring agent",
+   "skills": [
+    {
+     "name": "review-sheet-script"
+    }
+   ],
+   "role": {
+    "name": "authoring-agent",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-authoring-agent",
+    "title": "Authoring agent",
+    "skills": [
+     {
+      "name": "adopt-methodology-from-source"
+     },
+     {
+      "name": "agent-permissions"
+     },
+     {
+      "name": "ask-the-person"
+     },
+     {
+      "name": "bean-coordination"
+     },
+     {
+      "name": "before-after-preview"
+     },
+     {
+      "name": "blocked-build-dependencies"
+     },
+     {
+      "name": "bpmn-authoring"
+     },
+     {
+      "name": "branch-archaeology"
+     },
+     {
+      "name": "ci-health"
+     },
+     {
+      "name": "confirmation-waiver"
+     },
+     {
+      "name": "content-author"
+     },
+     {
+      "name": "content-graph"
+     },
+     {
+      "name": "content-plan"
+     },
+     {
+      "name": "continual-progress"
+     },
+     {
+      "name": "coordinate"
+     },
+     {
+      "name": "crdm-detect"
+     },
+     {
+      "name": "crdm-requirements-workflow"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "decision-comparison"
+     },
+     {
+      "name": "deletion-requires-confirmation"
+     },
+     {
+      "name": "delivery-summary"
+     },
+     {
+      "name": "directory-conventions"
+     },
+     {
+      "name": "feature-staging"
+     },
+     {
+      "name": "folio-init"
+     },
+     {
+      "name": "gate-tree-mutation"
+     },
+     {
+      "name": "generalise-the-fix"
+     },
+     {
+      "name": "github-state-inspection"
+     },
+     {
+      "name": "graph-detanglement"
+     },
+     {
+      "name": "issue-working"
+     },
+     {
+      "name": "kg-affordances"
+     },
+     {
+      "name": "kg-separation"
+     },
+     {
+      "name": "library-ingestion"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "methodology-adoption"
+     },
+     {
+      "name": "opening-brief"
+     },
+     {
+      "name": "placement"
+     },
+     {
+      "name": "platform-gates"
+     },
+     {
+      "name": "pr-description"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "prepare-merge-auto"
+     },
+     {
+      "name": "related-work-coordination"
+     },
+     {
+      "name": "session-context"
+     },
+     {
+      "name": "session-state-machine"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "sub-kg-lifecycle"
+     },
+     {
+      "name": "symbiotic-interaction"
+     },
+     {
+      "name": "test-data-sets"
+     },
+     {
+      "name": "todo-manager"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "upstream-version-adoption"
+     },
+     {
+      "name": "voice-authoring-guidance"
+     },
+     {
+      "name": "watch"
+     },
+     {
+      "name": "wireframe-design-review"
+     },
+     {
+      "name": "workflow-state"
+     }
+    ]
+   }
+  },
+  "Task_CloseChangeSet": {
+   "id": "Task_CloseChangeSet",
+   "name": "Close the change set: the issue, then the sheet row",
+   "type": "bpmn:ServiceTask",
+   "lane": "Authoring agent",
+   "skills": [
+    {
+     "name": "review-sheet-agent-columns"
+    }
+   ],
+   "role": {
+    "name": "authoring-agent",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-authoring-agent",
+    "title": "Authoring agent",
+    "skills": [
+     {
+      "name": "adopt-methodology-from-source"
+     },
+     {
+      "name": "agent-permissions"
+     },
+     {
+      "name": "ask-the-person"
+     },
+     {
+      "name": "bean-coordination"
+     },
+     {
+      "name": "before-after-preview"
+     },
+     {
+      "name": "blocked-build-dependencies"
+     },
+     {
+      "name": "bpmn-authoring"
+     },
+     {
+      "name": "branch-archaeology"
+     },
+     {
+      "name": "ci-health"
+     },
+     {
+      "name": "confirmation-waiver"
+     },
+     {
+      "name": "content-author"
+     },
+     {
+      "name": "content-graph"
+     },
+     {
+      "name": "content-plan"
+     },
+     {
+      "name": "continual-progress"
+     },
+     {
+      "name": "coordinate"
+     },
+     {
+      "name": "crdm-detect"
+     },
+     {
+      "name": "crdm-requirements-workflow"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "decision-comparison"
+     },
+     {
+      "name": "deletion-requires-confirmation"
+     },
+     {
+      "name": "delivery-summary"
+     },
+     {
+      "name": "directory-conventions"
+     },
+     {
+      "name": "feature-staging"
+     },
+     {
+      "name": "folio-init"
+     },
+     {
+      "name": "gate-tree-mutation"
+     },
+     {
+      "name": "generalise-the-fix"
+     },
+     {
+      "name": "github-state-inspection"
+     },
+     {
+      "name": "graph-detanglement"
+     },
+     {
+      "name": "issue-working"
+     },
+     {
+      "name": "kg-affordances"
+     },
+     {
+      "name": "kg-separation"
+     },
+     {
+      "name": "library-ingestion"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "methodology-adoption"
+     },
+     {
+      "name": "opening-brief"
+     },
+     {
+      "name": "placement"
+     },
+     {
+      "name": "platform-gates"
+     },
+     {
+      "name": "pr-description"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "prepare-merge-auto"
+     },
+     {
+      "name": "related-work-coordination"
+     },
+     {
+      "name": "session-context"
+     },
+     {
+      "name": "session-state-machine"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "sub-kg-lifecycle"
+     },
+     {
+      "name": "symbiotic-interaction"
+     },
+     {
+      "name": "test-data-sets"
+     },
+     {
+      "name": "todo-manager"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "upstream-version-adoption"
+     },
+     {
+      "name": "voice-authoring-guidance"
+     },
+     {
+      "name": "watch"
+     },
+     {
+      "name": "wireframe-design-review"
+     },
+     {
+      "name": "workflow-state"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "PHW.H",
+ "tasks": {
+  "PHW.H.1": {
+   "id": "PHW.H.1",
+   "name": "H1. Decide what to stop: revoke (final) or suspend (reversible)",
+   "type": "bpmn:UserTask",
+   "lane": "Data Provider (decides)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.H.2": {
+   "id": "PHW.H.2",
+   "name": "H2. Set the grant's bit in the Bitstring Status List",
+   "type": "bpmn:ServiceTask",
+   "lane": "Grant Issuer (W3C Bitstring Status List)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.H.3": {
+   "id": "PHW.H.3",
+   "name": "H3. Revoke tokens and disable the client",
+   "type": "bpmn:ServiceTask",
+   "lane": "Provider Authorization Server (administrator + decision point)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.H.4": {
+   "id": "PHW.H.4",
+   "name": "H4. Remove key from trust list or revoke certificate (CRL)",
+   "type": "bpmn:ServiceTask",
+   "lane": "Trust Anchor (GDHCN or another accepted anchor)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.H.5": {
+   "id": "PHW.H.5",
+   "name": "H5. Record the revocation or suspension (process G)",
+   "type": "bpmn:CallActivity",
+   "lane": "Data Provider (decides)",
+   "skills": [],
+   "calls": {
+    "name": "G. Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12)",
+    "href": "PHW.G.html",
+    "diagram": "PHW.G.html"
+   },
+   "binding": "unbound"
+  }
+ }
+}

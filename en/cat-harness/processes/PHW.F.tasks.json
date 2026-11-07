@@ -1,0 +1,86 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "PHW.F",
+ "tasks": {
+  "PHW.F.1": {
+   "id": "PHW.F.1",
+   "name": "F1. Collect inputs: verified requester, agreement version, grant, request",
+   "type": "bpmn:ServiceTask",
+   "lane": "Policy Decision Point (permits())",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.F.2": {
+   "id": "PHW.F.2",
+   "name": "F2. Verify the grant with smart-trust-tools against the accepted trust anchor",
+   "type": "bpmn:ServiceTask",
+   "lane": "Policy Decision Point (permits())",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.F.3": {
+   "id": "PHW.F.3",
+   "name": "F3. Return trust list (DID document, X.509 roots or local list)",
+   "type": "bpmn:ServiceTask",
+   "lane": "Trust Anchor (GDHCN or another accepted anchor)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.F.4": {
+   "id": "PHW.F.4",
+   "name": "F4. Check grant status in the Bitstring Status List",
+   "type": "bpmn:ServiceTask",
+   "lane": "Policy Decision Point (permits())",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.F.5": {
+   "id": "PHW.F.5",
+   "name": "F5. Return status list credential",
+   "type": "bpmn:ServiceTask",
+   "lane": "Grant Issuer Status List (W3C Bitstring Status List)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.F.6": {
+   "id": "PHW.F.6",
+   "name": "F6. Fetch the agreement at its fixed-version URL; check SHA-256 and status",
+   "type": "bpmn:ServiceTask",
+   "lane": "Policy Decision Point (permits())",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.F.7": {
+   "id": "PHW.F.7",
+   "name": "F7. Return DCAT distribution with spdx:checksum and status",
+   "type": "bpmn:ServiceTask",
+   "lane": "Agreement Publisher (DCAT catalogue)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.F.8": {
+   "id": "PHW.F.8",
+   "name": "F8. Search active Consents for this agreement [ITI-108] Access Consent: Search",
+   "type": "bpmn:ServiceTask",
+   "lane": "Policy Decision Point (permits())",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.F.9": {
+   "id": "PHW.F.9",
+   "name": "F9. Return matching Consents [ITI-108] Access Consent",
+   "type": "bpmn:ServiceTask",
+   "lane": "PCF Consent Registry",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.F.11": {
+   "id": "PHW.F.11",
+   "name": "F11. Receive permit, deny or unknown; hand the decision to audit (process G)",
+   "type": "bpmn:ServiceTask",
+   "lane": "Policy Enforcement Point (authorization server, resource server or VHL Sharer)",
+   "skills": [],
+   "binding": "unbound"
+  }
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "PHW.J",
+ "tasks": {
+  "PHW.J.1": {
+   "id": "PHW.J.1",
+   "name": "J1. Inform the holder and ask for consent to issue",
+   "type": "bpmn:UserTask",
+   "lane": "Certificate Issuer (health worker or issuing system)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.J.2": {
+   "id": "PHW.J.2",
+   "name": "J2. Collect the data the certificate profile needs",
+   "type": "bpmn:UserTask",
+   "lane": "Certificate Issuer (health worker or issuing system)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.J.3": {
+   "id": "PHW.J.3",
+   "name": "J3. Issue and sign the certificate",
+   "type": "bpmn:ServiceTask",
+   "lane": "Certificate Issuance Service",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.J.4": {
+   "id": "PHW.J.4",
+   "name": "J4. Issue a consent-backed VHL (process B)",
+   "type": "bpmn:CallActivity",
+   "lane": "Certificate Issuance Service",
+   "skills": [],
+   "calls": {
+    "name": "B. Issue Consent-Backed Verifiable Health Link",
+    "href": "PHW.B.html",
+    "diagram": "PHW.B.html"
+   },
+   "binding": "unbound"
+  },
+  "PHW.J.5": {
+   "id": "PHW.J.5",
+   "name": "J5. Generate the QR code",
+   "type": "bpmn:ServiceTask",
+   "lane": "Certificate Issuance Service",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.J.6": {
+   "id": "PHW.J.6",
+   "name": "J6. Receive the certificate in the wallet",
+   "type": "bpmn:Task",
+   "lane": "Certificate Holder (person / Personal Health Wallet)",
+   "skills": [],
+   "binding": "unbound"
+  }
+ }
+}

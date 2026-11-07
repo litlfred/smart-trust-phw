@@ -1,0 +1,454 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_PublicComment",
+ "tasks": {
+  "Task_Ingest": {
+   "id": "Task_Ingest",
+   "name": "Ingest and place each comment",
+   "type": "bpmn:Task",
+   "lane": "Intake agent",
+   "skills": [
+    {
+     "name": "public-comment"
+    }
+   ],
+   "role": {
+    "name": "ingestion-agent",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-ingestion-agent",
+    "title": "Ingestion engine",
+    "skills": [
+     {
+      "name": "asset-extraction"
+     },
+     {
+      "name": "kg-subscription"
+     },
+     {
+      "name": "library-ingestion"
+     },
+     {
+      "name": "materialize-on-demand"
+     },
+     {
+      "name": "materialize-remote"
+     },
+     {
+      "name": "theme-art-intake"
+     },
+     {
+      "name": "theme-ui-review"
+     },
+     {
+      "name": "upload-naming"
+     }
+    ]
+   }
+  },
+  "Task_Triage": {
+   "id": "Task_Triage",
+   "name": "Triage: confirm the anchor, type and priority",
+   "type": "bpmn:Task",
+   "lane": "Review coordinator",
+   "skills": [
+    {
+     "name": "public-comment"
+    }
+   ],
+   "role": {
+    "name": "review-coordinator",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-review-coordinator",
+    "title": "Review coordinator",
+    "skills": [
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "review-heatmap"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "visual-diff"
+     }
+    ]
+   }
+  },
+  "Task_ProposeChangeSets": {
+   "id": "Task_ProposeChangeSets",
+   "name": "Propose change-sets, as records with no issue yet",
+   "type": "bpmn:Task",
+   "lane": "Intake agent",
+   "skills": [
+    {
+     "name": "public-comment"
+    }
+   ],
+   "role": {
+    "name": "ingestion-agent",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-ingestion-agent",
+    "title": "Ingestion engine",
+    "skills": [
+     {
+      "name": "asset-extraction"
+     },
+     {
+      "name": "kg-subscription"
+     },
+     {
+      "name": "library-ingestion"
+     },
+     {
+      "name": "materialize-on-demand"
+     },
+     {
+      "name": "materialize-remote"
+     },
+     {
+      "name": "theme-art-intake"
+     },
+     {
+      "name": "theme-ui-review"
+     },
+     {
+      "name": "upload-naming"
+     }
+    ]
+   }
+  },
+  "Task_GroupChangeSets": {
+   "id": "Task_GroupChangeSets",
+   "name": "Agree each change-set's requirements on its issue",
+   "type": "bpmn:Task",
+   "lane": "Review committee",
+   "skills": [
+    {
+     "name": "public-comment"
+    }
+   ],
+   "role": {
+    "name": "reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-reviewer",
+    "title": "Reviewer / SME",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "narrative-asserts-code"
+     },
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "visual-diff"
+     },
+     {
+      "name": "voice-overlay-review"
+     }
+    ]
+   }
+  },
+  "Task_RerouteChangeSet": {
+   "id": "Task_RerouteChangeSet",
+   "name": "Re-route to another committee",
+   "type": "bpmn:UserTask",
+   "lane": "Review committee",
+   "skills": [
+    {
+     "name": "public-comment"
+    }
+   ],
+   "role": {
+    "name": "reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-reviewer",
+    "title": "Reviewer / SME",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "narrative-asserts-code"
+     },
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "visual-diff"
+     },
+     {
+      "name": "voice-overlay-review"
+     }
+    ]
+   }
+  },
+  "Task_Assign": {
+   "id": "Task_Assign",
+   "name": "Assign to committee members",
+   "type": "bpmn:Task",
+   "lane": "Review coordinator",
+   "skills": [
+    {
+     "name": "public-comment"
+    }
+   ],
+   "role": {
+    "name": "review-coordinator",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-review-coordinator",
+    "title": "Review coordinator",
+    "skills": [
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "review-heatmap"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "visual-diff"
+     }
+    ]
+   }
+  },
+  "Task_CommitteeRecommends": {
+   "id": "Task_CommitteeRecommends",
+   "name": "Recommend a decision, with a rationale",
+   "type": "bpmn:Task",
+   "lane": "Review committee",
+   "skills": [
+    {
+     "name": "public-comment"
+    }
+   ],
+   "role": {
+    "name": "reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-reviewer",
+    "title": "Reviewer / SME",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "narrative-asserts-code"
+     },
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "visual-diff"
+     },
+     {
+      "name": "voice-overlay-review"
+     }
+    ]
+   }
+  },
+  "Task_EditorDecides": {
+   "id": "Task_EditorDecides",
+   "name": "Decide, weighing the recommendations",
+   "type": "bpmn:Task",
+   "lane": "Editor",
+   "skills": [
+    {
+     "name": "public-comment"
+    }
+   ],
+   "role": {
+    "name": "editor",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-editor",
+    "title": "Editor",
+    "skills": [
+     {
+      "name": "bpmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "content-author",
+      "via": "author"
+     },
+     {
+      "name": "content-plan",
+      "via": "author"
+     },
+     {
+      "name": "content-review",
+      "via": "author"
+     },
+     {
+      "name": "content-validate"
+     },
+     {
+      "name": "decision-audit",
+      "via": "author"
+     },
+     {
+      "name": "dmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "evidence-appraisal",
+      "via": "author"
+     },
+     {
+      "name": "kg-affordances",
+      "via": "author"
+     },
+     {
+      "name": "staging-review",
+      "via": "author"
+     },
+     {
+      "name": "todo-manager",
+      "via": "author"
+     },
+     {
+      "name": "voice-authoring-guidance"
+     }
+    ]
+   }
+  },
+  "CallActivity_MakeChange": {
+   "id": "CallActivity_MakeChange",
+   "name": "Make the change, check it and merge it",
+   "type": "bpmn:CallActivity",
+   "lane": "Editor",
+   "skills": [
+    {
+     "name": "public-comment"
+    }
+   ],
+   "calls": {
+    "name": "Make a decided public comment change",
+    "href": "public-comment-change.html",
+    "diagram": "public-comment-change.html"
+   },
+   "role": {
+    "name": "editor",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-editor",
+    "title": "Editor",
+    "skills": [
+     {
+      "name": "bpmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "content-author",
+      "via": "author"
+     },
+     {
+      "name": "content-plan",
+      "via": "author"
+     },
+     {
+      "name": "content-review",
+      "via": "author"
+     },
+     {
+      "name": "content-validate"
+     },
+     {
+      "name": "decision-audit",
+      "via": "author"
+     },
+     {
+      "name": "dmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "evidence-appraisal",
+      "via": "author"
+     },
+     {
+      "name": "kg-affordances",
+      "via": "author"
+     },
+     {
+      "name": "staging-review",
+      "via": "author"
+     },
+     {
+      "name": "todo-manager",
+      "via": "author"
+     },
+     {
+      "name": "voice-authoring-guidance"
+     }
+    ]
+   }
+  },
+  "Task_Withdraw": {
+   "id": "Task_Withdraw",
+   "name": "Record the withdrawal",
+   "type": "bpmn:Task",
+   "lane": "Public commenter",
+   "skills": [
+    {
+     "name": "public-comment"
+    }
+   ],
+   "role": {
+    "name": "feedback-provider",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-feedback-provider",
+    "title": "Feedback provider",
+    "skills": [
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "todo-review"
+     },
+     {
+      "name": "wireframe-design-review"
+     }
+    ]
+   }
+  }
+ }
+}

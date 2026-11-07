@@ -1,0 +1,62 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "PHW.B",
+ "tasks": {
+  "PHW.B.1": {
+   "id": "PHW.B.1",
+   "name": "B1. Submit Sharer PKI signing key [ITI-YY1] Submit PKI Material with DID",
+   "type": "bpmn:ServiceTask",
+   "lane": "VHL Sharer (grouped with PCF Consent Recorder)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.B.2": {
+   "id": "PHW.B.2",
+   "name": "B2. Publish key in Trust Anchor trust list [ITI-YY1] (GDHCN or other anchor)",
+   "type": "bpmn:ServiceTask",
+   "lane": "Trust Anchor (e.g. GDHCN, national, or regional anchor)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.B.3": {
+   "id": "PHW.B.3",
+   "name": "B3. Request VHL generation [ITI-YY3] Generate VHL ($generate-vhl)",
+   "type": "bpmn:UserTask",
+   "lane": "VHL Holder (Patient / Personal Health Wallet)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.B.4": {
+   "id": "PHW.B.4",
+   "name": "B4. Query or record active Consent [ITI-108] Access Consent: Search / Post",
+   "type": "bpmn:ServiceTask",
+   "lane": "VHL Sharer (grouped with PCF Consent Recorder)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.B.5": {
+   "id": "PHW.B.5",
+   "name": "B5. Return active PCF Consent (Consent.id + versionId) [ITI-108] Access Consent",
+   "type": "bpmn:ServiceTask",
+   "lane": "PCF Consent Registry",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.B.6": {
+   "id": "PHW.B.6",
+   "name": "B6. Assemble & sign VHL payload bound to Consent [ITI-YY3] Generate VHL",
+   "type": "bpmn:ServiceTask",
+   "lane": "VHL Sharer (grouped with PCF Consent Recorder)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.B.7": {
+   "id": "PHW.B.7",
+   "name": "B7. Store signed VHL in Personal Health Wallet [ITI-YY3] Generate VHL",
+   "type": "bpmn:UserTask",
+   "lane": "VHL Holder (Patient / Personal Health Wallet)",
+   "skills": [],
+   "binding": "unbound"
+  }
+ }
+}

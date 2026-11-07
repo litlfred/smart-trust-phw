@@ -1,0 +1,83 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "PHW.I",
+ "tasks": {
+  "PHW.I.1": {
+   "id": "PHW.I.1",
+   "name": "I1. Send Retrieve Manifest authenticated by the VHL option in use",
+   "type": "bpmn:ServiceTask",
+   "lane": "VHL Receiver (receiving organisation or application)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.I.2": {
+   "id": "PHW.I.2",
+   "name": "I2. Authenticate the receiver against the trust list",
+   "type": "bpmn:ServiceTask",
+   "lane": "VHL Sharer (enforcement and decision point)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.I.3": {
+   "id": "PHW.I.3",
+   "name": "I3. Return receiver key [ITI-YY2] Retrieve Trust List with DID",
+   "type": "bpmn:ServiceTask",
+   "lane": "Trust Anchor (GDHCN or another anchor)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.I.5": {
+   "id": "PHW.I.5",
+   "name": "I5. Decide under every applicable agreement (process F)",
+   "type": "bpmn:CallActivity",
+   "lane": "VHL Sharer (enforcement and decision point)",
+   "skills": [],
+   "calls": {
+    "name": "F. Access Decision under a Data Sharing Agreement (DSA P11)",
+    "href": "PHW.F.html",
+    "diagram": "PHW.F.html"
+   },
+   "binding": "unbound"
+  },
+  "PHW.I.6": {
+   "id": "PHW.I.6",
+   "name": "I6. Return manifest and documents [ITI-YY5] /",
+   "type": "bpmn:ServiceTask",
+   "lane": "VHL Sharer (enforcement and decision point)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.I.7": {
+   "id": "PHW.I.7",
+   "name": "I7. Refuse with OperationOutcome [ITI-YY5] (deny or unknown)",
+   "type": "bpmn:ServiceTask",
+   "lane": "VHL Sharer (enforcement and decision point)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.I.8": {
+   "id": "PHW.I.8",
+   "name": "I8. Apply the normal VHL rules (no agreement applies)",
+   "type": "bpmn:ServiceTask",
+   "lane": "VHL Sharer (enforcement and decision point)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.I.9": {
+   "id": "PHW.I.9",
+   "name": "I9. Send ATNA audit event citing the agreement [ITI-20] Record Audit Event",
+   "type": "bpmn:SendTask",
+   "lane": "VHL Sharer (enforcement and decision point)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.I.11": {
+   "id": "PHW.I.11",
+   "name": "I11. Process documents or refusal [ITI-YY5] response",
+   "type": "bpmn:ServiceTask",
+   "lane": "VHL Receiver (receiving organisation or application)",
+   "skills": [],
+   "binding": "unbound"
+  }
+ }
+}

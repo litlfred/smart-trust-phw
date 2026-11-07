@@ -1,0 +1,547 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_Lifecycle",
+ "tasks": {
+  "Task_Plan": {
+   "id": "Task_Plan",
+   "name": "Plan scope, team, artifacts",
+   "type": "bpmn:UserTask",
+   "lane": "Programme manager",
+   "skills": [
+    {
+     "name": "content-plan"
+    }
+   ],
+   "role": {
+    "name": "programme-manager",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-programme-manager",
+    "title": "Programme manager",
+    "skills": [
+     {
+      "name": "content-plan"
+     },
+     {
+      "name": "content-publish"
+     },
+     {
+      "name": "content-retire"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "decision-methodology-selector"
+     },
+     {
+      "name": "methodology-adoption"
+     },
+     {
+      "name": "release-epic-planning"
+     },
+     {
+      "name": "release-lifecycle"
+     }
+    ]
+   }
+  },
+  "Task_SeedBeans": {
+   "id": "Task_SeedBeans",
+   "name": "Seed the work plan",
+   "type": "bpmn:Task",
+   "lane": "Editors + authoring agents",
+   "skills": [
+    {
+     "name": "todo-manager"
+    }
+   ],
+   "shared": {
+    "id": "GT_SeedWorkPlan",
+    "type": "bpmn:GlobalTask"
+   },
+   "role": {
+    "name": "editor",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-editor",
+    "title": "Editor",
+    "skills": [
+     {
+      "name": "bpmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "content-author",
+      "via": "author"
+     },
+     {
+      "name": "content-plan",
+      "via": "author"
+     },
+     {
+      "name": "content-review",
+      "via": "author"
+     },
+     {
+      "name": "content-validate"
+     },
+     {
+      "name": "decision-audit",
+      "via": "author"
+     },
+     {
+      "name": "dmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "evidence-appraisal",
+      "via": "author"
+     },
+     {
+      "name": "kg-affordances",
+      "via": "author"
+     },
+     {
+      "name": "staging-review",
+      "via": "author"
+     },
+     {
+      "name": "todo-manager",
+      "via": "author"
+     },
+     {
+      "name": "voice-authoring-guidance"
+     }
+    ]
+   }
+  },
+  "CallActivity_Editing": {
+   "id": "CallActivity_Editing",
+   "name": "Editing and HCI validation",
+   "type": "bpmn:CallActivity",
+   "lane": "Editors + authoring agents",
+   "skills": [
+    {
+     "name": "content-author"
+    },
+    {
+     "name": "content-validate"
+    },
+    {
+     "name": "content-review"
+    }
+   ],
+   "calls": {
+    "name": "Editing and HCI validation",
+    "href": "editing-hci-validation.html",
+    "diagram": "editing-hci-validation.html"
+   },
+   "role": {
+    "name": "editor",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-editor",
+    "title": "Editor",
+    "skills": [
+     {
+      "name": "bpmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "content-author",
+      "via": "author"
+     },
+     {
+      "name": "content-plan",
+      "via": "author"
+     },
+     {
+      "name": "content-review",
+      "via": "author"
+     },
+     {
+      "name": "content-validate"
+     },
+     {
+      "name": "decision-audit",
+      "via": "author"
+     },
+     {
+      "name": "dmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "evidence-appraisal",
+      "via": "author"
+     },
+     {
+      "name": "kg-affordances",
+      "via": "author"
+     },
+     {
+      "name": "staging-review",
+      "via": "author"
+     },
+     {
+      "name": "todo-manager",
+      "via": "author"
+     },
+     {
+      "name": "voice-authoring-guidance"
+     }
+    ]
+   }
+  },
+  "Task_Test": {
+   "id": "Task_Test",
+   "name": "Integration test and QA sweep",
+   "type": "bpmn:ServiceTask",
+   "lane": "Validation and QA (mechanical + agents)",
+   "skills": [
+    {
+     "name": "content-test"
+    }
+   ],
+   "role": {
+    "name": "validation-pipeline",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-validation-pipeline",
+    "title": "Validation pipeline",
+    "skills": [
+     {
+      "name": "content-test"
+     },
+     {
+      "name": "content-validate"
+     },
+     {
+      "name": "kg-affordances"
+     },
+     {
+      "name": "qa-reports"
+     }
+    ]
+   }
+  },
+  "CallActivity_Publication": {
+   "id": "CallActivity_Publication",
+   "name": "Draft, review and publish",
+   "type": "bpmn:CallActivity",
+   "lane": "Publication manager",
+   "skills": [
+    {
+     "name": "content-review"
+    },
+    {
+     "name": "content-publish"
+    }
+   ],
+   "calls": {
+    "name": "Draft, review and publish",
+    "href": "draft-to-publication.html",
+    "diagram": "draft-to-publication.html"
+   },
+   "role": {
+    "name": "publication-manager",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-publication-manager",
+    "title": "Publication manager",
+    "skills": [
+     {
+      "name": "content-publish"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "instance-publication"
+     },
+     {
+      "name": "package-release"
+     },
+     {
+      "name": "publish-verification"
+     },
+     {
+      "name": "qa-report-signing"
+     },
+     {
+      "name": "render-kg-to-cdn"
+     },
+     {
+      "name": "staging-review"
+     }
+    ]
+   }
+  },
+  "Task_Feedback": {
+   "id": "Task_Feedback",
+   "name": "Triage published feedback",
+   "type": "bpmn:UserTask",
+   "lane": "Review team and SMEs",
+   "skills": [
+    {
+     "name": "content-feedback"
+    }
+   ],
+   "role": {
+    "name": "reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-reviewer",
+    "title": "Reviewer / SME",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "narrative-asserts-code"
+     },
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "visual-diff"
+     },
+     {
+      "name": "voice-overlay-review"
+     }
+    ]
+   }
+  },
+  "Task_FeedbackBeans": {
+   "id": "Task_FeedbackBeans",
+   "name": "File feedback as beans",
+   "type": "bpmn:Task",
+   "lane": "Editors + authoring agents",
+   "skills": [
+    {
+     "name": "todo-manager"
+    },
+    {
+     "name": "content-feedback"
+    }
+   ],
+   "role": {
+    "name": "editor",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-editor",
+    "title": "Editor",
+    "skills": [
+     {
+      "name": "bpmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "content-author",
+      "via": "author"
+     },
+     {
+      "name": "content-plan",
+      "via": "author"
+     },
+     {
+      "name": "content-review",
+      "via": "author"
+     },
+     {
+      "name": "content-validate"
+     },
+     {
+      "name": "decision-audit",
+      "via": "author"
+     },
+     {
+      "name": "dmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "evidence-appraisal",
+      "via": "author"
+     },
+     {
+      "name": "kg-affordances",
+      "via": "author"
+     },
+     {
+      "name": "staging-review",
+      "via": "author"
+     },
+     {
+      "name": "todo-manager",
+      "via": "author"
+     },
+     {
+      "name": "voice-authoring-guidance"
+     }
+    ]
+   }
+  },
+  "Task_Retire": {
+   "id": "Task_Retire",
+   "name": "Retire or archive",
+   "type": "bpmn:UserTask",
+   "lane": "Programme manager",
+   "skills": [
+    {
+     "name": "content-retire"
+    }
+   ],
+   "role": {
+    "name": "programme-manager",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-programme-manager",
+    "title": "Programme manager",
+    "skills": [
+     {
+      "name": "content-plan"
+     },
+     {
+      "name": "content-publish"
+     },
+     {
+      "name": "content-retire"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "decision-methodology-selector"
+     },
+     {
+      "name": "methodology-adoption"
+     },
+     {
+      "name": "release-epic-planning"
+     },
+     {
+      "name": "release-lifecycle"
+     }
+    ]
+   }
+  },
+  "Call_BeanOpen": {
+   "id": "Call_BeanOpen",
+   "name": "Open the bean",
+   "type": "bpmn:CallActivity",
+   "lane": "Editors + authoring agents",
+   "skills": [
+    {
+     "name": "bean-coordination"
+    }
+   ],
+   "calls": {
+    "name": "Open the bean",
+    "href": "bean-open.html",
+    "diagram": "bean-open.html"
+   },
+   "role": {
+    "name": "editor",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-editor",
+    "title": "Editor",
+    "skills": [
+     {
+      "name": "bpmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "content-author",
+      "via": "author"
+     },
+     {
+      "name": "content-plan",
+      "via": "author"
+     },
+     {
+      "name": "content-review",
+      "via": "author"
+     },
+     {
+      "name": "content-validate"
+     },
+     {
+      "name": "decision-audit",
+      "via": "author"
+     },
+     {
+      "name": "dmn-authoring",
+      "via": "author"
+     },
+     {
+      "name": "evidence-appraisal",
+      "via": "author"
+     },
+     {
+      "name": "kg-affordances",
+      "via": "author"
+     },
+     {
+      "name": "staging-review",
+      "via": "author"
+     },
+     {
+      "name": "todo-manager",
+      "via": "author"
+     },
+     {
+      "name": "voice-authoring-guidance"
+     }
+    ]
+   }
+  },
+  "Call_BeanClose": {
+   "id": "Call_BeanClose",
+   "name": "Close the bean",
+   "type": "bpmn:CallActivity",
+   "lane": "Programme manager",
+   "skills": [
+    {
+     "name": "todo-manager"
+    }
+   ],
+   "calls": {
+    "name": "Close the bean",
+    "href": "bean-close.html",
+    "diagram": "bean-close.html"
+   },
+   "role": {
+    "name": "programme-manager",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-programme-manager",
+    "title": "Programme manager",
+    "skills": [
+     {
+      "name": "content-plan"
+     },
+     {
+      "name": "content-publish"
+     },
+     {
+      "name": "content-retire"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "decision-methodology-selector"
+     },
+     {
+      "name": "methodology-adoption"
+     },
+     {
+      "name": "release-epic-planning"
+     },
+     {
+      "name": "release-lifecycle"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "PHW.E",
+ "tasks": {
+  "PHW.E.1": {
+   "id": "PHW.E.1",
+   "name": "E1. Request token with authorization_details naming the agreement, plus DPoP proof or mTLS",
+   "type": "bpmn:ServiceTask",
+   "lane": "Data Recipient System (OAuth client)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.E.2": {
+   "id": "PHW.E.2",
+   "name": "E2. Authenticate client (private_key_jwt or mTLS) and check DPoP proof",
+   "type": "bpmn:ServiceTask",
+   "lane": "Provider Authorization Server (administrator + decision point)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.E.3": {
+   "id": "PHW.E.3",
+   "name": "E3. Decide access under the agreement (process F)",
+   "type": "bpmn:CallActivity",
+   "lane": "Provider Authorization Server (administrator + decision point)",
+   "skills": [],
+   "calls": {
+    "name": "F. Access Decision under a Data Sharing Agreement (DSA P11)",
+    "href": "PHW.F.html",
+    "diagram": "PHW.F.html"
+   },
+   "binding": "unbound"
+  },
+  "PHW.E.4": {
+   "id": "PHW.E.4",
+   "name": "E4. Issue short-lived key-bound token with granted details",
+   "type": "bpmn:ServiceTask",
+   "lane": "Provider Authorization Server (administrator + decision point)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.E.5": {
+   "id": "PHW.E.5",
+   "name": "E5. Refuse token request (deny or unknown)",
+   "type": "bpmn:ServiceTask",
+   "lane": "Provider Authorization Server (administrator + decision point)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.E.6": {
+   "id": "PHW.E.6",
+   "name": "E6. Call the API with token and DPoP proof",
+   "type": "bpmn:ServiceTask",
+   "lane": "Data Recipient System (OAuth client)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.E.7": {
+   "id": "PHW.E.7",
+   "name": "E7. Validate token, key binding and granted details on every call",
+   "type": "bpmn:ServiceTask",
+   "lane": "Data Provider Resource Server (enforcement point)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.E.8": {
+   "id": "PHW.E.8",
+   "name": "E8. Record audit and provenance (process G)",
+   "type": "bpmn:CallActivity",
+   "lane": "Data Provider Resource Server (enforcement point)",
+   "skills": [],
+   "calls": {
+    "name": "G. Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12)",
+    "href": "PHW.G.html",
+    "diagram": "PHW.G.html"
+   },
+   "binding": "unbound"
+  },
+  "PHW.E.9": {
+   "id": "PHW.E.9",
+   "name": "E9. Return data or refusal",
+   "type": "bpmn:ServiceTask",
+   "lane": "Data Provider Resource Server (enforcement point)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.E.10": {
+   "id": "PHW.E.10",
+   "name": "E10. Process response",
+   "type": "bpmn:ServiceTask",
+   "lane": "Data Recipient System (OAuth client)",
+   "skills": [],
+   "binding": "unbound"
+  }
+ }
+}

@@ -1,0 +1,478 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_ContentChangeReviewCommittee",
+ "tasks": {
+  "Task_CompareBeforeAfter": {
+   "id": "Task_CompareBeforeAfter",
+   "name": "Compare main vs staging",
+   "type": "bpmn:Task",
+   "lane": "Review Committee",
+   "skills": [
+    {
+     "name": "staging-review"
+    },
+    {
+     "name": "visual-diff"
+    },
+    {
+     "name": "rendered-impact"
+    }
+   ],
+   "role": {
+    "name": "reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-reviewer",
+    "title": "Reviewer / SME",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "narrative-asserts-code"
+     },
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "visual-diff"
+     },
+     {
+      "name": "voice-overlay-review"
+     }
+    ]
+   }
+  },
+  "Task_IngestComments": {
+   "id": "Task_IngestComments",
+   "name": "Ingest tagged review comments",
+   "type": "bpmn:Task",
+   "lane": "Review Coordinator",
+   "skills": [
+    {
+     "name": "review-comments"
+    }
+   ],
+   "role": {
+    "name": "review-coordinator",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-review-coordinator",
+    "title": "Review coordinator",
+    "skills": [
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "review-heatmap"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "visual-diff"
+     }
+    ]
+   }
+  },
+  "Task_SliceAndAssign": {
+   "id": "Task_SliceAndAssign",
+   "name": "Slice the change and assign reviewers",
+   "type": "bpmn:Task",
+   "lane": "Review Coordinator",
+   "skills": [
+    {
+     "name": "review-heatmap"
+    },
+    {
+     "name": "staging-review"
+    },
+    {
+     "name": "rendered-impact"
+    }
+   ],
+   "role": {
+    "name": "review-coordinator",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-review-coordinator",
+    "title": "Review coordinator",
+    "skills": [
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "review-heatmap"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "visual-diff"
+     }
+    ]
+   }
+  },
+  "Call_ReviewSlices": {
+   "id": "Call_ReviewSlices",
+   "name": "Review each slice",
+   "type": "bpmn:CallActivity",
+   "lane": "Review Committee",
+   "skills": [
+    {
+     "name": "content-review"
+    },
+    {
+     "name": "review-comments"
+    }
+   ],
+   "calls": {
+    "name": "Review task",
+    "href": "review-task.html",
+    "diagram": "review-task.html"
+   },
+   "role": {
+    "name": "reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-reviewer",
+    "title": "Reviewer / SME",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "narrative-asserts-code"
+     },
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "visual-diff"
+     },
+     {
+      "name": "voice-overlay-review"
+     }
+    ]
+   }
+  },
+  "Task_WithdrawComment": {
+   "id": "Task_WithdrawComment",
+   "name": "Withdraw a review comment",
+   "type": "bpmn:Task",
+   "lane": "Review Committee",
+   "skills": [
+    {
+     "name": "review-comments"
+    }
+   ],
+   "role": {
+    "name": "reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-reviewer",
+    "title": "Reviewer / SME",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "narrative-asserts-code"
+     },
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "visual-diff"
+     },
+     {
+      "name": "voice-overlay-review"
+     }
+    ]
+   }
+  },
+  "Call_Adjudication": {
+   "id": "Call_Adjudication",
+   "name": "Adjudicate the disagreement",
+   "type": "bpmn:CallActivity",
+   "lane": "Review Committee",
+   "skills": [
+    {
+     "name": "adjudication"
+    }
+   ],
+   "calls": {
+    "name": "Adjudication",
+    "href": "adjudication.html",
+    "diagram": "adjudication.html"
+   },
+   "role": {
+    "name": "reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-reviewer",
+    "title": "Reviewer / SME",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "narrative-asserts-code"
+     },
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "visual-diff"
+     },
+     {
+      "name": "voice-overlay-review"
+     }
+    ]
+   }
+  },
+  "Task_ReviewUses": {
+   "id": "Task_ReviewUses",
+   "name": "Review the editorial dependencies",
+   "type": "bpmn:Task",
+   "lane": "Review Committee",
+   "skills": [
+    {
+     "name": "uses-editorial-review"
+    }
+   ],
+   "role": {
+    "name": "reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-reviewer",
+    "title": "Reviewer / SME",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "narrative-asserts-code"
+     },
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "visual-diff"
+     },
+     {
+      "name": "voice-overlay-review"
+     }
+    ]
+   }
+  },
+  "Task_ReviewImpact": {
+   "id": "Task_ReviewImpact",
+   "name": "Review impact assessment",
+   "type": "bpmn:Task",
+   "lane": "Review Committee",
+   "skills": [
+    {
+     "name": "content-review"
+    }
+   ],
+   "role": {
+    "name": "reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-reviewer",
+    "title": "Reviewer / SME",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "narrative-asserts-code"
+     },
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "visual-diff"
+     },
+     {
+      "name": "voice-overlay-review"
+     }
+    ]
+   }
+  },
+  "Task_RequestChanges": {
+   "id": "Task_RequestChanges",
+   "name": "Request changes",
+   "type": "bpmn:Task",
+   "lane": "Review Committee",
+   "skills": [
+    {
+     "name": "content-review"
+    },
+    {
+     "name": "content-review"
+    }
+   ],
+   "role": {
+    "name": "reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-reviewer",
+    "title": "Reviewer / SME",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "narrative-asserts-code"
+     },
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "visual-diff"
+     },
+     {
+      "name": "voice-overlay-review"
+     }
+    ]
+   }
+  },
+  "Task_Approve": {
+   "id": "Task_Approve",
+   "name": "Approve",
+   "type": "bpmn:Task",
+   "lane": "Review Committee",
+   "skills": [
+    {
+     "name": "decision-audit"
+    }
+   ],
+   "role": {
+    "name": "reviewer",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-reviewer",
+    "title": "Reviewer / SME",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "content-feedback"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "narrative-asserts-code"
+     },
+     {
+      "name": "rendered-impact"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "translation-manager"
+     },
+     {
+      "name": "visual-diff"
+     },
+     {
+      "name": "voice-overlay-review"
+     }
+    ]
+   }
+  }
+ }
+}

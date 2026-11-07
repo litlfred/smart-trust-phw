@@ -1,0 +1,3358 @@
+{
+  "$schema": "folio-fhir-artifact-index/v2",
+  "id": "smart-trust-phw",
+  "title": "smart.who.int.trust-phw — artefact index (from the IG Publisher AST cache)",
+  "packageId": "smart.who.int.trust-phw",
+  "version": "0.1.0",
+  "canonicalBase": "http://smart.who.int/trust-phw",
+  "source": {
+    "kind": "output",
+    "of": "output-ast",
+    "revision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+    "readAt": "2026-11-07"
+  },
+  "provenance": {},
+  "sidecarApi": "present",
+  "count": 64,
+  "artifacts": [
+    {
+      "key": "ActorDefinition/ConsentRegistry",
+      "resourceType": "ActorDefinition",
+      "id": "ConsentRegistry",
+      "name": "ConsentRegistry",
+      "title": "Consent Registry",
+      "description": "[IHE PCF Consent Registry](https://profiles.ihe.net/ITI/PCF/volume-1.html#153112-consent-registry) actor",
+      "canonical": "http://smart.who.int/trust-phw/ActorDefinition/ConsentRegistry",
+      "version": "0.1.0",
+      "category": "Requirements: Actor Definitions",
+      "profiles": [
+        "http://smart.who.int/base/StructureDefinition/SGActor"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ActorDefinition-ConsentRegistry.json"
+        },
+        "localPath": "output-ast/resources/ActorDefinition/ConsentRegistry--f0676388.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "ActorDefinition/Holder",
+      "resourceType": "ActorDefinition",
+      "id": "Holder",
+      "name": "Holder",
+      "title": "Holder",
+      "description": "Holder (person) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://profiles.ihe.net/ITI/VHL/index.html)",
+      "canonical": "http://smart.who.int/trust-phw/ActorDefinition/Holder",
+      "version": "0.1.0",
+      "category": "Requirements: Actor Definitions",
+      "profiles": [
+        "http://smart.who.int/base/StructureDefinition/SGActor"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ActorDefinition-Holder.json"
+        },
+        "localPath": "output-ast/resources/ActorDefinition/Holder--9c1606a8.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "ActorDefinition/Issuer",
+      "resourceType": "ActorDefinition",
+      "id": "Issuer",
+      "name": "Issuer",
+      "title": "Issuer",
+      "description": "Issuer (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://profiles.ihe.net/ITI/VHL/index.html)",
+      "canonical": "http://smart.who.int/trust-phw/ActorDefinition/Issuer",
+      "version": "0.1.0",
+      "category": "Requirements: Actor Definitions",
+      "profiles": [
+        "http://smart.who.int/base/StructureDefinition/SGActor"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ActorDefinition-Issuer.json"
+        },
+        "localPath": "output-ast/resources/ActorDefinition/Issuer--8214cf7f.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "ActorDefinition/Receiver",
+      "resourceType": "ActorDefinition",
+      "id": "Receiver",
+      "name": "Receiver",
+      "title": "Receiver",
+      "description": "Receiver (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://profiles.ihe.net/ITI/VHL/index.html)",
+      "canonical": "http://smart.who.int/trust-phw/ActorDefinition/Receiver",
+      "version": "0.1.0",
+      "category": "Requirements: Actor Definitions",
+      "profiles": [
+        "http://smart.who.int/base/StructureDefinition/SGActor"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ActorDefinition-Receiver.json"
+        },
+        "localPath": "output-ast/resources/ActorDefinition/Receiver--1a2f8491.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "ActorDefinition/TrustNetworkAnchor",
+      "resourceType": "ActorDefinition",
+      "id": "TrustNetworkAnchor",
+      "name": "Trust Network Anchor",
+      "title": "Trust Network Anchor",
+      "description": "Trust Anchor which receives and distributes PKI-material within a Trust Network",
+      "canonical": "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkAnchor",
+      "version": "0.1.0",
+      "category": "Requirements: Actor Definitions",
+      "profiles": [
+        "http://smart.who.int/base/StructureDefinition/SGActor"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ActorDefinition-TrustNetworkAnchor.json"
+        },
+        "localPath": "output-ast/resources/ActorDefinition/TrustNetworkAnchor--26fc7455.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "ActorDefinition/TrustNetworkParticipant",
+      "resourceType": "ActorDefinition",
+      "id": "TrustNetworkParticipant",
+      "name": "Trust Network Participant",
+      "title": "Trust Network Participant",
+      "description": "Trust Network Participant which publishes and or receives PKI-material within a Trust Network",
+      "canonical": "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkParticipant",
+      "version": "0.1.0",
+      "category": "Requirements: Actor Definitions",
+      "profiles": [
+        "http://smart.who.int/base/StructureDefinition/SGActor"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ActorDefinition-TrustNetworkParticipant.json"
+        },
+        "localPath": "output-ast/resources/ActorDefinition/TrustNetworkParticipant--1d51a9bb.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Binary/DVCExample",
+      "resourceType": "Binary",
+      "id": "DVCExample",
+      "title": "DVCExample",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Binary-DVCExample.json"
+        },
+        "localPath": "output-ast/resources/Binary/DVCExample--fd8b7e3a.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Bundle/DVCDocExample",
+      "resourceType": "Bundle",
+      "id": "DVCDocExample",
+      "title": "DVCDocExample",
+      "category": "Other",
+      "profiles": [
+        "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Bundle-DVCDocExample.json"
+        },
+        "localPath": "output-ast/resources/Bundle/DVCDocExample--56e045c0.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Bundle/DVCDocSDExample",
+      "resourceType": "Bundle",
+      "id": "DVCDocSDExample",
+      "title": "DVCDocSDExample",
+      "category": "Other",
+      "profiles": [
+        "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Bundle-DVCDocSDExample.json"
+        },
+        "localPath": "output-ast/resources/Bundle/DVCDocSDExample--21b2cb26.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DVCRelationshipStatus",
+      "resourceType": "CodeSystem",
+      "id": "DVCRelationshipStatus",
+      "name": "DVCRelationshipStatus",
+      "title": "Relationship Status for Contact in Patient",
+      "description": "Relationship Status for Contact in Patient",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus",
+      "version": "0.1.0",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DVCRelationshipStatus--a31b480d.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DisclosureStatements",
+      "resourceType": "CodeSystem",
+      "id": "DisclosureStatements",
+      "name": "DisclosureStatements",
+      "title": "Disclosure Statements",
+      "description": "Disclosure Statement Code System",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements",
+      "version": "0.1.0",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DisclosureStatements.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DisclosureStatements--7652127c.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DocumentationSections",
+      "resourceType": "CodeSystem",
+      "id": "DocumentationSections",
+      "name": "DocumentationSections",
+      "title": "Smart Guidelines Documentation Section",
+      "description": "CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections",
+      "version": "0.1.0",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DocumentationSections.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DocumentationSections--55c188d5.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "CodeSystem/HL.TYPE",
+      "resourceType": "CodeSystem",
+      "id": "HL.TYPE",
+      "name": "HL_TYPE",
+      "title": "HL Type CodeSystem",
+      "description": "CodeSystem for Health Link Type that has codes classifying type of Smart Health Link",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE",
+      "version": "0.1.0",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-HL.TYPE.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/HL.TYPE--5f3c0eab.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "CodeSystem/ICVP.Core",
+      "resourceType": "CodeSystem",
+      "id": "ICVP.Core",
+      "name": "ICVP_Core",
+      "title": "ICVP.Core CodeSystem for Data Elements",
+      "description": "CodeSystem for ICVP.Core Data Elements from the Digital ICVP Core Data Dictionary",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core",
+      "version": "0.1.0",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-ICVP.Core.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/ICVP.Core--e55c6461.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "ConceptMap/ICVP.Core.ConceptMap",
+      "resourceType": "ConceptMap",
+      "id": "ICVP.Core.ConceptMap",
+      "name": "ICVP_Core_ConceptMap",
+      "title": "ConceptMap to and from ICVP.Core Data Elements",
+      "description": "Mapping to and from ICVP.Core Data Dictionary to other code systems.",
+      "canonical": "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap",
+      "version": "0.1.0",
+      "category": "Terminology: Concept Maps",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ConceptMap-ICVP.Core.ConceptMap.json"
+        },
+        "localPath": "output-ast/resources/ConceptMap/ICVP.Core.ConceptMap--f9d45b70.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "ImplementationGuide/smart.who.int.trust-phw",
+      "resourceType": "ImplementationGuide",
+      "id": "smart.who.int.trust-phw",
+      "name": "trust-phw",
+      "title": "GDHCN Trust Network - Personal Health Wallet",
+      "description": "Describes common workflows and specifications for usage of personal health wallets on the WHO GDHCN Trust Network",
+      "canonical": "http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw",
+      "version": "0.1.0",
+      "profiles": [
+        "http://smart.who.int/base/StructureDefinition/SGImplementationGuide"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ImplementationGuide-smart.who.int.trust-phw.json"
+        },
+        "localPath": "output-ast/resources/ImplementationGuide/smart.who.int.trust-phw--15d459b0.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Organization/ExampleManufacturerOrg",
+      "resourceType": "Organization",
+      "id": "ExampleManufacturerOrg",
+      "title": "ExampleManufacturerOrg",
+      "description": "Manufacturer A",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Organization-ExampleManufacturerOrg.json"
+        },
+        "localPath": "output-ast/resources/Organization/ExampleManufacturerOrg--35cd219d.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Organization/InstituteI",
+      "resourceType": "Organization",
+      "id": "InstituteI",
+      "title": "InstituteI",
+      "description": "Institute I",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Organization-InstituteI.json"
+        },
+        "localPath": "output-ast/resources/Organization/InstituteI--9a065b27.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Organization/MinistryM",
+      "resourceType": "Organization",
+      "id": "MinistryM",
+      "title": "MinistryM",
+      "description": "Ministry M",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Organization-MinistryM.json"
+        },
+        "localPath": "output-ast/resources/Organization/MinistryM--14f900cb.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Permission/DSAPermissionExample",
+      "resourceType": "Permission",
+      "id": "DSAPermissionExample",
+      "title": "DSAPermissionExample",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Permission-DSAPermissionExample.json"
+        },
+        "localPath": "output-ast/resources/Permission/DSAPermissionExample--3cdbf570.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Questionnaire/PreQual",
+      "resourceType": "Questionnaire",
+      "id": "PreQual",
+      "title": "DVC Model Questionnaire",
+      "description": "Questionnaire for DVC Logical Model with the WHO PreQual DB",
+      "canonical": "http://smart.who.int/trust-phw/Questionnaire/PreQual",
+      "version": "0.1.0",
+      "category": "Other",
+      "profiles": [
+        "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Questionnaire-PreQual.json"
+        },
+        "localPath": "output-ast/resources/Questionnaire/PreQual--8bf8953b.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Requirements/accept-mtls-connection",
+      "resourceType": "Requirements",
+      "id": "accept-mtls-connection",
+      "title": "Accept mTLS",
+      "description": "Accept an mTLS in order to conduct further transactions under a secure channel",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/accept-mtls-connection",
+      "version": "0.1.0",
+      "category": "Requirements: Formal Requirements",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Requirements-accept-mtls-connection.json"
+        },
+        "localPath": "output-ast/resources/Requirements/accept-mtls-connection--317cc515.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Requirements/distribute-pki-material",
+      "resourceType": "Requirements",
+      "id": "distribute-pki-material",
+      "title": "Distribute PKI material",
+      "description": "Make received trust material available through a distrubution point to a Trust Network Participant",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/distribute-pki-material",
+      "version": "0.1.0",
+      "category": "Requirements: Formal Requirements",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Requirements-distribute-pki-material.json"
+        },
+        "localPath": "output-ast/resources/Requirements/distribute-pki-material--84fc2d1a.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Requirements/initiate-mtls-connection",
+      "resourceType": "Requirements",
+      "id": "initiate-mtls-connection",
+      "title": "Initiate mTLS",
+      "description": "Initiate an mTLS in order to conduct further transactions under a secure channel",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/initiate-mtls-connection",
+      "version": "0.1.0",
+      "category": "Requirements: Formal Requirements",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Requirements-initiate-mtls-connection.json"
+        },
+        "localPath": "output-ast/resources/Requirements/initiate-mtls-connection--2cacad0c.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Requirements/provide-a-vhl-to-a-receiver",
+      "resourceType": "Requirements",
+      "id": "provide-a-vhl-to-a-receiver",
+      "title": "Provide VHL or VDHC",
+      "description": "Is able to provide a VHL authorization mechanism or a VDHC to a VHL Receiver",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/provide-a-vhl-to-a-receiver",
+      "version": "0.1.0",
+      "category": "Requirements: Formal Requirements",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Requirements-provide-a-vhl-to-a-receiver.json"
+        },
+        "localPath": "output-ast/resources/Requirements/provide-a-vhl-to-a-receiver--78186493.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Requirements/publish-pki-material",
+      "resourceType": "Requirements",
+      "id": "publish-pki-material",
+      "title": "Publish PKI material",
+      "description": "Publish trust material to a Trust Anchor",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/publish-pki-material",
+      "version": "0.1.0",
+      "category": "Requirements: Formal Requirements",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Requirements-publish-pki-material.json"
+        },
+        "localPath": "output-ast/resources/Requirements/publish-pki-material--181d4be3.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Requirements/receive-a-vhl",
+      "resourceType": "Requirements",
+      "id": "receive-a-vhl",
+      "title": "Receive VHL or VDHC",
+      "description": "Is able to receive a VHL authorization mechanism or a VDHC from a Holder",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/receive-a-vhl",
+      "version": "0.1.0",
+      "category": "Requirements: Formal Requirements",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Requirements-receive-a-vhl.json"
+        },
+        "localPath": "output-ast/resources/Requirements/receive-a-vhl--1888ec69.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Requirements/receive-pki-material",
+      "resourceType": "Requirements",
+      "id": "receive-pki-material",
+      "title": "Receive PKI material",
+      "description": "Receive trust material from a Trust Network Participant, for distribution within the Trust Network",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/receive-pki-material",
+      "version": "0.1.0",
+      "category": "Requirements: Formal Requirements",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Requirements-receive-pki-material.json"
+        },
+        "localPath": "output-ast/resources/Requirements/receive-pki-material--7162d27a.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "Requirements/retrieve-pki-material",
+      "resourceType": "Requirements",
+      "id": "retrieve-pki-material",
+      "title": "Retrieve PKI material",
+      "description": "Retrieve PKI material from a distribution point",
+      "canonical": "http://smart.who.int/trust-phw/Requirements/retrieve-pki-material",
+      "version": "0.1.0",
+      "category": "Requirements: Formal Requirements",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Requirements-retrieve-pki-material.json"
+        },
+        "localPath": "output-ast/resources/Requirements/retrieve-pki-material--780bb00f.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/Bundle-uv-ips-DVC",
+      "resourceType": "StructureDefinition",
+      "id": "Bundle-uv-ips-DVC",
+      "name": "Bundle-uv-ips-DVC",
+      "title": "DVC Certificate - DVC Bundle for Digital Vaccine Certificates",
+      "description": "Profile of the IPS Bundle for representing digital vaccination certificates ",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-DVC",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-Bundle-uv-ips-DVC.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/Bundle-uv-ips-DVC--7dd7f65e.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/Bundle-uv-ips-PreQual",
+      "resourceType": "StructureDefinition",
+      "id": "Bundle-uv-ips-PreQual",
+      "name": "Bundle-uv-ips-PreQual",
+      "title": "DVC Certificate - IPS Bundle for WHO PreQual Databae",
+      "description": "Profile of the IPS Bundle for representing digital vaccination certificates from WHO PreQual Databae",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-PreQual",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-Bundle-uv-ips-PreQual.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/Bundle-uv-ips-PreQual--56ff251a.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/Composition-uv-ips-DVC",
+      "resourceType": "StructureDefinition",
+      "id": "Composition-uv-ips-DVC",
+      "name": "Composition-uv-ips-DVC",
+      "title": "DVC Certificate - IPS Composition ",
+      "description": "Profile of the IPS Composition for representing digital vaccination certificates with ",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-DVC",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-Composition-uv-ips-DVC.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/Composition-uv-ips-DVC--e720644a.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/Composition-uv-ips-PreQual",
+      "resourceType": "StructureDefinition",
+      "id": "Composition-uv-ips-PreQual",
+      "name": "Composition-uv-ips-PreQual",
+      "title": "DVC Certificate - IPS Composition for WHO PreQual Database",
+      "description": "Profile of the IPS Composition for representing digital vaccination certificates with WHO PreQual Database",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-PreQual",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-Composition-uv-ips-PreQual.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/Composition-uv-ips-PreQual--1ba3f132.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/DVC",
+      "resourceType": "StructureDefinition",
+      "id": "DVC",
+      "name": "DVC",
+      "title": "DVC",
+      "description": "Data elements for Digital Vaccination Certificate.",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVC",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "profiles": [
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVC.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVC--739cc30a.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVC.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVC.openapi.json",
+          "bytes": 9871
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVC.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVC.schema.json",
+          "bytes": 7609
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCBundle",
+      "resourceType": "StructureDefinition",
+      "id": "DVCBundle",
+      "name": "DVCBundle",
+      "title": "Digital Vaccination Certificate - Bundle",
+      "description": "Digital Vaccination Certificate - Bundle",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCBundle.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCBundle--15c357af.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCComposition",
+      "resourceType": "StructureDefinition",
+      "id": "DVCComposition",
+      "name": "DVCComposition",
+      "title": "Digital Vaccination Certificate - Composition",
+      "description": "Digital Vaccination Certificate - Composition",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCComposition.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCComposition--ca01cd04.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCImmunization",
+      "resourceType": "StructureDefinition",
+      "id": "DVCImmunization",
+      "name": "DVCImmunization",
+      "title": "DVC Immunization",
+      "description": "This profile represents a vaccination record for Digital Vaccine Certificates",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCImmunization.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCImmunization--f1cab872.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCMin",
+      "resourceType": "StructureDefinition",
+      "id": "DVCMin",
+      "name": "DVCMin",
+      "title": "DVC HCERT Payload",
+      "description": "Minimal DVC payload for use within an HCERT Payload",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCMin.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCMin--68da6fd9.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCMin.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCMin.openapi.json",
+          "bytes": 5728
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCMin.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCMin.schema.json",
+          "bytes": 3907
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCMinPreQual",
+      "resourceType": "StructureDefinition",
+      "id": "DVCMinPreQual",
+      "name": "DVCMinPreQual",
+      "title": "DVCMinPreQual",
+      "description": "DVC payload minimized  for use within an HCERT Payload with the WHO PreQual Vaccine Database",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinPreQual",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCMinPreQual.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCMinPreQual--763fb6ec.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCMinPreQual.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCMinPreQual.openapi.json",
+          "bytes": 5880
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCMinPreQual.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCMinPreQual.schema.json",
+          "bytes": 3993
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCMinVaccineDetails",
+      "resourceType": "StructureDefinition",
+      "id": "DVCMinVaccineDetails",
+      "name": "DVCMinVaccineDetails",
+      "title": "DVC HCert Vaccine Details (Minimal)",
+      "description": "DVC Vaccine Details for a minimal DVC payload for use within an HCERT Payload",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCMinVaccineDetails.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCMinVaccineDetails--018b8aaa.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCMinVaccineDetails.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCMinVaccineDetails.openapi.json",
+          "bytes": 2969
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCMinVaccineDetails.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCMinVaccineDetails.schema.json",
+          "bytes": 1560
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCMinVaccineDetailsPreQual",
+      "resourceType": "StructureDefinition",
+      "id": "DVCMinVaccineDetailsPreQual",
+      "name": "DVCMinVaccineDetailsPreQual",
+      "title": "DVC HCERT Payload for PreQual DB",
+      "description": "DVC payload for a minimal DVC for use within an HCERT Payload using the WHO PreQual Vaccine Database",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetailsPreQual",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCMinVaccineDetailsPreQual.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCMinVaccineDetailsPreQual--5595a504.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCMinVaccineDetailsPreQual.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCMinVaccineDetailsPreQual.openapi.json",
+          "bytes": 5644
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCMinVaccineDetailsPreQual.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCMinVaccineDetailsPreQual.schema.json",
+          "bytes": 3723
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCPatient",
+      "resourceType": "StructureDefinition",
+      "id": "DVCPatient",
+      "name": "DVCPatient",
+      "title": "DVC Patient",
+      "description": "DVC Patient",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCPatient.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCPatient--e9936153.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCPreQual",
+      "resourceType": "StructureDefinition",
+      "id": "DVCPreQual",
+      "name": "DVCPreQual",
+      "title": "PreQual",
+      "description": "Data elements for the Digital Vaccine Certificate using WHO Vaccine PreQualification database",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCPreQual",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "profiles": [
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCPreQual.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCPreQual--4f5c5243.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCPreQual.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCPreQual.openapi.json",
+          "bytes": 10066
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCPreQual.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCPreQual.schema.json",
+          "bytes": 7715
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCSD",
+      "resourceType": "StructureDefinition",
+      "id": "DVCSD",
+      "name": "DVCSD",
+      "title": "DVC with Selective Disclosure",
+      "description": "DVC with Selective Disclosure",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSD",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCSD.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCSD--2dcb82c8.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCSD.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCSD.openapi.json",
+          "bytes": 10729
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCSD.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCSD.schema.json",
+          "bytes": 8330
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCSDBundle",
+      "resourceType": "StructureDefinition",
+      "id": "DVCSDBundle",
+      "name": "DVCSDBundle",
+      "title": "DVC document Bundle with Selective Disclosure",
+      "description": "DVC document Bundle with Selective Disclosure for each entry",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCSDBundle.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCSDBundle--55fd1094.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCSDComposition",
+      "resourceType": "StructureDefinition",
+      "id": "DVCSDComposition",
+      "name": "DVCSDComposition",
+      "title": "Digital Vaccination Certificate - Composition",
+      "description": "Digital Vaccination Certificate - Composition",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDComposition",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCSDComposition.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCSDComposition--998fcaf4.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCSDImmunization",
+      "resourceType": "StructureDefinition",
+      "id": "DVCSDImmunization",
+      "name": "DVCSDImmunization",
+      "title": "DVC Immunization with Selective Disclosure",
+      "description": "DVC Immunization with Selective Disclosure",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDImmunization",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCSDImmunization.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCSDImmunization--0962296e.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCSDPatient",
+      "resourceType": "StructureDefinition",
+      "id": "DVCSDPatient",
+      "name": "DVCSDPatient",
+      "title": "DVC Patient with Selective Disclosure",
+      "description": "DVC Patient with Selective Disclosure",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDPatient",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCSDPatient.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCSDPatient--45922dee.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCVaccineDetails",
+      "resourceType": "StructureDefinition",
+      "id": "DVCVaccineDetails",
+      "name": "DVCVaccineDetails",
+      "title": "DVC - Vaccine Details",
+      "description": "Vaccine Data elements for the Digital Vaccination Certificates",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "profiles": [
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCVaccineDetails.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCVaccineDetails--9d81116b.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCVaccineDetails.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCVaccineDetails.openapi.json",
+          "bytes": 3635
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCVaccineDetails.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCVaccineDetails.schema.json",
+          "bytes": 2165
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/DVCVaccineDetailsPreQual",
+      "resourceType": "StructureDefinition",
+      "id": "DVCVaccineDetailsPreQual",
+      "name": "DVCVaccineDetailsPreQual",
+      "title": "PreQual - Vaccine Details",
+      "description": "Vaccine Data elements from the Pre Qual Database",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetailsPreQual",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "profiles": [
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DVCVaccineDetailsPreQual.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DVCVaccineDetailsPreQual--ab60d10f.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCVaccineDetailsPreQual.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCVaccineDetailsPreQual.openapi.json",
+          "bytes": 3521
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-DVCVaccineDetailsPreQual.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCVaccineDetailsPreQual.schema.json",
+          "bytes": 2067
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/DoseNumberCodeableConcept",
+      "resourceType": "StructureDefinition",
+      "id": "DoseNumberCodeableConcept",
+      "name": "DoseNumberCodeableConcept",
+      "title": "DoseNumberCodeableConcept",
+      "description": "Dose Number",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DoseNumberCodeableConcept",
+      "version": "0.1.0",
+      "category": "Structures: Extension Definitions",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-DoseNumberCodeableConcept.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/DoseNumberCodeableConcept--c16ada9d.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/HealthLinkPayload",
+      "resourceType": "StructureDefinition",
+      "id": "HealthLinkPayload",
+      "name": "HealthLinkPayload",
+      "title": "Health Link Payload (DRAFT)",
+      "description": "Health Link Payload (DRAFT)\n\nA Health Link URI is generated from this payload according to the algorithm documented [here](https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html#smart-health-links-sharing-application-generates-a-smart-health-link-uri)\n\n\n",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/HealthLinkPayload",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-HealthLinkPayload.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/HealthLinkPayload--f102ca06.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-HealthLinkPayload.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-HealthLinkPayload.openapi.json",
+          "bytes": 4552
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-HealthLinkPayload.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-HealthLinkPayload.schema.json",
+          "bytes": 2922
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/Immunization-uv-ips-DVC",
+      "resourceType": "StructureDefinition",
+      "id": "Immunization-uv-ips-DVC",
+      "name": "Immunization-uv-ips-DVC",
+      "title": "DVC - Profile for Digital Vaccination Cards for Immunization for IPS.  Note that no Product Catalog has been set",
+      "description": "This profile represents an IPS Immunization record that can be mapped onto a Digital Vaccine Certificates using the WHO PreQual Database",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-Immunization-uv-ips-DVC.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/Immunization-uv-ips-DVC--fb9fac06.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/Immunization-uv-ips-PreQual",
+      "resourceType": "StructureDefinition",
+      "id": "Immunization-uv-ips-PreQual",
+      "name": "Immunization-uv-ips-PreQual",
+      "title": "DVC - WHO PreQual Immunization for IPS",
+      "description": "This profile represents an IPS Immunization record that can be mapped onto a Digital Vaccine Certificates using the WHO PreQual Database",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-PreQual",
+      "version": "0.1.0",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-Immunization-uv-ips-PreQual.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/Immunization-uv-ips-PreQual--756dbac8.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/SGActorExt",
+      "resourceType": "StructureDefinition",
+      "id": "SGActorExt",
+      "name": "SGActorExt",
+      "title": "SGActorExt",
+      "description": "Smart Guidelines Actor Reference extension",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/SGActorExt",
+      "version": "0.1.0",
+      "category": "Structures: Extension Definitions",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-SGActorExt.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/SGActorExt--b86797b2.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/SMARTHealthLinkPayload",
+      "resourceType": "StructureDefinition",
+      "id": "SMARTHealthLinkPayload",
+      "name": "SMARTHealthLinkPayload",
+      "title": "SMART Health Link Payload (DRAFT)",
+      "description": "SMART Health Link Payload (DRAFT)\n\nThis logical model constrains the Health Link Payload for a SMART Health Link\n\nA SMART Health Link URI is generated from this payload according to the algorithm documented [here](https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html#smart-health-links-sharing-application-generates-a-smart-health-link-uri)\n\n",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/SMARTHealthLinkPayload",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-SMARTHealthLinkPayload.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/SMARTHealthLinkPayload--cd74c270.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-SMARTHealthLinkPayload.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-SMARTHealthLinkPayload.openapi.json",
+          "bytes": 4820
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-SMARTHealthLinkPayload.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-SMARTHealthLinkPayload.schema.json",
+          "bytes": 3063
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/SelectiveDisclosure",
+      "resourceType": "StructureDefinition",
+      "id": "SelectiveDisclosure",
+      "name": "SelectiveDisclosure",
+      "title": "SelectiveDisclosure",
+      "description": "Guidance that a document signing service with selective disclosure support (e.g. SD-JWT) should perform a selective disclosure of the content of the containing node of the extension in the JSON representation of the FHIR instance.\n\nThe code value should be from a code system containing appropriate disclosure statements for the use case.  The disclosure statement should describe the content that is to be disclosed at that node.  For example a code such as 'disclose-date-of-birth' or 'disclose-vaccine-history'.\n",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure",
+      "version": "0.1.0",
+      "category": "Structures: Extension Definitions",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-SelectiveDisclosure.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/SelectiveDisclosure--53611120.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/SmartHealthLink",
+      "resourceType": "StructureDefinition",
+      "id": "SmartHealthLink",
+      "name": "SmartHealthLink",
+      "title": "Smart Health Link (DRAFT)",
+      "description": "Smart Health Link URI (DRAFT)\n\nLogical Model to represent a SMART Health Link as its URI.  It is generated from the content of the SMART Health Link Payload.\n\n\n",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/SmartHealthLink",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-SmartHealthLink.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/SmartHealthLink--63e0c088.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-SmartHealthLink.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-SmartHealthLink.openapi.json",
+          "bytes": 2612
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-SmartHealthLink.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-SmartHealthLink.schema.json",
+          "bytes": 1269
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/VaccineDetailsSD",
+      "resourceType": "StructureDefinition",
+      "id": "VaccineDetailsSD",
+      "name": "VaccineDetailsSD",
+      "title": "DVC Vaccine Details with Selective Disclosure",
+      "description": "DVC Vaccine Details with Selective Disclosure",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/VaccineDetailsSD",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-VaccineDetailsSD.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/VaccineDetailsSD--ef0e88fa.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-VaccineDetailsSD.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-VaccineDetailsSD.openapi.json",
+          "bytes": 9611
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-VaccineDetailsSD.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-VaccineDetailsSD.schema.json",
+          "bytes": 7414
+        }
+      }
+    },
+    {
+      "key": "StructureDefinition/VerifiableHealthLinkPayload",
+      "resourceType": "StructureDefinition",
+      "id": "VerifiableHealthLinkPayload",
+      "name": "VerifiableHealthLinkPayload",
+      "title": "Verifiable Health Link Payload (DRAFT)",
+      "description": "Verifiable Health Link Payload (DRAFT)\n\nThis logical model constrains the Health Link Payload for a Verifiable Health Link\n",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/VerifiableHealthLinkPayload",
+      "version": "0.1.0",
+      "category": "Structures: Logical Models",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-VerifiableHealthLinkPayload.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/VerifiableHealthLinkPayload--454cfa71.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-VerifiableHealthLinkPayload.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-VerifiableHealthLinkPayload.openapi.json",
+          "bytes": 6575
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/StructureDefinition-VerifiableHealthLinkPayload.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/StructureDefinition-VerifiableHealthLinkPayload.schema.json",
+          "bytes": 4628
+        }
+      }
+    },
+    {
+      "key": "ValueSet/DVCRelationshipStatus",
+      "resourceType": "ValueSet",
+      "id": "DVCRelationshipStatus",
+      "name": "DVCRelationshipStatus",
+      "title": "Relationship Status for Contact in Patient",
+      "description": "Relationship Status for Contact in Patient",
+      "canonical": "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus",
+      "version": "0.1.0",
+      "category": "Terminology: Value Sets",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ValueSet-DVCRelationshipStatus.json"
+        },
+        "localPath": "output-ast/resources/ValueSet/DVCRelationshipStatus--aa018986.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "displays": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-DVCRelationshipStatus.displays.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCRelationshipStatus.displays.json",
+          "bytes": 1659
+        },
+        "jsonld": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-DVCRelationshipStatus.jsonld",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCRelationshipStatus.jsonld",
+          "bytes": 884
+        },
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-DVCRelationshipStatus.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCRelationshipStatus.openapi.json",
+          "bytes": 2756
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-DVCRelationshipStatus.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCRelationshipStatus.schema.json",
+          "bytes": 1502
+        }
+      }
+    },
+    {
+      "key": "ValueSet/DVCVaccines",
+      "resourceType": "ValueSet",
+      "id": "DVCVaccines",
+      "name": "DVCVaccines",
+      "title": "DVC - Vaccines",
+      "description": "This value set includes codes from ICD",
+      "canonical": "http://smart.who.int/trust-phw/ValueSet/DVCVaccines",
+      "version": "0.1.0",
+      "category": "Terminology: Value Sets",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ValueSet-DVCVaccines.json"
+        },
+        "localPath": "output-ast/resources/ValueSet/DVCVaccines--265a5dc0.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "displays": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-DVCVaccines.displays.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCVaccines.displays.json",
+          "bytes": 10670
+        },
+        "jsonld": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-DVCVaccines.jsonld",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCVaccines.jsonld",
+          "bytes": 11544
+        },
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-DVCVaccines.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCVaccines.openapi.json",
+          "bytes": 5460
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-DVCVaccines.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCVaccines.schema.json",
+          "bytes": 3674
+        }
+      }
+    },
+    {
+      "key": "ValueSet/DisclosureStatements",
+      "resourceType": "ValueSet",
+      "id": "DisclosureStatements",
+      "name": "DisclosureStatements",
+      "title": "Disclosure Statements",
+      "description": "Disclosure Statements value set",
+      "canonical": "http://smart.who.int/trust-phw/ValueSet/DisclosureStatements",
+      "version": "0.1.0",
+      "category": "Terminology: Value Sets",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ValueSet-DisclosureStatements.json"
+        },
+        "localPath": "output-ast/resources/ValueSet/DisclosureStatements--ef6b17d1.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "displays": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-DisclosureStatements.displays.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-DisclosureStatements.displays.json",
+          "bytes": 2630
+        },
+        "jsonld": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-DisclosureStatements.jsonld",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-DisclosureStatements.jsonld",
+          "bytes": 2061
+        },
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-DisclosureStatements.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-DisclosureStatements.openapi.json",
+          "bytes": 3209
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-DisclosureStatements.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-DisclosureStatements.schema.json",
+          "bytes": 1937
+        }
+      }
+    },
+    {
+      "key": "ValueSet/HL.TYPE",
+      "resourceType": "ValueSet",
+      "id": "HL.TYPE",
+      "name": "HL_TYPE",
+      "title": "HL.TYPE ValueSet ",
+      "description": "ValueSet of HL Type Codes",
+      "canonical": "http://smart.who.int/trust-phw/ValueSet/HL.TYPE",
+      "version": "0.1.0",
+      "category": "Terminology: Value Sets",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ValueSet-HL.TYPE.json"
+        },
+        "localPath": "output-ast/resources/ValueSet/HL.TYPE--4ccbb222.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+        },
+        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+      },
+      "sidecars": {
+        "displays": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-HL.TYPE.displays.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-HL.TYPE.displays.json",
+          "bytes": 1598
+        },
+        "jsonld": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-HL.TYPE.jsonld",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-HL.TYPE.jsonld",
+          "bytes": 859
+        },
+        "openapi": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-HL.TYPE.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-HL.TYPE.openapi.json",
+          "bytes": 2469
+        },
+        "schema": {
+          "url": "fhir-artifact-index/sidecars/ValueSet-HL.TYPE.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-HL.TYPE.schema.json",
+          "bytes": 1349
+        }
+      }
+    }
+  ]
+}

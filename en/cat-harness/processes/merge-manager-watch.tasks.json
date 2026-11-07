@@ -1,0 +1,165 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_MergeManagerWatch",
+ "tasks": {
+  "Task_Read": {
+   "id": "Task_Read",
+   "name": "Read PRs, runner queue, main verdict and owners",
+   "type": "bpmn:Task",
+   "lane": "Merge steward",
+   "skills": [
+    {
+     "name": "merge-manager-watcher"
+    }
+   ],
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns"
+     },
+     {
+      "name": "merge-manager-watcher"
+     },
+     {
+      "name": "merge-queue"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "ref-stewardship"
+     },
+     {
+      "name": "saturation-meta-merge"
+     }
+    ]
+   }
+  },
+  "Call_Meta": {
+   "id": "Call_Meta",
+   "name": "Saturation meta-merge",
+   "type": "bpmn:CallActivity",
+   "lane": "Merge steward",
+   "skills": [],
+   "calls": {
+    "name": "Saturation meta-merge: land the ready PRs when the runners are full",
+    "href": "saturation-meta-merge.html",
+    "diagram": "saturation-meta-merge.html"
+   },
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns"
+     },
+     {
+      "name": "merge-manager-watcher"
+     },
+     {
+      "name": "merge-queue"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "ref-stewardship"
+     },
+     {
+      "name": "saturation-meta-merge"
+     }
+    ]
+   }
+  },
+  "Call_Train": {
+   "id": "Call_Train",
+   "name": "Merge train",
+   "type": "bpmn:CallActivity",
+   "lane": "Merge steward",
+   "skills": [],
+   "calls": {
+    "name": "A merge train",
+    "href": "merge-train.html",
+    "diagram": "merge-train.html"
+   },
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns"
+     },
+     {
+      "name": "merge-manager-watcher"
+     },
+     {
+      "name": "merge-queue"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "ref-stewardship"
+     },
+     {
+      "name": "saturation-meta-merge"
+     }
+    ]
+   }
+  },
+  "Call_Stalled": {
+   "id": "Call_Stalled",
+   "name": "Stalled-agent triage",
+   "type": "bpmn:CallActivity",
+   "lane": "Merge steward",
+   "skills": [],
+   "calls": {
+    "name": "Stalled-agent triage: collect handovers, consolidate themes, recommend, re-route",
+    "href": "stalled-agent-triage.html",
+    "diagram": "stalled-agent-triage.html"
+   },
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns"
+     },
+     {
+      "name": "merge-manager-watcher"
+     },
+     {
+      "name": "merge-queue"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "ref-stewardship"
+     },
+     {
+      "name": "saturation-meta-merge"
+     }
+    ]
+   }
+  }
+ }
+}

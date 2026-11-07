@@ -1,0 +1,341 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_GuidelineUpdates",
+ "tasks": {
+  "Task_ChangeNotes": {
+   "id": "Task_ChangeNotes",
+   "name": "Publish the version with its change notes",
+   "type": "bpmn:Task",
+   "lane": "Guideline publisher",
+   "skills": [
+    {
+     "name": "content-publish"
+    }
+   ],
+   "role": {
+    "name": "publication-manager",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-publication-manager",
+    "title": "Publication manager",
+    "skills": [
+     {
+      "name": "content-publish"
+     },
+     {
+      "name": "content-review"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "instance-publication"
+     },
+     {
+      "name": "package-release"
+     },
+     {
+      "name": "publish-verification"
+     },
+     {
+      "name": "qa-report-signing"
+     },
+     {
+      "name": "render-kg-to-cdn"
+     },
+     {
+      "name": "staging-review"
+     }
+    ]
+   }
+  },
+  "Task_MapCone": {
+   "id": "Task_MapCone",
+   "name": "Map the affected layers in order",
+   "type": "bpmn:Task",
+   "lane": "Re-pin steward and build pipeline",
+   "skills": [
+    {
+     "name": "remote-mount"
+    }
+   ],
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns"
+     },
+     {
+      "name": "merge-manager-watcher"
+     },
+     {
+      "name": "merge-queue"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "ref-stewardship"
+     },
+     {
+      "name": "saturation-meta-merge"
+     }
+    ]
+   }
+  },
+  "Task_OpenRepin": {
+   "id": "Task_OpenRepin",
+   "name": "Open the re-pin for the next ready layer",
+   "type": "bpmn:Task",
+   "lane": "Re-pin steward and build pipeline",
+   "skills": [
+    {
+     "name": "remote-mount"
+    }
+   ],
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns"
+     },
+     {
+      "name": "merge-manager-watcher"
+     },
+     {
+      "name": "merge-queue"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "ref-stewardship"
+     },
+     {
+      "name": "saturation-meta-merge"
+     }
+    ]
+   }
+  },
+  "Task_Impact": {
+   "id": "Task_Impact",
+   "name": "Compare old, new and our adaptations",
+   "type": "bpmn:Task",
+   "lane": "Adaptation team (human or agentic)",
+   "skills": [
+    {
+     "name": "rendered-impact"
+    }
+   ],
+   "role": {
+    "name": "business-analyst",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-business-analyst",
+    "title": "Business analyst",
+    "skills": [
+     {
+      "name": "bpmn-authoring"
+     },
+     {
+      "name": "content-validate"
+     },
+     {
+      "name": "crdm-impact-analysis"
+     },
+     {
+      "name": "crdm-needs-assessment"
+     },
+     {
+      "name": "crdm-recorded-walkthrough"
+     },
+     {
+      "name": "crdm-requirements-template"
+     },
+     {
+      "name": "crdm-requirements-workflow"
+     },
+     {
+      "name": "data-modelling"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "decision-methodology-selector"
+     },
+     {
+      "name": "dmn-authoring"
+     },
+     {
+      "name": "methodology-adoption"
+     },
+     {
+      "name": "opening-brief"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "wireframe-design-review"
+     }
+    ]
+   }
+  },
+  "Task_Review": {
+   "id": "Task_Review",
+   "name": "Review the impact with stakeholders",
+   "type": "bpmn:Task",
+   "lane": "Adaptation committee (policy, clinical, programme)",
+   "skills": [
+    {
+     "name": "content-review"
+    }
+   ],
+   "role": {
+    "name": "authoring-committee",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-folio-assistant-core-scenarios-roles-json-authoring-committee",
+    "title": "Authoring Committee",
+    "skills": [
+     {
+      "name": "review-sheet-script"
+     }
+    ]
+   }
+  },
+  "Task_Decide": {
+   "id": "Task_Decide",
+   "name": "Decide each adaptation: keep, revise or retire",
+   "type": "bpmn:Task",
+   "lane": "Adaptation committee (policy, clinical, programme)",
+   "skills": [
+    {
+     "name": "decision-audit"
+    }
+   ],
+   "role": {
+    "name": "authoring-committee",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-folio-assistant-core-scenarios-roles-json-authoring-committee",
+    "title": "Authoring Committee",
+    "skills": [
+     {
+      "name": "review-sheet-script"
+     }
+    ]
+   }
+  },
+  "Task_Revise": {
+   "id": "Task_Revise",
+   "name": "Revise the adaptations as decided",
+   "type": "bpmn:CallActivity",
+   "lane": "Adaptation team (human or agentic)",
+   "skills": [
+    {
+     "name": "content-review"
+    }
+   ],
+   "calls": {
+    "name": "Content Change and Review",
+    "href": "content-change-review.html",
+    "diagram": "content-change-review.html"
+   },
+   "role": {
+    "name": "business-analyst",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-business-analyst",
+    "title": "Business analyst",
+    "skills": [
+     {
+      "name": "bpmn-authoring"
+     },
+     {
+      "name": "content-validate"
+     },
+     {
+      "name": "crdm-impact-analysis"
+     },
+     {
+      "name": "crdm-needs-assessment"
+     },
+     {
+      "name": "crdm-recorded-walkthrough"
+     },
+     {
+      "name": "crdm-requirements-template"
+     },
+     {
+      "name": "crdm-requirements-workflow"
+     },
+     {
+      "name": "data-modelling"
+     },
+     {
+      "name": "decision-audit"
+     },
+     {
+      "name": "decision-methodology-selector"
+     },
+     {
+      "name": "dmn-authoring"
+     },
+     {
+      "name": "methodology-adoption"
+     },
+     {
+      "name": "opening-brief"
+     },
+     {
+      "name": "staging-review"
+     },
+     {
+      "name": "wireframe-design-review"
+     }
+    ]
+   }
+  },
+  "Task_Merge": {
+   "id": "Task_Merge",
+   "name": "Merge the re-pin with its decided revisions",
+   "type": "bpmn:Task",
+   "lane": "Re-pin steward and build pipeline",
+   "skills": [
+    {
+     "name": "prepare-merge"
+    }
+   ],
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns"
+     },
+     {
+      "name": "merge-manager-watcher"
+     },
+     {
+      "name": "merge-queue"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "ref-stewardship"
+     },
+     {
+      "name": "saturation-meta-merge"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "PHW.A",
+ "tasks": {
+  "PHW.A.1": {
+   "id": "PHW.A.1",
+   "name": "A1. Select base policy & disclosure scope (PCF Basic / Intermediate Consent)",
+   "type": "bpmn:UserTask",
+   "lane": "VHL Holder (Patient / Personal Health Wallet)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.A.2": {
+   "id": "PHW.A.2",
+   "name": "A2. Construct FHIR Consent & Provenance (IHE.PCF.consentBasic / Intermediate)",
+   "type": "bpmn:ServiceTask",
+   "lane": "PCF Consent Recorder (Wallet / VHL Sharer)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.A.3": {
+   "id": "PHW.A.3",
+   "name": "A3. Create consent directive [ITI-108] Access Consent: Post",
+   "type": "bpmn:SendTask",
+   "lane": "PCF Consent Recorder (Wallet / VHL Sharer)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.A.4": {
+   "id": "PHW.A.4",
+   "name": "A4. Update or revoke directive [ITI-108] Access Consent: Put / Delete",
+   "type": "bpmn:SendTask",
+   "lane": "PCF Consent Recorder (Wallet / VHL Sharer)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.A.5": {
+   "id": "PHW.A.5",
+   "name": "A5. Validate, version & persist Consent + Provenance [ITI-108] Access Consent",
+   "type": "bpmn:ServiceTask",
+   "lane": "PCF Consent Registry",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.A.6": {
+   "id": "PHW.A.6",
+   "name": "A6. Confirm recorded Consent.id & versionId [ITI-108] Access Consent response",
+   "type": "bpmn:ReceiveTask",
+   "lane": "VHL Holder (Patient / Personal Health Wallet)",
+   "skills": [],
+   "binding": "unbound"
+  }
+ }
+}

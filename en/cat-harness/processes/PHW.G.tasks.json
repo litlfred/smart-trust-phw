@@ -1,0 +1,38 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "PHW.G",
+ "tasks": {
+  "PHW.G.1": {
+   "id": "PHW.G.1",
+   "name": "G1. Write PROV-O record citing the agreement",
+   "type": "bpmn:ServiceTask",
+   "lane": "Enforcement and Decision Points (audit writers)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.G.3": {
+   "id": "PHW.G.3",
+   "name": "G3. Send ATNA audit event citing the agreement [ITI-20] Record Audit Event",
+   "type": "bpmn:SendTask",
+   "lane": "Enforcement and Decision Points (audit writers)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.G.5": {
+   "id": "PHW.G.5",
+   "name": "G5. Record duty fulfilment with evidence hash",
+   "type": "bpmn:UserTask",
+   "lane": "Data Recipient (duty performer)",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "PHW.G.7": {
+   "id": "PHW.G.7",
+   "name": "G7. Periodic human review and report to the provider",
+   "type": "bpmn:UserTask",
+   "lane": "Auditor (person)",
+   "skills": [],
+   "binding": "unbound"
+  }
+ }
+}
