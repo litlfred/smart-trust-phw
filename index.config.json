@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "419c9cddef1a292dd599698f59529e49f068297e",
+          "ref": "961679a369975afb6320647dde23d8e335bd84b5",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -102,8 +102,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "419c9cddef1a292dd599698f59529e49f068297e",
-              "evidence": "Owner (litlfred), 2026-11-07 ~05:25Z: \"repin + merge open 12 hrs\"; ~14:45Z by card: \"Fix in harness\" and \"Wait for #308\" (ICD-11 terminology routing). This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned fhir-harness alone to 419c9cd (#308, drop a txcache built for another FHIR version) for the 0.2.0-litlfred publish."
+              "ref": "961679a369975afb6320647dde23d8e335bd84b5",
+              "evidence": "Owner litlfred, 2026-11-07, session https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f: 'repin + merge open 12 hrs' (re-pin smart-trust-phw's layers to their main tips)."
             }
           }
         }
