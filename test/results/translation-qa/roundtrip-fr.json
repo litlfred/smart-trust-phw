@@ -1,0 +1,165 @@
+{
+ "locale": "fr",
+ "official": false,
+ "generatedBy": "agent",
+ "pr": "litlfred/smart-trust-phw#50",
+ "sourceHead": "06a7ea0",
+ "method": "untainted: two back-translators saw only the French (one file read, one written); two adjudicators compared source and back-translation",
+ "totals": {
+  "pass": 1598,
+  "drift": 19,
+  "fail": 3
+ },
+ "resolution": {
+  "fixedInB6f298f": [
+   109,
+   126,
+   190,
+   210,
+   211,
+   281,
+   355,
+   467,
+   552,
+   722,
+   789,
+   791
+  ],
+  "keptByTeamConvention": {
+   "ids": [
+    548,
+    647,
+    653
+   ],
+   "reason": "lower-case \"should\" → « doit » is the team convention (EN lead); upper-case SHOULD → DEVRAIT"
+  }
+ },
+ "remainingFail": 0,
+ "items": [
+  {
+   "i": 109,
+   "verdict": "drift",
+   "note": "'still needs' -> 'nécessite toujours', readable as 'always requires'",
+   "fix": "Obligations. Les obligations de chaque accord qui autorise s’appliquent. Un accord fondé sur le consentement nécessite tout de même un Consent PCF actif ()."
+  },
+  {
+   "i": 126,
+   "verdict": "fail",
+   "note": "'document-only agreement' (an agreement that exists only as a signed document, cf. rows 106/217/274) rendered as 'un accord portant uniquement sur des documents' (an agreement covering only documents): changes what the claim is about",
+   "fix": "Lacunes et points ouverts dans E. RFC 9396 n’a aucun champ qui contienne l’URL d’un accord et son hachage. L’URL de version fixe va dans , et le SHA-256 publié avec cette version fixe les octets. Aucun paramètre standard vérifié ne transporte l’autorisation W3C VC 2.0 dans une requête de jeton de serveur à serveur. Tant qu’aucun n’est choisi, l’enregistrement du client consigné dans  tient lieu d’autorisation. Pour un accord uniquement documentaire (« document seul »), les portées définies par l’administrateur remplacent les détails RAR, et  peut toujours transporter l’URL de l’accord à des fins d’audit."
+  },
+  {
+   "i": 190,
+   "verdict": "drift",
+   "note": "'Treatment' (care) -> 'Le traitement', which in a data-protection sentence reads as data processing (back: 'Processing')",
+   "fix": "Base juridique. Seul un accord dont la base juridique est le consentement demande un consentement. Les soins (traitement médical), le droit de la santé publique et les dérogations pour la recherche ne reposent pas sur le consentement."
+  },
+  {
+   "i": 210,
+   "verdict": "drift",
+   "note": "'one issuing process for every certificate type' -> 'un seul processus ... pour chaque type', readable as one process per type",
+   "fix": "Objectif : bloc partagé B4 de la proposition de réutilisation BPMN (Q-BPMN-1 A, 2026-11-01) : un seul processus d’émission pour tous les types de certificat."
+  },
+  {
+   "i": 211,
+   "verdict": "drift",
+   "note": "same as 210: readable as one process per type",
+   "fix": "Objectif : bloc partagé B7 de la proposition de réutilisation BPMN (Q-BPMN-1 A, 2026-11-01) : un seul processus de vérification pour tous les types de certificat."
+  },
+  {
+   "i": 281,
+   "verdict": "drift",
+   "note": "'HL7 v3 PurposeOfUse is encouraged' -> 'est recommandé' (slightly stronger)",
+   "fix": "replace 'HL7 v3 PurposeOfUse est recommandé, §5.2.1.2' with 'l’utilisation de HL7 v3 PurposeOfUse est encouragée, §5.2.1.2'"
+  },
+  {
+   "i": 355,
+   "verdict": "drift",
+   "note": "'post a ' (HTTP POST to the registry) -> 'publier un' (publish)",
+   "fix": "Afficher le texte de consentement du domaine de confiance (code et version) ; lorsque le titulaire accepte, enregistrer l'acte comme preuve et envoyer (POST) un  avec  ; lorsque le titulaire n'accepte pas, la politique par défaut du domaine de confiance s'applique (consentement implicite)."
+  },
+  {
+   "i": 467,
+   "verdict": "drift",
+   "note": "IG definition: 'are used (or should be used)' -> 'doivent être utilisées' (must); also 'harms' -> 'risques'",
+   "fix": "in the IG entry: 'sont utilisées (ou devraient être utilisées)'; in the CPG entry: 'des bénéfices et des préjudices des autres options de soins'"
+  },
+  {
+   "i": 548,
+   "verdict": "fail",
+   "note": "'These files should be the first choice' -> 'doivent être le premier choix': SHOULD strengthened to MUST",
+   "fix": "Ces fichiers devraient être le premier choix pour générer tout artefact d’implémentation, car ils contiennent l’ensemble des règles qui déterminent la validité de ces profils. Les implémenteurs devront néanmoins connaître le contenu de la spécification et des profils applicables afin de réaliser une implémentation conforme. Consultez l’aperçu sur la validation des profils et ressources FHIR pour plus d’informations sur la validation des profils et l’utilisation de ces artefacts."
+  },
+  {
+   "i": 552,
+   "verdict": "drift",
+   "note": "'Patient-mediated' (data flows through the patient) -> 'À l'initiative du patient' (initiated by the patient)",
+   "fix": "« Par l’intermédiaire du patient » signifie alors trois choses, chacune étant un mécanisme existant :"
+  },
+  {
+   "i": 647,
+   "verdict": "drift",
+   "note": "'what KSA should do' -> 'ce que le KSA doit faire' (should -> must), inside a statement of a gap",
+   "fix": "Les spécifications n’indiquent pas si le partageur fait respecter la copie du registre ou celle contenue dans l’IPS, ni ce que le KSA devrait faire de sa copie."
+  },
+  {
+   "i": 653,
+   "verdict": "fail",
+   "note": "'The link's expiry should not run past the Consents' ' -> 'ne doit pas dépasser': recommendation strengthened to a requirement",
+   "fix": "VHL. Le portefeuille demande un VHL avec un code d’accès et une date d’expiration. Le partageur vérifie que les ressources Consent sont actives, puis signe le lien. L’expiration du lien ne devrait pas dépasser le  des ressources Consent."
+  },
+  {
+   "i": 722,
+   "verdict": "drift",
+   "note": "'she' = Dr Mei; with 'd’une visiteuse' the French 'qu’elle est autorisée' can read as the visitor being authorized",
+   "fix": "Objectif. Lire rapidement le dossier d’un visiteur et savoir qu’il est authentique et qu’elle-même est autorisée à le lire."
+  },
+  {
+   "i": 789,
+   "verdict": "drift",
+   "note": "'No silent permit' -> 'Pas d’autorisation implicite', which clashes with 'consentement implicite' (implied consent can permit)",
+   "fix": "Pas d’autorisation tacite. Une décision de consentement est ,  ou . Un consentement manquant, expiré ou inaccessible ne donne jamais ."
+  },
+  {
+   "i": 791,
+   "verdict": "drift",
+   "note": "'not a separate layer' -> 'et non d’une couche distincte' (says they are not part of a separate layer)",
+   "fix": "La sécurité et la confidentialité font partie de chaque processus de ce guide ; elles ne constituent pas une couche distincte :"
+  },
+  {
+   "i": 989,
+   "verdict": "drift",
+   "note": "'redeem' rendered 'utiliser' ('use'): loses the redemption nuance of resolving the link for its content; claim unchanged. Not worth a fix unless the glossary settles a term."
+  },
+  {
+   "i": 1198,
+   "verdict": "drift",
+   "note": "Fragment 'Return matching' rendered 'Renvoyer, s'ils correspondent, les' (return, if they match, the): conditional phrasing; the full label 1199 says 'les consentements correspondants'. Same effect, and the next fragment's layout depends on it, so no fix proposed."
+  },
+  {
+   "i": 1302,
+   "verdict": "drift",
+   "note": "'redeem' rendered 'utiliser' ('use'): loses the redemption nuance of resolving the link for its content; claim unchanged. Not worth a fix unless the glossary settles a term."
+  },
+  {
+   "i": 1347,
+   "verdict": "drift",
+   "note": "Fragment 'Return the active' rendered 'Renvoyer, s'ils sont actifs, les' (return, if they are active, the): conditional phrasing; the full label 1348 says 'les consentements actifs'. Same effect, so no fix proposed."
+  },
+  {
+   "i": 1432,
+   "verdict": "drift",
+   "note": "'redeem' rendered 'utiliser' ('use'): loses the redemption nuance of resolving the link for its content; claim unchanged. Not worth a fix unless the glossary settles a term."
+  },
+  {
+   "i": 1433,
+   "verdict": "drift",
+   "note": "'redeem' rendered 'utiliser' ('use'): loses the redemption nuance of resolving the link for its content; claim unchanged. Not worth a fix unless the glossary settles a term."
+  },
+  {
+   "i": 1550,
+   "verdict": "drift",
+   "note": "'redeem' rendered 'utiliser' ('use'): loses the redemption nuance of resolving the link for its content; claim unchanged. Not worth a fix unless the glossary settles a term."
+  }
+ ]
+}
