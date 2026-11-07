@@ -9,7 +9,7 @@ generated: "scripts/subgraph-readmes.ts of the bootstrap toolset (https://github
 
 Qualified Dublin Core (`folio-dublin-core/v1`) and catalogue node (`folio-catalogue-node/v1`) records for two kinds of item: the IHE ITI specifications materialized in `library/` (PCF 1.1.0 and VHL 1.0.0-comment), and every work the IG cites that is not ingested, as a `referenced` item whose record is the IG's bibliography entry, keyed by the citation's `#ref-<slug>`. A capture of a cited work, when one exists, is in the repository's `uploads/` data store, which is not part of the KG. `bun run cat check:catalogue` and `bun run cat check:materialized-fixity` verify every node, metadataRef, libraryId, localPath and SHA-256 digest.
 
-Part of [GDHCN Trust Network - Personal Health Wallet](../README.md) 0.1.0, declared as `smart-trust-phw-catalogue`, holding `catalogue`.
+Part of [GDHCN Trust Network - Personal Health Wallet](../README.md) 0.2.0, declared as `smart-trust-phw-catalogue`, holding `catalogue`.
 
 | file | what it is | used by |
 |---|---|---|

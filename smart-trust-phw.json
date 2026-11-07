@@ -1,7 +1,7 @@
 {
   "$schema": "cat-harness-declaration/1.0.0",
   "name": "smart-trust-phw",
-  "version": "0.2.0-litlfred",
+  "version": "0.2.0",
   "repository": "litlfred/smart-trust-phw",
   "iriBase": "https://litlfred.github.io/smart-trust-phw/",
   "title": "GDHCN Trust Network - Personal Health Wallet",
