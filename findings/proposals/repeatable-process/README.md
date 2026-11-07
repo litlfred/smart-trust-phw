@@ -326,13 +326,13 @@ a new declared `translations/` directory.
    the lock's commit; draft PRs run the fast tier. Actions pinned by SHA,
    least-privilege `permissions:`.
 10. **Publish.** An agent publishes: `main` to the gh-pages root, other
-    branches to their preview folder, with
-    `bun cat-harness-tools/scripts/stage-local.ts --repo . --fresh` (`--plan`
-    to look first). The harness covers the three things that each made a first
-    publish fail (cat-harness-tools#1608): a missing `gh-pages` is started as
-    an orphan branch with `.nojekyll`; `--fresh` re-lays a mount a build
-    modified; and the SVGs a build draws beside the BPMN go outside the
-    checkout, so they no longer make the cached AST stale. The site is built from the
+    branches to their preview folder. Before `stage-local.ts`, the publish
+    script (`tools/publish/publish.sh` in smart-trust-phw) checks three things
+    that each made a first publish fail: `gh-pages` exists on origin (else it
+    starts it as an empty orphan branch with `.nojekyll`); the mounts are laid
+    fresh from `index.lock.json` (a build writes into them); and `input/` is
+    exactly the commit's (a build draws SVGs beside the BPMN, and any
+    untracked input makes the cached AST stale). The site is built from the
     AST that `ig-ast-refresh.yml` caches on a push to `main`, so publish
     `main` after that run succeeds.
 11. **Cold start.** `AGENTS.md`: what the instance is, its rules, the

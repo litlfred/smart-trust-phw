@@ -111,10 +111,10 @@ bun cat-harness-tools/scripts/run-script.ts mount:remote:check
 
 Re-draw the BPMN processes with `bun tools/render-bpmn/render_bpmn.ts`
 (Chromium: set `PLAYWRIGHT_BROWSERS_PATH` where one is installed). Publish
-gh-pages with `bun cat-harness-tools/scripts/stage-local.ts --repo . --fresh`
-(`--plan` to look first). The harness starts `gh-pages` as an orphan branch
-when it is missing, `--fresh` re-lays any mount an earlier build modified, and
-the BPMN drawings a build makes go outside the checkout (cat-harness-tools#1608). The site is built from the IG's AST on its cache branch,
+gh-pages with `bash tools/publish/publish.sh` (`--plan` to look first). It makes
+sure `gh-pages` exists on origin (a first publish fails without it), re-lays
+the mounts fresh (a build writes into them), removes build leftovers under
+`input/` (they make the cached AST stale), then runs `stage-local.ts`. The site is built from the IG's AST on its cache branch,
 which `ig-ast-refresh.yml` refreshes on a push to `main`, so a preview shows
 `input/` as it was at `main`'s last refresh.
 
