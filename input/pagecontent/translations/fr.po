@@ -3652,7 +3652,7 @@ msgstr "Package"
 #. URL: http://smart.who.int/trust-phw/downloads.html
 #: input/pagecontent/downloads.md:15
 msgid "These files should be the first choice whenever generating any implementation artifacts since they contain all of the rules about what makes these profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation. See the overview on validating FHIR profiles and resources for more information about validating profiles and how to use these artifacts."
-msgstr "Ces fichiers doivent être le premier choix pour générer tout artefact d'implémentation, car ils contiennent l'ensemble des règles qui déterminent la validité de ces profils. Les implémenteurs devront néanmoins connaître le contenu de la spécification et des profils applicables afin de réaliser une implémentation conforme. Consultez l'aperçu sur la validation des profils et ressources FHIR pour plus d'informations sur la validation des profils et l'utilisation de ces artefacts."
+msgstr "Ces fichiers devraient être le premier choix pour générer tout artefact d'implémentation, car ils contiennent l'ensemble des règles qui déterminent la validité de ces profils. Les implémenteurs devront néanmoins connaître le contenu de la spécification et des profils applicables afin de réaliser une implémentation conforme. Consultez l'aperçu sur la validation des profils et ressources FHIR pour plus d'informations sur la validation des profils et l'utilisation de ces artefacts."
 
 #. Source: input/pagecontent/downloads.md:3
 #. URL: http://smart.who.int/trust-phw/downloads.html
@@ -4268,7 +4268,7 @@ msgstr "La copie du registre est appliquée ; la copie de l’IPS est une preuve
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
 #: input/pagecontent/example-pilgrimage.md:72
 msgid "The specifications do not say whether the Sharer enforces the registry copy or the copy inside the IPS, or what KSA should do with its copy."
-msgstr "Les spécifications n’indiquent pas si le partageur fait respecter la copie du registre ou celle contenue dans l’IPS, ni ce que le KSA doit faire de sa copie."
+msgstr "Les spécifications n’indiquent pas si le partageur fait respecter la copie du registre ou celle contenue dans l’IPS, ni ce que le KSA devrait faire de sa copie."
 
 #. Source: input/pagecontent/example-pilgrimage.md:83
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
@@ -4306,7 +4306,7 @@ msgstr "Confiance. Le HIE d’origine publie ses clés de signature dans le doma
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
 #: input/pagecontent/example-pilgrimage.md:38
 msgid "VHL. The wallet asks for a VHL with a passcode and an expiry. The Sharer checks that the Consents are active, then signs the link. The link's expiry should not run past the Consents' ."
-msgstr "VHL. Le portefeuille demande un VHL avec un code d’accès et une date d’expiration. Le partageur vérifie que les ressources Consent sont actives, puis signe le lien. L’expiration du lien ne doit pas dépasser le  des ressources Consent."
+msgstr "VHL. Le portefeuille demande un VHL avec un code d’accès et une date d’expiration. Le partageur vérifie que les ressources Consent sont actives, puis signe le lien. L’expiration du lien ne devrait pas dépasser le  des ressources Consent."
 
 #. Source: input/pagecontent/example-pilgrimage.md:71
 #. URL: http://smart.who.int/trust-phw/example-pilgrimage.html
