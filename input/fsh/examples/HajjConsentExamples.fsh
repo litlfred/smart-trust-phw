@@ -40,6 +40,7 @@ Usage: #example
 * status = #active
 * scope = $consentscope#patient-privacy
 * category[0] = $LOINC#59284-0 "Patient Consent"
+* category[+] = $v3-ActCode#OPTIN "opt-in"
 * patient = Reference(PilgrimExample)
 * dateTime = "2025-04-01T09:00:00+08:00"
 * performer = Reference(PilgrimExample)
@@ -65,6 +66,7 @@ Usage: #example
 * status = #active
 * scope = $consentscope#patient-privacy
 * category[0] = $LOINC#59284-0 "Patient Consent"
+* category[+] = $v3-ActCode#OPTIN "opt-in"
 * patient = Reference(PilgrimExample)
 * dateTime = "2025-04-01T09:05:00+08:00"
 * performer = Reference(PilgrimExample)

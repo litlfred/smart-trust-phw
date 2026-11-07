@@ -34,22 +34,23 @@ Usage: #example
 * date = "2026-06-01T10:15:00Z"
 * content.attachment.contentType = #application/json
 * content.attachment.url = "https://wallet.example.org/lina/confirmations/2026-06-01-share-for-care-abroad.json"
-* content.attachment.title = "Wallet confirmation: SHARE-FOR-CARE-ABROAD 0.1.0"
+* content.attachment.title = "Wallet confirmation: share my summary for care abroad, 1 to 30 June 2026"
 
 Instance: LinaExplicitConsent
 InstanceOf: PHWExplicitConsent
 Title: "Lina's explicit consent: share her summary for care abroad"
-Description: "Lina agreed on her wallet that health workers abroad may read her patient summary to treat her, from 1 to 30 June 2026. The trust domain's consent code and the version of its text she was shown are in policyRule; her wallet confirmation is the evidence."
+Description: "Lina agreed on her wallet that health workers abroad may read her patient summary to treat her, from 1 to 30 June 2026: an opt-in (HL7 ActConsentDirective OPTIN) that adds this permission to the opt-in default, the IHE PCF implicit policy Policy-deny. Her wallet confirmation is the evidence. The example trust domain publishes no consent codes, so there is no policyRule."
 Usage: #example
 * status = #active
 * scope = $consentscope#patient-privacy
 * category[0] = $LOINC#59284-0 "Patient Consent"
+* category[+] = $v3-ActCode#OPTIN "opt-in"
 * patient = Reference(LinaPatient)
 * dateTime = "2026-06-01T10:15:00Z"
 * performer = Reference(LinaPatient)
 * organization = Reference(HomeHIE)
 * sourceReference = Reference(LinaWalletConfirmation)
-* policyRule = PHWExampleTermsOfUse|0.1.0#SHARE-FOR-CARE-ABROAD "Share my summary for care abroad"
+* policy.uri = "https://profiles.ihe.net/ITI/PCF/Policy-deny"
 * provision.type = #permit
 * provision.period.start = "2026-06-01"
 * provision.period.end = "2026-06-30"
@@ -58,11 +59,12 @@ Usage: #example
 Instance: LinaImpliedConsent
 InstanceOf: PHWImpliedConsent
 Title: "Implied consent: the trust domain's default policy (Policy-basic-normal)"
-Description: "No act of Lina's: the example trust domain's default policy, the IHE PCF implicit policy Policy-basic-normal, under which normal data may be used for treatment. Carried in the document so the receiver can see the policy the summary was shared under."
+Description: "No act of Lina's: implied consent with an opportunity to dissent (HL7 ActConsentDirective IMPLIEDD) under the example trust domain's default policy, the IHE PCF implicit policy Policy-basic-normal, under which normal data may be used for treatment. Carried in the document so the receiver can see the policy the summary was shared under."
 Usage: #example
 * status = #active
 * scope = $consentscope#patient-privacy
 * category[0] = $LOINC#59284-0 "Patient Consent"
+* category[+] = $v3-ActCode#IMPLIEDD "implied consent with opportunity to dissent"
 * patient = Reference(LinaPatient)
 * dateTime = "2026-06-01T10:15:00Z"
 * performer = Reference(HomeHIE)

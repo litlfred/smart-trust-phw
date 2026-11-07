@@ -57,3 +57,4 @@ Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
 Alias: $v3-ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
 Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 Alias: $IPSHajjConsent = http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT
+Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode

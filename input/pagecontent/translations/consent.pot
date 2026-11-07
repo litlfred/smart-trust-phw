@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WHO SMART Guidelines\n"
-"POT-Creation-Date: 2026-11-07 05:43+0000\n"
+"POT-Creation-Date: 2026-11-07 08:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,147 +16,255 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
 
-#. Source: input/pagecontent/consent.md:9
-#. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:9
-msgid ": the trust domain's consent code, with the code system version whose text the holder was shown."
-msgstr ""
-
-#. Source: input/pagecontent/consent.md:9
-#. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:9
-msgid ": the trust domain's default policy, normally an IHE PCF implicit policy (, ,  or )."
-msgstr ""
-
-#. Source: input/pagecontent/consent.md:24
-#. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:24
-msgid "A document that is shared or issued may carry the consent directives it is shared under, explicit or implied. Carrying them is optional: the trust domain, or the holder in the wallet, decides. Process M adds them before the document is signed. Process B calls it at step B5a and process J at step J2a."
-msgstr ""
-
-#. Source: input/pagecontent/consent.md:8
-#. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:8
-msgid "A PHW Explicit Consent in the Consent Registry (process L, IHE PCF )."
-msgstr ""
-
-#. Source: input/pagecontent/consent.md:18
-#. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:18
-msgid "A trust domain names its consent policies as a terms-of-use ValueSet ( in the GDHCN Trust IG). Each code's definition is the text the holder is shown. An explicit consent names one of these codes in . A VHL Receiver's credential names one in its  (see process I). The Sharer finds the trust domain from the ValueSet that holds the code."
-msgstr ""
-
 #. Source: input/pagecontent/consent.md:14
 #. URL: http://smart.who.int/trust-phw/consent.html
 #: input/pagecontent/consent.md:14
-msgid "An opt-in trust domain has  as its default, so data is shared only with explicit consent. An opt-out trust domain has  or  as its default, so data is shared unless the holder withdraws."
+msgid "(FHIR R4): , , ,  (withdrawn or expired), ."
 msgstr ""
 
-#. Source: input/pagecontent/consent.md:22
+#. Source: input/pagecontent/consent.md:10
 #. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:22
-msgid "Consent directives in shared and issued documents"
+#: input/pagecontent/consent.md:10
+msgid "(implied consent),  (implied consent with opportunity to dissent),  (notice of privacy practices): PHW Implied Consent Kind"
 msgstr ""
 
-#. Source: input/pagecontent/consent.md:32
+#. Source: input/pagecontent/consent.md:10
 #. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:32
-msgid "Deciding access"
+#: input/pagecontent/consent.md:10
+msgid "(opt-in),  (opt-in with restrictions),  (opt-out),  (opt-out with exceptions): PHW Explicit Consent Kind"
 msgstr ""
 
-#. Source: input/pagecontent/consent.md:26
+#. Source: input/pagecontent/consent.md:29
 #. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:26
-msgid "Each directive is a  entry of the document Bundle (IPS document that carries its consent directives)."
-msgstr ""
-
-#. Source: input/pagecontent/consent.md:5
-#. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:5
-msgid "Explicit consent"
-msgstr ""
-
-#. Source: input/pagecontent/consent.md:20
-#. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:20
-msgid "For the IPS Pilgrimage trust domain, the codes are  in the IPS Pilgrimage guide, for example  and . The worked example shows the two Hajj consents as PilgrimConsentOriginRelease and PilgrimConsentHostUse. This guide's other examples use a fictional example trust domain, PHWExampleTermsOfUse."
-msgstr ""
-
-#. Source: input/pagecontent/consent.md:8
-#. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:8
-msgid "How it is recorded"
+#: input/pagecontent/consent.md:29
+msgid ", ,"
 msgstr ""
 
 #. Source: input/pagecontent/consent.md:12
 #. URL: http://smart.who.int/trust-phw/consent.html
 #: input/pagecontent/consent.md:12
-msgid "IHE PCF does not allow . So the two kinds are told apart by their policy and their evidence, as the table shows. Both kinds are IHE PCF Intermediate Consents (PHW Consent)."
+msgid ": the trust domain's consent code with its version, when the domain publishes consent codes. Otherwise : the IHE PCF implicit policy the consent changes."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:12
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:12
+msgid ": the trust domain's default policy, normally an IHE PCF implicit policy (, ,  or )."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:41
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:41
+msgid "A document that is shared or issued may carry the consent directives it is shared under, explicit or implied. Carrying them is optional: the trust domain, or the holder in the wallet, decides. Process M adds them before the document is signed. Process B calls it at step B5a and process J at step J2a."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:11
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:11
+msgid "A PHW Explicit Consent in the Consent Registry (process L, IHE PCF )."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:35
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:35
+msgid "A trust domain may name its own consent policies as a terms-of-use ValueSet ( in the GDHCN Trust IG). Each code's definition is the text the holder is shown. An explicit consent names one of these codes in . A VHL Receiver's credential names one in its  (see process I). The Sharer finds the trust domain from the ValueSet that holds the code."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:18
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:18
+msgid "An opt-in trust domain has  as its default, so data is shared only with explicit consent. An opt-out trust domain has  or  as its default, so data is shared unless the holder dissents."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:24
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:24
+msgid "Builds on ()"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:39
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:39
+msgid "Consent directives in shared and issued documents"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:22
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:22
+msgid "Consent is decided by translating it to W3C ODRL 2.2 ( in fhir-harness), where each IHE PCF implicit policy is an ODRL . The kind says which of those Sets a consent builds on, through ODRL's :"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:49
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:49
+msgid "Deciding access"
 msgstr ""
 
 #. Source: input/pagecontent/consent.md:5
 #. URL: http://smart.who.int/trust-phw/consent.html
 #: input/pagecontent/consent.md:5
+msgid "Each consent records its kind in  with a code from HL7 v3  (CodeSystem v3-ActCode). HL7 defines every one of these codes; this guide adds none."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:43
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:43
+msgid "Each directive is a  entry of the document Bundle (IPS document that carries its consent directives)."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:7
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:7
+msgid "Explicit consent"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:37
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:37
+msgid "For the IPS Pilgrimage trust domain, the codes are  in the IPS Pilgrimage guide, for example  and . The worked example shows the two Hajj consents as PilgrimConsentOriginRelease and PilgrimConsentHostUse."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:11
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:11
+msgid "How it is recorded"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:16
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:16
+msgid "IHE PCF does not allow , so the kind is carried in . Both kinds are IHE PCF Intermediate Consents (PHW Consent)."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:7
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:7
 msgid "Implied consent"
 msgstr ""
 
-#. Source: input/pagecontent/consent.md:30
+#. Source: input/pagecontent/consent.md:29
 #. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:30
-msgid "LinaSummaryWithConsent is an example. Lina's patient summary carries her explicit consent (LinaExplicitConsent) and the trust domain's default (LinaImpliedConsent). Every person in the examples is fictional."
+#: input/pagecontent/consent.md:29
+msgid "Its own"
 msgstr ""
 
-#. Source: input/pagecontent/consent.md:8
+#. Source: input/pagecontent/consent.md:26
 #. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:8
+#: input/pagecontent/consent.md:26
+msgid "Its permissions (: with the holder's restrictions as prohibitions or constraints)"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:28
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:28
+msgid "Its prohibitions, with the holder's exceptions as permissions"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:24
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:24
+msgid "Kind"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:10
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:10
+msgid "Kind (, HL7 ActConsentDirective)"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:47
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:47
+msgid "LinaSummaryWithConsent is an example. Lina's patient summary carries her explicit consent, an  (LinaExplicitConsent), and the trust domain's default, an  under  (LinaImpliedConsent). Every person in the examples is fictional."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:11
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:11
 msgid "Not recorded per holder. A document may carry it as a PHW Implied Consent."
 msgstr ""
 
 #. Source: input/pagecontent/consent.md:27
 #. URL: http://smart.who.int/trust-phw/consent.html
 #: input/pagecontent/consent.md:27
+msgid "Nothing: the holder refuses"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:29
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:29
+msgid "Nothing: the implied consent is its policy's Set"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:31
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:31
+msgid "So a receiver, or the Sharer's decision point, can tell from the code alone what holds when no permission matches. Reading  this way is a proposed change to , which today reads  and  only."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:14
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:14
+msgid "State"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:44
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:44
 msgid "The Composition's Advance Directives section (LOINC 42348-3) lists them, with a summary that a person can read."
 msgstr ""
 
-#. Source: input/pagecontent/consent.md:28
+#. Source: input/pagecontent/consent.md:45
 #. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:28
+#: input/pagecontent/consent.md:45
 msgid "The copy in the document is evidence. The sharer enforces the copy in its own Consent Registry. A signed document cannot show a later withdrawal."
 msgstr ""
 
-#. Source: input/pagecontent/consent.md:10
+#. Source: input/pagecontent/consent.md:13
 #. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:10
+#: input/pagecontent/consent.md:13
 msgid "The evidence ()"
-msgstr ""
-
-#. Source: input/pagecontent/consent.md:7
-#. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:7
-msgid "The holder agrees by their own act: on their wallet, or on a form a health worker records."
-msgstr ""
-
-#. Source: input/pagecontent/consent.md:7
-#. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:7
-msgid "The holder does nothing. The trust domain's default policy applies."
-msgstr ""
-
-#. Source: input/pagecontent/consent.md:10
-#. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:10
-msgid "The holder's recorded act: the wallet confirmation or the signed form."
 msgstr ""
 
 #. Source: input/pagecontent/consent.md:9
 #. URL: http://smart.who.int/trust-phw/consent.html
 #: input/pagecontent/consent.md:9
+msgid "The holder agrees, or refuses, by their own act: on their wallet, or on a form a health worker records."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:9
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:9
+msgid "The holder does nothing. The trust domain's default policy applies."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:13
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:13
+msgid "The holder's recorded act: the wallet confirmation or the signed form."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:20
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:20
+msgid "The kind and ODRL"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:12
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:12
 msgid "The policy"
 msgstr ""
 
-#. Source: input/pagecontent/consent.md:10
+#. Source: input/pagecontent/consent.md:14
 #. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:10
+#: input/pagecontent/consent.md:14
+msgid "The same."
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:13
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:13
 msgid "The trust domain's published policy."
 msgstr ""
 
@@ -166,9 +274,9 @@ msgstr ""
 msgid "This page describes how a Personal Health Wallet handles consent. Consent follows IHE Privacy Consent on FHIR (PCF) 1.1.0. Each trust domain sets the consent policies that apply in it. The processes on this page are trust-anchor neutral: GDHCN is one possible trust anchor among others."
 msgstr ""
 
-#. Source: input/pagecontent/consent.md:16
+#. Source: input/pagecontent/consent.md:33
 #. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:16
+#: input/pagecontent/consent.md:33
 msgid "Trust domains and their consent codes"
 msgstr ""
 
@@ -178,15 +286,21 @@ msgstr ""
 msgid "Two kinds of consent"
 msgstr ""
 
-#. Source: input/pagecontent/consent.md:7
+#. Source: input/pagecontent/consent.md:9
 #. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:7
+#: input/pagecontent/consent.md:9
 msgid "What it is"
 msgstr ""
 
-#. Source: input/pagecontent/consent.md:34
+#. Source: input/pagecontent/consent.md:24
 #. URL: http://smart.who.int/trust-phw/consent.html
-#: input/pagecontent/consent.md:34
+#: input/pagecontent/consent.md:24
+msgid "What the consent adds"
+msgstr ""
+
+#. Source: input/pagecontent/consent.md:51
+#. URL: http://smart.who.int/trust-phw/consent.html
+#: input/pagecontent/consent.md:51
 msgid "When a link is redeemed (process C) or a request comes under an agreement (processes F and I), the sharer reads the active Consents from its registry with . It translates them to W3C ODRL 2.2 and decides ,  or . A missing, expired or unreachable consent never gives . The decision is recorded as W3C PROV-O provenance that cites  and ."
 msgstr ""
 
