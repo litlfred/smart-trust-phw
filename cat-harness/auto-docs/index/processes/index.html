@@ -1077,6 +1077,10 @@
   <td>The general process an agent follows when someone shares a paper, book or standard and asks for its method to be used: establish origin and licence, ingest it, render what the method says with what is adopted and refuse…<div class="f"><span class="k">activities</span> 8</div><div class="f"><span class="k">lanes</span> Owner · Agent</div><div class="f"><span class="k">skills</span> adopt-methodology-from-source, methodology-adoption</div></td>
 </tr>
 <tr>
+  <td><a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/multi-locale-translation.bpmn"><code>Multi-locale translation</code></a><br><span class="p">cat-harness/processes/library/multi-locale-translation.bpmn</span></td>
+  <td>Translate one or more instances into several locales at once, as a team: one source-language lead, one translator per locale, an untainted round trip, and the owner's merge window.<div class="f"><span class="k">activities</span> 13</div><div class="f"><span class="k">lanes</span> Owner · Source-language lead · Locale translator (one per locale)</div><div class="f"><span class="k">skills</span> translation-manager, translation-refresh</div></td>
+</tr>
+<tr>
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/refresh-materialized.bpmn"><code>Refresh materialized remote content</code></a><br><span class="p">cat-harness/processes/library/refresh-materialized.bpmn</span></td>
   <td>Keep a materialized copy of remote content current: what changed upstream, what changed locally, and what to do when both did — an archival copy is never re-fetched and gets a fixity check instead.<div class="f"><span class="k">activities</span> 8</div><div class="f"><span class="k">lanes</span> Contributor (human or agent) · Ingestion Engine (agent, runs unattended)</div><div class="f"><span class="k">skills</span> adjudication, materialize-remote</div></td>
 </tr>
@@ -1089,8 +1093,16 @@
   <td>Subscribe a folio or harness to an external knowledge graph pinned to a full commit SHA, then take each chosen part from referenced to materialized through <code>materialize-remote</code> and instantiate each chosen harness once i…<div class="f"><span class="k">activities</span> 11</div><div class="f"><span class="k">lanes</span> Subscriber (the folio's owner) · Ingestion Engine (agent, runs unattended)</div><div class="f"><span class="k">skills</span> index-config, kg-subscription, materialize-remote</div></td>
 </tr>
 <tr>
+  <td><a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-refresh.bpmn"><code>Translation refresh (watcher)</code></a><br><span class="p">cat-harness/processes/library/translation-refresh.bpmn</span></td>
+  <td>Keep every locale current after the source moves: detect, refresh the templates, merge them into each locale, translate only what is new or fuzzy, check it, and land one PR per instance on main.<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Locale translator · Source-language lead (watcher)</div><div class="f"><span class="k">skills</span> translation-manager, translation-refresh</div></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-round-trip.bpmn"><code>Translation round trip (untainted)</code></a><br><span class="p">cat-harness/processes/library/translation-round-trip.bpmn</span></td>
+  <td>Did the meaning survive the translation? The untainted round trip on a sample of one locale's strings, with the two parties kept apart: a back-translator who sees only the target text, and an adjudicator who sees only t…<div class="f"><span class="k">activities</span> 6</div><div class="f"><span class="k">lanes</span> Locale translator · Back-translator · Round-trip adjudicator</div><div class="f"><span class="k">skills</span> translation-manager, untainted-verification</div></td>
+</tr>
+<tr>
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-workflow.bpmn"><code>Translation Workflow</code></a><br><span class="p">cat-harness/processes/library/translation-workflow.bpmn</span></td>
-  <td>The machine half of translation, end to end: extract the translatable strings, inject a catalogue back, check the result by back-translating it, and track whether the source has moved since.<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Author (source content) · Agent / platform (automated) · Human reviewer / adjudicator</div><div class="f"><span class="k">skills</span> adjudication, translation-manager</div></td>
+  <td>The machine half of translation, end to end: extract the translatable strings, inject a catalogue back, check the result by back-translating it, and track whether the source has moved since.<div class="f"><span class="k">activities</span> 12</div><div class="f"><span class="k">lanes</span> Author (source content) · Agent / platform (automated) · Human reviewer / adjudicator</div><div class="f"><span class="k">skills</span> adjudication, translation-manager</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/actor-role-administration.bpmn"><code>Actor and role administration</code></a><br><span class="p">cat-harness/processes/process/actor-role-administration.bpmn</span></td>
@@ -1242,11 +1254,15 @@
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/merge-manager-watch.bpmn"><code>Merge manager watch: wake, read the queue live, route</code></a><br><span class="p">cat-harness/sdlc/processes/merge-manager-watch.bpmn</span></td>
-  <td>The loop run by the agent that holds the merge-steward lane (actor merge-manager, skill merge-manager-watcher), which coordinates with the swarm siblings whenever a batch lands.<div class="f"><span class="k">activities</span> 4</div><div class="f"><span class="k">lanes</span> Merge steward</div><div class="f"><span class="k">skills</span> merge-manager-watcher</div></td>
+  <td>The loop run by the session that holds the merge-steward lane (actor merge-manager, skill merge-manager-watcher): elected, appointed, or holding it for its own PRs only.<div class="f"><span class="k">activities</span> 9</div><div class="f"><span class="k">lanes</span> Merge steward · Owner</div><div class="f"><span class="k">skills</span> interaction-modality, merge-manager-watcher</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/merge-refusal.bpmn"><code>A refused merge-train member</code></a><br><span class="p">cat-harness/sdlc/processes/merge-refusal.bpmn</span></td>
   <td>What a merge steward does with a PR it dropped from a merge train: its merge (<code>merge-base.bpmn</code>, run with <code>--no-regen</code>) refused an authored or undeclared conflict, or the train's combined result failed a gate.<div class="f"><span class="k">activities</span> 12</div><div class="f"><span class="k">lanes</span> Merge steward · Owning session · Dispatched agent</div><div class="f"><span class="k">skills</span> bean-coordination, dispatch-agent, interaction-modality, merge-conflict-patterns, prepare-merge, todo-manager</div></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/merge-request.bpmn"><code>Merge request: find or elect the merge manager</code></a><br><span class="p">cat-harness/sdlc/processes/merge-request.bpmn</span></td>
+  <td>The sibling's side of merging (owner rulings, 2026-11-07).<div class="f"><span class="k">activities</span> 9</div><div class="f"><span class="k">lanes</span> Sibling session</div><div class="f"><span class="k">skills</span> continual-progress, merge-manager-watcher</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/merge-to-main.bpmn"><code>Merge to main</code></a><br><span class="p">cat-harness/sdlc/processes/merge-to-main.bpmn</span></td>
@@ -1358,7 +1374,7 @@
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/authoring-a-document.bpmn"><code>Authoring a document</code></a><br><span class="p">folio-assistant-core/processes/content/authoring-a-document.bpmn</span></td>
-  <td>How a document folio — structured prose and policy guidance, with no Lean and no required TeX — is authored, built and reviewed end to end.<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Author (person) · Work plan (beans) · Authoring agent (system) · Build pipeline</div><div class="f"><span class="k">skills</span> bean-coordination, content-plan, content-review, content-validate, document-authoring, document-publishing, document-structure, normative-statements, todo-manager</div></td>
+  <td>How a document folio — structured prose and policy guidance, with no Lean and no required TeX — is authored, built and reviewed end to end.<div class="f"><span class="k">activities</span> 11</div><div class="f"><span class="k">lanes</span> Author (person) · Work plan (beans) · Authoring agent (system) · Build pipeline</div><div class="f"><span class="k">skills</span> bean-coordination, content-plan, content-review, content-validate, document-authoring, document-publishing, document-structure, normative-statements, publish-extracted-statements, todo-manager</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn"><code>Committee review of a content change</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn</span></td>
@@ -1458,7 +1474,11 @@
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/library/l1-document-ingestion.bpmn"><code>L1 document ingestion — a document to the L1 source knowledge graph</code></a><br><span class="p">folio-assistant-core/processes/library/l1-document-ingestion.bpmn</span></td>
-  <td>L1 document ingestion — a document to the L1 source knowledge graph.<div class="f"><span class="k">activities</span> 14</div><div class="f"><span class="k">lanes</span> Ingestion Engine (agent, runs unattended)</div><div class="f"><span class="k">skills</span> bean-coordination, document-intake, l1-document-ingestion, library-ingestion, theme-art-intake, todo-manager</div></td>
+  <td>L1 document ingestion — a document to the L1 source knowledge graph.<div class="f"><span class="k">activities</span> 15</div><div class="f"><span class="k">lanes</span> Ingestion Engine (agent, runs unattended)</div><div class="f"><span class="k">skills</span> bean-coordination, document-intake, l1-document-ingestion, library-ingestion, publish-extracted-statements, theme-art-intake, todo-manager</div></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/library/publish-extracted-statements.bpmn"><code>Publish extracted statements with source links</code></a><br><span class="p">folio-assistant-core/processes/library/publish-extracted-statements.bpmn</span></td>
+  <td>Makes every statement extracted from a library source readable, with a link back to where it came from, in the folio's working artifact AND in the shared extraction viewer, and keeps the pages current.<div class="f"><span class="k">activities</span> 4</div><div class="f"><span class="k">lanes</span> Ingestion Engine (agent, runs unattended)</div><div class="f"><span class="k">skills</span> publish-extracted-statements</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/ui/board-open-close.bpmn"><code>Board: open and close content</code></a><br><span class="p">folio-assistant-core/processes/ui/board-open-close.bpmn</span></td>

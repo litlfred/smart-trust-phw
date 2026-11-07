@@ -3,17 +3,17 @@
   "id": "smart-trust-phw",
   "title": "smart.who.int.trust-phw — artefact index (from the IG Publisher AST cache)",
   "packageId": "smart.who.int.trust-phw",
-  "version": "0.1.0",
+  "version": "0.2.0-litlfred",
   "canonicalBase": "http://smart.who.int/trust-phw",
   "source": {
     "kind": "output",
     "of": "output-ast",
-    "revision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+    "revision": "1e44fc31959132396cc39189bbd8310e90009873",
     "readAt": "2026-11-07"
   },
   "provenance": {},
   "sidecarApi": "present",
-  "count": 64,
+  "count": 101,
   "artifacts": [
     {
       "key": "ActorDefinition/ConsentRegistry",
@@ -23,11 +23,19 @@
       "title": "Consent Registry",
       "description": "[IHE PCF Consent Registry](https://profiles.ihe.net/ITI/PCF/volume-1.html#153112-consent-registry) actor",
       "canonical": "http://smart.who.int/trust-phw/ActorDefinition/ConsentRegistry",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Actor Definitions",
       "profiles": [
         "http://smart.who.int/base/StructureDefinition/SGActor"
       ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "ActorDefinition"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/ActorDefinition-ConsentRegistry.json"
@@ -48,7 +56,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/ActorDefinition-ConsentRegistry.html",
           "local": "fsh-generated/resources/ActorDefinition-ConsentRegistry.json"
         },
-        "localPath": "output-ast/resources/ActorDefinition/ConsentRegistry--f0676388.json",
+        "localPath": "output-ast/resources/ActorDefinition/ConsentRegistry--9065d17b.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -74,10 +82,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -88,11 +96,19 @@
       "title": "Holder",
       "description": "Holder (person) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://profiles.ihe.net/ITI/VHL/index.html)",
       "canonical": "http://smart.who.int/trust-phw/ActorDefinition/Holder",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Actor Definitions",
       "profiles": [
         "http://smart.who.int/base/StructureDefinition/SGActor"
       ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "ActorDefinition"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/ActorDefinition-Holder.json"
@@ -113,7 +129,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/ActorDefinition-Holder.html",
           "local": "fsh-generated/resources/ActorDefinition-Holder.json"
         },
-        "localPath": "output-ast/resources/ActorDefinition/Holder--9c1606a8.json",
+        "localPath": "output-ast/resources/ActorDefinition/Holder--cb525e8a.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -139,10 +155,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -153,11 +169,19 @@
       "title": "Issuer",
       "description": "Issuer (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://profiles.ihe.net/ITI/VHL/index.html)",
       "canonical": "http://smart.who.int/trust-phw/ActorDefinition/Issuer",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Actor Definitions",
       "profiles": [
         "http://smart.who.int/base/StructureDefinition/SGActor"
       ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "ActorDefinition"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/ActorDefinition-Issuer.json"
@@ -178,7 +202,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/ActorDefinition-Issuer.html",
           "local": "fsh-generated/resources/ActorDefinition-Issuer.json"
         },
-        "localPath": "output-ast/resources/ActorDefinition/Issuer--8214cf7f.json",
+        "localPath": "output-ast/resources/ActorDefinition/Issuer--86a02f4b.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -204,10 +228,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -218,11 +242,19 @@
       "title": "Receiver",
       "description": "Receiver (system) of [Verifiable Health Certificate](https://smart.who.int/trust/concepts.html#verifiable-digital-health-certificate) or [Verifiable Health Link](https://profiles.ihe.net/ITI/VHL/index.html)",
       "canonical": "http://smart.who.int/trust-phw/ActorDefinition/Receiver",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Actor Definitions",
       "profiles": [
         "http://smart.who.int/base/StructureDefinition/SGActor"
       ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "ActorDefinition"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/ActorDefinition-Receiver.json"
@@ -243,7 +275,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/ActorDefinition-Receiver.html",
           "local": "fsh-generated/resources/ActorDefinition-Receiver.json"
         },
-        "localPath": "output-ast/resources/ActorDefinition/Receiver--1a2f8491.json",
+        "localPath": "output-ast/resources/ActorDefinition/Receiver--3e985429.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -269,10 +301,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -283,11 +315,19 @@
       "title": "Trust Network Anchor",
       "description": "Trust Anchor which receives and distributes PKI-material within a Trust Network",
       "canonical": "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkAnchor",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Actor Definitions",
       "profiles": [
         "http://smart.who.int/base/StructureDefinition/SGActor"
       ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "ActorDefinition"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/ActorDefinition-TrustNetworkAnchor.json"
@@ -308,7 +348,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/ActorDefinition-TrustNetworkAnchor.html",
           "local": "fsh-generated/resources/ActorDefinition-TrustNetworkAnchor.json"
         },
-        "localPath": "output-ast/resources/ActorDefinition/TrustNetworkAnchor--26fc7455.json",
+        "localPath": "output-ast/resources/ActorDefinition/TrustNetworkAnchor--0866e2f8.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -334,10 +374,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -348,11 +388,19 @@
       "title": "Trust Network Participant",
       "description": "Trust Network Participant which publishes and or receives PKI-material within a Trust Network",
       "canonical": "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkParticipant",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Actor Definitions",
       "profiles": [
         "http://smart.who.int/base/StructureDefinition/SGActor"
       ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "ActorDefinition"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/ActorDefinition-TrustNetworkParticipant.json"
@@ -373,7 +421,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/ActorDefinition-TrustNetworkParticipant.html",
           "local": "fsh-generated/resources/ActorDefinition-TrustNetworkParticipant.json"
         },
-        "localPath": "output-ast/resources/ActorDefinition/TrustNetworkParticipant--1d51a9bb.json",
+        "localPath": "output-ast/resources/ActorDefinition/TrustNetworkParticipant--2420a8cd.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -399,10 +447,63 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "Basic/DSAPermissionExample",
+      "resourceType": "Basic",
+      "id": "DSAPermissionExample",
+      "title": "DSAPermissionExample",
+      "category": "Other",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "Permission",
+            "display": "Permission"
+          }
+        ]
+      },
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Basic-DSAPermissionExample.json"
+        },
+        "localPath": "output-ast/resources/Basic/DSAPermissionExample--84821052.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -457,10 +558,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -518,10 +619,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -579,10 +680,57 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "Bundle/LinaSummaryWithConsent",
+      "resourceType": "Bundle",
+      "id": "LinaSummaryWithConsent",
+      "title": "LinaSummaryWithConsent",
+      "category": "Other",
+      "profiles": [
+        "http://smart.who.int/trust-phw/StructureDefinition/PHWDocumentWithConsent"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Bundle-LinaSummaryWithConsent.json"
+        },
+        "localPath": "output-ast/resources/Bundle/LinaSummaryWithConsent--97cb397a.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -593,7 +741,7 @@
       "title": "Relationship Status for Contact in Patient",
       "description": "Relationship Status for Contact in Patient",
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
       "published": {
         "json": {
@@ -615,7 +763,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus.html",
           "local": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus.json"
         },
-        "localPath": "output-ast/resources/CodeSystem/DVCRelationshipStatus--a31b480d.json",
+        "localPath": "output-ast/resources/CodeSystem/DVCRelationshipStatus--dde10a40.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -641,10 +789,202 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DVCRelationshipStatus-ar",
+      "resourceType": "CodeSystem",
+      "id": "DVCRelationshipStatus-ar",
+      "name": "DVCRelationshipStatusAr",
+      "title": "حالة العلاقة بجهة الاتصال لدى المريض",
+      "description": "ملحق باللغة العربية (ar) لنظام الرموز DVCRelationshipStatus: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-ar",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-ar.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DVCRelationshipStatus-ar--8c3deb6e.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DVCRelationshipStatus-es",
+      "resourceType": "CodeSystem",
+      "id": "DVCRelationshipStatus-es",
+      "name": "DVCRelationshipStatusEs",
+      "title": "DVCRelationshipStatus (es displays, unofficial)",
+      "description": "Unofficial Spanish displays for DVCRelationshipStatus: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-es",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-es.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DVCRelationshipStatus-es--636fddd6.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DVCRelationshipStatus-ru",
+      "resourceType": "CodeSystem",
+      "id": "DVCRelationshipStatus-ru",
+      "name": "DVCRelationshipStatusRu",
+      "title": "DVCRelationshipStatus (ru displays, unofficial)",
+      "description": "Unofficial Russian displays for DVCRelationshipStatus: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-ru",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-ru.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DVCRelationshipStatus-ru--398da479.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DVCRelationshipStatus-zh",
+      "resourceType": "CodeSystem",
+      "id": "DVCRelationshipStatus-zh",
+      "name": "DVCRelationshipStatusZh",
+      "title": "DVCRelationshipStatus — Chinese (zh) supplement",
+      "description": "Unofficial Simplified Chinese (zh) display designations for the DVCRelationshipStatus code system, drafted by an agent and not signed off by a human.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-zh",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-zh.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DVCRelationshipStatus-zh--bcd00cbd.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -655,7 +995,7 @@
       "title": "Disclosure Statements",
       "description": "Disclosure Statement Code System",
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
       "published": {
         "json": {
@@ -677,7 +1017,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements.html",
           "local": "fsh-generated/resources/CodeSystem-DisclosureStatements.json"
         },
-        "localPath": "output-ast/resources/CodeSystem/DisclosureStatements--7652127c.json",
+        "localPath": "output-ast/resources/CodeSystem/DisclosureStatements--a79ccc08.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -703,10 +1043,202 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DisclosureStatements-ar",
+      "resourceType": "CodeSystem",
+      "id": "DisclosureStatements-ar",
+      "name": "DisclosureStatementsAr",
+      "title": "بيانات الإفصاح",
+      "description": "ملحق باللغة العربية (ar) لنظام الرموز DisclosureStatements: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-ar",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DisclosureStatements-ar.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DisclosureStatements-ar--ed5b0a8e.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DisclosureStatements-es",
+      "resourceType": "CodeSystem",
+      "id": "DisclosureStatements-es",
+      "name": "DisclosureStatementsEs",
+      "title": "DisclosureStatements (es displays, unofficial)",
+      "description": "Unofficial Spanish displays for DisclosureStatements: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-es",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DisclosureStatements-es.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DisclosureStatements-es--36127be5.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DisclosureStatements-ru",
+      "resourceType": "CodeSystem",
+      "id": "DisclosureStatements-ru",
+      "name": "DisclosureStatementsRu",
+      "title": "DisclosureStatements (ru displays, unofficial)",
+      "description": "Unofficial Russian displays for DisclosureStatements: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-ru",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DisclosureStatements-ru.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DisclosureStatements-ru--49e916c1.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DisclosureStatements-zh",
+      "resourceType": "CodeSystem",
+      "id": "DisclosureStatements-zh",
+      "name": "DisclosureStatementsZh",
+      "title": "DisclosureStatements — Chinese (zh) supplement",
+      "description": "Unofficial Simplified Chinese (zh) display designations for the DisclosureStatements code system, drafted by an agent and not signed off by a human.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-zh",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DisclosureStatements-zh.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DisclosureStatements-zh--fb541773.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -717,7 +1249,7 @@
       "title": "Smart Guidelines Documentation Section",
       "description": "CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts",
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
       "published": {
         "json": {
@@ -739,7 +1271,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections.html",
           "local": "fsh-generated/resources/CodeSystem-DocumentationSections.json"
         },
-        "localPath": "output-ast/resources/CodeSystem/DocumentationSections--55c188d5.json",
+        "localPath": "output-ast/resources/CodeSystem/DocumentationSections--52fd6c83.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -765,10 +1297,298 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DocumentationSections-ar",
+      "resourceType": "CodeSystem",
+      "id": "DocumentationSections-ar",
+      "name": "DocumentationSectionsAr",
+      "title": "قسم توثيق إرشادات SMART",
+      "description": "ملحق باللغة العربية (ar) لنظام الرموز DocumentationSections: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-ar",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DocumentationSections-ar.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DocumentationSections-ar--eed2b027.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DocumentationSections-es",
+      "resourceType": "CodeSystem",
+      "id": "DocumentationSections-es",
+      "name": "DocumentationSectionsEs",
+      "title": "DocumentationSections (es displays, unofficial)",
+      "description": "Unofficial Spanish displays for DocumentationSections: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-es",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DocumentationSections-es.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DocumentationSections-es--67acecc0.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DocumentationSections-ru",
+      "resourceType": "CodeSystem",
+      "id": "DocumentationSections-ru",
+      "name": "DocumentationSectionsRu",
+      "title": "DocumentationSections (ru displays, unofficial)",
+      "description": "Unofficial Russian displays for DocumentationSections: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-ru",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DocumentationSections-ru.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DocumentationSections-ru--0366caf2.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DocumentationSections-zh",
+      "resourceType": "CodeSystem",
+      "id": "DocumentationSections-zh",
+      "name": "DocumentationSectionsZh",
+      "title": "DocumentationSections — Chinese (zh) supplement",
+      "description": "Unofficial Simplified Chinese (zh) display designations for the DocumentationSections code system, drafted by an agent and not signed off by a human.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-zh",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-DocumentationSections-zh.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DocumentationSections-zh--0f6e63b3.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/HL-TYPE-es",
+      "resourceType": "CodeSystem",
+      "id": "HL-TYPE-es",
+      "name": "HLTYPEEs",
+      "title": "HL.TYPE (es displays, unofficial)",
+      "description": "Unofficial Spanish displays for HL.TYPE: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/HL-TYPE-es",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-HL-TYPE-es.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/HL-TYPE-es--07529c8e.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/HL-TYPE-ru",
+      "resourceType": "CodeSystem",
+      "id": "HL-TYPE-ru",
+      "name": "HLTYPERu",
+      "title": "HL.TYPE (ru displays, unofficial)",
+      "description": "Unofficial Russian displays for HL.TYPE: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/HL-TYPE-ru",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-HL-TYPE-ru.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/HL-TYPE-ru--6db5ac1c.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -779,7 +1599,7 @@
       "title": "HL Type CodeSystem",
       "description": "CodeSystem for Health Link Type that has codes classifying type of Smart Health Link",
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
       "published": {
         "json": {
@@ -801,7 +1621,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL.TYPE.html",
           "local": "fsh-generated/resources/CodeSystem-HL.TYPE.json"
         },
-        "localPath": "output-ast/resources/CodeSystem/HL.TYPE--5f3c0eab.json",
+        "localPath": "output-ast/resources/CodeSystem/HL.TYPE--884127e8.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -827,10 +1647,202 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/HL.TYPE-ar",
+      "resourceType": "CodeSystem",
+      "id": "HL.TYPE-ar",
+      "name": "HLTYPEAr",
+      "title": "نظام رموز أنواع الروابط الصحية (HL)",
+      "description": "ملحق باللغة العربية (ar) لنظام الرموز HL.TYPE: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE-ar",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-HL.TYPE-ar.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/HL.TYPE-ar--3e3a3a13.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/HL.TYPE-zh",
+      "resourceType": "CodeSystem",
+      "id": "HL.TYPE-zh",
+      "name": "HLTYPEZh",
+      "title": "HL.TYPE — Chinese (zh) supplement",
+      "description": "Unofficial Simplified Chinese (zh) display designations for the HL.TYPE code system, drafted by an agent and not signed off by a human.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE-zh",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-HL.TYPE-zh.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/HL.TYPE-zh--54065351.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/ICVP-Core-es",
+      "resourceType": "CodeSystem",
+      "id": "ICVP-Core-es",
+      "name": "ICVPCoreEs",
+      "title": "ICVP.Core (es displays, unofficial)",
+      "description": "Unofficial Spanish displays for ICVP.Core: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/ICVP-Core-es",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-ICVP-Core-es.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/ICVP-Core-es--44eb3e9c.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/ICVP-Core-ru",
+      "resourceType": "CodeSystem",
+      "id": "ICVP-Core-ru",
+      "name": "ICVPCoreRu",
+      "title": "ICVP.Core (ru displays, unofficial)",
+      "description": "Unofficial Russian displays for ICVP.Core: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/ICVP-Core-ru",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-ICVP-Core-ru.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/ICVP-Core-ru--f87f839a.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -841,7 +1853,7 @@
       "title": "ICVP.Core CodeSystem for Data Elements",
       "description": "CodeSystem for ICVP.Core Data Elements from the Digital ICVP Core Data Dictionary",
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
       "published": {
         "json": {
@@ -863,7 +1875,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP.Core.html",
           "local": "fsh-generated/resources/CodeSystem-ICVP.Core.json"
         },
-        "localPath": "output-ast/resources/CodeSystem/ICVP.Core--e55c6461.json",
+        "localPath": "output-ast/resources/CodeSystem/ICVP.Core--f6052297.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -889,10 +1901,106 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/ICVP.Core-ar",
+      "resourceType": "CodeSystem",
+      "id": "ICVP.Core-ar",
+      "name": "ICVPCoreAr",
+      "title": "نظام الرموز ICVP.Core لعناصر البيانات",
+      "description": "ملحق باللغة العربية (ar) لنظام الرموز ICVP.Core: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core-ar",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-ICVP.Core-ar.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/ICVP.Core-ar--b61404f8.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "CodeSystem/ICVP.Core-zh",
+      "resourceType": "CodeSystem",
+      "id": "ICVP.Core-zh",
+      "name": "ICVPCoreZh",
+      "title": "ICVP.Core — Chinese (zh) supplement",
+      "description": "Unofficial Simplified Chinese (zh) display designations for the ICVP.Core code system, drafted by an agent and not signed off by a human.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core-zh",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/CodeSystem-ICVP.Core-zh.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/ICVP.Core-zh--fc3b2e57.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -903,7 +2011,7 @@
       "title": "ConceptMap to and from ICVP.Core Data Elements",
       "description": "Mapping to and from ICVP.Core Data Dictionary to other code systems.",
       "canonical": "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Terminology: Concept Maps",
       "published": {
         "json": {
@@ -925,7 +2033,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/ConceptMap-ICVP.Core.ConceptMap.html",
           "local": "fsh-generated/resources/ConceptMap-ICVP.Core.ConceptMap.json"
         },
-        "localPath": "output-ast/resources/ConceptMap/ICVP.Core.ConceptMap--f9d45b70.json",
+        "localPath": "output-ast/resources/ConceptMap/ICVP.Core.ConceptMap--e2513f59.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -951,10 +2059,242 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "Consent/LinaExplicitConsent",
+      "resourceType": "Consent",
+      "id": "LinaExplicitConsent",
+      "title": "LinaExplicitConsent",
+      "category": "Other",
+      "profiles": [
+        "http://smart.who.int/trust-phw/StructureDefinition/PHWExplicitConsent"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Consent-LinaExplicitConsent.json"
+        },
+        "localPath": "output-ast/resources/Consent/LinaExplicitConsent--07b281d6.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "Consent/LinaImpliedConsent",
+      "resourceType": "Consent",
+      "id": "LinaImpliedConsent",
+      "title": "LinaImpliedConsent",
+      "category": "Other",
+      "profiles": [
+        "http://smart.who.int/trust-phw/StructureDefinition/PHWImpliedConsent"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Consent-LinaImpliedConsent.json"
+        },
+        "localPath": "output-ast/resources/Consent/LinaImpliedConsent--1da9b41e.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "Consent/PilgrimConsentHostUse",
+      "resourceType": "Consent",
+      "id": "PilgrimConsentHostUse",
+      "title": "PilgrimConsentHostUse",
+      "category": "Other",
+      "profiles": [
+        "http://smart.who.int/trust-phw/StructureDefinition/PHWExplicitConsent"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Consent-PilgrimConsentHostUse.json"
+        },
+        "localPath": "output-ast/resources/Consent/PilgrimConsentHostUse--3dcb8632.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "Consent/PilgrimConsentOriginRelease",
+      "resourceType": "Consent",
+      "id": "PilgrimConsentOriginRelease",
+      "title": "PilgrimConsentOriginRelease",
+      "category": "Other",
+      "profiles": [
+        "http://smart.who.int/trust-phw/StructureDefinition/PHWExplicitConsent"
+      ],
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Consent-PilgrimConsentOriginRelease.json"
+        },
+        "localPath": "output-ast/resources/Consent/PilgrimConsentOriginRelease--b4045467.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "DocumentReference/LinaWalletConfirmation",
+      "resourceType": "DocumentReference",
+      "id": "LinaWalletConfirmation",
+      "title": "LinaWalletConfirmation",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/DocumentReference-LinaWalletConfirmation.json"
+        },
+        "localPath": "output-ast/resources/DocumentReference/LinaWalletConfirmation--5a0bd0e8.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -965,7 +2305,7 @@
       "title": "GDHCN Trust Network - Personal Health Wallet",
       "description": "Describes common workflows and specifications for usage of personal health wallets on the WHO GDHCN Trust Network",
       "canonical": "http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "profiles": [
         "http://smart.who.int/base/StructureDefinition/SGImplementationGuide"
       ],
@@ -985,7 +2325,7 @@
         "provenance": {
           "local": "fsh-generated/resources/ImplementationGuide-smart.who.int.trust-phw.json"
         },
-        "localPath": "output-ast/resources/ImplementationGuide/smart.who.int.trust-phw--15d459b0.json",
+        "localPath": "output-ast/resources/ImplementationGuide/smart.who.int.trust-phw--170bafda.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1011,10 +2351,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1070,10 +2410,100 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "Organization/HomeHIE",
+      "resourceType": "Organization",
+      "id": "HomeHIE",
+      "title": "HomeHIE",
+      "description": "Home Health Information Exchange (example)",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Organization-HomeHIE.json"
+        },
+        "localPath": "output-ast/resources/Organization/HomeHIE--cd19fb86.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "Organization/HostMoHExample",
+      "resourceType": "Organization",
+      "id": "HostMoHExample",
+      "title": "HostMoHExample",
+      "description": "Ministry of Health Saudi Arabia (example)",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Organization-HostMoHExample.json"
+        },
+        "localPath": "output-ast/resources/Organization/HostMoHExample--831088af.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1129,10 +2559,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1188,39 +2618,26 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
-      "key": "Permission/DSAPermissionExample",
-      "resourceType": "Permission",
-      "id": "DSAPermissionExample",
-      "title": "DSAPermissionExample",
+      "key": "Organization/OriginHIEExample",
+      "resourceType": "Organization",
+      "id": "OriginHIEExample",
+      "title": "OriginHIEExample",
+      "description": "Ministry of Health Malaysia Health Information Exchange (example)",
       "category": "Other",
-      "published": {
-        "json": {
-          "url": "https://litlfred.github.io/smart-trust-phw/Permission-DSAPermissionExample.json"
-        },
-        "xml": {
-          "url": "https://litlfred.github.io/smart-trust-phw/Permission-DSAPermissionExample.xml"
-        },
-        "ttl": {
-          "url": "https://litlfred.github.io/smart-trust-phw/Permission-DSAPermissionExample.ttl"
-        },
-        "html": {
-          "url": "https://litlfred.github.io/smart-trust-phw/Permission-DSAPermissionExample.html"
-        }
-      },
+      "published": {},
       "materialization": {
         "state": "materialized",
         "provenance": {
-          "upstream": "https://litlfred.github.io/smart-trust-phw/Permission-DSAPermissionExample.html",
-          "local": "fsh-generated/resources/Permission-DSAPermissionExample.json"
+          "local": "fsh-generated/resources/Organization-OriginHIEExample.json"
         },
-        "localPath": "output-ast/resources/Permission/DSAPermissionExample--3cdbf570.json",
+        "localPath": "output-ast/resources/Organization/OriginHIEExample--2d908025.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1246,10 +2663,98 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "Patient/LinaPatient",
+      "resourceType": "Patient",
+      "id": "LinaPatient",
+      "title": "LinaPatient",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Patient-LinaPatient.json"
+        },
+        "localPath": "output-ast/resources/Patient/LinaPatient--f82b2aaa.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "Patient/PilgrimExample",
+      "resourceType": "Patient",
+      "id": "PilgrimExample",
+      "title": "PilgrimExample",
+      "category": "Other",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/Patient-PilgrimExample.json"
+        },
+        "localPath": "output-ast/resources/Patient/PilgrimExample--0f251eb8.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1259,7 +2764,7 @@
       "title": "DVC Model Questionnaire",
       "description": "Questionnaire for DVC Logical Model with the WHO PreQual DB",
       "canonical": "http://smart.who.int/trust-phw/Questionnaire/PreQual",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Other",
       "profiles": [
         "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap"
@@ -1284,7 +2789,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/Questionnaire-PreQual.html",
           "local": "fsh-generated/resources/Questionnaire-PreQual.json"
         },
-        "localPath": "output-ast/resources/Questionnaire/PreQual--8bf8953b.json",
+        "localPath": "output-ast/resources/Questionnaire/PreQual--4ea6cee7.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1310,10 +2815,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1323,8 +2828,16 @@
       "title": "Accept mTLS",
       "description": "Accept an mTLS in order to conduct further transactions under a secure channel",
       "canonical": "http://smart.who.int/trust-phw/Requirements/accept-mtls-connection",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Formal Requirements",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "Requirements"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/Requirements-accept-mtls-connection.json"
@@ -1345,7 +2858,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/Requirements-accept-mtls-connection.html",
           "local": "fsh-generated/resources/Requirements-accept-mtls-connection.json"
         },
-        "localPath": "output-ast/resources/Requirements/accept-mtls-connection--317cc515.json",
+        "localPath": "output-ast/resources/Requirements/accept-mtls-connection--986d1d19.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1371,10 +2884,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1384,8 +2897,16 @@
       "title": "Distribute PKI material",
       "description": "Make received trust material available through a distrubution point to a Trust Network Participant",
       "canonical": "http://smart.who.int/trust-phw/Requirements/distribute-pki-material",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Formal Requirements",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "Requirements"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/Requirements-distribute-pki-material.json"
@@ -1406,7 +2927,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/Requirements-distribute-pki-material.html",
           "local": "fsh-generated/resources/Requirements-distribute-pki-material.json"
         },
-        "localPath": "output-ast/resources/Requirements/distribute-pki-material--84fc2d1a.json",
+        "localPath": "output-ast/resources/Requirements/distribute-pki-material--420cd6ea.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1432,10 +2953,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1445,8 +2966,16 @@
       "title": "Initiate mTLS",
       "description": "Initiate an mTLS in order to conduct further transactions under a secure channel",
       "canonical": "http://smart.who.int/trust-phw/Requirements/initiate-mtls-connection",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Formal Requirements",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "Requirements"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/Requirements-initiate-mtls-connection.json"
@@ -1467,7 +2996,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/Requirements-initiate-mtls-connection.html",
           "local": "fsh-generated/resources/Requirements-initiate-mtls-connection.json"
         },
-        "localPath": "output-ast/resources/Requirements/initiate-mtls-connection--2cacad0c.json",
+        "localPath": "output-ast/resources/Requirements/initiate-mtls-connection--6a91228e.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1493,10 +3022,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1506,8 +3035,16 @@
       "title": "Provide VHL or VDHC",
       "description": "Is able to provide a VHL authorization mechanism or a VDHC to a VHL Receiver",
       "canonical": "http://smart.who.int/trust-phw/Requirements/provide-a-vhl-to-a-receiver",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Formal Requirements",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "Requirements"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/Requirements-provide-a-vhl-to-a-receiver.json"
@@ -1528,7 +3065,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/Requirements-provide-a-vhl-to-a-receiver.html",
           "local": "fsh-generated/resources/Requirements-provide-a-vhl-to-a-receiver.json"
         },
-        "localPath": "output-ast/resources/Requirements/provide-a-vhl-to-a-receiver--78186493.json",
+        "localPath": "output-ast/resources/Requirements/provide-a-vhl-to-a-receiver--23125bd8.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1554,10 +3091,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1567,8 +3104,16 @@
       "title": "Publish PKI material",
       "description": "Publish trust material to a Trust Anchor",
       "canonical": "http://smart.who.int/trust-phw/Requirements/publish-pki-material",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Formal Requirements",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "Requirements"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/Requirements-publish-pki-material.json"
@@ -1589,7 +3134,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/Requirements-publish-pki-material.html",
           "local": "fsh-generated/resources/Requirements-publish-pki-material.json"
         },
-        "localPath": "output-ast/resources/Requirements/publish-pki-material--181d4be3.json",
+        "localPath": "output-ast/resources/Requirements/publish-pki-material--2bcd39e0.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1615,10 +3160,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1628,8 +3173,16 @@
       "title": "Receive VHL or VDHC",
       "description": "Is able to receive a VHL authorization mechanism or a VDHC from a Holder",
       "canonical": "http://smart.who.int/trust-phw/Requirements/receive-a-vhl",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Formal Requirements",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "Requirements"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/Requirements-receive-a-vhl.json"
@@ -1650,7 +3203,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/Requirements-receive-a-vhl.html",
           "local": "fsh-generated/resources/Requirements-receive-a-vhl.json"
         },
-        "localPath": "output-ast/resources/Requirements/receive-a-vhl--1888ec69.json",
+        "localPath": "output-ast/resources/Requirements/receive-a-vhl--d353e3af.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1676,10 +3229,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1689,8 +3242,16 @@
       "title": "Receive PKI material",
       "description": "Receive trust material from a Trust Network Participant, for distribution within the Trust Network",
       "canonical": "http://smart.who.int/trust-phw/Requirements/receive-pki-material",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Formal Requirements",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "Requirements"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/Requirements-receive-pki-material.json"
@@ -1711,7 +3272,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/Requirements-receive-pki-material.html",
           "local": "fsh-generated/resources/Requirements-receive-pki-material.json"
         },
-        "localPath": "output-ast/resources/Requirements/receive-pki-material--7162d27a.json",
+        "localPath": "output-ast/resources/Requirements/receive-pki-material--78b8f4ed.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1737,10 +3298,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1750,8 +3311,16 @@
       "title": "Retrieve PKI material",
       "description": "Retrieve PKI material from a distribution point",
       "canonical": "http://smart.who.int/trust-phw/Requirements/retrieve-pki-material",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Requirements: Formal Requirements",
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/fhir-types",
+            "code": "Requirements"
+          }
+        ]
+      },
       "published": {
         "json": {
           "url": "https://litlfred.github.io/smart-trust-phw/Requirements-retrieve-pki-material.json"
@@ -1772,7 +3341,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/Requirements-retrieve-pki-material.html",
           "local": "fsh-generated/resources/Requirements-retrieve-pki-material.json"
         },
-        "localPath": "output-ast/resources/Requirements/retrieve-pki-material--780bb00f.json",
+        "localPath": "output-ast/resources/Requirements/retrieve-pki-material--3f641f6b.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1798,10 +3367,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1812,7 +3381,7 @@
       "title": "DVC Certificate - DVC Bundle for Digital Vaccine Certificates",
       "description": "Profile of the IPS Bundle for representing digital vaccination certificates ",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-DVC",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -1834,7 +3403,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-Bundle-uv-ips-DVC.html",
           "local": "fsh-generated/resources/StructureDefinition-Bundle-uv-ips-DVC.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/Bundle-uv-ips-DVC--7dd7f65e.json",
+        "localPath": "output-ast/resources/StructureDefinition/Bundle-uv-ips-DVC--b1556294.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1860,10 +3429,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1874,7 +3443,7 @@
       "title": "DVC Certificate - IPS Bundle for WHO PreQual Databae",
       "description": "Profile of the IPS Bundle for representing digital vaccination certificates from WHO PreQual Databae",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-PreQual",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -1896,7 +3465,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-Bundle-uv-ips-PreQual.html",
           "local": "fsh-generated/resources/StructureDefinition-Bundle-uv-ips-PreQual.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/Bundle-uv-ips-PreQual--56ff251a.json",
+        "localPath": "output-ast/resources/StructureDefinition/Bundle-uv-ips-PreQual--820419bb.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1922,10 +3491,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1936,7 +3505,7 @@
       "title": "DVC Certificate - IPS Composition ",
       "description": "Profile of the IPS Composition for representing digital vaccination certificates with ",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-DVC",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -1958,7 +3527,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-Composition-uv-ips-DVC.html",
           "local": "fsh-generated/resources/StructureDefinition-Composition-uv-ips-DVC.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/Composition-uv-ips-DVC--e720644a.json",
+        "localPath": "output-ast/resources/StructureDefinition/Composition-uv-ips-DVC--2c2c9efc.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -1984,10 +3553,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -1998,7 +3567,7 @@
       "title": "DVC Certificate - IPS Composition for WHO PreQual Database",
       "description": "Profile of the IPS Composition for representing digital vaccination certificates with WHO PreQual Database",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-PreQual",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -2020,7 +3589,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-Composition-uv-ips-PreQual.html",
           "local": "fsh-generated/resources/StructureDefinition-Composition-uv-ips-PreQual.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/Composition-uv-ips-PreQual--1ba3f132.json",
+        "localPath": "output-ast/resources/StructureDefinition/Composition-uv-ips-PreQual--c2d424a4.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2046,10 +3615,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -2060,7 +3629,7 @@
       "title": "DVC",
       "description": "Data elements for Digital Vaccination Certificate.",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVC",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "profiles": [
         "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
@@ -2086,7 +3655,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVC.html",
           "local": "fsh-generated/resources/StructureDefinition-DVC.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVC--739cc30a.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVC--1df5d2c7.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2112,21 +3681,21 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
           "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVC.openapi.json",
           "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVC.openapi.json",
-          "bytes": 9871
+          "bytes": 9862
         },
         "schema": {
           "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVC.schema.json",
           "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVC.schema.json",
-          "bytes": 7609
+          "bytes": 7600
         }
       }
     },
@@ -2138,7 +3707,7 @@
       "title": "Digital Vaccination Certificate - Bundle",
       "description": "Digital Vaccination Certificate - Bundle",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -2160,7 +3729,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCBundle.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCBundle.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCBundle--15c357af.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCBundle--0e489764.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2186,10 +3755,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -2200,7 +3769,7 @@
       "title": "Digital Vaccination Certificate - Composition",
       "description": "Digital Vaccination Certificate - Composition",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -2222,7 +3791,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCComposition.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCComposition.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCComposition--ca01cd04.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCComposition--686e9f4c.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2248,10 +3817,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -2262,7 +3831,7 @@
       "title": "DVC Immunization",
       "description": "This profile represents a vaccination record for Digital Vaccine Certificates",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -2284,7 +3853,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCImmunization.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCImmunization.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCImmunization--f1cab872.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCImmunization--0330c935.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2310,10 +3879,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -2324,7 +3893,7 @@
       "title": "DVC HCERT Payload",
       "description": "Minimal DVC payload for use within an HCERT Payload",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "published": {
         "json": {
@@ -2346,7 +3915,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCMin.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCMin.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCMin--68da6fd9.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCMin--b36cab3b.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2372,10 +3941,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
@@ -2398,7 +3967,7 @@
       "title": "DVCMinPreQual",
       "description": "DVC payload minimized  for use within an HCERT Payload with the WHO PreQual Vaccine Database",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinPreQual",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "published": {
         "json": {
@@ -2420,7 +3989,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCMinPreQual.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCMinPreQual.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCMinPreQual--763fb6ec.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCMinPreQual--f664891b.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2446,10 +4015,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
@@ -2472,7 +4041,7 @@
       "title": "DVC HCert Vaccine Details (Minimal)",
       "description": "DVC Vaccine Details for a minimal DVC payload for use within an HCERT Payload",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "published": {
         "json": {
@@ -2494,7 +4063,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCMinVaccineDetails.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCMinVaccineDetails.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCMinVaccineDetails--018b8aaa.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCMinVaccineDetails--a409b05a.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2520,10 +4089,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
@@ -2546,7 +4115,7 @@
       "title": "DVC HCERT Payload for PreQual DB",
       "description": "DVC payload for a minimal DVC for use within an HCERT Payload using the WHO PreQual Vaccine Database",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetailsPreQual",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "published": {
         "json": {
@@ -2568,7 +4137,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCMinVaccineDetailsPreQual.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCMinVaccineDetailsPreQual.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCMinVaccineDetailsPreQual--5595a504.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCMinVaccineDetailsPreQual--dd5e870b.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2594,10 +4163,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
@@ -2620,7 +4189,7 @@
       "title": "DVC Patient",
       "description": "DVC Patient",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -2642,7 +4211,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCPatient.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCPatient.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCPatient--e9936153.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCPatient--f81adccf.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2668,10 +4237,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -2682,7 +4251,7 @@
       "title": "PreQual",
       "description": "Data elements for the Digital Vaccine Certificate using WHO Vaccine PreQualification database",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCPreQual",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "profiles": [
         "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
@@ -2708,7 +4277,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCPreQual.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCPreQual.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCPreQual--4f5c5243.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCPreQual--533be0a2.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2734,21 +4303,21 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
           "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCPreQual.openapi.json",
           "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCPreQual.openapi.json",
-          "bytes": 10066
+          "bytes": 10057
         },
         "schema": {
           "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCPreQual.schema.json",
           "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCPreQual.schema.json",
-          "bytes": 7715
+          "bytes": 7706
         }
       }
     },
@@ -2760,7 +4329,7 @@
       "title": "DVC with Selective Disclosure",
       "description": "DVC with Selective Disclosure",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSD",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "published": {
         "json": {
@@ -2782,7 +4351,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCSD.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCSD.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCSD--2dcb82c8.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCSD--138eadc1.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2808,21 +4377,21 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
           "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCSD.openapi.json",
           "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCSD.openapi.json",
-          "bytes": 10729
+          "bytes": 10720
         },
         "schema": {
           "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCSD.schema.json",
           "localPath": "fhir-artifact-index/sidecars/StructureDefinition-DVCSD.schema.json",
-          "bytes": 8330
+          "bytes": 8321
         }
       }
     },
@@ -2834,7 +4403,7 @@
       "title": "DVC document Bundle with Selective Disclosure",
       "description": "DVC document Bundle with Selective Disclosure for each entry",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -2856,7 +4425,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCSDBundle.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCSDBundle.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCSDBundle--55fd1094.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCSDBundle--c9911b30.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2882,10 +4451,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -2896,7 +4465,7 @@
       "title": "Digital Vaccination Certificate - Composition",
       "description": "Digital Vaccination Certificate - Composition",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDComposition",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -2918,7 +4487,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCSDComposition.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCSDComposition.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCSDComposition--998fcaf4.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCSDComposition--5a8ccef5.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -2944,10 +4513,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -2958,7 +4527,7 @@
       "title": "DVC Immunization with Selective Disclosure",
       "description": "DVC Immunization with Selective Disclosure",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDImmunization",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -2980,7 +4549,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCSDImmunization.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCSDImmunization.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCSDImmunization--0962296e.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCSDImmunization--fa5f3a9a.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3006,10 +4575,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -3020,7 +4589,7 @@
       "title": "DVC Patient with Selective Disclosure",
       "description": "DVC Patient with Selective Disclosure",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDPatient",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -3042,7 +4611,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCSDPatient.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCSDPatient.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCSDPatient--45922dee.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCSDPatient--5cba1ccf.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3068,10 +4637,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -3082,7 +4651,7 @@
       "title": "DVC - Vaccine Details",
       "description": "Vaccine Data elements for the Digital Vaccination Certificates",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "profiles": [
         "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
@@ -3108,7 +4677,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCVaccineDetails.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCVaccineDetails.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCVaccineDetails--9d81116b.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCVaccineDetails--f626378e.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3134,10 +4703,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
@@ -3160,7 +4729,7 @@
       "title": "PreQual - Vaccine Details",
       "description": "Vaccine Data elements from the Pre Qual Database",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetailsPreQual",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "profiles": [
         "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
@@ -3186,7 +4755,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DVCVaccineDetailsPreQual.html",
           "local": "fsh-generated/resources/StructureDefinition-DVCVaccineDetailsPreQual.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DVCVaccineDetailsPreQual--ab60d10f.json",
+        "localPath": "output-ast/resources/StructureDefinition/DVCVaccineDetailsPreQual--e046b2ec.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3212,10 +4781,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
@@ -3238,7 +4807,7 @@
       "title": "DoseNumberCodeableConcept",
       "description": "Dose Number",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/DoseNumberCodeableConcept",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Extension Definitions",
       "published": {
         "json": {
@@ -3260,7 +4829,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-DoseNumberCodeableConcept.html",
           "local": "fsh-generated/resources/StructureDefinition-DoseNumberCodeableConcept.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/DoseNumberCodeableConcept--c16ada9d.json",
+        "localPath": "output-ast/resources/StructureDefinition/DoseNumberCodeableConcept--63fe4a12.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3286,10 +4855,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -3300,7 +4869,7 @@
       "title": "Health Link Payload (DRAFT)",
       "description": "Health Link Payload (DRAFT)\n\nA Health Link URI is generated from this payload according to the algorithm documented [here](https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html#smart-health-links-sharing-application-generates-a-smart-health-link-uri)\n\n\n",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/HealthLinkPayload",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "published": {
         "json": {
@@ -3322,7 +4891,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-HealthLinkPayload.html",
           "local": "fsh-generated/resources/StructureDefinition-HealthLinkPayload.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/HealthLinkPayload--f102ca06.json",
+        "localPath": "output-ast/resources/StructureDefinition/HealthLinkPayload--e7577dce.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3348,10 +4917,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
@@ -3374,7 +4943,7 @@
       "title": "DVC - Profile for Digital Vaccination Cards for Immunization for IPS.  Note that no Product Catalog has been set",
       "description": "This profile represents an IPS Immunization record that can be mapped onto a Digital Vaccine Certificates using the WHO PreQual Database",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -3396,7 +4965,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-Immunization-uv-ips-DVC.html",
           "local": "fsh-generated/resources/StructureDefinition-Immunization-uv-ips-DVC.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/Immunization-uv-ips-DVC--fb9fac06.json",
+        "localPath": "output-ast/resources/StructureDefinition/Immunization-uv-ips-DVC--4710ca66.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3422,10 +4991,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -3436,7 +5005,7 @@
       "title": "DVC - WHO PreQual Immunization for IPS",
       "description": "This profile represents an IPS Immunization record that can be mapped onto a Digital Vaccine Certificates using the WHO PreQual Database",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-PreQual",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
       "published": {
         "json": {
@@ -3458,7 +5027,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-Immunization-uv-ips-PreQual.html",
           "local": "fsh-generated/resources/StructureDefinition-Immunization-uv-ips-PreQual.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/Immunization-uv-ips-PreQual--756dbac8.json",
+        "localPath": "output-ast/resources/StructureDefinition/Immunization-uv-ips-PreQual--a4b4d67b.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3484,10 +5053,202 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/PHWConsent",
+      "resourceType": "StructureDefinition",
+      "id": "PHWConsent",
+      "name": "PHWConsent",
+      "title": "PHW Consent",
+      "description": "A privacy consent directive held for, and shown to, the holder of a Personal Health Wallet: an IHE PCF 1.1.0 Intermediate Consent whose policy is set by a trust domain. Either explicit (PHWExplicitConsent) or implied (PHWImpliedConsent). Trust-anchor neutral: GDHCN is one possible trust anchor among others.",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/PHWConsent",
+      "version": "0.2.0-litlfred",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-PHWConsent.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/PHWConsent--0773a325.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/PHWDocumentWithConsent",
+      "resourceType": "StructureDefinition",
+      "id": "PHWDocumentWithConsent",
+      "name": "PHWDocumentWithConsent",
+      "title": "IPS document that carries its consent directives",
+      "description": "An International Patient Summary document a Personal Health Wallet shares or an issuer issues, carrying the consent directives it is shared under, explicit or implied. Carrying them is optional (0..*); when they are carried, the Composition's Advance Directives section (LOINC 42348-3) lists them. The copy in the document is evidence for the receiver; the copy in the sharer's Consent Registry is the one enforced.",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/PHWDocumentWithConsent",
+      "version": "0.2.0-litlfred",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-PHWDocumentWithConsent.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/PHWDocumentWithConsent--48488735.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/PHWExplicitConsent",
+      "resourceType": "StructureDefinition",
+      "id": "PHWExplicitConsent",
+      "name": "PHWExplicitConsent",
+      "title": "PHW Explicit Consent",
+      "description": "A consent the holder gave by their own act: on the wallet, or on a form a health worker recorded (process L). Categorized with an HL7 ActConsentDirective code (OPTIN, OPTINR, OPTOUT or OPTOUTE). The act is the evidence (source[x]). When the trust domain publishes consent codes, policyRule names the code and the version of its text the holder was shown; otherwise policy.uri names the IHE PCF implicit policy the consent changes.",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/PHWExplicitConsent",
+      "version": "0.2.0-litlfred",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-PHWExplicitConsent.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/PHWExplicitConsent--760b8881.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      }
+    },
+    {
+      "key": "StructureDefinition/PHWImpliedConsent",
+      "resourceType": "StructureDefinition",
+      "id": "PHWImpliedConsent",
+      "name": "PHWImpliedConsent",
+      "title": "PHW Implied Consent",
+      "description": "A consent the holder did not give by any act: categorized with an HL7 ActConsentDirective code (IMPLIED, IMPLIEDD or NOPP); the trust domain's default policy applies, normally an IHE PCF implicit policy (Volume 1 §1:53.2.1). Consent.policy names it, and the domain's published policy is the evidence (sourceAttachment). Carried in a document so that a receiver can see which policy the data was shared under.",
+      "canonical": "http://smart.who.int/trust-phw/StructureDefinition/PHWImpliedConsent",
+      "version": "0.2.0-litlfred",
+      "category": "Structures: Resource Profiles",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/StructureDefinition-PHWImpliedConsent.json"
+        },
+        "localPath": "output-ast/resources/StructureDefinition/PHWImpliedConsent--489c5f86.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -3498,7 +5259,7 @@
       "title": "SGActorExt",
       "description": "Smart Guidelines Actor Reference extension",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/SGActorExt",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Extension Definitions",
       "published": {
         "json": {
@@ -3520,7 +5281,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-SGActorExt.html",
           "local": "fsh-generated/resources/StructureDefinition-SGActorExt.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/SGActorExt--b86797b2.json",
+        "localPath": "output-ast/resources/StructureDefinition/SGActorExt--7d35c841.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3546,10 +5307,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -3560,7 +5321,7 @@
       "title": "SMART Health Link Payload (DRAFT)",
       "description": "SMART Health Link Payload (DRAFT)\n\nThis logical model constrains the Health Link Payload for a SMART Health Link\n\nA SMART Health Link URI is generated from this payload according to the algorithm documented [here](https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html#smart-health-links-sharing-application-generates-a-smart-health-link-uri)\n\n",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/SMARTHealthLinkPayload",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "published": {
         "json": {
@@ -3582,7 +5343,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-SMARTHealthLinkPayload.html",
           "local": "fsh-generated/resources/StructureDefinition-SMARTHealthLinkPayload.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/SMARTHealthLinkPayload--cd74c270.json",
+        "localPath": "output-ast/resources/StructureDefinition/SMARTHealthLinkPayload--48237971.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3608,10 +5369,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
@@ -3634,7 +5395,7 @@
       "title": "SelectiveDisclosure",
       "description": "Guidance that a document signing service with selective disclosure support (e.g. SD-JWT) should perform a selective disclosure of the content of the containing node of the extension in the JSON representation of the FHIR instance.\n\nThe code value should be from a code system containing appropriate disclosure statements for the use case.  The disclosure statement should describe the content that is to be disclosed at that node.  For example a code such as 'disclose-date-of-birth' or 'disclose-vaccine-history'.\n",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Extension Definitions",
       "published": {
         "json": {
@@ -3656,7 +5417,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-SelectiveDisclosure.html",
           "local": "fsh-generated/resources/StructureDefinition-SelectiveDisclosure.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/SelectiveDisclosure--53611120.json",
+        "localPath": "output-ast/resources/StructureDefinition/SelectiveDisclosure--67b1af3b.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3682,10 +5443,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       }
     },
     {
@@ -3696,7 +5457,7 @@
       "title": "Smart Health Link (DRAFT)",
       "description": "Smart Health Link URI (DRAFT)\n\nLogical Model to represent a SMART Health Link as its URI.  It is generated from the content of the SMART Health Link Payload.\n\n\n",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/SmartHealthLink",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "published": {
         "json": {
@@ -3718,7 +5479,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-SmartHealthLink.html",
           "local": "fsh-generated/resources/StructureDefinition-SmartHealthLink.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/SmartHealthLink--63e0c088.json",
+        "localPath": "output-ast/resources/StructureDefinition/SmartHealthLink--3de55cae.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3744,10 +5505,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
@@ -3770,7 +5531,7 @@
       "title": "DVC Vaccine Details with Selective Disclosure",
       "description": "DVC Vaccine Details with Selective Disclosure",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/VaccineDetailsSD",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "published": {
         "json": {
@@ -3792,7 +5553,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-VaccineDetailsSD.html",
           "local": "fsh-generated/resources/StructureDefinition-VaccineDetailsSD.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/VaccineDetailsSD--ef0e88fa.json",
+        "localPath": "output-ast/resources/StructureDefinition/VaccineDetailsSD--2eeb75cc.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3818,10 +5579,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
@@ -3844,7 +5605,7 @@
       "title": "Verifiable Health Link Payload (DRAFT)",
       "description": "Verifiable Health Link Payload (DRAFT)\n\nThis logical model constrains the Health Link Payload for a Verifiable Health Link\n",
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/VerifiableHealthLinkPayload",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Structures: Logical Models",
       "published": {
         "json": {
@@ -3866,7 +5627,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-VerifiableHealthLinkPayload.html",
           "local": "fsh-generated/resources/StructureDefinition-VerifiableHealthLinkPayload.json"
         },
-        "localPath": "output-ast/resources/StructureDefinition/VerifiableHealthLinkPayload--454cfa71.json",
+        "localPath": "output-ast/resources/StructureDefinition/VerifiableHealthLinkPayload--c12e0d04.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3892,10 +5653,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "openapi": {
@@ -3918,7 +5679,7 @@
       "title": "Relationship Status for Contact in Patient",
       "description": "Relationship Status for Contact in Patient",
       "canonical": "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Terminology: Value Sets",
       "published": {
         "json": {
@@ -3940,7 +5701,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/ValueSet-DVCRelationshipStatus.html",
           "local": "fsh-generated/resources/ValueSet-DVCRelationshipStatus.json"
         },
-        "localPath": "output-ast/resources/ValueSet/DVCRelationshipStatus--aa018986.json",
+        "localPath": "output-ast/resources/ValueSet/DVCRelationshipStatus--a461c63e.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -3966,16 +5727,16 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "displays": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-DVCRelationshipStatus.displays.json",
           "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCRelationshipStatus.displays.json",
-          "bytes": 1659
+          "bytes": 1668
         },
         "jsonld": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-DVCRelationshipStatus.jsonld",
@@ -3985,12 +5746,12 @@
         "openapi": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-DVCRelationshipStatus.openapi.json",
           "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCRelationshipStatus.openapi.json",
-          "bytes": 2756
+          "bytes": 2765
         },
         "schema": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-DVCRelationshipStatus.schema.json",
           "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCRelationshipStatus.schema.json",
-          "bytes": 1502
+          "bytes": 1511
         }
       }
     },
@@ -4002,7 +5763,7 @@
       "title": "DVC - Vaccines",
       "description": "This value set includes codes from ICD",
       "canonical": "http://smart.who.int/trust-phw/ValueSet/DVCVaccines",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Terminology: Value Sets",
       "published": {
         "json": {
@@ -4024,7 +5785,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/ValueSet-DVCVaccines.html",
           "local": "fsh-generated/resources/ValueSet-DVCVaccines.json"
         },
-        "localPath": "output-ast/resources/ValueSet/DVCVaccines--265a5dc0.json",
+        "localPath": "output-ast/resources/ValueSet/DVCVaccines--2cef16f9.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -4050,16 +5811,16 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "displays": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-DVCVaccines.displays.json",
           "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCVaccines.displays.json",
-          "bytes": 10670
+          "bytes": 10679
         },
         "jsonld": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-DVCVaccines.jsonld",
@@ -4069,12 +5830,12 @@
         "openapi": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-DVCVaccines.openapi.json",
           "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCVaccines.openapi.json",
-          "bytes": 5460
+          "bytes": 5469
         },
         "schema": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-DVCVaccines.schema.json",
           "localPath": "fhir-artifact-index/sidecars/ValueSet-DVCVaccines.schema.json",
-          "bytes": 3674
+          "bytes": 3683
         }
       }
     },
@@ -4086,7 +5847,7 @@
       "title": "Disclosure Statements",
       "description": "Disclosure Statements value set",
       "canonical": "http://smart.who.int/trust-phw/ValueSet/DisclosureStatements",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Terminology: Value Sets",
       "published": {
         "json": {
@@ -4108,7 +5869,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/ValueSet-DisclosureStatements.html",
           "local": "fsh-generated/resources/ValueSet-DisclosureStatements.json"
         },
-        "localPath": "output-ast/resources/ValueSet/DisclosureStatements--ef6b17d1.json",
+        "localPath": "output-ast/resources/ValueSet/DisclosureStatements--b95fd0cb.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -4134,16 +5895,16 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "displays": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-DisclosureStatements.displays.json",
           "localPath": "fhir-artifact-index/sidecars/ValueSet-DisclosureStatements.displays.json",
-          "bytes": 2630
+          "bytes": 2639
         },
         "jsonld": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-DisclosureStatements.jsonld",
@@ -4153,12 +5914,12 @@
         "openapi": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-DisclosureStatements.openapi.json",
           "localPath": "fhir-artifact-index/sidecars/ValueSet-DisclosureStatements.openapi.json",
-          "bytes": 3209
+          "bytes": 3218
         },
         "schema": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-DisclosureStatements.schema.json",
           "localPath": "fhir-artifact-index/sidecars/ValueSet-DisclosureStatements.schema.json",
-          "bytes": 1937
+          "bytes": 1946
         }
       }
     },
@@ -4170,7 +5931,7 @@
       "title": "HL.TYPE ValueSet ",
       "description": "ValueSet of HL Type Codes",
       "canonical": "http://smart.who.int/trust-phw/ValueSet/HL.TYPE",
-      "version": "0.1.0",
+      "version": "0.2.0-litlfred",
       "category": "Terminology: Value Sets",
       "published": {
         "json": {
@@ -4192,7 +5953,7 @@
           "upstream": "https://litlfred.github.io/smart-trust-phw/ValueSet-HL.TYPE.html",
           "local": "fsh-generated/resources/ValueSet-HL.TYPE.json"
         },
-        "localPath": "output-ast/resources/ValueSet/HL.TYPE--4ccbb222.json",
+        "localPath": "output-ast/resources/ValueSet/HL.TYPE--bb094bed.json",
         "gates": {
           "size": {
             "verdict": "unknown",
@@ -4218,16 +5979,16 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
-          "inputDigest": "515773d50c179bee919c35f19494471e72c457f2d57458bebd4e176042c29b9e"
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
         },
-        "materializedAt": "2026-11-07T05:53:45.747529045Z"
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
       },
       "sidecars": {
         "displays": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-HL.TYPE.displays.json",
           "localPath": "fhir-artifact-index/sidecars/ValueSet-HL.TYPE.displays.json",
-          "bytes": 1598
+          "bytes": 1607
         },
         "jsonld": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-HL.TYPE.jsonld",
@@ -4237,12 +5998,152 @@
         "openapi": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-HL.TYPE.openapi.json",
           "localPath": "fhir-artifact-index/sidecars/ValueSet-HL.TYPE.openapi.json",
-          "bytes": 2469
+          "bytes": 2478
         },
         "schema": {
           "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-HL.TYPE.schema.json",
           "localPath": "fhir-artifact-index/sidecars/ValueSet-HL.TYPE.schema.json",
-          "bytes": 1349
+          "bytes": 1358
+        }
+      }
+    },
+    {
+      "key": "ValueSet/PHWExplicitConsentKind",
+      "resourceType": "ValueSet",
+      "id": "PHWExplicitConsentKind",
+      "name": "PHWExplicitConsentKind",
+      "title": "Kinds of explicit consent (HL7 ActConsentDirective)",
+      "description": "The HL7 v3 ActConsentDirective codes for consent the holder gives by their own act: opt-in, opt-in with restrictions, opt-out, opt-out with exceptions. Each code's definition is HL7's (terminology.hl7.org, CodeSystem v3-ActCode).",
+      "canonical": "http://smart.who.int/trust-phw/ValueSet/PHWExplicitConsentKind",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Value Sets",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ValueSet-PHWExplicitConsentKind.json"
+        },
+        "localPath": "output-ast/resources/ValueSet/PHWExplicitConsentKind--363f110e.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      },
+      "sidecars": {
+        "displays": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWExplicitConsentKind.displays.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-PHWExplicitConsentKind.displays.json",
+          "bytes": 1807
+        },
+        "jsonld": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWExplicitConsentKind.jsonld",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-PHWExplicitConsentKind.jsonld",
+          "bytes": 1020
+        },
+        "openapi": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWExplicitConsentKind.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-PHWExplicitConsentKind.openapi.json",
+          "bytes": 2851
+        },
+        "schema": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWExplicitConsentKind.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-PHWExplicitConsentKind.schema.json",
+          "bytes": 1561
+        }
+      }
+    },
+    {
+      "key": "ValueSet/PHWImpliedConsentKind",
+      "resourceType": "ValueSet",
+      "id": "PHWImpliedConsentKind",
+      "name": "PHWImpliedConsentKind",
+      "title": "Kinds of implied consent (HL7 ActConsentDirective)",
+      "description": "The HL7 v3 ActConsentDirective codes for consent presumed from the holder's behaviour: implied consent, implied consent with opportunity to dissent, and notice of privacy practices. Each code's definition is HL7's (terminology.hl7.org, CodeSystem v3-ActCode).",
+      "canonical": "http://smart.who.int/trust-phw/ValueSet/PHWImpliedConsentKind",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Value Sets",
+      "published": {},
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "local": "fsh-generated/resources/ValueSet-PHWImpliedConsentKind.json"
+        },
+        "localPath": "output-ast/resources/ValueSet/PHWImpliedConsentKind--26518376.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
+          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+        },
+        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+      },
+      "sidecars": {
+        "displays": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWImpliedConsentKind.displays.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-PHWImpliedConsentKind.displays.json",
+          "bytes": 1792
+        },
+        "jsonld": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWImpliedConsentKind.jsonld",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-PHWImpliedConsentKind.jsonld",
+          "bytes": 992
+        },
+        "openapi": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWImpliedConsentKind.openapi.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-PHWImpliedConsentKind.openapi.json",
+          "bytes": 2813
+        },
+        "schema": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWImpliedConsentKind.schema.json",
+          "localPath": "fhir-artifact-index/sidecars/ValueSet-PHWImpliedConsentKind.schema.json",
+          "bytes": 1537
         }
       }
     }
@@ -4250,10 +6151,10 @@
   "package": {
     "url": "https://litlfred.github.io/smart-trust-phw/package.tgz",
     "localPath": "fhir-artifact-index/package.tgz",
-    "bytes": 675200
+    "bytes": 778523
   },
   "fhirVersion": [
-    "5.0.0"
+    "4.0.1"
   ],
   "igApiHub": {
     "url": "https://litlfred.github.io/smart-trust-phw/ig-api.html",

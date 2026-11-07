@@ -913,16 +913,16 @@
 
 <p>Candidate terms extracted from every schema field with a doc comment: <code class="language-plaintext highlighter-rouge">&lt;Declaration&gt;.&lt;field&gt;</code> as the label, the comment’s first paragraph as the definition. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: bootstrap-tools 45 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · cat-harness-tools 2438 (<a href="../../../../../assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · fhir-harness 146 (<a href="../../../../../assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld">SKOS</a>) · folio-assistant-core 184 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld">SKOS</a>) · smart-base 13 (<a href="../../../../../assets/glossary/smart-base--kg-schema-fields.skos.jsonld">SKOS</a>).</p>
+<p>From: bootstrap-tools 45 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · cat-harness-tools 2471 (<a href="../../../../../assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · fhir-harness 146 (<a href="../../../../../assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld">SKOS</a>) · folio-assistant-core 202 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld">SKOS</a>) · smart-base 13 (<a href="../../../../../assets/glossary/smart-base--kg-schema-fields.skos.jsonld">SKOS</a>).</p>
 
 <p>One of 7 pages of this type, split by the first letter of the label: <a href="../../../../../en/folio-assistant-core/glossary/schema-fields/">all parts</a>.</p>
 
-<p><strong>Size:</strong> this page holds 502 terms and is 291 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 506 terms and is 294 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
 <thead><tr><th>target</th><th>mapped</th><th>unmapped</th><th>undetermined</th><th>why undetermined</th></tr></thead>
-<tbody><tr><td><code>fhir</code></td><td>0</td><td>2700</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>2700</td><td>0</td><td>—</td></tr></tbody>
+<tbody><tr><td><code>fhir</code></td><td>0</td><td>2877</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>2877</td><td>0</td><td>—</td></tr></tbody>
 </table></div>
 <p class="fa-gloss-mapping-note"><strong>Undetermined is never “no match”.</strong> 
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
@@ -932,7 +932,7 @@ be a term this corpus is right to coin.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">502</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">506</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-T">T</a> <a href="#letter-U">U</a> <a href="#letter-V">V</a> <a href="#letter-W">W</a></nav>
 <h2 id="letter-T">
@@ -1266,6 +1266,20 @@ TermSchema.source <span class="fa-gloss-status">candidate, extracted</span>
 <p>Where the term came from: a repository path (with #anchor) or an IRI.</p>
 <p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/glossary.ts"><code>folio-assistant-core/schemas/glossary.ts#TermSchema.source</code></a></p>
 </dd>
+<dt id="folio-assistant-core--kg-schema-fields--glossary.termschema.subject" data-fa-state="extracted" data-fa-gloss="">
+TermSchema.subject <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Overrides the scheme's &#123;@link SubjectSchema subject area} for this term.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/glossary.ts"><code>folio-assistant-core/schemas/glossary.ts#TermSchema.subject</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--glossary.termschema.translationstatus" data-fa-state="extracted" data-fa-gloss="">
+TermSchema.translationStatus <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Per locale, whether this term's translation is signed off. The translation itself is in the scheme's <code>.po</code>, never here: this records only who stands behind it. A locale not listed is <code>unofficial</code>.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/glossary.ts"><code>folio-assistant-core/schemas/glossary.ts#TermSchema.translationStatus</code></a></p>
+</dd>
 <dt id="cat-harness-tools--kg-schema-fields--test-plan.testassertionschema.expectation" data-fa-state="extracted" data-fa-gloss="">
 TestAssertionSchema.expectation <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -1368,7 +1382,7 @@ TestPlanCaseSchema.dependsOn <span class="fa-gloss-status">candidate, extracted<
 TestPlanCaseSchema.feature <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Optional Gherkin <code>.feature</code> file the case is written in.</p>
+<p>The Gherkin <code>.feature</code> file the case is written in. Required under <code>test-plan/v1.1</code> — enforced on the plan, since a case does not know its plan's version — and optional only in a <code>test-plan/v1</code> plan.</p>
 <p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/sdlc/test-plan.ts"><code>cat-harness-tools/schemas/sdlc/test-plan.ts#TestPlanCaseSchema.feature</code></a></p>
 </dd>
 <dt id="cat-harness-tools--kg-schema-fields--test-plan.testplancaseschema.testdata" data-fa-state="extracted" data-fa-gloss="">
@@ -2621,7 +2635,7 @@ TranslationBlockQaReport.label <span class="fa-gloss-status">candidate, extracte
 TranslationBlockQaReport.paths <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Repo-relative paths of the block's files.</p>
+<p>Repo-relative paths of the subject's files: a block's or page's <code>.md</code> (and <code>.ts</code>), or — for a catalogue measured against its template, which has no page of its own here (an IG page, a glossary) — the <code>.pot</code>.</p>
 <p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/kg/qa-record-shapes.ts"><code>cat-harness-tools/schemas/kg/qa-record-shapes.ts#TranslationBlockQaReport.paths</code></a></p>
 </dd>
 <dt id="cat-harness-tools--kg-schema-fields--qa-record-shapes.translationblockqareport.po" data-fa-state="extracted" data-fa-gloss="">
@@ -4256,6 +4270,20 @@ WorkshopPresentationSchema.badge <span class="fa-gloss-status">candidate, extrac
 <dd>
 <p>A short badge beside the name (&quot;Interactive Spec&quot;).</p>
 <p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/process/workshop.ts"><code>cat-harness-tools/schemas/process/workshop.ts#WorkshopPresentationSchema.badge</code></a></p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--workshop.workshoppresentationschema.cast" data-fa-state="extracted" data-fa-gloss="">
+WorkshopPresentationSchema.cast <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The order the cast is listed in, everywhere it is listed (the overview, the journey map's lanes, the persona lens): actor ids. An actor a step names and this list does not follows, in order of first appearance; an id no step names is not drawn. Absent: order of first appearance.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/process/workshop.ts"><code>cat-harness-tools/schemas/process/workshop.ts#WorkshopPresentationSchema.cast</code></a></p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--workshop.workshoppresentationschema.chaptertitles" data-fa-state="extracted" data-fa-gloss="">
+WorkshopPresentationSchema.chapterTitles <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>A chapter's title in the room, by the id of the journey the chapter is (<code>&quot;j4-family-records-abroad&quot;: &quot;Crossing back&quot;</code>). Absent: the journey's title without its code in front.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/process/workshop.ts"><code>cat-harness-tools/schemas/process/workshop.ts#WorkshopPresentationSchema.chapterTitles</code></a></p>
 </dd>
 <dt id="cat-harness-tools--kg-schema-fields--workshop.workshoppresentationschema.closingquestion" data-fa-state="extracted" data-fa-gloss="">
 WorkshopPresentationSchema.closingQuestion <span class="fa-gloss-status">candidate, extracted</span>

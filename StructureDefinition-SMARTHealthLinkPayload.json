@@ -10,11 +10,11 @@
     "valueCode" : "can-be-target"
   }],
   "url" : "http://smart.who.int/trust-phw/StructureDefinition/SMARTHealthLinkPayload",
-  "version" : "0.1.0",
+  "version" : "0.2.0-litlfred",
   "name" : "SMARTHealthLinkPayload",
   "title" : "SMART Health Link Payload (DRAFT)",
   "status" : "active",
-  "date" : "2026-11-07T05:50:03+00:00",
+  "date" : "2026-11-07T18:20:21+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -31,12 +31,7 @@
       "display" : "World"
     }]
   }],
-  "fhirVersion" : "5.0.0",
-  "mapping" : [{
-    "identity" : "rim",
-    "uri" : "http://hl7.org/v3",
-    "name" : "RIM Mapping"
-  }],
+  "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
   "type" : "http://smart.who.int/trust-phw/StructureDefinition/SMARTHealthLinkPayload",
@@ -45,7 +40,7 @@
   "snapshot" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString" : "0.1.0"
+      "valueString" : "0.2.0-litlfred"
     }],
     "element" : [{
       "id" : "SMARTHealthLinkPayload",
@@ -59,11 +54,7 @@
         "min" : 0,
         "max" : "*"
       },
-      "isModifier" : false,
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
+      "isModifier" : false
     },
     {
       "id" : "SMARTHealthLinkPayload.url",

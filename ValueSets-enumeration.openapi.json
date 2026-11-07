@@ -20,7 +20,7 @@
                 },
                 "example": {
                   "type": "valueset",
-                  "count": 4,
+                  "count": 6,
                   "schemas": [
                     {
                       "filename": "ValueSet-DVCRelationshipStatus.schema.json",
@@ -53,6 +53,22 @@
                       "description": "JSON Schema for HL.TYPE ValueSet  ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
                       "url": "./ValueSet-HL.TYPE.schema.json",
                       "valueSetUrl": "http://smart.who.int/trust-phw/ValueSet/HL.TYPE"
+                    },
+                    {
+                      "filename": "ValueSet-PHWExplicitConsentKind.schema.json",
+                      "id": "http://smart.who.int/trust-phw/ValueSet-PHWExplicitConsentKind.schema.json",
+                      "title": "Kinds of explicit consent (HL7 ActConsentDirective) Schema",
+                      "description": "JSON Schema for Kinds of explicit consent (HL7 ActConsentDirective) ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+                      "url": "./ValueSet-PHWExplicitConsentKind.schema.json",
+                      "valueSetUrl": "http://smart.who.int/trust-phw/ValueSet/PHWExplicitConsentKind"
+                    },
+                    {
+                      "filename": "ValueSet-PHWImpliedConsentKind.schema.json",
+                      "id": "http://smart.who.int/trust-phw/ValueSet-PHWImpliedConsentKind.schema.json",
+                      "title": "Kinds of implied consent (HL7 ActConsentDirective) Schema",
+                      "description": "JSON Schema for Kinds of implied consent (HL7 ActConsentDirective) ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+                      "url": "./ValueSet-PHWImpliedConsentKind.schema.json",
+                      "valueSetUrl": "http://smart.who.int/trust-phw/ValueSet/PHWImpliedConsentKind"
                     }
                   ]
                 }
@@ -131,7 +147,7 @@
         ],
         "example": {
           "type": "valueset",
-          "count": 4,
+          "count": 6,
           "schemas": [
             {
               "filename": "ValueSet-DVCRelationshipStatus.schema.json",
@@ -164,6 +180,22 @@
               "description": "JSON Schema for HL.TYPE ValueSet  ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
               "url": "./ValueSet-HL.TYPE.schema.json",
               "valueSetUrl": "http://smart.who.int/trust-phw/ValueSet/HL.TYPE"
+            },
+            {
+              "filename": "ValueSet-PHWExplicitConsentKind.schema.json",
+              "id": "http://smart.who.int/trust-phw/ValueSet-PHWExplicitConsentKind.schema.json",
+              "title": "Kinds of explicit consent (HL7 ActConsentDirective) Schema",
+              "description": "JSON Schema for Kinds of explicit consent (HL7 ActConsentDirective) ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+              "url": "./ValueSet-PHWExplicitConsentKind.schema.json",
+              "valueSetUrl": "http://smart.who.int/trust-phw/ValueSet/PHWExplicitConsentKind"
+            },
+            {
+              "filename": "ValueSet-PHWImpliedConsentKind.schema.json",
+              "id": "http://smart.who.int/trust-phw/ValueSet-PHWImpliedConsentKind.schema.json",
+              "title": "Kinds of implied consent (HL7 ActConsentDirective) Schema",
+              "description": "JSON Schema for Kinds of implied consent (HL7 ActConsentDirective) ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+              "url": "./ValueSet-PHWImpliedConsentKind.schema.json",
+              "valueSetUrl": "http://smart.who.int/trust-phw/ValueSet/PHWImpliedConsentKind"
             }
           ]
         }

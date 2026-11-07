@@ -1,10 +1,249 @@
 {
  "$schema": "process-task-panel/v1",
  "process": "Process_MergeManagerWatch",
+ "markers": [
+  {
+   "id": "Owner_Approve",
+   "name": "Approve the batch card",
+   "left": 67.19,
+   "top": 83.33,
+   "box": {
+    "left": 61.52,
+    "top": 94.25,
+    "width": 1.88,
+    "height": 2.76
+   }
+  },
+  {
+   "id": "Task_Read",
+   "name": "Read the queue, acknowledge requests",
+   "left": 26.95,
+   "top": 36.21,
+   "box": {
+    "left": 21.29,
+    "top": 47.13,
+    "width": 1.88,
+    "height": 2.76
+   }
+  },
+  {
+   "id": "Task_Lapse",
+   "name": "Announce the hand-over or the lapse",
+   "left": 37.5,
+   "top": 53.45,
+   "box": {
+    "left": 31.84,
+    "top": 64.37,
+    "width": 1.88,
+    "height": 2.76
+   }
+  },
+  {
+   "id": "Task_Relieve",
+   "name": "Relieve the runners",
+   "left": 56.64,
+   "top": 2.87,
+   "box": {
+    "left": 50.98,
+    "top": 13.79,
+    "width": 1.88,
+    "height": 2.76
+   }
+  },
+  {
+   "id": "Call_Meta",
+   "name": "Saturation meta-merge",
+   "left": 69.14,
+   "top": 2.87,
+   "box": {
+    "left": 63.48,
+    "top": 13.79,
+    "width": 1.88,
+    "height": 2.76
+   }
+  },
+  {
+   "id": "Task_Card",
+   "name": "Post the request in chat, then the batch card",
+   "left": 67.19,
+   "top": 53.45,
+   "box": {
+    "left": 61.52,
+    "top": 64.37,
+    "width": 1.88,
+    "height": 2.76
+   }
+  },
+  {
+   "id": "Call_Train",
+   "name": "Merge train",
+   "left": 90.23,
+   "top": 36.21,
+   "box": {
+    "left": 84.57,
+    "top": 47.13,
+    "width": 1.88,
+    "height": 2.76
+   }
+  },
+  {
+   "id": "Task_Direct",
+   "name": "Merge it through merge:guard",
+   "left": 79.69,
+   "top": 18.97,
+   "box": {
+    "left": 74.02,
+    "top": 29.89,
+    "width": 1.88,
+    "height": 2.76
+   }
+  },
+  {
+   "id": "Call_Stalled",
+   "name": "Stalled-agent triage",
+   "left": 56.64,
+   "top": 18.97,
+   "box": {
+    "left": 50.98,
+    "top": 29.89,
+    "width": 1.88,
+    "height": 2.76
+   }
+  }
+ ],
  "tasks": {
+  "Owner_Approve": {
+   "id": "Owner_Approve",
+   "name": "Approve the batch card",
+   "type": "bpmn:Task",
+   "lane": "Owner",
+   "skills": [
+    {
+     "name": "interaction-modality"
+    }
+   ],
+   "role": {
+    "name": "user",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-user",
+    "title": "User",
+    "skills": [
+     {
+      "name": "adjudication"
+     },
+     {
+      "name": "agent-permissions"
+     },
+     {
+      "name": "dispatch-agent"
+     },
+     {
+      "name": "folio-init"
+     },
+     {
+      "name": "getting-started"
+     },
+     {
+      "name": "interaction-modality"
+     },
+     {
+      "name": "kg-affordances"
+     },
+     {
+      "name": "kg-subscription"
+     },
+     {
+      "name": "materialize-remote"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "repo-conversion"
+     }
+    ]
+   }
+  },
   "Task_Read": {
    "id": "Task_Read",
-   "name": "Read PRs, runner queue, main verdict and owners",
+   "name": "Read the queue, acknowledge requests",
+   "type": "bpmn:Task",
+   "lane": "Merge steward",
+   "skills": [
+    {
+     "name": "merge-manager-watcher"
+    }
+   ],
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns"
+     },
+     {
+      "name": "merge-manager-watcher"
+     },
+     {
+      "name": "merge-queue"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "ref-stewardship"
+     },
+     {
+      "name": "saturation-meta-merge"
+     }
+    ]
+   }
+  },
+  "Task_Lapse": {
+   "id": "Task_Lapse",
+   "name": "Announce the hand-over or the lapse",
+   "type": "bpmn:Task",
+   "lane": "Merge steward",
+   "skills": [
+    {
+     "name": "merge-manager-watcher"
+    }
+   ],
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns"
+     },
+     {
+      "name": "merge-manager-watcher"
+     },
+     {
+      "name": "merge-queue"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "ref-stewardship"
+     },
+     {
+      "name": "saturation-meta-merge"
+     }
+    ]
+   }
+  },
+  "Task_Relieve": {
+   "id": "Task_Relieve",
+   "name": "Relieve the runners",
    "type": "bpmn:Task",
    "lane": "Merge steward",
    "skills": [
@@ -81,6 +320,45 @@
     ]
    }
   },
+  "Task_Card": {
+   "id": "Task_Card",
+   "name": "Post the request in chat, then the batch card",
+   "type": "bpmn:Task",
+   "lane": "Merge steward",
+   "skills": [
+    {
+     "name": "interaction-modality"
+    }
+   ],
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns"
+     },
+     {
+      "name": "merge-manager-watcher"
+     },
+     {
+      "name": "merge-queue"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "ref-stewardship"
+     },
+     {
+      "name": "saturation-meta-merge"
+     }
+    ]
+   }
+  },
   "Call_Train": {
    "id": "Call_Train",
    "name": "Merge train",
@@ -92,6 +370,45 @@
     "href": "merge-train.html",
     "diagram": "merge-train.html"
    },
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns"
+     },
+     {
+      "name": "merge-manager-watcher"
+     },
+     {
+      "name": "merge-queue"
+     },
+     {
+      "name": "merge-to-main"
+     },
+     {
+      "name": "prepare-merge"
+     },
+     {
+      "name": "ref-stewardship"
+     },
+     {
+      "name": "saturation-meta-merge"
+     }
+    ]
+   }
+  },
+  "Task_Direct": {
+   "id": "Task_Direct",
+   "name": "Merge it through merge:guard",
+   "type": "bpmn:Task",
+   "lane": "Merge steward",
+   "skills": [
+    {
+     "name": "merge-manager-watcher"
+    }
+   ],
    "role": {
     "name": "merge-steward",
     "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",

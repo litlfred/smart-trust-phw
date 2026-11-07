@@ -998,7 +998,7 @@
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/authoring-a-document.bpmn"><code>Authoring a document</code></a><br><span class="p">folio-assistant-core/processes/content/authoring-a-document.bpmn</span></td>
-  <td>How a document folio — structured prose and policy guidance, with no Lean and no required TeX — is authored, built and reviewed end to end.<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Author (person) · Work plan (beans) · Authoring agent (system) · Build pipeline</div><div class="f"><span class="k">skills</span> bean-coordination, content-plan, content-review, content-validate, document-authoring, document-publishing, document-structure, normative-statements, todo-manager</div></td>
+  <td>How a document folio — structured prose and policy guidance, with no Lean and no required TeX — is authored, built and reviewed end to end.<div class="f"><span class="k">activities</span> 11</div><div class="f"><span class="k">lanes</span> Author (person) · Work plan (beans) · Authoring agent (system) · Build pipeline</div><div class="f"><span class="k">skills</span> bean-coordination, content-plan, content-review, content-validate, document-authoring, document-publishing, document-structure, normative-statements, publish-extracted-statements, todo-manager</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn"><code>Committee review of a content change</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn</span></td>
@@ -1098,7 +1098,11 @@
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/library/l1-document-ingestion.bpmn"><code>L1 document ingestion — a document to the L1 source knowledge graph</code></a><br><span class="p">folio-assistant-core/processes/library/l1-document-ingestion.bpmn</span></td>
-  <td>L1 document ingestion — a document to the L1 source knowledge graph.<div class="f"><span class="k">activities</span> 14</div><div class="f"><span class="k">lanes</span> Ingestion Engine (agent, runs unattended)</div><div class="f"><span class="k">skills</span> bean-coordination, document-intake, l1-document-ingestion, library-ingestion, theme-art-intake, todo-manager</div></td>
+  <td>L1 document ingestion — a document to the L1 source knowledge graph.<div class="f"><span class="k">activities</span> 15</div><div class="f"><span class="k">lanes</span> Ingestion Engine (agent, runs unattended)</div><div class="f"><span class="k">skills</span> bean-coordination, document-intake, l1-document-ingestion, library-ingestion, publish-extracted-statements, theme-art-intake, todo-manager</div></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/library/publish-extracted-statements.bpmn"><code>Publish extracted statements with source links</code></a><br><span class="p">folio-assistant-core/processes/library/publish-extracted-statements.bpmn</span></td>
+  <td>Makes every statement extracted from a library source readable, with a link back to where it came from, in the folio's working artifact AND in the shared extraction viewer, and keeps the pages current.<div class="f"><span class="k">activities</span> 4</div><div class="f"><span class="k">lanes</span> Ingestion Engine (agent, runs unattended)</div><div class="f"><span class="k">skills</span> publish-extracted-statements</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/ui/board-open-close.bpmn"><code>Board: open and close content</code></a><br><span class="p">folio-assistant-core/processes/ui/board-open-close.bpmn</span></td>

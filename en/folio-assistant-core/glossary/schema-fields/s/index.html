@@ -913,16 +913,16 @@
 
 <p>Candidate terms extracted from every schema field with a doc comment: <code class="language-plaintext highlighter-rouge">&lt;Declaration&gt;.&lt;field&gt;</code> as the label, the comment’s first paragraph as the definition. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: bootstrap-tools 45 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · cat-harness-tools 2438 (<a href="../../../../../assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · fhir-harness 146 (<a href="../../../../../assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld">SKOS</a>) · folio-assistant-core 184 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld">SKOS</a>) · smart-base 13 (<a href="../../../../../assets/glossary/smart-base--kg-schema-fields.skos.jsonld">SKOS</a>).</p>
+<p>From: bootstrap-tools 45 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · cat-harness-tools 2471 (<a href="../../../../../assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · fhir-harness 146 (<a href="../../../../../assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld">SKOS</a>) · folio-assistant-core 202 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld">SKOS</a>) · smart-base 13 (<a href="../../../../../assets/glossary/smart-base--kg-schema-fields.skos.jsonld">SKOS</a>).</p>
 
 <p>One of 7 pages of this type, split by the first letter of the label: <a href="../../../../../en/folio-assistant-core/glossary/schema-fields/">all parts</a>.</p>
 
-<p><strong>Size:</strong> this page holds 256 terms and is 149 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 265 terms and is 154 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
 <thead><tr><th>target</th><th>mapped</th><th>unmapped</th><th>undetermined</th><th>why undetermined</th></tr></thead>
-<tbody><tr><td><code>fhir</code></td><td>0</td><td>2700</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>2700</td><td>0</td><td>—</td></tr></tbody>
+<tbody><tr><td><code>fhir</code></td><td>0</td><td>2877</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>2877</td><td>0</td><td>—</td></tr></tbody>
 </table></div>
 <p class="fa-gloss-mapping-note"><strong>Undetermined is never “no match”.</strong> 
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
@@ -932,7 +932,7 @@ be a term this corpus is right to coin.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">256</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">265</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-S">S</a></nav>
 <h2 id="letter-S">
@@ -2196,6 +2196,69 @@ StandingConsentSchema.require <span class="fa-gloss-status">candidate, extracted
 <dd>
 <p><code>green</code>: only a commit whose own combined status / checks are green. Absent: the branch head.</p>
 <p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/kg/mount-trust.ts"><code>cat-harness-tools/schemas/kg/mount-trust.ts#StandingConsentSchema.require</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.statementpageschema.entrybase" data-fa-state="extracted" data-fa-gloss="">
+StatementPageSchema.entryBase <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>URL prefix of the library viewer: an entry's link is <code>&lt;entryBase&gt;/&lt;libraryId&gt;/</code>.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#StatementPageSchema.entryBase</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.statementpageschema.out" data-fa-state="extracted" data-fa-gloss="">
+StatementPageSchema.out <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The page to write.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#StatementPageSchema.out</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.statementpageschema.sectionbase" data-fa-state="extracted" data-fa-gloss="">
+StatementPageSchema.sectionBase <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>URL prefix of the sources: a section's link is <code>&lt;sectionBase&gt;/&lt;repo-relative section file&gt;</code>.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#StatementPageSchema.sectionBase</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.statementpageschema.statements" data-fa-state="extracted" data-fa-gloss="">
+StatementPageSchema.statements <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The statement lists, in the order their parts appear.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#StatementPageSchema.statements</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.statementpageschema.tableattr" data-fa-state="extracted" data-fa-gloss="">
+StatementPageSchema.tableAttr <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The content type's look, written after each table (for example a kramdown class).</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#StatementPageSchema.tableAttr</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.statementsourceschema.instance" data-fa-state="extracted" data-fa-gloss="">
+StatementSourceSchema.instance <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The DECLARED NAME of the instance holding the library; absent means this instance.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#StatementSourceSchema.instance</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.statementsourceschema.libraryid" data-fa-state="extracted" data-fa-gloss="">
+StatementSourceSchema.libraryId <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The library entry: <code>library/&lt;libraryId&gt;/</code>.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#StatementSourceSchema.libraryId</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.statementsourceschema.page" data-fa-state="extracted" data-fa-gloss="">
+StatementSourceSchema.page <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The page (or slide) the statement was read from, in the source's own numbering.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#StatementSourceSchema.page</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.statementsourceschema.sectionid" data-fa-state="extracted" data-fa-gloss="">
+StatementSourceSchema.sectionId <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The section the statement was read from, when the extraction knows it.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#StatementSourceSchema.sectionId</code></a></p>
 </dd>
 <dt id="cat-harness-tools--kg-schema-fields--device-screen.statusbadgeblockschema.verdict" data-fa-state="extracted" data-fa-gloss="">
 StatusBadgeBlockSchema.verdict <span class="fa-gloss-status">candidate, extracted</span>

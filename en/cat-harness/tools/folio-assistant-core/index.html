@@ -952,9 +952,9 @@ is <code class="language-plaintext highlighter-rouge">satisfies</code>, and it r
 to do that</em>, never <em>this skill is a tool</em>.</p>
 
 <div class="tg-grid">
-<a class="tg-stat" href="#every-tool"><b>25</b><span>Tool nodes</span></a>
-<a class="tg-stat" href="#does-every-satisfies-name-a-skill-that-exists"><b>20</b><span>skills satisfied</span></a>
-<a class="tg-stat" href="#how-they-are-invoked-and-installed"><b>25</b><span>invoked as a shell command</span></a>
+<a class="tg-stat" href="#every-tool"><b>26</b><span>Tool nodes</span></a>
+<a class="tg-stat" href="#does-every-satisfies-name-a-skill-that-exists"><b>21</b><span>skills satisfied</span></a>
+<a class="tg-stat" href="#how-they-are-invoked-and-installed"><b>26</b><span>invoked as a shell command</span></a>
 <a class="tg-stat" href="#how-they-are-invoked-and-installed"><b>0</b><span>reachable over MCP</span></a>
 </div>
 
@@ -979,7 +979,7 @@ to do that</em>, never <em>this skill is a tool</em>.</p>
   <tbody>
     <tr>
       <td><span class="tg-tag tg-shell">shell</span></td>
-      <td>25</td>
+      <td>26</td>
     </tr>
   </tbody>
 </table></div>
@@ -994,7 +994,7 @@ to do that</em>, never <em>this skill is a tool</em>.</p>
   <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">none</code></td>
-      <td>24</td>
+      <td>25</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">service</code></td>
@@ -1011,7 +1011,7 @@ to do that</em>, never <em>this skill is a tool</em>.</p>
 </h2>
     
 
-<p>Yes — all <strong>20</strong> skills named across <strong>25</strong> tools resolve to a
+<p>Yes — all <strong>21</strong> skills named across <strong>26</strong> tools resolve to a
 skill document in this checkout. A <code class="language-plaintext highlighter-rouge">satisfies</code> pointing at nothing would be a
 tool advertising a capability the graph cannot locate.</p>
 <h2 id="every-tool">
@@ -1185,6 +1185,14 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">l1-coverage</code></td>
       <td>4 in / 1 out</td>
+      <td><a href="https://github.com/litlfred/smart-trust-phw/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
+    </tr>
+    <tr>
+      <td><a id="publish-extracted-statements"></a><a href="#publish-extracted-statements"><code class="language-plaintext highlighter-rouge">publish-extracted-statements</code></a><br />Publish extracted statements with source links</td>
+      <td>Render each declared page (a <code class="language-plaintext highlighter-rouge">folio-statement-page/v1</code> spec naming <code class="language-plaintext highlighter-rouge">folio-extracted-statements/v1</code> lists) as Markdown: every statement extracted from a library source, verbatim, with its kind and status, linked to its library entry and to the section it came from, labelled in the source’s own unit (“Catch up schedule, slide 7”). A statement whose source does not resolve fails the run and nothing is written. <code class="language-plaintext highlighter-rouge">--check</code> fails when a committed page is stale.</td>
+      <td><span class="tg-tag tg-shell">shell</span></td>
+      <td><code class="language-plaintext highlighter-rouge">publish-extracted-statements</code></td>
+      <td>3 in / 1 out</td>
       <td><a href="https://github.com/litlfred/smart-trust-phw/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>

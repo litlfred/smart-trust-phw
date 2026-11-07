@@ -2,11 +2,11 @@
   "$schema": "folio-ig-menu/v1",
   "id": "smart.who.int.trust-phw",
   "canonical": "http://smart.who.int/trust-phw",
-  "version": "0.1.0",
+  "version": "0.2.0-litlfred",
   "source": {
     "kind": "sushi-config",
     "of": "https://github.com/litlfred/smart-trust-phw",
-    "ref": "a58cf1e4d4f51fd6dc7df44df20303b166879c36",
+    "ref": "1e44fc31959132396cc39189bbd8310e90009873",
     "path": "sushi-config.yaml",
     "readAt": "2026-11-07"
   },
@@ -46,6 +46,10 @@
         {
           "label": "Generic Personas",
           "href": "personas.html"
+        },
+        {
+          "label": "Consent",
+          "href": "consent.html"
         },
         {
           "label": "Business Processes",

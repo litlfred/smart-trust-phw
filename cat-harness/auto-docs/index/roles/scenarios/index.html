@@ -1011,6 +1011,10 @@
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/scenarios/roles.json#authoring-agent"><code>Authoring agent</code></a><br><span class="p">cat-harness/scenarios/roles.json#authoring-agent</span></td>
   <td>The session agent doing the work.</td>
 </tr>
+<tr id="a-cat-harness-scenarios-roles-json-back-translator">
+  <td><a href="https://github.com/litlfred/cat-harness/blob/main/scenarios/roles.json#back-translator"><code>Back-translator</code></a><br><span class="p">cat-harness/scenarios/roles.json#back-translator</span></td>
+  <td>The checker of a translation round trip: renders a sample of the target-language text back into the source language from the target text alone, with no tools and without seeing the source.</td>
+</tr>
 <tr id="a-cat-harness-scenarios-roles-json-board-renderer">
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/scenarios/roles.json#board-renderer"><code>Board renderer</code></a><br><span class="p">cat-harness/scenarios/roles.json#board-renderer</span></td>
   <td>Draws a board and performs what the reader has already decided: reads each kind's declared zoom threshold and the layout layer, swaps a card for its avatar, projects an open window onto the canvas, and carries out a con…</td>
@@ -1071,6 +1075,10 @@
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/scenarios/roles.json#librarian"><code>Librarian</code></a><br><span class="p">cat-harness/scenarios/roles.json#librarian</span></td>
   <td>Acquires a source and files it.</td>
 </tr>
+<tr id="a-cat-harness-scenarios-roles-json-locale-translator">
+  <td><a href="https://github.com/litlfred/cat-harness/blob/main/scenarios/roles.json#locale-translator"><code>Locale translator</code></a><br><span class="p">cat-harness/scenarios/roles.json#locale-translator</span></td>
+  <td>Produces one locale's catalogues from the shared templates: the <code>.po</code> files, their unofficial translation-node manifests and the locale's terminology supplement, then the gates, the QA report and the locale PR.</td>
+</tr>
 <tr id="a-cat-harness-scenarios-roles-json-log">
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/scenarios/roles.json#log"><code>Activity log</code></a><br><span class="p">cat-harness/scenarios/roles.json#log</span></td>
   <td>The agent activity log.</td>
@@ -1111,6 +1119,10 @@
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/scenarios/roles.json#reviewer"><code>Reviewer / SME</code></a><br><span class="p">cat-harness/scenarios/roles.json#reviewer</span></td>
   <td>Reads a change and judges it.</td>
 </tr>
+<tr id="a-cat-harness-scenarios-roles-json-round-trip-adjudicator">
+  <td><a href="https://github.com/litlfred/cat-harness/blob/main/scenarios/roles.json#round-trip-adjudicator"><code>Round-trip adjudicator</code></a><br><span class="p">cat-harness/scenarios/roles.json#round-trip-adjudicator</span></td>
+  <td>Rules on a translation round trip: given the source strings and the back-translation, and never the target text, it pre-screens every pair mechanically, reads each flagged pair in full, and records drift or not-drift fo…</td>
+</tr>
 <tr id="a-cat-harness-scenarios-roles-json-session-coordinator">
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/scenarios/roles.json#session-coordinator"><code>Session coordinator</code></a><br><span class="p">cat-harness/scenarios/roles.json#session-coordinator</span></td>
   <td>The authoring agent managing the SESSION rather than the content: what this session intends, what is already in flight elsewhere, and what to pick up next.</td>
@@ -1146,6 +1158,10 @@
 <tr id="a-cat-harness-scenarios-roles-json-translation-coordinator">
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/scenarios/roles.json#translation-coordinator"><code>Translation coordinator</code></a><br><span class="p">cat-harness/scenarios/roles.json#translation-coordinator</span></td>
   <td>Decides what is translated, into which languages, and when a translation is accepted.</td>
+</tr>
+<tr id="a-cat-harness-scenarios-roles-json-translation-source-lead">
+  <td><a href="https://github.com/litlfred/cat-harness/blob/main/scenarios/roles.json#translation-source-lead"><code>Source-language lead</code></a><br><span class="p">cat-harness/scenarios/roles.json#translation-source-lead</span></td>
+  <td>Owns the source-language side of a translation into several locales: extracts every template once, in one shared source PR merged to main before any locale starts, validates each locale PR and merges it inside the owner…</td>
 </tr>
 <tr id="a-cat-harness-scenarios-roles-json-translator">
   <td><a href="https://github.com/litlfred/cat-harness/blob/main/scenarios/roles.json#translator"><code>Human translator</code></a><br><span class="p">cat-harness/scenarios/roles.json#translator</span></td>

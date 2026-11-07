@@ -18,7 +18,7 @@
 <script type="application/json" id="fa-translation-meta">{"lang":"en","translationStatus":"","translationSource":"","supportedLocales":["ar","zh","en","fr","ru","es"],"availableLocales":[]}</script><link rel="stylesheet" href="./assets/css/navbar.css"><script src="./assets/navbar/rail-13lmt0dczej.js" defer></script><script src="./assets/js/navbar.js" defer></script><link rel="stylesheet" href="./assets/css/navbar-row.css"><script src="./assets/js/navbar-row.js" defer></script><meta name="fa-pinned-data" content="."></head>
 <body><script type="application/json" id="fa-navbar-row" data-fa-root="." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root=".">{"data":"rail-13lmt0dczej","here":"/business-processes.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="./">GDHCN Trust Network - Personal Health Wallet</a></nav>
 
-<div class="ig-topbar fa-page-bar" role="navigation" aria-label="GDHCN Trust Network - Personal Health Wallet menu"><a class="ig-topbar-home" href="./index.html">GDHCN Trust Network - Personal Health Wallet</a><details class="ig-topbar-group"><summary>Home</summary><ul><li><a href="./index.html">Summary</a></li><li><a href="./changes.html">Changes</a></li><li><a href="./dependencies.html">Dependencies</a></li><li><a href="./en/folio-assistant-core/bibliography/">Bibliography</a></li><li><a href="./adapting.html">Adapting Guidelines for Country use</a></li></ul></details><details class="ig-topbar-group"><summary>Business Requirements</summary><ul><li><a href="./concepts.html">Concepts</a></li><li><a href="./personas.html">Generic Personas</a></li><li><a href="./business-processes.html">Business Processes</a></li><li><a href="./example-pilgrimage.html">Worked Example: IPS Pilgrimage (Hajj)</a></li><li><a href="./decision-logic.html">Decision-support Logic</a></li></ul></details><details class="ig-topbar-group"><summary>Data Models and Exchange</summary><ul><li><a href="./system-actors.html">System Actors</a></li><li><a href="./sequence-diagrams.html">Sequence Diagrams</a></li><li><a href="./transactions.html">Transactions</a></li><li><a href="./codings.html">Codings</a></li></ul></details><details class="ig-topbar-group"><summary>Deployment</summary><ul><li><a href="./security-privacy.html">Security and Privacy Considerations</a></li><li><a href="./testing.html">Testing</a></li><li><a href="./reference-implementations.html">Reference Implementations</a></li><li><a href="./downloads.html">Downloads</a></li></ul></details><details class="ig-topbar-group"><summary>Indices</summary><ul><li><a href="./artifacts.html">Artifact Index</a></li></ul></details><form class="ig-search" role="search" data-ig-search-index="./assets/ig-search.json"><label class="ig-search-label" for="search-input">Search GDHCN Trust Network - Personal Health Wallet</label><input type="search" id="search-input" class="ig-search-input" placeholder="Search pages and artefacts" autocomplete="off" aria-controls="ig-search-results" aria-expanded="false"><ul id="ig-search-results" class="ig-search-results" hidden></ul></form><span class="ig-locale-slot" data-fa-slot="locale"></span><script src="./assets/ig-search.js" defer></script></div>
+<div class="ig-topbar fa-page-bar" role="navigation" aria-label="GDHCN Trust Network - Personal Health Wallet menu"><a class="ig-topbar-home" href="./index.html">GDHCN Trust Network - Personal Health Wallet</a><details class="ig-topbar-group"><summary>Home</summary><ul><li><a href="./index.html">Summary</a></li><li><a href="./changes.html">Changes</a></li><li><a href="./dependencies.html">Dependencies</a></li><li><a href="./en/folio-assistant-core/bibliography/">Bibliography</a></li><li><a href="./adapting.html">Adapting Guidelines for Country use</a></li></ul></details><details class="ig-topbar-group"><summary>Business Requirements</summary><ul><li><a href="./concepts.html">Concepts</a></li><li><a href="./personas.html">Generic Personas</a></li><li><a href="./consent.html">Consent</a></li><li><a href="./business-processes.html">Business Processes</a></li><li><a href="./example-pilgrimage.html">Worked Example: IPS Pilgrimage (Hajj)</a></li><li><a href="./decision-logic.html">Decision-support Logic</a></li></ul></details><details class="ig-topbar-group"><summary>Data Models and Exchange</summary><ul><li><a href="./system-actors.html">System Actors</a></li><li><a href="./sequence-diagrams.html">Sequence Diagrams</a></li><li><a href="./transactions.html">Transactions</a></li><li><a href="./codings.html">Codings</a></li></ul></details><details class="ig-topbar-group"><summary>Deployment</summary><ul><li><a href="./security-privacy.html">Security and Privacy Considerations</a></li><li><a href="./testing.html">Testing</a></li><li><a href="./reference-implementations.html">Reference Implementations</a></li><li><a href="./downloads.html">Downloads</a></li></ul></details><details class="ig-topbar-group"><summary>Indices</summary><ul><li><a href="./artifacts.html">Artifact Index</a></li></ul></details><form class="ig-search" role="search" data-ig-search-index="./assets/ig-search.json"><label class="ig-search-label" for="search-input">Search GDHCN Trust Network - Personal Health Wallet</label><input type="search" id="search-input" class="ig-search-input" placeholder="Search pages and artefacts" autocomplete="off" aria-controls="ig-search-results" aria-expanded="false"><ul id="ig-search-results" class="ig-search-results" hidden></ul></form><span class="ig-locale-slot" data-fa-slot="locale"></span><script src="./assets/ig-search.js" defer></script></div>
 <main class="ig-main main-content fa-page-main" id="main-content">
 <p><span hidden="" data-fa-figure-images="ig"></span></p>
 
@@ -209,6 +209,12 @@
       <td>PCF Consent Registry</td>
       <td>Return active PCF Consent (<code class="language-plaintext highlighter-rouge">Consent.id</code> + <code class="language-plaintext highlighter-rouge">versionId</code>) <code class="language-plaintext highlighter-rouge">[ITI-108]</code> Access Consent</td>
       <td><strong><code class="language-plaintext highlighter-rouge">[ITI-108]</code> Access Consent</strong> responder (<code class="language-plaintext highlighter-rouge">IHE.PCF.consentRegistry</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PHW.B.5a</code></td>
+      <td>VHL Sharer (grouped with PCF Consent Recorder)</td>
+      <td>B5a. Add the consent directives to the shared documents (process M, optional)</td>
+      <td>Optional (owner, 2026-11-07): before the VHL payload is assembled and signed, process M adds the consent directives the documents are shared under, explicit (the Consent returned at B5) or implied (the trust domain’s default policy), as consent entries listed in each document’s Advance Directives section. The copy in the document is evidence for the receiver; the Consent Registry copy is the one enforced.</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">PHW.B.6</code></td>
@@ -1147,6 +1153,12 @@
       <td>smart-icvp: ‘Capture Vaccination Data’, ‘Collate ICVP data’, ‘Conduct data entry from physical card into system’. What is collected is set by the certificate profile input.</td>
     </tr>
     <tr>
+      <td><code class="language-plaintext highlighter-rouge">PHW.J.2a</code></td>
+      <td>Certificate Issuance Service</td>
+      <td>J2a. Add the consent directives to the certificate (process M, optional)</td>
+      <td>Optional (owner, 2026-11-07): before the certificate is signed, process M adds the consent directives it is issued under, explicit (PHWExplicitConsent, recorded by process L) or implied (PHWImpliedConsent, the trust domain’s default policy), as consent entries listed in the Advance Directives section. The copy in the certificate is evidence for a receiver; the Consent Registry copy is the one enforced.</td>
+    </tr>
+    <tr>
       <td><code class="language-plaintext highlighter-rouge">PHW.J.3</code></td>
       <td>Certificate Issuance Service</td>
       <td>J3. Issue and sign the certificate</td>
@@ -1246,6 +1258,145 @@
   </tbody>
 </table>
 
+<h3 id="consent-processes">Consent Processes</h3>
+
+<p>Explicit and implied consent are described on the <a href="consent.html">Consent</a> page. Process L records an explicit consent. Process M adds the consent directives, explicit or implied, to a document when it is shared (process B, step B5a) or issued (process J, step J2a). Adding them is optional.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Process Name</th>
+      <th>Process ID</th>
+      <th>Objectives</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L</td>
+      <td><a href="#l-record-explicit-consent">Record Explicit Consent</a></td>
+      <td><a href="#l-record-explicit-consent">PHW.L</a></td>
+      <td>Show the trust domain’s consent text (code and version); when the holder agrees, record the act as evidence and post a <code class="language-plaintext highlighter-rouge">PHWExplicitConsent</code> with <code class="language-plaintext highlighter-rouge">[ITI-108]</code>; when the holder does not, the trust domain’s default policy applies (implied consent).</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td><a href="#m-add-consent-directives-to-a-shared-or-issued-document">Add Consent Directives to a Shared or Issued Document</a></td>
+      <td><a href="#m-add-consent-directives-to-a-shared-or-issued-document">PHW.M</a></td>
+      <td>Optionally, before signing: find the active explicit Consents (<code class="language-plaintext highlighter-rouge">[ITI-108]</code>), or else the trust domain’s default as a <code class="language-plaintext highlighter-rouge">PHWImpliedConsent</code>; add them as consent entries and list them in the Advance Directives section.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="l-record-explicit-consent">L. Record Explicit Consent</h4>
+
+<ul>
+  <li><strong>Process ID</strong>: <code class="language-plaintext highlighter-rouge">PHW.L</code></li>
+  <li><strong>BPMN Source</strong>: <code class="language-plaintext highlighter-rouge">input/business-processes/PHW.L.bpmn</code></li>
+  <li><strong>Objective</strong>: The holder gives explicit consent by their own act, recorded as an IHE PCF Consent whose <code class="language-plaintext highlighter-rouge">policyRule</code> is the trust domain’s consent code.</li>
+</ul>
+
+<figure style="width:100%">
+  <img src="PHW.L.svg" alt="Process L — Record Explicit Consent ([ITI-108])" style="width:100%; max-width:1100px;" />
+</figure>
+
+<table>
+  <thead>
+    <tr>
+      <th>Activity ID</th>
+      <th>Lane / Actor</th>
+      <th>Task Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PHW.L.1</code></td>
+      <td>PCF Consent Recorder (wallet or health worker)</td>
+      <td>L1. Show the trust domain’s consent text (code and version)</td>
+      <td>The text is the definition of the consent code in the trust domain’s terms-of-use code system, at the version shown, in the holder’s language. For Hajj: IPS.HAJJ.CONSENT, for example CONSENT-MYS at 2.1.0.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PHW.L.2</code></td>
+      <td>Holder (person / Personal Health Wallet)</td>
+      <td>L2. Read the text and decide</td>
+      <td>The holder decides who may see what, for what purpose and for how long (provision.actor, provision.purpose, provision.period).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PHW.L.3</code></td>
+      <td>PCF Consent Recorder (wallet or health worker)</td>
+      <td>L3. Record the holder’s act as evidence</td>
+      <td>The wallet confirmation or the signed form (a DocumentReference or QuestionnaireResponse): the Consent’s source[x].</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PHW.L.4</code></td>
+      <td>PCF Consent Recorder (wallet or health worker)</td>
+      <td>L4. Post the explicit Consent [ITI-108] Access Consent</td>
+      <td>A PHWExplicitConsent: policyRule = the trust domain’s consent code with the version shown; source = the evidence of L3; status active.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PHW.L.5</code></td>
+      <td>PCF Consent Registry</td>
+      <td>L5. Store the Consent; return Consent.id and versionId [ITI-108]</td>
+      <td>The registry copy is the one enforced (processes C, F, I).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PHW.L.6</code></td>
+      <td>Holder (person / Personal Health Wallet)</td>
+      <td>L6. Keep a copy in the wallet</td>
+      <td>So the holder can read back what they agreed to and withdraw it (process A, Delete or Put).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="m-add-consent-directives-to-a-shared-or-issued-document">M. Add Consent Directives to a Shared or Issued Document</h4>
+
+<ul>
+  <li><strong>Process ID</strong>: <code class="language-plaintext highlighter-rouge">PHW.M</code></li>
+  <li><strong>BPMN Source</strong>: <code class="language-plaintext highlighter-rouge">input/business-processes/PHW.M.bpmn</code></li>
+  <li><strong>Objective</strong>: A shared or issued document can carry the consent directives it is shared under, explicit or implied, so the receiver can see them. The copy in the document is evidence; the Consent Registry copy is the one enforced.</li>
+</ul>
+
+<figure style="width:100%">
+  <img src="PHW.M.svg" alt="Process M — Add Consent Directives to a Shared or Issued Document ([ITI-108])" style="width:100%; max-width:1100px;" />
+</figure>
+
+<table>
+  <thead>
+    <tr>
+      <th>Activity ID</th>
+      <th>Lane / Actor</th>
+      <th>Task Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PHW.M.1</code></td>
+      <td>Document source (VHL Sharer or Certificate Issuance Service)</td>
+      <td>M1. Search active Consents for the holder [ITI-108] Access Consent</td>
+      <td>Explicit consents for this trust domain: policyRule in the domain’s terms-of-use ValueSet.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PHW.M.2</code></td>
+      <td>PCF Consent Registry</td>
+      <td>M2. Return the active Consents [ITI-108]</td>
+      <td>With Consent.id and meta.versionId.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PHW.M.3</code></td>
+      <td>Document source (VHL Sharer or Certificate Issuance Service)</td>
+      <td>M3. Add the explicit Consents, or the trust domain’s default as an implied Consent</td>
+      <td>PHWExplicitConsent for each active explicit consent; when there is none, a PHWImpliedConsent naming the trust domain’s default policy (normally an IHE PCF implicit policy) with the domain’s published policy as source.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PHW.M.4</code></td>
+      <td>Document source (VHL Sharer or Certificate Issuance Service)</td>
+      <td>M4. List them in the Advance Directives section</td>
+      <td>Composition.section (LOINC 42348-3) entries reference each consent entry, with a human-readable summary in the section text.</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="shared-processes-and-their-addresses">Shared Processes and Their Addresses</h3>
 
 <p>Another IG calls a process here with a BPMN call activity: it imports this IG’s namespace with <code class="language-plaintext highlighter-rouge">bpmn:import</code> (<code class="language-plaintext highlighter-rouge">namespace="http://smart.who.int/trust-phw/bpmn"</code>) and sets <code class="language-plaintext highlighter-rouge">calledElement</code> to the process id, prefixed with the import’s namespace prefix (Q-BPMN-2 A).</p>
@@ -1299,25 +1450,34 @@
       <td>Revoke or suspend</td>
       <td><code class="language-plaintext highlighter-rouge">PHW.H</code></td>
     </tr>
+    <tr>
+      <td>B11</td>
+      <td>Record explicit consent</td>
+      <td><code class="language-plaintext highlighter-rouge">PHW.L</code></td>
+    </tr>
+    <tr>
+      <td>B12</td>
+      <td>Add consent directives to a document</td>
+      <td><code class="language-plaintext highlighter-rouge">PHW.M</code></td>
+    </tr>
   </tbody>
 </table>
 
 <p>For a worked example of processes A, B, C, F and I in one case, see <a href="example-pilgrimage.html">Worked Example: IPS Pilgrimage (Hajj)</a>.</p>
 
 <p class="ig-edit"><a data-fa-link="edit" data-src="input/pagecontent/business-processes.md" data-repo="litlfred/smart-trust-phw" href="https://github.com/litlfred/smart-trust-phw/edit/main/input/pagecontent/business-processes.md">Edit this page on GitHub</a></p>
-<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust-phw/blob/main/input/pagecontent/business-processes.md", "repo": "litlfred/smart-trust-phw", "branch": "main", "path": "input/pagecontent/business-processes.md", "lines": [{"t":"Architectural Principles","l":5},{"t":"Overview of Key Business Processes","l":12},{"t":"Workflows","l":22},{"t":"A. Record and Manage Patient Privacy Consent","l":24},{"t":"Consent rules, from the person's side","l":43},{"t":"B. Issue Consent-Backed Verifiable Health Link","l":52},{"t":"C. Present and Redeem Verifiable Health Link with PCF Consent Enforcement","l":72},{"t":"Data Sharing Agreement Processes (Server to Server)","l":95},{"t":"D. Register a Server Client under a Data Sharing Agreement","l":116},{"t":"E. Server-to-Server Access under a Data Sharing Agreement","l":141},{"t":"F. Access Decision under a Data Sharing Agreement","l":166},{"t":"Combining several agreements (DMN PHW.DT.AgreementAccess)","l":192},{"t":"G. Audit, Provenance and Duty Checks under a Data Sharing Agreement","l":235},{"t":"H. Revocation and Suspension under a Data Sharing Agreement","l":262},{"t":"Verifiable Health Link Requests under an Existing Data Sharing Agreement","l":282},{"t":"I. Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement","l":297},{"t":"Shared Certificate Processes","l":340},{"t":"J. Issue a Verifiable Digital Health Certificate","l":349},{"t":"K. Verify a Certificate and its Status","l":368},{"t":"Shared Processes and Their Addresses","l":389}]}</script>
+<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust-phw/blob/main/input/pagecontent/business-processes.md", "repo": "litlfred/smart-trust-phw", "branch": "main", "path": "input/pagecontent/business-processes.md", "lines": [{"t":"Architectural Principles","l":5},{"t":"Overview of Key Business Processes","l":12},{"t":"Workflows","l":22},{"t":"A. Record and Manage Patient Privacy Consent","l":24},{"t":"Consent rules, from the person's side","l":43},{"t":"B. Issue Consent-Backed Verifiable Health Link","l":52},{"t":"C. Present and Redeem Verifiable Health Link with PCF Consent Enforcement","l":73},{"t":"Data Sharing Agreement Processes (Server to Server)","l":96},{"t":"D. Register a Server Client under a Data Sharing Agreement","l":117},{"t":"E. Server-to-Server Access under a Data Sharing Agreement","l":142},{"t":"F. Access Decision under a Data Sharing Agreement","l":167},{"t":"Combining several agreements (DMN PHW.DT.AgreementAccess)","l":193},{"t":"G. Audit, Provenance and Duty Checks under a Data Sharing Agreement","l":236},{"t":"H. Revocation and Suspension under a Data Sharing Agreement","l":263},{"t":"Verifiable Health Link Requests under an Existing Data Sharing Agreement","l":283},{"t":"I. Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement","l":298},{"t":"Shared Certificate Processes","l":341},{"t":"J. Issue a Verifiable Digital Health Certificate","l":350},{"t":"K. Verify a Certificate and its Status","l":370},{"t":"Consent Processes","l":391},{"t":"L. Record Explicit Consent","l":400},{"t":"M. Add Consent Directives to a Shared or Issued Document","l":419},{"t":"Shared Processes and Their Addresses","l":436}]}</script>
 
 <script src="./assets/ig-source-links.js"></script>
 
-<link rel="stylesheet" href="assets/ig-pages.css" />
-
-<footer id="ig-footer">
-<p class="ig-footer-nav"><a href="personas.html">&lt;prev</a> | <a href="#">top</a> | <a href="example-pilgrimage.html">next&gt;</a></p>
-<p class="ig-footer-band">IG © 2023+ <a href="http://who.int" rel="external">WHO</a>. Package <code>smart.who.int.trust-phw#0.1.0</code> based on <a href="http://hl7.org/fhir/R5/" rel="external">FHIR 5.0.0</a>. </p>
-<p class="ig-footer-links">Links: <a href="toc.html">Table of Contents</a> | <a href="https://spdx.org/licenses/CC-BY-SA-3.0-IGO.html" rel="external">License</a></p>
-</footer>
-
 
 </main>
+<link rel="stylesheet" href="assets/ig-pages.css">
+<footer id="ig-footer">
+<p class="ig-footer-nav"><a href="consent.html">&lt;prev</a> | <a href="#">top</a> | <a href="example-pilgrimage.html">next&gt;</a></p>
+<p class="ig-footer-band">IG © 2023+ <a href="http://who.int" rel="external">WHO</a>. Package <code>smart.who.int.trust-phw#0.2.0-litlfred</code> based on <a href="http://hl7.org/fhir/R4/" rel="external">FHIR 4.0.1</a>. Generated 2026-11-07</p>
+<p class="ig-footer-links">Links: <a href="toc.html">Table of Contents</a> | <a href="qa.html">QA Report</a> | <a href="https://spdx.org/licenses/CC-BY-SA-3.0-IGO.html" rel="external">License</a></p>
+</footer>
+
 </body>
 </html>

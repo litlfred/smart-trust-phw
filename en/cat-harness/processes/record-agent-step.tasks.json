@@ -1,6 +1,44 @@
 {
  "$schema": "process-task-panel/v1",
  "process": "Process_RecordAgentStep",
+ "markers": [
+  {
+   "id": "Task_WriteAgentRow",
+   "name": "Write the change set's Agent row",
+   "left": 27.5,
+   "top": 17.74,
+   "box": {
+    "left": 20.4,
+    "top": 38.71,
+    "width": 2.35,
+    "height": 7.74
+   }
+  },
+  {
+   "id": "Task_WriteFeedback",
+   "name": "Write Feedback (agent) from that row",
+   "left": 45.11,
+   "top": 17.74,
+   "box": {
+    "left": 38.01,
+    "top": 38.71,
+    "width": 2.35,
+    "height": 7.74
+   }
+  },
+  {
+   "id": "Task_ReadBack",
+   "name": "Read back Agentic status and Staging review",
+   "left": 62.72,
+   "top": 17.74,
+   "box": {
+    "left": 55.63,
+    "top": 38.71,
+    "width": 2.35,
+    "height": 7.74
+   }
+  }
+ ],
  "tasks": {
   "Task_WriteAgentRow": {
    "id": "Task_WriteAgentRow",

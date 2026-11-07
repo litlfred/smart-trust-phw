@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DVCRelationshipStatus</b></p><a name=\"DVCRelationshipStatus\"> </a><a name=\"hcDVCRelationshipStatus\"> </a><p>This  code system <code>http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Parent<a name=\"DVCRelationshipStatus-Parent\"> </a></td><td>Parent</td></tr><tr><td style=\"white-space:nowrap\">Guardian<a name=\"DVCRelationshipStatus-Guardian\"> </a></td><td>Guardian</td></tr></table></div>"
   },
   "url" : "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus",
-  "version" : "0.1.0",
+  "version" : "0.2.0-litlfred",
   "name" : "DVCRelationshipStatus",
   "title" : "Relationship Status for Contact in Patient",
   "status" : "active",
-  "date" : "2026-11-07T05:50:03+00:00",
+  "date" : "2026-11-07T18:20:21+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

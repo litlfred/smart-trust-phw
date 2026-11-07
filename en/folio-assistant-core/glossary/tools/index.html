@@ -912,14 +912,14 @@
 
 <p>Candidate terms extracted from every Tool node: <code class="language-plaintext highlighter-rouge">title</code> as the label, <code class="language-plaintext highlighter-rouge">description</code> as the definition, the Tool id as the code. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: cat-harness-tools 1 (<a href="../../../../assets/glossary/cat-harness-tools--kg-tools.skos.jsonld">SKOS</a>) · fhir-harness 34 (<a href="../../../../assets/glossary/fhir-harness--kg-tools.skos.jsonld">SKOS</a>) · folio-assistant-core 25 (<a href="../../../../assets/glossary/folio-assistant-core--kg-tools.skos.jsonld">SKOS</a>) · smart-base 14 (<a href="../../../../assets/glossary/smart-base--kg-tools.skos.jsonld">SKOS</a>) · who-iris 1 (<a href="../../../../assets/glossary/who-iris--kg-tools.skos.jsonld">SKOS</a>).</p>
+<p>From: cat-harness-tools 1 (<a href="../../../../assets/glossary/cat-harness-tools--kg-tools.skos.jsonld">SKOS</a>) · fhir-harness 35 (<a href="../../../../assets/glossary/fhir-harness--kg-tools.skos.jsonld">SKOS</a>) · folio-assistant-core 26 (<a href="../../../../assets/glossary/folio-assistant-core--kg-tools.skos.jsonld">SKOS</a>) · smart-base 14 (<a href="../../../../assets/glossary/smart-base--kg-tools.skos.jsonld">SKOS</a>) · who-iris 1 (<a href="../../../../assets/glossary/who-iris--kg-tools.skos.jsonld">SKOS</a>).</p>
 
-<p><strong>Size:</strong> this page holds 75 terms and is 75 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 77 terms and is 78 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
 <thead><tr><th>target</th><th>mapped</th><th>unmapped</th><th>undetermined</th><th>why undetermined</th></tr></thead>
-<tbody><tr><td><code>fhir</code></td><td>0</td><td>74</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>74</td><td>0</td><td>—</td></tr></tbody>
+<tbody><tr><td><code>fhir</code></td><td>0</td><td>77</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>77</td><td>0</td><td>—</td></tr></tbody>
 </table></div>
 <p class="fa-gloss-mapping-note"><strong>Undetermined is never “no match”.</strong> 
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
@@ -929,7 +929,7 @@ be a term this corpus is right to coin.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">75</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">77</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-A">A</a> <a href="#letter-B">B</a> <a href="#letter-C">C</a> <a href="#letter-D">D</a> <a href="#letter-E">E</a> <a href="#letter-F">F</a> <a href="#letter-G">G</a> <a href="#letter-I">I</a> <a href="#letter-L">L</a> <a href="#letter-M">M</a> <a href="#letter-P">P</a> <a href="#letter-R">R</a> <a href="#letter-S">S</a> <a href="#letter-V">V</a> <a href="#letter-W">W</a></nav>
 <h2 id="letter-A">
@@ -1058,6 +1058,13 @@ Check an IG's built Questionnaires with CSIRO's SDC libraries <span class="fa-gl
 <dd>
 <p>Build-time Structured Data Capture checks, one result per Questionnaire (<code>sdcChecks[]</code> of <code>fhir-questionnaire-wireframe</code>): <code>assemble</code> (<code>@aehrc/sdc-assemble</code> 2.0.3: an assemble-root's sub-forms resolve in this IG, and <code>--out</code> writes the assembled Questionnaire), <code>template-extract</code> (<code>@aehrc/sdc-template-extract</code> 1.0.16: extraction from the IG's fixture response yields the expected resources), <code>populate</code> (<code>@aehrc/sdc-populate</code> 4.7.2: FHIRPath pre-population from a fixture context gives the expected answers) and <code>behaviour</code> (<code>@aehrc/questionnaire-test-toolkit</code> 0.1.0: the IG's own behavioural test, warn-only). Checks only, no UI.</p>
 <p class="fa-gloss-meta">Tools of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/tools/sdc-checks/sdc-checks.ts"><code>fhir-harness/tools/sdc-checks/sdc-checks.ts#sdc-checks</code></a></p>
+</dd>
+<dt id="fhir-harness--kg-tools--check-translation-supplements" data-fa-state="extracted" data-fa-gloss="">
+Compile and check an IG's translation CodeSystem supplements <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Compile the IG's CodeSystems with every <code>input/fsh/translations/&lt;locale&gt;.fsh</code> CodeSystem supplement in a throw-away FSHOnly SUSHI project, require 0 SUSHI errors, and check that each supplement's base CodeSystem is the IG's own, its codes are a subset of the base's, its language is the file's locale, and every CodeSystem id is unique. SUSHI is the version <code>ig-toolchain.env</code> pins, installed from <code>scripts/sushi/package-lock.json</code> with install scripts off; the FHIR core package is pinned by sha512; SUSHI runs with no network.</p>
+<p class="fa-gloss-meta">Tools of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/tools/check-translation-supplements/check-translation-supplements.ts"><code>fhir-harness/tools/check-translation-supplements/check-translation-supplements.ts#check-translation-supplements</code></a></p>
 </dd>
 <dt id="folio-assistant-core--kg-tools--tabular-csv" data-fa-state="extracted" data-fa-gloss="">
 CSV tabular metadata <span class="fa-gloss-status">candidate, extracted</span>
@@ -1390,6 +1397,13 @@ Populate site.data.fhir for a just-the-docs IG render <span class="fa-gloss-stat
 <dd>
 <p>Write the IG Publisher's Jekyll variables (<code>site.data.fhir.ig.*</code>, <code>packageId</code>, <code>canonical</code>) for ONE implementation guide, from <code>sushi-config.yaml</code> or a published IG's <code>fhir-artifact-index</code>, so pages written for the Publisher render on just-the-docs unchanged. fhir-harness declares <code>site.data</code> as a pass-through Liquid prefix; this is what Jekyll then reads.</p>
 <p class="fa-gloss-meta">Tools of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/tools/ig-site-data/ig-site-data.ts"><code>fhir-harness/tools/ig-site-data/ig-site-data.ts#ig-site-data</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-tools--publish-extracted-statements" data-fa-state="extracted" data-fa-gloss="">
+Publish extracted statements with source links <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Render each declared page (a <code>folio-statement-page/v1</code> spec naming <code>folio-extracted-statements/v1</code> lists) as Markdown: every statement extracted from a library source, verbatim, with its kind and status, linked to its library entry and to the section it came from, labelled in the source's own unit (&quot;Catch up schedule, slide 7&quot;). A statement whose source does not resolve fails the run and nothing is written. <code>--check</code> fails when a committed page is stale.</p>
+<p class="fa-gloss-meta">Tools of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/tools/publish-extracted-statements/publish-extracted-statements.ts"><code>folio-assistant-core/tools/publish-extracted-statements/publish-extracted-statements.ts#publish-extracted-statements</code></a></p>
 </dd>
 </dl>
 <h2 id="letter-R">

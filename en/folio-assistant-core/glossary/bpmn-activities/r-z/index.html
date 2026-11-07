@@ -913,16 +913,16 @@
 
 <p>Candidate terms extracted from every BPMN task and call activity: <code class="language-plaintext highlighter-rouge">name</code> as the label, its own <code class="language-plaintext highlighter-rouge">&lt;documentation&gt;</code> as the definition, the element id as the code. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: bootstrap 38 (<a href="../../../../../assets/glossary/bootstrap--kg-bpmn-activities.skos.jsonld">SKOS</a>) · bootstrap-tools 7 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-bpmn-activities.skos.jsonld">SKOS</a>) · cat-harness 585 (<a href="../../../../../assets/glossary/cat-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · fhir-harness 49 (<a href="../../../../../assets/glossary/fhir-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · folio-assistant-core 244 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-bpmn-activities.skos.jsonld">SKOS</a>) · smart-base 153 (<a href="../../../../../assets/glossary/smart-base--kg-bpmn-activities.skos.jsonld">SKOS</a>) · who-iris 34 (<a href="../../../../../assets/glossary/who-iris--kg-bpmn-activities.skos.jsonld">SKOS</a>).</p>
+<p>From: bootstrap 38 (<a href="../../../../../assets/glossary/bootstrap--kg-bpmn-activities.skos.jsonld">SKOS</a>) · bootstrap-tools 7 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-bpmn-activities.skos.jsonld">SKOS</a>) · cat-harness 630 (<a href="../../../../../assets/glossary/cat-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · fhir-harness 49 (<a href="../../../../../assets/glossary/fhir-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · folio-assistant-core 250 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-bpmn-activities.skos.jsonld">SKOS</a>) · smart-base 153 (<a href="../../../../../assets/glossary/smart-base--kg-bpmn-activities.skos.jsonld">SKOS</a>) · who-iris 34 (<a href="../../../../../assets/glossary/who-iris--kg-bpmn-activities.skos.jsonld">SKOS</a>).</p>
 
 <p>One of 3 pages of this type, split by the first letter of the label: <a href="../../../../../en/folio-assistant-core/glossary/bpmn-activities/">all parts</a>.</p>
 
-<p><strong>Size:</strong> this page holds 400 terms and is 320 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 421 terms and is 336 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
 <thead><tr><th>target</th><th>mapped</th><th>unmapped</th><th>undetermined</th><th>why undetermined</th></tr></thead>
-<tbody><tr><td><code>fhir</code></td><td>0</td><td>1114</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>1114</td><td>0</td><td>—</td></tr></tbody>
+<tbody><tr><td><code>fhir</code></td><td>0</td><td>1118</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>1118</td><td>0</td><td>—</td></tr></tbody>
 </table></div>
 <p class="fa-gloss-mapping-note"><strong>Undetermined is never “no match”.</strong> 
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
@@ -932,7 +932,7 @@ be a term this corpus is right to coin.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">400</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">421</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-R">R</a> <a href="#letter-S">S</a> <a href="#letter-T">T</a> <a href="#letter-U">U</a> <a href="#letter-V">V</a> <a href="#letter-W">W</a></nav>
 <h2 id="letter-R">
@@ -1049,12 +1049,26 @@ Re-route to another committee <span class="fa-gloss-status">candidate, extracted
 <p>public-comment-changesets reroute, or cs-committee: &lt;TWG&gt; — &lt;why&gt; on GitHub from a person in the committee or editor lane. Moves the change-set to another TWG review committee and records who, when, from, to and why on the change-set record, so re-ingesting comments never resets it. Person-only (userTask): agents cannot re-route a change-set on their own.</p>
 <p class="fa-gloss-meta">BPMN activities of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment.bpmn"><code>folio-assistant-core/processes/content/public-comment.bpmn#Task_RerouteChangeSet</code></a></p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_translationrefresh.task_tr_gates" data-fa-state="extracted" data-fa-gloss="">
+Re-run the gates <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Officiality, catalogue coverage, translated links, <code>kg:locale</code>, <code>translation:glossary:check</code>, and the supplements compiling.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-refresh.bpmn"><code>cat-harness/processes/library/translation-refresh.bpmn#Task_TR_Gates</code></a></p>
+</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_harnessrendering.a_read" data-fa-state="extracted" data-fa-gloss="">
 Read a page or a card <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>The floor of the interface: everything a harness publishes can be read with no account and no tool.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/ui/harness-default-rendering.bpmn"><code>cat-harness/processes/ui/harness-default-rendering.bpmn#A_Read</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_translationroundtrip.task_rt_rule" data-fa-state="extracted" data-fa-gloss="">
+Read and rule each flagged pair <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Read every flagged pair in full and rule it drift or not drift, with the reason. Not drift: synonyms, articles, word order, inflection, a purpose clause rendered in the subjunctive, an acronym left uninflected, an acronym spelled out with the acronym kept. Drift: a claim added, dropped, weakened, strengthened or reversed; a term of art swapped for one that means something else; a named entity, number or quantifier moved.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-round-trip.bpmn"><code>cat-harness/processes/library/translation-round-trip.bpmn#Task_RT_Rule</code></a></p>
 </dd>
 <dt id="folio-assistant-core--kg-bpmn-activities--process_recordagentstep.task_readback" data-fa-state="extracted" data-fa-gloss="">
 Read back Agentic status and Staging review <span class="fa-gloss-status">candidate, extracted</span>
@@ -1083,13 +1097,6 @@ Read glossary and abbreviations into candidate terms <span class="fa-gloss-statu
 <dd>
 <p>The source's glossary and abbreviations sections become candidate terms of a folio-glossary/v1 scheme with the Tool glossary-from-source, verbatim, each with source file#line, and an acronym as the notation of the term it expands. Terms a person owns are never changed, and only a person moves a term to authored. A source with no such section skips this step with nothing written.</p>
 <p class="fa-gloss-meta">BPMN activities of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/library/ingest-build-l1-kg.bpmn"><code>folio-assistant-core/processes/library/ingest-build-l1-kg.bpmn#Task_Glossary</code></a></p>
-</dd>
-<dt id="cat-harness--kg-bpmn-activities--process_mergemanagerwatch.task_read" data-fa-state="extracted" data-fa-gloss="">
-Read PRs, runner queue, main verdict and owners <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Read live, never from a stored copy: the open PRs (draft, head, mergeable, owed checks, open owner decisions), the queued and running runs with the age of the oldest, the latest main push run, and each PR owner's last push or comment.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/merge-manager-watch.bpmn"><code>cat-harness/sdlc/processes/merge-manager-watch.bpmn#Task_Read</code></a></p>
 </dd>
 <dt id="fhir-harness--kg-bpmn-activities--process_questionnairewireframereview.task_read" data-fa-state="extracted" data-fa-gloss="">
 Read the built Questionnaire JSON <span class="fa-gloss-status">candidate, extracted</span>
@@ -1167,6 +1174,13 @@ Read the pin registry upstream-pins.json <span class="fa-gloss-status">candidate
 <dd>
 <p>The registry lists the tenants and says, per row, WHICH FILE holds the pin literal and how to read it. It deliberately does not store the version: one answer to &quot;what are we running&quot;, read from the file the build reads.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/upstream-pin-watch.bpmn"><code>cat-harness/sdlc/processes/upstream-pin-watch.bpmn#Task_ReadPins</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_mergemanagerwatch.task_read" data-fa-state="extracted" data-fa-gloss="">
+Read the queue, acknowledge requests <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Read live, never from a stored copy: the open PRs (draft, head, mergeable, owed checks, open owner decisions), the queued and running runs with the age of the oldest, the latest main push run, and each PR owner's last push or comment. One sweep runs merge:watch over every repository it holds. Liveness duty: acknowledge each new merge request within holding.heartbeatMinutes, and post a heartbeat with each sweep, so siblings can tell a live merge manager from a stalled one.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/merge-manager-watch.bpmn"><code>cat-harness/sdlc/processes/merge-manager-watch.bpmn#Task_Read</code></a></p>
 </dd>
 <dt id="folio-assistant-core--kg-bpmn-activities--process_gettingstarted.task_readfacts" data-fa-state="extracted" data-fa-gloss="">
 Read the repository facts <span class="fa-gloss-status">candidate, extracted</span>
@@ -1287,12 +1301,26 @@ Record assets[] — local path or remote URL <span class="fa-gloss-status">candi
 <p>kind / role / url-or-path / checksum / retrieved. A SIBLING of library:, never inside it: LibraryRef is regenerated from the tree, so an authored URL placed there is dropped on the next sync.</p>
 <p class="fa-gloss-meta">BPMN activities of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/library/ingest-build-l1-kg.bpmn"><code>folio-assistant-core/processes/library/ingest-build-l1-kg.bpmn#Task_Assets</code></a></p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_translationroundtrip.task_rt_record" data-fa-state="extracted" data-fa-gloss="">
+Record both witnesses <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Record the adjudicator's verdict first and the back-translator's rendering behind it (<code>translation:roundtrip --payload</code>), so a reader can ask both who ruled and on what basis. The counts (sampled, flagged, drift, not drift) go into the locale's QA report.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-round-trip.bpmn"><code>cat-harness/processes/library/translation-round-trip.bpmn#Task_RT_Record</code></a></p>
+</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_ingesttheme.task_contradictions" data-fa-state="extracted" data-fa-gloss="">
 Record contradictions IN the source <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>A step because sources do contradict themselves (one colour given two values on different pages). A contradiction silently resolved is indistinguishable from one nobody noticed, so it is kept as data and the reading taken is stated as a choice.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/ui/ingest-theme.bpmn"><code>cat-harness/processes/ui/ingest-theme.bpmn#Task_Contradictions</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_translationroundtrip.task_rt_recordna" data-fa-state="extracted" data-fa-gloss="">
+Record could not dispatch <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Write one entry, <code>result: &quot;n/a&quot;</code>, <code>metrics.dispatch: &quot;unavailable&quot;</code>, with the reason. The producer may write this entry and no other. It is never a pass, and the QA report says so.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-round-trip.bpmn"><code>cat-harness/processes/library/translation-round-trip.bpmn#Task_RT_RecordNA</code></a></p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_secureagentpermissions.task_recordgrant" data-fa-state="extracted" data-fa-gloss="">
 Record each answer: who, when, scope, the quote <span class="fa-gloss-status">candidate, extracted</span>
@@ -1658,6 +1686,13 @@ Refresh the held part <span class="fa-gloss-status">candidate, extracted</span>
 <p>The shared refresh, called, not re-described: what changed upstream, what changed locally, and what to do when both did. An archival copy is fixity-checked and never re-fetched. Whatever that process decides — refreshed, kept divergent, or deferred — is the part's new state; this loop only moves to the next part.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/subscribe-kg.bpmn"><code>cat-harness/processes/library/subscribe-kg.bpmn#Call_Refresh</code></a></p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_translationrefresh.task_tr_templates" data-fa-state="extracted" data-fa-gloss="">
+Refresh the templates <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Re-run the instance's extractors, once for every locale: pages, diagrams, glossary schemes.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-refresh.bpmn"><code>cat-harness/processes/library/translation-refresh.bpmn#Task_TR_Templates</code></a></p>
+</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_mountsubgraph.task_refuseunknownkind" data-fa-state="extracted" data-fa-gloss="">
 Refuse: no flow for this source kind <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -1734,6 +1769,13 @@ Release for public comment <span class="fa-gloss-status">candidate, extracted</s
 <dd>
 <p>When the draft goes out for public comment: the release date is agreed, the draft is frozen as a line-numbered public comment release, every channel is set up against it and announced, and the comments that come back are placed, triaged, recommended on by the review committee and decided by the editor (Process_PublicCommentRelease, which calls Process_PublicComment).</p>
 <p class="fa-gloss-meta">BPMN activities of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/draft-to-publication.bpmn"><code>folio-assistant-core/processes/content/draft-to-publication.bpmn#CallActivity_PublicComment</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_mergemanagerwatch.task_relieve" data-fa-state="extracted" data-fa-gloss="">
+Relieve the runners <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Enforce the pacing rule of continual-progress (owner ruling, 2026-11-07, card Cancel CI): close superseded or duplicate PRs, such as a re-pin whose commits another open PR already carries, and cancel their runs; cancel stale queued runs that never started, never a main push run that has started; ask the owners of P3 PRs to return them to draft.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/merge-manager-watch.bpmn"><code>cat-harness/sdlc/processes/merge-manager-watch.bpmn#Task_Relieve</code></a></p>
 </dd>
 <dt id="folio-assistant-core--kg-bpmn-activities--process_boardrelocate.a_movecontent" data-fa-state="extracted" data-fa-gloss="">
 Relocate the content to the trashcan <span class="fa-gloss-status">candidate, extracted</span>
@@ -1826,6 +1868,13 @@ Render the wireframe and the LHC-Forms view <span class="fa-gloss-status">candid
 <p>A mid-fidelity wireframe with one field per answerable item, each carrying data-element and sitting in a data-layout web or mobile subtree; and the form view, the same JSON in the vendored &lt;lhc-forms&gt; web component on the IG site's form page. Never loaded from a CDN at runtime.</p>
 <p class="fa-gloss-meta">BPMN activities of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/processes/content/questionnaire-wireframe-review.bpmn"><code>fhir-harness/processes/content/questionnaire-wireframe-review.bpmn#Task_Render</code></a></p>
 </dd>
+<dt id="folio-assistant-core--kg-bpmn-activities--process_publishextractedstatements.task_renderartifact" data-fa-state="extracted" data-fa-gloss="">
+Render them in the artifact's own pages <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The statements are written into pages of the folio's working artifact, so a reader of the artifact finds them without leaving it. HOW the pages look is the content type's: its adapter renders them in its own format (pages of a document, a section of a paper, pages of an implementation guide), as its content profile declares. Each statement carries two links: to the library entry's page, and to the section, labelled as collected. The pages are GENERATED: a person edits the extraction or the source, never the page.</p>
+<p class="fa-gloss-meta">BPMN activities of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/library/publish-extracted-statements.bpmn"><code>folio-assistant-core/processes/library/publish-extracted-statements.bpmn#Task_RenderArtifact</code></a></p>
+</dd>
 <dt id="smart-base--kg-bpmn-activities--process_l2componenteditreview.task_renderstage" data-fa-state="extracted" data-fa-gloss="">
 Render, stage, before/after <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -1867,6 +1916,13 @@ Report issues to author for resolution <span class="fa-gloss-status">candidate, 
 <dd>
 <p><em>The asset carries no description.</em></p>
 <p class="fa-gloss-meta">BPMN activities of smart-base · source <a href="https://github.com/litlfred/smart-base/blob/main/smart-base/processes/content/SGAuthoring.DAKLifecycle.bpmn"><code>smart-base/processes/content/SGAuthoring.DAKLifecycle.bpmn#Task_ReportIssues</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_translationrefresh.task_tr_sourceissue" data-fa-state="extracted" data-fa-gloss="">
+Report source errors as one issue <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Any source-text error the translators found goes into one issue on the source, with its location. When there is none, this step writes nothing.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-refresh.bpmn"><code>cat-harness/processes/library/translation-refresh.bpmn#Task_TR_SourceIssue</code></a></p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_activitylog.a_reportcapturestate" data-fa-state="extracted" data-fa-gloss="">
 Report the capture state <span class="fa-gloss-status">candidate, extracted</span>
@@ -2449,6 +2505,13 @@ Root-cause the failure <span class="fa-gloss-status">candidate, extracted</span>
 <p>&quot;Flake&quot; is not a root cause. A red PR is work now, whatever its review state — only a green, mergeable head waits on reviewers.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/code-change-review.bpmn"><code>cat-harness/sdlc/processes/code-change-review.bpmn#Task_Diagnose</code></a></p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_translationrefresh.call_tr_roundtrip" data-fa-state="extracted" data-fa-gloss="">
+Round trip on the changed strings <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The untainted round trip, with the sample restricted to the strings this run translated.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-refresh.bpmn"><code>cat-harness/processes/library/translation-refresh.bpmn#Call_TR_RoundTrip</code></a></p>
+</dd>
 <dt id="cat-harness--kg-bpmn-activities--globaltask.gt_roundtripqa" data-fa-state="extracted" data-fa-gloss="">
 Round-trip translation QA <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -2460,7 +2523,7 @@ Round-trip translation QA <span class="fa-gloss-status">candidate, extracted</sp
 Round-trip translation QA <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Back-translate the target-language .md into the source language and compare the meaning with the original. It catches semantic drift and terminology misses that a forward-only fluency check cannot see, and tells the two apart. Tool: the translation_validate MCP tool. No gateway follows: drift or clean, the translation goes to Task_SMEReview with the findings attached. Which of two readings is right is a human call (translation-manager, &quot;route drift to a human reviewer&quot;), and every translation in this workflow is reviewed and signed off anyway, so a clean result is evidence for the reviewer and never a way around them.</p>
+<p>Back-translate the target-language .md into the source language and compare the meaning with the original. It catches semantic drift and terminology misses that a forward-only fluency check cannot see, and tells the two apart. Tool: the translation_validate MCP tool. No gateway follows: drift or clean, the translation goes to Task_SMEReview with the findings attached. Which of two readings is right is a human call (translation-manager, &quot;route drift to a human reviewer&quot;), and every translation in this workflow is reviewed and signed off anyway, so a clean result is evidence for the reviewer and never a way around them. The findings include <code>translation:glossary:check</code>'s: every glossary term translated against the locale term base, fixed before sign-off, with its glossary section in the KG QA report.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/human-translation-workflow.bpmn"><code>cat-harness/processes/library/human-translation-workflow.bpmn#Task_RoundTripQA</code></a></p>
 </dd>
 <dt id="folio-assistant-core--kg-bpmn-activities--process_l1gate.task_roundtrip" data-fa-state="extracted" data-fa-gloss="">
@@ -2560,6 +2623,13 @@ Run the component's checker <span class="fa-gloss-status">candidate, extracted</
 <dd>
 <p>The mechanical checks for this component, before anyone is asked (skill l2-component-edit-review, column &quot;checker&quot;): BPMN imports in bpmn-js with no warnings and its lanes map to personas (dak-swimlanes.ts); DMN loads, its decisions are reachable (artefact-reachability, audit:reachability) and its test cases run (content-test); the data dictionary web annex's ids are unique and its references and terminology bindings resolve (check-web-annexes.ts); personas, scenarios and requirements each trace to an L1 recommendation (recommendation-extraction's implementedBy edges). Findings go with the review request; a failing check does not stop the hand-on.</p>
 <p class="fa-gloss-meta">BPMN activities of smart-base · source <a href="https://github.com/litlfred/smart-base/blob/main/smart-base/processes/content/l2-component-edit-review.bpmn"><code>smart-base/processes/content/l2-component-edit-review.bpmn#Task_Check</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_multilocaletranslation.task_ml_gates" data-fa-state="extracted" data-fa-gloss="">
+Run the deterministic gates <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Template currency, catalogue coverage, placeholder, tag and URL preservation, officiality, <code>kg:locale</code>, and the locale's supplements compiling with no SUSHI error and passing their structural checks.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/multi-locale-translation.bpmn"><code>cat-harness/processes/library/multi-locale-translation.bpmn#Task_ML_Gates</code></a></p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_mergetrain.call_gates" data-fa-state="extracted" data-fa-gloss="">
 Run the gate set on the train <span class="fa-gloss-status">candidate, extracted</span>
@@ -2717,6 +2787,13 @@ Scan the subject strengths and weaknesses <span class="fa-gloss-status">candidat
 <dd>
 <p>The internal axis. Work the source's functional checklist rather than a blank page: marketing, research and development, management information systems, management team, operations, finance, human resources. A strength gives advantage over others in the field; a weakness places the subject at a disadvantage relative to others. Both are attributes OF the subject. The source's warning belongs to this step specifically: listing strengths on paper &quot;is very different from testing the organization and experiencing the strengths at work&quot;, so a strength recorded here is a claim, and where evidence for it exists it is cited.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/swot-analysis.bpmn"><code>cat-harness/processes/process/swot-analysis.bpmn#A_ScanInternal</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_multilocaletranslation.task_ml_watcher" data-fa-state="extracted" data-fa-gloss="">
+Schedule the refresh watcher <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Schedule a fresh session that follows <code>translation-refresh</code> on each instance, so a template that moves after today is caught by its check failing, not by a reader.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/multi-locale-translation.bpmn"><code>cat-harness/processes/library/multi-locale-translation.bpmn#Task_ML_Watcher</code></a></p>
 </dd>
 <dt id="folio-assistant-core--kg-bpmn-activities--process_editing.task_schemavalidate" data-fa-state="extracted" data-fa-gloss="">
 Schema and constraint checks <span class="fa-gloss-status">candidate, extracted</span>
@@ -2886,6 +2963,13 @@ Select upstream asset and target folio <span class="fa-gloss-status">candidate, 
 <p>Name the upstream instance (<code>&lt;owner&gt;/&lt;repo&gt;</code>), the asset's declared path in that instance, the commit <code>ref</code> (when pinned), and the target folio declaration that will receive the copy.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/kg/copy-into-folio.bpmn"><code>cat-harness/processes/kg/copy-into-folio.bpmn#Task_ChooseAsset</code></a></p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_mergerequest.sib_send" data-fa-state="extracted" data-fa-gloss="">
+Send the six-line merge request <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>To the merge manager: the PR URL and full head SHA, the session URL, 1-3 sentences on the change, the rendered preview URL or no preview with a reason, what to look for, and full tier green as judged (owner ruling, 2026-11-07). Never merge it yourself, and never push to another session's branch.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/merge-request.bpmn"><code>cat-harness/sdlc/processes/merge-request.bpmn#Sib_Send</code></a></p>
+</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_kgseparation.task_decide" data-fa-state="extracted" data-fa-gloss="">
 Separate this graph? <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -2899,6 +2983,13 @@ Serialize to JSON-LD <span class="fa-gloss-status">candidate, extracted</span>
 <dd>
 <p>kg-export, already built and host-agnostic by design. Every edge term declared &#123;&quot;@type&quot;: &quot;@id&quot;} — without that coercion the document is a list of records that merely LOOKS linked, and the node IRIs are fragments of the document's own @id so the graph is mergeable with anyone else's.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/kg/kg-to-portal.bpmn"><code>cat-harness/processes/kg/kg-to-portal.bpmn#A_Serialize</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_multilocaletranslation.task_ml_scope" data-fa-state="extracted" data-fa-gloss="">
+Set locales, scope and merge window <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Which instances, which locales, which assets (pages, diagrams, glossary, FHIR terms), and the window in which locale PRs may be merged.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/multi-locale-translation.bpmn"><code>cat-harness/processes/library/multi-locale-translation.bpmn#Task_ML_Scope</code></a></p>
 </dd>
 <dt id="folio-assistant-core--kg-bpmn-activities--process_contributorfeedback.task_readyforagent" data-fa-state="extracted" data-fa-gloss="">
 Set Ready for agent to Yes <span class="fa-gloss-status">candidate, extracted</span>
@@ -3075,6 +3166,13 @@ Split into sections/*.md with doc_brief front-matter <span class="fa-gloss-statu
 <p>Contextual retrieval: a chunk in isolation loses what makes it mean anything, so each section carries the document brief.</p>
 <p class="fa-gloss-meta">BPMN activities of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/library/ingest-extract-structure.bpmn"><code>folio-assistant-core/processes/library/ingest-extract-structure.bpmn#Task_Sections</code></a></p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_mergerequest.sib_stack" data-fa-state="extracted" data-fa-gloss="">
+Stack on it and keep working <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Same repository: branch from the dependency PR's branch and open a draft PR whose base is that branch; pull the dependency in with merge commits, never rebase or force-push another session's branch. Across layers: develop against the dependency's branch laid over a fresh mount; a draft may pin the dependency PR's full head SHA, never a branch. Write &quot;stacked on &lt;repo&gt;#&lt;n&gt;&quot; in the PR body. A re-pin is its own PR holding only pins; work that needs the new pins stacks on it, and a fix the re-pin needs lands in its owning layer (owner ruling, 2026-11-07).</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/merge-request.bpmn"><code>cat-harness/sdlc/processes/merge-request.bpmn#Sib_Stack</code></a></p>
+</dd>
 <dt id="smart-base--kg-bpmn-activities--process_classifyandcodecontent.task_stageforreview" data-fa-state="extracted" data-fa-gloss="">
 Stage codings, warnings and exclusions for review <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -3107,8 +3205,15 @@ Stage the renderings <span class="fa-gloss-status">candidate, extracted</span>
 Stalled-agent triage <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Tell the owner, then take the stalled PR over.</p>
+<p>A PR owner who stalled: tell the owner, then take the stalled PR over.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/merge-manager-watch.bpmn"><code>cat-harness/sdlc/processes/merge-manager-watch.bpmn#Call_Stalled</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_mergerequest.sib_callstalled" data-fa-state="extracted" data-fa-gloss="">
+Stalled-agent triage <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Tell the owner that the merge manager stalled, then re-elect with the stalled session excluded. The new holder announces itself, takes over the queue and tells the owner.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/merge-request.bpmn"><code>cat-harness/sdlc/processes/merge-request.bpmn#Sib_CallStalled</code></a></p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_copyintofolio.task_stampassetsource" data-fa-state="extracted" data-fa-gloss="">
 Stamp the asset's source <span class="fa-gloss-status">candidate, extracted</span>
@@ -3337,6 +3442,20 @@ Translate narrative and resource metadata <span class="fa-gloss-status">candidat
 <p><em>The asset carries no description.</em></p>
 <p class="fa-gloss-meta">BPMN activities of smart-base · source <a href="https://github.com/litlfred/smart-base/blob/main/smart-base/processes/content/SGAuthoring.DAKLifecycle.bpmn"><code>smart-base/processes/content/SGAuthoring.DAKLifecycle.bpmn#Task_TranslateContent</code></a></p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_translationrefresh.task_tr_translate" data-fa-state="extracted" data-fa-gloss="">
+Translate new and fuzzy only <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Only the empty and fuzzy entries, in every locale, with the terms the term base fixes. A finished string is not touched.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-refresh.bpmn"><code>cat-harness/processes/library/translation-refresh.bpmn#Task_TR_Translate</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_multilocaletranslation.task_ml_translate" data-fa-state="extracted" data-fa-gloss="">
+Translate one locale <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>From the merged templates, with the locale term base: <code>translations/&lt;locale&gt;/**.po</code>, a translation-node manifest beside each (<code>official: false</code>, <code>generatedBy: &quot;agent&quot;</code>; no <code>status.json</code>), and the FHIR terms as CodeSystem supplements, all in one file for the locale rather than edits inside the resources.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/multi-locale-translation.bpmn"><code>cat-harness/processes/library/multi-locale-translation.bpmn#Task_ML_Translate</code></a></p>
+</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_humantranslation.task_translateintool" data-fa-state="extracted" data-fa-gloss="">
 Translate strings in preferred tool <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -3403,6 +3522,13 @@ TypeScript: lint, types and tests (HARD) <span class="fa-gloss-status">candidate
 </h2>
     
 <dl class="fa-gloss">
+<dt id="cat-harness--kg-bpmn-activities--process_multilocaletranslation.call_ml_roundtrip" data-fa-state="extracted" data-fa-gloss="">
+Untainted round trip on a sample <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The sample: every diagram label, the personas and scenarios, and a seeded random fraction of the rest.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/multi-locale-translation.bpmn"><code>cat-harness/processes/library/multi-locale-translation.bpmn#Call_ML_RoundTrip</code></a></p>
+</dd>
 <dt id="smart-base--kg-bpmn-activities--process_planning.task_updateigstatus" data-fa-state="extracted" data-fa-gloss="">
 Update IG status to active, set version, date <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -3447,6 +3573,13 @@ Validate against profiles <span class="fa-gloss-status">candidate, extracted</sp
 <dd>
 <p>Validate the compiled resources against their profiles and the packages they constrain. A validator that could not start is could-not-determine, never a pass with an empty findings list. Failures return to authoring.</p>
 <p class="fa-gloss-meta">BPMN activities of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/processes/content/l3-fhir-pipeline.bpmn"><code>fhir-harness/processes/content/l3-fhir-pipeline.bpmn#Task_Validate</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_multilocaletranslation.task_ml_merge" data-fa-state="extracted" data-fa-gloss="">
+Validate and merge in the window <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Read each locale's QA report, confirm the PR is green, and merge it inside the owner's merge window. Outside the window it waits.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/multi-locale-translation.bpmn"><code>cat-harness/processes/library/multi-locale-translation.bpmn#Task_ML_Merge</code></a></p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_namedqueryexecution.a_validateparams" data-fa-state="extracted" data-fa-gloss="">
 Validate Arguments against Parameter Schema <span class="fa-gloss-status">candidate, extracted</span>
@@ -3583,6 +3716,13 @@ What changed LOCALLY since <span class="fa-gloss-status">candidate, extracted</s
 <dd>
 <p>The half nothing answers today. A materialized copy that was edited in place is not a copy any more, and overwriting it silently destroys work whose existence the process never established.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/refresh-materialized.bpmn"><code>cat-harness/processes/library/refresh-materialized.bpmn#Task_Local</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_mergerequest.sib_retarget" data-fa-state="extracted" data-fa-gloss="">
+When the base lands, retarget <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Retarget the PR onto main and merge main in; across layers, re-pin to the dependency's merge commit on main, so pins only move forward. Never merge the stacked PR into its base branch, and never mark it ready while it pins an unmerged commit.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/merge-request.bpmn"><code>cat-harness/sdlc/processes/merge-request.bpmn#Sib_Retarget</code></a></p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_slicesqlitepublish.a_wire" data-fa-state="extracted" data-fa-gloss="">
 Wire it: gate, deploy line, search, tests <span class="fa-gloss-status">candidate, extracted</span>
@@ -3751,6 +3891,13 @@ Write the generated-data recipe <span class="fa-gloss-status">candidate, extract
 <dd>
 <p>Record <code>contentType</code>, <code>specialisation</code>, <code>template</code>, <code>params</code>, <code>seed</code>, and the canonical <code>sha256</code> digest (<code>computeGeneratedSetDigest</code>) with <code>$schema: &quot;test-data-generated/1.0.0&quot;</code> and <code>kind: &quot;generated&quot;</code> in the instance's declared <code>test-data-generated</code> directory. Never store materialised records.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/sdlc/processes/test-data-curation.bpmn"><code>cat-harness/sdlc/processes/test-data-curation.bpmn#Task_WriteRecipe</code></a></p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_multilocaletranslation.task_ml_qareport" data-fa-state="extracted" data-fa-gloss="">
+Write the locale's QA report <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>One report per locale under <code>test/results/translation-qa/</code>: coverage, the gates, the round trip with its counts and every drift ruling, the glossary violations and sense checks, and the source errors reported.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/multi-locale-translation.bpmn"><code>cat-harness/processes/library/multi-locale-translation.bpmn#Task_ML_QAReport</code></a></p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_mountdependency.task_writelock" data-fa-state="extracted" data-fa-gloss="">
 Write the lock <span class="fa-gloss-status">candidate, extracted</span>

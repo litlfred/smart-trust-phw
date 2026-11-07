@@ -1095,6 +1095,14 @@
       "isTest": false
     },
     {
+      "module": "cat-harness-tools/schemas/kg/glossary-sense.ts",
+      "instance": "cat-harness-tools",
+      "name": "glossary-sense",
+      "graphNode": "schema",
+      "summary": "**The glossary sense verdicts** of an instance: for a use of a glossary term",
+      "isTest": false
+    },
+    {
       "module": "cat-harness-tools/schemas/kg/graph-typology-node.test.ts",
       "instance": "cat-harness-tools",
       "name": "graph-typology-node.test",
@@ -2305,6 +2313,14 @@
       "isTest": false
     },
     {
+      "module": "cat-harness-tools/schemas/sdlc/merge-request.test.ts",
+      "instance": "cat-harness-tools",
+      "name": "merge-request.test",
+      "graphNode": "undeclared",
+      "summary": "The six-line merge request a sibling sends the merge manager (owner,",
+      "isTest": true
+    },
+    {
       "module": "cat-harness-tools/schemas/sdlc/merge-review.ts",
       "instance": "cat-harness-tools",
       "name": "merge-review",
@@ -3468,6 +3484,14 @@
       "name": "dublin-core",
       "graphNode": "schema",
       "summary": "Qualified Dublin Core, as a graph node.",
+      "isTest": false
+    },
+    {
+      "module": "folio-assistant-core/schemas/extracted-statement.ts",
+      "instance": "folio-assistant-core",
+      "name": "extracted-statement",
+      "graphNode": "schema",
+      "summary": "Statements extracted from library sources, as a list a page can be built from.",
       "isTest": false
     },
     {
@@ -26545,7 +26569,7 @@
         },
         {
           "name": "scripts",
-          "type": "z .array( z .object({ script: z.string().min(1), kind: z.enum([\"report\", \"covered-by\", \"no-folio\", \"scheduled\"]), reaso…",
+          "type": "z .array( z .object({ script: z.string().min(1), kind: z.enum([\"report\", \"covered-by\", \"no-folio\", \"scheduled\", \"pendin…",
           "optional": true,
           "array": true
         },
@@ -29774,6 +29798,151 @@
       "exported": true
     },
     {
+      "id": "cat-harness-tools/schemas/kg/glossary-sense.ts#GlossarySenseStore",
+      "name": "GlossarySenseStore",
+      "module": "cat-harness-tools/schemas/kg/glossary-sense.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/glossary-sense.ts#GlossarySenseStoreSchema",
+      "name": "GlossarySenseStoreSchema",
+      "module": "cat-harness-tools/schemas/kg/glossary-sense.ts",
+      "kind": "zod-object",
+      "doc": "The whole store: one verdict per (term, msgid hash).",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(GLOSSARY_SENSE_SCHEMA)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "verdicts",
+          "type": "z.array(GlossarySenseVerdictSchema)",
+          "optional": false,
+          "array": true
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/kg/glossary-sense.ts#GlossarySenseVerdictSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "GLOSSARY_SENSE_SCHEMA",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/glossary-sense.ts#GlossarySenseVerdict",
+      "name": "GlossarySenseVerdict",
+      "module": "cat-harness-tools/schemas/kg/glossary-sense.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/glossary-sense.ts#GlossarySenseVerdictSchema",
+      "name": "GlossarySenseVerdictSchema",
+      "module": "cat-harness-tools/schemas/kg/glossary-sense.ts",
+      "kind": "zod-object",
+      "doc": "One verdict on one use of one term.",
+      "fields": [
+        {
+          "name": "term",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "The term's id: its IRI, or `<subject area>#<label>` for a terminology pin."
+        },
+        {
+          "name": "label",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The label that matched, for a reader."
+        },
+        {
+          "name": "msgidSha256",
+          "type": "z.string().regex(/^[0-9a-f]{64}$/)",
+          "optional": false,
+          "array": false,
+          "doc": "SHA-256 (hex) of the msgid, exactly as the catalogue holds it."
+        },
+        {
+          "name": "msgid",
+          "type": "z.string().optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The source sentence, for a reader; the hash is what is compared."
+        },
+        {
+          "name": "verdict",
+          "type": "z.enum(SENSE_VERDICTS)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "reason",
+          "type": "z.string().regex(ONE_LINE)",
+          "optional": false,
+          "array": false,
+          "doc": "One line: why. For an `exception`, why the fixed translation is wrong here."
+        },
+        {
+          "name": "decidedBy",
+          "type": "z.string().regex(/^\\S+$/)",
+          "optional": false,
+          "array": false,
+          "doc": "The agent or person that ruled: an id, never a model name."
+        },
+        {
+          "name": "decidedAt",
+          "type": "z.string().regex(/^\\d{4}-\\d{2}-\\d{2}/).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "When, as an ISO date."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
+        "ONE_LINE",
+        "SENSE_VERDICTS",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/glossary-sense.ts#SenseVerdictKind",
+      "name": "SenseVerdictKind",
+      "module": "cat-harness-tools/schemas/kg/glossary-sense.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
       "id": "cat-harness-tools/schemas/kg/graph-typology-node.ts#_EveryDefFieldIsDeclarable",
       "name": "_EveryDefFieldIsDeclarable",
       "module": "cat-harness-tools/schemas/kg/graph-typology-node.ts",
@@ -29914,6 +30083,13 @@
           "type": "z.string().min(1).optional()",
           "optional": true,
           "array": false
+        },
+        {
+          "name": "specialises",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The block kind a node of this kind IS, read through the kind module's view of it."
         },
         {
           "name": "avatar",
@@ -30241,6 +30417,13 @@
           "optional": true,
           "array": false,
           "doc": "The kind this one is a SUB-GRAPH of, when it is one."
+        },
+        {
+          "name": "specialises",
+          "type": "string",
+          "optional": true,
+          "array": false,
+          "doc": "The BLOCK KIND (a `folio-block-kind/v1` node's `kind`, in whichever layer"
         },
         {
           "name": "avatar",
@@ -31788,6 +31971,13 @@
           "optional": true,
           "array": false,
           "doc": "This repository is AGENT-RUN: an agent builds and publishes its site"
+        },
+        {
+          "name": "taskSkills",
+          "type": "z.boolean().optional()",
+          "optional": true,
+          "array": false,
+          "doc": "Whether the ⓘ task panel on this site's BPMN drawings shows skills: the"
         },
         {
           "name": "workflows",
@@ -35345,10 +35535,10 @@
         },
         {
           "name": "paths",
-          "type": "{ md: string; ts?: string }",
+          "type": "{ md?: string; ts?: string; pot?: string }",
           "optional": false,
           "array": false,
-          "doc": "Repo-relative paths of the block's files."
+          "doc": "Repo-relative paths of the subject's files: a block's or page's `.md` (and"
         },
         {
           "name": "po",
@@ -47736,6 +47926,19 @@
       "exported": true
     },
     {
+      "id": "cat-harness-tools/schemas/process/role-graph.ts#ElectionRule",
+      "name": "ElectionRule",
+      "module": "cat-harness-tools/schemas/process/role-graph.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
       "id": "cat-harness-tools/schemas/process/role-graph.ts#FormerName",
       "name": "FormerName",
       "module": "cat-harness-tools/schemas/process/role-graph.ts",
@@ -47792,6 +47995,48 @@
       "exported": true
     },
     {
+      "id": "cat-harness-tools/schemas/process/role-graph.ts#HolderCandidate",
+      "name": "HolderCandidate",
+      "module": "cat-harness-tools/schemas/process/role-graph.ts",
+      "kind": "interface",
+      "doc": "One active session that could hold the lane.",
+      "fields": [
+        {
+          "name": "sessionId",
+          "type": "string",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "optional": false,
+          "array": false,
+          "doc": "ISO 8601 creation time, as `list_sessions` reports it."
+        },
+        {
+          "name": "ownsP0",
+          "type": "boolean",
+          "optional": false,
+          "array": false,
+          "doc": "It owns a P0 PR: the fix for a red main, or a link of the re-pin chain."
+        },
+        {
+          "name": "minutesSinceAnswer",
+          "type": "number",
+          "optional": true,
+          "array": false,
+          "doc": "Minutes since it last answered or posted a heartbeat; unknown counts as live."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
       "id": "cat-harness-tools/schemas/process/role-graph.ts#LaneBinding",
       "name": "LaneBinding",
       "module": "cat-harness-tools/schemas/process/role-graph.ts",
@@ -47803,6 +48048,78 @@
       "refs": [],
       "unresolved": [],
       "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/role-graph.ts#LaneHolding",
+      "name": "LaneHolding",
+      "module": "cat-harness-tools/schemas/process/role-graph.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/role-graph.ts#LaneHoldingSchema",
+      "name": "LaneHoldingSchema",
+      "module": "cat-harness-tools/schemas/process/role-graph.ts",
+      "kind": "zod-object",
+      "doc": "When a lane held by one session at a time is needed, and who holds it.",
+      "fields": [
+        {
+          "name": "neededWhen",
+          "type": "z .object({ /** At least this many active sessions have ready PRs in the same repositories. */ minActiveSessions: z.num…",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "election",
+          "type": "z.array(z.enum(ELECTION_RULES)).min(1)",
+          "optional": false,
+          "array": true,
+          "doc": "Applied in order by {@link electHolder}."
+        },
+        {
+          "name": "loneSessionHolds",
+          "type": "z.boolean()",
+          "optional": false,
+          "array": false,
+          "doc": "A session alone in its coordination group holds the lane for itself."
+        },
+        {
+          "name": "announce",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "What the holder announces to every sibling and the owner, e.g. `merge manager: <session id>`."
+        },
+        {
+          "name": "heartbeatMinutes",
+          "type": "z.number().int().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "The holder acknowledges each request, and posts a heartbeat, within this many minutes."
+        },
+        {
+          "name": "stalledAfterMinutes",
+          "type": "z.number().int().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "A session silent for longer than this is stalled: not a candidate, and its lane is vacant."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
+        "ELECTION_RULES",
+        "z"
+      ],
       "exported": true
     },
     {
@@ -47829,6 +48146,49 @@
           "type": "{ values?: ReadonlyArray<{ $type?: string; ref?: string; variable?: string }> }",
           "optional": true,
           "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/role-graph.ts#LaneReading",
+      "name": "LaneReading",
+      "module": "cat-harness-tools/schemas/process/role-graph.ts",
+      "kind": "interface",
+      "doc": "The live numbers {@link laneNeeded} reads; never stored.",
+      "fields": [
+        {
+          "name": "activeSessions",
+          "type": "number",
+          "optional": false,
+          "array": false,
+          "doc": "Active sessions with ready PRs in the same repositories."
+        },
+        {
+          "name": "queuedRuns",
+          "type": "number",
+          "optional": false,
+          "array": false,
+          "doc": "The most queued runs on any one of those repositories."
+        },
+        {
+          "name": "oldestQueuedMinutes",
+          "type": "number",
+          "optional": false,
+          "array": false,
+          "doc": "Age of the oldest queued run, in minutes (0 with none queued)."
+        },
+        {
+          "name": "conflictingPrs",
+          "type": "number",
+          "optional": false,
+          "array": false,
+          "doc": "Open PRs that conflict with or supersede another open PR."
         }
       ],
       "extendsNames": [],
@@ -48172,6 +48532,13 @@
           "optional": true,
           "array": false,
           "doc": "Present when this role is a DATA STORE: a place where things are kept,"
+        },
+        {
+          "name": "holding",
+          "type": "LaneHolding",
+          "optional": true,
+          "array": false,
+          "doc": "For a lane one session holds at a time, such as the merge steward: when"
         }
       ],
       "extendsNames": [],
@@ -48180,6 +48547,7 @@
         "cat-harness-tools/schemas/conduct/model-capabilities.ts#ModelCapabilities",
         "cat-harness-tools/schemas/kg/skill-package.ts#ActorKind",
         "cat-harness-tools/schemas/process/role-graph.ts#FormerName",
+        "cat-harness-tools/schemas/process/role-graph.ts#LaneHolding",
         "cat-harness-tools/schemas/process/role-graph.ts#StoreDef"
       ],
       "unresolved": [],
@@ -48267,6 +48635,12 @@
           "type": "StoreDefSchema.optional()",
           "optional": true,
           "array": false
+        },
+        {
+          "name": "holding",
+          "type": "LaneHoldingSchema.optional()",
+          "optional": true,
+          "array": false
         }
       ],
       "extendsNames": [],
@@ -48274,6 +48648,7 @@
       "refs": [
         "cat-harness-tools/schemas/conduct/model-capabilities.ts#ModelCapabilitiesSchema",
         "cat-harness-tools/schemas/process/role-graph.ts#FormerNameSchema",
+        "cat-harness-tools/schemas/process/role-graph.ts#LaneHoldingSchema",
         "cat-harness-tools/schemas/process/role-graph.ts#StoreDefSchema",
         "cat-harness-tools/schemas/tools/tool-types.ts#SkillNameSchema"
       ],
@@ -48798,6 +49173,20 @@
       "exported": true
     },
     {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#AuthoredStep",
+      "name": "AuthoredStep",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "type-alias",
+      "doc": "A step as its file says it: from 0.4.0 its `lead` and `experiences` may be left to derivation.",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
       "id": "cat-harness-tools/schemas/process/user-scenario.ts#BuildingBlock",
       "name": "BuildingBlock",
       "module": "cat-harness-tools/schemas/process/user-scenario.ts",
@@ -48947,6 +49336,115 @@
       "refs": [
         "cat-harness-tools/schemas/process/user-scenario.ts#BuildingBlocksKind"
       ],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#DakLink",
+      "name": "DakLink",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#DakLinkSchema",
+      "name": "DakLinkSchema",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "zod-object",
+      "doc": "One DAK asset a step uses, by its key in the instance's",
+      "fields": [
+        {
+          "name": "key",
+          "type": "ExampleKey",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "rel",
+          "type": "DakRelSchema.optional()",
+          "optional": true,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/process/user-scenario.ts#DakRelSchema",
+        "cat-harness-tools/schemas/process/user-scenario.ts#ExampleKey"
+      ],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#DakRel",
+      "name": "DakRel",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#DakRelSchema",
+      "name": "DakRelSchema",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "zod-enum",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#DakUserScenario",
+      "name": "DakUserScenario",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "interface",
+      "doc": "The DAK `UserScenario` a journey is, as a DAK reader takes it: the logical",
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "personas",
+          "type": "string[]",
+          "optional": false,
+          "array": true,
+          "doc": "Role ids, in the order the journey's personas first reach them."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
       "unresolved": [],
       "external": [],
       "exported": true
@@ -49405,6 +49903,59 @@
       "exported": true
     },
     {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#Part",
+      "name": "Part",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#PartSchema",
+      "name": "PartSchema",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "zod-object",
+      "doc": "One part of a journey, in story order.",
+      "fields": [
+        {
+          "name": "scenario",
+          "type": "Id",
+          "optional": false,
+          "array": false,
+          "doc": "The journey that is this part."
+        },
+        {
+          "name": "optional",
+          "type": "z.literal(true).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The story may skip it."
+        },
+        {
+          "name": "repeats",
+          "type": "z.literal(true).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "It may happen more than once."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/process/user-scenario.ts#Id"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "exported": true
+    },
+    {
       "id": "cat-harness-tools/schemas/process/user-scenario.ts#PreconditionSchema",
       "name": "PreconditionSchema",
       "module": "cat-harness-tools/schemas/process/user-scenario.ts",
@@ -49552,7 +50103,8 @@
           "name": "href",
           "type": "Text",
           "optional": false,
-          "array": false
+          "array": false,
+          "doc": "A URL (`https:`, `mailto:` …), an absolute path or a `#fragment` as it"
         },
         {
           "name": "rel",
@@ -49572,10 +50124,69 @@
       "exported": true
     },
     {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#RefinedScenario",
+      "name": "RefinedScenario",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "type-alias",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "string",
+          "optional": true,
+          "array": false
+        },
+        {
+          "name": "personas",
+          "type": "readonly string[]",
+          "optional": true,
+          "array": false
+        },
+        {
+          "name": "partOf",
+          "type": "string",
+          "optional": true,
+          "array": false
+        },
+        {
+          "name": "parts",
+          "type": "readonly { scenario: string }[]",
+          "optional": true,
+          "array": false
+        },
+        {
+          "name": "steps",
+          "type": "readonly { id: string; experiences?: readonly { actor: string }[]; lead?: string }[]",
+          "optional": true,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": false
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#Scenario",
+      "name": "Scenario",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "type-alias",
+      "doc": "A journey as a reader takes it: its personas (actors) and its steps' people, authored or derived (`scripts/journeys/derive.ts`).",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
       "id": "cat-harness-tools/schemas/process/user-scenario.ts#ScenarioStep",
       "name": "ScenarioStep",
       "module": "cat-harness-tools/schemas/process/user-scenario.ts",
       "kind": "type-alias",
+      "doc": "A step as a reader takes it: `lead` and `experiences` authored, or derived from its lanes.",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -49657,6 +50268,34 @@
       "exported": false
     },
     {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#StepV03",
+      "name": "StepV03",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "undetermined",
+      "note": "{ ...StepV02, /** The DAK assets the step uses: its data sets, the decision tables that decide it, the indicators that measure it. */ dak: z.array(DakLinkSchem…",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": false
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/user-scenario.ts#StepV04",
+      "name": "StepV04",
+      "module": "cat-harness-tools/schemas/process/user-scenario.ts",
+      "kind": "undetermined",
+      "note": "{ ...StepV03, /** Absent (0.4.0): the first actor the step's lanes derive. */ lead: Id.optional(), /** Absent (0.4.0): one per actor who plays a lane of the st…",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": false
+    },
+    {
       "id": "cat-harness-tools/schemas/process/user-scenario.ts#Text",
       "name": "Text",
       "module": "cat-harness-tools/schemas/process/user-scenario.ts",
@@ -49674,7 +50313,7 @@
       "name": "UserScenario",
       "module": "cat-harness-tools/schemas/process/user-scenario.ts",
       "kind": "type-alias",
-      "doc": "A user scenario of either family, as a reader takes it.",
+      "doc": "A user scenario of any family, as its file says it.",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -49688,7 +50327,7 @@
       "name": "UserScenarioKind",
       "module": "cat-harness-tools/schemas/process/user-scenario.ts",
       "kind": "zod-object",
-      "doc": "`user-scenario/0.2.0`, as a node kind: 0.1.0 plus grouping, views,",
+      "doc": "`user-scenario/0.4.0`, as a node kind: 0.1.0 plus grouping, views,",
       "fields": [],
       "extendsNames": [
         "nodeKind"
@@ -50343,6 +50982,20 @@
           "optional": true,
           "array": false,
           "doc": "The actor whose record the trust ladder follows (\"Somsack's record\")."
+        },
+        {
+          "name": "cast",
+          "type": "z.array(Id).optional()",
+          "optional": true,
+          "array": true,
+          "doc": "The order the cast is listed in, everywhere it is listed (the overview,"
+        },
+        {
+          "name": "chapterTitles",
+          "type": "z.record(Id, Text).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "A chapter's title in the room, by the id of the journey the chapter is"
         },
         {
           "name": "presenterNote",
@@ -55629,6 +56282,113 @@
       "refs": [],
       "unresolved": [],
       "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/merge-queue.ts#MergeRequest",
+      "name": "MergeRequest",
+      "module": "cat-harness-tools/schemas/sdlc/merge-queue.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/merge-queue.ts#MergeRequestPreview",
+      "name": "MergeRequestPreview",
+      "module": "cat-harness-tools/schemas/sdlc/merge-queue.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/merge-queue.ts#MergeRequestPreviewSchema",
+      "name": "MergeRequestPreviewSchema",
+      "module": "cat-harness-tools/schemas/sdlc/merge-queue.ts",
+      "kind": "zod-union",
+      "fields": [],
+      "extendsNames": [],
+      "values": [
+        "kind",
+        "url",
+        "none"
+      ],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/merge-queue.ts#MergeRequestSchema",
+      "name": "MergeRequestSchema",
+      "module": "cat-harness-tools/schemas/sdlc/merge-queue.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "prUrl",
+          "type": "z.string().regex(/^https:\\/\\/github\\.com\\/[^/\\s]+\\/[^/\\s]+\\/pull\\/\\d+$/, \"a GitHub pull request URL\")",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "headSha",
+          "type": "z.string().regex(/^[0-9a-f]{40}$/, \"the full 40-hex head SHA\")",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "sessionUrl",
+          "type": "z.string().regex(/^https:\\/\\/claude\\.ai\\/code\\/session_[A-Za-z0-9]+$/, \"a claude.ai session URL\")",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "changes",
+          "type": "z .string() .trim() .min(1) .refine((t) => sentenceCount(t) <= MERGE_REQUEST_MAX_SENTENCES, { message: `the changes in …",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "preview",
+          "type": "MergeRequestPreviewSchema",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "lookFor",
+          "type": "z.string().trim().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "What to look for in the preview. Required when there is one."
+        },
+        {
+          "name": "fullTierGreen",
+          "type": "z.literal(true)",
+          "optional": false,
+          "array": false,
+          "doc": "The sender's statement that the full tier is green as judged (every judge)."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/sdlc/merge-queue.ts#MergeRequestPreviewSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "MERGE_REQUEST_MAX_SENTENCES",
+        "sentenceCount",
+        "z"
+      ],
       "exported": true
     },
     {
@@ -62416,7 +63176,7 @@
           "type": "z .string() .regex(/\\.feature$/, \"a Gherkin link names a `.feature` file\") .optional()",
           "optional": true,
           "array": false,
-          "doc": "Optional Gherkin `.feature` file the case is written in."
+          "doc": "The Gherkin `.feature` file the case is written in. Required under"
         },
         {
           "name": "dependsOn",
@@ -62523,7 +63283,7 @@
       "fields": [
         {
           "name": "$schema",
-          "type": "z.literal(TEST_PLAN_SCHEMA_ID)",
+          "type": "z.enum(TEST_PLAN_SCHEMA_IDS)",
           "optional": false,
           "array": false
         },
@@ -62603,9 +63363,22 @@
       "unresolved": [],
       "external": [
         "RequirementRefSchema",
-        "TEST_PLAN_SCHEMA_ID",
+        "TEST_PLAN_SCHEMA_IDS",
         "z"
       ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/test-plan.ts#TestPlanSchemaId",
+      "name": "TestPlanSchemaId",
+      "module": "cat-harness-tools/schemas/sdlc/test-plan.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
       "exported": true
     },
     {
@@ -72078,6 +72851,13 @@
           "type": "z.array( z .object({ kind: z.enum([\"blocked-without-expiry\", \"blocker-closed\", \"blocking-unknown\"]), bean: BeanIdSchema…",
           "optional": false,
           "array": true
+        },
+        {
+          "name": "planFindings",
+          "type": "z.array(z.object({ id: z.string(), problem: z.string() }).strict()).optional()",
+          "optional": true,
+          "array": true,
+          "doc": "Work plans filed wrong: an item naming a process that is not an epic or"
         },
         {
           "name": "plan",
@@ -82125,6 +82905,270 @@
       "exported": true
     },
     {
+      "id": "folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatement",
+      "name": "ExtractedStatement",
+      "module": "folio-assistant-core/schemas/extracted-statement.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatements",
+      "name": "ExtractedStatements",
+      "module": "folio-assistant-core/schemas/extracted-statement.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatementSchema",
+      "name": "ExtractedStatementSchema",
+      "module": "folio-assistant-core/schemas/extracted-statement.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "id",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "Stable within the list; the anchor the statement's row is published under."
+        },
+        {
+          "name": "statement",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "The statement as captured, verbatim. Never paraphrased here."
+        },
+        {
+          "name": "kind",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The kind the extraction gave it: recommendation, requirement, candidate, …"
+        },
+        {
+          "name": "status",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "Its review state, as the extraction records it: published as is."
+        },
+        {
+          "name": "derivedFrom",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The id of the statement this one was derived from, when it was: a"
+        },
+        {
+          "name": "source",
+          "type": "StatementSourceSchema",
+          "optional": false,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "folio-assistant-core/schemas/extracted-statement.ts#StatementSourceSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatementsSchema",
+      "name": "ExtractedStatementsSchema",
+      "module": "folio-assistant-core/schemas/extracted-statement.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "_schema",
+          "type": "z.literal(EXTRACTED_STATEMENTS_SCHEMA_ID)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "title",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "What the list is, in a reader's words: a heading for its part of the page."
+        },
+        {
+          "name": "statements",
+          "type": "z.array(ExtractedStatementSchema)",
+          "optional": false,
+          "array": true
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatementSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "EXTRACTED_STATEMENTS_SCHEMA_ID",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/extracted-statement.ts#StatementPage",
+      "name": "StatementPage",
+      "module": "folio-assistant-core/schemas/extracted-statement.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/extracted-statement.ts#StatementPageSchema",
+      "name": "StatementPageSchema",
+      "module": "folio-assistant-core/schemas/extracted-statement.ts",
+      "kind": "zod-object",
+      "doc": "One generated page, declared in a committed file rather than on a command",
+      "fields": [
+        {
+          "name": "_schema",
+          "type": "z.literal(STATEMENT_PAGE_SCHEMA_ID)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "statements",
+          "type": "z.array(z.string().min(1)).min(1)",
+          "optional": false,
+          "array": true,
+          "doc": "The statement lists, in the order their parts appear."
+        },
+        {
+          "name": "out",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "The page to write."
+        },
+        {
+          "name": "title",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "intro",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false
+        },
+        {
+          "name": "entryBase",
+          "type": "z.string().url()",
+          "optional": false,
+          "array": false,
+          "doc": "URL prefix of the library viewer: an entry's link is `<entryBase>/<libraryId>/`."
+        },
+        {
+          "name": "sectionBase",
+          "type": "z.string().url()",
+          "optional": false,
+          "array": false,
+          "doc": "URL prefix of the sources: a section's link is `<sectionBase>/<repo-relative section file>`."
+        },
+        {
+          "name": "tableAttr",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The content type's look, written after each table (for example a kramdown class)."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
+        "STATEMENT_PAGE_SCHEMA_ID",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/extracted-statement.ts#StatementSource",
+      "name": "StatementSource",
+      "module": "folio-assistant-core/schemas/extracted-statement.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/extracted-statement.ts#StatementSourceSchema",
+      "name": "StatementSourceSchema",
+      "module": "folio-assistant-core/schemas/extracted-statement.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "instance",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The DECLARED NAME of the instance holding the library; absent means this instance."
+        },
+        {
+          "name": "libraryId",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "The library entry: `library/<libraryId>/`."
+        },
+        {
+          "name": "sectionId",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The section the statement was read from, when the extraction knows it."
+        },
+        {
+          "name": "page",
+          "type": "z.number().int().positive().optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The page (or slide) the statement was read from, in the source's own numbering."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "exported": true
+    },
+    {
       "id": "folio-assistant-core/schemas/figure-data.ts#Cell",
       "name": "Cell",
       "module": "folio-assistant-core/schemas/figure-data.ts",
@@ -83032,6 +84076,13 @@
           "doc": "dcterms:source: what the terms were drawn from."
         },
         {
+          "name": "subject",
+          "type": "SubjectSchema.optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The subject area this scheme's translations bind in ({@link SubjectSchema}): `dcterms:subject`."
+        },
+        {
           "name": "license",
           "type": "z.string().min(1).optional()",
           "optional": true,
@@ -83063,6 +84114,7 @@
       "values": [],
       "refs": [
         "folio-assistant-core/schemas/glossary.ts#Iri",
+        "folio-assistant-core/schemas/glossary.ts#SubjectSchema",
         "folio-assistant-core/schemas/glossary.ts#TermSchema"
       ],
       "unresolved": [],
@@ -83174,6 +84226,20 @@
         "ORG_TYPES",
         "z"
       ],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/glossary.ts#SubjectSchema",
+      "name": "SubjectSchema",
+      "module": "folio-assistant-core/schemas/glossary.ts",
+      "kind": "zod-scalar",
+      "doc": "The subject area a scheme's (or a term's) translations BIND in",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
       "exported": true
     },
     {
@@ -83298,6 +84364,20 @@
           "doc": "The concept's IRI when its defining vocabulary already mints one. The"
         },
         {
+          "name": "subject",
+          "type": "SubjectSchema.optional()",
+          "optional": true,
+          "array": false,
+          "doc": "Overrides the scheme's {@link SubjectSchema subject area} for this term."
+        },
+        {
+          "name": "translationStatus",
+          "type": "z.record(z.string().regex(BCP47), z.enum(TRANSLATION_STATUSES)).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "Per locale, whether this term's translation is signed off. The"
+        },
+        {
           "name": "focus",
           "type": "FocusSchema.optional()",
           "optional": true,
@@ -83330,12 +84410,15 @@
       "refs": [
         "folio-assistant-core/schemas/glossary.ts#FocusSchema",
         "folio-assistant-core/schemas/glossary.ts#Iri",
-        "folio-assistant-core/schemas/glossary.ts#LangTextSchema"
+        "folio-assistant-core/schemas/glossary.ts#LangTextSchema",
+        "folio-assistant-core/schemas/glossary.ts#SubjectSchema"
       ],
       "unresolved": [],
       "external": [
+        "BCP47",
         "LOCAL_ID",
         "TERM_STATUSES",
+        "TRANSLATION_STATUSES",
         "z"
       ],
       "exported": true
@@ -83343,6 +84426,19 @@
     {
       "id": "folio-assistant-core/schemas/glossary.ts#TermStatus",
       "name": "TermStatus",
+      "module": "folio-assistant-core/schemas/glossary.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/glossary.ts#TranslationStatus",
+      "name": "TranslationStatus",
       "module": "folio-assistant-core/schemas/glossary.ts",
       "kind": "type-alias",
       "fields": [],
@@ -92958,6 +94054,14 @@
       "array": false
     },
     {
+      "from": "cat-harness-tools/schemas/kg/glossary-sense.ts#GlossarySenseStoreSchema",
+      "to": "cat-harness-tools/schemas/kg/glossary-sense.ts#GlossarySenseVerdictSchema",
+      "via": "verdicts",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
       "from": "cat-harness-tools/schemas/kg/graph-typology-node.ts#GraphTypologyNodeSchema",
       "to": "cat-harness-tools/schemas/kg/graph-typology-node.ts#KindAvatarSchema",
       "via": "avatar",
@@ -96023,6 +97127,14 @@
     },
     {
       "from": "cat-harness-tools/schemas/process/role-graph.ts#RoleDef",
+      "to": "cat-harness-tools/schemas/process/role-graph.ts#LaneHolding",
+      "via": "holding",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/role-graph.ts#RoleDef",
       "to": "cat-harness-tools/schemas/process/role-graph.ts#StoreDef",
       "via": "store",
       "kind": "field",
@@ -96052,6 +97164,14 @@
       "kind": "field",
       "optional": true,
       "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/role-graph.ts#RoleDefSchema",
+      "to": "cat-harness-tools/schemas/process/role-graph.ts#LaneHoldingSchema",
+      "via": "holding",
+      "kind": "field",
+      "optional": true,
+      "array": false
     },
     {
       "from": "cat-harness-tools/schemas/process/role-graph.ts#RoleDefSchema",
@@ -96250,6 +97370,22 @@
       "to": "cat-harness-tools/schemas/process/user-scenario.ts#BuildingBlocksKind",
       "via": "",
       "kind": "extends",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/user-scenario.ts#DakLinkSchema",
+      "to": "cat-harness-tools/schemas/process/user-scenario.ts#DakRelSchema",
+      "via": "rel",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/user-scenario.ts#DakLinkSchema",
+      "to": "cat-harness-tools/schemas/process/user-scenario.ts#ExampleKey",
+      "via": "key",
+      "kind": "field",
       "optional": false,
       "array": false
     },
@@ -96475,6 +97611,14 @@
       "via": "role",
       "kind": "field",
       "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/user-scenario.ts#PartSchema",
+      "to": "cat-harness-tools/schemas/process/user-scenario.ts#Id",
+      "via": "scenario",
+      "kind": "field",
+      "optional": false,
       "array": false
     },
     {
@@ -96824,6 +97968,22 @@
     {
       "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopPresentationSchema",
       "to": "cat-harness-tools/schemas/process/workshop.ts#Id",
+      "via": "cast",
+      "kind": "field",
+      "optional": true,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopPresentationSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Id",
+      "via": "chapterTitles",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopPresentationSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Id",
       "via": "recordOf",
       "kind": "field",
       "optional": true,
@@ -96841,6 +98001,14 @@
       "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopPresentationSchema",
       "to": "cat-harness-tools/schemas/process/workshop.ts#Text",
       "via": "badge",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopPresentationSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Text",
+      "via": "chapterTitles",
       "kind": "field",
       "optional": true,
       "array": false
@@ -97977,6 +99145,14 @@
       "from": "cat-harness-tools/schemas/sdlc/merge-queue.ts#HoldSchema",
       "to": "cat-harness-tools/schemas/sdlc/merge-queue.ts#NonBlank",
       "via": "waitsOn",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/sdlc/merge-queue.ts#MergeRequestSchema",
+      "to": "cat-harness-tools/schemas/sdlc/merge-queue.ts#MergeRequestPreviewSchema",
+      "via": "preview",
       "kind": "field",
       "optional": false,
       "array": false
@@ -101838,6 +103014,22 @@
       "array": true
     },
     {
+      "from": "folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatementSchema",
+      "to": "folio-assistant-core/schemas/extracted-statement.ts#StatementSourceSchema",
+      "via": "source",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatementsSchema",
+      "to": "folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatementSchema",
+      "via": "statements",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
       "from": "folio-assistant-core/schemas/figure-data.ts#DiigPhasesAdaptationSchema",
       "to": "folio-assistant-core/schemas/figure-data.ts#Resource",
       "via": "resources",
@@ -102047,6 +103239,14 @@
     },
     {
       "from": "folio-assistant-core/schemas/glossary.ts#GlossarySchema",
+      "to": "folio-assistant-core/schemas/glossary.ts#SubjectSchema",
+      "via": "subject",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/glossary.ts#GlossarySchema",
       "to": "folio-assistant-core/schemas/glossary.ts#TermSchema",
       "via": "terms",
       "kind": "field",
@@ -102147,6 +103347,14 @@
       "via": "prefLabel",
       "kind": "field",
       "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/glossary.ts#TermSchema",
+      "to": "folio-assistant-core/schemas/glossary.ts#SubjectSchema",
+      "via": "subject",
+      "kind": "field",
+      "optional": true,
       "array": false
     },
     {
@@ -104393,7 +105601,7 @@
       "source": "node-kind",
       "instance": "cat-harness-tools",
       "decl": "cat-harness-tools/schemas/process/user-scenario.ts#UserScenarioKind",
-      "tag": "user-scenario/0.2.0",
+      "tag": "user-scenario/0.4.0",
       "parents": [],
       "subclasses": [],
       "typologies": [

@@ -1,0 +1,224 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_PublishExtractedStatements",
+ "markers": [
+  {
+   "id": "Task_Collect",
+   "name": "Collect each statement with its source section",
+   "left": 23.95,
+   "top": 10.61,
+   "box": {
+    "left": 17.86,
+    "top": 39.39,
+    "width": 2.02,
+    "height": 7.27
+   }
+  },
+  {
+   "id": "Task_RenderArtifact",
+   "name": "Render them in the artifact's own pages",
+   "left": 47.48,
+   "top": 10.61,
+   "box": {
+    "left": 41.39,
+    "top": 39.39,
+    "width": 2.02,
+    "height": 7.27
+   }
+  },
+  {
+   "id": "Task_RenderViewer",
+   "name": "Publish them in the shared viewer",
+   "left": 62.61,
+   "top": 10.61,
+   "box": {
+    "left": 56.51,
+    "top": 39.39,
+    "width": 2.02,
+    "height": 7.27
+   }
+  },
+  {
+   "id": "Task_CheckCurrent",
+   "name": "Check pages are current, links resolve",
+   "left": 77.73,
+   "top": 10.61,
+   "box": {
+    "left": 71.64,
+    "top": 39.39,
+    "width": 2.02,
+    "height": 7.27
+   }
+  }
+ ],
+ "tasks": {
+  "Task_Collect": {
+   "id": "Task_Collect",
+   "name": "Collect each statement with its source section",
+   "type": "bpmn:ServiceTask",
+   "lane": "Ingestion Engine (agent, runs unattended)",
+   "skills": [
+    {
+     "name": "publish-extracted-statements"
+    }
+   ],
+   "role": {
+    "name": "ingestion-agent",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-ingestion-agent",
+    "title": "Ingestion engine",
+    "skills": [
+     {
+      "name": "asset-extraction"
+     },
+     {
+      "name": "kg-subscription"
+     },
+     {
+      "name": "library-ingestion"
+     },
+     {
+      "name": "materialize-on-demand"
+     },
+     {
+      "name": "materialize-remote"
+     },
+     {
+      "name": "theme-art-intake"
+     },
+     {
+      "name": "theme-ui-review"
+     },
+     {
+      "name": "upload-naming"
+     }
+    ]
+   }
+  },
+  "Task_RenderArtifact": {
+   "id": "Task_RenderArtifact",
+   "name": "Render them in the artifact's own pages",
+   "type": "bpmn:ServiceTask",
+   "lane": "Ingestion Engine (agent, runs unattended)",
+   "skills": [
+    {
+     "name": "publish-extracted-statements"
+    }
+   ],
+   "role": {
+    "name": "ingestion-agent",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-ingestion-agent",
+    "title": "Ingestion engine",
+    "skills": [
+     {
+      "name": "asset-extraction"
+     },
+     {
+      "name": "kg-subscription"
+     },
+     {
+      "name": "library-ingestion"
+     },
+     {
+      "name": "materialize-on-demand"
+     },
+     {
+      "name": "materialize-remote"
+     },
+     {
+      "name": "theme-art-intake"
+     },
+     {
+      "name": "theme-ui-review"
+     },
+     {
+      "name": "upload-naming"
+     }
+    ]
+   }
+  },
+  "Task_RenderViewer": {
+   "id": "Task_RenderViewer",
+   "name": "Publish them in the shared viewer",
+   "type": "bpmn:ServiceTask",
+   "lane": "Ingestion Engine (agent, runs unattended)",
+   "skills": [
+    {
+     "name": "publish-extracted-statements"
+    }
+   ],
+   "role": {
+    "name": "ingestion-agent",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-ingestion-agent",
+    "title": "Ingestion engine",
+    "skills": [
+     {
+      "name": "asset-extraction"
+     },
+     {
+      "name": "kg-subscription"
+     },
+     {
+      "name": "library-ingestion"
+     },
+     {
+      "name": "materialize-on-demand"
+     },
+     {
+      "name": "materialize-remote"
+     },
+     {
+      "name": "theme-art-intake"
+     },
+     {
+      "name": "theme-ui-review"
+     },
+     {
+      "name": "upload-naming"
+     }
+    ]
+   }
+  },
+  "Task_CheckCurrent": {
+   "id": "Task_CheckCurrent",
+   "name": "Check pages are current, links resolve",
+   "type": "bpmn:ServiceTask",
+   "lane": "Ingestion Engine (agent, runs unattended)",
+   "skills": [
+    {
+     "name": "publish-extracted-statements"
+    }
+   ],
+   "role": {
+    "name": "ingestion-agent",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-ingestion-agent",
+    "title": "Ingestion engine",
+    "skills": [
+     {
+      "name": "asset-extraction"
+     },
+     {
+      "name": "kg-subscription"
+     },
+     {
+      "name": "library-ingestion"
+     },
+     {
+      "name": "materialize-on-demand"
+     },
+     {
+      "name": "materialize-remote"
+     },
+     {
+      "name": "theme-art-intake"
+     },
+     {
+      "name": "theme-ui-review"
+     },
+     {
+      "name": "upload-naming"
+     }
+    ]
+   }
+  }
+ }
+}

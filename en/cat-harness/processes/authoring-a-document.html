@@ -905,7 +905,7 @@
 </h1>
     
 
-<p><code class="language-plaintext highlighter-rouge">Process_DocumentAuthoring</code> · advisory · 10 step(s)</p>
+<p><code class="language-plaintext highlighter-rouge">Process_DocumentAuthoring</code> · advisory · 11 step(s)</p>
 
 <p>How a document folio — structured prose and policy guidance, with no Lean and no required TeX — is authored, built and reviewed end to end.
 Source of truth: this file. The SVG under docs/assets/img/workflows/ is generated
@@ -914,24 +914,26 @@ The shape is the paper process minus the Lean lane and plus one step, the profil
 check, which is what keeps a document folio publishable without either toolchain.</p>
 
 <p>Review, publish and committee feedback are core’s shared <a href="folio-review-publish.html">Process_FolioReviewPublish</a>, called after rendering. Its <code class="language-plaintext highlighter-rouge">no</code> answer, changes asked, comes back to Task_AuthorBlocks.</p>
-<style>.pt-diagram{position:relative;width:100%}.pt-diagram>img{display:block;width:100%;height:auto}.pt-mark{position:absolute;transform:translate(-50%,-50%);width:1.35em;height:1.35em;padding:0;border-radius:50%;border:1px solid #1f6feb;background:#fff;color:#1f6feb;font:bold 0.8em/1 sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.25)}.pt-layer{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:2}.pt-layer>*{pointer-events:auto}.pt-go{position:absolute;display:block;border-radius:3px;cursor:pointer}.pt-go:hover,.pt-go:focus-visible{outline:2px solid #1f6feb;outline-offset:1px;background:rgba(31,111,235,.07)}.pt-mark{z-index:1}.pt-mark:hover,.pt-mark[aria-expanded=true]{background:#1f6feb;color:#fff}.pt-mark:focus-visible{outline:2px solid #1f6feb;outline-offset:2px}.pt-panel{position:absolute;z-index:5;margin:0.9em 0 0 -0.6em;max-width:min(26em,90vw);min-width:14em;padding:0.6em 0.7em;background:#fff;color:#1b1f24;border:1px solid #8c959f;border-radius:6px;box-shadow:0 4px 14px rgba(0,0,0,.18);font-size:0.85em;line-height:1.35}.pt-close{position:absolute;top:0.2em;right:0.35em;border:0;background:none;font-size:1.2em;cursor:pointer;color:inherit}.pt-obj{border:1px solid #57606a;border-radius:3px;margin:0.15em 0}.pt-head{border-bottom:1px solid #57606a;padding:0.15em 0.45em;background:#f6f8fa;text-decoration:underline}.pt-head .pt-st{text-decoration:none;display:inline-block;margin-right:0.35em}.pt-attr{padding:0.1em 0.45em}.pt-st,.pt-via{color:#57606a;font-size:0.9em}.pt-edge{color:#57606a;font-size:0.85em;padding-left:1em}.pt-role .pt-head{background:#fff8c5}.pt-skill .pt-head{background:#ddf4ff}.pt-task .pt-head{background:#f6f8fa}.pt-none{color:#57606a;font-style:italic;margin-top:0.3em}</style>
+<style>.pt-diagram{position:relative;width:100%}.pt-diagram>img{display:block;width:100%;height:auto}.pt-mark{position:absolute;transform:translate(-50%,-50%);width:1.35em;height:1.35em;padding:0;border-radius:50%;border:1px solid #1f6feb;background:#fff;color:#1f6feb;font:bold 0.8em/1 sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.25)}.pt-layer{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:2}.pt-layer>*{pointer-events:auto}.pt-go{position:absolute;display:block;border-radius:3px;cursor:pointer}.pt-go:hover,.pt-go:focus-visible{outline:2px solid #1f6feb;outline-offset:1px;background:rgba(31,111,235,.07)}.pt-mark{z-index:1}.pt-mark:hover,.pt-mark[aria-expanded=true]{background:#1f6feb;color:#fff}.pt-mark:focus-visible{outline:2px solid #1f6feb;outline-offset:2px}.pt-panel{position:absolute;z-index:5;text-align:left;margin:0.9em 0 0 -0.6em;max-width:min(26em,90vw);min-width:14em;padding:0.6em 0.7em;background:#fff;color:#1b1f24;border:1px solid #8c959f;border-radius:6px;box-shadow:0 4px 14px rgba(0,0,0,.18);font-size:0.85em;line-height:1.35}.pt-close{position:absolute;top:0.2em;right:0.35em;border:0;background:none;font-size:1.2em;cursor:pointer;color:inherit}.pt-obj{border:1px solid #57606a;border-radius:3px;margin:0.15em 0}.pt-head{border-bottom:1px solid #57606a;padding:0.15em 0.45em;background:#f6f8fa;text-decoration:underline}.pt-head .pt-st{text-decoration:none;display:inline-block;margin-right:0.35em}.pt-attr{padding:0.1em 0.45em}.pt-st,.pt-via{color:#57606a;font-size:0.9em}.pt-edge{color:#57606a;font-size:0.85em;padding-left:1em}.pt-role .pt-head{background:#fff8c5}.pt-skill .pt-head{background:#ddf4ff}.pt-task .pt-head{background:#f6f8fa}.pt-none{color:#57606a;font-style:italic;margin-top:0.3em}.pt-diagram [data-pt-hl]>[class$="djs-visual"]>:first-child{stroke:#d97706!important;stroke-width:4px!important;fill:#fff3d6!important}.pt-diagram [data-pt-hl]>[class$="djs-visual"]>path:first-child{fill:none!important}.pt-has-hl [class*="djs-shape"]:not([data-pt-hl])>[class$="djs-visual"]>:first-child{opacity:.75}</style>
 
 <div class="pt-diagram" data-panel="authoring-a-document.tasks.json">
 <img src="../../../assets/img/workflows/authoring-a-document.svg" alt="BPMN diagram: Authoring a document" />
 <div class="pt-layer">
-<button type="button" class="pt-mark" data-task="Task_Plan" style="left:19.2%;top:2.67%" aria-expanded="false" aria-label="About step: Plan the document" title="About: Plan the document">i</button>
-<a class="pt-go" href="bean-open.html" style="left:13.95%;top:35.33%;width:1.74%;height:3.2%" aria-label="Open subprocess: Open the bean" title="Open subprocess: Open the bean"></a>
-<button type="button" class="pt-mark" data-task="Call_BeanOpen" style="left:19.2%;top:22.67%" aria-expanded="false" aria-label="About step: Open the bean" title="About: Open the bean">i</button>
-<button type="button" class="pt-mark" data-task="Task_SeedPlan" style="left:40.94%;top:22.67%" aria-expanded="false" aria-label="About step: Seed the work plan" title="About: Seed the work plan">i</button>
-<button type="button" class="pt-mark" data-task="Task_Scaffold" style="left:40.94%;top:42.67%" aria-expanded="false" aria-label="About step: Scaffold the folio" title="About: Scaffold the folio">i</button>
-<button type="button" class="pt-mark" data-task="Task_AuthorBlocks" style="left:52.54%;top:42.67%" aria-expanded="false" aria-label="About step: Author blocks" title="About: Author blocks">i</button>
-<button type="button" class="pt-mark" data-task="Task_ProfileCheck" style="left:52.54%;top:62.67%" aria-expanded="false" aria-label="About step: Check the profile" title="About: Check the profile">i</button>
-<button type="button" class="pt-mark" data-task="Task_Validate" style="left:71.74%;top:62.67%" aria-expanded="false" aria-label="About step: Validate" title="About: Validate">i</button>
-<button type="button" class="pt-mark" data-task="Task_Render" style="left:82.97%;top:62.67%" aria-expanded="false" aria-label="About step: Render MD, HTML and PDF" title="About: Render MD, HTML and PDF">i</button>
-<a class="pt-go" href="folio-review-publish.html" style="left:90.04%;top:75.33%;width:1.74%;height:3.2%" aria-label="Open subprocess: Review and publish" title="Open subprocess: Review and publish"></a>
-<button type="button" class="pt-mark" data-task="Call_ReviewPublish" style="left:95.29%;top:62.67%" aria-expanded="false" aria-label="About step: Review and publish" title="About: Review and publish">i</button>
-<a class="pt-go" href="bean-close.html" style="left:77.72%;top:95.33%;width:1.74%;height:3.2%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
-<button type="button" class="pt-mark" data-task="Call_BeanClose" style="left:82.97%;top:82.67%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
+<button type="button" class="pt-mark" data-task="Task_Plan" style="left:17.26%;top:2.67%" aria-expanded="false" aria-label="About step: Plan the document" title="About: Plan the document">i</button>
+<a class="pt-go" href="bean-open.html" style="left:12.54%;top:35.33%;width:1.56%;height:3.2%" aria-label="Open subprocess: Open the bean" title="Open subprocess: Open the bean"></a>
+<button type="button" class="pt-mark" data-task="Call_BeanOpen" style="left:17.26%;top:22.67%" aria-expanded="false" aria-label="About step: Open the bean" title="About: Open the bean">i</button>
+<button type="button" class="pt-mark" data-task="Task_SeedPlan" style="left:36.81%;top:22.67%" aria-expanded="false" aria-label="About step: Seed the work plan" title="About: Seed the work plan">i</button>
+<button type="button" class="pt-mark" data-task="Task_Scaffold" style="left:36.81%;top:42.67%" aria-expanded="false" aria-label="About step: Scaffold the folio" title="About: Scaffold the folio">i</button>
+<button type="button" class="pt-mark" data-task="Task_AuthorBlocks" style="left:47.23%;top:42.67%" aria-expanded="false" aria-label="About step: Author blocks" title="About: Author blocks">i</button>
+<button type="button" class="pt-mark" data-task="Task_ProfileCheck" style="left:47.23%;top:62.67%" aria-expanded="false" aria-label="About step: Check the profile" title="About: Check the profile">i</button>
+<button type="button" class="pt-mark" data-task="Task_Validate" style="left:64.5%;top:62.67%" aria-expanded="false" aria-label="About step: Validate" title="About: Validate">i</button>
+<a class="pt-go" href="publish-extracted-statements.html" style="left:69.87%;top:75.33%;width:1.56%;height:3.2%" aria-label="Open subprocess: Publish extracted statements" title="Open subprocess: Publish extracted statements"></a>
+<button type="button" class="pt-mark" data-task="Call_PublishStatements" style="left:74.59%;top:62.67%" aria-expanded="false" aria-label="About step: Publish extracted statements" title="About: Publish extracted statements">i</button>
+<button type="button" class="pt-mark" data-task="Task_Render" style="left:84.69%;top:62.67%" aria-expanded="false" aria-label="About step: Render MD, HTML and PDF" title="About: Render MD, HTML and PDF">i</button>
+<a class="pt-go" href="folio-review-publish.html" style="left:91.04%;top:75.33%;width:1.56%;height:3.2%" aria-label="Open subprocess: Review and publish" title="Open subprocess: Review and publish"></a>
+<button type="button" class="pt-mark" data-task="Call_ReviewPublish" style="left:95.77%;top:62.67%" aria-expanded="false" aria-label="About step: Review and publish" title="About: Review and publish">i</button>
+<a class="pt-go" href="bean-close.html" style="left:79.97%;top:95.33%;width:1.56%;height:3.2%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
+<button type="button" class="pt-mark" data-task="Call_BeanClose" style="left:84.69%;top:82.67%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
 </div>
 <div class="pt-panel" role="dialog" aria-label="Task details" hidden=""></div>
 </div>
@@ -939,6 +941,21 @@ check, which is what keeps a document folio publishable without either toolchain
   Array.prototype.forEach.call(document.querySelectorAll(".pt-diagram:not([data-pt-ready])"), init);
   function init(root) {
   root.setAttribute("data-pt-ready", "");
+  // Every href in the sidecar is relative to the sidecar (it sits beside the
+  // process page), so a page elsewhere on the site that shows the same
+  // drawing resolves them to the same targets.
+  // A drawing with no sidecar (a page that only highlights steps, where no
+  // processes viewer is published) gets the highlight and nothing else.
+  var sidecar = root.getAttribute("data-panel");
+  var base = new URL(sidecar || "", location.href);
+  function abs(h) { try { return new URL(h, base).href; } catch (e) { return h; } }
+  // A page with no server-drawn markers gets them from the sidecar.
+  var drawn = !!root.querySelector(".pt-layer");
+  if (!drawn) {
+    var ly = document.createElement("div"); ly.className = "pt-layer"; root.appendChild(ly);
+    var pn = document.createElement("div"); pn.className = "pt-panel"; pn.setAttribute("role", "dialog");
+    pn.setAttribute("aria-label", "Task details"); pn.hidden = true; root.appendChild(pn);
+  }
   var panel = root.querySelector(".pt-panel"), data = null, pending = null, open = null;
   function load() {
     if (data) return Promise.resolve(data);
@@ -951,7 +968,7 @@ check, which is what keeps a document folio publishable without either toolchain
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   function link(l, cls) {
     var e = el(l.href ? "a" : "code", cls, l.name);
-    if (l.href) e.href = l.href; else e.title = "no page for this one";
+    if (l.href) e.href = abs(l.href); else e.title = "no page for this one";
     return e;
   }
   function obj(stereo, name, kind) {
@@ -990,7 +1007,8 @@ check, which is what keeps a document folio publishable without either toolchain
       Object.keys(t.shared.inputs || {}).forEach(function (k) { gt.appendChild(el("div", "pt-attr", k + " = " + t.shared.inputs[k])); });
       panel.appendChild(gt);
     }
-    t.skills.forEach(function (s) {
+    var sk_on = !(data && data.skills === false);
+    (sk_on ? t.skills : []).forEach(function (s) {
       panel.appendChild(edge("requires"));
       var sk = obj("Skill", link(s), "skill");
       (s.methodologies || []).forEach(function (m) {
@@ -999,19 +1017,22 @@ check, which is what keeps a document folio publishable without either toolchain
       });
       panel.appendChild(sk);
     });
-    if (!t.skills.length && !t.calls) panel.appendChild(el("div", "pt-none", "This task names no skill."));
+    if (sk_on && !t.skills.length && !t.calls) panel.appendChild(el("div", "pt-none", "This task names no skill."));
     if (t.role) {
       panel.appendChild(edge("lane names"));
       var role = obj("Role", link(t.role), "role");
       if (t.role.title) role.appendChild(el("div", "pt-attr", "title = " + t.role.title));
-      var list = el("div", "pt-attr"); list.appendChild(el("span", "pt-st", "hasSkill: "));
-      if (!t.role.skills.length) list.appendChild(el("i", null, "none listed"));
-      t.role.skills.forEach(function (s, i) {
-        if (i) list.appendChild(document.createTextNode(", "));
-        list.appendChild(link(s));
-        if (s.via) list.appendChild(el("span", "pt-via", " (via " + s.via + ")"));
-      });
-      role.appendChild(list); panel.appendChild(role);
+      if (sk_on) {
+        var list = el("div", "pt-attr"); list.appendChild(el("span", "pt-st", "hasSkill: "));
+        if (!t.role.skills.length) list.appendChild(el("i", null, "none listed"));
+        t.role.skills.forEach(function (s, i) {
+          if (i) list.appendChild(document.createTextNode(", "));
+          list.appendChild(link(s));
+          if (s.via) list.appendChild(el("span", "pt-via", " (via " + s.via + ")"));
+        });
+        role.appendChild(list);
+      }
+      panel.appendChild(role);
     } else if (t.binding) {
       panel.appendChild(el("div", "pt-none", "Lane role: " + t.binding + "."));
     }
@@ -1033,14 +1054,27 @@ check, which is what keeps a document folio publishable without either toolchain
     }
     return null;
   }
+  // A page may name steps to pick out (a journey's step shows the tasks it
+  // realises): `data-pt-highlight="Task_A Task_B"`. Marked once the drawing
+  // is inline, which is when its shapes exist to mark.
+  var hl = (root.getAttribute("data-pt-highlight") || "").split(/\s+/).filter(Boolean);
+  if (hl.length) root.classList.add("pt-has-hl");
+  function mark(a) {
+    if (!hl.length || a.tagName.toLowerCase() !== "svg" || a.hasAttribute("data-pt-marked")) return;
+    a.setAttribute("data-pt-marked", "");
+    Array.prototype.forEach.call(a.querySelectorAll("[data-element-id]"), function (g) {
+      if (hl.indexOf(g.getAttribute("data-element-id")) >= 0) g.setAttribute("data-pt-hl", "");
+    });
+  }
   function place() {
     queued = false;
     var a = art();
+    if (a) mark(a);
     if (!layer || !a) return;
     var r = root.getBoundingClientRect(), b = a.getBoundingClientRect();
     var x = b.left - r.left, y = b.top - r.top, w = b.width, h = b.height, vw = 0, vh = 0;
     if (a.tagName.toLowerCase() === "img") { vw = a.naturalWidth; vh = a.naturalHeight; }
-    else { var vb = (a.getAttribute("viewBox") || "").trim().split(/[s,]+/).map(Number); vw = vb[2]; vh = vb[3]; }
+    else { var vb = (a.getAttribute("viewBox") || "").trim().split(/[\s,]+/).map(Number); vw = vb[2]; vh = vb[3]; }
     // An SVG keeps its aspect inside a box of another shape (xMidYMid meet).
     if (vw > 0 && vh > 0 && w > 0 && h > 0) {
       var k = vw / vh;
@@ -1066,6 +1100,20 @@ check, which is what keeps a document folio publishable without either toolchain
   root.addEventListener("load", schedule, true);
   window.addEventListener("resize", schedule);
   schedule();
+  if (!drawn && sidecar) load().then(function (j) {
+    (j.markers || []).forEach(function (m) {
+      var t = j.tasks[m.id], to = t && t.calls ? (t.calls.diagram || t.calls.href) : null;
+      if (to && m.box) {
+        var g = el("a", "pt-go"); g.href = abs(to);
+        g.style.left = m.box.left + "%"; g.style.top = m.box.top + "%"; g.style.width = m.box.width + "%"; g.style.height = m.box.height + "%";
+        g.setAttribute("aria-label", "Open subprocess: " + m.name); g.title = "Open subprocess: " + m.name; layer.appendChild(g);
+      }
+      var b = el("button", "pt-mark", "i"); b.type = "button"; b.setAttribute("data-task", m.id);
+      b.style.left = m.left + "%"; b.style.top = m.top + "%"; b.setAttribute("aria-expanded", "false");
+      b.setAttribute("aria-label", "About step: " + m.name); b.title = "About: " + m.name; layer.appendChild(b);
+    });
+    schedule();
+  }).catch(function (e) { console.warn("task panel: could not load " + base.href + " (" + e.message + ")"); });
   function at(b) {
     var r = root.getBoundingClientRect(), m = b.getBoundingClientRect();
     panel.style.left = (m.left + m.width / 2 - r.left) + "px"; panel.style.top = (m.top + m.height / 2 - r.top) + "px";
@@ -1099,7 +1147,7 @@ check, which is what keeps a document folio publishable without either toolchain
 
 <ul>
   <li><strong>Called by:</strong> no call activity names this process</li>
-  <li><strong>Calls:</strong> <a href="bean-close.html">Close the bean</a>, <a href="bean-open.html">Open the bean</a>, <a href="folio-review-publish.html">Review and publish a folio</a></li>
+  <li><strong>Calls:</strong> <a href="bean-close.html">Close the bean</a>, <a href="bean-open.html">Open the bean</a>, <a href="folio-review-publish.html">Review and publish a folio</a>, <a href="publish-extracted-statements.html">Publish extracted statements with source links</a></li>
   <li><strong>Presented on:</strong> no docs page section shows this diagram</li>
   <li><strong>Running instances:</strong> none recorded</li>
 </ul>
@@ -1152,7 +1200,7 @@ check, which is what keeps a document folio publishable without either toolchain
 </h2>
     
 
-<p>Every one of the 10 step(s) is documented.</p>
+<p>Every one of the 11 step(s) is documented.</p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -1205,6 +1253,12 @@ check, which is what keeps a document folio publishable without either toolchain
       <td>Build pipeline</td>
       <td><code class="language-plaintext highlighter-rouge">content-validate</code></td>
       <td>Schema and constraint checks over every block.</td>
+    </tr>
+    <tr>
+      <td><strong>Publish extracted statements</strong><br /><code class="language-plaintext highlighter-rouge">Call_PublishStatements</code></td>
+      <td>Build pipeline</td>
+      <td>calls <a href="publish-extracted-statements.html">Publish extracted statements with source links</a><br /><code class="language-plaintext highlighter-rouge">publish-extracted-statements</code></td>
+      <td>The document draws on library sources; every statement extracted from them is published in the document’s own pages and in the shared extraction viewer, each linked to its library entry and section, before the document is rendered. The same sub-process ingestion calls when an entry is promoted: here it catches a source the document took up since, and a statement changed since. How the pages look is this content type’s, through its adapter.</td>
     </tr>
     <tr>
       <td><strong>Render MD, HTML and PDF</strong><br /><code class="language-plaintext highlighter-rouge">Task_Render</code></td>

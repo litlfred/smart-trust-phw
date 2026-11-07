@@ -1,6 +1,68 @@
 {
  "$schema": "process-task-panel/v1",
  "process": "PHW.H",
+ "markers": [
+  {
+   "id": "PHW.H.1",
+   "name": "H1. Decide what to stop: revoke (final) or suspend (reversible)",
+   "left": 29.39,
+   "top": 6.56,
+   "box": {
+    "left": 23.16,
+    "top": 15.57,
+    "width": 1.53,
+    "height": 3.93
+   }
+  },
+  {
+   "id": "PHW.H.2",
+   "name": "H2. Set the grant's bit in the Bitstring Status List",
+   "left": 55.59,
+   "top": 31.15,
+   "box": {
+    "left": 49.36,
+    "top": 40.16,
+    "width": 1.53,
+    "height": 3.93
+   }
+  },
+  {
+   "id": "PHW.H.3",
+   "name": "H3. Revoke tokens and disable the client",
+   "left": 55.59,
+   "top": 55.74,
+   "box": {
+    "left": 49.36,
+    "top": 64.75,
+    "width": 1.53,
+    "height": 3.93
+   }
+  },
+  {
+   "id": "PHW.H.4",
+   "name": "H4. Remove key from trust list or revoke certificate (CRL)",
+   "left": 55.59,
+   "top": 80.33,
+   "box": {
+    "left": 49.36,
+    "top": 89.34,
+    "width": 1.53,
+    "height": 3.93
+   }
+  },
+  {
+   "id": "PHW.H.5",
+   "name": "H5. Record the revocation or suspension (process G)",
+   "left": 81.79,
+   "top": 6.56,
+   "box": {
+    "left": 75.56,
+    "top": 15.57,
+    "width": 1.53,
+    "height": 3.93
+   }
+  }
+ ],
  "tasks": {
   "PHW.H.1": {
    "id": "PHW.H.1",

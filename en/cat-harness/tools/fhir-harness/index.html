@@ -917,9 +917,9 @@ is <code class="language-plaintext highlighter-rouge">satisfies</code>, and it r
 to do that</em>, never <em>this skill is a tool</em>.</p>
 
 <div class="tg-grid">
-<a class="tg-stat" href="#every-tool"><b>34</b><span>Tool nodes</span></a>
+<a class="tg-stat" href="#every-tool"><b>35</b><span>Tool nodes</span></a>
 <a class="tg-stat" href="#does-every-satisfies-name-a-skill-that-exists"><b>9</b><span>skills satisfied</span></a>
-<a class="tg-stat" href="#how-they-are-invoked-and-installed"><b>34</b><span>invoked as a shell command</span></a>
+<a class="tg-stat" href="#how-they-are-invoked-and-installed"><b>35</b><span>invoked as a shell command</span></a>
 <a class="tg-stat" href="#how-they-are-invoked-and-installed"><b>0</b><span>reachable over MCP</span></a>
 </div>
 
@@ -944,7 +944,7 @@ to do that</em>, never <em>this skill is a tool</em>.</p>
   <tbody>
     <tr>
       <td><span class="tg-tag tg-shell">shell</span></td>
-      <td>34</td>
+      <td>35</td>
     </tr>
   </tbody>
 </table></div>
@@ -963,7 +963,7 @@ to do that</em>, never <em>this skill is a tool</em>.</p>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">cli</code></td>
-      <td>5</td>
+      <td>6</td>
     </tr>
   </tbody>
 </table></div>
@@ -976,7 +976,7 @@ to do that</em>, never <em>this skill is a tool</em>.</p>
 </h2>
     
 
-<p>Yes — all <strong>9</strong> skills named across <strong>34</strong> tools resolve to a
+<p>Yes — all <strong>9</strong> skills named across <strong>35</strong> tools resolve to a
 skill document in this checkout. A <code class="language-plaintext highlighter-rouge">satisfies</code> pointing at nothing would be a
 tool advertising a capability the graph cannot locate.</p>
 <h2 id="every-tool">
@@ -1006,6 +1006,14 @@ tool advertising a capability the graph cannot locate.</p>
       <td><span class="tg-tag tg-shell">shell</span></td>
       <td><code class="language-plaintext highlighter-rouge">ig-build-pipeline</code></td>
       <td>5 in / 2 out</td>
+      <td><a href="https://github.com/litlfred/smart-trust-phw/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
+    </tr>
+    <tr>
+      <td><a id="check-translation-supplements"></a><a href="#check-translation-supplements"><code class="language-plaintext highlighter-rouge">check-translation-supplements</code></a><br />Compile and check an IG’s translation CodeSystem supplements</td>
+      <td>Compile the IG’s CodeSystems with every <code class="language-plaintext highlighter-rouge">input/fsh/translations/&lt;locale&gt;.fsh</code> CodeSystem supplement in a throw-away FSHOnly SUSHI project, require 0 SUSHI errors, and check that each supplement’s base CodeSystem is the IG’s own, its codes are a subset of the base’s, its language is the file’s locale, and every CodeSystem id is unique. SUSHI is the version <code class="language-plaintext highlighter-rouge">ig-toolchain.env</code> pins, installed from <code class="language-plaintext highlighter-rouge">scripts/sushi/package-lock.json</code> with install scripts off; the FHIR core package is pinned by sha512; SUSHI runs with no network.</td>
+      <td><span class="tg-tag tg-shell">shell</span></td>
+      <td><code class="language-plaintext highlighter-rouge">fhir-validation</code></td>
+      <td>2 in / 1 out</td>
       <td><a href="https://github.com/litlfred/smart-trust-phw/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
     </tr>
     <tr>

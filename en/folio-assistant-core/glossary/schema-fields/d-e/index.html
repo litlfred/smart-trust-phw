@@ -913,16 +913,16 @@
 
 <p>Candidate terms extracted from every schema field with a doc comment: <code class="language-plaintext highlighter-rouge">&lt;Declaration&gt;.&lt;field&gt;</code> as the label, the comment’s first paragraph as the definition. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: bootstrap-tools 45 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · cat-harness-tools 2438 (<a href="../../../../../assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · fhir-harness 146 (<a href="../../../../../assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld">SKOS</a>) · folio-assistant-core 184 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld">SKOS</a>) · smart-base 13 (<a href="../../../../../assets/glossary/smart-base--kg-schema-fields.skos.jsonld">SKOS</a>).</p>
+<p>From: bootstrap-tools 45 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · cat-harness-tools 2471 (<a href="../../../../../assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · fhir-harness 146 (<a href="../../../../../assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld">SKOS</a>) · folio-assistant-core 202 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld">SKOS</a>) · smart-base 13 (<a href="../../../../../assets/glossary/smart-base--kg-schema-fields.skos.jsonld">SKOS</a>).</p>
 
 <p>One of 7 pages of this type, split by the first letter of the label: <a href="../../../../../en/folio-assistant-core/glossary/schema-fields/">all parts</a>.</p>
 
-<p><strong>Size:</strong> this page holds 206 terms and is 122 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 213 terms and is 126 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
 <thead><tr><th>target</th><th>mapped</th><th>unmapped</th><th>undetermined</th><th>why undetermined</th></tr></thead>
-<tbody><tr><td><code>fhir</code></td><td>0</td><td>2700</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>2700</td><td>0</td><td>—</td></tr></tbody>
+<tbody><tr><td><code>fhir</code></td><td>0</td><td>2877</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>2877</td><td>0</td><td>—</td></tr></tbody>
 </table></div>
 <p class="fa-gloss-mapping-note"><strong>Undetermined is never “no match”.</strong> 
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
@@ -932,7 +932,7 @@ be a term this corpus is right to coin.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">206</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">213</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-D">D</a> <a href="#letter-E">E</a></nav>
 <h2 id="letter-D">
@@ -1013,6 +1013,13 @@ DakSwimlaneMapSchema.personas <span class="fa-gloss-status">candidate, extracted
 <dd>
 <p>Persona as named on the personas page -&gt; the words a lane uses for it.</p>
 <p class="fa-gloss-meta">Schema fields of smart-base · source <a href="https://github.com/litlfred/smart-base/blob/main/smart-base/schemas/dak-annexes.ts"><code>smart-base/schemas/dak-annexes.ts#DakSwimlaneMapSchema.personas</code></a></p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--user-scenario.dakuserscenario.personas" data-fa-state="extracted" data-fa-gloss="">
+DakUserScenario.personas <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Role ids, in the order the journey's personas first reach them.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/process/user-scenario.ts"><code>cat-harness-tools/schemas/process/user-scenario.ts#DakUserScenario.personas</code></a></p>
 </dd>
 <dt id="folio-assistant-core--kg-schema-fields--dublin-core.dcfieldschema.schema" data-fa-state="extracted" data-fa-gloss="">
 DcFieldSchema.schema <span class="fa-gloss-status">candidate, extracted</span>
@@ -2353,6 +2360,48 @@ ExtractedAssetSchema.sha256 <span class="fa-gloss-status">candidate, extracted</
 <dd>
 <p>sha256 of the entry's bytes, when it was read rather than indexed.</p>
 <p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/content/extraction.ts"><code>cat-harness-tools/schemas/content/extraction.ts#ExtractedAssetSchema.sha256</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.extractedstatementschema.derivedfrom" data-fa-state="extracted" data-fa-gloss="">
+ExtractedStatementSchema.derivedFrom <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The id of the statement this one was derived from, when it was: a scenario candidate written from a recommendation names that recommendation, so a reviewer can check one against the other. Its <code>source</code> is still the library source, never the other statement.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatementSchema.derivedFrom</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.extractedstatementschema.id" data-fa-state="extracted" data-fa-gloss="">
+ExtractedStatementSchema.id <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Stable within the list; the anchor the statement's row is published under.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatementSchema.id</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.extractedstatementschema.kind" data-fa-state="extracted" data-fa-gloss="">
+ExtractedStatementSchema.kind <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The kind the extraction gave it: recommendation, requirement, candidate, …</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatementSchema.kind</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.extractedstatementschema.statement" data-fa-state="extracted" data-fa-gloss="">
+ExtractedStatementSchema.statement <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The statement as captured, verbatim. Never paraphrased here.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatementSchema.statement</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.extractedstatementschema.status" data-fa-state="extracted" data-fa-gloss="">
+ExtractedStatementSchema.status <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Its review state, as the extraction records it: published as is.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatementSchema.status</code></a></p>
+</dd>
+<dt id="folio-assistant-core--kg-schema-fields--extracted-statement.extractedstatementsschema.title" data-fa-state="extracted" data-fa-gloss="">
+ExtractedStatementsSchema.title <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>What the list is, in a reader's words: a heading for its part of the page.</p>
+<p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/extracted-statement.ts"><code>folio-assistant-core/schemas/extracted-statement.ts#ExtractedStatementsSchema.title</code></a></p>
 </dd>
 <dt id="cat-harness-tools--kg-schema-fields--extraction.extractionschema.assets" data-fa-state="extracted" data-fa-gloss="">
 ExtractionSchema.assets <span class="fa-gloss-status">candidate, extracted</span>

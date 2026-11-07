@@ -913,16 +913,16 @@
 
 <p>Candidate terms extracted from every schema field with a doc comment: <code class="language-plaintext highlighter-rouge">&lt;Declaration&gt;.&lt;field&gt;</code> as the label, the comment’s first paragraph as the definition. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: bootstrap-tools 45 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · cat-harness-tools 2438 (<a href="../../../../../assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · fhir-harness 146 (<a href="../../../../../assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld">SKOS</a>) · folio-assistant-core 184 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld">SKOS</a>) · smart-base 13 (<a href="../../../../../assets/glossary/smart-base--kg-schema-fields.skos.jsonld">SKOS</a>).</p>
+<p>From: bootstrap-tools 45 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · cat-harness-tools 2471 (<a href="../../../../../assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · fhir-harness 146 (<a href="../../../../../assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld">SKOS</a>) · folio-assistant-core 202 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld">SKOS</a>) · smart-base 13 (<a href="../../../../../assets/glossary/smart-base--kg-schema-fields.skos.jsonld">SKOS</a>).</p>
 
 <p>One of 7 pages of this type, split by the first letter of the label: <a href="../../../../../en/folio-assistant-core/glossary/schema-fields/">all parts</a>.</p>
 
-<p><strong>Size:</strong> this page holds 552 terms and is 324 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 557 terms and is 327 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
 <thead><tr><th>target</th><th>mapped</th><th>unmapped</th><th>undetermined</th><th>why undetermined</th></tr></thead>
-<tbody><tr><td><code>fhir</code></td><td>0</td><td>2700</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>2700</td><td>0</td><td>—</td></tr></tbody>
+<tbody><tr><td><code>fhir</code></td><td>0</td><td>2877</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>2877</td><td>0</td><td>—</td></tr></tbody>
 </table></div>
 <p class="fa-gloss-mapping-note"><strong>Undetermined is never “no match”.</strong> 
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
@@ -932,7 +932,7 @@ be a term this corpus is right to coin.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">552</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">557</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-P">P</a> <a href="#letter-Q">Q</a> <a href="#letter-R">R</a></nav>
 <h2 id="letter-P">
@@ -1188,6 +1188,27 @@ PaperRef.url <span class="fa-gloss-status">candidate, extracted</span>
 <dd>
 <p>Folio viewer URL for this paper. Used for: - Cross-paper dependency resolution (qualified <code>uses</code> refs) - BibTeX <code>folio-url</code> field for folio-hosted citations - Read-only import of external papers for commenting/referencing</p>
 <p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/types.ts"><code>cat-harness-tools/schemas/types.ts#PaperRef.url</code></a></p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--user-scenario.partschema.optional" data-fa-state="extracted" data-fa-gloss="">
+PartSchema.optional <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The story may skip it.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/process/user-scenario.ts"><code>cat-harness-tools/schemas/process/user-scenario.ts#PartSchema.optional</code></a></p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--user-scenario.partschema.repeats" data-fa-state="extracted" data-fa-gloss="">
+PartSchema.repeats <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>It may happen more than once.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/process/user-scenario.ts"><code>cat-harness-tools/schemas/process/user-scenario.ts#PartSchema.repeats</code></a></p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--user-scenario.partschema.scenario" data-fa-state="extracted" data-fa-gloss="">
+PartSchema.scenario <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The journey that is this part.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/process/user-scenario.ts"><code>cat-harness-tools/schemas/process/user-scenario.ts#PartSchema.scenario</code></a></p>
 </dd>
 <dt id="cat-harness-tools--kg-schema-fields--device-screen.passcodeblockschema.digits" data-fa-state="extracted" data-fa-gloss="">
 PasscodeBlockSchema.digits <span class="fa-gloss-status">candidate, extracted</span>
@@ -3148,6 +3169,13 @@ ReferenceNodeSchema.provenance <span class="fa-gloss-status">candidate, extracte
 <p>Where the reference came from. Absent means <code>authored</code>.</p>
 <p class="fa-gloss-meta">Schema fields of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/schemas/reference.ts"><code>folio-assistant-core/schemas/reference.ts#ReferenceNodeSchema.provenance</code></a></p>
 </dd>
+<dt id="cat-harness-tools--kg-schema-fields--user-scenario.referenceschema.href" data-fa-state="extracted" data-fa-gloss="">
+ReferenceSchema.href <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>A URL (<code>https:</code>, <code>mailto:</code> …), an absolute path or a <code>#fragment</code> as it is; anything else is a path from the SITE'S ROOT (<code>vaxlink/</code>, <code>journeys.html#j1</code>), resolved the same way on the journey page and the workshop pages (<code>fromSite</code>, <code>scripts/journeys/read.ts</code>).</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/process/user-scenario.ts"><code>cat-harness-tools/schemas/process/user-scenario.ts#ReferenceSchema.href</code></a></p>
+</dd>
 <dt id="cat-harness-tools--kg-schema-fields--user-scenario.referenceschema.rel" data-fa-state="extracted" data-fa-gloss="">
 ReferenceSchema.rel <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -4575,6 +4603,13 @@ RoleDef.formerNames <span class="fa-gloss-status">candidate, extracted</span>
 <dd>
 <p>Names this role was known by and no longer is, each with the date it was retired — <code>Initiator</code> became <code>Bootstrapping Agent</code> on 2026-09-23. Published as <code>skos:hiddenLabel</code> on this role, and the old name's concept is <code>owl:deprecated</code> and <code>dcterms:isReplacedBy</code> this role, so a reader holding the old name is sent to the new one. Authored here, beside the definition, rather than only remembered by the harness's glossary ledger: a retired name is part of what the role IS to a reader of old text.</p>
 <p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/process/role-graph.ts"><code>cat-harness-tools/schemas/process/role-graph.ts#RoleDef.formerNames</code></a></p>
+</dd>
+<dt id="cat-harness-tools--kg-schema-fields--role-graph.roledef.holding" data-fa-state="extracted" data-fa-gloss="">
+RoleDef.holding <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>For a lane one session holds at a time, such as the merge steward: when the lane is needed at all, how sibling sessions choose its holder, and whether a lone session holds it for itself (owner rulings, 2026-11-07). See &#123;@link LaneHolding}, &#123;@link laneNeeded} and &#123;@link electHolder}.</p>
+<p class="fa-gloss-meta">Schema fields of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/schemas/process/role-graph.ts"><code>cat-harness-tools/schemas/process/role-graph.ts#RoleDef.holding</code></a></p>
 </dd>
 <dt id="cat-harness-tools--kg-schema-fields--role-graph.roledef.id" data-fa-state="extracted" data-fa-gloss="">
 RoleDef.id <span class="fa-gloss-status">candidate, extracted</span>
