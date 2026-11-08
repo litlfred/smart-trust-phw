@@ -7,7 +7,7 @@ generated: "scripts/subgraph-readmes.ts of the bootstrap toolset (https://github
 
 # tools
 
-This instance's generators, each with a --check that CI runs: render-bpmn draws input/business-processes/*.bpmn into input/images/; personas writes input/pagecontent/personas.md from scenarios/. The site is published by the harness's stage-local.ts --fresh.
+This layer's generators, each with a --check that CI runs: render-bpmn draws input/business-processes/*.bpmn into input/images/; personas writes input/pagecontent/personas.md from scenarios/. The site is published by the harness's stage-local.ts --fresh.
 
 Part of [GDHCN Trust Network - Personal Health Wallet](../README.md) 0.2.0, declared as `tools`, holding `code`.
 

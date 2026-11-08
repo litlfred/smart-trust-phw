@@ -11,7 +11,7 @@
 # switched the harness gates off with them, and nothing turned them back on.
 #
 # This repository is its own index (index.config.json mounts smart-base's
-# closure beside its own instance at '.'), so the checks run in INDEX mode:
+# closure beside its own layer at '.'), so the checks run in INDEX mode:
 # the PR's merge commit is the root, mounted from its own lock, as smart-ra#59
 # does. Layer mode swapped it into the folio-assistant index, whose pinned copy
 # of this IG has drifted from its main.

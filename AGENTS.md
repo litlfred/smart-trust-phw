@@ -4,7 +4,7 @@ What binds everywhere is the harness's
 [`AGENTS.md`](https://github.com/litlfred/cat-harness/blob/HEAD/AGENTS.md); what
 this repository *is* is [`README.md`](README.md).
 
-## What this instance is
+## What this layer is
 
 The Personal Health Wallet (PHW) implementation guide: FHIR IG source under
 `input/`, built by the IG Publisher. It has no harness of its own:
@@ -72,7 +72,7 @@ Also declared, but not mounted by the index:
 | `docs/` | the artefact pages, built at publish by `smart-trust-phw:pages` (fhir-harness's `gen-ig-pages.ts`) | no |
 | `input/business-processes/` | the BPMN processes PHW.A to PHW.K | yes |
 | `scenarios/` | roles and example people and systems (every person fictional) | yes |
-| `tools/` | this instance's generators, each with a `--check`, and the publish script | yes |
+| `tools/` | this layer's generators, each with a `--check`, and the publish script | yes |
 
 `findings/` holds authored review material, such as proposals; never put
 authored files in `docs/`, which is built at publish and gitignored.
@@ -120,7 +120,7 @@ which `ig-ast-refresh.yml` refreshes on a push to `main`, so a preview shows
 
 ## Translations
 
-The harness's generic process is [`translation-refresh`](https://github.com/litlfred/cat-harness/blob/HEAD/skills/library/library-core/translation-refresh.md) and `translation-manager` §"Translating into several locales as a team"; this section names what that skill leaves to the instance. Locales: ar, es, fr, ru, zh, all unofficial (agent, no human sign-off). Each locale is its own PR to main.
+The harness's generic process is [`translation-refresh`](https://github.com/litlfred/cat-harness/blob/HEAD/skills/library/library-core/translation-refresh.md) and `translation-manager` §"Translating into several locales as a team"; this section names what that skill leaves to the layer. Locales: ar, es, fr, ru, zh, all unofficial (agent, no human sign-off). Each locale is its own PR to main.
 
 | step | here |
 |---|---|
