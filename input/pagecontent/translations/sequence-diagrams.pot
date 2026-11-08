@@ -1,0 +1,48 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-06 09:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: input/pagecontent/sequence-diagrams.md:2
+#. URL: http://smart.who.int/trust-phw/sequence-diagrams.html
+#: input/pagecontent/sequence-diagrams.md:2
+msgid "Consent Selection"
+msgstr ""
+
+#. Source: input/pagecontent/sequence-diagrams.md:26
+#. URL: http://smart.who.int/trust-phw/sequence-diagrams.html
+#: input/pagecontent/sequence-diagrams.md:26
+msgid "Generate and Use VHL"
+msgstr ""
+
+#. Source: input/pagecontent/sequence-diagrams.md:12
+#. URL: http://smart.who.int/trust-phw/sequence-diagrams.html
+#: input/pagecontent/sequence-diagrams.md:12
+msgid "Generate and Use VHL - Consent and Selctive Disclosure"
+msgstr ""
+
+#. Source: input/pagecontent/sequence-diagrams.md:7
+#. URL: http://smart.who.int/trust-phw/sequence-diagrams.html
+#: input/pagecontent/sequence-diagrams.md:7
+msgid "Generate and Use VHL - Unsigned documents"
+msgstr ""
+
+#. Source: input/pagecontent/sequence-diagrams.md:20
+#. URL: http://smart.who.int/trust-phw/sequence-diagrams.html
+#: input/pagecontent/sequence-diagrams.md:20
+msgid "Generate and Use VHL with Consent and Selective Disclosure"
+msgstr ""
+

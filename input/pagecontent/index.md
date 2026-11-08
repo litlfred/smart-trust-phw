@@ -1,51 +1,39 @@
-<!-- please keep only this for L2 DAK -->
-{% include index-dak.md %}
-
 <div>
-<p> This implementation guide and set of artifacts are still undergoing development. </p>
-<p> Content is for demonstration purposes only. </p>
+<p>This implementation guide is still being developed. Its content is for demonstration purposes only.</p>
 </div>{:.stu-note}
 
+### Summary
 
-### Summary 
-This implementation guide includes a machine-readable representation of WHO guidelines for <mark>[insert health domain here]</mark>, as documented in the WHO Digital Adaptation Kit for <mark>[insert health domain here]</mark> (link forthcoming) and explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of <mark>[insert health domain here]</mark> use cases by WHO Member States.
+This implementation guide specifies how a **Personal Health Wallet (PHW)** lets a person record privacy consent, share health information through verifiable health links, and have that consent enforced when the information is used. It uses **IHE Privacy Consent on FHIR (PCF) 1.1.0** for consent directives and **IHE Verifiable Health Links (VHL) 1.0.0-comment** for the links.
 
-The guide is part of the [WHO SMART Guidelines approach](https://www.who.int/teams/digital-health-and-innovation/smart-guidelines) to support countries to integrate WHO global health and data recommendations into digital systems accurately and consistently. It defines a series of FHIR Resources, Profiles, Extensions, and Terminology based on the WHO <mark>[insert health domain here]</mark> Digital Adaptation Kit (link forthcoming). 
+Every process is **trust-anchor neutral**: keys are published to, and trust lists read from, an abstract Trust Anchor. The WHO Global Digital Health Certification Network (GDHCN) is one possible Trust Anchor among others. The guide makes no claim of conformance to IHE Internet User Authorization (IUA).
 
-Supporting guidance, recommendations, resources, and standards are included in the <a href="en/folio-assistant-core/bibliography/">Bibliography</a> and <a href="dependencies.html">Dependencies</a>.
+Supporting guidance, recommendations, resources and standards are listed in the <a href="en/folio-assistant-core/bibliography/">Bibliography</a> and on the <a href="dependencies.html">Dependencies</a> page.
 
-### About this implementation guide
+### What this guide contains
 
-This implementation guide is broken into the following levels of [knowledge representation](https://hl7.org/fhir/uv/cpg/documentation-approach-06-01-levels-of-knowledge-representation.html):
-- <a href="index.html">Home</a> - contains references to the guidance, guidelines, policies and recommendations underpinning this implementation guide.
-- <a href="business-requirements.html">Business Requirements</a> - contains the requirements for this implementation guide including the definition of key concepts, use cases, and a data dictionary.      
-- <a href="data-models-and-exchange.html">Data Models and Exchange</a> - contains the data models and data exchange protocols with actors and transactions defined.
-- <a href="deployment.html">Deployment Guidance </a> - contains relevant technical specifications and guidance, testing resources, reference implementation materials, and supporting guidance for adaptation to local contexts.
+- <a href="consent.html">Consent</a>: explicit and implied consent (IHE PCF), trust domains' consent codes, and consent directives in shared and issued documents.
+- <a href="business-processes.html">Business Processes</a>: thirteen BPMN 2.0 processes:
+  - Consent and verifiable health links: A record and manage consent, B issue a consent-backed link, C present and redeem a link.
+  - Data sharing agreements between servers: D register a client, E server-to-server access, F access decision, G audit and provenance, H revocation and suspension, I decide a link request under an agreement.
+  - Shared certificate processes: J issue a certificate, K verify a certificate and its status.
+  - Consent: L record explicit consent, M add consent directives to a shared or issued document.
+- <a href="decision-logic.html">Decision-support Logic</a>: the DMN decision `PHW.DT.AgreementAccess`, which combines several agreements for one receiver.
+- <a href="example-pilgrimage.html">Worked Example: IPS Pilgrimage (Hajj)</a>: processes A, B, C, F and I applied to one case.
+- <a href="system-actors.html">System Actors</a>, <a href="sequence-diagrams.html">Sequence Diagrams</a> and <a href="transactions.html">Transactions</a>.
+- The logical models, profiles, value sets and examples are listed in the [Artifact Index](artifacts.html). An offline copy of the guide is on the [Downloads](downloads.html) page.
 
-This guide is prepared to facilitate digital implementation of WHO <mark>[insert health domain here]</mark> guidelines by providing FHIR-based computable representations of and implementation guidance for using the key components of the WHO <mark>[insert health domain here]</mark> digital adaptation kit (DAK):
+### How this guide is organised
 
-* Health Interventions & Recommendations
-* Generic Personas
-* User Scenarios
-* Business Processes & Workflows
-* Core Data Elements
-* Decision Support Logic
-* Indicators & Monitoring
-* Functional & Non-functional Requirements
+This guide follows the [levels of knowledge representation](https://hl7.org/fhir/uv/cpg/documentation-approach-06-01-levels-of-knowledge-representation.html):
 
-This guide is a companion to the Digital Adaptation Kit (DAK) and should be used side-by-side with it. Implementers are strongly encouraged to make use of the Digital Adaptation Kit. The focus of this guide is on the explanation and use of the computable artifacts.
-
-This guide assumes use of the following resources: 
-* [IPS Patient](http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips)
-* [CPG ActivityDefinitions](https://hl7.org/fhir/uv/cpg/artifacts.html#activitydefinition-index)
-
-- For a complete listing of the artifacts defined in this implementation guide, refer to the [Artifact Index](artifacts.html).
-- A complete offline copy of this implementation guide can be found on the [Downloads](downloads.html) page.
-
-- This Implementation Guide makes use of [Clinical Quality Language](https://cql.hl7.org/) for the decision support artifacts including the PlanDefinitions and Measures. They are used to express how a calculation should occur and can be used with a CQL engine in order to process the decision or indicator directly from the applicable FHIR resources. Links to this specification, the FHIR Clinical Practice Guidelines Speciciation, and other helpful resources can be found in the Support dropdown.
+- <a href="business-requirements.html">Business Requirements</a>: concepts, personas, business processes and decision logic.
+- <a href="data-models-and-exchange.html">Data Models and Exchange</a>: actors, sequence diagrams, transactions and codings.
+- <a href="deployment.html">Deployment</a>: security and privacy, testing, reference implementations and downloads.
 
 ### Disclaimer
-The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.
+
+This specification is a working draft for demonstration and may not be used for any implementation purposes. It is provided without warranty of completeness or consistency, and the official publication supersedes it. No liability can be inferred from the use or misuse of this specification or its consequences.
 
 ### Dependencies
 

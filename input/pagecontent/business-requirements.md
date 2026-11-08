@@ -1,9 +1,8 @@
-- [**Concepts**](concepts.html) - A glossary of terms and key concepts introduced in the L2 or in the Implementation Guide
-- [**Generic Personas**](personas.html) - Depiction of end-users and related stakeholders as introduced in the L2
-- [**Use Cases**](scenarios.html) - User scenarios depicting how different personas will interact in a typical workflow along with use cases listed as introduced in the L2
-- [**Business Processes**](business-processes.html) - Depiction of business processes as visual workflows as introduced in the L2
-- [**Data Dictionary**](dictionary.html) - Data dictionary with detailed data specifications as introduced in the L2
-- [**Decision-support Logic**](decision-logic.html) - Decision-support logic and algorithms as introduced in the L2
-- [**Indicator and Performance Metrics**](indicators.html) - Core set of indicators and performance metrics as introduced in the L2
-- [**Functional Requirements**](functional-requirements.html) - List of core functions and capabilities the system must have to meet the end-users’ needs and achieve tasks within the business process.
-- [**Non-functional Requirements**](non-functional-requirements.html) - List of capabilities the system must have as introduced in the L2
+This section holds the business requirements of this guide.
+
+- [**Concepts**](concepts.html): the terms and key concepts this guide uses.
+- [**Generic Personas**](personas.html): the people and systems that take part in the processes.
+- [**Consent**](consent.html): explicit and implied consent, and consent directives in documents.
+- [**Business Processes**](business-processes.html): the BPMN 2.0 processes A to M.
+- [**Worked Example: IPS Pilgrimage (Hajj)**](example-pilgrimage.html): processes A, B, C, F and I applied to one case.
+- [**Decision-support Logic**](decision-logic.html): the DMN decisions the processes use.
