@@ -1,4 +1,4 @@
-# Proposal: bring smart-trust-phw into the repeatable instance process
+# Proposal: bring smart-trust-phw into the repeatable layer process
 
 Status: **decided 2026-11-06.** The owner chose the Recommended bundle
 (C1, C2, C3, C4, C5, C7, C8, C9), C6 "not now", publishing the site, and
@@ -53,7 +53,7 @@ Tags used below:
 - Open PR: #33 (draft, `claude/declare-ig-outputs`) also edits
   `smart-trust-phw.json`; any change below to the declaration rebases on it.
 
-## 2. The pattern the two other instances follow
+## 2. The pattern the two other layers follow
 
 Read from their `AGENTS.md`, declarations, workflows, tools and the last
 two weeks of commits.
@@ -186,7 +186,7 @@ are removed.
   instances in `input/fsh/actors/actors.fsh`), and `scenarios/actors/` with
   one file per fictional person and per system, each person with a
   `meta.persona`. `personas.md` then shows them instead of template text.
-- **Why:** this is the shape both other instances use; journeys, workshops
+- **Why:** this is the shape both other layers use; journeys, workshops
   and device screens all refer to actors by id.
 - **Pros:** one place for personas; the journeys viewer and
   `check:journey-refs` can resolve them.
@@ -210,7 +210,7 @@ Three options for whose story PHW tells:
   as the worked example, and make its steps link to smart-ips-pilgrimage's
   `user-scenarios/` by id; PHW adds only a workshop of its gaps G1..Gn.
   - Pros: no second copy of Kamal's story; small.
-  - Cons: cross-instance references; PHW's DSA processes (D to I) get no
+  - Cons: cross-layer references; PHW's DSA processes (D to I) get no
     journey.
 - **C. Do nothing now.**
 - **Tags:** **[site]** (journeys page); declaration change; **[pin]** only
@@ -235,7 +235,7 @@ arrives with a later cat-harness-tools pin.
   failures that must be fixed first.
 - **Tags:** **[site]** (first publish).
 
-### C8. `AGENTS.md` and README in the instance shape — S
+### C8. `AGENTS.md` and README in the layer shape — S
 
 - **What:** fix the mount table (four directories mounted by the index);
   add a runnable Cold start (as smart-trust-demo has), a Rules section
@@ -282,7 +282,7 @@ a new declared `translations/` directory.
 ### Not proposed
 
 - Local Python tools copied from smart-trust-demo (`tools/repo-checks`,
-  `tools/ig-gen`). smart-ips-pilgrimage shows an IG instance can rely on the
+  `tools/ig-gen`). smart-ips-pilgrimage shows an IG layer can rely on the
   harness's checks instead; adding a local `tools/` would be a second copy
   to keep in step.
 - Device screens: wait until the kind is on cat-harness-tools `main`.
@@ -295,7 +295,7 @@ a new declared `translations/` directory.
 | Recommended | C1, C2, C3, C4, C5, C7, C8, C9 | M/L |
 | Full pattern | Recommended + C6 A | L |
 
-## 6. The repeatable process, as steps another instance can follow
+## 6. The repeatable process, as steps another layer can follow
 
 1. **Declare.** Write `<name>.json` (`cat-harness-declaration/1.0.0`):
    assets `AGENTS.md` and `README.md`; one directory per thing an index may
@@ -335,7 +335,7 @@ a new declared `translations/` directory.
     checkout, so they no longer make the cached AST stale. The site is built from the
     AST that `ig-ast-refresh.yml` caches on a push to `main`, so publish
     `main` after that run succeeds.
-11. **Cold start.** `AGENTS.md`: what the instance is, its rules, the
+11. **Cold start.** `AGENTS.md`: what the layer is, its rules, the
     commands that lay down the mounts, and how to publish.
 12. **Translate.** Extract `.pot` templates from text sources into a
     declared `translations/` directory; translators never edit images.
