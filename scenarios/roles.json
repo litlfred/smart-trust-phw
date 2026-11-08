@@ -106,7 +106,7 @@
       ]
     },
     {
-      "id": "verifier",
+      "id": "certificate-verifier",
       "title": "Verifier",
       "description": "Checks a certificate and its status, with or without a status checking application. Specializes the ActorDefinition Receiver (input/fsh/actors/actors.fsh).",
       "actorKinds": [

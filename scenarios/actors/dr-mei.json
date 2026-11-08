@@ -4,7 +4,7 @@
   "kind": "person",
   "description": "Persona: an emergency physician who treats visitors from other countries and reads their records through verifiable health links. Fictional.",
   "roles": [
-    "verifier"
+    "certificate-verifier"
   ],
   "capabilities": [],
   "meta": {

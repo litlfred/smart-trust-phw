@@ -118,13 +118,16 @@ Usage: #example
 * identifier.value = "urn:uuid:7c1c6d1e-0000-4000-8000-00000000a000"
 * type = #document
 * timestamp = "2026-06-01T10:16:00Z"
-* entry[composition].fullUrl = "urn:uuid:7c1c6d1e-0000-4000-8000-00000000a005"
-* entry[composition].resource = LinaSummaryComposition
-* entry[patient].fullUrl = "urn:uuid:7c1c6d1e-0000-4000-8000-00000000a001"
-* entry[patient].resource = LinaPatient
-* entry[+].fullUrl = "urn:uuid:7c1c6d1e-0000-4000-8000-00000000a002"
-* entry[=].resource = HomeHIE
-* entry[consent][0].fullUrl = "urn:uuid:7c1c6d1e-0000-4000-8000-00000000a003"
-* entry[consent][=].resource = LinaExplicitConsent
-* entry[consent][+].fullUrl = "urn:uuid:7c1c6d1e-0000-4000-8000-00000000a004"
-* entry[consent][=].resource = LinaImpliedConsent
+// Every entry by position, the Composition first as a document requires; SUSHI
+// matches each to its slice. (Mixing named slices with entry[+] put the
+// Organization at index 0 over the Composition.)
+* entry[0].fullUrl = "urn:uuid:7c1c6d1e-0000-4000-8000-00000000a005"
+* entry[0].resource = LinaSummaryComposition
+* entry[1].fullUrl = "urn:uuid:7c1c6d1e-0000-4000-8000-00000000a001"
+* entry[1].resource = LinaPatient
+* entry[2].fullUrl = "urn:uuid:7c1c6d1e-0000-4000-8000-00000000a003"
+* entry[2].resource = LinaExplicitConsent
+* entry[3].fullUrl = "urn:uuid:7c1c6d1e-0000-4000-8000-00000000a004"
+* entry[3].resource = LinaImpliedConsent
+* entry[4].fullUrl = "urn:uuid:7c1c6d1e-0000-4000-8000-00000000a002"
+* entry[4].resource = HomeHIE
