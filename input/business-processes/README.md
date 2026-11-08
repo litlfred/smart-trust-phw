@@ -7,7 +7,7 @@ generated: "scripts/subgraph-readmes.ts of the bootstrap toolset (https://github
 
 # business-processes
 
-The guide's business processes PHW.A to PHW.K (BPMN 2.0), the IG source the IG Publisher renders; the processes viewer draws them for this instance. Each is drawn to input/images/PHW.<id>.svg by tools/render-bpmn/render_bpmn.ts (bootstrap-tools' renderer); CI fails when a drawing is stale. Never edit a drawing: change the BPMN.
+The guide's business processes PHW.A to PHW.K (BPMN 2.0), the IG source the IG Publisher renders; the processes viewer draws them for this layer. Each is drawn to input/images/PHW.<id>.svg by tools/render-bpmn/render_bpmn.ts (bootstrap-tools' renderer); CI fails when a drawing is stale. Never edit a drawing: change the BPMN.
 
 Part of [GDHCN Trust Network - Personal Health Wallet](../../README.md) 0.2.0, declared as `business-processes`, holding `business-processes`.
 
