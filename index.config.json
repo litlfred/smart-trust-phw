@@ -55,7 +55,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "9929b1f49bdd761bf1d269e505ae354c045860df",
+          "ref": "33ebe87f691e9a72e308bec8390e2882b5b7ff73",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -80,8 +80,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "9929b1f49bdd761bf1d269e505ae354c045860df",
-              "evidence": "Owner litlfred, 2026-11-07, session https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f: 'repin + merge open 12 hrs' (re-pin smart-trust-phw's layers to their main tips)."
+              "ref": "33ebe87f691e9a72e308bec8390e2882b5b7ff73",
+              "evidence": "litlfred, 2026-11-07, via the merge manager (session_01VQDpPffYARDQ8juksAZScf): card 'Pin target' 'A. Never move back', wave 4 'A. Yes, prepare as drafts', and 'repin + merge open 12 hrs'; earlier in this session: 'align pins'. smart-base at #315's merge, each lower layer at the commit smart-base pins; bean cat-tools-sm8r."
             }
           }
         }
