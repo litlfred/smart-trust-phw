@@ -166,6 +166,22 @@
       "reason": "the Publisher-shaped package the JSON view pages read each resource from: built by fhir-harness's ig-index:build from the IG's AST (restored from the IG repository's AST cache) and its own sushi-config.yaml, so it moves when the IG's default branch or its AST cache moves, not with a commit of this instance"
     },
     {
+      "path": "fhir-artifact-index/sidecars/",
+      "writer": [
+        "ig-index:build"
+      ],
+      "because": "checkout",
+      "reason": "the IG API sidecars bound to each artefact: copied by fhir-harness's ig-index:build from what a mounted layer's ig-site:sidecars leaves in its work directory, so it moves with the checkout's layers and the IG's AST cache, not with a commit of this instance"
+    },
+    {
+      "path": "fhir-artifact-index/contexts/",
+      "writer": [
+        "ig-index:build"
+      ],
+      "because": "checkout",
+      "reason": "the JSON-LD contexts the IG's source defines: copied by fhir-harness's ig-index:build from the IG's source at the checkout's pin, so it moves when the IG's default branch moves, not with a commit of this instance"
+    },
+    {
       "path": "document-kinds/dak.coverage.smart-trust-phw.json",
       "writer": [
         "smart-base:document-kinds"
