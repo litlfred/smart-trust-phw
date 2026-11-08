@@ -14,17 +14,30 @@ Part of [GDHCN Trust Network - Personal Health Wallet](../../README.md) 0.2.0, d
 | file | what it is | used by |
 |---|---|---|
 | [`PHW.A.bpmn`](PHW.A.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): A. Record and Manage Patient Privacy Consent |  |
+| [`PHW.A.svg`](PHW.A.svg) | the picture of `PHW.A.bpmn`, generated from it |  |
 | [`PHW.B.bpmn`](PHW.B.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): B. Issue Consent-Backed Verifiable Health Link | "J. Issue a Verifiable Digital Health Certificate (shared block B4)" |
+| [`PHW.B.svg`](PHW.B.svg) | the picture of `PHW.B.bpmn`, generated from it |  |
 | [`PHW.C.bpmn`](PHW.C.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): C. Present and Redeem Verifiable Health Link with PCF Consent Enforcement | "K. Verify a Certificate and its Status (shared block B7)" |
+| [`PHW.C.svg`](PHW.C.svg) | the picture of `PHW.C.bpmn`, generated from it |  |
 | [`PHW.D.bpmn`](PHW.D.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): D. Register a Server Client under a Data Sharing Agreement (DSA P4) |  |
+| [`PHW.D.svg`](PHW.D.svg) | the picture of `PHW.D.bpmn`, generated from it |  |
 | [`PHW.E.bpmn`](PHW.E.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): E. Server-to-Server Access under a Data Sharing Agreement (DSA P5) |  |
+| [`PHW.E.svg`](PHW.E.svg) | the picture of `PHW.E.bpmn`, generated from it |  |
 | [`PHW.F.bpmn`](PHW.F.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): F. Access Decision under a Data Sharing Agreement (DSA P11) | "E. Server-to-Server Access under a Data Sharing Agreement (DSA P5)", "I. Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement" |
+| [`PHW.F.svg`](PHW.F.svg) | the picture of `PHW.F.bpmn`, generated from it |  |
 | [`PHW.G.bpmn`](PHW.G.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): G. Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12) | "E. Server-to-Server Access under a Data Sharing Agreement (DSA P5)", "H. Revocation and Suspension under a Data Sharing Agreement (DSA P13)" |
+| [`PHW.G.svg`](PHW.G.svg) | the picture of `PHW.G.bpmn`, generated from it |  |
 | [`PHW.H.bpmn`](PHW.H.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): H. Revocation and Suspension under a Data Sharing Agreement (DSA P13) |  |
+| [`PHW.H.svg`](PHW.H.svg) | the picture of `PHW.H.bpmn`, generated from it |  |
 | [`PHW.I.bpmn`](PHW.I.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): I. Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement |  |
+| [`PHW.I.svg`](PHW.I.svg) | the picture of `PHW.I.bpmn`, generated from it |  |
 | [`PHW.J.bpmn`](PHW.J.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): J. Issue a Verifiable Digital Health Certificate (shared block B4) |  |
+| [`PHW.J.svg`](PHW.J.svg) | the picture of `PHW.J.bpmn`, generated from it |  |
 | [`PHW.K.bpmn`](PHW.K.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): K. Verify a Certificate and its Status (shared block B7) |  |
+| [`PHW.K.svg`](PHW.K.svg) | the picture of `PHW.K.bpmn`, generated from it |  |
 | [`PHW.L.bpmn`](PHW.L.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): L. Record Explicit Consent |  |
+| [`PHW.L.svg`](PHW.L.svg) | the picture of `PHW.L.bpmn`, generated from it |  |
 | [`PHW.M.bpmn`](PHW.M.bpmn) | a [Process](https://litlfred.github.io/bootstrap/schemas/#process): M. Add Consent Directives to a Shared or Issued Document | "B. Issue Consent-Backed Verifiable Health Link", "J. Issue a Verifiable Digital Health Certificate (shared block B4)" |
+| [`PHW.M.svg`](PHW.M.svg) | the picture of `PHW.M.bpmn`, generated from it |  |
 
 <!-- kg:subgraph:end -->
