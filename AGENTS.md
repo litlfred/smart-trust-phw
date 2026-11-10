@@ -92,8 +92,9 @@ authored files in `docs/`, which is built at publish and gitignored.
   by `bun tools/personas/gen_personas.ts`; CI runs each `--check`.
 - **No text in pictures.** Titles, captions and labels are text (page
   Markdown, BPMN names, PlantUML source, `alt`), so they can be translated.
-- **gh-pages is published by an agent, not a workflow.** `main` publishes to
-  the root; any other branch to its preview folder.
+- **gh-pages is published by `site-publish.yml`, run by hand** (owner,
+  2026-11-10), or by an agent running `stage-local.ts` locally (below).
+  `main` publishes to the root; any other branch to its preview folder.
 - No model identifiers in commits, PRs or code.
 
 ## Cold start
