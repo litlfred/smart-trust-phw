@@ -1,0 +1,92 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_QuestionnaireDataCapture",
+ "markers": [
+  {
+   "id": "Task_Complete",
+   "name": "Complete the form",
+   "left": 39.61,
+   "top": 13.16,
+   "box": {
+    "left": 29.55,
+    "top": 27.63,
+    "width": 3.12,
+    "height": 6.32
+   }
+  },
+  {
+   "id": "Task_Extract",
+   "name": "Extract and save the resources",
+   "left": 75.97,
+   "top": 60.53,
+   "box": {
+    "left": 65.91,
+    "top": 75,
+    "width": 3.12,
+    "height": 6.32
+   }
+  }
+ ],
+ "tasks": {
+  "Task_Complete": {
+   "id": "Task_Complete",
+   "name": "Complete the form",
+   "type": "bpmn:UserTask",
+   "lane": "Health worker",
+   "skills": [
+    {
+     "name": "complete-sdc-questionnaire"
+    }
+   ],
+   "role": {
+    "name": "health-worker",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-smart-base-scenarios-roles-json-health-worker",
+    "title": "Health worker",
+    "skills": [
+     {
+      "name": "complete-sdc-questionnaire"
+     },
+     {
+      "name": "inform-client"
+     },
+     {
+      "name": "record-decision-rationale"
+     },
+     {
+      "name": "review-client-history"
+     },
+     {
+      "name": "review-decision-support-guidance"
+     }
+    ]
+   }
+  },
+  "Task_Extract": {
+   "id": "Task_Extract",
+   "name": "Extract and save the resources",
+   "type": "bpmn:ServiceTask",
+   "lane": "Point-of-care system",
+   "skills": [
+    {
+     "name": "extract-questionnaire-response"
+    }
+   ],
+   "role": {
+    "name": "point-of-care-system",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-smart-base-scenarios-roles-json-point-of-care-system",
+    "title": "Point-of-care system",
+    "skills": [
+     {
+      "name": "activate-accepted-guidance"
+     },
+     {
+      "name": "apply-decision-support"
+     },
+     {
+      "name": "extract-questionnaire-response"
+     }
+    ]
+   }
+  }
+ }
+}

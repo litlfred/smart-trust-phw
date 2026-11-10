@@ -25,7 +25,7 @@
   "prov:wasGeneratedBy": {
     "@type": "prov:Activity",
     "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
-    "prov:used": "1e44fc31959132396cc39189bbd8310e90009873"
+    "prov:used": "326fe21fae55cc6349697cba1233ea817d7dd741"
   },
   "dcterms:isPartOf": {
     "@type": "fhir:ImplementationGuide",

@@ -989,6 +989,10 @@
 <thead><tr><th>Artefact</th><th>What it declares about itself</th></tr></thead>
 <tbody>
 <tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/processes/content/act-on-decision-support.bpmn"><code>Act on decision-support guidance</code></a><br><span class="p">smart-base/processes/content/act-on-decision-support.bpmn</span></td>
+  <td>The point-of-care system applies one of the DAK's decision tables, published as a CPG-on-FHIR PlanDefinition, to one client ($apply) and shows the health worker what it proposes (a RequestGroup, or CDS Hooks cards).<div class="f"><span class="k">activities</span> 4</div><div class="f"><span class="k">lanes</span> Point-of-care system · Health worker</div><div class="f"><span class="k">skills</span> activate-accepted-guidance, apply-decision-support, record-decision-rationale, review-decision-support-guidance</div></td>
+</tr>
+<tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/processes/content/classify-and-code-content.bpmn"><code>Classify and code content</code></a><br><span class="p">smart-base/processes/content/classify-and-code-content.bpmn</span></td>
   <td>Classifies and codes L1 extracted statements (recommendations, implementation practices, remarks, proposed coverage exclusions) and L2 DAK slots (personas, business processes, guideline domains, conditions, intervention…<div class="f"><span class="k">activities</span> 5</div><div class="f"><span class="k">lanes</span> Authoring agent · L1 extraction reviewer (person) · Terminologist / ontologist reviewer (person)</div><div class="f"><span class="k">skills</span> classify-and-code-content, content-review, glossary-terms, interaction-modality, ontologist, recommendation-extraction, recommendation-scenarios, staging-review, terminology-management</div></td>
 </tr>
@@ -1007,6 +1011,10 @@
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/processes/content/l2-dak-authoring.bpmn"><code>L2 DAK authoring</code></a><br><span class="p">smart-base/processes/content/l2-dak-authoring.bpmn</span></td>
   <td>How a WHO SMART Guidelines L2 Digital Adaptation Kit is authored by a business analyst, a terminologist and a clinical SME under a programme manager.<div class="f"><span class="k">activities</span> 14</div><div class="f"><span class="k">lanes</span> Programme manager / technical officer · Work plan — beans (shared by humans and agents) · Business analyst · Terminologist · Clinical SME</div><div class="f"><span class="k">skills</span> bean-coordination, bpmn-authoring, content-plan, content-review, content-validate, dak-l1-library, dmn-authoring, indicator-extraction, l2-component-edit-review, l2-dak-authoring, terminology-management, todo-manager</div></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/processes/content/questionnaire-data-capture.bpmn"><code>Capture data with an SDC questionnaire</code></a><br><span class="p">smart-base/processes/content/questionnaire-data-capture.bpmn</span></td>
+  <td>A health worker completes one of the DAK's forms, a FHIR R4 Questionnaire conforming to Structured Data Capture, as their device renders it, and the point-of-care system turns the completed QuestionnaireResponse into th…<div class="f"><span class="k">activities</span> 2</div><div class="f"><span class="k">lanes</span> Health worker · Point-of-care system</div><div class="f"><span class="k">skills</span> complete-sdc-questionnaire, extract-questionnaire-response</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/processes/content/SGAuthoring.DAKLifecycle.bpmn"><code>Phase 1: Planning</code></a><br><span class="p">smart-base/processes/content/SGAuthoring.DAKLifecycle.bpmn</span></td>

@@ -1,6 +1,6 @@
 {
   "$schema": "folio-translation-status/v1",
-  "changedAt": "2026-11-07",
+  "changedAt": "2026-11-10",
   "scope": "cat-harness/translations",
   "tile": {
     "smart-base-translations": {
@@ -1040,7 +1040,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 8,
+          "templates": 10,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -1056,7 +1056,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 8,
+          "templates": 10,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -1072,7 +1072,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 8,
+          "templates": 10,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -1088,7 +1088,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 8,
+          "templates": 10,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,
@@ -1104,7 +1104,7 @@
             "findings": 0
           },
           "files": [],
-          "templates": 8,
+          "templates": 10,
           "catalogues": 0,
           "entries": 0,
           "translated": 0,

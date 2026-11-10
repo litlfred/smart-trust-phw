@@ -6,15 +6,15 @@
   "status": "draft",
   "package-id": "smart.who.int.trust-phw",
   "ig-ver": "0.2.0-litlfred",
-  "date": "Sat, 07 Nov, 2026 18:20:21 +0000",
-  "dateISO8601": "2026-11-07T18:20:21+00:00",
-  "errs": 101,
-  "warnings": 200,
-  "hints": 394,
-  "broken-links": 716,
+  "date": "Tue, 10 Nov, 2026 19:59:03 +0000",
+  "dateISO8601": "2026-11-10T19:59:03+00:00",
+  "errs": 104,
+  "warnings": 205,
+  "hints": 404,
+  "broken-links": 746,
   "suppressed-hints": 0,
   "suppressed-warnings": 0,
   "version": "4.0.1",
   "tool": "6.0.0-snapshot1 (3)",
-  "maxMemory": 7342148008
+  "maxMemory": 5382890448
 }

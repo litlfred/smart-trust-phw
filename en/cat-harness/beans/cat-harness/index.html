@@ -933,7 +933,7 @@
   
   
 </h2>
-    <p class="sv-sub">cannot resolve the bean store: &quot;beans&quot; is absent from this checkout: declared for every checkout by cat-harness, not by this root, and this checkout's remote carries no cat/cat-harness/* branch; declare it at the root to keep it here. This is <strong>unknown</strong>, not zero.</p>
+    <p class="sv-sub">cannot resolve the bean store: &quot;beans&quot; is on cat/cat-harness/beans and is not mounted in /home/runner/work/smart-trust-phw/smart-trust-phw, so there is no directory to read. Mount it (`bun run cat state:mount`). Reading beans instead would report an EMPTY graph, and &quot;nothing here&quot; is not &quot;could not reach it&quot; — is cut over to `cat/cat-harness/beans` and nothing is mounted here, so every reader of this path sees an EMPTY graph rather than an unreachable one. Mount it (`bun run cat state:mount`); &quot;no content&quot; and &quot;could not reach the content&quot; are different answers.. This is <strong>unknown</strong>, not zero.</p>
 <h2 class="sv-h2">
   
   

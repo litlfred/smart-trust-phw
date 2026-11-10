@@ -8,12 +8,12 @@
   "source": {
     "kind": "output",
     "of": "output-ast",
-    "revision": "1e44fc31959132396cc39189bbd8310e90009873",
-    "readAt": "2026-11-07"
+    "revision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+    "readAt": "2026-11-10"
   },
   "provenance": {},
   "sidecarApi": "present",
-  "count": 101,
+  "count": 106,
   "artifacts": [
     {
       "key": "ActorDefinition/ConsentRegistry",
@@ -82,10 +82,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -155,10 +155,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -228,10 +228,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -301,10 +301,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -374,10 +374,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -447,10 +447,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -468,10 +468,24 @@
           }
         ]
       },
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Basic-DSAPermissionExample.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Basic-DSAPermissionExample.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Basic-DSAPermissionExample.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Basic-DSAPermissionExample.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/Basic-DSAPermissionExample.html",
           "local": "fsh-generated/resources/Basic-DSAPermissionExample.json"
         },
         "localPath": "output-ast/resources/Basic/DSAPermissionExample--84821052.json",
@@ -500,10 +514,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -558,10 +572,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -619,10 +633,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -680,10 +694,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -695,10 +709,24 @@
       "profiles": [
         "http://smart.who.int/trust-phw/StructureDefinition/PHWDocumentWithConsent"
       ],
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Bundle-LinaSummaryWithConsent.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Bundle-LinaSummaryWithConsent.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Bundle-LinaSummaryWithConsent.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Bundle-LinaSummaryWithConsent.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/Bundle-LinaSummaryWithConsent.html",
           "local": "fsh-generated/resources/Bundle-LinaSummaryWithConsent.json"
         },
         "localPath": "output-ast/resources/Bundle/LinaSummaryWithConsent--97cb397a.json",
@@ -727,10 +755,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -789,10 +817,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -805,10 +833,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-ar",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-ar.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-ar.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-ar.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-ar.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-ar.html",
           "local": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-ar.json"
         },
         "localPath": "output-ast/resources/CodeSystem/DVCRelationshipStatus-ar--8c3deb6e.json",
@@ -837,10 +879,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -853,10 +895,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-es",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-es.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-es.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-es.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-es.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-es.html",
           "local": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-es.json"
         },
         "localPath": "output-ast/resources/CodeSystem/DVCRelationshipStatus-es--636fddd6.json",
@@ -885,10 +941,72 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DVCRelationshipStatus-fr",
+      "resourceType": "CodeSystem",
+      "id": "DVCRelationshipStatus-fr",
+      "name": "DVCRelationshipStatusFr",
+      "title": "DVCRelationshipStatus (fr displays, unofficial)",
+      "description": "Unofficial French displays for DVCRelationshipStatus: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-fr",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-fr.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-fr.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-fr.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-fr.html"
+        }
+      },
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-fr.html",
+          "local": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-fr.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DVCRelationshipStatus-fr--032ecb94.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
+        },
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -901,10 +1019,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-ru",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-ru.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-ru.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-ru.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-ru.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-ru.html",
           "local": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-ru.json"
         },
         "localPath": "output-ast/resources/CodeSystem/DVCRelationshipStatus-ru--398da479.json",
@@ -933,10 +1065,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -949,10 +1081,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-zh",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-zh.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-zh.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-zh.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-zh.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DVCRelationshipStatus-zh.html",
           "local": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-zh.json"
         },
         "localPath": "output-ast/resources/CodeSystem/DVCRelationshipStatus-zh--bcd00cbd.json",
@@ -981,10 +1127,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1043,10 +1189,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1059,10 +1205,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-ar",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-ar.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-ar.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-ar.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-ar.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-ar.html",
           "local": "fsh-generated/resources/CodeSystem-DisclosureStatements-ar.json"
         },
         "localPath": "output-ast/resources/CodeSystem/DisclosureStatements-ar--ed5b0a8e.json",
@@ -1091,10 +1251,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1107,10 +1267,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-es",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-es.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-es.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-es.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-es.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-es.html",
           "local": "fsh-generated/resources/CodeSystem-DisclosureStatements-es.json"
         },
         "localPath": "output-ast/resources/CodeSystem/DisclosureStatements-es--36127be5.json",
@@ -1139,10 +1313,72 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DisclosureStatements-fr",
+      "resourceType": "CodeSystem",
+      "id": "DisclosureStatements-fr",
+      "name": "DisclosureStatementsFr",
+      "title": "DisclosureStatements (fr displays, unofficial)",
+      "description": "Unofficial French displays for DisclosureStatements: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-fr",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-fr.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-fr.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-fr.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-fr.html"
+        }
+      },
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-fr.html",
+          "local": "fsh-generated/resources/CodeSystem-DisclosureStatements-fr.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DisclosureStatements-fr--ae6d5361.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
+        },
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1155,10 +1391,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-ru",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-ru.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-ru.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-ru.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-ru.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-ru.html",
           "local": "fsh-generated/resources/CodeSystem-DisclosureStatements-ru.json"
         },
         "localPath": "output-ast/resources/CodeSystem/DisclosureStatements-ru--49e916c1.json",
@@ -1187,10 +1437,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1203,10 +1453,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-zh",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-zh.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-zh.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-zh.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-zh.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DisclosureStatements-zh.html",
           "local": "fsh-generated/resources/CodeSystem-DisclosureStatements-zh.json"
         },
         "localPath": "output-ast/resources/CodeSystem/DisclosureStatements-zh--fb541773.json",
@@ -1235,10 +1499,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1297,10 +1561,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1313,10 +1577,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-ar",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-ar.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-ar.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-ar.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-ar.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-ar.html",
           "local": "fsh-generated/resources/CodeSystem-DocumentationSections-ar.json"
         },
         "localPath": "output-ast/resources/CodeSystem/DocumentationSections-ar--eed2b027.json",
@@ -1345,10 +1623,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1361,10 +1639,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-es",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-es.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-es.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-es.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-es.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-es.html",
           "local": "fsh-generated/resources/CodeSystem-DocumentationSections-es.json"
         },
         "localPath": "output-ast/resources/CodeSystem/DocumentationSections-es--67acecc0.json",
@@ -1393,10 +1685,72 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
+      }
+    },
+    {
+      "key": "CodeSystem/DocumentationSections-fr",
+      "resourceType": "CodeSystem",
+      "id": "DocumentationSections-fr",
+      "name": "DocumentationSectionsFr",
+      "title": "DocumentationSections (fr displays, unofficial)",
+      "description": "Unofficial French displays for DocumentationSections: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-fr",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-fr.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-fr.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-fr.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-fr.html"
+        }
+      },
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-fr.html",
+          "local": "fsh-generated/resources/CodeSystem-DocumentationSections-fr.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/DocumentationSections-fr--2f9fa6fa.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
+        },
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1409,10 +1763,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-ru",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-ru.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-ru.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-ru.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-ru.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-ru.html",
           "local": "fsh-generated/resources/CodeSystem-DocumentationSections-ru.json"
         },
         "localPath": "output-ast/resources/CodeSystem/DocumentationSections-ru--0366caf2.json",
@@ -1441,10 +1809,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1457,10 +1825,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-zh",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-zh.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-zh.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-zh.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-zh.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-DocumentationSections-zh.html",
           "local": "fsh-generated/resources/CodeSystem-DocumentationSections-zh.json"
         },
         "localPath": "output-ast/resources/CodeSystem/DocumentationSections-zh--0f6e63b3.json",
@@ -1489,10 +1871,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1505,10 +1887,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/HL-TYPE-es",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-es.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-es.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-es.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-es.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-es.html",
           "local": "fsh-generated/resources/CodeSystem-HL-TYPE-es.json"
         },
         "localPath": "output-ast/resources/CodeSystem/HL-TYPE-es--07529c8e.json",
@@ -1537,10 +1933,72 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
+      }
+    },
+    {
+      "key": "CodeSystem/HL-TYPE-fr",
+      "resourceType": "CodeSystem",
+      "id": "HL-TYPE-fr",
+      "name": "HLTYPEFr",
+      "title": "HL.TYPE (fr displays, unofficial)",
+      "description": "Unofficial French displays for HL.TYPE: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/HL-TYPE-fr",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-fr.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-fr.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-fr.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-fr.html"
+        }
+      },
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-fr.html",
+          "local": "fsh-generated/resources/CodeSystem-HL-TYPE-fr.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/HL-TYPE-fr--fae3be66.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
+        },
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1553,10 +2011,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/HL-TYPE-ru",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-ru.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-ru.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-ru.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-ru.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL-TYPE-ru.html",
           "local": "fsh-generated/resources/CodeSystem-HL-TYPE-ru.json"
         },
         "localPath": "output-ast/resources/CodeSystem/HL-TYPE-ru--6db5ac1c.json",
@@ -1585,10 +2057,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1647,10 +2119,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1663,10 +2135,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE-ar",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL.TYPE-ar.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL.TYPE-ar.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL.TYPE-ar.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL.TYPE-ar.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL.TYPE-ar.html",
           "local": "fsh-generated/resources/CodeSystem-HL.TYPE-ar.json"
         },
         "localPath": "output-ast/resources/CodeSystem/HL.TYPE-ar--3e3a3a13.json",
@@ -1695,10 +2181,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1711,10 +2197,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE-zh",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL.TYPE-zh.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL.TYPE-zh.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL.TYPE-zh.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL.TYPE-zh.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-HL.TYPE-zh.html",
           "local": "fsh-generated/resources/CodeSystem-HL.TYPE-zh.json"
         },
         "localPath": "output-ast/resources/CodeSystem/HL.TYPE-zh--54065351.json",
@@ -1743,10 +2243,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1759,10 +2259,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/ICVP-Core-es",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-es.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-es.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-es.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-es.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-es.html",
           "local": "fsh-generated/resources/CodeSystem-ICVP-Core-es.json"
         },
         "localPath": "output-ast/resources/CodeSystem/ICVP-Core-es--44eb3e9c.json",
@@ -1791,10 +2305,72 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
+      }
+    },
+    {
+      "key": "CodeSystem/ICVP-Core-fr",
+      "resourceType": "CodeSystem",
+      "id": "ICVP-Core-fr",
+      "name": "ICVPCoreFr",
+      "title": "ICVP.Core (fr displays, unofficial)",
+      "description": "Unofficial French displays for ICVP.Core: an agent translation that no person has signed off.",
+      "canonical": "http://smart.who.int/trust-phw/CodeSystem/ICVP-Core-fr",
+      "version": "0.2.0-litlfred",
+      "category": "Terminology: Code Systems",
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-fr.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-fr.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-fr.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-fr.html"
+        }
+      },
+      "materialization": {
+        "state": "materialized",
+        "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-fr.html",
+          "local": "fsh-generated/resources/CodeSystem-ICVP-Core-fr.json"
+        },
+        "localPath": "output-ast/resources/CodeSystem/ICVP-Core-fr--425683c6.json",
+        "gates": {
+          "size": {
+            "verdict": "unknown",
+            "basis": "ig-ast validity does not measure the AST's size"
+          },
+          "restrictions": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          },
+          "retention": {
+            "verdict": "permitted",
+            "basis": "a compiled cache, regenerable from its inputs by a full IG Publisher run"
+          },
+          "sourceLoss": {
+            "verdict": "unknown",
+            "basis": "a compiled copy is derived, not the source; it cannot stand in for it"
+          },
+          "copyright": {
+            "verdict": "unknown",
+            "basis": "derived from the IG's own source; inherits its terms, not assessed here"
+          }
+        },
+        "purpose": "compiled",
+        "inputs": {
+          "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
+        },
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1807,10 +2383,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/ICVP-Core-ru",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-ru.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-ru.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-ru.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-ru.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP-Core-ru.html",
           "local": "fsh-generated/resources/CodeSystem-ICVP-Core-ru.json"
         },
         "localPath": "output-ast/resources/CodeSystem/ICVP-Core-ru--f87f839a.json",
@@ -1839,10 +2429,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1901,10 +2491,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1917,10 +2507,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core-ar",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP.Core-ar.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP.Core-ar.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP.Core-ar.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP.Core-ar.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP.Core-ar.html",
           "local": "fsh-generated/resources/CodeSystem-ICVP.Core-ar.json"
         },
         "localPath": "output-ast/resources/CodeSystem/ICVP.Core-ar--b61404f8.json",
@@ -1949,10 +2553,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -1965,10 +2569,24 @@
       "canonical": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core-zh",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Code Systems",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP.Core-zh.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP.Core-zh.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP.Core-zh.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP.Core-zh.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/CodeSystem-ICVP.Core-zh.html",
           "local": "fsh-generated/resources/CodeSystem-ICVP.Core-zh.json"
         },
         "localPath": "output-ast/resources/CodeSystem/ICVP.Core-zh--fc3b2e57.json",
@@ -1997,10 +2615,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2059,10 +2677,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2074,10 +2692,24 @@
       "profiles": [
         "http://smart.who.int/trust-phw/StructureDefinition/PHWExplicitConsent"
       ],
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-LinaExplicitConsent.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-LinaExplicitConsent.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-LinaExplicitConsent.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-LinaExplicitConsent.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/Consent-LinaExplicitConsent.html",
           "local": "fsh-generated/resources/Consent-LinaExplicitConsent.json"
         },
         "localPath": "output-ast/resources/Consent/LinaExplicitConsent--07b281d6.json",
@@ -2106,10 +2738,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2121,10 +2753,24 @@
       "profiles": [
         "http://smart.who.int/trust-phw/StructureDefinition/PHWImpliedConsent"
       ],
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-LinaImpliedConsent.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-LinaImpliedConsent.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-LinaImpliedConsent.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-LinaImpliedConsent.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/Consent-LinaImpliedConsent.html",
           "local": "fsh-generated/resources/Consent-LinaImpliedConsent.json"
         },
         "localPath": "output-ast/resources/Consent/LinaImpliedConsent--1da9b41e.json",
@@ -2153,10 +2799,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2168,10 +2814,24 @@
       "profiles": [
         "http://smart.who.int/trust-phw/StructureDefinition/PHWExplicitConsent"
       ],
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-PilgrimConsentHostUse.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-PilgrimConsentHostUse.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-PilgrimConsentHostUse.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-PilgrimConsentHostUse.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/Consent-PilgrimConsentHostUse.html",
           "local": "fsh-generated/resources/Consent-PilgrimConsentHostUse.json"
         },
         "localPath": "output-ast/resources/Consent/PilgrimConsentHostUse--3dcb8632.json",
@@ -2200,10 +2860,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2215,10 +2875,24 @@
       "profiles": [
         "http://smart.who.int/trust-phw/StructureDefinition/PHWExplicitConsent"
       ],
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-PilgrimConsentOriginRelease.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-PilgrimConsentOriginRelease.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-PilgrimConsentOriginRelease.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Consent-PilgrimConsentOriginRelease.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/Consent-PilgrimConsentOriginRelease.html",
           "local": "fsh-generated/resources/Consent-PilgrimConsentOriginRelease.json"
         },
         "localPath": "output-ast/resources/Consent/PilgrimConsentOriginRelease--b4045467.json",
@@ -2247,10 +2921,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2259,10 +2933,24 @@
       "id": "LinaWalletConfirmation",
       "title": "LinaWalletConfirmation",
       "category": "Other",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/DocumentReference-LinaWalletConfirmation.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/DocumentReference-LinaWalletConfirmation.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/DocumentReference-LinaWalletConfirmation.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/DocumentReference-LinaWalletConfirmation.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/DocumentReference-LinaWalletConfirmation.html",
           "local": "fsh-generated/resources/DocumentReference-LinaWalletConfirmation.json"
         },
         "localPath": "output-ast/resources/DocumentReference/LinaWalletConfirmation--5a0bd0e8.json",
@@ -2291,10 +2979,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2351,10 +3039,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2410,10 +3098,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2423,10 +3111,24 @@
       "title": "HomeHIE",
       "description": "Home Health Information Exchange (example)",
       "category": "Other",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Organization-HomeHIE.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Organization-HomeHIE.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Organization-HomeHIE.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Organization-HomeHIE.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/Organization-HomeHIE.html",
           "local": "fsh-generated/resources/Organization-HomeHIE.json"
         },
         "localPath": "output-ast/resources/Organization/HomeHIE--cd19fb86.json",
@@ -2455,10 +3157,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2468,10 +3170,24 @@
       "title": "HostMoHExample",
       "description": "Ministry of Health Saudi Arabia (example)",
       "category": "Other",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Organization-HostMoHExample.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Organization-HostMoHExample.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Organization-HostMoHExample.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Organization-HostMoHExample.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/Organization-HostMoHExample.html",
           "local": "fsh-generated/resources/Organization-HostMoHExample.json"
         },
         "localPath": "output-ast/resources/Organization/HostMoHExample--831088af.json",
@@ -2500,10 +3216,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2559,10 +3275,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2618,10 +3334,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2631,10 +3347,24 @@
       "title": "OriginHIEExample",
       "description": "Ministry of Health Malaysia Health Information Exchange (example)",
       "category": "Other",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Organization-OriginHIEExample.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Organization-OriginHIEExample.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Organization-OriginHIEExample.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Organization-OriginHIEExample.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/Organization-OriginHIEExample.html",
           "local": "fsh-generated/resources/Organization-OriginHIEExample.json"
         },
         "localPath": "output-ast/resources/Organization/OriginHIEExample--2d908025.json",
@@ -2663,10 +3393,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2675,10 +3405,24 @@
       "id": "LinaPatient",
       "title": "LinaPatient",
       "category": "Other",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Patient-LinaPatient.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Patient-LinaPatient.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Patient-LinaPatient.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Patient-LinaPatient.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/Patient-LinaPatient.html",
           "local": "fsh-generated/resources/Patient-LinaPatient.json"
         },
         "localPath": "output-ast/resources/Patient/LinaPatient--f82b2aaa.json",
@@ -2707,10 +3451,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2719,10 +3463,24 @@
       "id": "PilgrimExample",
       "title": "PilgrimExample",
       "category": "Other",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Patient-PilgrimExample.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Patient-PilgrimExample.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Patient-PilgrimExample.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/Patient-PilgrimExample.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/Patient-PilgrimExample.html",
           "local": "fsh-generated/resources/Patient-PilgrimExample.json"
         },
         "localPath": "output-ast/resources/Patient/PilgrimExample--0f251eb8.json",
@@ -2751,10 +3509,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2815,10 +3573,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2884,10 +3642,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -2953,10 +3711,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3022,10 +3780,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3091,10 +3849,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3160,10 +3918,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3229,10 +3987,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3298,10 +4056,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3367,10 +4125,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3429,10 +4187,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3491,10 +4249,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3553,10 +4311,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3615,10 +4373,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3681,10 +4439,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -3755,10 +4513,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3817,10 +4575,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3879,10 +4637,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -3941,10 +4699,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -4015,10 +4773,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -4089,10 +4847,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -4163,10 +4921,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -4237,10 +4995,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -4303,10 +5061,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -4377,10 +5135,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -4451,10 +5209,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -4513,10 +5271,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -4575,10 +5333,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -4637,10 +5395,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -4703,10 +5461,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -4781,10 +5539,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -4855,10 +5613,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -4917,10 +5675,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -4991,10 +5749,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -5053,10 +5811,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -5069,10 +5827,24 @@
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/PHWConsent",
       "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWConsent.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWConsent.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWConsent.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWConsent.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWConsent.html",
           "local": "fsh-generated/resources/StructureDefinition-PHWConsent.json"
         },
         "localPath": "output-ast/resources/StructureDefinition/PHWConsent--0773a325.json",
@@ -5101,10 +5873,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -5117,10 +5889,24 @@
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/PHWDocumentWithConsent",
       "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWDocumentWithConsent.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWDocumentWithConsent.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWDocumentWithConsent.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWDocumentWithConsent.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWDocumentWithConsent.html",
           "local": "fsh-generated/resources/StructureDefinition-PHWDocumentWithConsent.json"
         },
         "localPath": "output-ast/resources/StructureDefinition/PHWDocumentWithConsent--48488735.json",
@@ -5149,10 +5935,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -5165,10 +5951,24 @@
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/PHWExplicitConsent",
       "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWExplicitConsent.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWExplicitConsent.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWExplicitConsent.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWExplicitConsent.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWExplicitConsent.html",
           "local": "fsh-generated/resources/StructureDefinition-PHWExplicitConsent.json"
         },
         "localPath": "output-ast/resources/StructureDefinition/PHWExplicitConsent--760b8881.json",
@@ -5197,10 +5997,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -5213,10 +6013,24 @@
       "canonical": "http://smart.who.int/trust-phw/StructureDefinition/PHWImpliedConsent",
       "version": "0.2.0-litlfred",
       "category": "Structures: Resource Profiles",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWImpliedConsent.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWImpliedConsent.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWImpliedConsent.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWImpliedConsent.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/StructureDefinition-PHWImpliedConsent.html",
           "local": "fsh-generated/resources/StructureDefinition-PHWImpliedConsent.json"
         },
         "localPath": "output-ast/resources/StructureDefinition/PHWImpliedConsent--489c5f86.json",
@@ -5245,10 +6059,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -5307,10 +6121,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -5369,10 +6183,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -5443,10 +6257,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       }
     },
     {
@@ -5505,10 +6319,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -5579,10 +6393,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -5653,10 +6467,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "openapi": {
@@ -5727,10 +6541,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "displays": {
@@ -5811,10 +6625,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "displays": {
@@ -5895,10 +6709,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "displays": {
@@ -5979,10 +6793,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "displays": {
@@ -6017,10 +6831,24 @@
       "canonical": "http://smart.who.int/trust-phw/ValueSet/PHWExplicitConsentKind",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Value Sets",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWExplicitConsentKind.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWExplicitConsentKind.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWExplicitConsentKind.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWExplicitConsentKind.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWExplicitConsentKind.html",
           "local": "fsh-generated/resources/ValueSet-PHWExplicitConsentKind.json"
         },
         "localPath": "output-ast/resources/ValueSet/PHWExplicitConsentKind--363f110e.json",
@@ -6049,10 +6877,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "displays": {
@@ -6087,10 +6915,24 @@
       "canonical": "http://smart.who.int/trust-phw/ValueSet/PHWImpliedConsentKind",
       "version": "0.2.0-litlfred",
       "category": "Terminology: Value Sets",
-      "published": {},
+      "published": {
+        "json": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWImpliedConsentKind.json"
+        },
+        "xml": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWImpliedConsentKind.xml"
+        },
+        "ttl": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWImpliedConsentKind.ttl"
+        },
+        "html": {
+          "url": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWImpliedConsentKind.html"
+        }
+      },
       "materialization": {
         "state": "materialized",
         "provenance": {
+          "upstream": "https://litlfred.github.io/smart-trust-phw/ValueSet-PHWImpliedConsentKind.html",
           "local": "fsh-generated/resources/ValueSet-PHWImpliedConsentKind.json"
         },
         "localPath": "output-ast/resources/ValueSet/PHWImpliedConsentKind--26518376.json",
@@ -6119,10 +6961,10 @@
         "purpose": "compiled",
         "inputs": {
           "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-          "sourceRevision": "1e44fc31959132396cc39189bbd8310e90009873",
-          "inputDigest": "19d22310aa29a093b2bbaab10710930071e43084da52fe1fa2af13f84a25eb29"
+          "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
+          "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
         },
-        "materializedAt": "2026-11-07T18:24:46.346987437Z"
+        "materializedAt": "2026-11-10T20:02:19.364248963Z"
       },
       "sidecars": {
         "displays": {
@@ -6151,7 +6993,7 @@
   "package": {
     "url": "https://litlfred.github.io/smart-trust-phw/package.tgz",
     "localPath": "fhir-artifact-index/package.tgz",
-    "bytes": 778523
+    "bytes": 780573
   },
   "fhirVersion": [
     "4.0.1"

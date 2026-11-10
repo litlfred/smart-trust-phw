@@ -14,7 +14,7 @@
   "title" : "GDHCN Trust Network - Personal Health Wallet",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-07T18:20:21+00:00",
+  "date" : "2026-11-10T19:59:03+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -547,6 +547,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/DisclosureStatements-fr"
+      },
+      "name" : "DisclosureStatements (fr displays, unofficial)",
+      "description" : "Unofficial French displays for DisclosureStatements: an agent translation that no person has signed off.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/DisclosureStatements-ru"
       },
       "name" : "DisclosureStatements (ru displays, unofficial)",
@@ -587,6 +599,18 @@
       },
       "name" : "DocumentationSections (es displays, unofficial)",
       "description" : "Unofficial Spanish displays for DocumentationSections: an agent translation that no person has signed off.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DocumentationSections-fr"
+      },
+      "name" : "DocumentationSections (fr displays, unofficial)",
+      "description" : "Unofficial French displays for DocumentationSections: an agent translation that no person has signed off.",
       "exampleBoolean" : false
     },
     {
@@ -935,6 +959,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/DVCRelationshipStatus-fr"
+      },
+      "name" : "DVCRelationshipStatus (fr displays, unofficial)",
+      "description" : "Unofficial French displays for DVCRelationshipStatus: an agent translation that no person has signed off.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/DVCRelationshipStatus-ru"
       },
       "name" : "DVCRelationshipStatus (ru displays, unofficial)",
@@ -1006,6 +1042,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/HL-TYPE-fr"
+      },
+      "name" : "HL.TYPE (fr displays, unofficial)",
+      "description" : "Unofficial French displays for HL.TYPE: an agent translation that no person has signed off.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/HL-TYPE-ru"
       },
       "name" : "HL.TYPE (ru displays, unofficial)",
@@ -1069,6 +1117,18 @@
       },
       "name" : "ICVP.Core (es displays, unofficial)",
       "description" : "Unofficial Spanish displays for ICVP.Core: an agent translation that no person has signed off.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ICVP-Core-fr"
+      },
+      "name" : "ICVP.Core (fr displays, unofficial)",
+      "description" : "Unofficial French displays for ICVP.Core: an agent translation that no person has signed off.",
       "exampleBoolean" : false
     },
     {

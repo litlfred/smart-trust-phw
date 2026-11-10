@@ -1,0 +1,176 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_ActOnDecisionSupport",
+ "markers": [
+  {
+   "id": "Task_Apply",
+   "name": "Apply the PlanDefinition",
+   "left": 33.15,
+   "top": 11.36,
+   "box": {
+    "left": 24.44,
+    "top": 23.86,
+    "width": 2.7,
+    "height": 5.45
+   }
+  },
+  {
+   "id": "Task_Review",
+   "name": "Accept or decline the guidance",
+   "left": 47.75,
+   "top": 52.27,
+   "box": {
+    "left": 39.04,
+    "top": 64.77,
+    "width": 2.7,
+    "height": 5.45
+   }
+  },
+  {
+   "id": "Task_Activate",
+   "name": "Update the care plan",
+   "left": 84.83,
+   "top": 11.36,
+   "box": {
+    "left": 76.12,
+    "top": 23.86,
+    "width": 2.7,
+    "height": 5.45
+   }
+  },
+  {
+   "id": "Task_Rationale",
+   "name": "Note the reason (optional)",
+   "left": 78.09,
+   "top": 73.86,
+   "box": {
+    "left": 69.38,
+    "top": 86.36,
+    "width": 2.7,
+    "height": 5.45
+   }
+  }
+ ],
+ "tasks": {
+  "Task_Apply": {
+   "id": "Task_Apply",
+   "name": "Apply the PlanDefinition",
+   "type": "bpmn:ServiceTask",
+   "lane": "Point-of-care system",
+   "skills": [
+    {
+     "name": "apply-decision-support"
+    }
+   ],
+   "role": {
+    "name": "point-of-care-system",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-smart-base-scenarios-roles-json-point-of-care-system",
+    "title": "Point-of-care system",
+    "skills": [
+     {
+      "name": "activate-accepted-guidance"
+     },
+     {
+      "name": "apply-decision-support"
+     },
+     {
+      "name": "extract-questionnaire-response"
+     }
+    ]
+   }
+  },
+  "Task_Review": {
+   "id": "Task_Review",
+   "name": "Accept or decline the guidance",
+   "type": "bpmn:UserTask",
+   "lane": "Health worker",
+   "skills": [
+    {
+     "name": "review-decision-support-guidance"
+    }
+   ],
+   "role": {
+    "name": "health-worker",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-smart-base-scenarios-roles-json-health-worker",
+    "title": "Health worker",
+    "skills": [
+     {
+      "name": "complete-sdc-questionnaire"
+     },
+     {
+      "name": "inform-client"
+     },
+     {
+      "name": "record-decision-rationale"
+     },
+     {
+      "name": "review-client-history"
+     },
+     {
+      "name": "review-decision-support-guidance"
+     }
+    ]
+   }
+  },
+  "Task_Activate": {
+   "id": "Task_Activate",
+   "name": "Update the care plan",
+   "type": "bpmn:ServiceTask",
+   "lane": "Point-of-care system",
+   "skills": [
+    {
+     "name": "activate-accepted-guidance"
+    }
+   ],
+   "role": {
+    "name": "point-of-care-system",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-smart-base-scenarios-roles-json-point-of-care-system",
+    "title": "Point-of-care system",
+    "skills": [
+     {
+      "name": "activate-accepted-guidance"
+     },
+     {
+      "name": "apply-decision-support"
+     },
+     {
+      "name": "extract-questionnaire-response"
+     }
+    ]
+   }
+  },
+  "Task_Rationale": {
+   "id": "Task_Rationale",
+   "name": "Note the reason (optional)",
+   "type": "bpmn:UserTask",
+   "lane": "Health worker",
+   "skills": [
+    {
+     "name": "record-decision-rationale"
+    }
+   ],
+   "role": {
+    "name": "health-worker",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-smart-base-scenarios-roles-json-health-worker",
+    "title": "Health worker",
+    "skills": [
+     {
+      "name": "complete-sdc-questionnaire"
+     },
+     {
+      "name": "inform-client"
+     },
+     {
+      "name": "record-decision-rationale"
+     },
+     {
+      "name": "review-client-history"
+     },
+     {
+      "name": "review-decision-support-guidance"
+     }
+    ]
+   }
+  }
+ }
+}

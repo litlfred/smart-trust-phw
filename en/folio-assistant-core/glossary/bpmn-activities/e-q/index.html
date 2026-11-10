@@ -913,16 +913,16 @@
 
 <p>Candidate terms extracted from every BPMN task and call activity: <code class="language-plaintext highlighter-rouge">name</code> as the label, its own <code class="language-plaintext highlighter-rouge">&lt;documentation&gt;</code> as the definition, the element id as the code. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: bootstrap 38 (<a href="../../../../../assets/glossary/bootstrap--kg-bpmn-activities.skos.jsonld">SKOS</a>) · bootstrap-tools 7 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-bpmn-activities.skos.jsonld">SKOS</a>) · cat-harness 630 (<a href="../../../../../assets/glossary/cat-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · fhir-harness 49 (<a href="../../../../../assets/glossary/fhir-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · folio-assistant-core 250 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-bpmn-activities.skos.jsonld">SKOS</a>) · smart-base 153 (<a href="../../../../../assets/glossary/smart-base--kg-bpmn-activities.skos.jsonld">SKOS</a>) · who-iris 34 (<a href="../../../../../assets/glossary/who-iris--kg-bpmn-activities.skos.jsonld">SKOS</a>).</p>
+<p>From: bootstrap 38 (<a href="../../../../../assets/glossary/bootstrap--kg-bpmn-activities.skos.jsonld">SKOS</a>) · bootstrap-tools 7 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-bpmn-activities.skos.jsonld">SKOS</a>) · cat-harness 630 (<a href="../../../../../assets/glossary/cat-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · fhir-harness 49 (<a href="../../../../../assets/glossary/fhir-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · folio-assistant-core 250 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-bpmn-activities.skos.jsonld">SKOS</a>) · smart-base 159 (<a href="../../../../../assets/glossary/smart-base--kg-bpmn-activities.skos.jsonld">SKOS</a>) · who-iris 34 (<a href="../../../../../assets/glossary/who-iris--kg-bpmn-activities.skos.jsonld">SKOS</a>).</p>
 
 <p>One of 3 pages of this type, split by the first letter of the label: <a href="../../../../../en/folio-assistant-core/glossary/bpmn-activities/">all parts</a>.</p>
 
-<p><strong>Size:</strong> this page holds 362 terms and is 298 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 364 terms and is 299 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
 <thead><tr><th>target</th><th>mapped</th><th>unmapped</th><th>undetermined</th><th>why undetermined</th></tr></thead>
-<tbody><tr><td><code>fhir</code></td><td>0</td><td>1118</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>1118</td><td>0</td><td>—</td></tr></tbody>
+<tbody><tr><td><code>fhir</code></td><td>0</td><td>1124</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>1124</td><td>0</td><td>—</td></tr></tbody>
 </table></div>
 <p class="fa-gloss-mapping-note"><strong>Undetermined is never “no match”.</strong> 
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
@@ -932,7 +932,7 @@ be a term this corpus is right to coin.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">362</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">364</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-E">E</a> <a href="#letter-F">F</a> <a href="#letter-G">G</a> <a href="#letter-H">H</a> <a href="#letter-I">I</a> <a href="#letter-J">J</a> <a href="#letter-K">K</a> <a href="#letter-L">L</a> <a href="#letter-M">M</a> <a href="#letter-N">N</a> <a href="#letter-O">O</a> <a href="#letter-P">P</a> <a href="#letter-Q">Q</a></nav>
 <h2 id="letter-E">
@@ -1132,6 +1132,13 @@ Extract &amp; Skolemize RDF Dataset <span class="fa-gloss-status">candidate, ext
 <dd>
 <p>Extract the target RDF triples and ensure strict upstream skolemization: transform every blank node into a deterministic IRI under the dataset namespace. Zero blank nodes allowed in serialized N-Quads.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/kg/nquads-distribution.bpmn"><code>cat-harness/processes/kg/nquads-distribution.bpmn#A_ExtractSkolemize</code></a></p>
+</dd>
+<dt id="smart-base--kg-bpmn-activities--process_questionnairedatacapture.task_extract" data-fa-state="extracted" data-fa-gloss="">
+Extract and save the resources <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Run SDC $extract by the method the Questionnaire declares and save the resulting transaction Bundle whole, queued when offline.</p>
+<p class="fa-gloss-meta">BPMN activities of smart-base · source <a href="https://github.com/litlfred/smart-base/blob/main/smart-base/processes/content/questionnaire-data-capture.bpmn"><code>smart-base/processes/content/questionnaire-data-capture.bpmn#Task_Extract</code></a></p>
 </dd>
 <dt id="folio-assistant-core--kg-bpmn-activities--process_extractstructure.task_candidates" data-fa-state="extracted" data-fa-gloss="">
 Extract claim candidates <span class="fa-gloss-status">candidate, extracted</span>
@@ -2608,6 +2615,13 @@ Note the missed coupling on the work plan <span class="fa-gloss-status">candidat
 <dd>
 <p>Append to the IG AST work-plan item: the resource key, the differential path, and why it is unexplained. A note on the existing item, not a new one unless the owner asks; creating an item is not idempotent, so check before creating.</p>
 <p class="fa-gloss-meta">BPMN activities of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/processes/content/ig-ast-delta-review.bpmn"><code>fhir-harness/processes/content/ig-ast-delta-review.bpmn#Task_FileCoupling</code></a></p>
+</dd>
+<dt id="smart-base--kg-bpmn-activities--process_actondecisionsupport.task_rationale" data-fa-state="extracted" data-fa-gloss="">
+Note the reason (optional) <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Optional: pick a coded reason or type one, or neither; one FHIR Provenance records who decided what about which guidance, and why. Never required, never waited for.</p>
+<p class="fa-gloss-meta">BPMN activities of smart-base · source <a href="https://github.com/litlfred/smart-base/blob/main/smart-base/processes/content/act-on-decision-support.bpmn"><code>smart-base/processes/content/act-on-decision-support.bpmn#Task_Rationale</code></a></p>
 </dd>
 </dl>
 <h2 id="letter-O">

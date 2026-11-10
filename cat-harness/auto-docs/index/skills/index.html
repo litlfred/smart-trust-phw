@@ -2310,8 +2310,20 @@
   <td>Where to start when a person or an agent reviews a document folio larger than one chapter, such as a DAK or an L1 digital transformation handbook.</td>
 </tr>
 <tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/activate-accepted-guidance.md"><code>activate-accepted-guidance</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/activate-accepted-guidance.md</span></td>
+  <td>The point-of-care system carries out the health worker's decisions on decision-support guidance: each accepted action's request becomes active (intent plan or order) and joins the client's CarePlan; a declined action is…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/apply-decision-support.md"><code>apply-decision-support</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/apply-decision-support.md</span></td>
+  <td>The point-of-care system applies a DAK decision table's PlanDefinition to one client ($apply) and gets the proposed actions back as a RequestGroup (R4; RequestOrchestration in R5), or as CDS Hooks cards when the guidanc…</td>
+</tr>
+<tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/classify-and-code-content.md"><code>classify-and-code-content</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/classify-and-code-content.md</span></td>
   <td>Classify and code L1 narrative content (recommendations, implementation practices, remarks, and proposed coverage exclusions) and L2 DAK slots (personas, business processes, guideline domains, conditions, interventions,…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/complete-sdc-questionnaire.md"><code>complete-sdc-questionnaire</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/complete-sdc-questionnaire.md</span></td>
+  <td>A health worker (or a client, on their own device) completes a FHIR R4 Questionnaire conforming to Structured Data Capture as their device renders it, and the result is a QuestionnaireResponse.</td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/dak-l1-library.md"><code>dak-l1-library</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/dak-l1-library.md</span></td>
@@ -2334,6 +2346,10 @@
   <td>Turn a WHO Digital Transformation Handbook that exists only as an L1 publication (ingested in who-iris) into an L2 DTH in its own repository that depends on smart-ra: write the handbook's workplan first (what goes in it…</td>
 </tr>
 <tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/extract-questionnaire-response.md"><code>extract-questionnaire-response</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/extract-questionnaire-response.md</span></td>
+  <td>The point-of-care system turns a completed QuestionnaireResponse into the FHIR resources it stands for, by the extraction its SDC Questionnaire declares (StructureMap-based, definition-based or observation-based $extrac…</td>
+</tr>
+<tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/grade.md"><code>grade</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/grade.md</span></td>
   <td>GRADE — the grading system a WHO guideline folio declares for certainty of evidence, and the Evidence-to-Decision judgement a recommendation rests on.</td>
 </tr>
@@ -2348,6 +2364,10 @@
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/indicator-extraction.md"><code>indicator-extraction</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/indicator-extraction.md</span></td>
   <td>Extract the indicators an L1 source prints (indicator reference or metadata sheets: name, numerator, denominator, disaggregation, definition, data sources) as L1 <code>indicator</code> nodes with every printed field, then draft on…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/inform-client.md"><code>inform-client</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/inform-client.md</span></td>
+  <td>A health worker tells the client (or caregiver) what was decided and what happens next, in words and, where the DAK gives one, on a slip or card: a referral, a return date, a result.</td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/l2-component-edit-review.md"><code>l2-component-edit-review</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/l2-component-edit-review.md</span></td>
@@ -2392,6 +2412,18 @@
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/recommendation-scenarios.md"><code>recommendation-scenarios</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/recommendation-scenarios.md</span></td>
   <td>Join each L1 recommendation to who acts on it and during which business process: one smart-kg L2 user-scenario candidate per recommendation, from the agent's mapping, reusing the target guide's personas and processes fi…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/record-decision-rationale.md"><code>record-decision-rationale</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/record-decision-rationale.md</span></td>
+  <td>OPTIONAL and never blocking: a health worker who chooses to may note why they accepted or declined decision-support guidance, in one tap plus an optional coded or free-text reason.</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/review-client-history.md"><code>review-client-history</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/review-client-history.md</span></td>
+  <td>A health worker reads the client's history as their device shows it (an International Patient Summary, imported records, or a paper card and what the client reports) and takes into account what bears on today's care, we…</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/review-decision-support-guidance.md"><code>review-decision-support-guidance</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/review-decision-support-guidance.md</span></td>
+  <td>A health worker sees the decision-support guidance for one client on their device (the proposed actions of a RequestGroup or CDS Hooks cards) and accepts or declines each action; modifies one only where the device offer…</td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/smart-base/blob/main/smart-base/skills/content/authoring-who-smart-guidelines/smart-base-tools.md"><code>smart-base-tools</code></a><br><span class="p">smart-base/skills/content/authoring-who-smart-guidelines/smart-base-tools.md</span></td>
