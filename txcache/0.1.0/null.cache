@@ -1,0 +1,69 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "language": "en", "url": "http://hl7.org/fhir/ValueSet/narrative-status|4.0.1"}####
+e: {
+  "source" : tx.fhir.org,
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "meta" : {
+    "lastUpdated" : "2019-11-01T09:29:23.356+11:00",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/narrative-status",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.3.55"
+  }],
+  "version" : "4.0.1",
+  "name" : "NarrativeStatus",
+  "title" : "NarrativeStatus",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2019-11-01T09:29:23+11:00",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.org/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@lists.hl7.org"
+    }]
+  }],
+  "immutable" : true,
+  "expansion" : {
+    "identifier" : "urn:uuid:c2bb513f-8fd8-4142-8a56-86a8c82684a5",
+    "timestamp" : "2026-11-07T18:22:08.083Z",
+    "total" : 4,
+    "parameter" : [{
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://hl7.org/fhir/narrative-status|4.0.1"
+    }],
+    "contains" : [{
+      "system" : "http://hl7.org/fhir/narrative-status",
+      "code" : "generated",
+      "display" : "Generated"
+    },
+    {
+      "system" : "http://hl7.org/fhir/narrative-status",
+      "code" : "extensions",
+      "display" : "Extensions"
+    },
+    {
+      "system" : "http://hl7.org/fhir/narrative-status",
+      "code" : "additional",
+      "display" : "Additional"
+    },
+    {
+      "system" : "http://hl7.org/fhir/narrative-status",
+      "code" : "empty",
+      "display" : "Empty"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
