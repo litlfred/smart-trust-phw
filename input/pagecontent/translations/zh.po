@@ -5392,8 +5392,8 @@ msgstr "本页将包含本实施指南的测试工件。"
 #. Source: input/pagecontent/transactions.md:5
 #. URL: http://smart.who.int/trust-phw/transactions.html
 #: input/pagecontent/transactions.md:5
-msgid "A Holder requests an Issuer to generate a VHL\""
-msgstr "持有人请求签发方生成 VHL\""
+msgid "A Holder requests an Issuer to generate a VHL."
+msgstr "持有人请求签发方生成 VHL。"
 
 #. Source: input/pagecontent/transactions.md:14
 #. URL: http://smart.who.int/trust-phw/transactions.html
@@ -5416,7 +5416,7 @@ msgstr "生成 VHL 请求"
 #. Source: input/pagecontent/transactions.md:22
 #. URL: http://smart.who.int/trust-phw/transactions.html
 #: input/pagecontent/transactions.md:22
-msgid "Issuer has performed any necceasry document generation, digital signatures and has generated a VHL according to a content profile"
+msgid "Issuer has performed any necessary document generation, digital signatures and has generated a VHL according to a content profile"
 msgstr "签发方已完成所有必要的文档生成和数字签名，并已按照内容 profile 生成 VHL"
 
 #. Source: input/pagecontent/transactions.md:18

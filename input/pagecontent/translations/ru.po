@@ -5392,8 +5392,8 @@ msgstr "На этой странице будут размещены тесто�
 #. Source: input/pagecontent/transactions.md:5
 #. URL: http://smart.who.int/trust-phw/transactions.html
 #: input/pagecontent/transactions.md:5
-msgid "A Holder requests an Issuer to generate a VHL\""
-msgstr "Владелец запрашивает у эмитента формирование VHL\""
+msgid "A Holder requests an Issuer to generate a VHL."
+msgstr "Владелец запрашивает у эмитента формирование VHL."
 
 #. Source: input/pagecontent/transactions.md:14
 #. URL: http://smart.who.int/trust-phw/transactions.html
@@ -5416,7 +5416,7 @@ msgstr "Запрос на формирование VHL"
 #. Source: input/pagecontent/transactions.md:22
 #. URL: http://smart.who.int/trust-phw/transactions.html
 #: input/pagecontent/transactions.md:22
-msgid "Issuer has performed any necceasry document generation, digital signatures and has generated a VHL according to a content profile"
+msgid "Issuer has performed any necessary document generation, digital signatures and has generated a VHL according to a content profile"
 msgstr "Эмитент выполнил всё необходимое формирование документов и цифровые подписи и сформировал VHL в соответствии с профилем содержимого"
 
 #. Source: input/pagecontent/transactions.md:18
