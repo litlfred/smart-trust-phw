@@ -19,7 +19,7 @@ msgstr ""
 #. Source: input/pagecontent/transactions.md:5
 #. URL: http://smart.who.int/trust-phw/transactions.html
 #: input/pagecontent/transactions.md:5
-msgid "A Holder requests an Issuer to generate a VHL\""
+msgid "A Holder requests an Issuer to generate a VHL."
 msgstr ""
 
 #. Source: input/pagecontent/transactions.md:14
@@ -43,7 +43,7 @@ msgstr ""
 #. Source: input/pagecontent/transactions.md:22
 #. URL: http://smart.who.int/trust-phw/transactions.html
 #: input/pagecontent/transactions.md:22
-msgid "Issuer has performed any necceasry document generation, digital signatures and has generated a VHL according to a content profile"
+msgid "Issuer has performed any necessary document generation, digital signatures and has generated a VHL according to a content profile"
 msgstr ""
 
 #. Source: input/pagecontent/transactions.md:18

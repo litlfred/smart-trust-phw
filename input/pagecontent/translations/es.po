@@ -5392,8 +5392,8 @@ msgstr "Esta página incluirá artefactos de prueba para esta guía de implement
 #. Source: input/pagecontent/transactions.md:5
 #. URL: http://smart.who.int/trust-phw/transactions.html
 #: input/pagecontent/transactions.md:5
-msgid "A Holder requests an Issuer to generate a VHL\""
-msgstr "Un titular solicita a un emisor que genere un VHL\""
+msgid "A Holder requests an Issuer to generate a VHL."
+msgstr "Un titular solicita a un emisor que genere un VHL."
 
 #. Source: input/pagecontent/transactions.md:14
 #. URL: http://smart.who.int/trust-phw/transactions.html
@@ -5416,7 +5416,7 @@ msgstr "Solicitud de generación de VHL"
 #. Source: input/pagecontent/transactions.md:22
 #. URL: http://smart.who.int/trust-phw/transactions.html
 #: input/pagecontent/transactions.md:22
-msgid "Issuer has performed any necceasry document generation, digital signatures and has generated a VHL according to a content profile"
+msgid "Issuer has performed any necessary document generation, digital signatures and has generated a VHL according to a content profile"
 msgstr "El emisor ha realizado toda generación de documentos y firma digital necesarias y ha generado un VHL conforme a un perfil de contenido"
 
 #. Source: input/pagecontent/transactions.md:18
