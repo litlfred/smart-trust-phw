@@ -248,7 +248,10 @@
   ],
   "site": {
     "landing": "smart-base",
-    "agentRun": true
+    "agentRun": true,
+    "publishAfter": [
+      "ig-ast-refresh.yml"
+    ]
   },
   "mountApprovers": [
     "litlfred"
