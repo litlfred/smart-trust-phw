@@ -36,7 +36,10 @@ for (const file of sources) {
   if (processIds(readFileSync(file, "utf-8")).length === 0) continue;
   const out = join(outDir, basename(file).replace(/\.bpmn$/, ".svg"));
   const shown = relative(root, out);
-  const got = await besideSource(r, file, processFile);
+  // A call activity links to its process's section of the page (an anchor
+  // per process in business-processes.md), not to the bare SVG (owner,
+  // 2026-11-11: "subprocess should link to process page").
+  const got = await besideSource(r, file, processFile, (_home, called) => `business-processes.html#${called}`);
   if ("error" in got) {
     console.error(`✗ ${relative(root, file)}: ${got.error}`);
     bad++;

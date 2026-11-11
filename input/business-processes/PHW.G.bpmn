@@ -79,56 +79,53 @@
   </bpmn:process>
   <bpmndi:BPMNDiagram id="PHW.G.Diagram">
     <bpmndi:BPMNPlane id="PHW.G.Plane" bpmnElement="PHW.G.Collaboration">
-      <bpmndi:BPMNShape id="PHW.G.Participant_di" bpmnElement="PHW.G.Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="1555" height="550" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.Lane.AuditWriter_di" bpmnElement="PHW.Lane.AuditWriter" isHorizontal="true"><dc:Bounds x="150" y="60" width="1525" height="250" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.Lane.DataRecipient_di" bpmnElement="PHW.Lane.DataRecipient" isHorizontal="true"><dc:Bounds x="150" y="310" width="1525" height="150" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.Lane.Auditor_di" bpmnElement="PHW.Lane.Auditor" isHorizontal="true"><dc:Bounds x="150" y="460" width="1525" height="150" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.G.Start_di" bpmnElement="PHW.G.Start"><dc:Bounds x="267" y="117" width="36" height="36" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.G.1_di" bpmnElement="PHW.G.1"><dc:Bounds x="405" y="95" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.G.3_di" bpmnElement="PHW.G.3"><dc:Bounds x="610" y="95" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.G.5_di" bpmnElement="PHW.G.5"><dc:Bounds x="815" y="345" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.G.6_di" bpmnElement="PHW.G.6"><dc:Bounds x="1020" y="95" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.G.7_di" bpmnElement="PHW.G.7"><dc:Bounds x="1225" y="495" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.G.End_di" bpmnElement="PHW.G.End"><dc:Bounds x="1497" y="517" width="36" height="36" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.G.ProvenanceLog_di" bpmnElement="PHW.G.ProvenanceLog"><dc:Bounds x="465" y="215" width="50" height="50" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.G.AuditRecordRepository_di" bpmnElement="PHW.G.AuditRecordRepository"><dc:Bounds x="670" y="215" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.G.Participant_di" bpmnElement="PHW.G.Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="1360" height="752" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.Lane.AuditWriter_di" bpmnElement="PHW.Lane.AuditWriter" isHorizontal="true"><dc:Bounds x="150" y="60" width="1330" height="364" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.Lane.DataRecipient_di" bpmnElement="PHW.Lane.DataRecipient" isHorizontal="true"><dc:Bounds x="150" y="424" width="1330" height="194" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.Lane.Auditor_di" bpmnElement="PHW.Lane.Auditor" isHorizontal="true"><dc:Bounds x="150" y="618" width="1330" height="194" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.G.Start_di" bpmnElement="PHW.G.Start"><dc:Bounds x="252" y="139" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.G.1_di" bpmnElement="PHW.G.1"><dc:Bounds x="390" y="97" width="120" height="120" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.G.3_di" bpmnElement="PHW.G.3"><dc:Bounds x="570" y="97" width="120" height="120" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.G.5_di" bpmnElement="PHW.G.5"><dc:Bounds x="750" y="461" width="120" height="120" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.G.6_di" bpmnElement="PHW.G.6"><dc:Bounds x="930" y="97" width="120" height="120" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.G.7_di" bpmnElement="PHW.G.7"><dc:Bounds x="1110" y="655" width="120" height="120" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.G.End_di" bpmnElement="PHW.G.End"><dc:Bounds x="1332" y="697" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.G.ProvenanceLog_di" bpmnElement="PHW.G.ProvenanceLog"><dc:Bounds x="425" y="302" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.G.AuditRecordRepository_di" bpmnElement="PHW.G.AuditRecordRepository"><dc:Bounds x="605" y="302" width="50" height="50" /></bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="PHW.G.Flow1_di" bpmnElement="PHW.G.Flow1">
-        <di:waypoint x="303" y="135" />
-        <di:waypoint x="405" y="135" />
+        <di:waypoint x="288" y="157" />
+        <di:waypoint x="390" y="157" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.G.Flow2_di" bpmnElement="PHW.G.Flow2">
-        <di:waypoint x="575" y="135" />
-        <di:waypoint x="610" y="135" />
+        <di:waypoint x="510" y="157" />
+        <di:waypoint x="570" y="157" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.G.Flow3_di" bpmnElement="PHW.G.Flow3">
-        <di:waypoint x="780" y="135" />
-        <di:waypoint x="800" y="135" />
-        <di:waypoint x="800" y="385" />
-        <di:waypoint x="815" y="385" />
+        <di:waypoint x="690" y="157" />
+        <di:waypoint x="810" y="157" />
+        <di:waypoint x="810" y="461" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.G.Flow4_di" bpmnElement="PHW.G.Flow4">
-        <di:waypoint x="985" y="385" />
-        <di:waypoint x="1005" y="385" />
-        <di:waypoint x="1005" y="135" />
-        <di:waypoint x="1020" y="135" />
+        <di:waypoint x="870" y="521" />
+        <di:waypoint x="990" y="521" />
+        <di:waypoint x="990" y="217" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.G.Flow5_di" bpmnElement="PHW.G.Flow5">
-        <di:waypoint x="1190" y="135" />
-        <di:waypoint x="1210" y="135" />
-        <di:waypoint x="1210" y="535" />
-        <di:waypoint x="1225" y="535" />
+        <di:waypoint x="1050" y="157" />
+        <di:waypoint x="1170" y="157" />
+        <di:waypoint x="1170" y="655" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.G.Flow6_di" bpmnElement="PHW.G.Flow6">
-        <di:waypoint x="1395" y="535" />
-        <di:waypoint x="1497" y="535" />
+        <di:waypoint x="1230" y="715" />
+        <di:waypoint x="1332" y="715" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.G.1.WritesProvenanceLog_di" bpmnElement="PHW.G.1.WritesProvenanceLog">
-        <di:waypoint x="490" y="175" />
-        <di:waypoint x="490" y="215" />
+        <di:waypoint x="450" y="217" />
+        <di:waypoint x="450" y="302" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.G.3.WritesAuditRecordRepository_di" bpmnElement="PHW.G.3.WritesAuditRecordRepository">
-        <di:waypoint x="695" y="175" />
-        <di:waypoint x="695" y="215" />
+        <di:waypoint x="630" y="217" />
+        <di:waypoint x="630" y="302" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

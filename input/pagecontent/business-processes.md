@@ -21,6 +21,8 @@ The following table summarizes the three BPMN 2.0 consent and Verifiable Health 
 
 ### Workflows
 
+<a id="PHW.A"></a>
+
 #### A. Record and Manage Patient Privacy Consent
 
 * **Process ID**: `PHW.A`
@@ -28,7 +30,9 @@ The following table summarizes the three BPMN 2.0 consent and Verifiable Health 
 * **Objective**: Capture, update, or revoke a patient privacy consent directive (`IHE.PCF.consentBasic` or `IHE.PCF.consentIntermediate`) in a PCF Consent Registry using the IHE PCF Access Consent `[ITI-108]` transaction (`Post`, `Put`, `Delete`), trust-anchor neutral and with no IUA claim.
 
 <figure style="width:100%">
-  <img src="PHW.A.svg" alt="Process A — Record and Manage Patient Privacy Consent (PCF [ITI-108])" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.A.svg" aria-label="Process A — Record and Manage Patient Privacy Consent (PCF [ITI-108])" style="width:100%; max-width:1100px;">
+    <img src="PHW.A.svg" alt="Process A — Record and Manage Patient Privacy Consent (PCF [ITI-108])" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | IHE PCF / VHL Transaction & Conformance Profile |
@@ -49,6 +53,8 @@ Process A is the person-side view of the data sharing agreement's consent proces
 3. **Plain language.** The person is shown the agreement's plain-language summary, published and hashed with the agreement. That summary is what they consent to (task `PHW.A.1`).
 4. **Scale.** Where the person has recorded nothing, the jurisdiction's chosen PCF implicit default policy applies: opt-in (for example `Policy-deny`) or opt-out (for example `Policy-basic-normal` or `Policy-all-normal`). Registry lookups may be cached (task `PHW.C.5`), but withdrawing a Consent (`status` becomes `inactive`, task `PHW.A.4`) ends every cached result that holds it at once.
 
+<a id="PHW.B"></a>
+
 #### B. Issue Consent-Backed Verifiable Health Link
 
 * **Process ID**: `PHW.B`
@@ -56,7 +62,9 @@ Process A is the person-side view of the data sharing agreement's consent proces
 * **Objective**: Publish VHL Sharer PKI signing keys to an abstract Trust Anchor (`[ITI-YY1]`), verify or record an active patient privacy consent directive (`[ITI-108]`), and generate a signed Verifiable Health Link (`[ITI-YY3]`) for storage in the Holder's Personal Health Wallet. Trust-anchor neutral (WHO GDHCN is one possible Trust Anchor among others).
 
 <figure style="width:100%">
-  <img src="PHW.B.svg" alt="Process B — Issue Consent-Backed Verifiable Health Link (VHL [ITI-YY1], [ITI-YY3], PCF [ITI-108])" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.B.svg" aria-label="Process B — Issue Consent-Backed Verifiable Health Link (VHL [ITI-YY1], [ITI-YY3], PCF [ITI-108])" style="width:100%; max-width:1100px;">
+    <img src="PHW.B.svg" alt="Process B — Issue Consent-Backed Verifiable Health Link (VHL [ITI-YY1], [ITI-YY3], PCF [ITI-108])" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | IHE PCF / VHL Transaction & Conformance Profile |
@@ -70,6 +78,8 @@ Process A is the person-side view of the data sharing agreement's consent proces
 | `PHW.B.6` | VHL Sharer (grouped with PCF Consent Recorder) | Assemble & sign VHL payload bound to Consent `[ITI-YY3]` Generate VHL | **`[ITI-YY3]` Generate VHL** (`IHE.VHL.VHLSharer`), signing with `[ITI-YY1]` key material |
 | `PHW.B.7` | VHL Holder (Patient / Personal Health Wallet) | Store signed VHL in Personal Health Wallet `[ITI-YY3]` Generate VHL | **`[ITI-YY3]` Generate VHL** response received by `VHLHolder` |
 
+<a id="PHW.C"></a>
+
 #### C. Present and Redeem Verifiable Health Link with PCF Consent Enforcement
 
 * **Process ID**: `PHW.C`
@@ -77,7 +87,9 @@ Process A is the person-side view of the data sharing agreement's consent proces
 * **Objective**: Present a Verifiable Health Link (`[ITI-YY4]`), verify cryptographic signatures against a Trust Anchor's trust list (`[ITI-YY2]`), request the health document manifest (`[ITI-YY5]`), query active PCF Consent (`[ITI-108]`), and enforce three-valued (`permit` | `deny` | `unknown`) ODRL consent evaluation with W3C PROV-O decision provenance. Trust-anchor neutral (WHO GDHCN is one possible Trust Anchor among others) and makes no IUA claim.
 
 <figure style="width:100%">
-  <img src="PHW.C.svg" alt="Process C — Present and Redeem Verifiable Health Link with PCF Consent Enforcement (VHL [ITI-YY2], [ITI-YY4], [ITI-YY5], PCF [ITI-108])" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.C.svg" aria-label="Process C — Present and Redeem Verifiable Health Link with PCF Consent Enforcement (VHL [ITI-YY2], [ITI-YY4], [ITI-YY5], PCF [ITI-108])" style="width:100%; max-width:1100px;">
+    <img src="PHW.C.svg" alt="Process C — Present and Redeem Verifiable Health Link with PCF Consent Enforcement (VHL [ITI-YY2], [ITI-YY4], [ITI-YY5], PCF [ITI-108])" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | IHE PCF / VHL Transaction & Conformance Profile |
@@ -114,6 +126,8 @@ Processes D to H implement a **data sharing agreement** (DSA) between a data pro
 
 In the tables, † marks a section number cited from standing knowledge and not re-checked when this page was written. The RFC 9396, RFC 9449, RFC 8693, W3C VC 2.0, W3C Bitstring Status List and DCAT 3 sections were checked against the published specifications on 2026-10-30.
 
+<a id="PHW.D"></a>
+
 #### D. Register a Server Client under a Data Sharing Agreement
 
 * **Process ID**: `PHW.D`
@@ -121,7 +135,9 @@ In the tables, † marks a section number cited from standing knowledge and not 
 * **Objective**: Register the data recipient's server as an OAuth client of the data provider's authorization server. It is bound to a key published under a trust anchor the agreement accepts, and to the agreement versions it may act under.
 
 <figure style="width:100%">
-  <img src="PHW.D.svg" alt="Process D — Register a Server Client under a Data Sharing Agreement (DSA P4)" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.D.svg" aria-label="Process D — Register a Server Client under a Data Sharing Agreement (DSA P4)" style="width:100%; max-width:1100px;">
+    <img src="PHW.D.svg" alt="Process D — Register a Server Client under a Data Sharing Agreement (DSA P4)" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | Standard and section |
@@ -139,6 +155,8 @@ In the tables, † marks a section number cited from standing knowledge and not 
 
 **UDAP route (owner approval, 2026-10-30 20:28Z).** UDAP is used as profiled by HL7 *Security for Scalable Registration, Authentication, and Authorization* (SSRAA), `hl7.fhir.us.udap-security` 2.0.0 (STU 2, canonical `http://hl7.org/fhir/us/udap-security`), the IG that VHL's OAuth with SSRAA Option names. Its trust is X.509: the client's certificate chains to an anchor of a trust community, so a national X.509 PKI can serve as the anchor without GDHCN. SSRAA section numbers were read from the IG source (`HL7/fhir-udap-security-ig`, tag `2.0.0`, commit `d8ac5a63`): they follow its page order, and they agree with the IG's own cross-references, which is also how ITI-YY5 cites them ("SSRAA Sections 2 and 3", "Section 5.2.1"). The rendered pages at hl7.org were not reachable to check. SSRAA 2.0.0 is US realm; the source's `main` branch now builds a universal-realm successor, `hl7.fhir.uv.fast-security` 3.0.0 (STU 3 post-ballot CI build), not yet published. ‡ marks a section of a UDAP.org specification (UDAP Dynamic Client Registration STU1, UDAP Server Metadata STU1, UDAP JWT-Based Client Authentication STU1) as SSRAA links it; udap.org was not reachable to check it.
 
+<a id="PHW.E"></a>
+
 #### E. Server-to-Server Access under a Data Sharing Agreement
 
 * **Process ID**: `PHW.E`
@@ -146,7 +164,9 @@ In the tables, † marks a section number cited from standing knowledge and not 
 * **Objective**: The client asks for a token for the data the agreement covers, and names the agreement in RFC 9396 `authorization_details`. The authorization server decides with process F and issues a key-bound token. The resource server checks the token on every call and records the call with process G.
 
 <figure style="width:100%">
-  <img src="PHW.E.svg" alt="Process E — Server-to-Server Access under a Data Sharing Agreement (DSA P5)" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.E.svg" aria-label="Process E — Server-to-Server Access under a Data Sharing Agreement (DSA P5)" style="width:100%; max-width:1100px;">
+    <img src="PHW.E.svg" alt="Process E — Server-to-Server Access under a Data Sharing Agreement (DSA P5)" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | Standard and section |
@@ -164,6 +184,8 @@ In the tables, † marks a section number cited from standing knowledge and not 
 
 **Gaps and open points in E.** RFC 9396 has no field that holds an agreement's URL **and** its hash. The fixed-version URL goes in `identifier`, and the SHA-256 published with that version fixes the bytes. No checked standard parameter carries the W3C VC 2.0 grant in a server-to-server token request. Until one is chosen, the client registration recorded in `PHW.D.6` stands in for the grant. For a document-only agreement, scopes set by the administrator replace RAR details, and `identifier` can still carry the agreement URL for audit.
 
+<a id="PHW.F"></a>
+
 #### F. Access Decision under a Data Sharing Agreement
 
 * **Process ID**: `PHW.F`
@@ -171,7 +193,9 @@ In the tables, † marks a section number cited from standing knowledge and not 
 * **Objective**: Decide one request under every agreement or Consent that applies to it: `permit`, `deny` or `unknown`. Unknown is never permit. Each policy is decided alone, then the results are combined by the DMN decision [`PHW.DT.AgreementAccess`](#combining-several-agreements-dmn-phwdtagreementaccess). Processes E and I call it.
 
 <figure style="width:100%">
-  <img src="PHW.F.svg" alt="Process F — Access Decision under a Data Sharing Agreement (DSA P11)" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.F.svg" aria-label="Process F — Access Decision under a Data Sharing Agreement (DSA P11)" style="width:100%; max-width:1100px;">
+    <img src="PHW.F.svg" alt="Process F — Access Decision under a Data Sharing Agreement (DSA P11)" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | Standard and section |
@@ -233,6 +257,8 @@ Two FEEL literal expressions prepare the table: `applicableResults` = `policyRes
 
 The decision used, default or replacement, is recorded in the ATNA event and the PROV-O record by its DMN `namespace` and decision `id` and by its file's fixed-version URL and SHA-256. That is the same way an agreement is cited, since DMN 1.5 `definitions` has no version element of its own.
 
+<a id="PHW.G"></a>
+
 #### G. Audit, Provenance and Duty Checks under a Data Sharing Agreement
 
 * **Process ID**: `PHW.G`
@@ -240,7 +266,9 @@ The decision used, default or replacement, is recorded in the ATNA event and the
 * **Objective**: Record every decision twice, in a W3C PROV-O record and in an IHE ATNA audit event. Both cite the same agreement URL. Then check the agreement's duties against what was recorded.
 
 <figure style="width:100%">
-  <img src="PHW.G.svg" alt="Process G — Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12)" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.G.svg" aria-label="Process G — Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12)" style="width:100%; max-width:1100px;">
+    <img src="PHW.G.svg" alt="Process G — Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12)" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | Standard and section |
@@ -260,6 +288,8 @@ The Provenance Log and the ATNA Audit Record Repository are data stores, not lan
 
 **Audit.** The ATNA event cites the agreement's fixed-version URL, the requester, the purpose of use, the data or documents released, and the decision. ATNA is reached in the same way the VHL profile reaches it. VHL Volume 1 §1:XX.3, Table XX.3-1, requires the VHL Sharer and VHL Receiver to be grouped with an ATNA Secure Node or Secure Application. §1:XX.6.1 covers the secure channel (`[ITI-19]`) and audit logging. Those sections are from the IHE/ITI.VHL source at commit `48201473`, as snapshotted in litlfred/smart-trust-tools `library/`. **IHE BALP (Basic Audit Log Patterns) is Trial Implementation and needs owner approval** before this IG names its AuditEvent patterns. The PROV-O record (`PHW.G.1`) cites the same agreement URL, so the two logs agree.
 
+<a id="PHW.H"></a>
+
 #### H. Revocation and Suspension under a Data Sharing Agreement
 
 * **Process ID**: `PHW.H`
@@ -267,7 +297,9 @@ The Provenance Log and the ATNA Audit Record Repository are data stores, not lan
 * **Objective**: Stop access under an agreement. A person decides; the mechanism is computable.
 
 <figure style="width:100%">
-  <img src="PHW.H.svg" alt="Process H — Revocation and Suspension under a Data Sharing Agreement (DSA P13)" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.H.svg" aria-label="Process H — Revocation and Suspension under a Data Sharing Agreement (DSA P13)" style="width:100%; max-width:1100px;">
+    <img src="PHW.H.svg" alt="Process H — Revocation and Suspension under a Data Sharing Agreement (DSA P13)" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | Standard and section |
@@ -295,6 +327,8 @@ The VHL Sharer is the organisation or system that holds the documents. It may al
 | --- | --- | --- | --- |
 | I | Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement | PHW.I | Authenticate the VHL Receiver (`[ITI-YY5]`), find the agreements and Consents in force from its verified identity, decide under every applicable one (process F, DMN `PHW.DT.AgreementAccess`), and record an IHE ATNA audit event (`[ITI-20]`) that cites every one evaluated. |
 
+<a id="PHW.I"></a>
+
 #### I. Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement
 
 * **Process ID**: `PHW.I`
@@ -302,7 +336,9 @@ The VHL Sharer is the organisation or system that holds the documents. It may al
 * **Objective**: Decide a VHL Receiver's `[ITI-YY5]` request under the data sharing agreement the VHL Sharer already holds with that receiver, and audit it with IHE ATNA. Trust-anchor neutral, with no IUA claim.
 
 <figure style="width:100%">
-  <img src="PHW.I.svg" alt="Process I — Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement (VHL [ITI-YY5], [ITI-YY2], ATNA [ITI-20])" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.I.svg" aria-label="Process I — Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement (VHL [ITI-YY5], [ITI-YY2], ATNA [ITI-20])" style="width:100%; max-width:1100px;">
+    <img src="PHW.I.svg" alt="Process I — Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement (VHL [ITI-YY5], [ITI-YY2], ATNA [ITI-20])" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | IHE VHL / ATNA transaction, standard and section |
@@ -347,6 +383,8 @@ These two processes are shared blocks for any certificate type (BPMN reuse propo
 | J | Issue a Verifiable Digital Health Certificate | PHW.J | Ask the holder for consent, collect what the certificate profile (a data input) needs, issue and sign the certificate, issue its VHL (process B), and deliver it to the wallet. |
 | K | Verify a Certificate and its Status | PHW.K | Receive the claim; redeem a VHL through process C, check by hand, or decode the QR code, get the issuer key from the Trust Anchor (`[ITI-YY2]`), verify the signature, and check the registry. |
 
+<a id="PHW.J"></a>
+
 #### J. Issue a Verifiable Digital Health Certificate
 
 * **Process ID**: `PHW.J`
@@ -354,7 +392,9 @@ These two processes are shared blocks for any certificate type (BPMN reuse propo
 * **Objective**: Shared block B4 of the BPMN reuse proposal (Q-BPMN-1 A, 2026-11-01): one issuing process for every certificate type.
 
 <figure style="width:100%">
-  <img src="PHW.J.svg" alt="Process J — Issue a Verifiable Digital Health Certificate (calls process B)" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.J.svg" aria-label="Process J — Issue a Verifiable Digital Health Certificate (calls process B)" style="width:100%; max-width:1100px;">
+    <img src="PHW.J.svg" alt="Process J — Issue a Verifiable Digital Health Certificate (calls process B)" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | Source |
@@ -367,6 +407,8 @@ These two processes are shared blocks for any certificate type (BPMN reuse propo
 | `PHW.J.5` | Certificate Issuance Service | J5. Generate the QR code | smart-icvp: 'Generate QR Code'. |
 | `PHW.J.6` | Certificate Holder (person / Personal Health Wallet) | J6. Receive the certificate in the wallet | smart-icvp: 'Receive Digital ICVP Card', 'Digital ICVP Card issued and available for use'. |
 
+<a id="PHW.K"></a>
+
 #### K. Verify a Certificate and its Status
 
 * **Process ID**: `PHW.K`
@@ -374,7 +416,9 @@ These two processes are shared blocks for any certificate type (BPMN reuse propo
 * **Objective**: Shared block B7 of the BPMN reuse proposal (Q-BPMN-1 A, 2026-11-01): one verifying process for every certificate type.
 
 <figure style="width:100%">
-  <img src="PHW.K.svg" alt="Process K — Verify a Certificate and its Status ([ITI-YY2]; calls process C)" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.K.svg" aria-label="Process K — Verify a Certificate and its Status ([ITI-YY2]; calls process C)" style="width:100%; max-width:1100px;">
+    <img src="PHW.K.svg" alt="Process K — Verify a Certificate and its Status ([ITI-YY2]; calls process C)" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | Source |
@@ -397,6 +441,8 @@ Explicit and implied consent are described on the [Consent](consent.html) page. 
 | L | Record Explicit Consent | PHW.L | Show the trust domain's consent text (code and version); when the holder agrees, record the act as evidence and post a `PHWExplicitConsent` with `[ITI-108]`; when the holder does not, the trust domain's default policy applies (implied consent). |
 | M | Add Consent Directives to a Shared or Issued Document | PHW.M | Optionally, before signing: find the active explicit Consents (`[ITI-108]`), or else the trust domain's default as a `PHWImpliedConsent`; add them as consent entries and list them in the Advance Directives section. |
 
+<a id="PHW.L"></a>
+
 #### L. Record Explicit Consent
 
 * **Process ID**: `PHW.L`
@@ -404,7 +450,9 @@ Explicit and implied consent are described on the [Consent](consent.html) page. 
 * **Objective**: The holder gives explicit consent by their own act, recorded as an IHE PCF Consent whose `policyRule` is the trust domain's consent code.
 
 <figure style="width:100%">
-  <img src="PHW.L.svg" alt="Process L — Record Explicit Consent ([ITI-108])" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.L.svg" aria-label="Process L — Record Explicit Consent ([ITI-108])" style="width:100%; max-width:1100px;">
+    <img src="PHW.L.svg" alt="Process L — Record Explicit Consent ([ITI-108])" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | Description |
@@ -416,6 +464,8 @@ Explicit and implied consent are described on the [Consent](consent.html) page. 
 | `PHW.L.5` | PCF Consent Registry | L5. Store the Consent; return Consent.id and versionId [ITI-108] | The registry copy is the one enforced (processes C, F, I). |
 | `PHW.L.6` | Holder (person / Personal Health Wallet) | L6. Keep a copy in the wallet | So the holder can read back what they agreed to and withdraw it (process A, Delete or Put). |
 
+<a id="PHW.M"></a>
+
 #### M. Add Consent Directives to a Shared or Issued Document
 
 * **Process ID**: `PHW.M`
@@ -423,7 +473,9 @@ Explicit and implied consent are described on the [Consent](consent.html) page. 
 * **Objective**: A shared or issued document can carry the consent directives it is shared under, explicit or implied, so the receiver can see them. The copy in the document is evidence; the Consent Registry copy is the one enforced.
 
 <figure style="width:100%">
-  <img src="PHW.M.svg" alt="Process M — Add Consent Directives to a Shared or Issued Document ([ITI-108])" style="width:100%; max-width:1100px;" />
+  <object type="image/svg+xml" data="PHW.M.svg" aria-label="Process M — Add Consent Directives to a Shared or Issued Document ([ITI-108])" style="width:100%; max-width:1100px;">
+    <img src="PHW.M.svg" alt="Process M — Add Consent Directives to a Shared or Issued Document ([ITI-108])" style="width:100%; max-width:1100px;" />
+  </object>
 </figure>
 
 | Activity ID | Lane / Actor | Task Name | Description |
