@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "715011d640f95ab1591819d1d89e6d6cff6a0f23",
+          "ref": "801525021eee7576f398369b0b562fe03081e32f",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -102,8 +102,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-11",
-              "ref": "715011d640f95ab1591819d1d89e6d6cff6a0f23",
-              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "ref": "801525021eee7576f398369b0b562fe03081e32f",
+              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml); re-pin to fhir-harness main at or after fhir-harness#332's merge (801525021e), whose ig-content-qa gate every IG publish now needs, under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -284,7 +284,8 @@
         "input/images/",
         "input/images-source/",
         "input/pagecontent/",
-        "fsh-generated/"
+        "fsh-generated/",
+        "qa/ig-content-qa.json"
       ]
     }
   }

@@ -1,0 +1,22 @@
+{
+  "$schema": "ig-content-qa/v1",
+  "contentDigest": "sha256:469d676ca29d4e0a946a411f138dce3b7ecaea397c50264f525b68e224f83ae2",
+  "items": 10041,
+  "reviewedAt": "2026-11-11T13:23:52.340Z",
+  "reviewer": {
+    "kind": "agent",
+    "name": "Claude",
+    "session": "https://claude.ai/code/session_01Qmmkt6te9q7bF3KBT2Qq11"
+  },
+  "findings": [
+    {
+      "where": "ValueSet/DVCVaccines",
+      "field": "text.div",
+      "sha": "2c9faf63690e1bce705404e302f1b6e554eb21fb7ccd529e855fc5886fc4721a",
+      "kind": "deceptive-link",
+      "note": "link text names a different host than its href",
+      "status": "cleared",
+      "reason": "Link text is the ICD-11 canonical http://id.who.int/icd/release/11/mms and its href is the terminology.hl7.org page for that CodeSystem (IG Publisher narrative); not deceptive."
+    }
+  ]
+}
