@@ -14,7 +14,7 @@
   "kind": "prose",
   "title": "Volume 1 — Profiles: Privacy Consent on FHIR (PCF) (§1:53)",
   "text": "../sections/s003-volume-1-profiles-privacy-consent-on-fhir-pcf-1-.md",
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/ihe-iti-pcf-1-1-0/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/ihe-iti-pcf-1-1-0/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/source/ihe-iti-pcf-1-1-0",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/source/ihe-iti-pcf-1-1-0",
   "provenance": "ingested"
 }

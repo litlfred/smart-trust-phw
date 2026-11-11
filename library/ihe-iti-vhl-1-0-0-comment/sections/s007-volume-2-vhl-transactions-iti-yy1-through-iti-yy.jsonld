@@ -13,7 +13,7 @@
   "contains": [
     "library/ihe-iti-vhl-1-0-0-comment/blocks/prose-s007-volume-2-vhl-transactions-iti-yy1-through-iti-yy"
   ],
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/ihe-iti-vhl-1-0-0-comment/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/ihe-iti-vhl-1-0-0-comment/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/source/ihe-iti-vhl-1-0-0-comment",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/source/ihe-iti-vhl-1-0-0-comment",
   "provenance": "ingested"
 }

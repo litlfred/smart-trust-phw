@@ -14,7 +14,7 @@
   "kind": "prose",
   "title": "Composite Grouping with IHE PCF (Privacy Consent on FHIR)",
   "text": "../sections/s006-composite-grouping-with-ihe-pcf-privacy-consent-.md",
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/ihe-iti-vhl-1-0-0-comment/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/ihe-iti-vhl-1-0-0-comment/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/source/ihe-iti-vhl-1-0-0-comment",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/source/ihe-iti-vhl-1-0-0-comment",
   "provenance": "ingested"
 }
