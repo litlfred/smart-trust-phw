@@ -217,7 +217,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
+          "ref": "b31c5346b0b2803354423511b6d18b599b7bdc41",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -230,7 +230,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
+              "ref": "b31c5346b0b2803354423511b6d18b599b7bdc41",
               "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
             }
           }
