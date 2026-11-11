@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "595945930a6cf3da7d916aa6f9ccb934ed5eb9a8",
+          "ref": "4804b34245cfc80898042d9acd3dbb987480ef2d",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -42,9 +42,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "595945930a6cf3da7d916aa6f9ccb934ed5eb9a8",
-              "evidence": "Owner litlfred, 2026-11-07, session https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f: 'repin + merge open 12 hrs' (re-pin smart-trust-phw's layers to their main tips)."
+              "on": "2026-11-11",
+              "ref": "4804b34245cfc80898042d9acd3dbb987480ef2d",
+              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -55,7 +55,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "33ebe87f691e9a72e308bec8390e2882b5b7ff73",
+          "ref": "c7d06d51dfc5c3dde0aaf702c3f51252ace0bb90",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -79,9 +79,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "33ebe87f691e9a72e308bec8390e2882b5b7ff73",
-              "evidence": "litlfred, 2026-11-07, via the merge manager (session_01VQDpPffYARDQ8juksAZScf): card 'Pin target' 'A. Never move back', wave 4 'A. Yes, prepare as drafts', and 'repin + merge open 12 hrs'; earlier in this session: 'align pins'. smart-base at #315's merge, each lower layer at the commit smart-base pins; bean cat-tools-sm8r."
+              "on": "2026-11-11",
+              "ref": "c7d06d51dfc5c3dde0aaf702c3f51252ace0bb90",
+              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "1524b3fc226e7bf407b4fd217866c63bc260ba29",
+          "ref": "715011d640f95ab1591819d1d89e6d6cff6a0f23",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -101,9 +101,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "1524b3fc226e7bf407b4fd217866c63bc260ba29",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
+              "on": "2026-11-11",
+              "ref": "715011d640f95ab1591819d1d89e6d6cff6a0f23",
+              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -114,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "7e00ff66455f2eec234f718822b1ad61e7ea65f8",
+          "ref": "1874fd5fd7a1f57ea13faf619af66d25aef31e97",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -129,9 +129,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "7e00ff66455f2eec234f718822b1ad61e7ea65f8",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\"; ~05:25Z: \"repin + merge open 12 hrs\"; by card: \"Fix in harness\", \"Wait for #308\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned fhir-harness, folio-assistant-core, cat-harness and cat-harness-tools to their main tips (fhir-harness#308 ICD-11 txcache fix; cat-harness-tools#1665 prov-qaqc without beans), bootstrap layers unchanged until bootstrap-tools#82."
+              "on": "2026-11-11",
+              "ref": "1874fd5fd7a1f57ea13faf619af66d25aef31e97",
+              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "6d76e105ff5512c2488af2424349c621b4773165",
+          "ref": "4041cf5620e287a98d7ddeb465dd5841185114d0",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -157,9 +157,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "6d76e105ff5512c2488af2424349c621b4773165",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
+              "on": "2026-11-11",
+              "ref": "4041cf5620e287a98d7ddeb465dd5841185114d0",
+              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "4e79324d5d3637bbc592b657f71f1ec3b6b86797",
+          "ref": "9559d12d51963313a68bb35b4fc824ba4588bc80",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -182,9 +182,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "4e79324d5d3637bbc592b657f71f1ec3b6b86797",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
+              "on": "2026-11-11",
+              "ref": "9559d12d51963313a68bb35b4fc824ba4588bc80",
+              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -195,7 +195,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "6efa90e5ec6fb0f9dd3391cd7a75e7345f7be774",
+          "ref": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -204,9 +204,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "6efa90e5ec6fb0f9dd3391cd7a75e7345f7be774",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
+              "on": "2026-11-11",
+              "ref": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
+              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
