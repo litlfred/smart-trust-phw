@@ -87,15 +87,19 @@
    }
   }
  ],
+ "processHref": "board-open-close.html",
  "tasks": {
   "A_RenderAvatars": {
    "id": "A_RenderAvatars",
    "name": "Render every card as its avatar",
    "type": "bpmn:Task",
+   "stepHref": "board-open-close.html#step-A_RenderAvatars",
    "lane": "Board renderer",
+   "laneHref": "board-open-close.html#lane-Lane_Renderer",
    "skills": [
     {
-     "name": "board-windows"
+     "name": "board-windows",
+     "href": "../../../en/cat-harness/processes/skills/board-windows.html"
     }
    ],
    "role": {
@@ -104,28 +108,36 @@
     "title": "Board renderer",
     "skills": [
      {
-      "name": "board-diagram-interchange"
+      "name": "board-diagram-interchange",
+      "href": "../../../en/cat-harness/processes/skills/board-diagram-interchange.html"
      },
      {
-      "name": "board-windows"
+      "name": "board-windows",
+      "href": "../../../en/cat-harness/processes/skills/board-windows.html"
      },
      {
-      "name": "deletion-requires-confirmation"
+      "name": "deletion-requires-confirmation",
+      "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
      },
      {
-      "name": "harness-tiles"
+      "name": "harness-tiles",
+      "href": "../../../en/cat-harness/processes/skills/harness-tiles.html"
      },
      {
-      "name": "incremental-render"
+      "name": "incremental-render",
+      "href": "../../../en/cat-harness/processes/skills/incremental-render.html"
      },
      {
-      "name": "liquid-templates"
+      "name": "liquid-templates",
+      "href": "../../../en/cat-harness/processes/skills/liquid-templates.html"
      },
      {
-      "name": "pdf-inline-viewer"
+      "name": "pdf-inline-viewer",
+      "href": "../../../en/cat-harness/processes/skills/pdf-inline-viewer.html"
      },
      {
-      "name": "visualizer-loading"
+      "name": "visualizer-loading",
+      "href": "../../../en/cat-harness/processes/skills/visualizer-loading.html"
      }
     ]
    }
@@ -134,10 +146,13 @@
    "id": "A_Open",
    "name": "Project a window onto the board",
    "type": "bpmn:Task",
+   "stepHref": "board-open-close.html#step-A_Open",
    "lane": "Board renderer",
+   "laneHref": "board-open-close.html#lane-Lane_Renderer",
    "skills": [
     {
-     "name": "board-windows"
+     "name": "board-windows",
+     "href": "../../../en/cat-harness/processes/skills/board-windows.html"
     }
    ],
    "role": {
@@ -146,28 +161,36 @@
     "title": "Board renderer",
     "skills": [
      {
-      "name": "board-diagram-interchange"
+      "name": "board-diagram-interchange",
+      "href": "../../../en/cat-harness/processes/skills/board-diagram-interchange.html"
      },
      {
-      "name": "board-windows"
+      "name": "board-windows",
+      "href": "../../../en/cat-harness/processes/skills/board-windows.html"
      },
      {
-      "name": "deletion-requires-confirmation"
+      "name": "deletion-requires-confirmation",
+      "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
      },
      {
-      "name": "harness-tiles"
+      "name": "harness-tiles",
+      "href": "../../../en/cat-harness/processes/skills/harness-tiles.html"
      },
      {
-      "name": "incremental-render"
+      "name": "incremental-render",
+      "href": "../../../en/cat-harness/processes/skills/incremental-render.html"
      },
      {
-      "name": "liquid-templates"
+      "name": "liquid-templates",
+      "href": "../../../en/cat-harness/processes/skills/liquid-templates.html"
      },
      {
-      "name": "pdf-inline-viewer"
+      "name": "pdf-inline-viewer",
+      "href": "../../../en/cat-harness/processes/skills/pdf-inline-viewer.html"
      },
      {
-      "name": "visualizer-loading"
+      "name": "visualizer-loading",
+      "href": "../../../en/cat-harness/processes/skills/visualizer-loading.html"
      }
     ]
    }
@@ -176,10 +199,13 @@
    "id": "A_Raise",
    "name": "Raise the window the reader selected",
    "type": "bpmn:Task",
+   "stepHref": "board-open-close.html#step-A_Raise",
    "lane": "Board renderer",
+   "laneHref": "board-open-close.html#lane-Lane_Renderer",
    "skills": [
     {
-     "name": "board-windows"
+     "name": "board-windows",
+     "href": "../../../en/cat-harness/processes/skills/board-windows.html"
     }
    ],
    "role": {
@@ -188,28 +214,36 @@
     "title": "Board renderer",
     "skills": [
      {
-      "name": "board-diagram-interchange"
+      "name": "board-diagram-interchange",
+      "href": "../../../en/cat-harness/processes/skills/board-diagram-interchange.html"
      },
      {
-      "name": "board-windows"
+      "name": "board-windows",
+      "href": "../../../en/cat-harness/processes/skills/board-windows.html"
      },
      {
-      "name": "deletion-requires-confirmation"
+      "name": "deletion-requires-confirmation",
+      "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
      },
      {
-      "name": "harness-tiles"
+      "name": "harness-tiles",
+      "href": "../../../en/cat-harness/processes/skills/harness-tiles.html"
      },
      {
-      "name": "incremental-render"
+      "name": "incremental-render",
+      "href": "../../../en/cat-harness/processes/skills/incremental-render.html"
      },
      {
-      "name": "liquid-templates"
+      "name": "liquid-templates",
+      "href": "../../../en/cat-harness/processes/skills/liquid-templates.html"
      },
      {
-      "name": "pdf-inline-viewer"
+      "name": "pdf-inline-viewer",
+      "href": "../../../en/cat-harness/processes/skills/pdf-inline-viewer.html"
      },
      {
-      "name": "visualizer-loading"
+      "name": "visualizer-loading",
+      "href": "../../../en/cat-harness/processes/skills/visualizer-loading.html"
      }
     ]
    }
@@ -218,10 +252,13 @@
    "id": "A_Close",
    "name": "Close the window back to its avatar",
    "type": "bpmn:Task",
+   "stepHref": "board-open-close.html#step-A_Close",
    "lane": "Board renderer",
+   "laneHref": "board-open-close.html#lane-Lane_Renderer",
    "skills": [
     {
-     "name": "board-windows"
+     "name": "board-windows",
+     "href": "../../../en/cat-harness/processes/skills/board-windows.html"
     }
    ],
    "role": {
@@ -230,28 +267,36 @@
     "title": "Board renderer",
     "skills": [
      {
-      "name": "board-diagram-interchange"
+      "name": "board-diagram-interchange",
+      "href": "../../../en/cat-harness/processes/skills/board-diagram-interchange.html"
      },
      {
-      "name": "board-windows"
+      "name": "board-windows",
+      "href": "../../../en/cat-harness/processes/skills/board-windows.html"
      },
      {
-      "name": "deletion-requires-confirmation"
+      "name": "deletion-requires-confirmation",
+      "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
      },
      {
-      "name": "harness-tiles"
+      "name": "harness-tiles",
+      "href": "../../../en/cat-harness/processes/skills/harness-tiles.html"
      },
      {
-      "name": "incremental-render"
+      "name": "incremental-render",
+      "href": "../../../en/cat-harness/processes/skills/incremental-render.html"
      },
      {
-      "name": "liquid-templates"
+      "name": "liquid-templates",
+      "href": "../../../en/cat-harness/processes/skills/liquid-templates.html"
      },
      {
-      "name": "pdf-inline-viewer"
+      "name": "pdf-inline-viewer",
+      "href": "../../../en/cat-harness/processes/skills/pdf-inline-viewer.html"
      },
      {
-      "name": "visualizer-loading"
+      "name": "visualizer-loading",
+      "href": "../../../en/cat-harness/processes/skills/visualizer-loading.html"
      }
     ]
    }
@@ -260,10 +305,13 @@
    "id": "A_OfferWayBack",
    "name": "Leave a reachable way back",
    "type": "bpmn:Task",
+   "stepHref": "board-open-close.html#step-A_OfferWayBack",
    "lane": "Board renderer",
+   "laneHref": "board-open-close.html#lane-Lane_Renderer",
    "skills": [
     {
-     "name": "board-windows"
+     "name": "board-windows",
+     "href": "../../../en/cat-harness/processes/skills/board-windows.html"
     }
    ],
    "role": {
@@ -272,28 +320,36 @@
     "title": "Board renderer",
     "skills": [
      {
-      "name": "board-diagram-interchange"
+      "name": "board-diagram-interchange",
+      "href": "../../../en/cat-harness/processes/skills/board-diagram-interchange.html"
      },
      {
-      "name": "board-windows"
+      "name": "board-windows",
+      "href": "../../../en/cat-harness/processes/skills/board-windows.html"
      },
      {
-      "name": "deletion-requires-confirmation"
+      "name": "deletion-requires-confirmation",
+      "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
      },
      {
-      "name": "harness-tiles"
+      "name": "harness-tiles",
+      "href": "../../../en/cat-harness/processes/skills/harness-tiles.html"
      },
      {
-      "name": "incremental-render"
+      "name": "incremental-render",
+      "href": "../../../en/cat-harness/processes/skills/incremental-render.html"
      },
      {
-      "name": "liquid-templates"
+      "name": "liquid-templates",
+      "href": "../../../en/cat-harness/processes/skills/liquid-templates.html"
      },
      {
-      "name": "pdf-inline-viewer"
+      "name": "pdf-inline-viewer",
+      "href": "../../../en/cat-harness/processes/skills/pdf-inline-viewer.html"
      },
      {
-      "name": "visualizer-loading"
+      "name": "visualizer-loading",
+      "href": "../../../en/cat-harness/processes/skills/visualizer-loading.html"
      }
     ]
    }
@@ -302,10 +358,13 @@
    "id": "A_ResolveThreshold",
    "name": "Resolve the kind's zoom threshold",
    "type": "bpmn:Task",
+   "stepHref": "board-open-close.html#step-A_ResolveThreshold",
    "lane": "Board renderer",
+   "laneHref": "board-open-close.html#lane-Lane_Renderer",
    "skills": [
     {
-     "name": "board-windows"
+     "name": "board-windows",
+     "href": "../../../en/cat-harness/processes/skills/board-windows.html"
     }
    ],
    "role": {
@@ -314,28 +373,36 @@
     "title": "Board renderer",
     "skills": [
      {
-      "name": "board-diagram-interchange"
+      "name": "board-diagram-interchange",
+      "href": "../../../en/cat-harness/processes/skills/board-diagram-interchange.html"
      },
      {
-      "name": "board-windows"
+      "name": "board-windows",
+      "href": "../../../en/cat-harness/processes/skills/board-windows.html"
      },
      {
-      "name": "deletion-requires-confirmation"
+      "name": "deletion-requires-confirmation",
+      "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
      },
      {
-      "name": "harness-tiles"
+      "name": "harness-tiles",
+      "href": "../../../en/cat-harness/processes/skills/harness-tiles.html"
      },
      {
-      "name": "incremental-render"
+      "name": "incremental-render",
+      "href": "../../../en/cat-harness/processes/skills/incremental-render.html"
      },
      {
-      "name": "liquid-templates"
+      "name": "liquid-templates",
+      "href": "../../../en/cat-harness/processes/skills/liquid-templates.html"
      },
      {
-      "name": "pdf-inline-viewer"
+      "name": "pdf-inline-viewer",
+      "href": "../../../en/cat-harness/processes/skills/pdf-inline-viewer.html"
      },
      {
-      "name": "visualizer-loading"
+      "name": "visualizer-loading",
+      "href": "../../../en/cat-harness/processes/skills/visualizer-loading.html"
      }
     ]
    }
@@ -344,10 +411,13 @@
    "id": "A_SwapToAvatar",
    "name": "Swap cards below the threshold; leave open windows alone",
    "type": "bpmn:Task",
+   "stepHref": "board-open-close.html#step-A_SwapToAvatar",
    "lane": "Board renderer",
+   "laneHref": "board-open-close.html#lane-Lane_Renderer",
    "skills": [
     {
-     "name": "board-windows"
+     "name": "board-windows",
+     "href": "../../../en/cat-harness/processes/skills/board-windows.html"
     }
    ],
    "role": {
@@ -356,28 +426,36 @@
     "title": "Board renderer",
     "skills": [
      {
-      "name": "board-diagram-interchange"
+      "name": "board-diagram-interchange",
+      "href": "../../../en/cat-harness/processes/skills/board-diagram-interchange.html"
      },
      {
-      "name": "board-windows"
+      "name": "board-windows",
+      "href": "../../../en/cat-harness/processes/skills/board-windows.html"
      },
      {
-      "name": "deletion-requires-confirmation"
+      "name": "deletion-requires-confirmation",
+      "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
      },
      {
-      "name": "harness-tiles"
+      "name": "harness-tiles",
+      "href": "../../../en/cat-harness/processes/skills/harness-tiles.html"
      },
      {
-      "name": "incremental-render"
+      "name": "incremental-render",
+      "href": "../../../en/cat-harness/processes/skills/incremental-render.html"
      },
      {
-      "name": "liquid-templates"
+      "name": "liquid-templates",
+      "href": "../../../en/cat-harness/processes/skills/liquid-templates.html"
      },
      {
-      "name": "pdf-inline-viewer"
+      "name": "pdf-inline-viewer",
+      "href": "../../../en/cat-harness/processes/skills/pdf-inline-viewer.html"
      },
      {
-      "name": "visualizer-loading"
+      "name": "visualizer-loading",
+      "href": "../../../en/cat-harness/processes/skills/visualizer-loading.html"
      }
     ]
    }

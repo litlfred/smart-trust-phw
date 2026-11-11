@@ -111,12 +111,15 @@
    }
   }
  ],
+ "processHref": "merge-request.html",
  "tasks": {
   "Sib_Self": {
    "id": "Sib_Self",
    "name": "Merge manager for its own PRs",
    "type": "bpmn:CallActivity",
+   "stepHref": "merge-request.html#step-Sib_Self",
    "lane": "Sibling session",
+   "laneHref": "merge-request.html#lane-Lane_Sibling",
    "skills": [],
    "calls": {
     "name": "Merge manager watch: wake, read the queue live, route",
@@ -129,7 +132,8 @@
     "title": "Sibling session",
     "skills": [
      {
-      "name": "bean-coordination"
+      "name": "bean-coordination",
+      "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
      }
     ]
    }
@@ -138,10 +142,13 @@
    "id": "Sib_Elect",
    "name": "Elect the merge manager with the siblings",
    "type": "bpmn:Task",
+   "stepHref": "merge-request.html#step-Sib_Elect",
    "lane": "Sibling session",
+   "laneHref": "merge-request.html#lane-Lane_Sibling",
    "skills": [
     {
-     "name": "merge-manager-watcher"
+     "name": "merge-manager-watcher",
+     "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
     }
    ],
    "role": {
@@ -150,7 +157,8 @@
     "title": "Sibling session",
     "skills": [
      {
-      "name": "bean-coordination"
+      "name": "bean-coordination",
+      "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
      }
     ]
    }
@@ -159,10 +167,13 @@
    "id": "Sib_Announce",
    "name": "Announce and note the merge manager",
    "type": "bpmn:Task",
+   "stepHref": "merge-request.html#step-Sib_Announce",
    "lane": "Sibling session",
+   "laneHref": "merge-request.html#lane-Lane_Sibling",
    "skills": [
     {
-     "name": "merge-manager-watcher"
+     "name": "merge-manager-watcher",
+     "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
     }
    ],
    "role": {
@@ -171,7 +182,8 @@
     "title": "Sibling session",
     "skills": [
      {
-      "name": "bean-coordination"
+      "name": "bean-coordination",
+      "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
      }
     ]
    }
@@ -180,10 +192,13 @@
    "id": "Sib_Send",
    "name": "Send the six-line merge request",
    "type": "bpmn:Task",
+   "stepHref": "merge-request.html#step-Sib_Send",
    "lane": "Sibling session",
+   "laneHref": "merge-request.html#lane-Lane_Sibling",
    "skills": [
     {
-     "name": "merge-manager-watcher"
+     "name": "merge-manager-watcher",
+     "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
     }
    ],
    "role": {
@@ -192,7 +207,8 @@
     "title": "Sibling session",
     "skills": [
      {
-      "name": "bean-coordination"
+      "name": "bean-coordination",
+      "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
      }
     ]
    }
@@ -201,7 +217,9 @@
    "id": "Sib_CallStalled",
    "name": "Stalled-agent triage",
    "type": "bpmn:CallActivity",
+   "stepHref": "merge-request.html#step-Sib_CallStalled",
    "lane": "Sibling session",
+   "laneHref": "merge-request.html#lane-Lane_Sibling",
    "skills": [],
    "calls": {
     "name": "Stalled-agent triage: collect handovers, consolidate themes, recommend, re-route",
@@ -214,7 +232,8 @@
     "title": "Sibling session",
     "skills": [
      {
-      "name": "bean-coordination"
+      "name": "bean-coordination",
+      "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
      }
     ]
    }
@@ -223,7 +242,9 @@
    "id": "Sib_CallWatch",
    "name": "Merge manager watch",
    "type": "bpmn:CallActivity",
+   "stepHref": "merge-request.html#step-Sib_CallWatch",
    "lane": "Sibling session",
+   "laneHref": "merge-request.html#lane-Lane_Sibling",
    "skills": [],
    "calls": {
     "name": "Merge manager watch: wake, read the queue live, route",
@@ -236,7 +257,8 @@
     "title": "Sibling session",
     "skills": [
      {
-      "name": "bean-coordination"
+      "name": "bean-coordination",
+      "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
      }
     ]
    }
@@ -245,10 +267,13 @@
    "id": "Sib_Stack",
    "name": "Stack on it and keep working",
    "type": "bpmn:Task",
+   "stepHref": "merge-request.html#step-Sib_Stack",
    "lane": "Sibling session",
+   "laneHref": "merge-request.html#lane-Lane_Sibling",
    "skills": [
     {
-     "name": "continual-progress"
+     "name": "continual-progress",
+     "href": "../../../en/cat-harness/processes/skills/continual-progress.html"
     }
    ],
    "role": {
@@ -257,7 +282,8 @@
     "title": "Sibling session",
     "skills": [
      {
-      "name": "bean-coordination"
+      "name": "bean-coordination",
+      "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
      }
     ]
    }
@@ -266,10 +292,13 @@
    "id": "Sib_Retarget",
    "name": "When the base lands, retarget",
    "type": "bpmn:Task",
+   "stepHref": "merge-request.html#step-Sib_Retarget",
    "lane": "Sibling session",
+   "laneHref": "merge-request.html#lane-Lane_Sibling",
    "skills": [
     {
-     "name": "continual-progress"
+     "name": "continual-progress",
+     "href": "../../../en/cat-harness/processes/skills/continual-progress.html"
     }
    ],
    "role": {
@@ -278,7 +307,8 @@
     "title": "Sibling session",
     "skills": [
      {
-      "name": "bean-coordination"
+      "name": "bean-coordination",
+      "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
      }
     ]
    }
@@ -287,10 +317,13 @@
    "id": "Sib_Ready",
    "name": "Make the PR ready",
    "type": "bpmn:Task",
+   "stepHref": "merge-request.html#step-Sib_Ready",
    "lane": "Sibling session",
+   "laneHref": "merge-request.html#lane-Lane_Sibling",
    "skills": [
     {
-     "name": "continual-progress"
+     "name": "continual-progress",
+     "href": "../../../en/cat-harness/processes/skills/continual-progress.html"
     }
    ],
    "role": {
@@ -299,7 +332,8 @@
     "title": "Sibling session",
     "skills": [
      {
-      "name": "bean-coordination"
+      "name": "bean-coordination",
+      "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
      }
     ]
    }

@@ -543,11 +543,11 @@
           "heading": false
         },
         {
-          "term": "router outputs",
+          "term": "reinforcement learning",
           "heading": false
         },
         {
-          "term": "reinforcement learning",
+          "term": "router outputs",
           "heading": false
         },
         {
@@ -738,7 +738,7 @@
           "heading": false
         },
         {
-          "term": "troubleshooting-type queries",
+          "term": "win rate",
           "heading": false
         }
       ],
@@ -1068,7 +1068,7 @@
       "heading": false
     },
     {
-      "term": "during routing",
+      "term": "based routing",
       "heading": false
     }
   ],
@@ -1270,6 +1270,6 @@
   "links": {
     "repo": "litlfred/cat-harness",
     "branch": "main",
-    "dir": "library/sdlc/arxiv-2601.04544v1"
+    "dir": "library/corpus/sdlc/arxiv-2601.04544v1"
   }
 }

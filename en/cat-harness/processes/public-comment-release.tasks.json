@@ -87,15 +87,19 @@
    }
   }
  ],
+ "processHref": "public-comment-release.html",
  "tasks": {
   "Task_AgreeReleaseDate": {
    "id": "Task_AgreeReleaseDate",
    "name": "Agree the release date and comment period",
    "type": "bpmn:Task",
+   "stepHref": "public-comment-release.html#step-Task_AgreeReleaseDate",
    "lane": "Review committee and editor",
+   "laneHref": "public-comment-release.html#lane-Lane_Committee",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -104,16 +108,20 @@
     "title": "Review coordinator",
     "skills": [
      {
-      "name": "rendered-impact"
+      "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html"
      },
      {
-      "name": "review-heatmap"
+      "name": "review-heatmap",
+      "href": "../../../en/cat-harness/processes/skills/review-heatmap.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "visual-diff"
+      "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html"
      }
     ]
    }
@@ -122,10 +130,13 @@
    "id": "Task_BuildPcRelease",
    "name": "Build the public comment release",
    "type": "bpmn:Task",
+   "stepHref": "public-comment-release.html#step-Task_BuildPcRelease",
    "lane": "Release build and archive (pipeline)",
+   "laneHref": "public-comment-release.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "document-publishing"
+     "name": "document-publishing",
+     "href": "../../../en/cat-harness/processes/skills/document-publishing.html"
     }
    ],
    "role": {
@@ -134,61 +145,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -197,16 +223,21 @@
    "id": "Task_SetUpChannels",
    "name": "Set up the comment channels, with instructions and links",
    "type": "bpmn:Task",
+   "stepHref": "public-comment-release.html#step-Task_SetUpChannels",
    "lane": "Editor",
+   "laneHref": "public-comment-release.html#lane-Lane_Editor",
    "skills": [
     {
-     "name": "public-comment-channels"
+     "name": "public-comment-channels",
+     "href": "../../../en/cat-harness/processes/skills/public-comment-channels.html"
     },
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     },
     {
-     "name": "review-sheet-script"
+     "name": "review-sheet-script",
+     "href": "../../../en/cat-harness/processes/skills/review-sheet-script.html"
     }
    ],
    "role": {
@@ -216,49 +247,51 @@
     "skills": [
      {
       "name": "bpmn-authoring",
-      "via": "author"
-     },
-     {
-      "name": "content-author",
-      "via": "author"
-     },
-     {
-      "name": "content-plan",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html",
       "via": "author"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "author"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html",
       "via": "author"
      },
      {
       "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html",
       "via": "author"
      },
      {
       "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html",
       "via": "author"
      },
      {
       "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html",
       "via": "author"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "author"
      },
      {
       "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html",
       "via": "author"
      },
      {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -267,13 +300,17 @@
    "id": "Task_WriteAnnouncement",
    "name": "Write the announcement, with links",
    "type": "bpmn:Task",
+   "stepHref": "public-comment-release.html#step-Task_WriteAnnouncement",
    "lane": "Editor",
+   "laneHref": "public-comment-release.html#lane-Lane_Editor",
    "skills": [
     {
-     "name": "public-comment-channels"
+     "name": "public-comment-channels",
+     "href": "../../../en/cat-harness/processes/skills/public-comment-channels.html"
     },
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -283,49 +320,51 @@
     "skills": [
      {
       "name": "bpmn-authoring",
-      "via": "author"
-     },
-     {
-      "name": "content-author",
-      "via": "author"
-     },
-     {
-      "name": "content-plan",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html",
       "via": "author"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "author"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html",
       "via": "author"
      },
      {
       "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html",
       "via": "author"
      },
      {
       "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html",
       "via": "author"
      },
      {
       "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html",
       "via": "author"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "author"
      },
      {
       "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html",
       "via": "author"
      },
      {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -334,10 +373,13 @@
    "id": "Task_Distribute",
    "name": "Distribute to the public",
    "type": "bpmn:Task",
+   "stepHref": "public-comment-release.html#step-Task_Distribute",
    "lane": "Review committee and editor",
+   "laneHref": "public-comment-release.html#lane-Lane_Committee",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -346,16 +388,20 @@
     "title": "Review coordinator",
     "skills": [
      {
-      "name": "rendered-impact"
+      "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html"
      },
      {
-      "name": "review-heatmap"
+      "name": "review-heatmap",
+      "href": "../../../en/cat-harness/processes/skills/review-heatmap.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "visual-diff"
+      "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html"
      }
     ]
    }
@@ -364,10 +410,13 @@
    "id": "CallActivity_PublicComment",
    "name": "Public comment on the release",
    "type": "bpmn:CallActivity",
+   "stepHref": "public-comment-release.html#step-CallActivity_PublicComment",
    "lane": "Editor",
+   "laneHref": "public-comment-release.html#lane-Lane_Editor",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "calls": {
@@ -382,49 +431,51 @@
     "skills": [
      {
       "name": "bpmn-authoring",
-      "via": "author"
-     },
-     {
-      "name": "content-author",
-      "via": "author"
-     },
-     {
-      "name": "content-plan",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html",
       "via": "author"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "author"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html",
       "via": "author"
      },
      {
       "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html",
       "via": "author"
      },
      {
       "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html",
       "via": "author"
      },
      {
       "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html",
       "via": "author"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "author"
      },
      {
       "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html",
       "via": "author"
      },
      {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -433,10 +484,13 @@
    "id": "Task_ArchiveRelease",
    "name": "Archive the release with the review",
    "type": "bpmn:Task",
+   "stepHref": "public-comment-release.html#step-Task_ArchiveRelease",
    "lane": "Release build and archive (pipeline)",
+   "laneHref": "public-comment-release.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "document-publishing"
+     "name": "document-publishing",
+     "href": "../../../en/cat-harness/processes/skills/document-publishing.html"
     }
    ],
    "role": {
@@ -445,61 +499,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }

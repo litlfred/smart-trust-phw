@@ -123,15 +123,19 @@
    }
   }
  ],
+ "processHref": "translation-refresh.html",
  "tasks": {
   "Task_TR_ColdStart": {
    "id": "Task_TR_ColdStart",
    "name": "Cold start: mount and attach",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-refresh.html#step-Task_TR_ColdStart",
    "lane": "Source-language lead (watcher)",
+   "laneHref": "translation-refresh.html#lane-Lane_TR_Lead",
    "skills": [
     {
-     "name": "translation-refresh"
+     "name": "translation-refresh",
+     "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
     }
    ],
    "role": {
@@ -140,10 +144,12 @@
     "title": "Source-language lead",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-refresh"
+      "name": "translation-refresh",
+      "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
      }
     ]
    }
@@ -152,10 +158,13 @@
    "id": "Task_TR_Detect",
    "name": "Detect what moved",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-refresh.html#step-Task_TR_Detect",
    "lane": "Source-language lead (watcher)",
+   "laneHref": "translation-refresh.html#lane-Lane_TR_Lead",
    "skills": [
     {
-     "name": "translation-refresh"
+     "name": "translation-refresh",
+     "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
     }
    ],
    "role": {
@@ -164,10 +173,12 @@
     "title": "Source-language lead",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-refresh"
+      "name": "translation-refresh",
+      "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
      }
     ]
    }
@@ -176,10 +187,13 @@
    "id": "Task_TR_Templates",
    "name": "Refresh the templates",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-refresh.html#step-Task_TR_Templates",
    "lane": "Source-language lead (watcher)",
+   "laneHref": "translation-refresh.html#lane-Lane_TR_Lead",
    "skills": [
     {
-     "name": "translation-refresh"
+     "name": "translation-refresh",
+     "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
     }
    ],
    "role": {
@@ -188,10 +202,12 @@
     "title": "Source-language lead",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-refresh"
+      "name": "translation-refresh",
+      "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
      }
     ]
    }
@@ -200,10 +216,13 @@
    "id": "Task_TR_MergeLocales",
    "name": "Merge into each locale",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-refresh.html#step-Task_TR_MergeLocales",
    "lane": "Source-language lead (watcher)",
+   "laneHref": "translation-refresh.html#lane-Lane_TR_Lead",
    "skills": [
     {
-     "name": "translation-refresh"
+     "name": "translation-refresh",
+     "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
     }
    ],
    "role": {
@@ -212,10 +231,12 @@
     "title": "Source-language lead",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-refresh"
+      "name": "translation-refresh",
+      "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
      }
     ]
    }
@@ -224,10 +245,13 @@
    "id": "Task_TR_Translate",
    "name": "Translate new and fuzzy only",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-refresh.html#step-Task_TR_Translate",
    "lane": "Locale translator",
+   "laneHref": "translation-refresh.html#lane-Lane_TR_Translator",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -236,7 +260,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -245,10 +270,13 @@
    "id": "Task_TR_Gates",
    "name": "Re-run the gates",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-refresh.html#step-Task_TR_Gates",
    "lane": "Locale translator",
+   "laneHref": "translation-refresh.html#lane-Lane_TR_Translator",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -257,7 +285,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -266,7 +295,9 @@
    "id": "Call_TR_RoundTrip",
    "name": "Round trip on the changed strings",
    "type": "bpmn:CallActivity",
+   "stepHref": "translation-refresh.html#step-Call_TR_RoundTrip",
    "lane": "Locale translator",
+   "laneHref": "translation-refresh.html#lane-Lane_TR_Translator",
    "skills": [],
    "calls": {
     "name": "Translation round trip (untainted)",
@@ -279,7 +310,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -288,10 +320,13 @@
    "id": "Task_TR_Report",
    "name": "QA report and one PR to main",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-refresh.html#step-Task_TR_Report",
    "lane": "Locale translator",
+   "laneHref": "translation-refresh.html#lane-Lane_TR_Translator",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -300,7 +335,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -309,10 +345,13 @@
    "id": "Task_TR_SourceIssue",
    "name": "Report source errors as one issue",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-refresh.html#step-Task_TR_SourceIssue",
    "lane": "Source-language lead (watcher)",
+   "laneHref": "translation-refresh.html#lane-Lane_TR_Lead",
    "skills": [
     {
-     "name": "translation-refresh"
+     "name": "translation-refresh",
+     "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
     }
    ],
    "role": {
@@ -321,10 +360,12 @@
     "title": "Source-language lead",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-refresh"
+      "name": "translation-refresh",
+      "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
      }
     ]
    }
@@ -333,10 +374,13 @@
    "id": "Task_TR_Merge",
    "name": "Merge the PR",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-refresh.html#step-Task_TR_Merge",
    "lane": "Source-language lead (watcher)",
+   "laneHref": "translation-refresh.html#lane-Lane_TR_Lead",
    "skills": [
     {
-     "name": "translation-refresh"
+     "name": "translation-refresh",
+     "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
     }
    ],
    "role": {
@@ -345,10 +389,12 @@
     "title": "Source-language lead",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-refresh"
+      "name": "translation-refresh",
+      "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
      }
     ]
    }

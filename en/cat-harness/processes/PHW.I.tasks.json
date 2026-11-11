@@ -111,12 +111,15 @@
    }
   }
  ],
+ "processHref": "PHW.I.html",
  "tasks": {
   "PHW.I.1": {
    "id": "PHW.I.1",
    "name": "I1. Send Retrieve Manifest authenticated by the VHL option in use",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.I.html#step-PHW.I.1",
    "lane": "VHL Receiver (receiving organisation or application)",
+   "laneHref": "PHW.I.html#lane-PHW.Lane.VHLReceiver",
    "skills": [],
    "binding": "unbound"
   },
@@ -124,7 +127,9 @@
    "id": "PHW.I.2",
    "name": "I2. Authenticate the receiver against the trust list",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.I.html#step-PHW.I.2",
    "lane": "VHL Sharer (enforcement and decision point)",
+   "laneHref": "PHW.I.html#lane-PHW.Lane.VHLSharer",
    "skills": [],
    "binding": "unbound"
   },
@@ -132,7 +137,9 @@
    "id": "PHW.I.3",
    "name": "I3. Return receiver key [ITI-YY2] Retrieve Trust List with DID",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.I.html#step-PHW.I.3",
    "lane": "Trust Anchor (GDHCN or another anchor)",
+   "laneHref": "PHW.I.html#lane-PHW.Lane.TrustAnchor",
    "skills": [],
    "binding": "unbound"
   },
@@ -140,7 +147,9 @@
    "id": "PHW.I.5",
    "name": "I5. Decide under every applicable agreement (process F)",
    "type": "bpmn:CallActivity",
+   "stepHref": "PHW.I.html#step-PHW.I.5",
    "lane": "VHL Sharer (enforcement and decision point)",
+   "laneHref": "PHW.I.html#lane-PHW.Lane.VHLSharer",
    "skills": [],
    "calls": {
     "name": "F. Access Decision under a Data Sharing Agreement (DSA P11)",
@@ -153,7 +162,9 @@
    "id": "PHW.I.6",
    "name": "I6. Return manifest and documents [ITI-YY5] /",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.I.html#step-PHW.I.6",
    "lane": "VHL Sharer (enforcement and decision point)",
+   "laneHref": "PHW.I.html#lane-PHW.Lane.VHLSharer",
    "skills": [],
    "binding": "unbound"
   },
@@ -161,7 +172,9 @@
    "id": "PHW.I.7",
    "name": "I7. Refuse with OperationOutcome [ITI-YY5] (deny or unknown)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.I.html#step-PHW.I.7",
    "lane": "VHL Sharer (enforcement and decision point)",
+   "laneHref": "PHW.I.html#lane-PHW.Lane.VHLSharer",
    "skills": [],
    "binding": "unbound"
   },
@@ -169,7 +182,9 @@
    "id": "PHW.I.8",
    "name": "I8. Apply the normal VHL rules (no agreement applies)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.I.html#step-PHW.I.8",
    "lane": "VHL Sharer (enforcement and decision point)",
+   "laneHref": "PHW.I.html#lane-PHW.Lane.VHLSharer",
    "skills": [],
    "binding": "unbound"
   },
@@ -177,7 +192,9 @@
    "id": "PHW.I.9",
    "name": "I9. Send ATNA audit event citing the agreement [ITI-20] Record Audit Event",
    "type": "bpmn:SendTask",
+   "stepHref": "PHW.I.html#step-PHW.I.9",
    "lane": "VHL Sharer (enforcement and decision point)",
+   "laneHref": "PHW.I.html#lane-PHW.Lane.VHLSharer",
    "skills": [],
    "binding": "unbound"
   },
@@ -185,7 +202,9 @@
    "id": "PHW.I.11",
    "name": "I11. Process documents or refusal [ITI-YY5] response",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.I.html#step-PHW.I.11",
    "lane": "VHL Receiver (receiving organisation or application)",
+   "laneHref": "PHW.I.html#lane-PHW.Lane.VHLReceiver",
    "skills": [],
    "binding": "unbound"
   }

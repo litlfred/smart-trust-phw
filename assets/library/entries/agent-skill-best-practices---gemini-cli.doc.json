@@ -37,11 +37,11 @@
           "heading": false
         },
         {
-          "term": "practices",
+          "term": "words",
           "heading": false
         },
         {
-          "term": "words",
+          "term": "practices",
           "heading": false
         },
         {
@@ -189,6 +189,6 @@
   "links": {
     "repo": "litlfred/cat-harness",
     "branch": "main",
-    "dir": "library/conduct/agent-skill-best-practices---gemini-cli"
+    "dir": "library/corpus/conduct/agent-skill-best-practices---gemini-cli"
   }
 }

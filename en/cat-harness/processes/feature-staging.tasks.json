@@ -3,159 +3,175 @@
  "process": "Process_FeatureStaging",
  "markers": [
   {
+   "id": "Task_Defer",
+   "name": "Defer build and queue verify sweep",
+   "left": 30.44,
+   "top": 6.11,
+   "box": {
+    "left": 25.07,
+    "top": 16.67,
+    "width": 1.78,
+    "height": 2.67
+   }
+  },
+  {
    "id": "Task_Build",
    "name": "Build the docs site",
-   "left": 31.01,
-   "top": 2.78,
+   "left": 46,
+   "top": 6.11,
    "box": {
-    "left": 23.69,
-    "top": 13.33,
-    "width": 2.42,
+    "left": 40.63,
+    "top": 16.67,
+    "width": 1.78,
     "height": 2.67
    }
   },
   {
    "id": "Task_Deploy",
    "name": "Push to the CDN under branches/",
-   "left": 46.16,
-   "top": 2.78,
+   "left": 66.74,
+   "top": 6.11,
    "box": {
-    "left": 38.84,
-    "top": 13.33,
-    "width": 2.42,
+    "left": 61.37,
+    "top": 16.67,
+    "width": 1.78,
     "height": 2.67
    }
   },
   {
    "id": "Task_LogRendered",
    "name": "Append `rendered` to the render log",
-   "left": 61.31,
-   "top": 2.78,
+   "left": 77.41,
+   "top": 6.11,
    "box": {
-    "left": 53.99,
-    "top": 13.33,
-    "width": 2.42,
+    "left": 72.04,
+    "top": 16.67,
+    "width": 1.78,
     "height": 2.67
    }
   },
   {
    "id": "Task_Comment",
    "name": "Comment the preview URL on the PR",
-   "left": 76.46,
-   "top": 2.78,
+   "left": 92.96,
+   "top": 6.11,
    "box": {
-    "left": 69.14,
-    "top": 13.33,
-    "width": 2.42,
+    "left": 87.59,
+    "top": 16.67,
+    "width": 1.78,
     "height": 2.67
    }
   },
   {
    "id": "Task_Slug",
    "name": "Derive the slug from the head ref",
-   "left": 31.01,
+   "left": 22.74,
    "top": 21.67,
    "box": {
-    "left": 23.69,
+    "left": 17.37,
     "top": 32.22,
-    "width": 2.42,
+    "width": 1.78,
     "height": 2.67
    }
   },
   {
    "id": "Task_Remove",
    "name": "Remove the preview and log it",
-   "left": 65.35,
+   "left": 47.93,
    "top": 21.67,
    "box": {
-    "left": 58.03,
+    "left": 42.56,
     "top": 32.22,
-    "width": 2.42,
+    "width": 1.78,
     "height": 2.67
    }
   },
   {
    "id": "Task_LogRetained",
    "name": "Append `retained`, with why it stays",
-   "left": 65.35,
+   "left": 47.93,
    "top": 38.33,
    "box": {
-    "left": 58.03,
+    "left": 42.56,
     "top": 48.89,
-    "width": 2.42,
+    "width": 1.78,
     "height": 2.67
    }
   },
   {
    "id": "Task_Notice",
    "name": "Post the retention notice on the PR",
-   "left": 80.51,
+   "left": 59.04,
    "top": 38.33,
    "box": {
-    "left": 73.18,
+    "left": 53.67,
     "top": 48.89,
-    "width": 2.42,
+    "width": 1.78,
     "height": 2.67
    }
   },
   {
    "id": "Task_Validate",
    "name": "Check the slug and its confirmation",
-   "left": 31.01,
+   "left": 22.74,
    "top": 57.22,
    "box": {
-    "left": 23.69,
+    "left": 17.37,
     "top": 67.78,
-    "width": 2.42,
+    "width": 1.78,
     "height": 2.67
    }
   },
   {
    "id": "Task_Preflight",
    "name": "Re-evaluate liveness AT REMOVAL TIME",
-   "left": 46.16,
+   "left": 33.85,
    "top": 57.22,
    "box": {
-    "left": 38.84,
+    "left": 28.48,
     "top": 67.78,
-    "width": 2.42,
+    "width": 1.78,
     "height": 2.67
    }
   },
   {
    "id": "Task_RemoveDisp",
    "name": "Remove it AND append `removed` — one commit",
-   "left": 80.51,
+   "left": 59.04,
    "top": 57.22,
    "box": {
-    "left": 73.18,
+    "left": 53.67,
     "top": 67.78,
-    "width": 2.42,
+    "width": 1.78,
     "height": 2.67
    }
   },
   {
    "id": "H_Confirm",
    "name": "Repeat the slug, exactly, to confirm",
-   "left": 19.7,
+   "left": 14.44,
    "top": 85.56,
    "box": {
-    "left": 12.37,
+    "left": 9.07,
     "top": 96.11,
-    "width": 2.42,
+    "width": 1.78,
     "height": 2.67
    }
   }
  ],
+ "processHref": "feature-staging.html",
  "tasks": {
-  "Task_Build": {
-   "id": "Task_Build",
-   "name": "Build the docs site",
+  "Task_Defer": {
+   "id": "Task_Defer",
+   "name": "Defer build and queue verify sweep",
    "type": "bpmn:ServiceTask",
+   "stepHref": "feature-staging.html#step-Task_Defer",
    "lane": "CI/CD Pipeline",
+   "laneHref": "feature-staging.html#lane-Lane_Ci",
    "skills": [
     {
-     "name": "feature-staging"
+     "name": "feature-staging",
+     "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
     }
    ],
    "role": {
@@ -164,61 +180,169 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
+     }
+    ]
+   }
+  },
+  "Task_Build": {
+   "id": "Task_Build",
+   "name": "Build the docs site",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "feature-staging.html#step-Task_Build",
+   "lane": "CI/CD Pipeline",
+   "laneHref": "feature-staging.html#lane-Lane_Ci",
+   "skills": [
+    {
+     "name": "feature-staging",
+     "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
+    }
+   ],
+   "role": {
+    "name": "build-pipeline",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-build-pipeline",
+    "title": "Build pipeline",
+    "skills": [
+     {
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "watch"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
+     },
+     {
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
+     },
+     {
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
+     },
+     {
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
+     },
+     {
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
+     },
+     {
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
+     },
+     {
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
+     },
+     {
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
+     },
+     {
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
+     },
+     {
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
+     },
+     {
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
+     },
+     {
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
+     },
+     {
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
+     },
+     {
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
+     },
+     {
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
+     },
+     {
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
+     },
+     {
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -227,10 +351,13 @@
    "id": "Task_Deploy",
    "name": "Push to the CDN under branches/",
    "type": "bpmn:CallActivity",
+   "stepHref": "feature-staging.html#step-Task_Deploy",
    "lane": "CI/CD Pipeline",
+   "laneHref": "feature-staging.html#lane-Lane_Ci",
    "skills": [
     {
-     "name": "render-kg-to-cdn"
+     "name": "render-kg-to-cdn",
+     "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
     }
    ],
    "calls": {
@@ -244,61 +371,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -307,10 +449,13 @@
    "id": "Task_LogRendered",
    "name": "Append `rendered` to the render log",
    "type": "bpmn:ServiceTask",
+   "stepHref": "feature-staging.html#step-Task_LogRendered",
    "lane": "CI/CD Pipeline",
+   "laneHref": "feature-staging.html#lane-Lane_Ci",
    "skills": [
     {
-     "name": "render-logging"
+     "name": "render-logging",
+     "href": "../../../en/cat-harness/processes/skills/render-logging.html"
     }
    ],
    "role": {
@@ -319,61 +464,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -382,10 +542,13 @@
    "id": "Task_Comment",
    "name": "Comment the preview URL on the PR",
    "type": "bpmn:ServiceTask",
+   "stepHref": "feature-staging.html#step-Task_Comment",
    "lane": "CI/CD Pipeline",
+   "laneHref": "feature-staging.html#lane-Lane_Ci",
    "skills": [
     {
-     "name": "staging-review"
+     "name": "staging-review",
+     "href": "../../../en/cat-harness/processes/skills/staging-review.html"
     }
    ],
    "role": {
@@ -394,61 +557,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -457,10 +635,13 @@
    "id": "Task_Slug",
    "name": "Derive the slug from the head ref",
    "type": "bpmn:ServiceTask",
+   "stepHref": "feature-staging.html#step-Task_Slug",
    "lane": "CI/CD Pipeline",
+   "laneHref": "feature-staging.html#lane-Lane_Ci",
    "skills": [
     {
-     "name": "feature-staging"
+     "name": "feature-staging",
+     "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
     }
    ],
    "role": {
@@ -469,61 +650,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -532,10 +728,13 @@
    "id": "Task_Remove",
    "name": "Remove the preview and log it",
    "type": "bpmn:ServiceTask",
+   "stepHref": "feature-staging.html#step-Task_Remove",
    "lane": "CI/CD Pipeline",
+   "laneHref": "feature-staging.html#lane-Lane_Ci",
    "skills": [
     {
-     "name": "deletion-requires-confirmation"
+     "name": "deletion-requires-confirmation",
+     "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
     }
    ],
    "role": {
@@ -544,61 +743,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -607,10 +821,13 @@
    "id": "Task_LogRetained",
    "name": "Append `retained`, with why it stays",
    "type": "bpmn:ServiceTask",
+   "stepHref": "feature-staging.html#step-Task_LogRetained",
    "lane": "CI/CD Pipeline",
+   "laneHref": "feature-staging.html#lane-Lane_Ci",
    "skills": [
     {
-     "name": "render-logging"
+     "name": "render-logging",
+     "href": "../../../en/cat-harness/processes/skills/render-logging.html"
     }
    ],
    "shared": {
@@ -623,61 +840,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -686,10 +918,13 @@
    "id": "Task_Notice",
    "name": "Post the retention notice on the PR",
    "type": "bpmn:ServiceTask",
+   "stepHref": "feature-staging.html#step-Task_Notice",
    "lane": "CI/CD Pipeline",
+   "laneHref": "feature-staging.html#lane-Lane_Ci",
    "skills": [
     {
-     "name": "staging-review"
+     "name": "staging-review",
+     "href": "../../../en/cat-harness/processes/skills/staging-review.html"
     }
    ],
    "role": {
@@ -698,61 +933,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -761,10 +1011,13 @@
    "id": "Task_Validate",
    "name": "Check the slug and its confirmation",
    "type": "bpmn:ServiceTask",
+   "stepHref": "feature-staging.html#step-Task_Validate",
    "lane": "CI/CD Pipeline",
+   "laneHref": "feature-staging.html#lane-Lane_Ci",
    "skills": [
     {
-     "name": "deletion-requires-confirmation"
+     "name": "deletion-requires-confirmation",
+     "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
     }
    ],
    "role": {
@@ -773,61 +1026,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -836,10 +1104,13 @@
    "id": "Task_Preflight",
    "name": "Re-evaluate liveness AT REMOVAL TIME",
    "type": "bpmn:ServiceTask",
+   "stepHref": "feature-staging.html#step-Task_Preflight",
    "lane": "CI/CD Pipeline",
+   "laneHref": "feature-staging.html#lane-Lane_Ci",
    "skills": [
     {
-     "name": "deletion-requires-confirmation"
+     "name": "deletion-requires-confirmation",
+     "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
     }
    ],
    "role": {
@@ -848,61 +1119,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -911,10 +1197,13 @@
    "id": "Task_RemoveDisp",
    "name": "Remove it AND append `removed` — one commit",
    "type": "bpmn:ServiceTask",
+   "stepHref": "feature-staging.html#step-Task_RemoveDisp",
    "lane": "CI/CD Pipeline",
+   "laneHref": "feature-staging.html#lane-Lane_Ci",
    "skills": [
     {
-     "name": "deletion-requires-confirmation"
+     "name": "deletion-requires-confirmation",
+     "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
     }
    ],
    "role": {
@@ -923,61 +1212,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -986,10 +1290,13 @@
    "id": "H_Confirm",
    "name": "Repeat the slug, exactly, to confirm",
    "type": "bpmn:ServiceTask",
+   "stepHref": "feature-staging.html#step-H_Confirm",
    "lane": "Human actor",
+   "laneHref": "feature-staging.html#lane-Lane_Human",
    "skills": [
     {
-     "name": "deletion-requires-confirmation"
+     "name": "deletion-requires-confirmation",
+     "href": "../../../en/cat-harness/processes/skills/deletion-requires-confirmation.html"
     }
    ],
    "role": {
@@ -998,37 +1305,48 @@
     "title": "User",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "agent-permissions"
+      "name": "agent-permissions",
+      "href": "../../../en/cat-harness/processes/skills/agent-permissions.html"
      },
      {
-      "name": "dispatch-agent"
+      "name": "dispatch-agent",
+      "href": "../../../en/cat-harness/processes/skills/dispatch-agent.html"
      },
      {
-      "name": "folio-init"
+      "name": "folio-init",
+      "href": "../../../en/cat-harness/processes/skills/folio-init.html"
      },
      {
-      "name": "getting-started"
+      "name": "getting-started",
+      "href": "../../../en/cat-harness/processes/skills/getting-started.html"
      },
      {
-      "name": "interaction-modality"
+      "name": "interaction-modality",
+      "href": "../../../en/cat-harness/processes/skills/interaction-modality.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "repo-conversion"
+      "name": "repo-conversion",
+      "href": "../../../en/cat-harness/processes/skills/repo-conversion.html"
      }
     ]
    }

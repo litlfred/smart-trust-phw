@@ -159,15 +159,19 @@
    }
   }
  ],
+ "processHref": "test-plan-execution.html",
  "tasks": {
   "A_Request": {
    "id": "A_Request",
    "name": "Request certification of the system against plan P",
    "type": "bpmn:Task",
+   "stepHref": "test-plan-execution.html#step-A_Request",
    "lane": "Requester / system under test",
+   "laneHref": "test-plan-execution.html#lane-Lane_Requester",
    "skills": [
     {
-     "name": "test-plan-execution"
+     "name": "test-plan-execution",
+     "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
     }
    ],
    "role": {
@@ -176,7 +180,8 @@
     "title": "Test requester",
     "skills": [
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }
@@ -185,10 +190,13 @@
    "id": "A_ResolvePlan",
    "name": "Resolve the plan",
    "type": "bpmn:Task",
+   "stepHref": "test-plan-execution.html#step-A_ResolvePlan",
    "lane": "Tester",
+   "laneHref": "test-plan-execution.html#lane-Lane_Tester",
    "skills": [
     {
-     "name": "test-plan-execution"
+     "name": "test-plan-execution",
+     "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
     }
    ],
    "role": {
@@ -197,16 +205,20 @@
     "title": "Tester",
     "skills": [
      {
-      "name": "content-test"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "test-data-sets"
+      "name": "test-data-sets",
+      "href": "../../../en/cat-harness/processes/skills/test-data-sets.html"
      },
      {
-      "name": "test-engineer"
+      "name": "test-engineer",
+      "href": "../../../en/cat-harness/processes/skills/test-engineer.html"
      },
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }
@@ -215,10 +227,13 @@
    "id": "A_BindData",
    "name": "Bind the test data",
    "type": "bpmn:Task",
+   "stepHref": "test-plan-execution.html#step-A_BindData",
    "lane": "Tester",
+   "laneHref": "test-plan-execution.html#lane-Lane_Tester",
    "skills": [
     {
-     "name": "test-plan-execution"
+     "name": "test-plan-execution",
+     "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
     }
    ],
    "role": {
@@ -227,16 +242,20 @@
     "title": "Tester",
     "skills": [
      {
-      "name": "content-test"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "test-data-sets"
+      "name": "test-data-sets",
+      "href": "../../../en/cat-harness/processes/skills/test-data-sets.html"
      },
      {
-      "name": "test-engineer"
+      "name": "test-engineer",
+      "href": "../../../en/cat-harness/processes/skills/test-engineer.html"
      },
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }
@@ -245,13 +264,17 @@
    "id": "A_Execute",
    "name": "Execute every case, or skip it with a reason",
    "type": "bpmn:Task",
+   "stepHref": "test-plan-execution.html#step-A_Execute",
    "lane": "Tester",
+   "laneHref": "test-plan-execution.html#lane-Lane_Tester",
    "skills": [
     {
-     "name": "test-plan-execution"
+     "name": "test-plan-execution",
+     "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
     },
     {
-     "name": "test-engineer"
+     "name": "test-engineer",
+     "href": "../../../en/cat-harness/processes/skills/test-engineer.html"
     }
    ],
    "role": {
@@ -260,16 +283,20 @@
     "title": "Tester",
     "skills": [
      {
-      "name": "content-test"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "test-data-sets"
+      "name": "test-data-sets",
+      "href": "../../../en/cat-harness/processes/skills/test-data-sets.html"
      },
      {
-      "name": "test-engineer"
+      "name": "test-engineer",
+      "href": "../../../en/cat-harness/processes/skills/test-engineer.html"
      },
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }
@@ -278,10 +305,13 @@
    "id": "A_WriteRun",
    "name": "Write the test run and the test report",
    "type": "bpmn:Task",
+   "stepHref": "test-plan-execution.html#step-A_WriteRun",
    "lane": "Tester",
+   "laneHref": "test-plan-execution.html#lane-Lane_Tester",
    "skills": [
     {
-     "name": "test-plan-execution"
+     "name": "test-plan-execution",
+     "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
     }
    ],
    "role": {
@@ -290,16 +320,20 @@
     "title": "Tester",
     "skills": [
      {
-      "name": "content-test"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "test-data-sets"
+      "name": "test-data-sets",
+      "href": "../../../en/cat-harness/processes/skills/test-data-sets.html"
      },
      {
-      "name": "test-engineer"
+      "name": "test-engineer",
+      "href": "../../../en/cat-harness/processes/skills/test-engineer.html"
      },
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }
@@ -308,13 +342,17 @@
    "id": "A_ReExecuteSample",
    "name": "Re-execute a sample, blind to the tester's verdicts",
    "type": "bpmn:Task",
+   "stepHref": "test-plan-execution.html#step-A_ReExecuteSample",
    "lane": "Untainted checker",
+   "laneHref": "test-plan-execution.html#lane-Lane_Checker",
    "skills": [
     {
-     "name": "untainted-verification"
+     "name": "untainted-verification",
+     "href": "../../../en/cat-harness/processes/skills/untainted-verification.html"
     },
     {
-     "name": "test-plan-execution"
+     "name": "test-plan-execution",
+     "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
     }
    ],
    "role": {
@@ -323,10 +361,12 @@
     "title": "Untainted checker",
     "skills": [
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      },
      {
-      "name": "untainted-verification"
+      "name": "untainted-verification",
+      "href": "../../../en/cat-harness/processes/skills/untainted-verification.html"
      }
     ]
    }
@@ -335,10 +375,13 @@
    "id": "A_RecordCertification",
    "name": "Record the certification decision",
    "type": "bpmn:UserTask",
+   "stepHref": "test-plan-execution.html#step-A_RecordCertification",
    "lane": "Certifier",
+   "laneHref": "test-plan-execution.html#lane-Lane_Certifier",
    "skills": [
     {
-     "name": "test-plan-execution"
+     "name": "test-plan-execution",
+     "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
     }
    ],
    "role": {
@@ -347,10 +390,12 @@
     "title": "Certifier",
     "skills": [
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }
@@ -359,10 +404,13 @@
    "id": "A_RecordRefusal",
    "name": "Record the refusal, with the failing cases",
    "type": "bpmn:UserTask",
+   "stepHref": "test-plan-execution.html#step-A_RecordRefusal",
    "lane": "Certifier",
+   "laneHref": "test-plan-execution.html#lane-Lane_Certifier",
    "skills": [
     {
-     "name": "test-plan-execution"
+     "name": "test-plan-execution",
+     "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
     }
    ],
    "role": {
@@ -371,10 +419,12 @@
     "title": "Certifier",
     "skills": [
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }
@@ -383,10 +433,13 @@
    "id": "A_RecordUndetermined",
    "name": "Record why it could not be decided",
    "type": "bpmn:Task",
+   "stepHref": "test-plan-execution.html#step-A_RecordUndetermined",
    "lane": "Certifier",
+   "laneHref": "test-plan-execution.html#lane-Lane_Certifier",
    "skills": [
     {
-     "name": "test-plan-execution"
+     "name": "test-plan-execution",
+     "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
     }
    ],
    "role": {
@@ -395,10 +448,12 @@
     "title": "Certifier",
     "skills": [
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }
@@ -407,10 +462,13 @@
    "id": "Call_Sign",
    "name": "Sign the certification",
    "type": "bpmn:CallActivity",
+   "stepHref": "test-plan-execution.html#step-Call_Sign",
    "lane": "Attestation service",
+   "laneHref": "test-plan-execution.html#lane-Lane_Attestation",
    "skills": [
     {
-     "name": "qa-report-signing"
+     "name": "qa-report-signing",
+     "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
     }
    ],
    "calls": {
@@ -424,10 +482,12 @@
     "title": "Attestation service",
     "skills": [
      {
-      "name": "qa-report-signing"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }
@@ -436,10 +496,13 @@
    "id": "A_FileCertification",
    "name": "File the signed certification",
    "type": "bpmn:ServiceTask",
+   "stepHref": "test-plan-execution.html#step-A_FileCertification",
    "lane": "Attestation service",
+   "laneHref": "test-plan-execution.html#lane-Lane_Attestation",
    "skills": [
     {
-     "name": "test-plan-execution"
+     "name": "test-plan-execution",
+     "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
     }
    ],
    "role": {
@@ -448,10 +511,12 @@
     "title": "Attestation service",
     "skills": [
      {
-      "name": "qa-report-signing"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }
@@ -460,10 +525,13 @@
    "id": "Call_BeanOpen",
    "name": "Open the bean",
    "type": "bpmn:CallActivity",
+   "stepHref": "test-plan-execution.html#step-Call_BeanOpen",
    "lane": "Requester / system under test",
+   "laneHref": "test-plan-execution.html#lane-Lane_Requester",
    "skills": [
     {
-     "name": "bean-coordination"
+     "name": "bean-coordination",
+     "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
     }
    ],
    "calls": {
@@ -477,7 +545,8 @@
     "title": "Test requester",
     "skills": [
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }
@@ -486,10 +555,13 @@
    "id": "Call_BeanClose",
    "name": "Close the bean",
    "type": "bpmn:CallActivity",
+   "stepHref": "test-plan-execution.html#step-Call_BeanClose",
    "lane": "Attestation service",
+   "laneHref": "test-plan-execution.html#lane-Lane_Attestation",
    "skills": [
     {
-     "name": "todo-manager"
+     "name": "todo-manager",
+     "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
     }
    ],
    "calls": {
@@ -503,10 +575,12 @@
     "title": "Attestation service",
     "skills": [
      {
-      "name": "qa-report-signing"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }

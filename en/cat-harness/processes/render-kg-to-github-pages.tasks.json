@@ -87,15 +87,19 @@
    }
   }
  ],
+ "processHref": "render-kg-to-github-pages.html",
  "tasks": {
   "A_ResolveInputs": {
    "id": "A_ResolveInputs",
    "name": "Resolve the Subgraphs and the root URL",
    "type": "bpmn:Task",
+   "stepHref": "render-kg-to-github-pages.html#step-A_ResolveInputs",
    "lane": "Site Publisher",
+   "laneHref": "render-kg-to-github-pages.html#lane-Lane_SitePublisher",
    "skills": [
     {
-     "name": "render-kg-to-github-pages"
+     "name": "render-kg-to-github-pages",
+     "href": "../../../en/cat-harness/processes/skills/render-kg-to-github-pages.html"
     }
    ],
    "role": {
@@ -104,7 +108,8 @@
     "title": "Site Publisher",
     "skills": [
      {
-      "name": "render-kg-to-github-pages"
+      "name": "render-kg-to-github-pages",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-github-pages.html"
      }
     ]
    }
@@ -113,10 +118,13 @@
    "id": "A_Provision",
    "name": "Make sure gh-pages exists and Pages serves it",
    "type": "bpmn:Task",
+   "stepHref": "render-kg-to-github-pages.html#step-A_Provision",
    "lane": "GitHub Pages",
+   "laneHref": "render-kg-to-github-pages.html#lane-Lane_GitHubPages",
    "skills": [
     {
-     "name": "render-kg-to-github-pages"
+     "name": "render-kg-to-github-pages",
+     "href": "../../../en/cat-harness/processes/skills/render-kg-to-github-pages.html"
     }
    ],
    "role": {
@@ -125,7 +133,8 @@
     "title": "GitHub Pages",
     "skills": [
      {
-      "name": "github-pages"
+      "name": "github-pages",
+      "href": "../../../en/cat-harness/processes/skills/github-pages.html"
      }
     ]
    }
@@ -134,10 +143,13 @@
    "id": "A_Stage",
    "name": "Stage the rendering",
    "type": "bpmn:Task",
+   "stepHref": "render-kg-to-github-pages.html#step-A_Stage",
    "lane": "Site Publisher",
+   "laneHref": "render-kg-to-github-pages.html#lane-Lane_SitePublisher",
    "skills": [
     {
-     "name": "render-kg-to-github-pages"
+     "name": "render-kg-to-github-pages",
+     "href": "../../../en/cat-harness/processes/skills/render-kg-to-github-pages.html"
     }
    ],
    "role": {
@@ -146,7 +158,8 @@
     "title": "Site Publisher",
     "skills": [
      {
-      "name": "render-kg-to-github-pages"
+      "name": "render-kg-to-github-pages",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-github-pages.html"
      }
     ]
    }
@@ -155,10 +168,13 @@
    "id": "A_CheckStaged",
    "name": "Check what was staged",
    "type": "bpmn:Task",
+   "stepHref": "render-kg-to-github-pages.html#step-A_CheckStaged",
    "lane": "Site Publisher",
+   "laneHref": "render-kg-to-github-pages.html#lane-Lane_SitePublisher",
    "skills": [
     {
-     "name": "render-kg-to-github-pages"
+     "name": "render-kg-to-github-pages",
+     "href": "../../../en/cat-harness/processes/skills/render-kg-to-github-pages.html"
     }
    ],
    "role": {
@@ -167,7 +183,8 @@
     "title": "Site Publisher",
     "skills": [
      {
-      "name": "render-kg-to-github-pages"
+      "name": "render-kg-to-github-pages",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-github-pages.html"
      }
     ]
    }
@@ -176,10 +193,13 @@
    "id": "A_Deploy",
    "name": "Deploy the rendering",
    "type": "bpmn:Task",
+   "stepHref": "render-kg-to-github-pages.html#step-A_Deploy",
    "lane": "GitHub Pages",
+   "laneHref": "render-kg-to-github-pages.html#lane-Lane_GitHubPages",
    "skills": [
     {
-     "name": "render-kg-to-github-pages"
+     "name": "render-kg-to-github-pages",
+     "href": "../../../en/cat-harness/processes/skills/render-kg-to-github-pages.html"
     }
    ],
    "role": {
@@ -188,7 +208,8 @@
     "title": "GitHub Pages",
     "skills": [
      {
-      "name": "github-pages"
+      "name": "github-pages",
+      "href": "../../../en/cat-harness/processes/skills/github-pages.html"
      }
     ]
    }
@@ -197,10 +218,13 @@
    "id": "A_CheckServed",
    "name": "Check what is served",
    "type": "bpmn:Task",
+   "stepHref": "render-kg-to-github-pages.html#step-A_CheckServed",
    "lane": "Site Publisher",
+   "laneHref": "render-kg-to-github-pages.html#lane-Lane_SitePublisher",
    "skills": [
     {
-     "name": "render-kg-to-github-pages"
+     "name": "render-kg-to-github-pages",
+     "href": "../../../en/cat-harness/processes/skills/render-kg-to-github-pages.html"
     }
    ],
    "role": {
@@ -209,7 +233,8 @@
     "title": "Site Publisher",
     "skills": [
      {
-      "name": "render-kg-to-github-pages"
+      "name": "render-kg-to-github-pages",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-github-pages.html"
      }
     ]
    }
@@ -218,10 +243,13 @@
    "id": "A_Report",
    "name": "Report the push: status and message",
    "type": "bpmn:Task",
+   "stepHref": "render-kg-to-github-pages.html#step-A_Report",
    "lane": "Site Publisher",
+   "laneHref": "render-kg-to-github-pages.html#lane-Lane_SitePublisher",
    "skills": [
     {
-     "name": "render-kg-to-github-pages"
+     "name": "render-kg-to-github-pages",
+     "href": "../../../en/cat-harness/processes/skills/render-kg-to-github-pages.html"
     }
    ],
    "role": {
@@ -230,7 +258,8 @@
     "title": "Site Publisher",
     "skills": [
      {
-      "name": "render-kg-to-github-pages"
+      "name": "render-kg-to-github-pages",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-github-pages.html"
      }
     ]
    }

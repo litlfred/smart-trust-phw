@@ -1635,12 +1635,12 @@
           "heading": false
         },
         {
-          "term": "starting point",
-          "heading": true
-        },
-        {
           "term": "wasinformedby prov",
           "heading": false
+        },
+        {
+          "term": "starting point",
+          "heading": true
         },
         {
           "term": "wasassociatedwith prov",
@@ -2543,6 +2543,6 @@
   "links": {
     "repo": "litlfred/cat-harness",
     "branch": "main",
-    "dir": "library/kg/w3c-2013-prov-o"
+    "dir": "library/corpus/kg/w3c-2013-prov-o"
   }
 }

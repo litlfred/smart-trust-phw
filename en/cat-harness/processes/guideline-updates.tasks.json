@@ -99,12 +99,15 @@
    }
   }
  ],
+ "processHref": "guideline-updates.html",
  "tasks": {
   "Task_ChangeNotes": {
    "id": "Task_ChangeNotes",
    "name": "Publish the version with its change notes",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_ChangeNotes",
    "lane": "Guideline publisher",
+   "laneHref": "guideline-updates.html#lane-Lane_Publisher",
    "skills": [
     {
      "name": "content-publish"
@@ -116,31 +119,36 @@
     "title": "Publication manager",
     "skills": [
      {
-      "name": "content-publish"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-review"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-audit"
+      "name": "instance-publication",
+      "href": "../../../en/cat-harness/processes/skills/instance-publication.html"
      },
      {
-      "name": "instance-publication"
+      "name": "package-release",
+      "href": "../../../en/cat-harness/processes/skills/package-release.html"
      },
      {
-      "name": "package-release"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "qa-report-signing"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
-     },
-     {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      }
     ]
    }
@@ -149,10 +157,13 @@
    "id": "Task_MapCone",
    "name": "Map the affected layers in order",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_MapCone",
    "lane": "Re-pin steward and build pipeline",
+   "laneHref": "guideline-updates.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "remote-mount"
+     "name": "remote-mount",
+     "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
     }
    ],
    "role": {
@@ -161,25 +172,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -188,10 +206,13 @@
    "id": "Task_OpenRepin",
    "name": "Open the re-pin for the next ready layer",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_OpenRepin",
    "lane": "Re-pin steward and build pipeline",
+   "laneHref": "guideline-updates.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "remote-mount"
+     "name": "remote-mount",
+     "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
     }
    ],
    "role": {
@@ -200,25 +221,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -227,10 +255,13 @@
    "id": "Task_Impact",
    "name": "Compare old, new and our adaptations",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_Impact",
    "lane": "Adaptation team (human or agentic)",
+   "laneHref": "guideline-updates.html#lane-Lane_Adaptation",
    "skills": [
     {
-     "name": "rendered-impact"
+     "name": "rendered-impact",
+     "href": "../../../en/cat-harness/processes/skills/rendered-impact.html"
     }
    ],
    "role": {
@@ -239,49 +270,64 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "crdm-impact-analysis"
+      "name": "crdm-impact-analysis",
+      "href": "../../../en/cat-harness/processes/skills/crdm-impact-analysis.html"
      },
      {
-      "name": "crdm-needs-assessment"
+      "name": "crdm-needs-assessment",
+      "href": "../../../en/cat-harness/processes/skills/crdm-needs-assessment.html"
      },
      {
-      "name": "crdm-recorded-walkthrough"
+      "name": "crdm-recorded-walkthrough",
+      "href": "../../../en/cat-harness/processes/skills/crdm-recorded-walkthrough.html"
      },
      {
-      "name": "crdm-requirements-template"
+      "name": "crdm-requirements-template",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-template.html"
      },
      {
-      "name": "crdm-requirements-workflow"
+      "name": "crdm-requirements-workflow",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-workflow.html"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
-      "name": "opening-brief"
+      "name": "opening-brief",
+      "href": "../../../en/cat-harness/processes/skills/opening-brief.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -290,10 +336,13 @@
    "id": "Task_Review",
    "name": "Review the impact with stakeholders",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_Review",
    "lane": "Adaptation committee (policy, clinical, programme)",
+   "laneHref": "guideline-updates.html#lane-Lane_Committee",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     }
    ],
    "role": {
@@ -302,7 +351,8 @@
     "title": "Authoring Committee",
     "skills": [
      {
-      "name": "review-sheet-script"
+      "name": "review-sheet-script",
+      "href": "../../../en/cat-harness/processes/skills/review-sheet-script.html"
      }
     ]
    }
@@ -311,10 +361,13 @@
    "id": "Task_Decide",
    "name": "Decide each adaptation: keep, revise or retire",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_Decide",
    "lane": "Adaptation committee (policy, clinical, programme)",
+   "laneHref": "guideline-updates.html#lane-Lane_Committee",
    "skills": [
     {
-     "name": "decision-audit"
+     "name": "decision-audit",
+     "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
     }
    ],
    "role": {
@@ -323,7 +376,8 @@
     "title": "Authoring Committee",
     "skills": [
      {
-      "name": "review-sheet-script"
+      "name": "review-sheet-script",
+      "href": "../../../en/cat-harness/processes/skills/review-sheet-script.html"
      }
     ]
    }
@@ -332,10 +386,13 @@
    "id": "Task_Revise",
    "name": "Revise the adaptations as decided",
    "type": "bpmn:CallActivity",
+   "stepHref": "guideline-updates.html#step-Task_Revise",
    "lane": "Adaptation team (human or agentic)",
+   "laneHref": "guideline-updates.html#lane-Lane_Adaptation",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     }
    ],
    "calls": {
@@ -349,49 +406,64 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "crdm-impact-analysis"
+      "name": "crdm-impact-analysis",
+      "href": "../../../en/cat-harness/processes/skills/crdm-impact-analysis.html"
      },
      {
-      "name": "crdm-needs-assessment"
+      "name": "crdm-needs-assessment",
+      "href": "../../../en/cat-harness/processes/skills/crdm-needs-assessment.html"
      },
      {
-      "name": "crdm-recorded-walkthrough"
+      "name": "crdm-recorded-walkthrough",
+      "href": "../../../en/cat-harness/processes/skills/crdm-recorded-walkthrough.html"
      },
      {
-      "name": "crdm-requirements-template"
+      "name": "crdm-requirements-template",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-template.html"
      },
      {
-      "name": "crdm-requirements-workflow"
+      "name": "crdm-requirements-workflow",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-workflow.html"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
-      "name": "opening-brief"
+      "name": "opening-brief",
+      "href": "../../../en/cat-harness/processes/skills/opening-brief.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -400,10 +472,13 @@
    "id": "Task_Merge",
    "name": "Merge the re-pin with its decided revisions",
    "type": "bpmn:Task",
+   "stepHref": "guideline-updates.html#step-Task_Merge",
    "lane": "Re-pin steward and build pipeline",
+   "laneHref": "guideline-updates.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "prepare-merge"
+     "name": "prepare-merge",
+     "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
     }
    ],
    "role": {
@@ -412,25 +487,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }

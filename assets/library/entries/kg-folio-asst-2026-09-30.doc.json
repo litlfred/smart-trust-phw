@@ -344,11 +344,11 @@
           "heading": false
         },
         {
-          "term": "utilizes",
+          "term": "test data",
           "heading": false
         },
         {
-          "term": "test data",
+          "term": "utilizes",
           "heading": false
         },
         {
@@ -460,11 +460,11 @@
       "heading": false
     },
     {
-      "term": "none",
+      "term": "ohs app",
       "heading": false
     },
     {
-      "term": "ohs app",
+      "term": "none",
       "heading": false
     },
     {
@@ -476,17 +476,17 @@
       "heading": false
     },
     {
-      "term": "knowledge assets",
+      "term": "test data",
       "heading": false
     },
     {
-      "term": "test data",
+      "term": "knowledge assets",
       "heading": false
     }
   ],
   "links": {
     "repo": "litlfred/cat-harness",
     "branch": "main",
-    "dir": "library/content/kg-folio-asst-2026-09-30"
+    "dir": "library/corpus/content/kg-folio-asst-2026-09-30"
   }
 }

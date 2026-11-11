@@ -51,15 +51,19 @@
    }
   }
  ],
+ "processHref": "deep-document-research.html",
  "tasks": {
   "A_Plan": {
    "id": "A_Plan",
    "name": "Filter the corpus, choose the granularity, decompose the question",
    "type": "bpmn:Task",
+   "stepHref": "deep-document-research.html#step-A_Plan",
    "lane": "Deep researcher",
+   "laneHref": "deep-document-research.html#lane-Lane_DeepResearcher",
    "skills": [
     {
-     "name": "deep-document-research"
+     "name": "deep-document-research",
+     "href": "../../../en/cat-harness/processes/skills/deep-document-research.html"
     }
    ],
    "role": {
@@ -68,7 +72,8 @@
     "title": "Deep researcher",
     "skills": [
      {
-      "name": "deep-document-research"
+      "name": "deep-document-research",
+      "href": "../../../en/cat-harness/processes/skills/deep-document-research.html"
      }
     ]
    }
@@ -77,10 +82,13 @@
    "id": "A_Search",
    "name": "Retrieve for each sub-question",
    "type": "bpmn:Task",
+   "stepHref": "deep-document-research.html#step-A_Search",
    "lane": "Deep researcher",
+   "laneHref": "deep-document-research.html#lane-Lane_DeepResearcher",
    "skills": [
     {
-     "name": "deep-document-research"
+     "name": "deep-document-research",
+     "href": "../../../en/cat-harness/processes/skills/deep-document-research.html"
     }
    ],
    "role": {
@@ -89,7 +97,8 @@
     "title": "Deep researcher",
     "skills": [
      {
-      "name": "deep-document-research"
+      "name": "deep-document-research",
+      "href": "../../../en/cat-harness/processes/skills/deep-document-research.html"
      }
     ]
    }
@@ -98,10 +107,13 @@
    "id": "A_Refine",
    "name": "Deduplicate, and keep what is actually relevant",
    "type": "bpmn:Task",
+   "stepHref": "deep-document-research.html#step-A_Refine",
    "lane": "Deep researcher",
+   "laneHref": "deep-document-research.html#lane-Lane_DeepResearcher",
    "skills": [
     {
-     "name": "deep-document-research"
+     "name": "deep-document-research",
+     "href": "../../../en/cat-harness/processes/skills/deep-document-research.html"
     }
    ],
    "role": {
@@ -110,7 +122,8 @@
     "title": "Deep researcher",
     "skills": [
      {
-      "name": "deep-document-research"
+      "name": "deep-document-research",
+      "href": "../../../en/cat-harness/processes/skills/deep-document-research.html"
      }
     ]
    }
@@ -119,10 +132,13 @@
    "id": "A_Report",
    "name": "Synthesise, cite to a location, and say what was not found",
    "type": "bpmn:Task",
+   "stepHref": "deep-document-research.html#step-A_Report",
    "lane": "Deep researcher",
+   "laneHref": "deep-document-research.html#lane-Lane_DeepResearcher",
    "skills": [
     {
-     "name": "deep-document-research"
+     "name": "deep-document-research",
+     "href": "../../../en/cat-harness/processes/skills/deep-document-research.html"
     }
    ],
    "role": {
@@ -131,7 +147,8 @@
     "title": "Deep researcher",
     "skills": [
      {
-      "name": "deep-document-research"
+      "name": "deep-document-research",
+      "href": "../../../en/cat-harness/processes/skills/deep-document-research.html"
      }
     ]
    }

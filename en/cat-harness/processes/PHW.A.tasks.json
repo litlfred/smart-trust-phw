@@ -75,12 +75,15 @@
    }
   }
  ],
+ "processHref": "PHW.A.html",
  "tasks": {
   "PHW.A.1": {
    "id": "PHW.A.1",
    "name": "A1. Select base policy & disclosure scope (PCF Basic / Intermediate Consent)",
    "type": "bpmn:UserTask",
+   "stepHref": "PHW.A.html#step-PHW.A.1",
    "lane": "VHL Holder (Patient / Personal Health Wallet)",
+   "laneHref": "PHW.A.html#lane-PHW.Lane.Holder",
    "skills": [],
    "binding": "unbound"
   },
@@ -88,7 +91,9 @@
    "id": "PHW.A.2",
    "name": "A2. Construct FHIR Consent & Provenance (IHE.PCF.consentBasic / Intermediate)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.A.html#step-PHW.A.2",
    "lane": "PCF Consent Recorder (Wallet / VHL Sharer)",
+   "laneHref": "PHW.A.html#lane-PHW.Lane.ConsentRecorder",
    "skills": [],
    "binding": "unbound"
   },
@@ -96,7 +101,9 @@
    "id": "PHW.A.3",
    "name": "A3. Create consent directive [ITI-108] Access Consent: Post",
    "type": "bpmn:SendTask",
+   "stepHref": "PHW.A.html#step-PHW.A.3",
    "lane": "PCF Consent Recorder (Wallet / VHL Sharer)",
+   "laneHref": "PHW.A.html#lane-PHW.Lane.ConsentRecorder",
    "skills": [],
    "binding": "unbound"
   },
@@ -104,7 +111,9 @@
    "id": "PHW.A.4",
    "name": "A4. Update or revoke directive [ITI-108] Access Consent: Put / Delete",
    "type": "bpmn:SendTask",
+   "stepHref": "PHW.A.html#step-PHW.A.4",
    "lane": "PCF Consent Recorder (Wallet / VHL Sharer)",
+   "laneHref": "PHW.A.html#lane-PHW.Lane.ConsentRecorder",
    "skills": [],
    "binding": "unbound"
   },
@@ -112,7 +121,9 @@
    "id": "PHW.A.5",
    "name": "A5. Validate, version & persist Consent + Provenance [ITI-108] Access Consent",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.A.html#step-PHW.A.5",
    "lane": "PCF Consent Registry",
+   "laneHref": "PHW.A.html#lane-PHW.Lane.ConsentRegistry",
    "skills": [],
    "binding": "unbound"
   },
@@ -120,7 +131,9 @@
    "id": "PHW.A.6",
    "name": "A6. Confirm recorded Consent.id & versionId [ITI-108] Access Consent response",
    "type": "bpmn:ReceiveTask",
+   "stepHref": "PHW.A.html#step-PHW.A.6",
    "lane": "VHL Holder (Patient / Personal Health Wallet)",
+   "laneHref": "PHW.A.html#lane-PHW.Lane.Holder",
    "skills": [],
    "binding": "unbound"
   }

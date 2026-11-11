@@ -159,12 +159,15 @@
    }
   }
  ],
+ "processHref": "multi-locale-translation.html",
  "tasks": {
   "Task_ML_Scope": {
    "id": "Task_ML_Scope",
    "name": "Set locales, scope and merge window",
    "type": "bpmn:UserTask",
+   "stepHref": "multi-locale-translation.html#step-Task_ML_Scope",
    "lane": "Owner",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Owner",
    "skills": [],
    "role": {
     "name": "user",
@@ -172,37 +175,48 @@
     "title": "User",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "agent-permissions"
+      "name": "agent-permissions",
+      "href": "../../../en/cat-harness/processes/skills/agent-permissions.html"
      },
      {
-      "name": "dispatch-agent"
+      "name": "dispatch-agent",
+      "href": "../../../en/cat-harness/processes/skills/dispatch-agent.html"
      },
      {
-      "name": "folio-init"
+      "name": "folio-init",
+      "href": "../../../en/cat-harness/processes/skills/folio-init.html"
      },
      {
-      "name": "getting-started"
+      "name": "getting-started",
+      "href": "../../../en/cat-harness/processes/skills/getting-started.html"
      },
      {
-      "name": "interaction-modality"
+      "name": "interaction-modality",
+      "href": "../../../en/cat-harness/processes/skills/interaction-modality.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "repo-conversion"
+      "name": "repo-conversion",
+      "href": "../../../en/cat-harness/processes/skills/repo-conversion.html"
      }
     ]
    }
@@ -211,10 +225,13 @@
    "id": "Task_ML_Extract",
    "name": "Extract every template once",
    "type": "bpmn:Task",
+   "stepHref": "multi-locale-translation.html#step-Task_ML_Extract",
    "lane": "Source-language lead",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Lead",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "shared": {
@@ -227,10 +244,12 @@
     "title": "Source-language lead",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-refresh"
+      "name": "translation-refresh",
+      "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
      }
     ]
    }
@@ -239,10 +258,13 @@
    "id": "Task_ML_SourcePR",
    "name": "Merge the one source PR to main",
    "type": "bpmn:ServiceTask",
+   "stepHref": "multi-locale-translation.html#step-Task_ML_SourcePR",
    "lane": "Source-language lead",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Lead",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -251,10 +273,12 @@
     "title": "Source-language lead",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-refresh"
+      "name": "translation-refresh",
+      "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
      }
     ]
    }
@@ -263,10 +287,13 @@
    "id": "Task_ML_Watcher",
    "name": "Schedule the refresh watcher",
    "type": "bpmn:ServiceTask",
+   "stepHref": "multi-locale-translation.html#step-Task_ML_Watcher",
    "lane": "Source-language lead",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Lead",
    "skills": [
     {
-     "name": "translation-refresh"
+     "name": "translation-refresh",
+     "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
     }
    ],
    "role": {
@@ -275,10 +302,12 @@
     "title": "Source-language lead",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-refresh"
+      "name": "translation-refresh",
+      "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
      }
     ]
    }
@@ -287,10 +316,13 @@
    "id": "Task_ML_Translate",
    "name": "Translate one locale",
    "type": "bpmn:ServiceTask",
+   "stepHref": "multi-locale-translation.html#step-Task_ML_Translate",
    "lane": "Locale translator (one per locale)",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Translator",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -299,7 +331,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -308,10 +341,13 @@
    "id": "Task_ML_SourceIssue",
    "name": "File the source errors as one issue",
    "type": "bpmn:ServiceTask",
+   "stepHref": "multi-locale-translation.html#step-Task_ML_SourceIssue",
    "lane": "Source-language lead",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Lead",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -320,10 +356,12 @@
     "title": "Source-language lead",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-refresh"
+      "name": "translation-refresh",
+      "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
      }
     ]
    }
@@ -332,10 +370,13 @@
    "id": "Task_ML_Gates",
    "name": "Run the deterministic gates",
    "type": "bpmn:ServiceTask",
+   "stepHref": "multi-locale-translation.html#step-Task_ML_Gates",
    "lane": "Locale translator (one per locale)",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Translator",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -344,7 +385,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -353,7 +395,9 @@
    "id": "Call_ML_RoundTrip",
    "name": "Untainted round trip on a sample",
    "type": "bpmn:CallActivity",
+   "stepHref": "multi-locale-translation.html#step-Call_ML_RoundTrip",
    "lane": "Locale translator (one per locale)",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Translator",
    "skills": [],
    "calls": {
     "name": "Translation round trip (untainted)",
@@ -366,7 +410,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -375,10 +420,13 @@
    "id": "Task_ML_Glossary",
    "name": "Check glossary consistency",
    "type": "bpmn:ServiceTask",
+   "stepHref": "multi-locale-translation.html#step-Task_ML_Glossary",
    "lane": "Locale translator (one per locale)",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Translator",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -387,7 +435,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -396,10 +445,13 @@
    "id": "Task_ML_QAReport",
    "name": "Write the locale's QA report",
    "type": "bpmn:ServiceTask",
+   "stepHref": "multi-locale-translation.html#step-Task_ML_QAReport",
    "lane": "Locale translator (one per locale)",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Translator",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -408,7 +460,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -417,10 +470,13 @@
    "id": "Task_ML_LocalePR",
    "name": "Open the locale PR to main",
    "type": "bpmn:ServiceTask",
+   "stepHref": "multi-locale-translation.html#step-Task_ML_LocalePR",
    "lane": "Locale translator (one per locale)",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Translator",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -429,7 +485,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -438,10 +495,13 @@
    "id": "Task_ML_FixDrift",
    "name": "Fix each drift on the PR",
    "type": "bpmn:ServiceTask",
+   "stepHref": "multi-locale-translation.html#step-Task_ML_FixDrift",
    "lane": "Locale translator (one per locale)",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Translator",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -450,7 +510,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -459,10 +520,13 @@
    "id": "Task_ML_Merge",
    "name": "Validate and merge in the window",
    "type": "bpmn:ServiceTask",
+   "stepHref": "multi-locale-translation.html#step-Task_ML_Merge",
    "lane": "Source-language lead",
+   "laneHref": "multi-locale-translation.html#lane-Lane_ML_Lead",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -471,10 +535,12 @@
     "title": "Source-language lead",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-refresh"
+      "name": "translation-refresh",
+      "href": "../../../en/cat-harness/processes/skills/translation-refresh.html"
      }
     ]
    }

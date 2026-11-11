@@ -832,7 +832,7 @@
           "heading": false
         },
         {
-          "term": "funding",
+          "term": "donors",
           "heading": false
         }
       ],
@@ -937,12 +937,12 @@
       "heading": true
     },
     {
-      "term": "feature-importance explanations",
-      "heading": true
-    },
-    {
       "term": "axe satisfies",
       "heading": false
+    },
+    {
+      "term": "feature-importance explanations",
+      "heading": true
     },
     {
       "term": "competing explanations",
@@ -1143,6 +1143,6 @@
   "links": {
     "repo": "litlfred/cat-harness",
     "branch": "main",
-    "dir": "library/content/arxiv-2505.10399v1"
+    "dir": "library/corpus/content/arxiv-2505.10399v1"
   }
 }

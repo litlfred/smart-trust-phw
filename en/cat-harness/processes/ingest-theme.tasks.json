@@ -63,15 +63,19 @@
    }
   }
  ],
+ "processHref": "ingest-theme.html",
  "tasks": {
   "Task_ReadStylesheet": {
    "id": "Task_ReadStylesheet",
    "name": "Read the served stylesheet's declarations",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ingest-theme.html#step-Task_ReadStylesheet",
    "lane": "Ingestion Engine (agent, runs unattended)",
+   "laneHref": "ingest-theme.html#lane-Lane_0",
    "skills": [
     {
-     "name": "theme-art-intake"
+     "name": "theme-art-intake",
+     "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
     }
    ],
    "role": {
@@ -80,28 +84,36 @@
     "title": "Ingestion engine",
     "skills": [
      {
-      "name": "asset-extraction"
+      "name": "asset-extraction",
+      "href": "../../../en/cat-harness/processes/skills/asset-extraction.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "library-ingestion"
+      "name": "library-ingestion",
+      "href": "../../../en/cat-harness/processes/skills/library-ingestion.html"
      },
      {
-      "name": "materialize-on-demand"
+      "name": "materialize-on-demand",
+      "href": "../../../en/cat-harness/processes/skills/materialize-on-demand.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "theme-art-intake"
+      "name": "theme-art-intake",
+      "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
      },
      {
-      "name": "theme-ui-review"
+      "name": "theme-ui-review",
+      "href": "../../../en/cat-harness/processes/skills/theme-ui-review.html"
      },
      {
-      "name": "upload-naming"
+      "name": "upload-naming",
+      "href": "../../../en/cat-harness/processes/skills/upload-naming.html"
      }
     ]
    }
@@ -110,10 +122,13 @@
    "id": "Task_ReadGuide",
    "name": "Read the guide's own stated rules",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ingest-theme.html#step-Task_ReadGuide",
    "lane": "Ingestion Engine (agent, runs unattended)",
+   "laneHref": "ingest-theme.html#lane-Lane_0",
    "skills": [
     {
-     "name": "theme-art-intake"
+     "name": "theme-art-intake",
+     "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
     }
    ],
    "role": {
@@ -122,28 +137,36 @@
     "title": "Ingestion engine",
     "skills": [
      {
-      "name": "asset-extraction"
+      "name": "asset-extraction",
+      "href": "../../../en/cat-harness/processes/skills/asset-extraction.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "library-ingestion"
+      "name": "library-ingestion",
+      "href": "../../../en/cat-harness/processes/skills/library-ingestion.html"
      },
      {
-      "name": "materialize-on-demand"
+      "name": "materialize-on-demand",
+      "href": "../../../en/cat-harness/processes/skills/materialize-on-demand.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "theme-art-intake"
+      "name": "theme-art-intake",
+      "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
      },
      {
-      "name": "theme-ui-review"
+      "name": "theme-ui-review",
+      "href": "../../../en/cat-harness/processes/skills/theme-ui-review.html"
      },
      {
-      "name": "upload-naming"
+      "name": "upload-naming",
+      "href": "../../../en/cat-harness/processes/skills/upload-naming.html"
      }
     ]
    }
@@ -152,10 +175,13 @@
    "id": "Task_MapRoles",
    "name": "Map values onto palette roles",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ingest-theme.html#step-Task_MapRoles",
    "lane": "Ingestion Engine (agent, runs unattended)",
+   "laneHref": "ingest-theme.html#lane-Lane_0",
    "skills": [
     {
-     "name": "theme-art-intake"
+     "name": "theme-art-intake",
+     "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
     }
    ],
    "role": {
@@ -164,28 +190,36 @@
     "title": "Ingestion engine",
     "skills": [
      {
-      "name": "asset-extraction"
+      "name": "asset-extraction",
+      "href": "../../../en/cat-harness/processes/skills/asset-extraction.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "library-ingestion"
+      "name": "library-ingestion",
+      "href": "../../../en/cat-harness/processes/skills/library-ingestion.html"
      },
      {
-      "name": "materialize-on-demand"
+      "name": "materialize-on-demand",
+      "href": "../../../en/cat-harness/processes/skills/materialize-on-demand.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "theme-art-intake"
+      "name": "theme-art-intake",
+      "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
      },
      {
-      "name": "theme-ui-review"
+      "name": "theme-ui-review",
+      "href": "../../../en/cat-harness/processes/skills/theme-ui-review.html"
      },
      {
-      "name": "upload-naming"
+      "name": "upload-naming",
+      "href": "../../../en/cat-harness/processes/skills/upload-naming.html"
      }
     ]
    }
@@ -194,10 +228,13 @@
    "id": "Task_Contradictions",
    "name": "Record contradictions IN the source",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ingest-theme.html#step-Task_Contradictions",
    "lane": "Ingestion Engine (agent, runs unattended)",
+   "laneHref": "ingest-theme.html#lane-Lane_0",
    "skills": [
     {
-     "name": "theme-art-intake"
+     "name": "theme-art-intake",
+     "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
     }
    ],
    "role": {
@@ -206,28 +243,36 @@
     "title": "Ingestion engine",
     "skills": [
      {
-      "name": "asset-extraction"
+      "name": "asset-extraction",
+      "href": "../../../en/cat-harness/processes/skills/asset-extraction.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "library-ingestion"
+      "name": "library-ingestion",
+      "href": "../../../en/cat-harness/processes/skills/library-ingestion.html"
      },
      {
-      "name": "materialize-on-demand"
+      "name": "materialize-on-demand",
+      "href": "../../../en/cat-harness/processes/skills/materialize-on-demand.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "theme-art-intake"
+      "name": "theme-art-intake",
+      "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
      },
      {
-      "name": "theme-ui-review"
+      "name": "theme-ui-review",
+      "href": "../../../en/cat-harness/processes/skills/theme-ui-review.html"
      },
      {
-      "name": "upload-naming"
+      "name": "upload-naming",
+      "href": "../../../en/cat-harness/processes/skills/upload-naming.html"
      }
     ]
    }
@@ -236,10 +281,13 @@
    "id": "Task_Review",
    "name": "Theme and UI review",
    "type": "bpmn:CallActivity",
+   "stepHref": "ingest-theme.html#step-Task_Review",
    "lane": "Ingestion Engine (agent, runs unattended)",
+   "laneHref": "ingest-theme.html#lane-Lane_0",
    "skills": [
     {
-     "name": "theme-ui-review"
+     "name": "theme-ui-review",
+     "href": "../../../en/cat-harness/processes/skills/theme-ui-review.html"
     }
    ],
    "calls": {
@@ -253,28 +301,36 @@
     "title": "Ingestion engine",
     "skills": [
      {
-      "name": "asset-extraction"
+      "name": "asset-extraction",
+      "href": "../../../en/cat-harness/processes/skills/asset-extraction.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "library-ingestion"
+      "name": "library-ingestion",
+      "href": "../../../en/cat-harness/processes/skills/library-ingestion.html"
      },
      {
-      "name": "materialize-on-demand"
+      "name": "materialize-on-demand",
+      "href": "../../../en/cat-harness/processes/skills/materialize-on-demand.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "theme-art-intake"
+      "name": "theme-art-intake",
+      "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
      },
      {
-      "name": "theme-ui-review"
+      "name": "theme-ui-review",
+      "href": "../../../en/cat-harness/processes/skills/theme-ui-review.html"
      },
      {
-      "name": "upload-naming"
+      "name": "upload-naming",
+      "href": "../../../en/cat-harness/processes/skills/upload-naming.html"
      }
     ]
    }

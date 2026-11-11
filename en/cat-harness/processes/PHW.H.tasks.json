@@ -63,12 +63,15 @@
    }
   }
  ],
+ "processHref": "PHW.H.html",
  "tasks": {
   "PHW.H.1": {
    "id": "PHW.H.1",
    "name": "H1. Decide what to stop: revoke (final) or suspend (reversible)",
    "type": "bpmn:UserTask",
+   "stepHref": "PHW.H.html#step-PHW.H.1",
    "lane": "Data Provider (decides)",
+   "laneHref": "PHW.H.html#lane-PHW.Lane.DataProvider",
    "skills": [],
    "binding": "unbound"
   },
@@ -76,7 +79,9 @@
    "id": "PHW.H.2",
    "name": "H2. Set the grant's bit in the Bitstring Status List",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.H.html#step-PHW.H.2",
    "lane": "Grant Issuer (W3C Bitstring Status List)",
+   "laneHref": "PHW.H.html#lane-PHW.Lane.GrantIssuer",
    "skills": [],
    "binding": "unbound"
   },
@@ -84,7 +89,9 @@
    "id": "PHW.H.3",
    "name": "H3. Revoke tokens and disable the client",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.H.html#step-PHW.H.3",
    "lane": "Provider Authorization Server (administrator + decision point)",
+   "laneHref": "PHW.H.html#lane-PHW.Lane.AuthorizationServer",
    "skills": [],
    "binding": "unbound"
   },
@@ -92,7 +99,9 @@
    "id": "PHW.H.4",
    "name": "H4. Remove key from trust list or revoke certificate (CRL)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.H.html#step-PHW.H.4",
    "lane": "Trust Anchor (GDHCN or another accepted anchor)",
+   "laneHref": "PHW.H.html#lane-PHW.Lane.TrustAnchor",
    "skills": [],
    "binding": "unbound"
   },
@@ -100,7 +109,9 @@
    "id": "PHW.H.5",
    "name": "H5. Record the revocation or suspension (process G)",
    "type": "bpmn:CallActivity",
+   "stepHref": "PHW.H.html#step-PHW.H.5",
    "lane": "Data Provider (decides)",
+   "laneHref": "PHW.H.html#lane-PHW.Lane.DataProvider",
    "skills": [],
    "calls": {
     "name": "G. Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12)",

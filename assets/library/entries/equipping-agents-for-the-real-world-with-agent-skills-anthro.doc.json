@@ -409,11 +409,11 @@
           "heading": false
         },
         {
-          "term": "careers",
+          "term": "futures",
           "heading": false
         },
         {
-          "term": "futures",
+          "term": "startups",
           "heading": false
         }
       ],
@@ -505,6 +505,6 @@
   "links": {
     "repo": "litlfred/cat-harness",
     "branch": "main",
-    "dir": "library/conduct/equipping-agents-for-the-real-world-with-agent-skills-anthro"
+    "dir": "library/corpus/conduct/equipping-agents-for-the-real-world-with-agent-skills-anthro"
   }
 }

@@ -63,15 +63,19 @@
    }
   }
  ],
+ "processHref": "review-narrative.html",
  "tasks": {
   "Task_ReadFindings": {
    "id": "Task_ReadFindings",
    "name": "Read the sidecar findings",
    "type": "bpmn:Task",
+   "stepHref": "review-narrative.html#step-Task_ReadFindings",
    "lane": "Narrative reviewer",
+   "laneHref": "review-narrative.html#lane-Lane_NarrativeReviewer",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     }
    ],
    "role": {
@@ -80,25 +84,32 @@
     "title": "Narrative reviewer",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "uses-editorial-review"
+      "name": "uses-editorial-review",
+      "href": "../../../en/cat-harness/processes/skills/uses-editorial-review.html"
      },
      {
-      "name": "voice-editorial-review"
+      "name": "voice-editorial-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-editorial-review.html"
      },
      {
-      "name": "voice-overlay-review"
+      "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html"
      }
     ]
    }
@@ -107,13 +118,17 @@
    "id": "Task_AdjudicateVoice",
    "name": "Adjudicate the voice findings",
    "type": "bpmn:CallActivity",
+   "stepHref": "review-narrative.html#step-Task_AdjudicateVoice",
    "lane": "Narrative reviewer",
+   "laneHref": "review-narrative.html#lane-Lane_NarrativeReviewer",
    "skills": [
     {
-     "name": "voice-editorial-review"
+     "name": "voice-editorial-review",
+     "href": "../../../en/cat-harness/processes/skills/voice-editorial-review.html"
     },
     {
-     "name": "adjudication"
+     "name": "adjudication",
+     "href": "../../../en/cat-harness/processes/skills/adjudication.html"
     }
    ],
    "calls": {
@@ -127,25 +142,32 @@
     "title": "Narrative reviewer",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "uses-editorial-review"
+      "name": "uses-editorial-review",
+      "href": "../../../en/cat-harness/processes/skills/uses-editorial-review.html"
      },
      {
-      "name": "voice-editorial-review"
+      "name": "voice-editorial-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-editorial-review.html"
      },
      {
-      "name": "voice-overlay-review"
+      "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html"
      }
     ]
    }
@@ -154,10 +176,13 @@
    "id": "Call_VoiceOverlay",
    "name": "Voice overlay review",
    "type": "bpmn:CallActivity",
+   "stepHref": "review-narrative.html#step-Call_VoiceOverlay",
    "lane": "Narrative reviewer",
+   "laneHref": "review-narrative.html#lane-Lane_NarrativeReviewer",
    "skills": [
     {
-     "name": "voice-overlay-review"
+     "name": "voice-overlay-review",
+     "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html"
     }
    ],
    "calls": {
@@ -171,25 +196,32 @@
     "title": "Narrative reviewer",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "uses-editorial-review"
+      "name": "uses-editorial-review",
+      "href": "../../../en/cat-harness/processes/skills/uses-editorial-review.html"
      },
      {
-      "name": "voice-editorial-review"
+      "name": "voice-editorial-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-editorial-review.html"
      },
      {
-      "name": "voice-overlay-review"
+      "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html"
      }
     ]
    }
@@ -198,10 +230,13 @@
    "id": "Task_ReviewTranslation",
    "name": "Review the translation",
    "type": "bpmn:Task",
+   "stepHref": "review-narrative.html#step-Task_ReviewTranslation",
    "lane": "Narrative reviewer",
+   "laneHref": "review-narrative.html#lane-Lane_NarrativeReviewer",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -210,25 +245,32 @@
     "title": "Narrative reviewer",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "uses-editorial-review"
+      "name": "uses-editorial-review",
+      "href": "../../../en/cat-harness/processes/skills/uses-editorial-review.html"
      },
      {
-      "name": "voice-editorial-review"
+      "name": "voice-editorial-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-editorial-review.html"
      },
      {
-      "name": "voice-overlay-review"
+      "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html"
      }
     ]
    }
@@ -237,10 +279,13 @@
    "id": "Task_RecordFindings",
    "name": "Record findings as advice",
    "type": "bpmn:Task",
+   "stepHref": "review-narrative.html#step-Task_RecordFindings",
    "lane": "Narrative reviewer",
+   "laneHref": "review-narrative.html#lane-Lane_NarrativeReviewer",
    "skills": [
     {
-     "name": "content-feedback"
+     "name": "content-feedback",
+     "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
     }
    ],
    "role": {
@@ -249,25 +294,32 @@
     "title": "Narrative reviewer",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "uses-editorial-review"
+      "name": "uses-editorial-review",
+      "href": "../../../en/cat-harness/processes/skills/uses-editorial-review.html"
      },
      {
-      "name": "voice-editorial-review"
+      "name": "voice-editorial-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-editorial-review.html"
      },
      {
-      "name": "voice-overlay-review"
+      "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html"
      }
     ]
    }

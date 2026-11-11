@@ -51,15 +51,19 @@
    }
   }
  ],
+ "processHref": "criterion-adjudication.html",
  "tasks": {
   "Call_Adjudicate": {
    "id": "Call_Adjudicate",
    "name": "Adjudicate the criterion disagreement",
    "type": "bpmn:CallActivity",
+   "stepHref": "criterion-adjudication.html#step-Call_Adjudicate",
    "lane": "Adjudicator",
+   "laneHref": "criterion-adjudication.html#lane-Lane_CriterionAdjudicator",
    "skills": [
     {
-     "name": "adjudication"
+     "name": "adjudication",
+     "href": "../../../en/cat-harness/processes/skills/adjudication.html"
     }
    ],
    "calls": {
@@ -73,44 +77,55 @@
     "title": "Adjudicator",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
       "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html",
       "via": "reviewer"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "reviewer"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
       "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html",
       "via": "reviewer"
      },
      {
       "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html",
       "via": "reviewer"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "reviewer"
      },
      {
       "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html",
       "via": "reviewer"
      },
      {
-      "name": "untainted-verification"
+      "name": "untainted-verification",
+      "href": "../../../en/cat-harness/processes/skills/untainted-verification.html"
      },
      {
       "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html",
       "via": "reviewer"
      },
      {
       "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html",
       "via": "reviewer"
      }
     ]
@@ -120,10 +135,13 @@
    "id": "A_ScopeCriterion",
    "name": "Scope the criterion so it stops applying here",
    "type": "bpmn:Task",
+   "stepHref": "criterion-adjudication.html#step-A_ScopeCriterion",
    "lane": "Adjudicator",
+   "laneHref": "criterion-adjudication.html#lane-Lane_CriterionAdjudicator",
    "skills": [
     {
-     "name": "adjudication"
+     "name": "adjudication",
+     "href": "../../../en/cat-harness/processes/skills/adjudication.html"
     }
    ],
    "role": {
@@ -132,44 +150,55 @@
     "title": "Adjudicator",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
       "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html",
       "via": "reviewer"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "reviewer"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
       "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html",
       "via": "reviewer"
      },
      {
       "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html",
       "via": "reviewer"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "reviewer"
      },
      {
       "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html",
       "via": "reviewer"
      },
      {
-      "name": "untainted-verification"
+      "name": "untainted-verification",
+      "href": "../../../en/cat-harness/processes/skills/untainted-verification.html"
      },
      {
       "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html",
       "via": "reviewer"
      },
      {
       "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html",
       "via": "reviewer"
      }
     ]
@@ -179,10 +208,13 @@
    "id": "A_Dispensation",
    "name": "Grant a dispensation, with its reason",
    "type": "bpmn:Task",
+   "stepHref": "criterion-adjudication.html#step-A_Dispensation",
    "lane": "Adjudicator",
+   "laneHref": "criterion-adjudication.html#lane-Lane_CriterionAdjudicator",
    "skills": [
     {
-     "name": "adjudication"
+     "name": "adjudication",
+     "href": "../../../en/cat-harness/processes/skills/adjudication.html"
     }
    ],
    "role": {
@@ -191,44 +223,55 @@
     "title": "Adjudicator",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
       "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html",
       "via": "reviewer"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "reviewer"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
       "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html",
       "via": "reviewer"
      },
      {
       "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html",
       "via": "reviewer"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "reviewer"
      },
      {
       "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html",
       "via": "reviewer"
      },
      {
-      "name": "untainted-verification"
+      "name": "untainted-verification",
+      "href": "../../../en/cat-harness/processes/skills/untainted-verification.html"
      },
      {
       "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html",
       "via": "reviewer"
      },
      {
       "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html",
       "via": "reviewer"
      }
     ]
@@ -238,10 +281,13 @@
    "id": "A_RecordEntry",
    "name": "Write the entry that LEADS — keeping the checker's beneath it",
    "type": "bpmn:Task",
+   "stepHref": "criterion-adjudication.html#step-A_RecordEntry",
    "lane": "Adjudicator",
+   "laneHref": "criterion-adjudication.html#lane-Lane_CriterionAdjudicator",
    "skills": [
     {
-     "name": "adjudication"
+     "name": "adjudication",
+     "href": "../../../en/cat-harness/processes/skills/adjudication.html"
     }
    ],
    "role": {
@@ -250,44 +296,55 @@
     "title": "Adjudicator",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
       "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html",
       "via": "reviewer"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "reviewer"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
       "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html",
       "via": "reviewer"
      },
      {
       "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html",
       "via": "reviewer"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "reviewer"
      },
      {
       "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html",
       "via": "reviewer"
      },
      {
-      "name": "untainted-verification"
+      "name": "untainted-verification",
+      "href": "../../../en/cat-harness/processes/skills/untainted-verification.html"
      },
      {
       "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html",
       "via": "reviewer"
      },
      {
       "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html",
       "via": "reviewer"
      }
     ]

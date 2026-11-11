@@ -111,12 +111,15 @@
    }
   }
  ],
+ "processHref": "PHW.D.html",
  "tasks": {
   "PHW.D.1": {
    "id": "PHW.D.1",
    "name": "D1. Prepare client key or certificate under an accepted trust anchor",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.D.html#step-PHW.D.1",
    "lane": "Data Recipient System (OAuth client)",
+   "laneHref": "PHW.D.html#lane-PHW.Lane.DataRecipient",
    "skills": [],
    "binding": "unbound"
   },
@@ -124,7 +127,9 @@
    "id": "PHW.D.2",
    "name": "D2. Send dynamic client registration request (RFC 7591)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.D.html#step-PHW.D.2",
    "lane": "Data Recipient System (OAuth client)",
+   "laneHref": "PHW.D.html#lane-PHW.Lane.DataRecipient",
    "skills": [],
    "binding": "unbound"
   },
@@ -132,7 +137,9 @@
    "id": "PHW.D.9",
    "name": "D9. Discover UDAP server metadata (SSRAA §2)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.D.html#step-PHW.D.9",
    "lane": "Data Recipient System (OAuth client)",
+   "laneHref": "PHW.D.html#lane-PHW.Lane.DataRecipient",
    "skills": [],
    "binding": "unbound"
   },
@@ -140,7 +147,9 @@
    "id": "PHW.D.10",
    "name": "D10. Send UDAP registration request with signed software statement (SSRAA §3)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.D.html#step-PHW.D.10",
    "lane": "Data Recipient System (OAuth client)",
+   "laneHref": "PHW.D.html#lane-PHW.Lane.DataRecipient",
    "skills": [],
    "binding": "unbound"
   },
@@ -148,7 +157,9 @@
    "id": "PHW.D.3",
    "name": "D3. Enter client by hand, scopes from the signed agreement text",
    "type": "bpmn:UserTask",
+   "stepHref": "PHW.D.html#step-PHW.D.3",
    "lane": "Data Provider Administrator (person)",
+   "laneHref": "PHW.D.html#lane-PHW.Lane.ProviderAdmin",
    "skills": [],
    "binding": "unbound"
   },
@@ -156,7 +167,9 @@
    "id": "PHW.D.4",
    "name": "D4. Validate client key or certificate against the accepted trust anchor",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.D.html#step-PHW.D.4",
    "lane": "Provider Authorization Server (administrator + decision point)",
+   "laneHref": "PHW.D.html#lane-PHW.Lane.AuthorizationServer",
    "skills": [],
    "binding": "unbound"
   },
@@ -164,7 +177,9 @@
    "id": "PHW.D.5",
    "name": "D5. Return trust list or certificate status",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.D.html#step-PHW.D.5",
    "lane": "Trust Anchor (GDHCN or another accepted anchor)",
+   "laneHref": "PHW.D.html#lane-PHW.Lane.TrustAnchor",
    "skills": [],
    "binding": "unbound"
   },
@@ -172,7 +187,9 @@
    "id": "PHW.D.7",
    "name": "D7. Issue client_id (RFC 7591)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.D.html#step-PHW.D.7",
    "lane": "Provider Authorization Server (administrator + decision point)",
+   "laneHref": "PHW.D.html#lane-PHW.Lane.AuthorizationServer",
    "skills": [],
    "binding": "unbound"
   },
@@ -180,7 +197,9 @@
    "id": "PHW.D.8",
    "name": "D8. Read authorization server metadata (RFC 8414)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.D.html#step-PHW.D.8",
    "lane": "Data Recipient System (OAuth client)",
+   "laneHref": "PHW.D.html#lane-PHW.Lane.DataRecipient",
    "skills": [],
    "binding": "unbound"
   }

@@ -75,12 +75,15 @@
    }
   }
  ],
+ "processHref": "PHW.L.html",
  "tasks": {
   "PHW.L.1": {
    "id": "PHW.L.1",
    "name": "L1. Show the trust domain's consent text (code and version)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.L.html#step-PHW.L.1",
    "lane": "PCF Consent Recorder (wallet or health worker)",
+   "laneHref": "PHW.L.html#lane-PHW.Lane.ConsentRecorder",
    "skills": [],
    "binding": "unbound"
   },
@@ -88,7 +91,9 @@
    "id": "PHW.L.2",
    "name": "L2. Read the text and decide",
    "type": "bpmn:UserTask",
+   "stepHref": "PHW.L.html#step-PHW.L.2",
    "lane": "Holder (person / Personal Health Wallet)",
+   "laneHref": "PHW.L.html#lane-PHW.Lane.Holder",
    "skills": [],
    "binding": "unbound"
   },
@@ -96,7 +101,9 @@
    "id": "PHW.L.3",
    "name": "L3. Record the holder's act as evidence",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.L.html#step-PHW.L.3",
    "lane": "PCF Consent Recorder (wallet or health worker)",
+   "laneHref": "PHW.L.html#lane-PHW.Lane.ConsentRecorder",
    "skills": [],
    "binding": "unbound"
   },
@@ -104,7 +111,9 @@
    "id": "PHW.L.4",
    "name": "L4. Post the explicit Consent [ITI-108] Access Consent",
    "type": "bpmn:SendTask",
+   "stepHref": "PHW.L.html#step-PHW.L.4",
    "lane": "PCF Consent Recorder (wallet or health worker)",
+   "laneHref": "PHW.L.html#lane-PHW.Lane.ConsentRecorder",
    "skills": [],
    "binding": "unbound"
   },
@@ -112,7 +121,9 @@
    "id": "PHW.L.5",
    "name": "L5. Store the Consent; return Consent.id and versionId",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.L.html#step-PHW.L.5",
    "lane": "PCF Consent Registry",
+   "laneHref": "PHW.L.html#lane-PHW.Lane.ConsentRegistry",
    "skills": [],
    "binding": "unbound"
   },
@@ -120,7 +131,9 @@
    "id": "PHW.L.6",
    "name": "L6. Keep a copy in the wallet",
    "type": "bpmn:Task",
+   "stepHref": "PHW.L.html#step-PHW.L.6",
    "lane": "Holder (person / Personal Health Wallet)",
+   "laneHref": "PHW.L.html#lane-PHW.Lane.Holder",
    "skills": [],
    "binding": "unbound"
   }

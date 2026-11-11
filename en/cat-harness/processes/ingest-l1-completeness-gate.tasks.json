@@ -51,12 +51,15 @@
    }
   }
  ],
+ "processHref": "ingest-l1-completeness-gate.html",
  "tasks": {
   "Task_CheckDerived": {
    "id": "Task_CheckDerived",
    "name": "Is every derived artefact present?",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ingest-l1-completeness-gate.html#step-Task_CheckDerived",
    "lane": "Ingestion Engine (agent, runs unattended)",
+   "laneHref": "ingest-l1-completeness-gate.html#lane-Lane_0",
    "skills": [
     {
      "name": "document-intake"
@@ -68,28 +71,36 @@
     "title": "Ingestion engine",
     "skills": [
      {
-      "name": "asset-extraction"
+      "name": "asset-extraction",
+      "href": "../../../en/cat-harness/processes/skills/asset-extraction.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "library-ingestion"
+      "name": "library-ingestion",
+      "href": "../../../en/cat-harness/processes/skills/library-ingestion.html"
      },
      {
-      "name": "materialize-on-demand"
+      "name": "materialize-on-demand",
+      "href": "../../../en/cat-harness/processes/skills/materialize-on-demand.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "theme-art-intake"
+      "name": "theme-art-intake",
+      "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
      },
      {
-      "name": "theme-ui-review"
+      "name": "theme-ui-review",
+      "href": "../../../en/cat-harness/processes/skills/theme-ui-review.html"
      },
      {
-      "name": "upload-naming"
+      "name": "upload-naming",
+      "href": "../../../en/cat-harness/processes/skills/upload-naming.html"
      }
     ]
    }
@@ -98,13 +109,17 @@
    "id": "Task_RoundTrip",
    "name": "Round-trip translation QA",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ingest-l1-completeness-gate.html#step-Task_RoundTrip",
    "lane": "Ingestion Engine (agent, runs unattended)",
+   "laneHref": "ingest-l1-completeness-gate.html#lane-Lane_0",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     },
     {
-     "name": "untainted-verification"
+     "name": "untainted-verification",
+     "href": "../../../en/cat-harness/processes/skills/untainted-verification.html"
     }
    ],
    "role": {
@@ -113,28 +128,36 @@
     "title": "Ingestion engine",
     "skills": [
      {
-      "name": "asset-extraction"
+      "name": "asset-extraction",
+      "href": "../../../en/cat-harness/processes/skills/asset-extraction.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "library-ingestion"
+      "name": "library-ingestion",
+      "href": "../../../en/cat-harness/processes/skills/library-ingestion.html"
      },
      {
-      "name": "materialize-on-demand"
+      "name": "materialize-on-demand",
+      "href": "../../../en/cat-harness/processes/skills/materialize-on-demand.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "theme-art-intake"
+      "name": "theme-art-intake",
+      "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
      },
      {
-      "name": "theme-ui-review"
+      "name": "theme-ui-review",
+      "href": "../../../en/cat-harness/processes/skills/theme-ui-review.html"
      },
      {
-      "name": "upload-naming"
+      "name": "upload-naming",
+      "href": "../../../en/cat-harness/processes/skills/upload-naming.html"
      }
     ]
    }
@@ -143,13 +166,16 @@
    "id": "Task_FlagDrift",
    "name": "Adjudicate the flagged passage",
    "type": "bpmn:CallActivity",
+   "stepHref": "ingest-l1-completeness-gate.html#step-Task_FlagDrift",
    "lane": "Reviewer (SME or editor)",
+   "laneHref": "ingest-l1-completeness-gate.html#lane-Lane_1",
    "skills": [
     {
      "name": "document-intake"
     },
     {
-     "name": "adjudication"
+     "name": "adjudication",
+     "href": "../../../en/cat-harness/processes/skills/adjudication.html"
     }
    ],
    "calls": {
@@ -163,34 +189,44 @@
     "title": "Reviewer / SME",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "narrative-asserts-code"
+      "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html"
      },
      {
-      "name": "rendered-impact"
+      "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "visual-diff"
+      "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html"
      },
      {
-      "name": "voice-overlay-review"
+      "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html"
      }
     ]
    }
@@ -199,7 +235,9 @@
    "id": "Task_Verdict",
    "name": "Record the L1 completeness verdict",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ingest-l1-completeness-gate.html#step-Task_Verdict",
    "lane": "Ingestion Engine (agent, runs unattended)",
+   "laneHref": "ingest-l1-completeness-gate.html#lane-Lane_0",
    "skills": [
     {
      "name": "document-intake"
@@ -211,28 +249,36 @@
     "title": "Ingestion engine",
     "skills": [
      {
-      "name": "asset-extraction"
+      "name": "asset-extraction",
+      "href": "../../../en/cat-harness/processes/skills/asset-extraction.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "library-ingestion"
+      "name": "library-ingestion",
+      "href": "../../../en/cat-harness/processes/skills/library-ingestion.html"
      },
      {
-      "name": "materialize-on-demand"
+      "name": "materialize-on-demand",
+      "href": "../../../en/cat-harness/processes/skills/materialize-on-demand.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "theme-art-intake"
+      "name": "theme-art-intake",
+      "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
      },
      {
-      "name": "theme-ui-review"
+      "name": "theme-ui-review",
+      "href": "../../../en/cat-harness/processes/skills/theme-ui-review.html"
      },
      {
-      "name": "upload-naming"
+      "name": "upload-naming",
+      "href": "../../../en/cat-harness/processes/skills/upload-naming.html"
      }
     ]
    }

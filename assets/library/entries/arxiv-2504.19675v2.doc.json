@@ -1265,17 +1265,17 @@
       "heading": false
     },
     {
-      "term": "xtransformer projects",
+      "term": "bibliographic records",
       "heading": false
     },
     {
-      "term": "bibliographic records",
+      "term": "xtransformer projects",
       "heading": false
     }
   ],
   "links": {
     "repo": "litlfred/cat-harness",
     "branch": "main",
-    "dir": "library/library/arxiv-2504.19675v2"
+    "dir": "library/corpus/library/arxiv-2504.19675v2"
   }
 }

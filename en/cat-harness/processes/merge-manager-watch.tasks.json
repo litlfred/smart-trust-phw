@@ -101,25 +101,53 @@
   {
    "id": "Call_Stalled",
    "name": "Stalled-agent triage",
-   "left": 56.64,
+   "left": 58.2,
    "top": 18.97,
    "box": {
-    "left": 50.98,
+    "left": 52.54,
+    "top": 29.89,
+    "width": 1.88,
+    "height": 2.76
+   }
+  },
+  {
+   "id": "Task_Rerun",
+   "name": "Re-run the failed job once",
+   "left": 33.59,
+   "top": 2.87,
+   "box": {
+    "left": 27.93,
+    "top": 13.79,
+    "width": 1.88,
+    "height": 2.76
+   }
+  },
+  {
+   "id": "Task_DispatchFixer",
+   "name": "Dispatch a fixer",
+   "left": 19.92,
+   "top": 18.97,
+   "box": {
+    "left": 14.26,
     "top": 29.89,
     "width": 1.88,
     "height": 2.76
    }
   }
  ],
+ "processHref": "merge-manager-watch.html",
  "tasks": {
   "Owner_Approve": {
    "id": "Owner_Approve",
    "name": "Approve the batch card",
    "type": "bpmn:Task",
+   "stepHref": "merge-manager-watch.html#step-Owner_Approve",
    "lane": "Owner",
+   "laneHref": "merge-manager-watch.html#lane-Lane_Owner",
    "skills": [
     {
-     "name": "interaction-modality"
+     "name": "interaction-modality",
+     "href": "../../../en/cat-harness/processes/skills/interaction-modality.html"
     }
    ],
    "role": {
@@ -128,37 +156,48 @@
     "title": "User",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "agent-permissions"
+      "name": "agent-permissions",
+      "href": "../../../en/cat-harness/processes/skills/agent-permissions.html"
      },
      {
-      "name": "dispatch-agent"
+      "name": "dispatch-agent",
+      "href": "../../../en/cat-harness/processes/skills/dispatch-agent.html"
      },
      {
-      "name": "folio-init"
+      "name": "folio-init",
+      "href": "../../../en/cat-harness/processes/skills/folio-init.html"
      },
      {
-      "name": "getting-started"
+      "name": "getting-started",
+      "href": "../../../en/cat-harness/processes/skills/getting-started.html"
      },
      {
-      "name": "interaction-modality"
+      "name": "interaction-modality",
+      "href": "../../../en/cat-harness/processes/skills/interaction-modality.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "repo-conversion"
+      "name": "repo-conversion",
+      "href": "../../../en/cat-harness/processes/skills/repo-conversion.html"
      }
     ]
    }
@@ -167,10 +206,13 @@
    "id": "Task_Read",
    "name": "Read the queue, acknowledge requests",
    "type": "bpmn:Task",
+   "stepHref": "merge-manager-watch.html#step-Task_Read",
    "lane": "Merge steward",
+   "laneHref": "merge-manager-watch.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "merge-manager-watcher"
+     "name": "merge-manager-watcher",
+     "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
     }
    ],
    "role": {
@@ -179,25 +221,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -206,10 +255,13 @@
    "id": "Task_Lapse",
    "name": "Announce the hand-over or the lapse",
    "type": "bpmn:Task",
+   "stepHref": "merge-manager-watch.html#step-Task_Lapse",
    "lane": "Merge steward",
+   "laneHref": "merge-manager-watch.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "merge-manager-watcher"
+     "name": "merge-manager-watcher",
+     "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
     }
    ],
    "role": {
@@ -218,25 +270,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -245,10 +304,13 @@
    "id": "Task_Relieve",
    "name": "Relieve the runners",
    "type": "bpmn:Task",
+   "stepHref": "merge-manager-watch.html#step-Task_Relieve",
    "lane": "Merge steward",
+   "laneHref": "merge-manager-watch.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "merge-manager-watcher"
+     "name": "merge-manager-watcher",
+     "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
     }
    ],
    "role": {
@@ -257,25 +319,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -284,7 +353,9 @@
    "id": "Call_Meta",
    "name": "Saturation meta-merge",
    "type": "bpmn:CallActivity",
+   "stepHref": "merge-manager-watch.html#step-Call_Meta",
    "lane": "Merge steward",
+   "laneHref": "merge-manager-watch.html#lane-Lane_Steward",
    "skills": [],
    "calls": {
     "name": "Saturation meta-merge: land the ready PRs when the runners are full",
@@ -297,25 +368,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -324,10 +402,13 @@
    "id": "Task_Card",
    "name": "Post the request in chat, then the batch card",
    "type": "bpmn:Task",
+   "stepHref": "merge-manager-watch.html#step-Task_Card",
    "lane": "Merge steward",
+   "laneHref": "merge-manager-watch.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "interaction-modality"
+     "name": "interaction-modality",
+     "href": "../../../en/cat-harness/processes/skills/interaction-modality.html"
     }
    ],
    "role": {
@@ -336,25 +417,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -363,7 +451,9 @@
    "id": "Call_Train",
    "name": "Merge train",
    "type": "bpmn:CallActivity",
+   "stepHref": "merge-manager-watch.html#step-Call_Train",
    "lane": "Merge steward",
+   "laneHref": "merge-manager-watch.html#lane-Lane_Steward",
    "skills": [],
    "calls": {
     "name": "A merge train",
@@ -376,25 +466,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -403,10 +500,13 @@
    "id": "Task_Direct",
    "name": "Merge it through merge:guard",
    "type": "bpmn:Task",
+   "stepHref": "merge-manager-watch.html#step-Task_Direct",
    "lane": "Merge steward",
+   "laneHref": "merge-manager-watch.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "merge-manager-watcher"
+     "name": "merge-manager-watcher",
+     "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
     }
    ],
    "role": {
@@ -415,25 +515,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -442,7 +549,9 @@
    "id": "Call_Stalled",
    "name": "Stalled-agent triage",
    "type": "bpmn:CallActivity",
+   "stepHref": "merge-manager-watch.html#step-Call_Stalled",
    "lane": "Merge steward",
+   "laneHref": "merge-manager-watch.html#lane-Lane_Steward",
    "skills": [],
    "calls": {
     "name": "Stalled-agent triage: collect handovers, consolidate themes, recommend, re-route",
@@ -455,25 +564,130 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
+     }
+    ]
+   }
+  },
+  "Task_Rerun": {
+   "id": "Task_Rerun",
+   "name": "Re-run the failed job once",
+   "type": "bpmn:Task",
+   "stepHref": "merge-manager-watch.html#step-Task_Rerun",
+   "lane": "Merge steward",
+   "laneHref": "merge-manager-watch.html#lane-Lane_Steward",
+   "skills": [
+    {
+     "name": "merge-manager-watcher",
+     "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
+    }
+   ],
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
+     },
+     {
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
+     },
+     {
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
+     },
+     {
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
+     },
+     {
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
+     },
+     {
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
+     },
+     {
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
+     }
+    ]
+   }
+  },
+  "Task_DispatchFixer": {
+   "id": "Task_DispatchFixer",
+   "name": "Dispatch a fixer",
+   "type": "bpmn:Task",
+   "stepHref": "merge-manager-watch.html#step-Task_DispatchFixer",
+   "lane": "Merge steward",
+   "laneHref": "merge-manager-watch.html#lane-Lane_Steward",
+   "skills": [
+    {
+     "name": "merge-manager-watcher",
+     "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
+    }
+   ],
+   "role": {
+    "name": "merge-steward",
+    "href": "../../../cat-harness/auto-docs/index/roles/index.html#a-cat-harness-scenarios-roles-json-merge-steward",
+    "title": "Merge steward",
+    "skills": [
+     {
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
+     },
+     {
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
+     },
+     {
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
+     },
+     {
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
+     },
+     {
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
+     },
+     {
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
+     },
+     {
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }

@@ -123,12 +123,15 @@
    }
   }
  ],
+ "processHref": "PHW.F.html",
  "tasks": {
   "PHW.F.1": {
    "id": "PHW.F.1",
    "name": "F1. Collect inputs: verified requester, agreement version, grant, request",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.F.html#step-PHW.F.1",
    "lane": "Policy Decision Point (permits())",
+   "laneHref": "PHW.F.html#lane-PHW.Lane.DecisionPoint",
    "skills": [],
    "binding": "unbound"
   },
@@ -136,7 +139,9 @@
    "id": "PHW.F.2",
    "name": "F2. Verify the grant with smart-trust-tools against the accepted trust anchor",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.F.html#step-PHW.F.2",
    "lane": "Policy Decision Point (permits())",
+   "laneHref": "PHW.F.html#lane-PHW.Lane.DecisionPoint",
    "skills": [],
    "binding": "unbound"
   },
@@ -144,7 +149,9 @@
    "id": "PHW.F.3",
    "name": "F3. Return trust list (DID document, X.509 roots or local list)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.F.html#step-PHW.F.3",
    "lane": "Trust Anchor (GDHCN or another accepted anchor)",
+   "laneHref": "PHW.F.html#lane-PHW.Lane.TrustAnchor",
    "skills": [],
    "binding": "unbound"
   },
@@ -152,7 +159,9 @@
    "id": "PHW.F.4",
    "name": "F4. Check grant status in the Bitstring Status List",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.F.html#step-PHW.F.4",
    "lane": "Policy Decision Point (permits())",
+   "laneHref": "PHW.F.html#lane-PHW.Lane.DecisionPoint",
    "skills": [],
    "binding": "unbound"
   },
@@ -160,7 +169,9 @@
    "id": "PHW.F.5",
    "name": "F5. Return status list credential",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.F.html#step-PHW.F.5",
    "lane": "Grant Issuer Status List (W3C Bitstring Status List)",
+   "laneHref": "PHW.F.html#lane-PHW.Lane.StatusList",
    "skills": [],
    "binding": "unbound"
   },
@@ -168,7 +179,9 @@
    "id": "PHW.F.6",
    "name": "F6. Fetch the agreement at its fixed-version URL; check SHA-256 and status",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.F.html#step-PHW.F.6",
    "lane": "Policy Decision Point (permits())",
+   "laneHref": "PHW.F.html#lane-PHW.Lane.DecisionPoint",
    "skills": [],
    "binding": "unbound"
   },
@@ -176,7 +189,9 @@
    "id": "PHW.F.7",
    "name": "F7. Return DCAT distribution with spdx:checksum and status",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.F.html#step-PHW.F.7",
    "lane": "Agreement Publisher (DCAT catalogue)",
+   "laneHref": "PHW.F.html#lane-PHW.Lane.AgreementPublisher",
    "skills": [],
    "binding": "unbound"
   },
@@ -184,7 +199,9 @@
    "id": "PHW.F.8",
    "name": "F8. Search active Consents for this agreement [ITI-108] Access Consent: Search",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.F.html#step-PHW.F.8",
    "lane": "Policy Decision Point (permits())",
+   "laneHref": "PHW.F.html#lane-PHW.Lane.DecisionPoint",
    "skills": [],
    "binding": "unbound"
   },
@@ -192,7 +209,9 @@
    "id": "PHW.F.9",
    "name": "F9. Return matching Consents [ITI-108] Access Consent",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.F.html#step-PHW.F.9",
    "lane": "PCF Consent Registry",
+   "laneHref": "PHW.F.html#lane-PHW.Lane.ConsentRegistry",
    "skills": [],
    "binding": "unbound"
   },
@@ -200,7 +219,9 @@
    "id": "PHW.F.11",
    "name": "F11. Receive permit, deny or unknown; hand the decision to audit (process G)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.F.html#step-PHW.F.11",
    "lane": "Policy Enforcement Point (authorization server, resource server or VHL Sharer)",
+   "laneHref": "PHW.F.html#lane-PHW.Lane.EnforcementPoint",
    "skills": [],
    "binding": "unbound"
   }

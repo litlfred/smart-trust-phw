@@ -315,15 +315,19 @@
    }
   }
  ],
+ "processHref": "dsa-document-lifecycle.html",
  "tasks": {
   "Call_BeanOpen": {
    "id": "Call_BeanOpen",
    "name": "Open the bean",
    "type": "bpmn:CallActivity",
+   "stepHref": "dsa-document-lifecycle.html#step-Call_BeanOpen",
    "lane": "Author and policy author",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Author",
    "skills": [
     {
-     "name": "bean-coordination"
+     "name": "bean-coordination",
+     "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
     }
    ],
    "calls": {
@@ -337,37 +341,40 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-plan"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "content-review"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "decision-audit"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "staging-review"
-     },
-     {
-      "name": "todo-manager"
-     },
-     {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -376,7 +383,9 @@
    "id": "Task_AgreeTerms",
    "name": "P1.1 · Agree the terms",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_AgreeTerms",
    "lane": "Parties and signatories (provider, recipient)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Parties",
    "skills": [],
    "role": {
     "name": "stakeholder",
@@ -389,16 +398,21 @@
    "id": "Task_WriteText",
    "name": "P1.2 · Write the legal text",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_WriteText",
    "lane": "Author and policy author",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Author",
    "skills": [
     {
-     "name": "document-authoring"
+     "name": "document-authoring",
+     "href": "../../../en/cat-harness/processes/skills/document-authoring.html"
     },
     {
-     "name": "normative-statements"
+     "name": "normative-statements",
+     "href": "../../../en/cat-harness/processes/skills/normative-statements.html"
     },
     {
-     "name": "document-structure"
+     "name": "document-structure",
+     "href": "../../../en/cat-harness/processes/skills/document-structure.html"
     }
    ],
    "role": {
@@ -407,37 +421,40 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-plan"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "content-review"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "decision-audit"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "staging-review"
-     },
-     {
-      "name": "todo-manager"
-     },
-     {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -446,10 +463,13 @@
    "id": "Task_RecordLegalBasis",
    "name": "P1.2a · Record the legal basis",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_RecordLegalBasis",
    "lane": "Author and policy author",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Author",
    "skills": [
     {
-     "name": "normative-statements"
+     "name": "normative-statements",
+     "href": "../../../en/cat-harness/processes/skills/normative-statements.html"
     }
    ],
    "role": {
@@ -458,37 +478,40 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-plan"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "content-review"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "decision-audit"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "staging-review"
-     },
-     {
-      "name": "todo-manager"
-     },
-     {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -497,10 +520,13 @@
    "id": "Task_PlainSummary",
    "name": "P1.2b · Draft the plain summary",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_PlainSummary",
    "lane": "Author and policy author",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Author",
    "skills": [
     {
-     "name": "document-authoring"
+     "name": "document-authoring",
+     "href": "../../../en/cat-harness/processes/skills/document-authoring.html"
     }
    ],
    "role": {
@@ -509,37 +535,40 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-plan"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "content-review"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "decision-audit"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "staging-review"
-     },
-     {
-      "name": "todo-manager"
-     },
-     {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -548,7 +577,9 @@
    "id": "Task_DeriveOdrl",
    "name": "P1.3 · Derive the ODRL 2.2 Agreement",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_DeriveOdrl",
    "lane": "Author and policy author",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Author",
    "skills": [],
    "role": {
     "name": "author",
@@ -556,37 +587,40 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-plan"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "content-review"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "decision-audit"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "staging-review"
-     },
-     {
-      "name": "todo-manager"
-     },
-     {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -595,10 +629,13 @@
    "id": "Task_CheckOdrl",
    "name": "P1.4 · Check the ODRL against the text",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_CheckOdrl",
    "lane": "Reviewer (legal, policy)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Reviewer",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     }
    ],
    "role": {
@@ -607,34 +644,44 @@
     "title": "Reviewer / SME",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "narrative-asserts-code"
+      "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html"
      },
      {
-      "name": "rendered-impact"
+      "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "visual-diff"
+      "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html"
      },
      {
-      "name": "voice-overlay-review"
+      "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html"
      }
     ]
    }
@@ -643,7 +690,9 @@
    "id": "Task_SplitAnnexes",
    "name": "P1.5 · Split public terms from private annexes",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_SplitAnnexes",
    "lane": "Author and policy author",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Author",
    "skills": [],
    "role": {
     "name": "author",
@@ -651,37 +700,40 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-plan"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "content-review"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "decision-audit"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "staging-review"
-     },
-     {
-      "name": "todo-manager"
-     },
-     {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -690,13 +742,17 @@
    "id": "Task_Review",
    "name": "Review the draft agreement",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_Review",
    "lane": "Reviewer (legal, policy)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Reviewer",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     },
     {
-     "name": "review-comments"
+     "name": "review-comments",
+     "href": "../../../en/cat-harness/processes/skills/review-comments.html"
     }
    ],
    "role": {
@@ -705,34 +761,44 @@
     "title": "Reviewer / SME",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "narrative-asserts-code"
+      "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html"
      },
      {
-      "name": "rendered-impact"
+      "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "visual-diff"
+      "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html"
      },
      {
-      "name": "voice-overlay-review"
+      "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html"
      }
     ]
    }
@@ -741,10 +807,13 @@
    "id": "Call_PublicComment",
    "name": "Public comment on the template",
    "type": "bpmn:CallActivity",
+   "stepHref": "dsa-document-lifecycle.html#step-Call_PublicComment",
    "lane": "Public review (commenters, review committee, editor)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_PublicReview",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "calls": {
@@ -758,16 +827,20 @@
     "title": "Review coordinator",
     "skills": [
      {
-      "name": "rendered-impact"
+      "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html"
      },
      {
-      "name": "review-heatmap"
+      "name": "review-heatmap",
+      "href": "../../../en/cat-harness/processes/skills/review-heatmap.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "visual-diff"
+      "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html"
      }
     ]
    }
@@ -776,10 +849,13 @@
    "id": "Task_Render",
    "name": "Render the text to HTML and PDF",
    "type": "bpmn:ServiceTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_Render",
    "lane": "Build pipeline (system)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Build",
    "skills": [
     {
-     "name": "document-publishing"
+     "name": "document-publishing",
+     "href": "../../../en/cat-harness/processes/skills/document-publishing.html"
     }
    ],
    "role": {
@@ -788,61 +864,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -851,7 +942,9 @@
    "id": "Task_Sign",
    "name": "P1.6 · Sign",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_Sign",
    "lane": "Parties and signatories (provider, recipient)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Parties",
    "skills": [],
    "role": {
     "name": "stakeholder",
@@ -864,13 +957,16 @@
    "id": "Task_AssignVersion",
    "name": "P2.1 · Assign version and fixed URL",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_AssignVersion",
    "lane": "Publisher (data provider's publication manager)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Publisher",
    "skills": [
     {
      "name": "content-publish"
     },
     {
-     "name": "package-release"
+     "name": "package-release",
+     "href": "../../../en/cat-harness/processes/skills/package-release.html"
     }
    ],
    "role": {
@@ -879,31 +975,36 @@
     "title": "Publication manager",
     "skills": [
      {
-      "name": "content-publish"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-review"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-audit"
+      "name": "instance-publication",
+      "href": "../../../en/cat-harness/processes/skills/instance-publication.html"
      },
      {
-      "name": "instance-publication"
+      "name": "package-release",
+      "href": "../../../en/cat-harness/processes/skills/package-release.html"
      },
      {
-      "name": "package-release"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "qa-report-signing"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
-     },
-     {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      }
     ]
    }
@@ -912,10 +1013,13 @@
    "id": "Task_Hash",
    "name": "P2.2 · Record each file's SHA-256",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_Hash",
    "lane": "Publisher (data provider's publication manager)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Publisher",
    "skills": [
     {
-     "name": "dsa-checksum"
+     "name": "dsa-checksum",
+     "href": "../../../en/cat-harness/processes/skills/dsa-checksum.html"
     }
    ],
    "role": {
@@ -924,31 +1028,36 @@
     "title": "Publication manager",
     "skills": [
      {
-      "name": "content-publish"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-review"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-audit"
+      "name": "instance-publication",
+      "href": "../../../en/cat-harness/processes/skills/instance-publication.html"
      },
      {
-      "name": "instance-publication"
+      "name": "package-release",
+      "href": "../../../en/cat-harness/processes/skills/package-release.html"
      },
      {
-      "name": "package-release"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "qa-report-signing"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
-     },
-     {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      }
     ]
    }
@@ -957,10 +1066,13 @@
    "id": "Task_HashSummary",
    "name": "P2.2a · Hash the plain summary",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_HashSummary",
    "lane": "Publisher (data provider's publication manager)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Publisher",
    "skills": [
     {
-     "name": "dsa-checksum"
+     "name": "dsa-checksum",
+     "href": "../../../en/cat-harness/processes/skills/dsa-checksum.html"
     }
    ],
    "role": {
@@ -969,31 +1081,36 @@
     "title": "Publication manager",
     "skills": [
      {
-      "name": "content-publish"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-review"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-audit"
+      "name": "instance-publication",
+      "href": "../../../en/cat-harness/processes/skills/instance-publication.html"
      },
      {
-      "name": "instance-publication"
+      "name": "package-release",
+      "href": "../../../en/cat-harness/processes/skills/package-release.html"
      },
      {
-      "name": "package-release"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "qa-report-signing"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
-     },
-     {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      }
     ]
    }
@@ -1002,7 +1119,9 @@
    "id": "Task_ConsentCitation",
    "name": "P2.2b · State the URL and hash to cite",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_ConsentCitation",
    "lane": "Publisher (data provider's publication manager)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Publisher",
    "skills": [
     {
      "name": "content-publish"
@@ -1014,31 +1133,36 @@
     "title": "Publication manager",
     "skills": [
      {
-      "name": "content-publish"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-review"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-audit"
+      "name": "instance-publication",
+      "href": "../../../en/cat-harness/processes/skills/instance-publication.html"
      },
      {
-      "name": "instance-publication"
+      "name": "package-release",
+      "href": "../../../en/cat-harness/processes/skills/package-release.html"
      },
      {
-      "name": "package-release"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "qa-report-signing"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
-     },
-     {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      }
     ]
    }
@@ -1047,10 +1171,13 @@
    "id": "Task_OdrlCitesText",
    "name": "P2.3 · Make the ODRL cite the text",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_OdrlCitesText",
    "lane": "Author and policy author",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Author",
    "skills": [
     {
-     "name": "dsa-odrl-source"
+     "name": "dsa-odrl-source",
+     "href": "../../../en/cat-harness/processes/skills/dsa-odrl-source.html"
     }
    ],
    "role": {
@@ -1059,37 +1186,40 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-plan"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "content-review"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "decision-audit"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "staging-review"
-     },
-     {
-      "name": "todo-manager"
-     },
-     {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -1098,7 +1228,9 @@
    "id": "Task_Publish",
    "name": "Publish the version at its URL",
    "type": "bpmn:ServiceTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_Publish",
    "lane": "Build pipeline (system)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Build",
    "skills": [
     {
      "name": "content-publish"
@@ -1110,61 +1242,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -1173,10 +1320,13 @@
    "id": "Task_Catalogue",
    "name": "P2.4–5 · Write the DCAT 3 record",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_Catalogue",
    "lane": "Publisher (data provider's publication manager)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Publisher",
    "skills": [
     {
-     "name": "dsa-dcat-record"
+     "name": "dsa-dcat-record",
+     "href": "../../../en/cat-harness/processes/skills/dsa-dcat-record.html"
     }
    ],
    "role": {
@@ -1185,31 +1335,36 @@
     "title": "Publication manager",
     "skills": [
      {
-      "name": "content-publish"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-review"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-audit"
+      "name": "instance-publication",
+      "href": "../../../en/cat-harness/processes/skills/instance-publication.html"
      },
      {
-      "name": "instance-publication"
+      "name": "package-release",
+      "href": "../../../en/cat-harness/processes/skills/package-release.html"
      },
      {
-      "name": "package-release"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "qa-report-signing"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
-     },
-     {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      }
     ]
    }
@@ -1218,10 +1373,13 @@
    "id": "Call_BeanOpenChange",
    "name": "Open the bean",
    "type": "bpmn:CallActivity",
+   "stepHref": "dsa-document-lifecycle.html#step-Call_BeanOpenChange",
    "lane": "Author and policy author",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Author",
    "skills": [
     {
-     "name": "bean-coordination"
+     "name": "bean-coordination",
+     "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
     }
    ],
    "calls": {
@@ -1235,37 +1393,40 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-plan"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "content-review"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "decision-audit"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "staging-review"
-     },
-     {
-      "name": "todo-manager"
-     },
-     {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -1274,7 +1435,9 @@
    "id": "Task_DecideChange",
    "name": "Decide: amend, renew or end",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_DecideChange",
    "lane": "Parties and signatories (provider, recipient)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Parties",
    "skills": [],
    "role": {
     "name": "stakeholder",
@@ -1287,7 +1450,9 @@
    "id": "Task_DecideGrants",
    "name": "P14.2 · Decide what happens to existing grants",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_DecideGrants",
    "lane": "Parties and signatories (provider, recipient)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Parties",
    "skills": [],
    "role": {
     "name": "stakeholder",
@@ -1300,7 +1465,9 @@
    "id": "Task_NewConsentNeeded",
    "name": "P14.3 · New consent needed",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_NewConsentNeeded",
    "lane": "Parties and signatories (provider, recipient)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Parties",
    "skills": [],
    "role": {
     "name": "stakeholder",
@@ -1313,10 +1480,13 @@
    "id": "Task_SetStatus",
    "name": "P14.5 · Set the status to ended",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_SetStatus",
    "lane": "Publisher (data provider's publication manager)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Publisher",
    "skills": [
     {
-     "name": "dsa-catalogue-status"
+     "name": "dsa-catalogue-status",
+     "href": "../../../en/cat-harness/processes/skills/dsa-catalogue-status.html"
     }
    ],
    "role": {
@@ -1325,31 +1495,36 @@
     "title": "Publication manager",
     "skills": [
      {
-      "name": "content-publish"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-review"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-audit"
+      "name": "instance-publication",
+      "href": "../../../en/cat-harness/processes/skills/instance-publication.html"
      },
      {
-      "name": "instance-publication"
+      "name": "package-release",
+      "href": "../../../en/cat-harness/processes/skills/package-release.html"
      },
      {
-      "name": "package-release"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "qa-report-signing"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
-     },
-     {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      }
     ]
    }
@@ -1358,7 +1533,9 @@
    "id": "Task_EndDuties",
    "name": "Revoke grants and start end-of-agreement duties",
    "type": "bpmn:UserTask",
+   "stepHref": "dsa-document-lifecycle.html#step-Task_EndDuties",
    "lane": "Parties and signatories (provider, recipient)",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Parties",
    "skills": [],
    "role": {
     "name": "stakeholder",
@@ -1371,10 +1548,13 @@
    "id": "Call_BeanCloseEnded",
    "name": "Close the bean",
    "type": "bpmn:CallActivity",
+   "stepHref": "dsa-document-lifecycle.html#step-Call_BeanCloseEnded",
    "lane": "Author and policy author",
+   "laneHref": "dsa-document-lifecycle.html#lane-Lane_Author",
    "skills": [
     {
-     "name": "todo-manager"
+     "name": "todo-manager",
+     "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
     }
    ],
    "calls": {
@@ -1388,37 +1568,40 @@
     "title": "Author",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-author"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-plan"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "content-review"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "decision-audit"
+      "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "evidence-appraisal"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "staging-review"
-     },
-     {
-      "name": "todo-manager"
-     },
-     {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }

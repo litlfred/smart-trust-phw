@@ -1272,11 +1272,11 @@
           "heading": false
         },
         {
-          "term": "systems",
+          "term": "improve",
           "heading": false
         },
         {
-          "term": "improve",
+          "term": "systems",
           "heading": false
         }
       ],
@@ -1421,6 +1421,6 @@
   "links": {
     "repo": "litlfred/cat-harness",
     "branch": "main",
-    "dir": "library/library/arxiv-2606.04382v1"
+    "dir": "library/corpus/library/arxiv-2606.04382v1"
   }
 }

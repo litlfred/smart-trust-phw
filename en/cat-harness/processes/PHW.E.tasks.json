@@ -123,12 +123,15 @@
    }
   }
  ],
+ "processHref": "PHW.E.html",
  "tasks": {
   "PHW.E.1": {
    "id": "PHW.E.1",
    "name": "E1. Request token with authorization_details naming the agreement, plus DPoP proof or mTLS",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.E.html#step-PHW.E.1",
    "lane": "Data Recipient System (OAuth client)",
+   "laneHref": "PHW.E.html#lane-PHW.Lane.DataRecipient",
    "skills": [],
    "binding": "unbound"
   },
@@ -136,7 +139,9 @@
    "id": "PHW.E.2",
    "name": "E2. Authenticate client (private_key_jwt or mTLS) and check DPoP proof",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.E.html#step-PHW.E.2",
    "lane": "Provider Authorization Server (administrator + decision point)",
+   "laneHref": "PHW.E.html#lane-PHW.Lane.AuthorizationServer",
    "skills": [],
    "binding": "unbound"
   },
@@ -144,7 +149,9 @@
    "id": "PHW.E.3",
    "name": "E3. Decide access under the agreement (process F)",
    "type": "bpmn:CallActivity",
+   "stepHref": "PHW.E.html#step-PHW.E.3",
    "lane": "Provider Authorization Server (administrator + decision point)",
+   "laneHref": "PHW.E.html#lane-PHW.Lane.AuthorizationServer",
    "skills": [],
    "calls": {
     "name": "F. Access Decision under a Data Sharing Agreement (DSA P11)",
@@ -157,7 +164,9 @@
    "id": "PHW.E.4",
    "name": "E4. Issue short-lived key-bound token with granted details",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.E.html#step-PHW.E.4",
    "lane": "Provider Authorization Server (administrator + decision point)",
+   "laneHref": "PHW.E.html#lane-PHW.Lane.AuthorizationServer",
    "skills": [],
    "binding": "unbound"
   },
@@ -165,7 +174,9 @@
    "id": "PHW.E.5",
    "name": "E5. Refuse token request (deny or unknown)",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.E.html#step-PHW.E.5",
    "lane": "Provider Authorization Server (administrator + decision point)",
+   "laneHref": "PHW.E.html#lane-PHW.Lane.AuthorizationServer",
    "skills": [],
    "binding": "unbound"
   },
@@ -173,7 +184,9 @@
    "id": "PHW.E.6",
    "name": "E6. Call the API with token and DPoP proof",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.E.html#step-PHW.E.6",
    "lane": "Data Recipient System (OAuth client)",
+   "laneHref": "PHW.E.html#lane-PHW.Lane.DataRecipient",
    "skills": [],
    "binding": "unbound"
   },
@@ -181,7 +194,9 @@
    "id": "PHW.E.7",
    "name": "E7. Validate token, key binding and granted details on every call",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.E.html#step-PHW.E.7",
    "lane": "Data Provider Resource Server (enforcement point)",
+   "laneHref": "PHW.E.html#lane-PHW.Lane.ResourceServer",
    "skills": [],
    "binding": "unbound"
   },
@@ -189,7 +204,9 @@
    "id": "PHW.E.8",
    "name": "E8. Record audit and provenance (process G)",
    "type": "bpmn:CallActivity",
+   "stepHref": "PHW.E.html#step-PHW.E.8",
    "lane": "Data Provider Resource Server (enforcement point)",
+   "laneHref": "PHW.E.html#lane-PHW.Lane.ResourceServer",
    "skills": [],
    "calls": {
     "name": "G. Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12)",
@@ -202,7 +219,9 @@
    "id": "PHW.E.9",
    "name": "E9. Return data or refusal",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.E.html#step-PHW.E.9",
    "lane": "Data Provider Resource Server (enforcement point)",
+   "laneHref": "PHW.E.html#lane-PHW.Lane.ResourceServer",
    "skills": [],
    "binding": "unbound"
   },
@@ -210,7 +229,9 @@
    "id": "PHW.E.10",
    "name": "E10. Process response",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.E.html#step-PHW.E.10",
    "lane": "Data Recipient System (OAuth client)",
+   "laneHref": "PHW.E.html#lane-PHW.Lane.DataRecipient",
    "skills": [],
    "binding": "unbound"
   }

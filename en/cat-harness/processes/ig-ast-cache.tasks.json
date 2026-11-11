@@ -63,18 +63,23 @@
    }
   }
  ],
+ "processHref": "ig-ast-cache.html",
  "tasks": {
   "Task_Restore": {
    "id": "Task_Restore",
    "name": "Restore and judge the cached AST",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ig-ast-cache.html#step-Task_Restore",
    "lane": "Site build (agent, stage-local)",
+   "laneHref": "ig-ast-cache.html#lane-Lane_Site",
    "skills": [
     {
-     "name": "ig-ast-delta"
+     "name": "ig-ast-delta",
+     "href": "../../../en/cat-harness/processes/skills/ig-ast-delta.html"
     },
     {
-     "name": "ig-build-pipeline"
+     "name": "ig-build-pipeline",
+     "href": "../../../en/cat-harness/processes/skills/ig-build-pipeline.html"
     }
    ],
    "role": {
@@ -83,61 +88,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -146,13 +166,17 @@
    "id": "Task_BuildSite",
    "name": "Build and publish the site from the AST",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ig-ast-cache.html#step-Task_BuildSite",
    "lane": "Site build (agent, stage-local)",
+   "laneHref": "ig-ast-cache.html#lane-Lane_Site",
    "skills": [
     {
-     "name": "ig-render-jekyll"
+     "name": "ig-render-jekyll",
+     "href": "../../../en/cat-harness/processes/skills/ig-render-jekyll.html"
     },
     {
-     "name": "ig-build-pipeline"
+     "name": "ig-build-pipeline",
+     "href": "../../../en/cat-harness/processes/skills/ig-build-pipeline.html"
     }
    ],
    "role": {
@@ -161,61 +185,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -224,10 +263,13 @@
    "id": "Task_Dispatch",
    "name": "Dispatch AST refresh",
    "type": "bpmn:UserTask",
+   "stepHref": "ig-ast-cache.html#step-Task_Dispatch",
    "lane": "Publication manager (owner, or the agent the owner delegates to)",
+   "laneHref": "ig-ast-cache.html#lane-Lane_PubMgr",
    "skills": [
     {
-     "name": "ig-build-pipeline"
+     "name": "ig-build-pipeline",
+     "href": "../../../en/cat-harness/processes/skills/ig-build-pipeline.html"
     }
    ],
    "role": {
@@ -236,31 +278,36 @@
     "title": "Publication manager",
     "skills": [
      {
-      "name": "content-publish"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-review"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-audit"
+      "name": "instance-publication",
+      "href": "../../../en/cat-harness/processes/skills/instance-publication.html"
      },
      {
-      "name": "instance-publication"
+      "name": "package-release",
+      "href": "../../../en/cat-harness/processes/skills/package-release.html"
      },
      {
-      "name": "package-release"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "qa-report-signing"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
-     },
-     {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      }
     ]
    }
@@ -269,10 +316,13 @@
    "id": "Task_Export",
    "name": "Build the IG with the AST exporter",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ig-ast-cache.html#step-Task_Export",
    "lane": "AST refresh (GitHub runner: IG Publisher with the AST exporter)",
+   "laneHref": "ig-ast-cache.html#lane-Lane_Runner",
    "skills": [
     {
-     "name": "ig-publisher-fork"
+     "name": "ig-publisher-fork",
+     "href": "../../../en/cat-harness/processes/skills/ig-publisher-fork.html"
     }
    ],
    "role": {
@@ -281,13 +331,16 @@
     "title": "IG publisher + validator",
     "skills": [
      {
-      "name": "fhir-validation"
+      "name": "fhir-validation",
+      "href": "../../../en/cat-harness/processes/skills/fhir-validation.html"
      },
      {
-      "name": "ig-publication"
+      "name": "ig-publication",
+      "href": "../../../en/cat-harness/processes/skills/ig-publication.html"
      },
      {
-      "name": "ig-publisher-service-contract"
+      "name": "ig-publisher-service-contract",
+      "href": "../../../en/cat-harness/processes/skills/ig-publisher-service-contract.html"
      }
     ]
    }
@@ -296,10 +349,13 @@
    "id": "Task_Seed",
    "name": "Seed the cache branch",
    "type": "bpmn:ServiceTask",
+   "stepHref": "ig-ast-cache.html#step-Task_Seed",
    "lane": "AST refresh (GitHub runner: IG Publisher with the AST exporter)",
+   "laneHref": "ig-ast-cache.html#lane-Lane_Runner",
    "skills": [
     {
-     "name": "compiled-artefact-cache"
+     "name": "compiled-artefact-cache",
+     "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
     }
    ],
    "role": {
@@ -308,13 +364,16 @@
     "title": "IG publisher + validator",
     "skills": [
      {
-      "name": "fhir-validation"
+      "name": "fhir-validation",
+      "href": "../../../en/cat-harness/processes/skills/fhir-validation.html"
      },
      {
-      "name": "ig-publication"
+      "name": "ig-publication",
+      "href": "../../../en/cat-harness/processes/skills/ig-publication.html"
      },
      {
-      "name": "ig-publisher-service-contract"
+      "name": "ig-publisher-service-contract",
+      "href": "../../../en/cat-harness/processes/skills/ig-publisher-service-contract.html"
      }
     ]
    }

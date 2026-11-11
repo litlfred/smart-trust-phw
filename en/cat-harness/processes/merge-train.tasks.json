@@ -183,15 +183,19 @@
    }
   }
  ],
+ "processHref": "merge-train.html",
  "tasks": {
   "Task_ReadLive": {
    "id": "Task_ReadLive",
    "name": "Read each queued PR's live facts",
    "type": "bpmn:Task",
+   "stepHref": "merge-train.html#step-Task_ReadLive",
    "lane": "Merge steward",
+   "laneHref": "merge-train.html#lane-Lane_Steward",
    "skills": [
     {
      "name": "merge-queue",
+     "href": "../../../en/cat-harness/processes/skills/merge-queue.html",
      "methodologies": [
       {
        "name": "agentic-pre-merge-review",
@@ -206,25 +210,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -233,10 +244,13 @@
    "id": "Task_TakeNext",
    "name": "Take the next PR in queue order",
    "type": "bpmn:Task",
+   "stepHref": "merge-train.html#step-Task_TakeNext",
    "lane": "Merge steward",
+   "laneHref": "merge-train.html#lane-Lane_Steward",
    "skills": [
     {
      "name": "merge-queue",
+     "href": "../../../en/cat-harness/processes/skills/merge-queue.html",
      "methodologies": [
       {
        "name": "agentic-pre-merge-review",
@@ -251,25 +265,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -278,10 +299,13 @@
    "id": "Task_Admit",
    "name": "Admit it to the train, record the train id",
    "type": "bpmn:Task",
+   "stepHref": "merge-train.html#step-Task_Admit",
    "lane": "Merge steward",
+   "laneHref": "merge-train.html#lane-Lane_Steward",
    "skills": [
     {
      "name": "merge-queue",
+     "href": "../../../en/cat-harness/processes/skills/merge-queue.html",
      "methodologies": [
       {
        "name": "agentic-pre-merge-review",
@@ -296,25 +320,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -323,10 +354,13 @@
    "id": "Call_HandBack",
    "name": "Hand it back",
    "type": "bpmn:CallActivity",
+   "stepHref": "merge-train.html#step-Call_HandBack",
    "lane": "Merge steward",
+   "laneHref": "merge-train.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "merge-conflict-patterns"
+     "name": "merge-conflict-patterns",
+     "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
     }
    ],
    "calls": {
@@ -340,25 +374,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -367,10 +408,13 @@
    "id": "Task_SiblingFix",
    "name": "Fix the PR, then re-signal ready",
    "type": "bpmn:Task",
+   "stepHref": "merge-train.html#step-Task_SiblingFix",
    "lane": "Sibling session",
+   "laneHref": "merge-train.html#lane-Lane_Sibling",
    "skills": [
     {
-     "name": "bean-coordination"
+     "name": "bean-coordination",
+     "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
     }
    ],
    "role": {
@@ -379,7 +423,8 @@
     "title": "Sibling session",
     "skills": [
      {
-      "name": "bean-coordination"
+      "name": "bean-coordination",
+      "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
      }
     ]
    }
@@ -388,10 +433,13 @@
    "id": "Call_ChecksPresent",
    "name": "Find members with no CI on their head",
    "type": "bpmn:CallActivity",
+   "stepHref": "merge-train.html#step-Call_ChecksPresent",
    "lane": "Build pipeline",
+   "laneHref": "merge-train.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "ci-health"
+     "name": "ci-health",
+     "href": "../../../en/cat-harness/processes/skills/ci-health.html"
     }
    ],
    "calls": {
@@ -405,61 +453,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -468,10 +531,13 @@
    "id": "Call_MergeMembers",
    "name": "Merge each member onto the base",
    "type": "bpmn:CallActivity",
+   "stepHref": "merge-train.html#step-Call_MergeMembers",
    "lane": "Build pipeline",
+   "laneHref": "merge-train.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "prepare-merge"
+     "name": "prepare-merge",
+     "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
     }
    ],
    "calls": {
@@ -485,61 +551,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -548,10 +629,13 @@
    "id": "Call_Gates",
    "name": "Run the gate set on the train",
    "type": "bpmn:CallActivity",
+   "stepHref": "merge-train.html#step-Call_Gates",
    "lane": "Build pipeline",
+   "laneHref": "merge-train.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "platform-gates"
+     "name": "platform-gates",
+     "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
     }
    ],
    "calls": {
@@ -565,61 +649,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -628,10 +727,13 @@
    "id": "Task_RetryFlaky",
    "name": "Retry a declared-flaky gate once",
    "type": "bpmn:Task",
+   "stepHref": "merge-train.html#step-Task_RetryFlaky",
    "lane": "Build pipeline",
+   "laneHref": "merge-train.html#lane-Lane_Pipeline",
    "skills": [
     {
-     "name": "ci-health"
+     "name": "ci-health",
+     "href": "../../../en/cat-harness/processes/skills/ci-health.html"
     }
    ],
    "role": {
@@ -640,61 +742,76 @@
     "title": "Build pipeline",
     "skills": [
      {
-      "name": "ci-health"
+      "name": "ci-health",
+      "href": "../../../en/cat-harness/processes/skills/ci-health.html"
      },
      {
-      "name": "compiled-artefact-cache"
+      "name": "compiled-artefact-cache",
+      "href": "../../../en/cat-harness/processes/skills/compiled-artefact-cache.html"
      },
      {
-      "name": "content-publish"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-test"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "content-validate"
+      "name": "feature-staging",
+      "href": "../../../en/cat-harness/processes/skills/feature-staging.html"
      },
      {
-      "name": "feature-staging"
+      "name": "harness-projections",
+      "href": "../../../en/cat-harness/processes/skills/harness-projections.html"
      },
      {
-      "name": "harness-projections"
+      "name": "kg-separation",
+      "href": "../../../en/cat-harness/processes/skills/kg-separation.html"
      },
      {
-      "name": "kg-separation"
+      "name": "platform-gates",
+      "href": "../../../en/cat-harness/processes/skills/platform-gates.html"
      },
      {
-      "name": "platform-gates"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      },
      {
-      "name": "qa-reports"
+      "name": "remote-mount",
+      "href": "../../../en/cat-harness/processes/skills/remote-mount.html"
      },
      {
-      "name": "remote-mount"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
+      "name": "sub-kg-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/sub-kg-lifecycle.html"
      },
      {
-      "name": "sub-kg-lifecycle"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "todo-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "translation-manager"
+      "name": "upstream-version-adoption",
+      "href": "../../../en/cat-harness/processes/skills/upstream-version-adoption.html"
      },
      {
-      "name": "upstream-version-adoption"
-     },
-     {
-      "name": "watch"
+      "name": "watch",
+      "href": "../../../en/cat-harness/processes/skills/watch.html"
      }
     ]
    }
@@ -703,10 +820,13 @@
    "id": "Task_Attribute",
    "name": "Attribute the failure: each member's own CI first",
    "type": "bpmn:Task",
+   "stepHref": "merge-train.html#step-Task_Attribute",
    "lane": "Merge steward",
+   "laneHref": "merge-train.html#lane-Lane_Steward",
    "skills": [
     {
      "name": "merge-queue",
+     "href": "../../../en/cat-harness/processes/skills/merge-queue.html",
      "methodologies": [
       {
        "name": "agentic-pre-merge-review",
@@ -721,25 +841,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -748,10 +875,13 @@
    "id": "Task_Bisect",
    "name": "Bisect the train",
    "type": "bpmn:Task",
+   "stepHref": "merge-train.html#step-Task_Bisect",
    "lane": "Merge steward",
+   "laneHref": "merge-train.html#lane-Lane_Steward",
    "skills": [
     {
      "name": "merge-queue",
+     "href": "../../../en/cat-harness/processes/skills/merge-queue.html",
      "methodologies": [
       {
        "name": "agentic-pre-merge-review",
@@ -766,25 +896,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -793,10 +930,13 @@
    "id": "Task_Eject",
    "name": "Eject the culprit, record why",
    "type": "bpmn:Task",
+   "stepHref": "merge-train.html#step-Task_Eject",
    "lane": "Merge steward",
+   "laneHref": "merge-train.html#lane-Lane_Steward",
    "skills": [
     {
      "name": "merge-queue",
+     "href": "../../../en/cat-harness/processes/skills/merge-queue.html",
      "methodologies": [
       {
        "name": "agentic-pre-merge-review",
@@ -811,25 +951,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -838,10 +985,13 @@
    "id": "Call_EjectHandBack",
    "name": "Hand the culprit back",
    "type": "bpmn:CallActivity",
+   "stepHref": "merge-train.html#step-Call_EjectHandBack",
    "lane": "Merge steward",
+   "laneHref": "merge-train.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "merge-conflict-patterns"
+     "name": "merge-conflict-patterns",
+     "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
     }
    ],
    "calls": {
@@ -855,25 +1005,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -882,10 +1039,13 @@
    "id": "Call_MergeToMain",
    "name": "Land each member",
    "type": "bpmn:CallActivity",
+   "stepHref": "merge-train.html#step-Call_MergeToMain",
    "lane": "Merge steward",
+   "laneHref": "merge-train.html#lane-Lane_Steward",
    "skills": [
     {
-     "name": "merge-to-main"
+     "name": "merge-to-main",
+     "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
     }
    ],
    "calls": {
@@ -899,25 +1059,32 @@
     "title": "Merge steward",
     "skills": [
      {
-      "name": "merge-conflict-patterns"
+      "name": "merge-conflict-patterns",
+      "href": "../../../en/cat-harness/processes/skills/merge-conflict-patterns.html"
      },
      {
-      "name": "merge-manager-watcher"
+      "name": "merge-manager-watcher",
+      "href": "../../../en/cat-harness/processes/skills/merge-manager-watcher.html"
      },
      {
-      "name": "merge-queue"
+      "name": "merge-queue",
+      "href": "../../../en/cat-harness/processes/skills/merge-queue.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "prepare-merge"
+      "name": "prepare-merge",
+      "href": "../../../en/cat-harness/processes/skills/prepare-merge.html"
      },
      {
-      "name": "ref-stewardship"
+      "name": "ref-stewardship",
+      "href": "../../../en/cat-harness/processes/skills/ref-stewardship.html"
      },
      {
-      "name": "saturation-meta-merge"
+      "name": "saturation-meta-merge",
+      "href": "../../../en/cat-harness/processes/skills/saturation-meta-merge.html"
      }
     ]
    }
@@ -926,10 +1093,13 @@
    "id": "Task_Override",
    "name": "Place it by hand, with a reason",
    "type": "bpmn:Task",
+   "stepHref": "merge-train.html#step-Task_Override",
    "lane": "Owner",
+   "laneHref": "merge-train.html#lane-Lane_Owner",
    "skills": [
     {
-     "name": "interaction-modality"
+     "name": "interaction-modality",
+     "href": "../../../en/cat-harness/processes/skills/interaction-modality.html"
     }
    ],
    "role": {
@@ -938,37 +1108,48 @@
     "title": "User",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "agent-permissions"
+      "name": "agent-permissions",
+      "href": "../../../en/cat-harness/processes/skills/agent-permissions.html"
      },
      {
-      "name": "dispatch-agent"
+      "name": "dispatch-agent",
+      "href": "../../../en/cat-harness/processes/skills/dispatch-agent.html"
      },
      {
-      "name": "folio-init"
+      "name": "folio-init",
+      "href": "../../../en/cat-harness/processes/skills/folio-init.html"
      },
      {
-      "name": "getting-started"
+      "name": "getting-started",
+      "href": "../../../en/cat-harness/processes/skills/getting-started.html"
      },
      {
-      "name": "interaction-modality"
+      "name": "interaction-modality",
+      "href": "../../../en/cat-harness/processes/skills/interaction-modality.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "merge-to-main"
+      "name": "merge-to-main",
+      "href": "../../../en/cat-harness/processes/skills/merge-to-main.html"
      },
      {
-      "name": "repo-conversion"
+      "name": "repo-conversion",
+      "href": "../../../en/cat-harness/processes/skills/repo-conversion.html"
      }
     ]
    }

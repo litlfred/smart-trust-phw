@@ -188,7 +188,7 @@
       "instance": "cat-harness-tools",
       "name": "archimate",
       "graphNode": "schema",
-      "summary": "The ArchiMate harness's shapes: what an instance declares, and how an Archi",
+      "summary": "The ArchiMate harness's shapes: what a layer declares, and how an Archi",
       "isTest": false
     },
     {
@@ -237,7 +237,7 @@
       "instance": "cat-harness-tools",
       "name": "openapi",
       "graphNode": "schema",
-      "summary": "The OpenAPI harness's shapes: what an instance declares, what an ingest",
+      "summary": "The OpenAPI harness's shapes: what a layer declares, what an ingest",
       "isTest": false
     },
     {
@@ -253,7 +253,7 @@
       "instance": "cat-harness-tools",
       "name": "bean-and-declaration-kinds.test",
       "graphNode": "undeclared",
-      "summary": "Bean `ujiv` (issue #88): beans and instance declarations are node kinds,",
+      "summary": "Bean `ujiv` (issue #88): beans and layer declarations are node kinds,",
       "isTest": true
     },
     {
@@ -447,6 +447,22 @@
       "name": "contributions",
       "graphNode": "schema",
       "summary": "Contribution registry — what a folio-assistant *dependency* may add to the",
+      "isTest": false
+    },
+    {
+      "module": "cat-harness-tools/schemas/content/document-errata.ts",
+      "instance": "cat-harness-tools",
+      "name": "document-errata",
+      "graphNode": "schema",
+      "summary": "Errata of a library document: places where the SOURCE's own text is wrong,",
+      "isTest": false
+    },
+    {
+      "module": "cat-harness-tools/schemas/content/document-footnotes.ts",
+      "instance": "cat-harness-tools",
+      "name": "document-footnotes",
+      "graphNode": "schema",
+      "summary": "A document's footnotes and the marks in its text that call them, as",
       "isTest": false
     },
     {
@@ -831,7 +847,7 @@
       "name": "harness-root",
       "graphNode": "none",
       "reason": "functions that locate the harness instance; no schema",
-      "summary": "Where the cat-harness instance lives: the directory holding `cat-harness.json`.",
+      "summary": "Where the cat-harness layer lives: the directory holding `cat-harness.json`.",
       "isTest": false
     },
     {
@@ -863,7 +879,7 @@
       "instance": "cat-harness-tools",
       "name": "instance-repositories.test",
       "graphNode": "undeclared",
-      "summary": "The tests of this file that read the whole checkout (reads every instance",
+      "summary": "The tests of this file that read the whole checkout (reads every layer",
       "isTest": true
     },
     {
@@ -879,7 +895,7 @@
       "instance": "cat-harness-tools",
       "name": "instance-roots-worktrees.test",
       "graphNode": "undeclared",
-      "summary": "Instance discovery with git worktrees present (bean `g43f`).",
+      "summary": "Layer discovery with git worktrees present (bean `g43f`).",
       "isTest": true
     },
     {
@@ -944,7 +960,7 @@
       "name": "built-at-publish",
       "graphNode": "none",
       "reason": "a declaration shape and two pure readers over it",
-      "summary": "Artefacts an instance must NOT commit, because no commit of it can hold them",
+      "summary": "Artefacts a layer must NOT commit, because no commit of it can hold them",
       "isTest": false
     },
     {
@@ -960,7 +976,7 @@
       "instance": "cat-harness-tools",
       "name": "cat-harness",
       "graphNode": "schema",
-      "summary": "The `CatHarness` declaration — what an instance IS, at its root.",
+      "summary": "The `CatHarness` declaration — what a layer IS, at its root.",
       "isTest": false
     },
     {
@@ -1059,7 +1075,7 @@
       "name": "discovered-vocabulary",
       "graphNode": "none",
       "reason": "a marker registry over Zod schemas; it defines no node shape",
-      "summary": "An enum whose members are DISCOVERED from the instances mounted beside this",
+      "summary": "An enum whose members are DISCOVERED from the layers mounted beside this",
       "isTest": false
     },
     {
@@ -1099,7 +1115,7 @@
       "instance": "cat-harness-tools",
       "name": "glossary-sense",
       "graphNode": "schema",
-      "summary": "**The glossary sense verdicts** of an instance: for a use of a glossary term",
+      "summary": "**The glossary sense verdicts** of a layer: for a use of a glossary term",
       "isTest": false
     },
     {
@@ -1107,7 +1123,7 @@
       "instance": "cat-harness-tools",
       "name": "graph-typology-node.test",
       "graphNode": "undeclared",
-      "summary": "Graph typologies declared as nodes (bean dmx1): loaded from each instance's",
+      "summary": "Graph typologies declared as nodes (bean dmx1): loaded from each layer's",
       "isTest": true
     },
     {
@@ -1163,8 +1179,8 @@
       "instance": "cat-harness-tools",
       "name": "instance-roots",
       "graphNode": "none",
-      "reason": "constants and functions that locate an instance's declaration; no schema",
-      "summary": "Instance DISCOVERY: which directories are instances, and which file in a",
+      "reason": "constants and functions that locate a layer's declaration; no schema",
+      "summary": "Layer DISCOVERY: which directories are layers, and which file in a",
       "isTest": false
     },
     {
@@ -1180,7 +1196,7 @@
       "instance": "cat-harness-tools",
       "name": "jsonld-prefixes",
       "graphNode": "schema",
-      "summary": "`jsonldPrefixes`: the external vocabularies an instance's JSON-LD speaks, as",
+      "summary": "`jsonldPrefixes`: the external vocabularies a layer's JSON-LD speaks, as",
       "isTest": false
     },
     {
@@ -1332,6 +1348,15 @@
       "isTest": false
     },
     {
+      "module": "cat-harness-tools/schemas/kg/opt-in-roots.ts",
+      "instance": "cat-harness-tools",
+      "name": "opt-in-roots",
+      "graphNode": "none",
+      "reason": "a reader over declared opt-in sub-graphs; it defines no schema",
+      "summary": "Where a layer's opt-in sub-graphs are on disk.",
+      "isTest": false
+    },
+    {
       "module": "cat-harness-tools/schemas/kg/opt-in-subgraphs.ts",
       "instance": "cat-harness-tools",
       "name": "opt-in-subgraphs",
@@ -1347,6 +1372,22 @@
       "graphNode": "none",
       "reason": "a predicate and an encoder over path strings, not a schema",
       "summary": "Path segments a checkout can actually create — on every filesystem, not only",
+      "isTest": false
+    },
+    {
+      "module": "cat-harness-tools/schemas/kg/portfolio.test.ts",
+      "instance": "cat-harness-tools",
+      "name": "portfolio.test",
+      "graphNode": "undeclared",
+      "summary": "The portfolio kind: levels of linked libraries, each reached by a library",
+      "isTest": true
+    },
+    {
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "instance": "cat-harness-tools",
+      "name": "portfolio",
+      "graphNode": "schema",
+      "summary": "A portfolio: an umbrella knowledge graph that LINKS other graphs' libraries,",
       "isTest": false
     },
     {
@@ -1475,7 +1516,7 @@
       "instance": "cat-harness-tools",
       "name": "subgraph-manifest.test",
       "graphNode": "undeclared",
-      "summary": "Where an instance publishes one subgraph's two files (bean `mo75` G2).",
+      "summary": "Where a layer publishes one subgraph's two files (bean `mo75` G2).",
       "isTest": true
     },
     {
@@ -1678,8 +1719,7 @@
       "module": "cat-harness-tools/schemas/library/library-iri.ts",
       "instance": "cat-harness-tools",
       "name": "library-iri",
-      "graphNode": "none",
-      "reason": "a mint rule, not a schema",
+      "graphNode": "schema",
       "summary": "A library entry's ONE IRI — the address of its published JSON-LD.",
       "isTest": false
     },
@@ -2030,7 +2070,7 @@
       "instance": "cat-harness-tools",
       "name": "scenario-overlay",
       "graphNode": "schema",
-      "summary": "Roles, actors and capabilities EXTENDED BY ID from a higher instance's own",
+      "summary": "Roles, actors and capabilities EXTENDED BY ID from a higher layer's own",
       "isTest": false
     },
     {
@@ -2147,7 +2187,7 @@
       "instance": "cat-harness-tools",
       "name": "scenario-overlay-needed.test",
       "graphNode": "undeclared",
-      "summary": "An instance audit resolves actors from the platform, every instance the",
+      "summary": "A layer audit resolves actors from the platform, every layer the",
       "isTest": true
     },
     {
@@ -2450,6 +2490,13 @@
       "isTest": false
     },
     {
+      "module": "cat-harness-tools/schemas/sdlc/script-table.test.ts",
+      "instance": "cat-harness-tools",
+      "name": "script-table.test",
+      "graphNode": "undeclared",
+      "isTest": true
+    },
+    {
       "module": "cat-harness-tools/schemas/sdlc/script-table.ts",
       "instance": "cat-harness-tools",
       "name": "script-table",
@@ -2624,7 +2671,7 @@
       "instance": "cat-harness-tools",
       "name": "site-build-recipe.test",
       "graphNode": "undeclared",
-      "summary": "`site.build` in `<name>.config.json`: the steps that build an instance's",
+      "summary": "`site.build` in `<name>.config.json`: the steps that build a layer's",
       "isTest": true
     },
     {
@@ -2648,7 +2695,7 @@
       "instance": "cat-harness-tools",
       "name": "skill-overlay.test",
       "graphNode": "undeclared",
-      "summary": "The skill overlay reads declarations and keeps every instance's contribution.",
+      "summary": "The skill overlay reads declarations and keeps every layer's contribution.",
       "isTest": true
     },
     {
@@ -2738,7 +2785,7 @@
       "name": "harness-tools",
       "graphNode": "none",
       "reason": "a reader over the harness's Tool folders; the Tool node's schema is `tool.ts`",
-      "summary": "The cat-harness instance's Tool nodes — its `tools` graph.",
+      "summary": "The cat-harness layer's Tool nodes — its `tools` graph.",
       "isTest": false
     },
     {
@@ -3063,7 +3110,7 @@
       "instance": "cat-harness-tools",
       "name": "themes",
       "graphNode": "schema",
-      "summary": "The themes this instance ships, and the default: grumpy-cat, white and",
+      "summary": "The themes this layer ships, and the default: grumpy-cat, white and",
       "isTest": false
     },
     {
@@ -3080,6 +3127,14 @@
       "name": "tile-count",
       "graphNode": "schema",
       "summary": "The number a graph tile shows, DECLARED BY THE PROJECTION.",
+      "isTest": false
+    },
+    {
+      "module": "cat-harness-tools/schemas/ui/web-app.ts",
+      "instance": "cat-harness-tools",
+      "name": "web-app",
+      "graphNode": "schema",
+      "summary": "A web app a layer holds as source and publishes as a page of its own: one",
       "isTest": false
     },
     {
@@ -3136,7 +3191,7 @@
       "instance": "cat-harness",
       "name": "staging-comparison",
       "graphNode": "schema",
-      "summary": "The staging preview of the work a request for feedback is about: one deep link per changed page (the page and the anchor where the change sits) with the same page on main as `before`. Mirrors StagingComparison in schemas/sdlc/staging.ts. The rule is sdlc/skills/sdlc-core/staging-review.md §\"The deep-link rule\". Copied inline as `definitions.stagingLinks` into every skill contract that carries it; ",
+      "summary": "The staging preview of the work a request for feedback is about: one deep link per changed page (the page and the anchor where the change sits) with the same page on main as `before`. Mirrors StagingComparison in schemas/sdlc/staging.ts. The rule is skills/authoring/content-lifecycle/feedback-deep-links.md. Copied inline as `definitions.stagingLinks` into every skill contract that carries it; sche",
       "isTest": false
     },
     {
@@ -6767,14 +6822,14 @@
       "name": "ArchimateConfigFigureSchema",
       "module": "cat-harness-tools/archimate/schemas/archimate.ts",
       "kind": "zod-object",
-      "doc": "A figure in the instance's document that IS a view of a model: the link",
+      "doc": "A figure in the layer's document that IS a view of a model: the link",
       "fields": [
         {
           "name": "block",
           "type": "z .string() .regex(/\\.md$/, \"a document block, a .md file\") .refine((f) => !f.startsWith(\"/\") && !f.split(\"/\").includes…",
           "optional": false,
           "array": false,
-          "doc": "The document block holding the figure, relative to the instance root."
+          "doc": "The document block holding the figure, relative to the layer root."
         },
         {
           "name": "label",
@@ -6854,7 +6909,7 @@
           "type": "z.string().min(1).optional()",
           "optional": true,
           "array": false,
-          "doc": "One sentence on what this model is and why the instance holds it."
+          "doc": "One sentence on what this model is and why the layer holds it."
         }
       ],
       "extendsNames": [],
@@ -6946,14 +7001,14 @@
       "name": "ArchimateConfigTableSchema",
       "module": "cat-harness-tools/archimate/schemas/archimate.ts",
       "kind": "zod-object",
-      "doc": "A table in the instance's document that is drawn from data, never typed:",
+      "doc": "A table in the layer's document that is drawn from data, never typed:",
       "fields": [
         {
           "name": "block",
           "type": "z .string() .regex(/\\.md$/, \"a document block, a .md file\") .refine((f) => !f.startsWith(\"/\") && !f.split(\"/\").includes…",
           "optional": false,
           "array": false,
-          "doc": "The document block holding the table, relative to the instance root."
+          "doc": "The document block holding the table, relative to the layer root."
         },
         {
           "name": "label",
@@ -8903,7 +8958,7 @@
           "type": "z.string().min(1).optional()",
           "optional": true,
           "array": false,
-          "doc": "One sentence on what this API is and why this instance holds it."
+          "doc": "One sentence on what this API is and why this layer holds it."
         },
         {
           "name": "source",
@@ -11419,7 +11474,7 @@
           "type": "z.array(z.string()).optional()",
           "optional": true,
           "array": true,
-          "doc": "Role ids from the instance's KG — see `BlockBase.audience` in"
+          "doc": "Role ids from the layer's KG — see `BlockBase.audience` in"
         },
         {
           "name": "uses",
@@ -13372,7 +13427,7 @@
       "name": "InstanceContextDecl",
       "module": "cat-harness-tools/schemas/content/content-context.ts",
       "kind": "interface",
-      "doc": "One instance's declaration, as {@link instanceContext} reads it.",
+      "doc": "One layer's declaration, as {@link instanceContext} reads it.",
       "fields": [
         {
           "name": "root",
@@ -13738,14 +13793,14 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The contributing instance's name, as declared in the dependency entry."
+          "doc": "The contributing layer's name, as declared in the dependency entry."
         },
         {
           "name": "root",
           "type": "string",
           "optional": true,
           "array": false,
-          "doc": "The contributing instance's root directory, absolute."
+          "doc": "The contributing layer's root directory, absolute."
         },
         {
           "name": "blockKinds",
@@ -13980,6 +14035,322 @@
           "array": false
         }
       ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/content/document-errata.ts#DocumentErrata",
+      "name": "DocumentErrata",
+      "module": "cat-harness-tools/schemas/content/document-errata.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/content/document-errata.ts#DocumentErrataSchema",
+      "name": "DocumentErrataSchema",
+      "module": "cat-harness-tools/schemas/content/document-errata.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(DOCUMENT_ERRATA_SCHEMA)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "entry",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "The library entry's slug, the directory this file sits in."
+        },
+        {
+          "name": "errata",
+          "type": "z.array(ErratumSchema).min(1)",
+          "optional": false,
+          "array": true
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/content/document-errata.ts#ErratumSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "DOCUMENT_ERRATA_SCHEMA",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/content/document-errata.ts#Erratum",
+      "name": "Erratum",
+      "module": "cat-harness-tools/schemas/content/document-errata.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/content/document-errata.ts#ErratumSchema",
+      "name": "ErratumSchema",
+      "module": "cat-harness-tools/schemas/content/document-errata.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "id",
+          "type": "z.string().regex(/^e\\d+$/, \"an erratum id is `e` and a number\")",
+          "optional": false,
+          "array": false,
+          "doc": "Stable within the entry: `e1`, `e2`, ... Never reused for another erratum."
+        },
+        {
+          "name": "kind",
+          "type": "z.enum(ERRATUM_KINDS)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "block",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The block that prints it, e.g. `library/<slug>/blocks/prose-sec-003`, when one does."
+        },
+        {
+          "name": "page",
+          "type": "z.number().int().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The physical PDF page (1-based) it is printed on, when known."
+        },
+        {
+          "name": "quote",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "The words as printed, verbatim, so the place can be found and checked."
+        },
+        {
+          "name": "reading",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The reading the evidence supports, when there is one. Never substituted for `quote`."
+        },
+        {
+          "name": "evidence",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "What shows it is an error, in a form a person can check: the other page,"
+        },
+        {
+          "name": "narrative",
+          "type": "NarrativeSlotSchema",
+          "optional": false,
+          "array": false,
+          "doc": "The explanation a reader is shown, with its state and author."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/content/narrative.ts#NarrativeSlotSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "ERRATUM_KINDS",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/content/document-footnotes.ts#DocumentFootnotes",
+      "name": "DocumentFootnotes",
+      "module": "cat-harness-tools/schemas/content/document-footnotes.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/content/document-footnotes.ts#DocumentFootnotesSchema",
+      "name": "DocumentFootnotesSchema",
+      "module": "cat-harness-tools/schemas/content/document-footnotes.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(DOCUMENT_FOOTNOTES_SCHEMA)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "entry",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "status",
+          "type": "z.enum([\"determined\", \"undetermined\"])",
+          "optional": false,
+          "array": false,
+          "doc": "`undetermined` when every page was OCR'd: OCR text has no fonts, so no"
+        },
+        {
+          "name": "pages_unread",
+          "type": "z.array(z.number().int().min(1)).optional()",
+          "optional": true,
+          "array": true
+        },
+        {
+          "name": "body_size",
+          "type": "z.number().min(0)",
+          "optional": false,
+          "array": false,
+          "doc": "The span size carrying the most characters: what \"smaller than the body\" is measured against."
+        },
+        {
+          "name": "footnotes",
+          "type": "z.array(FootnoteSchema)",
+          "optional": false,
+          "array": true
+        },
+        {
+          "name": "uncalled_notes",
+          "type": "z.array(UncalledNoteSchema)",
+          "optional": false,
+          "array": true
+        },
+        {
+          "name": "unlinked_marks",
+          "type": "z.array(z.object({ page: z.number().int().min(1), mark: z.string().min(1), context: z.string() }).strict())",
+          "optional": false,
+          "array": true
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/content/document-footnotes.ts#FootnoteSchema",
+        "cat-harness-tools/schemas/content/document-footnotes.ts#UncalledNoteSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "DOCUMENT_FOOTNOTES_SCHEMA",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/content/document-footnotes.ts#Footnote",
+      "name": "Footnote",
+      "module": "cat-harness-tools/schemas/content/document-footnotes.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/content/document-footnotes.ts#FootnoteCallSchema",
+      "name": "FootnoteCallSchema",
+      "module": "cat-harness-tools/schemas/content/document-footnotes.ts",
+      "kind": "zod-object",
+      "doc": "A place in the text that calls a note: the page, and the words just before the mark.",
+      "fields": [
+        {
+          "name": "page",
+          "type": "z.number().int().min(1)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "context",
+          "type": "z.string()",
+          "optional": false,
+          "array": false,
+          "doc": "Up to 60 characters before the mark, so a reader can find it on the page."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/content/document-footnotes.ts#FootnoteSchema",
+      "name": "FootnoteSchema",
+      "module": "cat-harness-tools/schemas/content/document-footnotes.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "marks",
+          "type": "z.array(FootnoteCallSchema).min(1)",
+          "optional": false,
+          "array": true
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/content/document-footnotes.ts#FootnoteCallSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/content/document-footnotes.ts#NoteBase",
+      "name": "NoteBase",
+      "module": "cat-harness-tools/schemas/content/document-footnotes.ts",
+      "kind": "undetermined",
+      "note": "{ /** `fn-p<page>-<n>`: the n-th note at the foot of that physical page. */ id: z.string().regex(/^fn-p\\d{3,}-\\d+$/), page: z.number().int().min(1), /** The ma…",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": false
+    },
+    {
+      "id": "cat-harness-tools/schemas/content/document-footnotes.ts#UncalledNoteSchema",
+      "name": "UncalledNoteSchema",
+      "module": "cat-harness-tools/schemas/content/document-footnotes.ts",
+      "kind": "undetermined",
+      "note": "z.object(NoteBase).strict()",
+      "fields": [],
       "extendsNames": [],
       "values": [],
       "refs": [],
@@ -16611,7 +16982,7 @@
           "type": "z.string().min(1).optional()",
           "optional": true,
           "array": false,
-          "doc": "What the rule applies to; absent means the instance's whole graph."
+          "doc": "What the rule applies to; absent means the layer's whole graph."
         },
         {
           "name": "constraint",
@@ -18010,7 +18381,7 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The declaring instance's `name`."
+          "doc": "The declaring layer's `name`."
         },
         {
           "name": "declaredIn",
@@ -18024,28 +18395,28 @@
           "type": "string",
           "optional": true,
           "array": false,
-          "doc": "The declaring instance's root path on disk, when known."
+          "doc": "The declaring layer's root path on disk, when known."
         },
         {
           "name": "description",
           "type": "string",
           "optional": true,
           "array": false,
-          "doc": "The declaring instance's `description`, for `bodyFrom: \"description\"`."
+          "doc": "The declaring layer's `description`, for `bodyFrom: \"description\"`."
         },
         {
           "name": "summary",
           "type": "string",
           "optional": true,
           "array": false,
-          "doc": "The declaring instance's `summary`, for `bodyFrom: \"summary\"`."
+          "doc": "The declaring layer's `summary`, for `bodyFrom: \"summary\"`."
         },
         {
           "name": "alsoWritten",
           "type": "readonly string[]",
           "optional": true,
           "array": false,
-          "doc": "The declaring instance's `alsoWritten`, for `bodyFrom: \"summary\"`."
+          "doc": "The declaring layer's `alsoWritten`, for `bodyFrom: \"summary\"`."
         }
       ],
       "extendsNames": [],
@@ -18201,7 +18572,7 @@
           "type": "z.enum(STICKY_BODY_SOURCES).optional()",
           "optional": true,
           "array": false,
-          "doc": "Read the body from the declaring instance instead. See {@link STICKY_BODY_SOURCES}."
+          "doc": "Read the body from the declaring layer instead. See {@link STICKY_BODY_SOURCES}."
         },
         {
           "name": "bodyAppend",
@@ -18978,7 +19349,7 @@
           "type": "z.string().min(1)",
           "optional": false,
           "array": false,
-          "doc": "The instance that owns the scheme. A scheme id such as `kg-tools` is"
+          "doc": "The layer that owns the scheme. A scheme id such as `kg-tools` is"
         },
         {
           "name": "scheme",
@@ -21253,7 +21624,7 @@
           "type": "z.string().min(1).optional()",
           "optional": true,
           "array": false,
-          "doc": "The instance that DERIVED this voice, by declared name."
+          "doc": "The layer that DERIVED this voice, by declared name."
         },
         {
           "name": "instructions",
@@ -21601,7 +21972,7 @@
         },
         {
           "name": "sources",
-          "type": "z .array( z.object({ title: z.string().min(1), /** The instance holding it, when not this one. See `VoiceRuleSourceSche…",
+          "type": "z .array( z.object({ title: z.string().min(1), /** The layer holding it, when not this one. See `VoiceRuleSourceSchema.…",
           "optional": false,
           "array": true,
           "doc": "The ingested documents this voice is derived from."
@@ -21703,7 +22074,7 @@
           "type": "string[]",
           "optional": false,
           "array": true,
-          "doc": "Rule ids that cite a node of this instance's own graph."
+          "doc": "Rule ids that cite a node of this layer's own graph."
         },
         {
           "name": "detail",
@@ -21737,14 +22108,14 @@
       "name": "VoiceRefSchema",
       "module": "cat-harness-tools/schemas/content/voices.ts",
       "kind": "zod-object",
-      "doc": "A voice in this instance, or in another one.",
+      "doc": "A voice in this layer, or in another one.",
       "fields": [
         {
           "name": "instance",
           "type": "RepoFullNameSchema.optional()",
           "optional": true,
           "array": false,
-          "doc": "The instance holding it, as `owner/repo` (bean `6rmv`). Absent means this one."
+          "doc": "The layer holding it, as `owner/repo` (bean `6rmv`). Absent means this one."
         },
         {
           "name": "voiceId",
@@ -21907,7 +22278,7 @@
           "type": "RepoFullNameSchema.optional()",
           "optional": true,
           "array": false,
-          "doc": "The instance holding the corpus, as its planned `owner/repo` (bean"
+          "doc": "The layer holding the corpus, as its planned `owner/repo` (bean"
         },
         {
           "name": "libraryId",
@@ -24725,7 +25096,7 @@
       "name": "BuiltAtPublishCauseSchema",
       "module": "cat-harness-tools/schemas/kg/built-at-publish.ts",
       "kind": "zod-enum",
-      "doc": "Why an artefact cannot be current in a commit of the instance that serves it.",
+      "doc": "Why an artefact cannot be current in a commit of the layer that serves it.",
       "fields": [],
       "extendsNames": [],
       "values": [
@@ -24831,7 +25202,7 @@
       "name": "InstancePath",
       "module": "cat-harness-tools/schemas/kg/built-at-publish.ts",
       "kind": "zod-scalar",
-      "doc": "A path relative to the instance root: a file, or a directory ending in `/`. No `..`, no leading `/`.",
+      "doc": "A path relative to the layer root: a file, or a directory ending in `/`. No `..`, no leading `/`.",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -24879,7 +25250,7 @@
           "type": "z.string().optional()",
           "optional": true,
           "array": false,
-          "doc": "`github`, `gitlab`, … Defaults to the instance's own forge when absent."
+          "doc": "`github`, `gitlab`, … Defaults to the layer's own forge when absent."
         },
         {
           "name": "repo",
@@ -25270,7 +25641,7 @@
       "name": "AssetRoleDef",
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "interface",
-      "doc": "What a declared asset ROLE means — asked once, for every instance.",
+      "doc": "What a declared asset ROLE means — asked once, for every layer.",
       "fields": [
         {
           "name": "purpose",
@@ -25309,14 +25680,14 @@
       "name": "AssociatedHarness",
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "interface",
-      "doc": "A HARNESS this instance is associated with: another instance, with its own",
+      "doc": "A HARNESS this layer is associated with: another layer, with its own",
       "fields": [
         {
           "name": "name",
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The associated harness's instance name, as ITS declaration gives it. Unique within this list."
+          "doc": "The associated harness's layer name, as ITS declaration gives it. Unique within this list."
         },
         {
           "name": "title",
@@ -25466,21 +25837,21 @@
           "type": "KindAvatar",
           "optional": true,
           "array": false,
-          "doc": "The instance's own avatar (sod4 #4); the table in avatars.ts covers only the instances below the harness."
+          "doc": "The layer's own avatar (sod4 #4); the table in avatars.ts covers only the layers below the harness."
         },
         {
           "name": "images",
           "type": "KgImage[]",
           "optional": true,
           "array": true,
-          "doc": "Images this instance names — its marks, in the graph rather than beside it."
+          "doc": "Images this layer names — its marks, in the graph rather than beside it."
         },
         {
           "name": "assets",
           "type": "KgAsset[]",
           "optional": true,
           "array": true,
-          "doc": "Non-image artefacts this instance names — `AGENTS.md` first among them."
+          "doc": "Non-image artefacts this layer names — `AGENTS.md` first among them."
         },
         {
           "name": "icon",
@@ -25494,7 +25865,7 @@
           "type": "NavbarIcon[]",
           "optional": true,
           "array": true,
-          "doc": "Which icons this instance's navbar row shows — see `NavbarIconsSchema`."
+          "doc": "Which icons this layer's navbar row shows — see `NavbarIconsSchema`."
         },
         {
           "name": "glassStrip",
@@ -25508,28 +25879,28 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The instance's name, e.g. `\"agentic-harness\"`."
+          "doc": "The layer's name, e.g. `\"agentic-harness\"`."
         },
         {
           "name": "repository",
           "type": "RepoFullName",
           "optional": true,
           "array": false,
-          "doc": "The repository this instance IS — `owner/name`, its PLANNED home once the"
+          "doc": "The repository this layer IS — `owner/name`, its PLANNED home once the"
         },
         {
           "name": "livesAt",
           "type": "InstanceLocation",
           "optional": true,
           "array": false,
-          "doc": "Where the instance lives TODAY when that is not the root of"
+          "doc": "Where the layer lives TODAY when that is not the root of"
         },
         {
           "name": "source",
           "type": "InstanceSource",
           "optional": true,
           "array": false,
-          "doc": "Where this whole instance gets its upstream/source material (e.g. an IG source in Git)."
+          "doc": "Where this whole layer gets its upstream/source material (e.g. an IG source in Git)."
         },
         {
           "name": "separation",
@@ -25543,7 +25914,7 @@
           "type": "string[]",
           "optional": true,
           "array": true,
-          "doc": "Instances this one is seeded together with — see `seedsWith` on"
+          "doc": "Layers this one is seeded together with — see `seedsWith` on"
         },
         {
           "name": "stub",
@@ -25556,14 +25927,14 @@
           "type": "boolean",
           "optional": true,
           "array": false,
-          "doc": "Whether this instance is published on the site. Defaults to enabled; only"
+          "doc": "Whether this layer is published on the site. Defaults to enabled; only"
         },
         {
           "name": "canonicalUrl",
           "type": "string",
           "optional": true,
           "array": false,
-          "doc": "Where this instance's artefacts are published — the base every `@id` in"
+          "doc": "Where this layer's artefacts are published — the base every `@id` in"
         },
         {
           "name": "previewUrl",
@@ -25577,7 +25948,7 @@
           "type": "Publication",
           "optional": true,
           "array": false,
-          "doc": "WHAT KIND of host serves this instance's renderings."
+          "doc": "WHAT KIND of host serves this layer's renderings."
         },
         {
           "name": "topology",
@@ -25591,7 +25962,7 @@
           "type": "ContentDirectory[]",
           "optional": false,
           "array": true,
-          "doc": "Directories this instance scans, before inheritance."
+          "doc": "Directories this layer scans, before inheritance."
         },
         {
           "name": "visualisers",
@@ -25605,14 +25976,14 @@
           "type": "BuiltAtPublish[]",
           "optional": true,
           "array": true,
-          "doc": "Artefacts this instance serves and must never commit, each built at publish"
+          "doc": "Artefacts this layer serves and must never commit, each built at publish"
         },
         {
           "name": "jsonldPrefixes",
           "type": "JsonldPrefixTable",
           "optional": true,
           "array": false,
-          "doc": "The external vocabularies this instance's JSON-LD speaks, prefix →"
+          "doc": "The external vocabularies this layer's JSON-LD speaks, prefix →"
         },
         {
           "name": "remoteGraphs",
@@ -25647,14 +26018,14 @@
           "type": "MountDefaults",
           "optional": true,
           "array": false,
-          "doc": "What a downstream remote-mounts of this instance by default — `schemas/kg/remote-mount.ts`, bean `0mpw`."
+          "doc": "What a downstream remote-mounts of this layer by default — `schemas/kg/remote-mount.ts`, bean `0mpw`."
         },
         {
           "name": "remoteMounts",
           "type": "RemoteMount[]",
           "optional": true,
           "array": true,
-          "doc": "Harnesses this instance remote-mounts at a pin, transitively — `schemas/kg/remote-mount.ts`, bean `0mpw`."
+          "doc": "Harnesses this layer remote-mounts at a pin, transitively — `schemas/kg/remote-mount.ts`, bean `0mpw`."
         },
         {
           "name": "mountApprovers",
@@ -25675,70 +26046,70 @@
           "type": "RenderExemption",
           "optional": true,
           "array": false,
-          "doc": "What this instance is excused from rendering, and what it carries instead."
+          "doc": "What this layer is excused from rendering, and what it carries instead."
         },
         {
           "name": "needs",
           "type": "string[]",
           "optional": true,
           "array": true,
-          "doc": "The instances this one is BUILT ON — its layer stack, foundation first."
+          "doc": "The layers this one is BUILT ON — its layer stack, foundation first."
         },
         {
           "name": "enableSubgraphs",
           "type": "string[]",
           "optional": true,
           "array": true,
-          "doc": "The opt-in sub-graphs this instance switches on FOR ITSELF, qualified"
+          "doc": "The opt-in sub-graphs this layer switches on FOR ITSELF, qualified"
         },
         {
           "name": "moves",
           "type": "DeclaredMove[]",
           "optional": true,
           "array": true,
-          "doc": "Paths this instance moved and still answers for, during the window of the"
+          "doc": "Paths this layer moved and still answers for, during the window of the"
         },
         {
           "name": "taskIo",
           "type": "Record< string, { inputs?: string[]; outputs?: string[]; /** The task that REPAIRS this check when the `X` / `X:check` …",
           "optional": true,
           "array": false,
-          "doc": "What this instance's own package tasks read and write, keyed by task name"
+          "doc": "What this layer's own package tasks read and write, keyed by task name"
         },
         {
           "name": "gateExemptions",
           "type": "{ steps?: Array<{ match: string; kind: \"covered-by\" | \"ci-only\" | \"no-folio\"; reason: string }>; scripts?: Array<{ scri…",
           "optional": true,
           "array": false,
-          "doc": "The CI steps and check scripts of THIS instance that the local gate set"
+          "doc": "The CI steps and check scripts of THIS layer that the local gate set"
         },
         {
           "name": "contentAdapters",
           "type": "ContentAdapterDeclaration[]",
           "optional": true,
           "array": true,
-          "doc": "The content adapters this instance SHIPS, which the harness's composition"
+          "doc": "The content adapters this layer SHIPS, which the harness's composition"
         },
         {
           "name": "lsiUnitProviders",
           "type": "LsiUnitProviderDeclaration[]",
           "optional": true,
           "array": true,
-          "doc": "The LSI unit providers this instance SHIPS, which `lsi:near` discovers"
+          "doc": "The LSI unit providers this layer SHIPS, which `lsi:near` discovers"
         },
         {
           "name": "contentTranslations",
           "type": "ContentTypeTranslation[]",
           "optional": true,
           "array": true,
-          "doc": "The translation profile of each content type THIS instance owns: which"
+          "doc": "The translation profile of each content type THIS layer owns: which"
         },
         {
           "name": "liquid",
           "type": "LiquidPrefix",
           "optional": true,
           "array": false,
-          "doc": "The Liquid prefix this instance's VALUES are addressed by in authored"
+          "doc": "The Liquid prefix this layer's VALUES are addressed by in authored"
         },
         {
           "name": "id",
@@ -25851,7 +26222,7 @@
       "name": "ContentAdapterDeclaration",
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "interface",
-      "doc": "One content adapter an instance ships, as its own declaration states it.",
+      "doc": "One content adapter a layer ships, as its own declaration states it.",
       "fields": [
         {
           "name": "contentType",
@@ -25935,7 +26306,7 @@
       "name": "ContentDirectory",
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "interface",
-      "doc": "One declared directory of an INSTANCE — a place to look, plus what a",
+      "doc": "One declared directory of a LAYER — a place to look, plus what a",
       "fields": [
         {
           "name": "coverage",
@@ -25949,7 +26320,7 @@
           "type": "boolean",
           "optional": true,
           "array": false,
-          "doc": "Built into the instance's own IG site at `/<instance>/` (bean `mftp`); see `igSite` on the shape below."
+          "doc": "Built into the layer's own IG site at `/<instance>/` (bean `mftp`); see `igSite` on the shape below."
         },
         {
           "name": "readOnly",
@@ -26050,7 +26421,7 @@
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "undetermined",
       "note": "z.preprocess( acceptLegacyGraphsKey, // A `qa` directory is commit-keyed by construction: its readers compare one // commit's verdicts against a baseline, and …",
-      "doc": "As {@link GraphNodeDirectorySchema}, for an instance's own directories.",
+      "doc": "As {@link GraphNodeDirectorySchema}, for a layer's own directories.",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -26132,7 +26503,7 @@
           "type": "z.boolean().optional()",
           "optional": true,
           "array": false,
-          "doc": "This directory is what answers at the instance's own route, `/<instance>/`."
+          "doc": "This directory is what answers at the layer's own route, `/<instance>/`."
         },
         {
           "name": "kindRouteRedirect",
@@ -26174,7 +26545,7 @@
           "type": "z.boolean().optional()",
           "optional": true,
           "array": false,
-          "doc": "This directory is built INTO the instance's own IG site, which is served"
+          "doc": "This directory is built INTO the layer's own IG site, which is served"
         },
         {
           "name": "served",
@@ -26653,7 +27024,7 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "Stable identifier, unique within an instance. Inheritance overrides match"
+          "doc": "Stable identifier, unique within a layer. Inheritance overrides match"
         },
         {
           "name": "path",
@@ -26667,7 +27038,7 @@
           "type": "DeclarationScope",
           "optional": true,
           "array": false,
-          "doc": "Which root `path` is relative to. Absent means this instance's."
+          "doc": "Which root `path` is relative to. Absent means this layer's."
         },
         {
           "name": "graphTypologies",
@@ -26741,7 +27112,7 @@
           "type": "z.literal(true).optional()",
           "optional": true,
           "array": false,
-          "doc": "This entry is an instance SUBGRAPH, not a part of its parent's graph."
+          "doc": "This entry is a layer SUBGRAPH, not a part of its parent's graph."
         },
         {
           "name": "source",
@@ -26808,7 +27179,7 @@
           "type": "z.array(z.string().min(1)).nonempty().optional()",
           "optional": true,
           "array": true,
-          "doc": "This instance's directory ids it covers."
+          "doc": "This layer's directory ids it covers."
         },
         {
           "name": "coversKinds",
@@ -26864,7 +27235,7 @@
       "name": "InstanceGitSourceSchema",
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "zod-object",
-      "doc": "Where this instance gets its upstream/source material (e.g. an IG source in Git).",
+      "doc": "Where this layer gets its upstream/source material (e.g. an IG source in Git).",
       "fields": [
         {
           "name": "kind",
@@ -26905,21 +27276,21 @@
       "name": "InstanceLocation",
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "interface",
-      "doc": "Where an instance sits today inside a HOST repository — the pre-split case,",
+      "doc": "Where a layer sits today inside a HOST repository — the pre-split case,",
       "fields": [
         {
           "name": "repository",
           "type": "RepoFullName",
           "optional": false,
           "array": false,
-          "doc": "The repository that holds the instance today, `owner/name`."
+          "doc": "The repository that holds the layer today, `owner/name`."
         },
         {
           "name": "path",
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The instance's directory within it, repository-relative, no leading `./`."
+          "doc": "The layer's directory within it, repository-relative, no leading `./`."
         }
       ],
       "extendsNames": [],
@@ -27001,7 +27372,7 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The substrate's instance name, as its declaration gives it or will."
+          "doc": "The substrate's layer name, as its declaration gives it or will."
         },
         {
           "name": "title",
@@ -27022,7 +27393,7 @@
           "type": "\"proposed\" | \"planned\" | \"exists\" | \"published\"",
           "optional": false,
           "array": false,
-          "doc": "Where it stands: proposed (an idea), planned (a staged instance), exists (a repository), published (a release)."
+          "doc": "Where it stands: proposed (an idea), planned (a staged layer), exists (a repository), published (a release)."
         },
         {
           "name": "toolsRepository",
@@ -27108,14 +27479,14 @@
       "name": "LiquidPrefix",
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "interface",
-      "doc": "How an instance's values are addressed in Liquid — {@link CatHarnessDeclaration.liquid}.",
+      "doc": "How a layer's values are addressed in Liquid — {@link CatHarnessDeclaration.liquid}.",
       "fields": [
         {
           "name": "prefix",
           "type": "string",
           "optional": true,
           "array": false,
-          "doc": "The first path segment(s); default the instance's `name`."
+          "doc": "The first path segment(s); default the layer's `name`."
         },
         {
           "name": "passThrough",
@@ -27137,7 +27508,7 @@
       "name": "LsiUnitProviderDeclaration",
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "interface",
-      "doc": "One LSI unit provider an instance ships: the code that turns one of this",
+      "doc": "One LSI unit provider a layer ships: the code that turns one of this",
       "fields": [
         {
           "name": "graphKind",
@@ -27221,7 +27592,7 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "Path the directory was (or would be) created at — inside the instance, or"
+          "doc": "Path the directory was (or would be) created at — inside the layer, or"
         },
         {
           "name": "path",
@@ -27235,14 +27606,14 @@
           "type": "DeclarationScope",
           "optional": true,
           "array": false,
-          "doc": "Which root `path` was resolved against; absent means the instance's."
+          "doc": "Which root `path` was resolved against; absent means the layer's."
         },
         {
           "name": "declaredBy",
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The instance whose declaration contributed the entry — may be a dependency."
+          "doc": "The layer whose declaration contributed the entry — may be a dependency."
         },
         {
           "name": "created",
@@ -27332,7 +27703,7 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "`<parent id>/<own id>` — unique across the instance, and says who declares it."
+          "doc": "`<parent id>/<own id>` — unique across the layer, and says who declares it."
         },
         {
           "name": "ownId",
@@ -27382,7 +27753,7 @@
           "type": "boolean",
           "optional": true,
           "array": false,
-          "doc": "`true` when the entry declares itself an instance subgraph (bean `cmsl`)."
+          "doc": "`true` when the entry declares itself a layer subgraph (bean `cmsl`)."
         },
         {
           "name": "parentId",
@@ -27429,7 +27800,7 @@
           "type": "\"draft\"",
           "optional": true,
           "array": false,
-          "doc": "WHAT STATE this instance's publication is in. `draft`, always, today."
+          "doc": "WHAT STATE this layer's publication is in. `draft`, always, today."
         }
       ],
       "extendsNames": [],
@@ -27488,14 +27859,14 @@
       "name": "RemoteGraph",
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "interface",
-      "doc": "A graph this instance KNOWS ABOUT but does not hold.",
+      "doc": "A graph this layer KNOWS ABOUT but does not hold.",
       "fields": [
         {
           "name": "id",
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "Stable identifier, unique within an instance — as on a directory, and for the same reason."
+          "doc": "Stable identifier, unique within a layer — as on a directory, and for the same reason."
         },
         {
           "name": "url",
@@ -27563,7 +27934,7 @@
       "name": "RenderExemption",
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "interface",
-      "doc": "An instance's declared exemption from the rendering obligations, with a",
+      "doc": "A layer's declared exemption from the rendering obligations, with a",
       "fields": [
         {
           "name": "of",
@@ -27591,7 +27962,7 @@
           "type": "string",
           "optional": true,
           "array": false,
-          "doc": "Where the instance IS reachable, since it renders nothing of its own."
+          "doc": "Where the layer IS reachable, since it renders nothing of its own."
         }
       ],
       "extendsNames": [],
@@ -27662,35 +28033,35 @@
       "name": "ResolvedDirectory",
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "interface",
-      "doc": "A directory after inheritance, with the instance that declared it.",
+      "doc": "A directory after inheritance, with the layer that declared it.",
       "fields": [
         {
           "name": "declaredBy",
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "Name of the instance whose declaration contributed this entry."
+          "doc": "Name of the layer whose declaration contributed this entry."
         },
         {
           "name": "absPath",
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "Absolute path, resolved against the instance that declared it."
+          "doc": "Absolute path, resolved against the layer that declared it."
         },
         {
           "name": "own",
           "type": "boolean",
           "optional": false,
           "array": false,
-          "doc": "True when this entry is the ROOT instance's — its own declaration, or its"
+          "doc": "True when this entry is the ROOT layer's — its own declaration, or its"
         },
         {
           "name": "member",
           "type": "string",
           "optional": true,
           "array": false,
-          "doc": "The instance whose directory this is. A declared subgraph is inherited as"
+          "doc": "The layer whose directory this is. A declared subgraph is inherited as"
         },
         {
           "name": "within",
@@ -28049,7 +28420,7 @@
       "name": "Topology",
       "module": "cat-harness-tools/schemas/kg/cat-harness.ts",
       "kind": "interface",
-      "doc": "The topology axes an instance declares about ITSELF.",
+      "doc": "The topology axes a layer declares about ITSELF.",
       "fields": [
         {
           "name": "forge",
@@ -28402,7 +28773,7 @@
           "type": "ThemeRefSchema.optional()",
           "optional": true,
           "array": false,
-          "doc": "The tile's theme, by reference (#1168 B8). Absent means the directory's, then the instance's."
+          "doc": "The tile's theme, by reference (#1168 B8). Absent means the directory's, then the layer's."
         },
         {
           "name": "icon",
@@ -28542,7 +28913,7 @@
           "type": "z .array( z .object({ id: z.string().min(1), path: z.string().min(1), subgraph: z.literal(true), graphTypologies: z.arr…",
           "optional": true,
           "array": true,
-          "doc": "Instance directories declared from within, as in `skills.json`."
+          "doc": "Layer directories declared from within, as in `skills.json`."
         }
       ],
       "extendsNames": [],
@@ -28763,7 +29134,7 @@
       "name": "InstanceFilter",
       "module": "cat-harness-tools/schemas/kg/declared-nodes.ts",
       "kind": "type-alias",
-      "doc": "Which instances of a checkout a scan reads: given an instance root, whether",
+      "doc": "Which layers of a checkout a scan reads: given a layer root, whether",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -28963,7 +29334,7 @@
           "type": "DependsOnRecord[]",
           "optional": false,
           "array": true,
-          "doc": "Emitted only when the exporting instance is itself publishable."
+          "doc": "Emitted only when the exporting layer is itself publishable."
         },
         {
           "name": "gaps",
@@ -29167,7 +29538,7 @@
           "type": "number",
           "optional": false,
           "array": false,
-          "doc": "Outbound edges whose direction cannot be decided, because the source instance declares no `needs`. Not clean."
+          "doc": "Outbound edges whose direction cannot be decided, because the source layer declares no `needs`. Not clean."
         }
       ],
       "extendsNames": [],
@@ -29542,7 +29913,7 @@
       "module": "cat-harness-tools/schemas/kg/discovered-vocabulary.ts",
       "kind": "undetermined",
       "note": "z.registry<DiscoveredVocabulary>()",
-      "doc": "Every Zod schema whose members are discovered from the mounted instances.",
+      "doc": "Every Zod schema whose members are discovered from the mounted layers.",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -30319,14 +30690,14 @@
           "type": "true",
           "optional": true,
           "array": false,
-          "doc": "Does every instance have ITS OWN graph of this kind — so an instance that"
+          "doc": "Does every layer have ITS OWN graph of this kind — so a layer that"
         },
         {
           "name": "newInstanceSource",
           "type": "NewInstanceSource",
           "optional": true,
           "array": false,
-          "doc": "Where a NEW instance's own graph of this kind lives, when `folio_init`"
+          "doc": "Where a NEW layer's own graph of this kind lives, when `folio_init`"
         },
         {
           "name": "renderable",
@@ -30354,7 +30725,7 @@
           "type": "GraphLayer",
           "optional": false,
           "array": false,
-          "doc": "Does a graph of this kind say what the instance **IS**, or where something"
+          "doc": "Does a graph of this kind say what the layer **IS**, or where something"
         },
         {
           "name": "summary",
@@ -31539,7 +31910,7 @@
           "type": "z.string().min(1)",
           "optional": false,
           "array": false,
-          "doc": "The corpus this indexes, by its instance name."
+          "doc": "The corpus this indexes, by its layer name."
         },
         {
           "name": "selection",
@@ -31720,21 +32091,8 @@
       "exported": true
     },
     {
-      "id": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigRead",
-      "name": "IndexConfigRead",
-      "module": "cat-harness-tools/schemas/kg/index-config.ts",
-      "kind": "type-alias",
-      "fields": [],
-      "extendsNames": [],
-      "values": [],
-      "refs": [],
-      "unresolved": [],
-      "external": [],
-      "exported": true
-    },
-    {
-      "id": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigSchema",
-      "name": "IndexConfigSchema",
+      "id": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigObject",
+      "name": "IndexConfigObject",
       "module": "cat-harness-tools/schemas/kg/index-config.ts",
       "kind": "zod-object",
       "fields": [
@@ -31769,6 +32127,25 @@
           "type": "z .array(IndexInstanceSchema) .refine((xs) => new Set(xs.map((x) => x.name)).size === xs.length, { message: \"instances:…",
           "optional": false,
           "array": true
+        },
+        {
+          "name": "harnesses",
+          "type": "z .array(IndexHarnessSchema) .refine((xs) => new Set(xs.map((x) => x.name)).size === xs.length, { message: \"harnesses: …",
+          "optional": true,
+          "array": true,
+          "doc": "Which harnesses are INSTANTIATED here (cat-harness#1138), each an"
+        },
+        {
+          "name": "__layersAndInstances",
+          "type": "z.literal(true).optional()",
+          "optional": true,
+          "array": false
+        },
+        {
+          "name": "__layersWithoutHarnesses",
+          "type": "z.literal(true).optional()",
+          "optional": true,
+          "array": false
         },
         {
           "name": "site",
@@ -31810,6 +32187,7 @@
       "refs": [
         "cat-harness-tools/schemas/kg/cat-harness.ts#GateExemptionsSchema",
         "cat-harness-tools/schemas/kg/index-config.ts#IndexContentTypeIdSchema",
+        "cat-harness-tools/schemas/kg/index-config.ts#IndexHarnessSchema",
         "cat-harness-tools/schemas/kg/index-config.ts#IndexInstanceSchema",
         "cat-harness-tools/schemas/kg/index-config.ts#IndexSiteSchema"
       ],
@@ -31819,6 +32197,33 @@
         "INDEX_CONFIG_SCHEMA",
         "z"
       ],
+      "exported": false
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigRead",
+      "name": "IndexConfigRead",
+      "module": "cat-harness-tools/schemas/kg/index-config.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigSchema",
+      "name": "IndexConfigSchema",
+      "module": "cat-harness-tools/schemas/kg/index-config.ts",
+      "kind": "undetermined",
+      "note": "z.preprocess(readLayersSpelling, IndexConfigObject)",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
       "exported": true
     },
     {
@@ -31833,6 +32238,56 @@
       "refs": [],
       "unresolved": [],
       "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/index-config.ts#IndexHarness",
+      "name": "IndexHarness",
+      "module": "cat-harness-tools/schemas/kg/index-config.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/index-config.ts#IndexHarnessSchema",
+      "name": "IndexHarnessSchema",
+      "module": "cat-harness-tools/schemas/kg/index-config.ts",
+      "kind": "zod-object",
+      "doc": "One harness INSTANTIATED here (cat-harness#1138): an instance of the Harness",
+      "fields": [
+        {
+          "name": "name",
+          "type": "IndexInstanceNameSchema",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "definedBy",
+          "type": "IndexInstanceNameSchema.optional()",
+          "optional": true,
+          "array": false
+        },
+        {
+          "name": "_comment",
+          "type": "z.string().optional()",
+          "optional": true,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/kg/index-config.ts#IndexInstanceNameSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
       "exported": true
     },
     {
@@ -31978,6 +32433,13 @@
           "optional": true,
           "array": false,
           "doc": "Whether the ⓘ task panel on this site's BPMN drawings shows skills: the"
+        },
+        {
+          "name": "sharedAssets",
+          "type": "z .string() .regex(/^https:\\/\\/[^/]+\\/(?:[^\\s]*\\/)?$/, \"an https URL ending in /\") .optional()",
+          "optional": true,
+          "array": false,
+          "doc": "Where this site loads the assets every IG site shares, instead of"
         },
         {
           "name": "workflows",
@@ -32168,7 +32630,7 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "Absolute path of the instance root in this checkout or overlay."
+          "doc": "Absolute path of the layer root in this checkout or overlay."
         },
         {
           "name": "namespace",
@@ -32235,7 +32697,7 @@
       "name": "DeclaredPrefixes",
       "module": "cat-harness-tools/schemas/kg/jsonld-prefixes.ts",
       "kind": "interface",
-      "doc": "One instance's table, as the merge sees it.",
+      "doc": "One layer's table, as the merge sees it.",
       "fields": [
         {
           "name": "instance",
@@ -32318,7 +32780,7 @@
       "name": "PrefixConflict",
       "module": "cat-harness-tools/schemas/kg/jsonld-prefixes.ts",
       "kind": "interface",
-      "doc": "A prefix two instances bind to different namespaces.",
+      "doc": "A prefix two layers bind to different namespaces.",
       "fields": [
         {
           "name": "prefix",
@@ -32408,14 +32870,14 @@
           "type": "RepoFullNameSchema",
           "optional": false,
           "array": false,
-          "doc": "The instance it came from, as a reference — `litlfred/cat-harness`."
+          "doc": "The layer it came from, as a reference — `litlfred/cat-harness`."
         },
         {
           "name": "path",
           "type": "z.string().min(1)",
           "optional": false,
           "array": false,
-          "doc": "Path within that instance."
+          "doc": "Path within that layer."
         },
         {
           "name": "ref",
@@ -32454,7 +32916,7 @@
       "name": "DeclarationScopeSchema",
       "module": "cat-harness-tools/schemas/kg/kg-node.ts",
       "kind": "zod-enum",
-      "doc": "Which ROOT a declared path is relative to — the instance's, or the",
+      "doc": "Which ROOT a declared path is relative to — the layer's, or the",
       "fields": [],
       "extendsNames": [],
       "values": [
@@ -32923,7 +33385,7 @@
           "type": "string",
           "optional": true,
           "array": false,
-          "doc": "The instance the module belongs to, by its DECLARED NAME, when that is not"
+          "doc": "The layer the module belongs to, by its DECLARED NAME, when that is not"
         },
         {
           "name": "module",
@@ -33553,7 +34015,7 @@
           "type": "StandingConsentSchema.optional()",
           "optional": true,
           "array": false,
-          "doc": "A standing consent for this instance: see \"Standing consent\" above."
+          "doc": "A standing consent for this layer: see \"Standing consent\" above."
         }
       ],
       "extendsNames": [],
@@ -33620,7 +34082,7 @@
       "name": "StandingConsentSchema",
       "module": "cat-harness-tools/schemas/kg/mount-trust.ts",
       "kind": "zod-object",
-      "doc": "A person's STANDING consent for one upstream instance: \"re-pin me to the",
+      "doc": "A person's STANDING consent for one upstream layer: \"re-pin me to the",
       "fields": [
         {
           "name": "follows",
@@ -33739,7 +34201,7 @@
       "name": "NsPrefix",
       "module": "cat-harness-tools/schemas/kg/namespaces.ts",
       "kind": "type-alias",
-      "doc": "One of our own prefixes — each the stub of the instance declaring it.",
+      "doc": "One of our own prefixes — each the stub of the layer declaring it.",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -33753,7 +34215,7 @@
       "name": "LayerRatchet",
       "module": "cat-harness-tools/schemas/kg/node-kind-index.ts",
       "kind": "interface",
-      "doc": "One instance's verdict against its own baseline.",
+      "doc": "One layer's verdict against its own baseline.",
       "fields": [
         {
           "name": "instance",
@@ -33780,7 +34242,7 @@
           "type": "string[]",
           "optional": false,
           "array": true,
-          "doc": "In the baseline and unkinded, but OWNED by another instance: a baseline may name only its own."
+          "doc": "In the baseline and unkinded, but OWNED by another layer: a baseline may name only its own."
         },
         {
           "name": "keep",
@@ -33906,7 +34368,7 @@
           "type": "string",
           "optional": true,
           "array": false,
-          "doc": "The instance that declares it: the one whose code holds the `nodeKind()`."
+          "doc": "The layer that declares it: the one whose code holds the `nodeKind()`."
         },
         {
           "name": "module",
@@ -34064,7 +34526,7 @@
       "name": "UnkindedBaselineEntrySchema",
       "module": "cat-harness-tools/schemas/kg/node-kind-index.ts",
       "kind": "zod-object",
-      "doc": "One family an instance's baseline admits: the key, nothing that can drift with another layer.",
+      "doc": "One family a layer's baseline admits: the key, nothing that can drift with another layer.",
       "fields": [
         {
           "name": "typology",
@@ -34093,7 +34555,7 @@
       "name": "UnkindedBaselineKind",
       "module": "cat-harness-tools/schemas/kg/node-kind-index.ts",
       "kind": "zod-object",
-      "doc": "An instance's ratchet baseline: the families IT owns ({@link typologyOwner})",
+      "doc": "A layer's ratchet baseline: the families IT owns ({@link typologyOwner})",
       "fields": [],
       "extendsNames": [
         "nodeKind"
@@ -34124,14 +34586,14 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The instance that holds it."
+          "doc": "The layer that holds it."
         },
         {
           "name": "path",
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "Relative to that instance's root, extension dropped: the node's address."
+          "doc": "Relative to that layer's root, extension dropped: the node's address."
         },
         {
           "name": "file",
@@ -34825,6 +35287,33 @@
       "exported": true
     },
     {
+      "id": "cat-harness-tools/schemas/kg/opt-in-roots.ts#OptInRoot",
+      "name": "OptInRoot",
+      "module": "cat-harness-tools/schemas/kg/opt-in-roots.ts",
+      "kind": "interface",
+      "doc": "One opt-in sub-graph: its qualified id and absolute path (no trailing separator).",
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "abs",
+          "type": "string",
+          "optional": false,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
       "id": "cat-harness-tools/schemas/kg/opt-in-subgraphs.ts#DeclaredOptIns",
       "name": "DeclaredOptIns",
       "module": "cat-harness-tools/schemas/kg/opt-in-subgraphs.ts",
@@ -34842,7 +35331,7 @@
           "type": "ReadonlyArray<{ id: string; optIn?: boolean }>",
           "optional": false,
           "array": false,
-          "doc": "Every directory the instance declares — top level and from within — with its `optIn`."
+          "doc": "Every directory the layer declares — top level and from within — with its `optIn`."
         }
       ],
       "extendsNames": [],
@@ -34892,7 +35381,7 @@
           "type": "string",
           "optional": true,
           "array": false,
-          "doc": "The instance whose declaration (or declaration file from within) wrote the entry."
+          "doc": "The layer whose declaration (or declaration file from within) wrote the entry."
         },
         {
           "name": "within",
@@ -34934,6 +35423,291 @@
       "unresolved": [],
       "external": [],
       "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#DiscoverSourceSchema",
+      "name": "DiscoverSourceSchema",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "zod-object",
+      "doc": "Repositories found by name when the portfolio is read.",
+      "fields": [
+        {
+          "name": "discover",
+          "type": "z .object({ owner: z.string().min(1), prefixes: z.array(z.string().min(1)).min(1), /** Repository names (without owner)…",
+          "optional": false,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
+        "MemberKind",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#LibrarySourceSchema",
+      "name": "LibrarySourceSchema",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "zod-object",
+      "doc": "A layer's library catalogue: every item, or the items listed.",
+      "fields": [
+        {
+          "name": "library",
+          "type": "z .object({ /** The repository whose catalogue holds the items. */ repo: RepoName, /** Where its items' entry pages are…",
+          "optional": false,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/kg/portfolio.ts#RepoName"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#Portfolio",
+      "name": "Portfolio",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioKind",
+      "name": "PortfolioKind",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "zod-object",
+      "fields": [],
+      "extendsNames": [
+        "nodeKind"
+      ],
+      "values": [],
+      "refs": [],
+      "unresolved": [
+        "nodeKind"
+      ],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioLevel",
+      "name": "PortfolioLevel",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioLevelSchema",
+      "name": "PortfolioLevelSchema",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "zod-object",
+      "doc": "One level, and the libraries whose members belong to it.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "z.string().regex(/^[A-Z0-9][A-Za-z0-9-]*$/, \"a short id such as `L1`\")",
+          "optional": false,
+          "array": false,
+          "doc": "`L1`, `L2`, …: short, upper-case first. Unique within the portfolio."
+        },
+        {
+          "name": "title",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "description",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false
+        },
+        {
+          "name": "libraries",
+          "type": "z.array(PortfolioLibrarySchema)",
+          "optional": false,
+          "array": true,
+          "doc": "Empty is allowed: a level the portfolio names before it has members."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioLibrarySchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioLibrary",
+      "name": "PortfolioLibrary",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioLibrarySchema",
+      "name": "PortfolioLibrarySchema",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "zod-object",
+      "doc": "One library linked into a level.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "Slug",
+          "optional": false,
+          "array": false,
+          "doc": "Unique within the portfolio."
+        },
+        {
+          "name": "title",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false
+        },
+        {
+          "name": "description",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false
+        },
+        {
+          "name": "source",
+          "type": "PortfolioLibrarySourceSchema",
+          "optional": false,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioLibrarySourceSchema",
+        "cat-harness-tools/schemas/kg/portfolio.ts#Slug"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioLibrarySourceSchema",
+      "name": "PortfolioLibrarySourceSchema",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "zod-union",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioSchema",
+      "name": "PortfolioSchema",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "zod-object",
+      "fields": [],
+      "extendsNames": [
+        "PortfolioKind"
+      ],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioKind"
+      ],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#RepoName",
+      "name": "RepoName",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "zod-scalar",
+      "doc": "`owner/name` on the forge.",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": false
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#ReposSourceSchema",
+      "name": "ReposSourceSchema",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "zod-object",
+      "doc": "Repositories listed by name.",
+      "fields": [
+        {
+          "name": "repos",
+          "type": "z.array(RepoName).min(1)",
+          "optional": false,
+          "array": true
+        },
+        {
+          "name": "memberKind",
+          "type": "MemberKind.optional()",
+          "optional": true,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/kg/portfolio.ts#RepoName"
+      ],
+      "unresolved": [],
+      "external": [
+        "MemberKind",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/kg/portfolio.ts#Slug",
+      "name": "Slug",
+      "module": "cat-harness-tools/schemas/kg/portfolio.ts",
+      "kind": "zod-scalar",
+      "doc": "A short lower-case id: a URL segment.",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": false
     },
     {
       "id": "cat-harness-tools/schemas/kg/property-skills.ts#DeclarationProperty",
@@ -35018,14 +35792,14 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "Instance root, absolute."
+          "doc": "Layer root, absolute."
         },
         {
           "name": "path",
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "Path inside the instance, without extension, `/`-separated."
+          "doc": "Path inside the layer, without extension, `/`-separated."
         },
         {
           "name": "fragment",
@@ -35053,7 +35827,7 @@
       "name": "SubjectMinter",
       "module": "cat-harness-tools/schemas/kg/prov-jsonld.ts",
       "kind": "type-alias",
-      "doc": "Mints a subject IRI in the published document of the instance at `root`.",
+      "doc": "Mints a subject IRI in the published document of the layer at `root`.",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -35628,7 +36402,7 @@
       "name": "Occurrence",
       "module": "cat-harness-tools/schemas/kg/reference-direction.ts",
       "kind": "interface",
-      "doc": "One bounded occurrence of an instance's name in a file.",
+      "doc": "One bounded occurrence of a layer's name in a file.",
       "fields": [
         {
           "name": "file",
@@ -35654,14 +36428,14 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The instance the FILE belongs to."
+          "doc": "The layer the FILE belongs to."
         },
         {
           "name": "to",
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The instance whose NAME was found."
+          "doc": "The layer whose NAME was found."
         }
       ],
       "extendsNames": [],
@@ -35697,14 +36471,14 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "Why this is not a reference to the instance. Required."
+          "doc": "Why this is not a reference to the layer. Required."
         },
         {
           "name": "to",
           "type": "string",
           "optional": true,
           "array": false,
-          "doc": "Limit to one target instance; omitted means any."
+          "doc": "Limit to one target layer; omitted means any."
         }
       ],
       "extendsNames": [],
@@ -35772,7 +36546,7 @@
       "name": "InstanceNameSchema",
       "module": "cat-harness-tools/schemas/kg/remote-mount.ts",
       "kind": "zod-scalar",
-      "doc": "An instance name — the same rule `cat-harness.ts` applies to `needs` and subscriptions.",
+      "doc": "A layer name — the same rule `cat-harness.ts` applies to `needs` and subscriptions.",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -35798,7 +36572,7 @@
           "type": "z.string().min(1)",
           "optional": false,
           "array": false,
-          "doc": "Relative to the downstream instance's root, no trailing slash."
+          "doc": "Relative to the downstream layer's root, no trailing slash."
         },
         {
           "name": "upstreamPath",
@@ -35819,6 +36593,13 @@
           "type": "z.number().int().nonnegative()",
           "optional": false,
           "array": false
+        },
+        {
+          "name": "except",
+          "type": "z.array(z.string().min(1).refine((p) => !p.split(\"/\").includes(\"..\") && !p.startsWith(\"/\"), \"an except path stays insid…",
+          "optional": true,
+          "array": true,
+          "doc": "A whole-layer mount (`id: \"*\"`) only: the opt-in sub-graphs the"
         },
         {
           "name": "package",
@@ -35879,7 +36660,7 @@
           "type": "z.string()",
           "optional": false,
           "array": false,
-          "doc": "The instance's root in the upstream repository; `\"\"` is that repository's root."
+          "doc": "The layer's root in the upstream repository; `\"\"` is that repository's root."
         },
         {
           "name": "path",
@@ -35919,7 +36700,7 @@
           "type": "z .array(z.object({ src: z.string().min(1), sha256: z.string().regex(/^[0-9a-f]{64}$/) }).strict()) .optional()",
           "optional": true,
           "array": true,
-          "doc": "The instance's DECLARED ASSETS (`assets[].src` — its README and"
+          "doc": "The layer's DECLARED ASSETS (`assets[].src` — its README and"
         },
         {
           "name": "trust",
@@ -36012,7 +36793,7 @@
       "name": "MountDefaultsSchema",
       "module": "cat-harness-tools/schemas/kg/remote-mount.ts",
       "kind": "zod-object",
-      "doc": "HARNESS SIDE — what a downstream mounts of THIS instance unless it says",
+      "doc": "HARNESS SIDE — what a downstream mounts of THIS layer unless it says",
       "fields": [
         {
           "name": "path",
@@ -36025,14 +36806,14 @@
           "type": "z .array(z.string().min(1)) .refine((xs) => new Set(xs).size === xs.length, { message: \"mountDefaults.directories: an i…",
           "optional": true,
           "array": true,
-          "doc": "Directory ids, in this instance's own declaration."
+          "doc": "Directory ids, in this layer's own declaration."
         },
         {
           "name": "whole",
           "type": "z.literal(true).optional()",
           "optional": true,
           "array": false,
-          "doc": "Mount the WHOLE instance root — every tracked file at the pin, root"
+          "doc": "Mount the WHOLE layer root — every tracked file at the pin, root"
         }
       ],
       "extendsNames": [],
@@ -36124,7 +36905,7 @@
       "name": "MountOverrideSchema",
       "module": "cat-harness-tools/schemas/kg/remote-mount.ts",
       "kind": "zod-object",
-      "doc": "DOWNSTREAM SIDE — an override of ONE instance's defaults in the closure,",
+      "doc": "DOWNSTREAM SIDE — an override of ONE layer's defaults in the closure,",
       "fields": [
         {
           "name": "path",
@@ -36149,7 +36930,7 @@
           "type": "z .array(ToolIdSchema) .min(1) .refine((xs) => new Set(xs).size === xs.length, { message: \"override tools: an id appear…",
           "optional": true,
           "array": true,
-          "doc": "Tool ids THIS instance declares, each mounted runnable: its definition,"
+          "doc": "Tool ids THIS layer declares, each mounted runnable: its definition,"
         },
         {
           "name": "whole",
@@ -36163,14 +36944,14 @@
           "type": "z.boolean().optional()",
           "optional": true,
           "array": false,
-          "doc": "Mount this instance's directories as their published"
+          "doc": "Mount this layer's directories as their published"
         },
         {
           "name": "trust",
           "type": "MountTrustSchema.optional()",
           "optional": true,
           "array": false,
-          "doc": "Consent for THIS instance at its own pin. Required for an instance"
+          "doc": "Consent for THIS layer at its own pin. Required for a layer"
         }
       ],
       "extendsNames": [],
@@ -36257,7 +37038,7 @@
           "type": "InstanceNameSchema",
           "optional": false,
           "array": false,
-          "doc": "The harness's instance name, as its own declaration states it."
+          "doc": "The harness's layer name, as its own declaration states it."
         },
         {
           "name": "repository",
@@ -36276,14 +37057,14 @@
           "type": "z.record(InstanceNameSchema, MountOverrideSchema).optional()",
           "optional": true,
           "array": false,
-          "doc": "Per-instance overrides across the closure, keyed by instance name."
+          "doc": "Per-instance overrides across the closure, keyed by layer name."
         },
         {
           "name": "hydrated",
           "type": "z.literal(true).optional()",
           "optional": true,
           "array": false,
-          "doc": "Mount every instance this entry reaches as hydrated metadata"
+          "doc": "Mount every layer this entry reaches as hydrated metadata"
         },
         {
           "name": "note",
@@ -36872,7 +37653,7 @@
       "name": "SubSiteSchema",
       "module": "cat-harness-tools/schemas/kg/site.ts",
       "kind": "zod-object",
-      "doc": "One instance's sub-site: the route it answers at, and the instance it is.",
+      "doc": "One layer's sub-site: the route it answers at, and the layer it is.",
       "fields": [
         {
           "name": "path",
@@ -38427,7 +39208,7 @@
       "name": "SkillsDirectoryEntrySchema",
       "module": "cat-harness-tools/schemas/kg/skill-topics.ts",
       "kind": "zod-object",
-      "doc": "An INSTANCE directory declared from inside `skills/` (bean `cmsl`, owner",
+      "doc": "A LAYER directory declared from inside `skills/` (bean `cmsl`, owner",
       "fields": [
         {
           "name": "id",
@@ -38446,7 +39227,7 @@
           "type": "z.literal(true)",
           "optional": false,
           "array": false,
-          "doc": "Marks the entry as a subgraph of the INSTANCE rather than a part of the"
+          "doc": "Marks the entry as a subgraph of the LAYER rather than a part of the"
         },
         {
           "name": "graphTypologies",
@@ -38547,7 +39328,7 @@
           "type": "z.array(SkillsDirectoryEntrySchema).optional()",
           "optional": true,
           "array": true,
-          "doc": "One node, two lists: the instance directories declared from within."
+          "doc": "One node, two lists: the layer directories declared from within."
         }
       ],
       "extendsNames": [],
@@ -39218,7 +39999,7 @@
       "name": "SubgraphIndexManifestSchema",
       "module": "cat-harness-tools/schemas/kg/subgraph-manifest.ts",
       "kind": "zod-object",
-      "doc": "`subgraph-index.json`: which pin of which instance the files are, and a",
+      "doc": "`subgraph-index.json`: which pin of which layer the files are, and a",
       "fields": [
         {
           "name": "$schema",
@@ -39249,14 +40030,14 @@
           "type": "z.string().min(1)",
           "optional": false,
           "array": false,
-          "doc": "The instance's declared `docs` directory, no trailing slash."
+          "doc": "The layer's declared `docs` directory, no trailing slash."
         },
         {
           "name": "builtIn",
           "type": "z.object({ repository: z.string().min(1), ref: z.string().min(1) }).strict().optional()",
           "optional": true,
           "array": false,
-          "doc": "What the files were built in — they are computed over a checkout's instances, so the checkout is provenance."
+          "doc": "What the files were built in — they are computed over a checkout's layers, so the checkout is provenance."
         },
         {
           "name": "files",
@@ -39714,7 +40495,7 @@
       "name": "HydratedSourceSchema",
       "module": "cat-harness-tools/schemas/kg/subgraph-source.ts",
       "kind": "zod-object",
-      "doc": "The content is ONE FILE OF METADATA: another instance's published",
+      "doc": "The content is ONE FILE OF METADATA: another layer's published",
       "fields": [
         {
           "name": "kind",
@@ -39739,14 +40520,14 @@
           "type": "z.string().regex(/^[a-z0-9][a-z0-9-]*$/, \"an instance name\")",
           "optional": false,
           "array": false,
-          "doc": "The upstream instance's name — the `<HARNESS>` segment of the subgraph IRI."
+          "doc": "The upstream layer's name — the `<HARNESS>` segment of the subgraph IRI."
         },
         {
           "name": "subgraph",
           "type": "z .string() .regex(/^[A-Za-z0-9_-][A-Za-z0-9._-]*(?:\\/[A-Za-z0-9_-][A-Za-z0-9._-]*)*\\/?$/, \"an instance-relative subgra…",
           "optional": false,
           "array": false,
-          "doc": "The subgraph's path in that instance, e.g. `tools` or `skills/sdlc`; never the root."
+          "doc": "The subgraph's path in that layer, e.g. `tools` or `skills/sdlc`; never the root."
         },
         {
           "name": "tool",
@@ -39834,7 +40615,7 @@
       "name": "NewInstanceSourceSchema",
       "module": "cat-harness-tools/schemas/kg/subgraph-source.ts",
       "kind": "zod-object",
-      "doc": "Where a NEW instance's graph of a kind lives — the scaffold default a graph",
+      "doc": "Where a NEW layer's graph of a kind lives — the scaffold default a graph",
       "fields": [
         {
           "name": "kind",
@@ -42374,6 +43155,155 @@
       "unresolved": [],
       "external": [
         "KEYWORDS_SCHEMA_ID",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/library/library-keywords.ts#KeywordsGraph",
+      "name": "KeywordsGraph",
+      "module": "cat-harness-tools/schemas/library/library-keywords.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/library/library-keywords.ts#KeywordsGraphSchema",
+      "name": "KeywordsGraphSchema",
+      "module": "cat-harness-tools/schemas/library/library-keywords.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(KEYWORDS_GRAPH_SCHEMA_ID)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "@type",
+          "type": "z.literal(\"cat-harness:DerivedKeywords\")",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "entry",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "instance",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "about",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "The library entry these keywords are about, as the library graph names it."
+        },
+        {
+          "name": "corpus",
+          "type": "z.object({ library: z.string(), sections: z.number().int(), terms: z.number().int() }).strict()",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "variants",
+          "type": "z.array(KeywordVariantSchema).min(1)",
+          "optional": false,
+          "array": true
+        },
+        {
+          "name": "document",
+          "type": "z.record(z.string(), z.array(ScoredKeywordSchema))",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "sections",
+          "type": "z.record(z.string(), z.record(z.string(), z.array(ScoredKeywordSchema)))",
+          "optional": false,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/library/library-keywords.ts#KeywordVariantSchema",
+        "cat-harness-tools/schemas/library/library-keywords.ts#ScoredKeywordSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "KEYWORDS_GRAPH_SCHEMA_ID",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/library/library-keywords.ts#KeywordVariant",
+      "name": "KeywordVariant",
+      "module": "cat-harness-tools/schemas/library/library-keywords.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/library/library-keywords.ts#KeywordVariantSchema",
+      "name": "KeywordVariantSchema",
+      "module": "cat-harness-tools/schemas/library/library-keywords.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "id",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "method",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "doc": "The methodology node the variant applies (`lsi`, …)."
+        },
+        {
+          "name": "weighting",
+          "type": "z.enum([\"log-entropy\", \"tfidf\", \"raw\"])",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "space",
+          "type": "z.enum([\"surface\", \"latent\", \"latent-rerank\"])",
+          "optional": false,
+          "array": false,
+          "doc": "`surface`: the weighted term matrix. `latent`: its rank-k reconstruction. `latent-rerank`: latent scores over the words the text uses."
+        },
+        {
+          "name": "k",
+          "type": "z.number().int().positive().optional()",
+          "optional": true,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
         "z"
       ],
       "exported": true
@@ -45848,7 +46778,7 @@
       "name": "DeploymentDescription",
       "module": "cat-harness-tools/schemas/process/deployment-description.ts",
       "kind": "interface",
-      "doc": "One deployment of an instance.",
+      "doc": "One deployment of a layer.",
       "fields": [
         {
           "name": "id",
@@ -48665,21 +49595,21 @@
       "name": "RoleExtension",
       "module": "cat-harness-tools/schemas/process/role-graph.ts",
       "kind": "interface",
-      "doc": "A higher instance adding skills to a role a lower instance declares.",
+      "doc": "A higher layer adding skills to a role a lower layer declares.",
       "fields": [
         {
           "name": "role",
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The id of a role declared by an instance this one depends on."
+          "doc": "The id of a role declared by a layer this one depends on."
         },
         {
           "name": "skills",
           "type": "string[]",
           "optional": false,
           "array": true,
-          "doc": "Skills the role gains in this instance's checkout."
+          "doc": "Skills the role gains in this layer's checkout."
         }
       ],
       "extendsNames": [],
@@ -48750,7 +49680,7 @@
           "type": "RoleExtension[]",
           "optional": true,
           "array": true,
-          "doc": "Roles of a LOWER instance this graph adds skills to, BY ID (placement"
+          "doc": "Roles of a LOWER layer this graph adds skills to, BY ID (placement"
         }
       ],
       "extendsNames": [],
@@ -49115,7 +50045,7 @@
       "name": "RoleExtensionRecord",
       "module": "cat-harness-tools/schemas/process/scenario-overlay.ts",
       "kind": "interface",
-      "doc": "Who added what to a role, for a report that must name the instance.",
+      "doc": "Who added what to a role, for a report that must name the layer.",
       "fields": [
         {
           "name": "instance",
@@ -49148,14 +50078,14 @@
       "name": "ScenarioLayer",
       "module": "cat-harness-tools/schemas/process/scenario-overlay.ts",
       "kind": "interface",
-      "doc": "A higher instance's `scenarios/` directory, as an overlay layer.",
+      "doc": "A higher layer's `scenarios/` directory, as an overlay layer.",
       "fields": [
         {
           "name": "instance",
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The instance's declared name."
+          "doc": "The layer's declared name."
         },
         {
           "name": "dir",
@@ -49358,7 +50288,7 @@
       "name": "DakLinkSchema",
       "module": "cat-harness-tools/schemas/process/user-scenario.ts",
       "kind": "zod-object",
-      "doc": "One DAK asset a step uses, by its key in the instance's",
+      "doc": "One DAK asset a step uses, by its key in the layer's",
       "fields": [
         {
           "name": "key",
@@ -49887,7 +50817,7 @@
           "type": "z.string().regex(/^[^/][^\\\\]*\\.(?:webp|png|jpe?g|svg)$/i, \"an avatar is an image path from the instance root\").optional…",
           "optional": true,
           "array": false,
-          "doc": "A square picture of the person, a path from the instance root; the initials are the fallback."
+          "doc": "A square picture of the person, a path from the layer root; the initials are the fallback."
         }
       ],
       "extendsNames": [],
@@ -50017,7 +50947,7 @@
           "type": "Text",
           "optional": false,
           "array": false,
-          "doc": "The BPMN file, relative to the instance root."
+          "doc": "The BPMN file, relative to the layer root."
         },
         {
           "name": "tasks",
@@ -50433,7 +51363,7 @@
       "name": "ViewRefSchema",
       "module": "cat-harness-tools/schemas/process/user-scenario.ts",
       "kind": "zod-object",
-      "doc": "An ArchiMate view of a journey: a model id of the instance's `cat-archimate.config.json` and a view id in it.",
+      "doc": "An ArchiMate view of a journey: a model id of the layer's `cat-archimate.config.json` and a view id in it.",
       "fields": [
         {
           "name": "model",
@@ -51051,7 +51981,7 @@
           "type": "z .object({ href: Text, /** The app's address for one screen, `{id}` filled in; `#/demo/{id}` when absent. */ route: Te…",
           "optional": true,
           "array": false,
-          "doc": "The instance's own device demo: an app that shows each moment's screen."
+          "doc": "The layer's own device demo: an app that shows each moment's screen."
         }
       ],
       "extendsNames": [],
@@ -51271,7 +52201,7 @@
           "type": "Id",
           "optional": false,
           "array": false,
-          "doc": "The scenario id (`user-scenario`), looked up in this instance first."
+          "doc": "The scenario id (`user-scenario`), looked up in this layer first."
         },
         {
           "name": "step",
@@ -51847,7 +52777,7 @@
           "type": "z.string().min(1)",
           "optional": false,
           "array": false,
-          "doc": "Display name — which instance's work plan this is."
+          "doc": "Display name — which layer's work plan this is."
         },
         {
           "name": "directories",
@@ -53432,7 +54362,7 @@
           "type": "z.string().min(1)",
           "optional": false,
           "array": false,
-          "doc": "The instance whose workflows and scripts hold it."
+          "doc": "The layer whose workflows and scripts hold it."
         },
         {
           "name": "kind",
@@ -54632,7 +55562,7 @@
         },
         {
           "name": "subject",
-          "type": "z.object({ kind: z.literal(\"repository\"), /** `owner/repo` where it could be determined, else the instance name. */ id:…",
+          "type": "z.object({ kind: z.literal(\"repository\"), /** `owner/repo` where it could be determined, else the layer name. */ id: z.…",
           "optional": false,
           "array": false
         },
@@ -54962,7 +55892,7 @@
           "type": "KgCriterionScope",
           "optional": false,
           "array": false,
-          "doc": "WHICH INSTANCE ROOT can answer it — the second axis beside {@link applies}."
+          "doc": "WHICH LAYER ROOT can answer it — the second axis beside {@link applies}."
         },
         {
           "name": "scopeBasis",
@@ -55695,7 +56625,7 @@
           "type": "z.string().min(1).optional()",
           "optional": true,
           "array": false,
-          "doc": "Working directory, relative to the instance root."
+          "doc": "Working directory, relative to the layer root."
         },
         {
           "name": "outputRef",
@@ -57096,7 +58026,7 @@
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "The subject root relative to the instance root, POSIX, without extension."
+          "doc": "The subject root relative to the layer root, POSIX, without extension."
         },
         {
           "name": "locale",
@@ -57820,14 +58750,14 @@
       "name": "KgAttestationTree",
       "module": "cat-harness-tools/schemas/sdlc/qa-attestations.ts",
       "kind": "interface",
-      "doc": "One instance's `kg-qa/` derived tree and the attestation home it maps onto.",
+      "doc": "One layer's `kg-qa/` derived tree and the attestation home it maps onto.",
       "fields": [
         {
           "name": "instance",
           "type": "string",
           "optional": false,
           "array": false,
-          "doc": "Repo-relative instance root, `.` for the checkout root."
+          "doc": "Repo-relative layer root, `.` for the checkout root."
         },
         {
           "name": "kgTree",
@@ -60940,7 +61870,7 @@
       "name": "RunMountSchema",
       "module": "cat-harness-tools/schemas/sdlc/run-context.ts",
       "kind": "zod-object",
-      "doc": "One mounted instance, as the run saw it: which instance, from where, at which commit.",
+      "doc": "One mounted layer, as the run saw it: which layer, from where, at which commit.",
       "fields": [],
       "extendsNames": [
         "LockedInstanceSchema"
@@ -66295,7 +67225,7 @@
       "name": "ToolRunListing",
       "module": "cat-harness-tools/schemas/tools/tool-run.ts",
       "kind": "type-alias",
-      "doc": "Every record under an instance, or `unknown` when there is no record",
+      "doc": "Every record under a layer, or `unknown` when there is no record",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -66416,7 +67346,7 @@
       "name": "ArchimateModelIdSchema",
       "module": "cat-harness-tools/schemas/tools/tool-types.ts",
       "kind": "zod-scalar",
-      "doc": "The id of one ArchiMate model in an instance's `cat-archimate.config.json`,",
+      "doc": "The id of one ArchiMate model in a layer's `cat-archimate.config.json`,",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -66483,6 +67413,32 @@
       "fields": [],
       "extendsNames": [],
       "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/tools/tool-types.ts#ChangeSetActionSchema",
+      "name": "ChangeSetActionSchema",
+      "module": "cat-harness-tools/schemas/tools/tool-types.ts",
+      "kind": "zod-enum",
+      "doc": "A change-set verb of a public review: write the records (`seed`, `propose`,",
+      "fields": [],
+      "extendsNames": [],
+      "values": [
+        "seed",
+        "propose",
+        "add",
+        "list",
+        "body",
+        "adopt",
+        "check",
+        "reconcile",
+        "github",
+        "install",
+        "A change-set verb: check or reconcile the records, or handle one GitHub issue event."
+      ],
       "refs": [],
       "unresolved": [],
       "external": [],
@@ -66847,7 +67803,7 @@
       "name": "MountSeedSchema",
       "module": "cat-harness-tools/schemas/tools/tool-types.ts",
       "kind": "zod-scalar",
-      "doc": "One `mount:remote --seed`: `<name>=<owner/repo>@<40-hex sha>`, the instance to",
+      "doc": "One `mount:remote --seed`: `<name>=<owner/repo>@<40-hex sha>`, the layer to",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -67736,10 +68692,10 @@
         },
         {
           "name": "inProcess",
-          "type": "z .object({ /** * INSTANCE-relative path to the module, e.g. `src/tools/workflow.ts`. * * The instance, not the reposit…",
+          "type": "z .object({ /** * INSTANCE-relative path to the module, e.g. `src/tools/workflow.ts`. * * The layer, not the repository…",
           "optional": true,
           "array": false,
-          "doc": "A function in **this instance's own code**."
+          "doc": "A function in **this layer's own code**."
         },
         {
           "name": "manual",
@@ -67790,7 +68746,7 @@
           "type": "z.string().min(1).refine((a) => !a.startsWith(\"/\"), { message: \"artefact is relative to the instance base — a leading s…",
           "optional": false,
           "array": false,
-          "doc": "Published path relative to the instance's base, e.g. `tool.schema.json`."
+          "doc": "Published path relative to the layer's base, e.g. `tool.schema.json`."
         },
         {
           "name": "format",
@@ -68797,7 +69753,7 @@
           "type": "string[]",
           "optional": true,
           "array": true,
-          "doc": "Who this block is written FOR — Role ids from the instance's KG"
+          "doc": "Who this block is written FOR — Role ids from the layer's KG"
         },
         {
           "name": "uses",
@@ -71445,6 +72401,34 @@
           "optional": true,
           "array": false,
           "doc": "The flat outline ran against its own pages and `repair_outline` put it in page order. Absent when not."
+        },
+        {
+          "name": "outline_rejected",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The PDF carried an outline and it was not used, with why: its entries"
+        },
+        {
+          "name": "oversized_split",
+          "type": "z .array( z .object({ title: z.string(), page_start: z.number().int().min(1), page_end: z.number().int().min(1), words:…",
+          "optional": true,
+          "array": true,
+          "doc": "Sections too long to be one block (more than half of a document of 20"
+        },
+        {
+          "name": "headings_tidied",
+          "type": "z .array( z .object({ title: z.string(), page: z.number().int().min(1).nullable(), action: z.enum([\"rejoined\", \"dropped…",
+          "optional": true,
+          "array": true,
+          "doc": "Inferred headings that did not read as headings: a title cut to its last"
+        },
+        {
+          "name": "pages_read_in_print_order",
+          "type": "z.array(z.number().int().min(1)).optional()",
+          "optional": true,
+          "array": true,
+          "doc": "Pages whose text stream drew the outline's first heading after the"
         }
       ],
       "extendsNames": [],
@@ -71780,6 +72764,20 @@
           "optional": true,
           "array": false,
           "doc": "WHICH SOFTWARE produced the text, cited by digest: the"
+        },
+        {
+          "name": "ocr_pages",
+          "type": "z .array(z.object({ page: z.number().int().min(1), reason: z.string().min(1) }).strict()) .optional()",
+          "optional": true,
+          "array": true,
+          "doc": "Pages whose embedded text layer failed `scripts/_text_quality.py` and"
+        },
+        {
+          "name": "languages",
+          "type": "z.array(z.string().regex(/^[a-z]{2,3}(-[A-Za-z0-9]{1,8})*$/)).min(1).optional()",
+          "optional": true,
+          "array": true,
+          "doc": "The document's languages as the ingest was told them (`--lang-hint`,"
         }
       ],
       "extendsNames": [],
@@ -72482,7 +73480,7 @@
           "type": "z.string().optional()",
           "optional": true,
           "array": false,
-          "doc": "The site the paths are relative to, as a reader finds it (an instance, a URL path)."
+          "doc": "The site the paths are relative to, as a reader finds it (a layer, a URL path)."
         },
         {
           "name": "base",
@@ -73351,10 +74349,9 @@
         },
         {
           "name": "view",
-          "type": "z.string().regex(/^\\/[a-z0-9][a-z0-9._/-]*\\/$/).optional()",
+          "type": "z.string().regex(/^\\/[A-Za-z0-9][A-Za-z0-9._/-]*\\/$/).optional()",
           "optional": true,
-          "array": false,
-          "doc": "The page that RENDERS this entry, site-root path with a leading `/` and"
+          "array": false
         },
         {
           "name": "viewable",
@@ -73425,6 +74422,20 @@
           "optional": true,
           "array": false,
           "doc": "The structured half of `withheld` (issue #1794): which gates refused,"
+        },
+        {
+          "name": "catalogue",
+          "type": "z .object({ record: z.string().min(1).optional(), handle: z.string().min(1).optional(), xml: z.string().min(1).optional…",
+          "optional": true,
+          "array": false,
+          "doc": "The catalogue record behind this entry (`library-graph.ts` `catalogueInfo`"
+        },
+        {
+          "name": "upstream",
+          "type": "z .array( z .object({ label: z.string().min(1), href: z.string().url(), }) .strict(), ) .optional()",
+          "optional": true,
+          "array": true,
+          "doc": "Original file URLs upstream for an entry catalogued by reference (#1765)."
         },
         {
           "name": "avatar",
@@ -73791,7 +74802,7 @@
           "type": "z .array( z .object({ instance: z.string().min(1), scope: z.string(), locales: z.array(LocaleStatusSchema), }) .strict(…",
           "optional": true,
           "array": true,
-          "doc": "Every OTHER instance's declared `translation-sources` directory, each"
+          "doc": "Every OTHER layer's declared `translation-sources` directory, each"
         }
       ],
       "extendsNames": [],
@@ -73955,7 +74966,7 @@
       "name": "OwnedStickyTheme",
       "module": "cat-harness-tools/schemas/ui/theme-by-ref.ts",
       "kind": "interface",
-      "doc": "One instance-declared sticky theme, with the instance that owns it.",
+      "doc": "One instance-declared sticky theme, with the layer that owns it.",
       "fields": [
         {
           "name": "instance",
@@ -73984,7 +74995,7 @@
       "name": "OwnedWebpageTheme",
       "module": "cat-harness-tools/schemas/ui/theme-by-ref.ts",
       "kind": "interface",
-      "doc": "One instance-declared WEBPAGE theme, with the instance that owns it.",
+      "doc": "One instance-declared WEBPAGE theme, with the layer that owns it.",
       "fields": [
         {
           "name": "instance",
@@ -74013,7 +75024,7 @@
       "name": "StickyThemeConflict",
       "module": "cat-harness-tools/schemas/ui/theme-by-ref.ts",
       "kind": "type-alias",
-      "doc": "Why an instance's sticky theme was NOT emitted — each a finding, never a silent drop.",
+      "doc": "Why a layer's sticky theme was NOT emitted — each a finding, never a silent drop.",
       "fields": [],
       "extendsNames": [],
       "values": [],
@@ -74198,7 +75209,7 @@
           "type": "ThemeLayout[]",
           "optional": false,
           "array": true,
-          "doc": "The layouts the instance does not supply for this theme's role."
+          "doc": "The layouts the layer does not supply for this theme's role."
         },
         {
           "name": "none",
@@ -74582,7 +75593,7 @@
           "type": "RepoFullNameSchema.optional()",
           "optional": true,
           "array": false,
-          "doc": "The owning instance, as `owner/repo` (bean `6rmv`). Absent means the citing instance's own."
+          "doc": "The owning layer, as `owner/repo` (bean `6rmv`). Absent means the citing layer's own."
         },
         {
           "name": "themeId",
@@ -74735,6 +75746,135 @@
       "extendsNames": [],
       "values": [],
       "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/ui/web-app.ts#InnerPath",
+      "name": "InnerPath",
+      "module": "cat-harness-tools/schemas/ui/web-app.ts",
+      "kind": "zod-scalar",
+      "doc": "A path inside the app's directory: relative, never climbing out.",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": false
+    },
+    {
+      "id": "cat-harness-tools/schemas/ui/web-app.ts#Text",
+      "name": "Text",
+      "module": "cat-harness-tools/schemas/ui/web-app.ts",
+      "kind": "zod-scalar",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": false
+    },
+    {
+      "id": "cat-harness-tools/schemas/ui/web-app.ts#WebApp",
+      "name": "WebApp",
+      "module": "cat-harness-tools/schemas/ui/web-app.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/ui/web-app.ts#WebAppBuildSchema",
+      "name": "WebAppBuildSchema",
+      "module": "cat-harness-tools/schemas/ui/web-app.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "installer",
+          "type": "z.enum(INSTALLERS).default(\"npm\")",
+          "optional": true,
+          "array": false,
+          "doc": "Which installer reads the lockfile: `npm ci` or `bun install --frozen-lockfile`."
+        },
+        {
+          "name": "script",
+          "type": "z.string().regex(/^[a-z0-9:_-]+$/).default(\"build\")",
+          "optional": true,
+          "array": false,
+          "doc": "The `package.json` script that builds it."
+        },
+        {
+          "name": "outDir",
+          "type": "InnerPath.default(\"dist\")",
+          "optional": true,
+          "array": false,
+          "doc": "Where the build writes, relative to the app's directory."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/ui/web-app.ts#InnerPath"
+      ],
+      "unresolved": [],
+      "external": [
+        "INSTALLERS",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/ui/web-app.ts#WebAppId",
+      "name": "WebAppId",
+      "module": "cat-harness-tools/schemas/ui/web-app.ts",
+      "kind": "zod-scalar",
+      "doc": "An app id: lower-case kebab, so it is a route segment as it stands.",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/ui/web-app.ts#WebAppKind",
+      "name": "WebAppKind",
+      "module": "cat-harness-tools/schemas/ui/web-app.ts",
+      "kind": "zod-object",
+      "doc": "`web-app/0.1.0`, as a node kind.",
+      "fields": [],
+      "extendsNames": [
+        "nodeKind"
+      ],
+      "values": [],
+      "refs": [],
+      "unresolved": [
+        "nodeKind"
+      ],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/ui/web-app.ts#WebAppSchema",
+      "name": "WebAppSchema",
+      "module": "cat-harness-tools/schemas/ui/web-app.ts",
+      "kind": "zod-object",
+      "fields": [],
+      "extendsNames": [
+        "WebAppKind"
+      ],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/ui/web-app.ts#WebAppKind"
+      ],
       "unresolved": [],
       "external": [],
       "exported": true
@@ -75057,7 +76197,7 @@
       "name": "StagingLinks",
       "module": "cat-harness/schemas/staging-comparison.schema.json",
       "kind": "json-schema",
-      "doc": "The staging preview of the work a request for feedback is about: one deep link per changed page (the page and the anchor where the change sits) with the same page on main as `before`. Mirrors StagingComparison in schemas/sdlc/staging.ts. The rule is sdlc/skills/sdlc-core/staging-review.md §\"The deep-link rule\". Copied inline as `definitions.stagingLinks` into every skill contract that carries it; ",
+      "doc": "The staging preview of the work a request for feedback is about: one deep link per changed page (the page and the anchor where the change sits) with the same page on main as `before`. Mirrors StagingComparison in schemas/sdlc/staging.ts. The rule is skills/authoring/content-lifecycle/feedback-deep-links.md. Copied inline as `definitions.stagingLinks` into every skill contract that carries it; sche",
       "fields": [
         {
           "name": "branch",
@@ -91454,6 +92594,46 @@
       "array": false
     },
     {
+      "from": "cat-harness-tools/schemas/content/document-errata.ts#DocumentErrataSchema",
+      "to": "cat-harness-tools/schemas/content/document-errata.ts#ErratumSchema",
+      "via": "errata",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/content/document-errata.ts#ErratumSchema",
+      "to": "cat-harness-tools/schemas/content/narrative.ts#NarrativeSlotSchema",
+      "via": "narrative",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/content/document-footnotes.ts#DocumentFootnotesSchema",
+      "to": "cat-harness-tools/schemas/content/document-footnotes.ts#FootnoteSchema",
+      "via": "footnotes",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/content/document-footnotes.ts#DocumentFootnotesSchema",
+      "to": "cat-harness-tools/schemas/content/document-footnotes.ts#UncalledNoteSchema",
+      "via": "uncalled_notes",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/content/document-footnotes.ts#FootnoteSchema",
+      "to": "cat-harness-tools/schemas/content/document-footnotes.ts#FootnoteCallSchema",
+      "via": "marks",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
       "from": "cat-harness-tools/schemas/content/document-image.ts#DocumentImageSchema",
       "to": "cat-harness-tools/schemas/content/document-image.ts#ImageBasisSchema",
       "via": "basis",
@@ -94326,7 +95506,7 @@
       "array": true
     },
     {
-      "from": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigSchema",
+      "from": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigObject",
       "to": "cat-harness-tools/schemas/kg/cat-harness.ts#GateExemptionsSchema",
       "via": "gateExemptions",
       "kind": "field",
@@ -94334,7 +95514,7 @@
       "array": false
     },
     {
-      "from": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigSchema",
+      "from": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigObject",
       "to": "cat-harness-tools/schemas/kg/index-config.ts#IndexContentTypeIdSchema",
       "via": "contentTypes",
       "kind": "field",
@@ -94342,7 +95522,15 @@
       "array": false
     },
     {
-      "from": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigSchema",
+      "from": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigObject",
+      "to": "cat-harness-tools/schemas/kg/index-config.ts#IndexHarnessSchema",
+      "via": "harnesses",
+      "kind": "field",
+      "optional": true,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigObject",
       "to": "cat-harness-tools/schemas/kg/index-config.ts#IndexInstanceSchema",
       "via": "instances",
       "kind": "field",
@@ -94350,11 +95538,27 @@
       "array": true
     },
     {
-      "from": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigSchema",
+      "from": "cat-harness-tools/schemas/kg/index-config.ts#IndexConfigObject",
       "to": "cat-harness-tools/schemas/kg/index-config.ts#IndexSiteSchema",
       "via": "site",
       "kind": "field",
       "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/kg/index-config.ts#IndexHarnessSchema",
+      "to": "cat-harness-tools/schemas/kg/index-config.ts#IndexInstanceNameSchema",
+      "via": "definedBy",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/kg/index-config.ts#IndexHarnessSchema",
+      "to": "cat-harness-tools/schemas/kg/index-config.ts#IndexInstanceNameSchema",
+      "via": "name",
+      "kind": "field",
+      "optional": false,
       "array": false
     },
     {
@@ -94700,6 +95904,54 @@
       "kind": "field",
       "optional": false,
       "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/kg/portfolio.ts#LibrarySourceSchema",
+      "to": "cat-harness-tools/schemas/kg/portfolio.ts#RepoName",
+      "via": "library",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioLevelSchema",
+      "to": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioLibrarySchema",
+      "via": "libraries",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioLibrarySchema",
+      "to": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioLibrarySourceSchema",
+      "via": "source",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioLibrarySchema",
+      "to": "cat-harness-tools/schemas/kg/portfolio.ts#Slug",
+      "via": "id",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioSchema",
+      "to": "cat-harness-tools/schemas/kg/portfolio.ts#PortfolioKind",
+      "via": "",
+      "kind": "extends",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/kg/portfolio.ts#ReposSourceSchema",
+      "to": "cat-harness-tools/schemas/kg/portfolio.ts#RepoName",
+      "via": "repos",
+      "kind": "field",
+      "optional": false,
+      "array": true
     },
     {
       "from": "cat-harness-tools/schemas/kg/prov-jsonld.ts#Unaddressed",
@@ -95847,6 +97099,30 @@
     },
     {
       "from": "cat-harness-tools/schemas/library/library-keywords.ts#KeywordsFileSchema",
+      "to": "cat-harness-tools/schemas/library/library-keywords.ts#ScoredKeywordSchema",
+      "via": "sections",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/library/library-keywords.ts#KeywordsGraphSchema",
+      "to": "cat-harness-tools/schemas/library/library-keywords.ts#KeywordVariantSchema",
+      "via": "variants",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/library/library-keywords.ts#KeywordsGraphSchema",
+      "to": "cat-harness-tools/schemas/library/library-keywords.ts#ScoredKeywordSchema",
+      "via": "document",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/library/library-keywords.ts#KeywordsGraphSchema",
       "to": "cat-harness-tools/schemas/library/library-keywords.ts#ScoredKeywordSchema",
       "via": "sections",
       "kind": "field",
@@ -102102,6 +103378,22 @@
       "array": false
     },
     {
+      "from": "cat-harness-tools/schemas/ui/web-app.ts#WebAppBuildSchema",
+      "to": "cat-harness-tools/schemas/ui/web-app.ts#InnerPath",
+      "via": "outDir",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/ui/web-app.ts#WebAppSchema",
+      "to": "cat-harness-tools/schemas/ui/web-app.ts#WebAppKind",
+      "via": "",
+      "kind": "extends",
+      "optional": false,
+      "array": false
+    },
+    {
       "from": "cat-harness-tools/schemas/ui/webpage.ts#WebPage",
       "to": "cat-harness-tools/schemas/ui/webpage.ts#WebPageNode",
       "via": "nodes",
@@ -104209,6 +105501,15 @@
       ]
     },
     {
+      "id": "archimate-relationship-rules/v1",
+      "source": "family",
+      "decl": "cat-harness-tools/archimate/schemas/rules.ts#RelationshipRulesSchema",
+      "instance": "cat-harness-tools",
+      "typologies": [
+        "archimate"
+      ]
+    },
+    {
       "id": "archimate-relationship-table/v1",
       "source": "family",
       "decl": "cat-harness-tools/archimate/schemas/metamodel.ts#RelationshipTableSchema",
@@ -105648,6 +106949,14 @@
       "typologies": [
         "waiver"
       ]
+    },
+    {
+      "id": "web-app/0.1.0",
+      "source": "family",
+      "typologies": [
+        "web-app"
+      ],
+      "note": "no validator is named for it, so no schema defines it"
     },
     {
       "id": "work-plan",

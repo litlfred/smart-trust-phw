@@ -1170,11 +1170,11 @@
           "heading": false
         },
         {
-          "term": "kruskal condition",
+          "term": "binary proxy",
           "heading": false
         },
         {
-          "term": "binary proxy",
+          "term": "kruskal condition",
           "heading": false
         },
         {
@@ -2412,6 +2412,6 @@
   "links": {
     "repo": "litlfred/cat-harness",
     "branch": "main",
-    "dir": "library/content/arxiv-2608.18294v2"
+    "dir": "library/corpus/content/arxiv-2608.18294v2"
   }
 }

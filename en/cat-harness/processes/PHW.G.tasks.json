@@ -51,12 +51,15 @@
    }
   }
  ],
+ "processHref": "PHW.G.html",
  "tasks": {
   "PHW.G.1": {
    "id": "PHW.G.1",
    "name": "G1. Write PROV-O record citing the agreement",
    "type": "bpmn:ServiceTask",
+   "stepHref": "PHW.G.html#step-PHW.G.1",
    "lane": "Enforcement and Decision Points (audit writers)",
+   "laneHref": "PHW.G.html#lane-PHW.Lane.AuditWriter",
    "skills": [],
    "binding": "unbound"
   },
@@ -64,7 +67,9 @@
    "id": "PHW.G.3",
    "name": "G3. Send ATNA audit event citing the agreement [ITI-20] Record Audit Event",
    "type": "bpmn:SendTask",
+   "stepHref": "PHW.G.html#step-PHW.G.3",
    "lane": "Enforcement and Decision Points (audit writers)",
+   "laneHref": "PHW.G.html#lane-PHW.Lane.AuditWriter",
    "skills": [],
    "binding": "unbound"
   },
@@ -72,7 +77,9 @@
    "id": "PHW.G.5",
    "name": "G5. Record duty fulfilment with evidence hash",
    "type": "bpmn:UserTask",
+   "stepHref": "PHW.G.html#step-PHW.G.5",
    "lane": "Data Recipient (duty performer)",
+   "laneHref": "PHW.G.html#lane-PHW.Lane.DataRecipient",
    "skills": [],
    "binding": "unbound"
   },
@@ -80,7 +87,9 @@
    "id": "PHW.G.7",
    "name": "G7. Periodic human review and report to the provider",
    "type": "bpmn:UserTask",
+   "stepHref": "PHW.G.html#step-PHW.G.7",
    "lane": "Auditor (person)",
+   "laneHref": "PHW.G.html#lane-PHW.Lane.Auditor",
    "skills": [],
    "binding": "unbound"
   }

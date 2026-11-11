@@ -27,18 +27,23 @@
    }
   }
  ],
+ "processHref": "dak-l3-ig.html",
  "tasks": {
   "Task_MapL2": {
    "id": "Task_MapL2",
    "name": "Map L2 → L3",
    "type": "bpmn:UserTask",
+   "stepHref": "dak-l3-ig.html#step-Task_MapL2",
    "lane": "FHIR modeller",
+   "laneHref": "dak-l3-ig.html#lane-Lane_Modeller",
    "skills": [
     {
-     "name": "l3-fhir-authoring"
+     "name": "l3-fhir-authoring",
+     "href": "../../../en/cat-harness/processes/skills/l3-fhir-authoring.html"
     },
     {
-     "name": "l2-dak-authoring"
+     "name": "l2-dak-authoring",
+     "href": "../../../en/cat-harness/processes/skills/l2-dak-authoring.html"
     }
    ],
    "role": {
@@ -47,13 +52,16 @@
     "title": "FHIR modeller",
     "skills": [
      {
-      "name": "fhir-questionnaire-wireframe"
+      "name": "fhir-questionnaire-wireframe",
+      "href": "../../../en/cat-harness/processes/skills/fhir-questionnaire-wireframe.html"
      },
      {
-      "name": "l3-fhir-authoring"
+      "name": "l3-fhir-authoring",
+      "href": "../../../en/cat-harness/processes/skills/l3-fhir-authoring.html"
      },
      {
-      "name": "pcf-consent"
+      "name": "pcf-consent",
+      "href": "../../../en/cat-harness/processes/skills/pcf-consent.html"
      }
     ]
    }
@@ -62,10 +70,13 @@
    "id": "CallActivity_L3Fhir",
    "name": "L3 FHIR IG pipeline (fhir-harness)",
    "type": "bpmn:CallActivity",
+   "stepHref": "dak-l3-ig.html#step-CallActivity_L3Fhir",
    "lane": "FHIR modeller",
+   "laneHref": "dak-l3-ig.html#lane-Lane_Modeller",
    "skills": [
     {
-     "name": "l3-fhir-authoring"
+     "name": "l3-fhir-authoring",
+     "href": "../../../en/cat-harness/processes/skills/l3-fhir-authoring.html"
     }
    ],
    "calls": {
@@ -79,13 +90,16 @@
     "title": "FHIR modeller",
     "skills": [
      {
-      "name": "fhir-questionnaire-wireframe"
+      "name": "fhir-questionnaire-wireframe",
+      "href": "../../../en/cat-harness/processes/skills/fhir-questionnaire-wireframe.html"
      },
      {
-      "name": "l3-fhir-authoring"
+      "name": "l3-fhir-authoring",
+      "href": "../../../en/cat-harness/processes/skills/l3-fhir-authoring.html"
      },
      {
-      "name": "pcf-consent"
+      "name": "pcf-consent",
+      "href": "../../../en/cat-harness/processes/skills/pcf-consent.html"
      }
     ]
    }

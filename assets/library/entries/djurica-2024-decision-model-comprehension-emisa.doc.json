@@ -293,11 +293,11 @@
       "heading": true
     },
     {
-      "term": "cognitive fit",
+      "term": "decision trees",
       "heading": false
     },
     {
-      "term": "decision trees",
+      "term": "cognitive fit",
       "heading": false
     },
     {
@@ -317,19 +317,19 @@
       "heading": false
     },
     {
-      "term": "systems research",
-      "heading": false
-    },
-    {
       "term": "bad score",
       "heading": false
     },
     {
-      "term": "income household",
+      "term": "systems research",
       "heading": false
     },
     {
       "term": "model comprehension",
+      "heading": false
+    },
+    {
+      "term": "income household",
       "heading": false
     },
     {
@@ -375,6 +375,6 @@
   "links": {
     "repo": "litlfred/cat-harness",
     "branch": "main",
-    "dir": "library/process/djurica-2024-decision-model-comprehension-emisa"
+    "dir": "library/corpus/process/djurica-2024-decision-model-comprehension-emisa"
   }
 }

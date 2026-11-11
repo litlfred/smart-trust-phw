@@ -171,12 +171,15 @@
    }
   }
  ],
+ "processHref": "l2-dak-authoring.html",
  "tasks": {
   "Task_ScopeDak": {
    "id": "Task_ScopeDak",
    "name": "Scope the DAK",
    "type": "bpmn:UserTask",
+   "stepHref": "l2-dak-authoring.html#step-Task_ScopeDak",
    "lane": "Programme manager / technical officer",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_Programme",
    "skills": [
     {
      "name": "content-plan"
@@ -188,28 +191,24 @@
     "title": "Programme manager",
     "skills": [
      {
-      "name": "content-plan"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "content-publish"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "content-retire"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
-      "name": "decision-audit"
+      "name": "release-epic-planning",
+      "href": "../../../en/cat-harness/processes/skills/release-epic-planning.html"
      },
      {
-      "name": "decision-methodology-selector"
-     },
-     {
-      "name": "methodology-adoption"
-     },
-     {
-      "name": "release-epic-planning"
-     },
-     {
-      "name": "release-lifecycle"
+      "name": "release-lifecycle",
+      "href": "../../../en/cat-harness/processes/skills/release-lifecycle.html"
      }
     ]
    }
@@ -218,10 +217,13 @@
    "id": "Task_L1Library",
    "name": "Build the L1 library from Component 1",
    "type": "bpmn:UserTask",
+   "stepHref": "l2-dak-authoring.html#step-Task_L1Library",
    "lane": "Business analyst",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_Analyst",
    "skills": [
     {
-     "name": "dak-l1-library"
+     "name": "dak-l1-library",
+     "href": "../../../en/cat-harness/processes/skills/dak-l1-library.html"
     }
    ],
    "role": {
@@ -230,49 +232,64 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "crdm-impact-analysis"
+      "name": "crdm-impact-analysis",
+      "href": "../../../en/cat-harness/processes/skills/crdm-impact-analysis.html"
      },
      {
-      "name": "crdm-needs-assessment"
+      "name": "crdm-needs-assessment",
+      "href": "../../../en/cat-harness/processes/skills/crdm-needs-assessment.html"
      },
      {
-      "name": "crdm-recorded-walkthrough"
+      "name": "crdm-recorded-walkthrough",
+      "href": "../../../en/cat-harness/processes/skills/crdm-recorded-walkthrough.html"
      },
      {
-      "name": "crdm-requirements-template"
+      "name": "crdm-requirements-template",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-template.html"
      },
      {
-      "name": "crdm-requirements-workflow"
+      "name": "crdm-requirements-workflow",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-workflow.html"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
-      "name": "opening-brief"
+      "name": "opening-brief",
+      "href": "../../../en/cat-harness/processes/skills/opening-brief.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -281,10 +298,13 @@
    "id": "Task_SeedBeans",
    "name": "Seed the work plan",
    "type": "bpmn:Task",
+   "stepHref": "l2-dak-authoring.html#step-Task_SeedBeans",
    "lane": "Work plan — beans (shared by humans and agents)",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_WorkPlan",
    "skills": [
     {
-     "name": "todo-manager"
+     "name": "todo-manager",
+     "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
     }
    ],
    "role": {
@@ -293,13 +313,16 @@
     "title": "Work plan (beans)",
     "skills": [
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "todo-manager"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "work-plan-store"
+      "name": "work-plan-store",
+      "href": "../../../en/cat-harness/processes/skills/work-plan-store.html"
      }
     ]
    }
@@ -308,13 +331,17 @@
    "id": "Task_Personas",
    "name": "Personas and scenarios",
    "type": "bpmn:CallActivity",
+   "stepHref": "l2-dak-authoring.html#step-Task_Personas",
    "lane": "Business analyst",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_Analyst",
    "skills": [
     {
-     "name": "l2-dak-authoring"
+     "name": "l2-dak-authoring",
+     "href": "../../../en/cat-harness/processes/skills/l2-dak-authoring.html"
     },
     {
-     "name": "l2-component-edit-review"
+     "name": "l2-component-edit-review",
+     "href": "../../../en/cat-harness/processes/skills/l2-component-edit-review.html"
     }
    ],
    "calls": {
@@ -328,49 +355,64 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "crdm-impact-analysis"
+      "name": "crdm-impact-analysis",
+      "href": "../../../en/cat-harness/processes/skills/crdm-impact-analysis.html"
      },
      {
-      "name": "crdm-needs-assessment"
+      "name": "crdm-needs-assessment",
+      "href": "../../../en/cat-harness/processes/skills/crdm-needs-assessment.html"
      },
      {
-      "name": "crdm-recorded-walkthrough"
+      "name": "crdm-recorded-walkthrough",
+      "href": "../../../en/cat-harness/processes/skills/crdm-recorded-walkthrough.html"
      },
      {
-      "name": "crdm-requirements-template"
+      "name": "crdm-requirements-template",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-template.html"
      },
      {
-      "name": "crdm-requirements-workflow"
+      "name": "crdm-requirements-workflow",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-workflow.html"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
-      "name": "opening-brief"
+      "name": "opening-brief",
+      "href": "../../../en/cat-harness/processes/skills/opening-brief.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -379,13 +421,17 @@
    "id": "Task_Bpmn",
    "name": "Business processes · BPMN 2.0",
    "type": "bpmn:CallActivity",
+   "stepHref": "l2-dak-authoring.html#step-Task_Bpmn",
    "lane": "Business analyst",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_Analyst",
    "skills": [
     {
-     "name": "bpmn-authoring"
+     "name": "bpmn-authoring",
+     "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
     },
     {
-     "name": "l2-component-edit-review"
+     "name": "l2-component-edit-review",
+     "href": "../../../en/cat-harness/processes/skills/l2-component-edit-review.html"
     }
    ],
    "calls": {
@@ -399,49 +445,64 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "crdm-impact-analysis"
+      "name": "crdm-impact-analysis",
+      "href": "../../../en/cat-harness/processes/skills/crdm-impact-analysis.html"
      },
      {
-      "name": "crdm-needs-assessment"
+      "name": "crdm-needs-assessment",
+      "href": "../../../en/cat-harness/processes/skills/crdm-needs-assessment.html"
      },
      {
-      "name": "crdm-recorded-walkthrough"
+      "name": "crdm-recorded-walkthrough",
+      "href": "../../../en/cat-harness/processes/skills/crdm-recorded-walkthrough.html"
      },
      {
-      "name": "crdm-requirements-template"
+      "name": "crdm-requirements-template",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-template.html"
      },
      {
-      "name": "crdm-requirements-workflow"
+      "name": "crdm-requirements-workflow",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-workflow.html"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
-      "name": "opening-brief"
+      "name": "opening-brief",
+      "href": "../../../en/cat-harness/processes/skills/opening-brief.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -450,13 +511,17 @@
    "id": "Task_Dmn",
    "name": "Decision logic · DMN tables",
    "type": "bpmn:CallActivity",
+   "stepHref": "l2-dak-authoring.html#step-Task_Dmn",
    "lane": "Business analyst",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_Analyst",
    "skills": [
     {
-     "name": "dmn-authoring"
+     "name": "dmn-authoring",
+     "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
     },
     {
-     "name": "l2-component-edit-review"
+     "name": "l2-component-edit-review",
+     "href": "../../../en/cat-harness/processes/skills/l2-component-edit-review.html"
     }
    ],
    "calls": {
@@ -470,49 +535,64 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "crdm-impact-analysis"
+      "name": "crdm-impact-analysis",
+      "href": "../../../en/cat-harness/processes/skills/crdm-impact-analysis.html"
      },
      {
-      "name": "crdm-needs-assessment"
+      "name": "crdm-needs-assessment",
+      "href": "../../../en/cat-harness/processes/skills/crdm-needs-assessment.html"
      },
      {
-      "name": "crdm-recorded-walkthrough"
+      "name": "crdm-recorded-walkthrough",
+      "href": "../../../en/cat-harness/processes/skills/crdm-recorded-walkthrough.html"
      },
      {
-      "name": "crdm-requirements-template"
+      "name": "crdm-requirements-template",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-template.html"
      },
      {
-      "name": "crdm-requirements-workflow"
+      "name": "crdm-requirements-workflow",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-workflow.html"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
-      "name": "opening-brief"
+      "name": "opening-brief",
+      "href": "../../../en/cat-harness/processes/skills/opening-brief.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -521,13 +601,17 @@
    "id": "Task_DataDict",
    "name": "Data dictionary and core data elements",
    "type": "bpmn:CallActivity",
+   "stepHref": "l2-dak-authoring.html#step-Task_DataDict",
    "lane": "Business analyst",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_Analyst",
    "skills": [
     {
-     "name": "l2-dak-authoring"
+     "name": "l2-dak-authoring",
+     "href": "../../../en/cat-harness/processes/skills/l2-dak-authoring.html"
     },
     {
-     "name": "l2-component-edit-review"
+     "name": "l2-component-edit-review",
+     "href": "../../../en/cat-harness/processes/skills/l2-component-edit-review.html"
     }
    ],
    "calls": {
@@ -541,49 +625,64 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "crdm-impact-analysis"
+      "name": "crdm-impact-analysis",
+      "href": "../../../en/cat-harness/processes/skills/crdm-impact-analysis.html"
      },
      {
-      "name": "crdm-needs-assessment"
+      "name": "crdm-needs-assessment",
+      "href": "../../../en/cat-harness/processes/skills/crdm-needs-assessment.html"
      },
      {
-      "name": "crdm-recorded-walkthrough"
+      "name": "crdm-recorded-walkthrough",
+      "href": "../../../en/cat-harness/processes/skills/crdm-recorded-walkthrough.html"
      },
      {
-      "name": "crdm-requirements-template"
+      "name": "crdm-requirements-template",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-template.html"
      },
      {
-      "name": "crdm-requirements-workflow"
+      "name": "crdm-requirements-workflow",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-workflow.html"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
-      "name": "opening-brief"
+      "name": "opening-brief",
+      "href": "../../../en/cat-harness/processes/skills/opening-brief.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -592,16 +691,21 @@
    "id": "Task_Indicators",
    "name": "Indicators and requirements",
    "type": "bpmn:CallActivity",
+   "stepHref": "l2-dak-authoring.html#step-Task_Indicators",
    "lane": "Business analyst",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_Analyst",
    "skills": [
     {
-     "name": "l2-dak-authoring"
+     "name": "l2-dak-authoring",
+     "href": "../../../en/cat-harness/processes/skills/l2-dak-authoring.html"
     },
     {
-     "name": "indicator-extraction"
+     "name": "indicator-extraction",
+     "href": "../../../en/cat-harness/processes/skills/indicator-extraction.html"
     },
     {
-     "name": "l2-component-edit-review"
+     "name": "l2-component-edit-review",
+     "href": "../../../en/cat-harness/processes/skills/l2-component-edit-review.html"
     }
    ],
    "calls": {
@@ -615,49 +719,64 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "crdm-impact-analysis"
+      "name": "crdm-impact-analysis",
+      "href": "../../../en/cat-harness/processes/skills/crdm-impact-analysis.html"
      },
      {
-      "name": "crdm-needs-assessment"
+      "name": "crdm-needs-assessment",
+      "href": "../../../en/cat-harness/processes/skills/crdm-needs-assessment.html"
      },
      {
-      "name": "crdm-recorded-walkthrough"
+      "name": "crdm-recorded-walkthrough",
+      "href": "../../../en/cat-harness/processes/skills/crdm-recorded-walkthrough.html"
      },
      {
-      "name": "crdm-requirements-template"
+      "name": "crdm-requirements-template",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-template.html"
      },
      {
-      "name": "crdm-requirements-workflow"
+      "name": "crdm-requirements-workflow",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-workflow.html"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
-      "name": "opening-brief"
+      "name": "opening-brief",
+      "href": "../../../en/cat-harness/processes/skills/opening-brief.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -666,13 +785,17 @@
    "id": "Task_Terminology",
    "name": "Terminology bindings",
    "type": "bpmn:CallActivity",
+   "stepHref": "l2-dak-authoring.html#step-Task_Terminology",
    "lane": "Terminologist",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_Terminologist",
    "skills": [
     {
-     "name": "terminology-management"
+     "name": "terminology-management",
+     "href": "../../../en/cat-harness/processes/skills/terminology-management.html"
     },
     {
-     "name": "l2-component-edit-review"
+     "name": "l2-component-edit-review",
+     "href": "../../../en/cat-harness/processes/skills/l2-component-edit-review.html"
     }
    ],
    "calls": {
@@ -686,10 +809,12 @@
     "title": "Terminologist",
     "skills": [
      {
-      "name": "code-lists"
+      "name": "code-lists",
+      "href": "../../../en/cat-harness/processes/skills/code-lists.html"
      },
      {
-      "name": "vocabulary-authority"
+      "name": "vocabulary-authority",
+      "href": "../../../en/cat-harness/processes/skills/vocabulary-authority.html"
      }
     ]
    }
@@ -698,10 +823,13 @@
    "id": "Task_SmeValidate",
    "name": "Clinical validation",
    "type": "bpmn:UserTask",
+   "stepHref": "l2-dak-authoring.html#step-Task_SmeValidate",
    "lane": "Clinical SME",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_Sme",
    "skills": [
     {
-     "name": "content-review"
+     "name": "content-review",
+     "href": "../../../en/cat-harness/processes/skills/content-review.html"
     }
    ],
    "role": {
@@ -711,42 +839,52 @@
     "skills": [
      {
       "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html",
       "via": "reviewer"
      },
      {
       "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html",
       "via": "reviewer"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "reviewer"
      },
      {
       "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html",
       "via": "reviewer"
      },
      {
       "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html",
       "via": "reviewer"
      },
      {
       "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html",
       "via": "reviewer"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "reviewer"
      },
      {
       "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html",
       "via": "reviewer"
      },
      {
       "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html",
       "via": "reviewer"
      },
      {
       "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html",
       "via": "reviewer"
      }
     ]
@@ -756,10 +894,13 @@
    "id": "Task_AssembleDak",
    "name": "Assemble and validate the DAK",
    "type": "bpmn:UserTask",
+   "stepHref": "l2-dak-authoring.html#step-Task_AssembleDak",
    "lane": "Business analyst",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_Analyst",
    "skills": [
     {
-     "name": "content-validate"
+     "name": "content-validate",
+     "href": "../../../en/cat-harness/processes/skills/content-validate.html"
     }
    ],
    "role": {
@@ -768,49 +909,64 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "crdm-impact-analysis"
+      "name": "crdm-impact-analysis",
+      "href": "../../../en/cat-harness/processes/skills/crdm-impact-analysis.html"
      },
      {
-      "name": "crdm-needs-assessment"
+      "name": "crdm-needs-assessment",
+      "href": "../../../en/cat-harness/processes/skills/crdm-needs-assessment.html"
      },
      {
-      "name": "crdm-recorded-walkthrough"
+      "name": "crdm-recorded-walkthrough",
+      "href": "../../../en/cat-harness/processes/skills/crdm-recorded-walkthrough.html"
      },
      {
-      "name": "crdm-requirements-template"
+      "name": "crdm-requirements-template",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-template.html"
      },
      {
-      "name": "crdm-requirements-workflow"
+      "name": "crdm-requirements-workflow",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-workflow.html"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
-      "name": "opening-brief"
+      "name": "opening-brief",
+      "href": "../../../en/cat-harness/processes/skills/opening-brief.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -819,10 +975,13 @@
    "id": "Call_BeanOpen",
    "name": "Open the bean",
    "type": "bpmn:CallActivity",
+   "stepHref": "l2-dak-authoring.html#step-Call_BeanOpen",
    "lane": "Work plan — beans (shared by humans and agents)",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_WorkPlan",
    "skills": [
     {
-     "name": "bean-coordination"
+     "name": "bean-coordination",
+     "href": "../../../en/cat-harness/processes/skills/bean-coordination.html"
     }
    ],
    "calls": {
@@ -836,13 +995,16 @@
     "title": "Work plan (beans)",
     "skills": [
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "todo-manager"
+      "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
      },
      {
-      "name": "work-plan-store"
+      "name": "work-plan-store",
+      "href": "../../../en/cat-harness/processes/skills/work-plan-store.html"
      }
     ]
    }
@@ -851,10 +1013,13 @@
    "id": "Call_BeanClose",
    "name": "Close the bean",
    "type": "bpmn:CallActivity",
+   "stepHref": "l2-dak-authoring.html#step-Call_BeanClose",
    "lane": "Business analyst",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_Analyst",
    "skills": [
     {
-     "name": "todo-manager"
+     "name": "todo-manager",
+     "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
     }
    ],
    "calls": {
@@ -868,49 +1033,64 @@
     "title": "Business analyst",
     "skills": [
      {
-      "name": "bpmn-authoring"
+      "name": "bpmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "crdm-impact-analysis"
+      "name": "crdm-impact-analysis",
+      "href": "../../../en/cat-harness/processes/skills/crdm-impact-analysis.html"
      },
      {
-      "name": "crdm-needs-assessment"
+      "name": "crdm-needs-assessment",
+      "href": "../../../en/cat-harness/processes/skills/crdm-needs-assessment.html"
      },
      {
-      "name": "crdm-recorded-walkthrough"
+      "name": "crdm-recorded-walkthrough",
+      "href": "../../../en/cat-harness/processes/skills/crdm-recorded-walkthrough.html"
      },
      {
-      "name": "crdm-requirements-template"
+      "name": "crdm-requirements-template",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-template.html"
      },
      {
-      "name": "crdm-requirements-workflow"
+      "name": "crdm-requirements-workflow",
+      "href": "../../../en/cat-harness/processes/skills/crdm-requirements-workflow.html"
      },
      {
-      "name": "data-modelling"
+      "name": "data-modelling",
+      "href": "../../../en/cat-harness/processes/skills/data-modelling.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-methodology-selector"
+      "name": "decision-methodology-selector",
+      "href": "../../../en/cat-harness/processes/skills/decision-methodology-selector.html"
      },
      {
-      "name": "dmn-authoring"
+      "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html"
      },
      {
-      "name": "methodology-adoption"
+      "name": "methodology-adoption",
+      "href": "../../../en/cat-harness/processes/skills/methodology-adoption.html"
      },
      {
-      "name": "opening-brief"
+      "name": "opening-brief",
+      "href": "../../../en/cat-harness/processes/skills/opening-brief.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }
@@ -919,10 +1099,13 @@
    "id": "Call_BeanClose_2",
    "name": "Close the bean",
    "type": "bpmn:CallActivity",
+   "stepHref": "l2-dak-authoring.html#step-Call_BeanClose_2",
    "lane": "Clinical SME",
+   "laneHref": "l2-dak-authoring.html#lane-Lane_Sme",
    "skills": [
     {
-     "name": "todo-manager"
+     "name": "todo-manager",
+     "href": "../../../en/cat-harness/processes/skills/todo-manager.html"
     }
    ],
    "calls": {
@@ -937,42 +1120,52 @@
     "skills": [
      {
       "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html",
       "via": "reviewer"
      },
      {
       "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html",
       "via": "reviewer"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "reviewer"
      },
      {
       "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html",
       "via": "reviewer"
      },
      {
       "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html",
       "via": "reviewer"
      },
      {
       "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html",
       "via": "reviewer"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "reviewer"
      },
      {
       "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html",
       "via": "reviewer"
      },
      {
       "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html",
       "via": "reviewer"
      },
      {
       "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html",
       "via": "reviewer"
      }
     ]

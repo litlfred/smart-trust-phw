@@ -75,15 +75,19 @@
    }
   }
  ],
+ "processHref": "translation-round-trip.html",
  "tasks": {
   "Task_RT_Sample": {
    "id": "Task_RT_Sample",
    "name": "Draw the sample",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-round-trip.html#step-Task_RT_Sample",
    "lane": "Locale translator",
+   "laneHref": "translation-round-trip.html#lane-Lane_RT_Translator",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -92,7 +96,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -101,10 +106,13 @@
    "id": "Task_RT_RecordNA",
    "name": "Record could not dispatch",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-round-trip.html#step-Task_RT_RecordNA",
    "lane": "Locale translator",
+   "laneHref": "translation-round-trip.html#lane-Lane_RT_Translator",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -113,7 +121,8 @@
     "title": "Locale translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      }
     ]
    }
@@ -122,10 +131,13 @@
    "id": "Task_RT_BackTranslate",
    "name": "Back-translate the target text",
    "type": "bpmn:Task",
+   "stepHref": "translation-round-trip.html#step-Task_RT_BackTranslate",
    "lane": "Back-translator",
+   "laneHref": "translation-round-trip.html#lane-Lane_RT_Back",
    "skills": [
     {
-     "name": "untainted-verification"
+     "name": "untainted-verification",
+     "href": "../../../en/cat-harness/processes/skills/untainted-verification.html"
     }
    ],
    "role": {
@@ -134,10 +146,12 @@
     "title": "Back-translator",
     "skills": [
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "untainted-verification"
+      "name": "untainted-verification",
+      "href": "../../../en/cat-harness/processes/skills/untainted-verification.html"
      }
     ]
    }
@@ -146,10 +160,13 @@
    "id": "Task_RT_PreScreen",
    "name": "Pre-screen every pair",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-round-trip.html#step-Task_RT_PreScreen",
    "lane": "Round-trip adjudicator",
+   "laneHref": "translation-round-trip.html#lane-Lane_RT_Adjudicator",
    "skills": [
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -159,45 +176,56 @@
     "skills": [
      {
       "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html",
       "via": "adjudicator"
      },
      {
       "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html",
       "via": "reviewer"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "reviewer"
      },
      {
       "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html",
       "via": "adjudicator"
      },
      {
       "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html",
       "via": "reviewer"
      },
      {
       "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html",
       "via": "reviewer"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "reviewer"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "untainted-verification",
+      "href": "../../../en/cat-harness/processes/skills/untainted-verification.html",
       "via": "adjudicator"
      },
      {
       "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html",
       "via": "reviewer"
      },
      {
       "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html",
       "via": "reviewer"
      }
     ]
@@ -207,13 +235,17 @@
    "id": "Task_RT_Rule",
    "name": "Read and rule each flagged pair",
    "type": "bpmn:Task",
+   "stepHref": "translation-round-trip.html#step-Task_RT_Rule",
    "lane": "Round-trip adjudicator",
+   "laneHref": "translation-round-trip.html#lane-Lane_RT_Adjudicator",
    "skills": [
     {
-     "name": "untainted-verification"
+     "name": "untainted-verification",
+     "href": "../../../en/cat-harness/processes/skills/untainted-verification.html"
     },
     {
-     "name": "translation-manager"
+     "name": "translation-manager",
+     "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
     }
    ],
    "role": {
@@ -223,45 +255,56 @@
     "skills": [
      {
       "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html",
       "via": "adjudicator"
      },
      {
       "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html",
       "via": "reviewer"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "reviewer"
      },
      {
       "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html",
       "via": "adjudicator"
      },
      {
       "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html",
       "via": "reviewer"
      },
      {
       "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html",
       "via": "reviewer"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "reviewer"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "untainted-verification",
+      "href": "../../../en/cat-harness/processes/skills/untainted-verification.html",
       "via": "adjudicator"
      },
      {
       "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html",
       "via": "reviewer"
      },
      {
       "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html",
       "via": "reviewer"
      }
     ]
@@ -271,10 +314,13 @@
    "id": "Task_RT_Record",
    "name": "Record both witnesses",
    "type": "bpmn:ServiceTask",
+   "stepHref": "translation-round-trip.html#step-Task_RT_Record",
    "lane": "Round-trip adjudicator",
+   "laneHref": "translation-round-trip.html#lane-Lane_RT_Adjudicator",
    "skills": [
     {
-     "name": "untainted-verification"
+     "name": "untainted-verification",
+     "href": "../../../en/cat-harness/processes/skills/untainted-verification.html"
     }
    ],
    "role": {
@@ -284,45 +330,56 @@
     "skills": [
      {
       "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html",
       "via": "adjudicator"
      },
      {
       "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html",
       "via": "reviewer"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "reviewer"
      },
      {
       "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html",
       "via": "adjudicator"
      },
      {
       "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html",
       "via": "reviewer"
      },
      {
       "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html",
       "via": "reviewer"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "reviewer"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
       "name": "untainted-verification",
+      "href": "../../../en/cat-harness/processes/skills/untainted-verification.html",
       "via": "adjudicator"
      },
      {
       "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html",
       "via": "reviewer"
      },
      {
       "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html",
       "via": "reviewer"
      }
     ]

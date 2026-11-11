@@ -123,15 +123,19 @@
    }
   }
  ],
+ "processHref": "public-comment.html",
  "tasks": {
   "Task_Ingest": {
    "id": "Task_Ingest",
    "name": "Ingest and place each comment",
    "type": "bpmn:Task",
+   "stepHref": "public-comment.html#step-Task_Ingest",
    "lane": "Intake agent",
+   "laneHref": "public-comment.html#lane-Lane_Intake",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -140,28 +144,36 @@
     "title": "Ingestion engine",
     "skills": [
      {
-      "name": "asset-extraction"
+      "name": "asset-extraction",
+      "href": "../../../en/cat-harness/processes/skills/asset-extraction.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "library-ingestion"
+      "name": "library-ingestion",
+      "href": "../../../en/cat-harness/processes/skills/library-ingestion.html"
      },
      {
-      "name": "materialize-on-demand"
+      "name": "materialize-on-demand",
+      "href": "../../../en/cat-harness/processes/skills/materialize-on-demand.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "theme-art-intake"
+      "name": "theme-art-intake",
+      "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
      },
      {
-      "name": "theme-ui-review"
+      "name": "theme-ui-review",
+      "href": "../../../en/cat-harness/processes/skills/theme-ui-review.html"
      },
      {
-      "name": "upload-naming"
+      "name": "upload-naming",
+      "href": "../../../en/cat-harness/processes/skills/upload-naming.html"
      }
     ]
    }
@@ -170,10 +182,13 @@
    "id": "Task_Triage",
    "name": "Triage: confirm the anchor, type and priority",
    "type": "bpmn:Task",
+   "stepHref": "public-comment.html#step-Task_Triage",
    "lane": "Review coordinator",
+   "laneHref": "public-comment.html#lane-Lane_Coordinator",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -182,16 +197,20 @@
     "title": "Review coordinator",
     "skills": [
      {
-      "name": "rendered-impact"
+      "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html"
      },
      {
-      "name": "review-heatmap"
+      "name": "review-heatmap",
+      "href": "../../../en/cat-harness/processes/skills/review-heatmap.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "visual-diff"
+      "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html"
      }
     ]
    }
@@ -200,10 +219,13 @@
    "id": "Task_ProposeChangeSets",
    "name": "Propose change-sets, as records with no issue yet",
    "type": "bpmn:Task",
+   "stepHref": "public-comment.html#step-Task_ProposeChangeSets",
    "lane": "Intake agent",
+   "laneHref": "public-comment.html#lane-Lane_Intake",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -212,28 +234,36 @@
     "title": "Ingestion engine",
     "skills": [
      {
-      "name": "asset-extraction"
+      "name": "asset-extraction",
+      "href": "../../../en/cat-harness/processes/skills/asset-extraction.html"
      },
      {
-      "name": "kg-subscription"
+      "name": "kg-subscription",
+      "href": "../../../en/cat-harness/processes/skills/kg-subscription.html"
      },
      {
-      "name": "library-ingestion"
+      "name": "library-ingestion",
+      "href": "../../../en/cat-harness/processes/skills/library-ingestion.html"
      },
      {
-      "name": "materialize-on-demand"
+      "name": "materialize-on-demand",
+      "href": "../../../en/cat-harness/processes/skills/materialize-on-demand.html"
      },
      {
-      "name": "materialize-remote"
+      "name": "materialize-remote",
+      "href": "../../../en/cat-harness/processes/skills/materialize-remote.html"
      },
      {
-      "name": "theme-art-intake"
+      "name": "theme-art-intake",
+      "href": "../../../en/cat-harness/processes/skills/theme-art-intake.html"
      },
      {
-      "name": "theme-ui-review"
+      "name": "theme-ui-review",
+      "href": "../../../en/cat-harness/processes/skills/theme-ui-review.html"
      },
      {
-      "name": "upload-naming"
+      "name": "upload-naming",
+      "href": "../../../en/cat-harness/processes/skills/upload-naming.html"
      }
     ]
    }
@@ -242,10 +272,13 @@
    "id": "Task_GroupChangeSets",
    "name": "Agree each change-set's requirements on its issue",
    "type": "bpmn:Task",
+   "stepHref": "public-comment.html#step-Task_GroupChangeSets",
    "lane": "Review committee",
+   "laneHref": "public-comment.html#lane-Lane_Committee",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -254,34 +287,44 @@
     "title": "Reviewer / SME",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "narrative-asserts-code"
+      "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html"
      },
      {
-      "name": "rendered-impact"
+      "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "visual-diff"
+      "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html"
      },
      {
-      "name": "voice-overlay-review"
+      "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html"
      }
     ]
    }
@@ -290,10 +333,13 @@
    "id": "Task_RerouteChangeSet",
    "name": "Re-route to another committee",
    "type": "bpmn:UserTask",
+   "stepHref": "public-comment.html#step-Task_RerouteChangeSet",
    "lane": "Review committee",
+   "laneHref": "public-comment.html#lane-Lane_Committee",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -302,34 +348,44 @@
     "title": "Reviewer / SME",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "narrative-asserts-code"
+      "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html"
      },
      {
-      "name": "rendered-impact"
+      "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "visual-diff"
+      "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html"
      },
      {
-      "name": "voice-overlay-review"
+      "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html"
      }
     ]
    }
@@ -338,10 +394,13 @@
    "id": "Task_Assign",
    "name": "Assign to committee members",
    "type": "bpmn:Task",
+   "stepHref": "public-comment.html#step-Task_Assign",
    "lane": "Review coordinator",
+   "laneHref": "public-comment.html#lane-Lane_Coordinator",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -350,16 +409,20 @@
     "title": "Review coordinator",
     "skills": [
      {
-      "name": "rendered-impact"
+      "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html"
      },
      {
-      "name": "review-heatmap"
+      "name": "review-heatmap",
+      "href": "../../../en/cat-harness/processes/skills/review-heatmap.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "visual-diff"
+      "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html"
      }
     ]
    }
@@ -368,10 +431,13 @@
    "id": "Task_CommitteeRecommends",
    "name": "Recommend a decision, with a rationale",
    "type": "bpmn:Task",
+   "stepHref": "public-comment.html#step-Task_CommitteeRecommends",
    "lane": "Review committee",
+   "laneHref": "public-comment.html#lane-Lane_Committee",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -380,34 +446,44 @@
     "title": "Reviewer / SME",
     "skills": [
      {
-      "name": "adjudication"
+      "name": "adjudication",
+      "href": "../../../en/cat-harness/processes/skills/adjudication.html"
      },
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "content-review"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "decision-audit"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "narrative-asserts-code"
+      "name": "narrative-asserts-code",
+      "href": "../../../en/cat-harness/processes/skills/narrative-asserts-code.html"
      },
      {
-      "name": "rendered-impact"
+      "name": "rendered-impact",
+      "href": "../../../en/cat-harness/processes/skills/rendered-impact.html"
      },
      {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      },
      {
-      "name": "translation-manager"
+      "name": "translation-manager",
+      "href": "../../../en/cat-harness/processes/skills/translation-manager.html"
      },
      {
-      "name": "visual-diff"
+      "name": "visual-diff",
+      "href": "../../../en/cat-harness/processes/skills/visual-diff.html"
      },
      {
-      "name": "voice-overlay-review"
+      "name": "voice-overlay-review",
+      "href": "../../../en/cat-harness/processes/skills/voice-overlay-review.html"
      }
     ]
    }
@@ -416,10 +492,13 @@
    "id": "Task_EditorDecides",
    "name": "Decide, weighing the recommendations",
    "type": "bpmn:Task",
+   "stepHref": "public-comment.html#step-Task_EditorDecides",
    "lane": "Editor",
+   "laneHref": "public-comment.html#lane-Lane_Editor",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -429,49 +508,51 @@
     "skills": [
      {
       "name": "bpmn-authoring",
-      "via": "author"
-     },
-     {
-      "name": "content-author",
-      "via": "author"
-     },
-     {
-      "name": "content-plan",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html",
       "via": "author"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "author"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html",
       "via": "author"
      },
      {
       "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html",
       "via": "author"
      },
      {
       "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html",
       "via": "author"
      },
      {
       "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html",
       "via": "author"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "author"
      },
      {
       "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html",
       "via": "author"
      },
      {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -480,10 +561,13 @@
    "id": "CallActivity_MakeChange",
    "name": "Make the change, check it and merge it",
    "type": "bpmn:CallActivity",
+   "stepHref": "public-comment.html#step-CallActivity_MakeChange",
    "lane": "Editor",
+   "laneHref": "public-comment.html#lane-Lane_Editor",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "calls": {
@@ -498,49 +582,51 @@
     "skills": [
      {
       "name": "bpmn-authoring",
-      "via": "author"
-     },
-     {
-      "name": "content-author",
-      "via": "author"
-     },
-     {
-      "name": "content-plan",
+      "href": "../../../en/cat-harness/processes/skills/bpmn-authoring.html",
       "via": "author"
      },
      {
       "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html",
       "via": "author"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
       "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html",
       "via": "author"
      },
      {
       "name": "dmn-authoring",
+      "href": "../../../en/cat-harness/processes/skills/dmn-authoring.html",
       "via": "author"
      },
      {
       "name": "evidence-appraisal",
+      "href": "../../../en/cat-harness/processes/skills/evidence-appraisal.html",
       "via": "author"
      },
      {
       "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html",
       "via": "author"
      },
      {
       "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html",
       "via": "author"
      },
      {
       "name": "todo-manager",
+      "href": "../../../en/cat-harness/processes/skills/todo-manager.html",
       "via": "author"
      },
      {
-      "name": "voice-authoring-guidance"
+      "name": "voice-authoring-guidance",
+      "href": "../../../en/cat-harness/processes/skills/voice-authoring-guidance.html"
      }
     ]
    }
@@ -549,10 +635,13 @@
    "id": "Task_Withdraw",
    "name": "Record the withdrawal",
    "type": "bpmn:Task",
+   "stepHref": "public-comment.html#step-Task_Withdraw",
    "lane": "Public commenter",
+   "laneHref": "public-comment.html#lane-Lane_Commenter",
    "skills": [
     {
-     "name": "public-comment"
+     "name": "public-comment",
+     "href": "../../../en/cat-harness/processes/skills/public-comment.html"
     }
    ],
    "role": {
@@ -561,13 +650,16 @@
     "title": "Feedback provider",
     "skills": [
      {
-      "name": "content-feedback"
+      "name": "content-feedback",
+      "href": "../../../en/cat-harness/processes/skills/content-feedback.html"
      },
      {
-      "name": "todo-review"
+      "name": "todo-review",
+      "href": "../../../en/cat-harness/processes/skills/todo-review.html"
      },
      {
-      "name": "wireframe-design-review"
+      "name": "wireframe-design-review",
+      "href": "../../../en/cat-harness/processes/skills/wireframe-design-review.html"
      }
     ]
    }

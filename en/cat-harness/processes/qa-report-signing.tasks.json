@@ -75,18 +75,23 @@
    }
   }
  ],
+ "processHref": "qa-report-signing.html",
  "tasks": {
   "Task_BuildRun": {
    "id": "Task_BuildRun",
    "name": "Build the test run",
    "type": "bpmn:ServiceTask",
+   "stepHref": "qa-report-signing.html#step-Task_BuildRun",
    "lane": "Validation and QA (mechanical + agents)",
+   "laneHref": "qa-report-signing.html#lane-Lane_Qa",
    "skills": [
     {
-     "name": "qa-report-signing"
+     "name": "qa-report-signing",
+     "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
     },
     {
-     "name": "content-test"
+     "name": "content-test",
+     "href": "../../../en/cat-harness/processes/skills/content-test.html"
     }
    ],
    "role": {
@@ -95,16 +100,20 @@
     "title": "Validation pipeline",
     "skills": [
      {
-      "name": "content-test"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "qa-reports"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      }
     ]
    }
@@ -113,10 +122,13 @@
    "id": "Task_ResolveReach",
    "name": "Resolve the performer's reach",
    "type": "bpmn:ServiceTask",
+   "stepHref": "qa-report-signing.html#step-Task_ResolveReach",
    "lane": "Validation and QA (mechanical + agents)",
+   "laneHref": "qa-report-signing.html#lane-Lane_Qa",
    "skills": [
     {
-     "name": "qa-report-signing"
+     "name": "qa-report-signing",
+     "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
     }
    ],
    "role": {
@@ -125,16 +137,20 @@
     "title": "Validation pipeline",
     "skills": [
      {
-      "name": "content-test"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "qa-reports"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      }
     ]
    }
@@ -143,10 +159,13 @@
    "id": "Task_ApiSign",
    "name": "Sign over the API",
    "type": "bpmn:ServiceTask",
+   "stepHref": "qa-report-signing.html#step-Task_ApiSign",
    "lane": "Attestation service (API)",
+   "laneHref": "qa-report-signing.html#lane-Lane_Api",
    "skills": [
     {
-     "name": "qa-report-signing"
+     "name": "qa-report-signing",
+     "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
     }
    ],
    "role": {
@@ -155,10 +174,12 @@
     "title": "Attestation service",
     "skills": [
      {
-      "name": "qa-report-signing"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "test-plan-execution"
+      "name": "test-plan-execution",
+      "href": "../../../en/cat-harness/processes/skills/test-plan-execution.html"
      }
     ]
    }
@@ -167,10 +188,13 @@
    "id": "Task_HumanSign",
    "name": "Sign as release authority",
    "type": "bpmn:UserTask",
+   "stepHref": "qa-report-signing.html#step-Task_HumanSign",
    "lane": "Human signer",
+   "laneHref": "qa-report-signing.html#lane-Lane_Human",
    "skills": [
     {
-     "name": "qa-report-signing"
+     "name": "qa-report-signing",
+     "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
     }
    ],
    "role": {
@@ -179,31 +203,36 @@
     "title": "Publication manager",
     "skills": [
      {
-      "name": "content-publish"
+      "name": "content-review",
+      "href": "../../../en/cat-harness/processes/skills/content-review.html"
      },
      {
-      "name": "content-review"
+      "name": "decision-audit",
+      "href": "../../../en/cat-harness/processes/skills/decision-audit.html"
      },
      {
-      "name": "decision-audit"
+      "name": "instance-publication",
+      "href": "../../../en/cat-harness/processes/skills/instance-publication.html"
      },
      {
-      "name": "instance-publication"
+      "name": "package-release",
+      "href": "../../../en/cat-harness/processes/skills/package-release.html"
      },
      {
-      "name": "package-release"
+      "name": "publish-verification",
+      "href": "../../../en/cat-harness/processes/skills/publish-verification.html"
      },
      {
-      "name": "publish-verification"
+      "name": "qa-report-signing",
+      "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
      },
      {
-      "name": "qa-report-signing"
+      "name": "render-kg-to-cdn",
+      "href": "../../../en/cat-harness/processes/skills/render-kg-to-cdn.html"
      },
      {
-      "name": "render-kg-to-cdn"
-     },
-     {
-      "name": "staging-review"
+      "name": "staging-review",
+      "href": "../../../en/cat-harness/processes/skills/staging-review.html"
      }
     ]
    }
@@ -212,10 +241,13 @@
    "id": "Task_RecordAttestation",
    "name": "Record which route signed it",
    "type": "bpmn:ServiceTask",
+   "stepHref": "qa-report-signing.html#step-Task_RecordAttestation",
    "lane": "Validation and QA (mechanical + agents)",
+   "laneHref": "qa-report-signing.html#lane-Lane_Qa",
    "skills": [
     {
-     "name": "qa-report-signing"
+     "name": "qa-report-signing",
+     "href": "../../../en/cat-harness/processes/skills/qa-report-signing.html"
     }
    ],
    "role": {
@@ -224,16 +256,20 @@
     "title": "Validation pipeline",
     "skills": [
      {
-      "name": "content-test"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "qa-reports"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      }
     ]
    }
@@ -242,10 +278,13 @@
    "id": "Task_StoreSigned",
    "name": "Store the signed report on qa-reports",
    "type": "bpmn:ServiceTask",
+   "stepHref": "qa-report-signing.html#step-Task_StoreSigned",
    "lane": "Validation and QA (mechanical + agents)",
+   "laneHref": "qa-report-signing.html#lane-Lane_Qa",
    "skills": [
     {
-     "name": "qa-reports"
+     "name": "qa-reports",
+     "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
     }
    ],
    "role": {
@@ -254,16 +293,20 @@
     "title": "Validation pipeline",
     "skills": [
      {
-      "name": "content-test"
+      "name": "content-test",
+      "href": "../../../en/cat-harness/processes/skills/content-test.html"
      },
      {
-      "name": "content-validate"
+      "name": "content-validate",
+      "href": "../../../en/cat-harness/processes/skills/content-validate.html"
      },
      {
-      "name": "kg-affordances"
+      "name": "kg-affordances",
+      "href": "../../../en/cat-harness/processes/skills/kg-affordances.html"
      },
      {
-      "name": "qa-reports"
+      "name": "qa-reports",
+      "href": "../../../en/cat-harness/processes/skills/qa-reports.html"
      }
     ]
    }
