@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "4804b34245cfc80898042d9acd3dbb987480ef2d",
+          "ref": "41b3ac486d9fce87ea16aa1ab8e0a5bad9140b41",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -43,8 +43,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-11",
-              "ref": "4804b34245cfc80898042d9acd3dbb987480ef2d",
-              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "ref": "41b3ac486d9fce87ea16aa1ab8e0a5bad9140b41",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -55,7 +55,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "c7d06d51dfc5c3dde0aaf702c3f51252ace0bb90",
+          "ref": "bdbf3b5a83c39091d2046396bb3b0caecbbd2e3c",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -80,8 +80,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-11",
-              "ref": "c7d06d51dfc5c3dde0aaf702c3f51252ace0bb90",
-              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "ref": "bdbf3b5a83c39091d2046396bb3b0caecbbd2e3c",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "801525021eee7576f398369b0b562fe03081e32f",
+          "ref": "94b649add2d4202b6a3dbe6b6d14f4b7b28fbfa2",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -102,8 +102,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-11",
-              "ref": "801525021eee7576f398369b0b562fe03081e32f",
-              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml); re-pin to fhir-harness main at or after fhir-harness#332's merge (801525021e), whose ig-content-qa gate every IG publish now needs, under the owner's freshness rule (cat-harness-tools#1881)"
+              "ref": "94b649add2d4202b6a3dbe6b6d14f4b7b28fbfa2",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -114,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "1874fd5fd7a1f57ea13faf619af66d25aef31e97",
+          "ref": "1035ced2fd526cfc3ddcc78c1bd2b58ebed206f0",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -130,8 +130,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-11",
-              "ref": "1874fd5fd7a1f57ea13faf619af66d25aef31e97",
-              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "ref": "1035ced2fd526cfc3ddcc78c1bd2b58ebed206f0",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "4041cf5620e287a98d7ddeb465dd5841185114d0",
+          "ref": "be6f9dde8ae354c09eb7e1c06ea1b44e54529fce",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -158,8 +158,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-11",
-              "ref": "4041cf5620e287a98d7ddeb465dd5841185114d0",
-              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "ref": "be6f9dde8ae354c09eb7e1c06ea1b44e54529fce",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "9559d12d51963313a68bb35b4fc824ba4588bc80",
+          "ref": "b9a8d2023725155a4dd2d6babe0fafed0b940aab",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -183,8 +183,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-11",
-              "ref": "9559d12d51963313a68bb35b4fc824ba4588bc80",
-              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "ref": "b9a8d2023725155a4dd2d6babe0fafed0b940aab",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -195,7 +195,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
+          "ref": "fdc84b22c30ace4b9476e56fa1cac2117e5aaf0a",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -205,8 +205,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-11",
-              "ref": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
-              "evidence": "litlfred, 2026-11-11, cat-harness-tools#1879: chose option A (every harnessed repo publishes its site on push to main through the shared folio-site-publish.yml, which needs tools >= 625ac09a); re-pin moves every pinned harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "ref": "fdc84b22c30ace4b9476e56fa1cac2117e5aaf0a",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -217,7 +217,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
+          "ref": "0dea4fa94b6a66706c537d4586fefdaf5e768eef",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -229,9 +229,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
+              "on": "2026-11-11",
+              "ref": "0dea4fa94b6a66706c537d4586fefdaf5e768eef",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
