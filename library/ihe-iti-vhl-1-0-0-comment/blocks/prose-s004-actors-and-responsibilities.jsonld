@@ -14,7 +14,7 @@
   "kind": "prose",
   "title": "Actors and Responsibilities",
   "text": "../sections/s004-actors-and-responsibilities.md",
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/ihe-iti-vhl-1-0-0-comment/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/ihe-iti-vhl-1-0-0-comment/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/source/ihe-iti-vhl-1-0-0-comment",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/source/ihe-iti-vhl-1-0-0-comment",
   "provenance": "ingested"
 }

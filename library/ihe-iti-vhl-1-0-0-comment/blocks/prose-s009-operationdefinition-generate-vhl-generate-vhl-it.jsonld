@@ -14,7 +14,7 @@
   "kind": "prose",
   "title": "OperationDefinition: Generate VHL (`$generate-vhl`, `[ITI-YY3]`)",
   "text": "../sections/s009-operationdefinition-generate-vhl-generate-vhl-it.md",
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/ihe-iti-vhl-1-0-0-comment/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/ihe-iti-vhl-1-0-0-comment/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/source/ihe-iti-vhl-1-0-0-comment",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-phw/source/ihe-iti-vhl-1-0-0-comment",
   "provenance": "ingested"
 }
