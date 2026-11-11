@@ -1,6 +1,6 @@
 {
   "$schema": "folio-index-config/v1",
-  "instances": [
+  "layers": [
     {
       "name": "smart-base",
       "source": {
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "6d76e105ff5512c2488af2424349c621b4773165",
+          "ref": "8eefb1f2ced5777f80c30891280fcfd8158ec372",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -157,9 +157,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "6d76e105ff5512c2488af2424349c621b4773165",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
+              "on": "2026-11-11",
+              "ref": "8eefb1f2ced5777f80c30891280fcfd8158ec372",
+              "evidence": "litlfred, 2026-11-10 20:54-20:57Z, thread 'Shrink SMART IG docs publishing': cards 'Merge the size review and cleanup PRs' = A and 'Merge smart-html-jtd #16, fhir-harness #344 and #346' = A (re-pin with P2a/P2b index-config layers+harnesses)"
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "4e79324d5d3637bbc592b657f71f1ec3b6b86797",
+          "ref": "bdeef82afff0e8e14f5daf9609672ea25272cb78",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -182,9 +182,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "4e79324d5d3637bbc592b657f71f1ec3b6b86797",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
+              "on": "2026-11-11",
+              "ref": "bdeef82afff0e8e14f5daf9609672ea25272cb78",
+              "evidence": "litlfred, 2026-11-10 20:54-20:57Z, thread 'Shrink SMART IG docs publishing': cards 'Merge the size review and cleanup PRs' = A and 'Merge smart-html-jtd #16, fhir-harness #344 and #346' = A (re-pin with P2a/P2b index-config layers+harnesses)"
             }
           }
         }
@@ -244,6 +244,11 @@
           "at": "."
         }
       }
+    }
+  ],
+  "harnesses": [
+    {
+      "name": "smart-base"
     }
   ],
   "site": {
