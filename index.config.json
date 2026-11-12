@@ -1,12 +1,12 @@
 {
   "$schema": "folio-index-config/v1",
-  "layers": [
+  "instances": [
     {
       "name": "smart-base",
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "595945930a6cf3da7d916aa6f9ccb934ed5eb9a8",
+          "ref": "419a8743eddc988fc079f54be3f371219b69d808",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -42,9 +42,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "595945930a6cf3da7d916aa6f9ccb934ed5eb9a8",
-              "evidence": "Owner litlfred, 2026-11-07, session https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f: 'repin + merge open 12 hrs' (re-pin smart-trust-phw's layers to their main tips)."
+              "on": "2026-11-12",
+              "ref": "419a8743eddc988fc079f54be3f371219b69d808",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -55,7 +55,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "33ebe87f691e9a72e308bec8390e2882b5b7ff73",
+          "ref": "f3bf0a902e5def280e049b76f94443d87dbb6db2",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -79,9 +79,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "33ebe87f691e9a72e308bec8390e2882b5b7ff73",
-              "evidence": "litlfred, 2026-11-07, via the merge manager (session_01VQDpPffYARDQ8juksAZScf): card 'Pin target' 'A. Never move back', wave 4 'A. Yes, prepare as drafts', and 'repin + merge open 12 hrs'; earlier in this session: 'align pins'. smart-base at #315's merge, each lower layer at the commit smart-base pins; bean cat-tools-sm8r."
+              "on": "2026-11-12",
+              "ref": "f3bf0a902e5def280e049b76f94443d87dbb6db2",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "1524b3fc226e7bf407b4fd217866c63bc260ba29",
+          "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -101,9 +101,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "1524b3fc226e7bf407b4fd217866c63bc260ba29",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
+              "on": "2026-11-12",
+              "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -114,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "7e00ff66455f2eec234f718822b1ad61e7ea65f8",
+          "ref": "4a1a1650bf6568865a9bcf9305f9e718a6adbc02",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -129,9 +129,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "7e00ff66455f2eec234f718822b1ad61e7ea65f8",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\"; ~05:25Z: \"repin + merge open 12 hrs\"; by card: \"Fix in harness\", \"Wait for #308\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned fhir-harness, folio-assistant-core, cat-harness and cat-harness-tools to their main tips (fhir-harness#308 ICD-11 txcache fix; cat-harness-tools#1665 prov-qaqc without beans), bootstrap layers unchanged until bootstrap-tools#82."
+              "on": "2026-11-12",
+              "ref": "4a1a1650bf6568865a9bcf9305f9e718a6adbc02",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "8eefb1f2ced5777f80c30891280fcfd8158ec372",
+          "ref": "362c087a7b12dd39969be3ba11959a2ccb0da81e",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -157,9 +157,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "8eefb1f2ced5777f80c30891280fcfd8158ec372",
-              "evidence": "litlfred, 2026-11-10 20:54-20:57Z, thread 'Shrink SMART IG docs publishing': cards 'Merge the size review and cleanup PRs' = A and 'Merge smart-html-jtd #16, fhir-harness #344 and #346' = A (re-pin with P2a/P2b index-config layers+harnesses)"
+              "on": "2026-11-12",
+              "ref": "362c087a7b12dd39969be3ba11959a2ccb0da81e",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 (cat-harness moved during the re-pin); Q-CONSENT-1 A, Q-WIN-1 C. Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "bdeef82afff0e8e14f5daf9609672ea25272cb78",
+          "ref": "1509dbb42ea29023870e51e8ade70704509d25d0",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -182,9 +182,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "bdeef82afff0e8e14f5daf9609672ea25272cb78",
-              "evidence": "litlfred, 2026-11-10 20:54-20:57Z, thread 'Shrink SMART IG docs publishing': cards 'Merge the size review and cleanup PRs' = A and 'Merge smart-html-jtd #16, fhir-harness #344 and #346' = A (re-pin with P2a/P2b index-config layers+harnesses)"
+              "on": "2026-11-12",
+              "ref": "1509dbb42ea29023870e51e8ade70704509d25d0",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -195,7 +195,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "6efa90e5ec6fb0f9dd3391cd7a75e7345f7be774",
+          "ref": "531a96d2adddec62c2363e125c19d6648a07fc11",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -204,9 +204,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "6efa90e5ec6fb0f9dd3391cd7a75e7345f7be774",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
+              "on": "2026-11-12",
+              "ref": "531a96d2adddec62c2363e125c19d6648a07fc11",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -229,9 +229,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
+              "on": "2026-11-12",
               "ref": "b31c5346b0b2803354423511b6d18b599b7bdc41",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f): re-pinned to the layer main tips now that bootstrap-tools#82 (30c4585, schema regen) clears bootstrap-tools:schemas:check at the tips."
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -246,14 +246,12 @@
       }
     }
   ],
-  "harnesses": [
-    {
-      "name": "smart-base"
-    }
-  ],
   "site": {
     "landing": "smart-base",
-    "agentRun": true
+    "agentRun": true,
+    "publishAfter": [
+      "ig-ast-refresh.yml"
+    ]
   },
   "mountApprovers": [
     "litlfred"
@@ -289,7 +287,23 @@
         "input/images/",
         "input/images-source/",
         "input/pagecontent/",
-        "fsh-generated/"
+        "fsh-generated/",
+        "qa/ig-content-qa.json"
+      ],
+      "trustedSvgs": [
+        "PHW.A.svg",
+        "PHW.B.svg",
+        "PHW.C.svg",
+        "PHW.D.svg",
+        "PHW.E.svg",
+        "PHW.F.svg",
+        "PHW.G.svg",
+        "PHW.H.svg",
+        "PHW.I.svg",
+        "PHW.J.svg",
+        "PHW.K.svg",
+        "PHW.L.svg",
+        "PHW.M.svg"
       ]
     }
   }
