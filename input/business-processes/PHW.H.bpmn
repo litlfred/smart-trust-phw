@@ -88,71 +88,66 @@
   </bpmn:process>
   <bpmndi:BPMNDiagram id="PHW.H.Diagram">
     <bpmndi:BPMNPlane id="PHW.H.Plane" bpmnElement="PHW.H.Collaboration">
-      <bpmndi:BPMNShape id="PHW.H.Participant_di" bpmnElement="PHW.H.Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="1555" height="600" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.Lane.DataProvider_di" bpmnElement="PHW.Lane.DataProvider" isHorizontal="true"><dc:Bounds x="150" y="60" width="1525" height="150" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.Lane.GrantIssuer_di" bpmnElement="PHW.Lane.GrantIssuer" isHorizontal="true"><dc:Bounds x="150" y="210" width="1525" height="150" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.Lane.AuthorizationServer_di" bpmnElement="PHW.Lane.AuthorizationServer" isHorizontal="true"><dc:Bounds x="150" y="360" width="1525" height="150" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.Lane.TrustAnchor_di" bpmnElement="PHW.Lane.TrustAnchor" isHorizontal="true"><dc:Bounds x="150" y="510" width="1525" height="150" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.H.Start_di" bpmnElement="PHW.H.Start"><dc:Bounds x="267" y="117" width="36" height="36" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.H.1_di" bpmnElement="PHW.H.1"><dc:Bounds x="405" y="95" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.H.Gateway1_di" bpmnElement="PHW.H.Gateway1" isMarkerVisible="true"><dc:Bounds x="670" y="110" width="50" height="50" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.H.2_di" bpmnElement="PHW.H.2"><dc:Bounds x="815" y="245" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.H.3_di" bpmnElement="PHW.H.3"><dc:Bounds x="815" y="395" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.H.4_di" bpmnElement="PHW.H.4"><dc:Bounds x="815" y="545" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.H.Gateway2_di" bpmnElement="PHW.H.Gateway2" isMarkerVisible="true"><dc:Bounds x="1080" y="110" width="50" height="50" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.H.5_di" bpmnElement="PHW.H.5"><dc:Bounds x="1225" y="95" width="170" height="80" /></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="PHW.H.End_di" bpmnElement="PHW.H.End"><dc:Bounds x="1497" y="117" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.H.Participant_di" bpmnElement="PHW.H.Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="1560" height="776" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.Lane.DataProvider_di" bpmnElement="PHW.Lane.DataProvider" isHorizontal="true"><dc:Bounds x="150" y="60" width="1530" height="194" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.Lane.GrantIssuer_di" bpmnElement="PHW.Lane.GrantIssuer" isHorizontal="true"><dc:Bounds x="150" y="254" width="1530" height="194" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.Lane.AuthorizationServer_di" bpmnElement="PHW.Lane.AuthorizationServer" isHorizontal="true"><dc:Bounds x="150" y="448" width="1530" height="194" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.Lane.TrustAnchor_di" bpmnElement="PHW.Lane.TrustAnchor" isHorizontal="true"><dc:Bounds x="150" y="642" width="1530" height="194" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.H.Start_di" bpmnElement="PHW.H.Start"><dc:Bounds x="252" y="139" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.H.1_di" bpmnElement="PHW.H.1"><dc:Bounds x="390" y="97" width="120" height="120" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.H.Gateway1_di" bpmnElement="PHW.H.Gateway1" isMarkerVisible="true"><dc:Bounds x="655" y="132" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.H.2_di" bpmnElement="PHW.H.2"><dc:Bounds x="850" y="291" width="120" height="120" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.H.3_di" bpmnElement="PHW.H.3"><dc:Bounds x="850" y="485" width="120" height="120" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.H.4_di" bpmnElement="PHW.H.4"><dc:Bounds x="850" y="679" width="120" height="120" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.H.Gateway2_di" bpmnElement="PHW.H.Gateway2" isMarkerVisible="true"><dc:Bounds x="1115" y="132" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.H.5_di" bpmnElement="PHW.H.5"><dc:Bounds x="1310" y="97" width="120" height="120" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHW.H.End_di" bpmnElement="PHW.H.End"><dc:Bounds x="1532" y="139" width="36" height="36" /></bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="PHW.H.Flow1_di" bpmnElement="PHW.H.Flow1">
-        <di:waypoint x="303" y="135" />
-        <di:waypoint x="405" y="135" />
+        <di:waypoint x="288" y="157" />
+        <di:waypoint x="390" y="157" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.H.Flow2_di" bpmnElement="PHW.H.Flow2">
-        <di:waypoint x="575" y="135" />
-        <di:waypoint x="670" y="135" />
+        <di:waypoint x="510" y="157" />
+        <di:waypoint x="655" y="157" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.H.Flow3_di" bpmnElement="PHW.H.Flow3">
-        <di:waypoint x="720" y="135" />
-        <di:waypoint x="800" y="135" />
-        <di:waypoint x="800" y="285" />
-        <di:waypoint x="815" y="285" />
+        <di:waypoint x="680" y="182" />
+        <di:waypoint x="680" y="351" />
+        <di:waypoint x="850" y="351" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.H.Flow4_di" bpmnElement="PHW.H.Flow4">
-        <di:waypoint x="720" y="135" />
-        <di:waypoint x="800" y="135" />
-        <di:waypoint x="800" y="435" />
-        <di:waypoint x="815" y="435" />
+        <di:waypoint x="705" y="157" />
+        <di:waypoint x="727" y="157" />
+        <di:waypoint x="727" y="545" />
+        <di:waypoint x="850" y="545" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.H.Flow5_di" bpmnElement="PHW.H.Flow5">
-        <di:waypoint x="720" y="135" />
-        <di:waypoint x="800" y="135" />
-        <di:waypoint x="800" y="585" />
-        <di:waypoint x="815" y="585" />
+        <di:waypoint x="680" y="182" />
+        <di:waypoint x="680" y="739" />
+        <di:waypoint x="850" y="739" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.H.Flow6_di" bpmnElement="PHW.H.Flow6">
-        <di:waypoint x="985" y="285" />
-        <di:waypoint x="1065" y="285" />
-        <di:waypoint x="1065" y="135" />
-        <di:waypoint x="1080" y="135" />
+        <di:waypoint x="910" y="291" />
+        <di:waypoint x="910" y="157" />
+        <di:waypoint x="1115" y="157" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.H.Flow7_di" bpmnElement="PHW.H.Flow7">
-        <di:waypoint x="985" y="435" />
-        <di:waypoint x="1065" y="435" />
-        <di:waypoint x="1065" y="135" />
-        <di:waypoint x="1080" y="135" />
+        <di:waypoint x="970" y="545" />
+        <di:waypoint x="1140" y="545" />
+        <di:waypoint x="1140" y="182" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.H.Flow8_di" bpmnElement="PHW.H.Flow8">
-        <di:waypoint x="985" y="585" />
-        <di:waypoint x="1065" y="585" />
-        <di:waypoint x="1065" y="135" />
-        <di:waypoint x="1080" y="135" />
+        <di:waypoint x="970" y="739" />
+        <di:waypoint x="1140" y="739" />
+        <di:waypoint x="1140" y="182" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.H.Flow9_di" bpmnElement="PHW.H.Flow9">
-        <di:waypoint x="1130" y="135" />
-        <di:waypoint x="1225" y="135" />
+        <di:waypoint x="1165" y="157" />
+        <di:waypoint x="1310" y="157" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="PHW.H.Flow10_di" bpmnElement="PHW.H.Flow10">
-        <di:waypoint x="1395" y="135" />
-        <di:waypoint x="1497" y="135" />
+        <di:waypoint x="1430" y="157" />
+        <di:waypoint x="1532" y="157" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

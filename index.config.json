@@ -289,6 +289,21 @@
         "input/pagecontent/",
         "fsh-generated/",
         "qa/ig-content-qa.json"
+      ],
+      "trustedSvgs": [
+        "PHW.A.svg",
+        "PHW.B.svg",
+        "PHW.C.svg",
+        "PHW.D.svg",
+        "PHW.E.svg",
+        "PHW.F.svg",
+        "PHW.G.svg",
+        "PHW.H.svg",
+        "PHW.I.svg",
+        "PHW.J.svg",
+        "PHW.K.svg",
+        "PHW.L.svg",
+        "PHW.M.svg"
       ]
     }
   }
