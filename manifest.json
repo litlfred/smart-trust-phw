@@ -7,7 +7,7 @@
     "versions"
   ],
   "provisionalUntil": "a full IG Publisher run",
-  "generatedAt": "2026-11-10T20:02:19.364248963Z",
+  "generatedAt": "2026-11-12T18:13:53.175150371Z",
   "ig": {
     "root": ".",
     "version": "4.0.1"
@@ -17,8 +17,8 @@
   },
   "inputs": {
     "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-    "sourceRevision": "326fe21fae55cc6349697cba1233ea817d7dd741",
-    "inputDigest": "aedf7089ae1ae2bade62d9539a144ba2fec8bc2a9669d1998418c958aa267d5b"
+    "sourceRevision": "92e51e9fa0732bceebe30eb4caeeb0251c572ad8",
+    "inputDigest": "adc14c6efaba9a1560b5a7c2c94ab94f9370390db7110801ea474fd3fef84c3c"
   },
   "packages": [
     {
@@ -385,7 +385,7 @@
   "terminology": {
     "server": {
       "address": "https://tx.fhir.org/r4",
-      "version": "0.18.2"
+      "version": "1.0.1"
     },
     "expansions": [
       {
@@ -473,7 +473,7 @@
       "resourceType": "ActorDefinition",
       "id": "ConsentRegistry",
       "name": null,
-      "file": "resources/ActorDefinition/ConsentRegistry--9065d17b.json",
+      "file": "resources/ActorDefinition/ConsentRegistry.json",
       "source": "fsh-generated/resources/ActorDefinition-ConsentRegistry.json"
     },
     {
@@ -483,7 +483,7 @@
       "resourceType": "ActorDefinition",
       "id": "Holder",
       "name": null,
-      "file": "resources/ActorDefinition/Holder--cb525e8a.json",
+      "file": "resources/ActorDefinition/Holder.json",
       "source": "fsh-generated/resources/ActorDefinition-Holder.json"
     },
     {
@@ -493,7 +493,7 @@
       "resourceType": "ActorDefinition",
       "id": "Issuer",
       "name": null,
-      "file": "resources/ActorDefinition/Issuer--86a02f4b.json",
+      "file": "resources/ActorDefinition/Issuer.json",
       "source": "fsh-generated/resources/ActorDefinition-Issuer.json"
     },
     {
@@ -503,7 +503,7 @@
       "resourceType": "ActorDefinition",
       "id": "Receiver",
       "name": null,
-      "file": "resources/ActorDefinition/Receiver--3e985429.json",
+      "file": "resources/ActorDefinition/Receiver.json",
       "source": "fsh-generated/resources/ActorDefinition-Receiver.json"
     },
     {
@@ -513,7 +513,7 @@
       "resourceType": "ActorDefinition",
       "id": "TrustNetworkAnchor",
       "name": null,
-      "file": "resources/ActorDefinition/TrustNetworkAnchor--0866e2f8.json",
+      "file": "resources/ActorDefinition/TrustNetworkAnchor.json",
       "source": "fsh-generated/resources/ActorDefinition-TrustNetworkAnchor.json"
     },
     {
@@ -523,7 +523,7 @@
       "resourceType": "ActorDefinition",
       "id": "TrustNetworkParticipant",
       "name": null,
-      "file": "resources/ActorDefinition/TrustNetworkParticipant--2420a8cd.json",
+      "file": "resources/ActorDefinition/TrustNetworkParticipant.json",
       "source": "fsh-generated/resources/ActorDefinition-TrustNetworkParticipant.json"
     },
     {
@@ -533,7 +533,7 @@
       "resourceType": "Basic",
       "id": "DSAPermissionExample",
       "name": null,
-      "file": "resources/Basic/DSAPermissionExample--84821052.json",
+      "file": "resources/Basic/DSAPermissionExample.json",
       "source": "fsh-generated/resources/Basic-DSAPermissionExample.json"
     },
     {
@@ -543,7 +543,7 @@
       "resourceType": "Binary",
       "id": "DVCExample",
       "name": null,
-      "file": "resources/Binary/DVCExample--fd8b7e3a.json",
+      "file": "resources/Binary/DVCExample.json",
       "source": "fsh-generated/resources/Binary-DVCExample.json"
     },
     {
@@ -553,7 +553,7 @@
       "resourceType": "Bundle",
       "id": "DVCDocExample",
       "name": null,
-      "file": "resources/Bundle/DVCDocExample--56e045c0.json",
+      "file": "resources/Bundle/DVCDocExample.json",
       "source": "fsh-generated/resources/Bundle-DVCDocExample.json"
     },
     {
@@ -563,7 +563,7 @@
       "resourceType": "Bundle",
       "id": "DVCDocSDExample",
       "name": null,
-      "file": "resources/Bundle/DVCDocSDExample--21b2cb26.json",
+      "file": "resources/Bundle/DVCDocSDExample.json",
       "source": "fsh-generated/resources/Bundle-DVCDocSDExample.json"
     },
     {
@@ -573,7 +573,7 @@
       "resourceType": "Bundle",
       "id": "LinaSummaryWithConsent",
       "name": null,
-      "file": "resources/Bundle/LinaSummaryWithConsent--97cb397a.json",
+      "file": "resources/Bundle/LinaSummaryWithConsent.json",
       "source": "fsh-generated/resources/Bundle-LinaSummaryWithConsent.json"
     },
     {
@@ -583,7 +583,7 @@
       "resourceType": "Consent",
       "id": "LinaExplicitConsent",
       "name": null,
-      "file": "resources/Consent/LinaExplicitConsent--07b281d6.json",
+      "file": "resources/Consent/LinaExplicitConsent.json",
       "source": "fsh-generated/resources/Consent-LinaExplicitConsent.json"
     },
     {
@@ -593,7 +593,7 @@
       "resourceType": "Consent",
       "id": "LinaImpliedConsent",
       "name": null,
-      "file": "resources/Consent/LinaImpliedConsent--1da9b41e.json",
+      "file": "resources/Consent/LinaImpliedConsent.json",
       "source": "fsh-generated/resources/Consent-LinaImpliedConsent.json"
     },
     {
@@ -603,7 +603,7 @@
       "resourceType": "Consent",
       "id": "PilgrimConsentHostUse",
       "name": null,
-      "file": "resources/Consent/PilgrimConsentHostUse--3dcb8632.json",
+      "file": "resources/Consent/PilgrimConsentHostUse.json",
       "source": "fsh-generated/resources/Consent-PilgrimConsentHostUse.json"
     },
     {
@@ -613,7 +613,7 @@
       "resourceType": "Consent",
       "id": "PilgrimConsentOriginRelease",
       "name": null,
-      "file": "resources/Consent/PilgrimConsentOriginRelease--b4045467.json",
+      "file": "resources/Consent/PilgrimConsentOriginRelease.json",
       "source": "fsh-generated/resources/Consent-PilgrimConsentOriginRelease.json"
     },
     {
@@ -623,7 +623,7 @@
       "resourceType": "DocumentReference",
       "id": "LinaWalletConfirmation",
       "name": null,
-      "file": "resources/DocumentReference/LinaWalletConfirmation--5a0bd0e8.json",
+      "file": "resources/DocumentReference/LinaWalletConfirmation.json",
       "source": "fsh-generated/resources/DocumentReference-LinaWalletConfirmation.json"
     },
     {
@@ -633,7 +633,7 @@
       "resourceType": "Organization",
       "id": "ExampleManufacturerOrg",
       "name": "Manufacturer A",
-      "file": "resources/Organization/ExampleManufacturerOrg--35cd219d.json",
+      "file": "resources/Organization/ExampleManufacturerOrg.json",
       "source": "fsh-generated/resources/Organization-ExampleManufacturerOrg.json"
     },
     {
@@ -643,7 +643,7 @@
       "resourceType": "Organization",
       "id": "HomeHIE",
       "name": "Home Health Information Exchange (example)",
-      "file": "resources/Organization/HomeHIE--cd19fb86.json",
+      "file": "resources/Organization/HomeHIE.json",
       "source": "fsh-generated/resources/Organization-HomeHIE.json"
     },
     {
@@ -653,7 +653,7 @@
       "resourceType": "Organization",
       "id": "HostMoHExample",
       "name": "Ministry of Health Saudi Arabia (example)",
-      "file": "resources/Organization/HostMoHExample--831088af.json",
+      "file": "resources/Organization/HostMoHExample.json",
       "source": "fsh-generated/resources/Organization-HostMoHExample.json"
     },
     {
@@ -663,7 +663,7 @@
       "resourceType": "Organization",
       "id": "InstituteI",
       "name": "Institute I",
-      "file": "resources/Organization/InstituteI--9a065b27.json",
+      "file": "resources/Organization/InstituteI.json",
       "source": "fsh-generated/resources/Organization-InstituteI.json"
     },
     {
@@ -673,7 +673,7 @@
       "resourceType": "Organization",
       "id": "MinistryM",
       "name": "Ministry M",
-      "file": "resources/Organization/MinistryM--14f900cb.json",
+      "file": "resources/Organization/MinistryM.json",
       "source": "fsh-generated/resources/Organization-MinistryM.json"
     },
     {
@@ -683,7 +683,7 @@
       "resourceType": "Organization",
       "id": "OriginHIEExample",
       "name": "Ministry of Health Malaysia Health Information Exchange (example)",
-      "file": "resources/Organization/OriginHIEExample--2d908025.json",
+      "file": "resources/Organization/OriginHIEExample.json",
       "source": "fsh-generated/resources/Organization-OriginHIEExample.json"
     },
     {
@@ -693,7 +693,7 @@
       "resourceType": "Patient",
       "id": "LinaPatient",
       "name": null,
-      "file": "resources/Patient/LinaPatient--f82b2aaa.json",
+      "file": "resources/Patient/LinaPatient.json",
       "source": "fsh-generated/resources/Patient-LinaPatient.json"
     },
     {
@@ -703,7 +703,7 @@
       "resourceType": "Patient",
       "id": "PilgrimExample",
       "name": null,
-      "file": "resources/Patient/PilgrimExample--0f251eb8.json",
+      "file": "resources/Patient/PilgrimExample.json",
       "source": "fsh-generated/resources/Patient-PilgrimExample.json"
     },
     {
@@ -713,7 +713,7 @@
       "resourceType": "Requirements",
       "id": "accept-mtls-connection",
       "name": null,
-      "file": "resources/Requirements/accept-mtls-connection--986d1d19.json",
+      "file": "resources/Requirements/accept-mtls-connection.json",
       "source": "fsh-generated/resources/Requirements-accept-mtls-connection.json"
     },
     {
@@ -723,7 +723,7 @@
       "resourceType": "Requirements",
       "id": "distribute-pki-material",
       "name": null,
-      "file": "resources/Requirements/distribute-pki-material--420cd6ea.json",
+      "file": "resources/Requirements/distribute-pki-material.json",
       "source": "fsh-generated/resources/Requirements-distribute-pki-material.json"
     },
     {
@@ -733,7 +733,7 @@
       "resourceType": "Requirements",
       "id": "initiate-mtls-connection",
       "name": null,
-      "file": "resources/Requirements/initiate-mtls-connection--6a91228e.json",
+      "file": "resources/Requirements/initiate-mtls-connection.json",
       "source": "fsh-generated/resources/Requirements-initiate-mtls-connection.json"
     },
     {
@@ -743,7 +743,7 @@
       "resourceType": "Requirements",
       "id": "provide-a-vhl-to-a-receiver",
       "name": null,
-      "file": "resources/Requirements/provide-a-vhl-to-a-receiver--23125bd8.json",
+      "file": "resources/Requirements/provide-a-vhl-to-a-receiver.json",
       "source": "fsh-generated/resources/Requirements-provide-a-vhl-to-a-receiver.json"
     },
     {
@@ -753,7 +753,7 @@
       "resourceType": "Requirements",
       "id": "publish-pki-material",
       "name": null,
-      "file": "resources/Requirements/publish-pki-material--2bcd39e0.json",
+      "file": "resources/Requirements/publish-pki-material.json",
       "source": "fsh-generated/resources/Requirements-publish-pki-material.json"
     },
     {
@@ -763,7 +763,7 @@
       "resourceType": "Requirements",
       "id": "receive-a-vhl",
       "name": null,
-      "file": "resources/Requirements/receive-a-vhl--d353e3af.json",
+      "file": "resources/Requirements/receive-a-vhl.json",
       "source": "fsh-generated/resources/Requirements-receive-a-vhl.json"
     },
     {
@@ -773,7 +773,7 @@
       "resourceType": "Requirements",
       "id": "receive-pki-material",
       "name": null,
-      "file": "resources/Requirements/receive-pki-material--78b8f4ed.json",
+      "file": "resources/Requirements/receive-pki-material.json",
       "source": "fsh-generated/resources/Requirements-receive-pki-material.json"
     },
     {
@@ -783,7 +783,7 @@
       "resourceType": "Requirements",
       "id": "retrieve-pki-material",
       "name": null,
-      "file": "resources/Requirements/retrieve-pki-material--3f641f6b.json",
+      "file": "resources/Requirements/retrieve-pki-material.json",
       "source": "fsh-generated/resources/Requirements-retrieve-pki-material.json"
     },
     {
@@ -793,7 +793,7 @@
       "resourceType": "CodeSystem",
       "id": "DVCRelationshipStatus-ar",
       "name": "DVCRelationshipStatusAr",
-      "file": "resources/CodeSystem/DVCRelationshipStatus-ar--8c3deb6e.json",
+      "file": "resources/CodeSystem/DVCRelationshipStatus-ar.json",
       "source": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-ar.json"
     },
     {
@@ -803,7 +803,7 @@
       "resourceType": "CodeSystem",
       "id": "DVCRelationshipStatus-es",
       "name": "DVCRelationshipStatusEs",
-      "file": "resources/CodeSystem/DVCRelationshipStatus-es--636fddd6.json",
+      "file": "resources/CodeSystem/DVCRelationshipStatus-es.json",
       "source": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-es.json"
     },
     {
@@ -813,7 +813,7 @@
       "resourceType": "CodeSystem",
       "id": "DVCRelationshipStatus-fr",
       "name": "DVCRelationshipStatusFr",
-      "file": "resources/CodeSystem/DVCRelationshipStatus-fr--032ecb94.json",
+      "file": "resources/CodeSystem/DVCRelationshipStatus-fr.json",
       "source": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-fr.json"
     },
     {
@@ -823,7 +823,7 @@
       "resourceType": "CodeSystem",
       "id": "DVCRelationshipStatus-ru",
       "name": "DVCRelationshipStatusRu",
-      "file": "resources/CodeSystem/DVCRelationshipStatus-ru--398da479.json",
+      "file": "resources/CodeSystem/DVCRelationshipStatus-ru.json",
       "source": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-ru.json"
     },
     {
@@ -833,7 +833,7 @@
       "resourceType": "CodeSystem",
       "id": "DVCRelationshipStatus-zh",
       "name": "DVCRelationshipStatusZh",
-      "file": "resources/CodeSystem/DVCRelationshipStatus-zh--bcd00cbd.json",
+      "file": "resources/CodeSystem/DVCRelationshipStatus-zh.json",
       "source": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus-zh.json"
     },
     {
@@ -843,7 +843,7 @@
       "resourceType": "CodeSystem",
       "id": "DVCRelationshipStatus",
       "name": "DVCRelationshipStatus",
-      "file": "resources/CodeSystem/DVCRelationshipStatus--dde10a40.json",
+      "file": "resources/CodeSystem/DVCRelationshipStatus.json",
       "source": "fsh-generated/resources/CodeSystem-DVCRelationshipStatus.json"
     },
     {
@@ -853,7 +853,7 @@
       "resourceType": "CodeSystem",
       "id": "DisclosureStatements-ar",
       "name": "DisclosureStatementsAr",
-      "file": "resources/CodeSystem/DisclosureStatements-ar--ed5b0a8e.json",
+      "file": "resources/CodeSystem/DisclosureStatements-ar.json",
       "source": "fsh-generated/resources/CodeSystem-DisclosureStatements-ar.json"
     },
     {
@@ -863,7 +863,7 @@
       "resourceType": "CodeSystem",
       "id": "DisclosureStatements-es",
       "name": "DisclosureStatementsEs",
-      "file": "resources/CodeSystem/DisclosureStatements-es--36127be5.json",
+      "file": "resources/CodeSystem/DisclosureStatements-es.json",
       "source": "fsh-generated/resources/CodeSystem-DisclosureStatements-es.json"
     },
     {
@@ -873,7 +873,7 @@
       "resourceType": "CodeSystem",
       "id": "DisclosureStatements-fr",
       "name": "DisclosureStatementsFr",
-      "file": "resources/CodeSystem/DisclosureStatements-fr--ae6d5361.json",
+      "file": "resources/CodeSystem/DisclosureStatements-fr.json",
       "source": "fsh-generated/resources/CodeSystem-DisclosureStatements-fr.json"
     },
     {
@@ -883,7 +883,7 @@
       "resourceType": "CodeSystem",
       "id": "DisclosureStatements-ru",
       "name": "DisclosureStatementsRu",
-      "file": "resources/CodeSystem/DisclosureStatements-ru--49e916c1.json",
+      "file": "resources/CodeSystem/DisclosureStatements-ru.json",
       "source": "fsh-generated/resources/CodeSystem-DisclosureStatements-ru.json"
     },
     {
@@ -893,7 +893,7 @@
       "resourceType": "CodeSystem",
       "id": "DisclosureStatements-zh",
       "name": "DisclosureStatementsZh",
-      "file": "resources/CodeSystem/DisclosureStatements-zh--fb541773.json",
+      "file": "resources/CodeSystem/DisclosureStatements-zh.json",
       "source": "fsh-generated/resources/CodeSystem-DisclosureStatements-zh.json"
     },
     {
@@ -903,7 +903,7 @@
       "resourceType": "CodeSystem",
       "id": "DisclosureStatements",
       "name": "DisclosureStatements",
-      "file": "resources/CodeSystem/DisclosureStatements--a79ccc08.json",
+      "file": "resources/CodeSystem/DisclosureStatements.json",
       "source": "fsh-generated/resources/CodeSystem-DisclosureStatements.json"
     },
     {
@@ -913,7 +913,7 @@
       "resourceType": "CodeSystem",
       "id": "DocumentationSections-ar",
       "name": "DocumentationSectionsAr",
-      "file": "resources/CodeSystem/DocumentationSections-ar--eed2b027.json",
+      "file": "resources/CodeSystem/DocumentationSections-ar.json",
       "source": "fsh-generated/resources/CodeSystem-DocumentationSections-ar.json"
     },
     {
@@ -923,7 +923,7 @@
       "resourceType": "CodeSystem",
       "id": "DocumentationSections-es",
       "name": "DocumentationSectionsEs",
-      "file": "resources/CodeSystem/DocumentationSections-es--67acecc0.json",
+      "file": "resources/CodeSystem/DocumentationSections-es.json",
       "source": "fsh-generated/resources/CodeSystem-DocumentationSections-es.json"
     },
     {
@@ -933,7 +933,7 @@
       "resourceType": "CodeSystem",
       "id": "DocumentationSections-fr",
       "name": "DocumentationSectionsFr",
-      "file": "resources/CodeSystem/DocumentationSections-fr--2f9fa6fa.json",
+      "file": "resources/CodeSystem/DocumentationSections-fr.json",
       "source": "fsh-generated/resources/CodeSystem-DocumentationSections-fr.json"
     },
     {
@@ -943,7 +943,7 @@
       "resourceType": "CodeSystem",
       "id": "DocumentationSections-ru",
       "name": "DocumentationSectionsRu",
-      "file": "resources/CodeSystem/DocumentationSections-ru--0366caf2.json",
+      "file": "resources/CodeSystem/DocumentationSections-ru.json",
       "source": "fsh-generated/resources/CodeSystem-DocumentationSections-ru.json"
     },
     {
@@ -953,7 +953,7 @@
       "resourceType": "CodeSystem",
       "id": "DocumentationSections-zh",
       "name": "DocumentationSectionsZh",
-      "file": "resources/CodeSystem/DocumentationSections-zh--0f6e63b3.json",
+      "file": "resources/CodeSystem/DocumentationSections-zh.json",
       "source": "fsh-generated/resources/CodeSystem-DocumentationSections-zh.json"
     },
     {
@@ -963,7 +963,7 @@
       "resourceType": "CodeSystem",
       "id": "DocumentationSections",
       "name": "DocumentationSections",
-      "file": "resources/CodeSystem/DocumentationSections--52fd6c83.json",
+      "file": "resources/CodeSystem/DocumentationSections.json",
       "source": "fsh-generated/resources/CodeSystem-DocumentationSections.json"
     },
     {
@@ -973,7 +973,7 @@
       "resourceType": "CodeSystem",
       "id": "HL-TYPE-es",
       "name": "HLTYPEEs",
-      "file": "resources/CodeSystem/HL-TYPE-es--07529c8e.json",
+      "file": "resources/CodeSystem/HL-TYPE-es.json",
       "source": "fsh-generated/resources/CodeSystem-HL-TYPE-es.json"
     },
     {
@@ -983,7 +983,7 @@
       "resourceType": "CodeSystem",
       "id": "HL-TYPE-fr",
       "name": "HLTYPEFr",
-      "file": "resources/CodeSystem/HL-TYPE-fr--fae3be66.json",
+      "file": "resources/CodeSystem/HL-TYPE-fr.json",
       "source": "fsh-generated/resources/CodeSystem-HL-TYPE-fr.json"
     },
     {
@@ -993,7 +993,7 @@
       "resourceType": "CodeSystem",
       "id": "HL-TYPE-ru",
       "name": "HLTYPERu",
-      "file": "resources/CodeSystem/HL-TYPE-ru--6db5ac1c.json",
+      "file": "resources/CodeSystem/HL-TYPE-ru.json",
       "source": "fsh-generated/resources/CodeSystem-HL-TYPE-ru.json"
     },
     {
@@ -1003,7 +1003,7 @@
       "resourceType": "CodeSystem",
       "id": "HL.TYPE-ar",
       "name": "HLTYPEAr",
-      "file": "resources/CodeSystem/HL.TYPE-ar--3e3a3a13.json",
+      "file": "resources/CodeSystem/HL.TYPE-ar.json",
       "source": "fsh-generated/resources/CodeSystem-HL.TYPE-ar.json"
     },
     {
@@ -1013,7 +1013,7 @@
       "resourceType": "CodeSystem",
       "id": "HL.TYPE-zh",
       "name": "HLTYPEZh",
-      "file": "resources/CodeSystem/HL.TYPE-zh--54065351.json",
+      "file": "resources/CodeSystem/HL.TYPE-zh.json",
       "source": "fsh-generated/resources/CodeSystem-HL.TYPE-zh.json"
     },
     {
@@ -1023,7 +1023,7 @@
       "resourceType": "CodeSystem",
       "id": "HL.TYPE",
       "name": "HL_TYPE",
-      "file": "resources/CodeSystem/HL.TYPE--884127e8.json",
+      "file": "resources/CodeSystem/HL.TYPE.json",
       "source": "fsh-generated/resources/CodeSystem-HL.TYPE.json"
     },
     {
@@ -1033,7 +1033,7 @@
       "resourceType": "CodeSystem",
       "id": "ICVP-Core-es",
       "name": "ICVPCoreEs",
-      "file": "resources/CodeSystem/ICVP-Core-es--44eb3e9c.json",
+      "file": "resources/CodeSystem/ICVP-Core-es.json",
       "source": "fsh-generated/resources/CodeSystem-ICVP-Core-es.json"
     },
     {
@@ -1043,7 +1043,7 @@
       "resourceType": "CodeSystem",
       "id": "ICVP-Core-fr",
       "name": "ICVPCoreFr",
-      "file": "resources/CodeSystem/ICVP-Core-fr--425683c6.json",
+      "file": "resources/CodeSystem/ICVP-Core-fr.json",
       "source": "fsh-generated/resources/CodeSystem-ICVP-Core-fr.json"
     },
     {
@@ -1053,7 +1053,7 @@
       "resourceType": "CodeSystem",
       "id": "ICVP-Core-ru",
       "name": "ICVPCoreRu",
-      "file": "resources/CodeSystem/ICVP-Core-ru--f87f839a.json",
+      "file": "resources/CodeSystem/ICVP-Core-ru.json",
       "source": "fsh-generated/resources/CodeSystem-ICVP-Core-ru.json"
     },
     {
@@ -1063,7 +1063,7 @@
       "resourceType": "CodeSystem",
       "id": "ICVP.Core-ar",
       "name": "ICVPCoreAr",
-      "file": "resources/CodeSystem/ICVP.Core-ar--b61404f8.json",
+      "file": "resources/CodeSystem/ICVP.Core-ar.json",
       "source": "fsh-generated/resources/CodeSystem-ICVP.Core-ar.json"
     },
     {
@@ -1073,7 +1073,7 @@
       "resourceType": "CodeSystem",
       "id": "ICVP.Core-zh",
       "name": "ICVPCoreZh",
-      "file": "resources/CodeSystem/ICVP.Core-zh--fc3b2e57.json",
+      "file": "resources/CodeSystem/ICVP.Core-zh.json",
       "source": "fsh-generated/resources/CodeSystem-ICVP.Core-zh.json"
     },
     {
@@ -1083,7 +1083,7 @@
       "resourceType": "CodeSystem",
       "id": "ICVP.Core",
       "name": "ICVP_Core",
-      "file": "resources/CodeSystem/ICVP.Core--f6052297.json",
+      "file": "resources/CodeSystem/ICVP.Core.json",
       "source": "fsh-generated/resources/CodeSystem-ICVP.Core.json"
     },
     {
@@ -1093,7 +1093,7 @@
       "resourceType": "ConceptMap",
       "id": "ICVP.Core.ConceptMap",
       "name": "ICVP_Core_ConceptMap",
-      "file": "resources/ConceptMap/ICVP.Core.ConceptMap--e2513f59.json",
+      "file": "resources/ConceptMap/ICVP.Core.ConceptMap.json",
       "source": "fsh-generated/resources/ConceptMap-ICVP.Core.ConceptMap.json"
     },
     {
@@ -1103,7 +1103,7 @@
       "resourceType": "ImplementationGuide",
       "id": "smart.who.int.trust-phw",
       "name": "trust-phw",
-      "file": "resources/ImplementationGuide/smart.who.int.trust-phw--170bafda.json",
+      "file": "resources/ImplementationGuide/smart.who.int.trust-phw.json",
       "source": "fsh-generated/resources/ImplementationGuide-smart.who.int.trust-phw.json"
     },
     {
@@ -1113,7 +1113,7 @@
       "resourceType": "Questionnaire",
       "id": "PreQual",
       "name": null,
-      "file": "resources/Questionnaire/PreQual--4ea6cee7.json",
+      "file": "resources/Questionnaire/PreQual.json",
       "source": "fsh-generated/resources/Questionnaire-PreQual.json"
     },
     {
@@ -1123,7 +1123,7 @@
       "resourceType": "StructureDefinition",
       "id": "Bundle-uv-ips-DVC",
       "name": "Bundle-uv-ips-DVC",
-      "file": "resources/StructureDefinition/Bundle-uv-ips-DVC--b1556294.json",
+      "file": "resources/StructureDefinition/Bundle-uv-ips-DVC.json",
       "source": "fsh-generated/resources/StructureDefinition-Bundle-uv-ips-DVC.json"
     },
     {
@@ -1133,7 +1133,7 @@
       "resourceType": "StructureDefinition",
       "id": "Bundle-uv-ips-PreQual",
       "name": "Bundle-uv-ips-PreQual",
-      "file": "resources/StructureDefinition/Bundle-uv-ips-PreQual--820419bb.json",
+      "file": "resources/StructureDefinition/Bundle-uv-ips-PreQual.json",
       "source": "fsh-generated/resources/StructureDefinition-Bundle-uv-ips-PreQual.json"
     },
     {
@@ -1143,7 +1143,7 @@
       "resourceType": "StructureDefinition",
       "id": "Composition-uv-ips-DVC",
       "name": "Composition-uv-ips-DVC",
-      "file": "resources/StructureDefinition/Composition-uv-ips-DVC--2c2c9efc.json",
+      "file": "resources/StructureDefinition/Composition-uv-ips-DVC.json",
       "source": "fsh-generated/resources/StructureDefinition-Composition-uv-ips-DVC.json"
     },
     {
@@ -1153,7 +1153,7 @@
       "resourceType": "StructureDefinition",
       "id": "Composition-uv-ips-PreQual",
       "name": "Composition-uv-ips-PreQual",
-      "file": "resources/StructureDefinition/Composition-uv-ips-PreQual--c2d424a4.json",
+      "file": "resources/StructureDefinition/Composition-uv-ips-PreQual.json",
       "source": "fsh-generated/resources/StructureDefinition-Composition-uv-ips-PreQual.json"
     },
     {
@@ -1163,7 +1163,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCBundle",
       "name": "DVCBundle",
-      "file": "resources/StructureDefinition/DVCBundle--0e489764.json",
+      "file": "resources/StructureDefinition/DVCBundle.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCBundle.json"
     },
     {
@@ -1173,7 +1173,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCComposition",
       "name": "DVCComposition",
-      "file": "resources/StructureDefinition/DVCComposition--686e9f4c.json",
+      "file": "resources/StructureDefinition/DVCComposition.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCComposition.json"
     },
     {
@@ -1183,7 +1183,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCImmunization",
       "name": "DVCImmunization",
-      "file": "resources/StructureDefinition/DVCImmunization--0330c935.json",
+      "file": "resources/StructureDefinition/DVCImmunization.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCImmunization.json"
     },
     {
@@ -1193,7 +1193,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCMinPreQual",
       "name": "DVCMinPreQual",
-      "file": "resources/StructureDefinition/DVCMinPreQual--f664891b.json",
+      "file": "resources/StructureDefinition/DVCMinPreQual.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCMinPreQual.json"
     },
     {
@@ -1203,7 +1203,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCMinVaccineDetailsPreQual",
       "name": "DVCMinVaccineDetailsPreQual",
-      "file": "resources/StructureDefinition/DVCMinVaccineDetailsPreQual--dd5e870b.json",
+      "file": "resources/StructureDefinition/DVCMinVaccineDetailsPreQual.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCMinVaccineDetailsPreQual.json"
     },
     {
@@ -1213,7 +1213,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCMinVaccineDetails",
       "name": "DVCMinVaccineDetails",
-      "file": "resources/StructureDefinition/DVCMinVaccineDetails--a409b05a.json",
+      "file": "resources/StructureDefinition/DVCMinVaccineDetails.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCMinVaccineDetails.json"
     },
     {
@@ -1223,7 +1223,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCMin",
       "name": "DVCMin",
-      "file": "resources/StructureDefinition/DVCMin--b36cab3b.json",
+      "file": "resources/StructureDefinition/DVCMin.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCMin.json"
     },
     {
@@ -1233,7 +1233,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCPatient",
       "name": "DVCPatient",
-      "file": "resources/StructureDefinition/DVCPatient--f81adccf.json",
+      "file": "resources/StructureDefinition/DVCPatient.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCPatient.json"
     },
     {
@@ -1243,7 +1243,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCPreQual",
       "name": "DVCPreQual",
-      "file": "resources/StructureDefinition/DVCPreQual--533be0a2.json",
+      "file": "resources/StructureDefinition/DVCPreQual.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCPreQual.json"
     },
     {
@@ -1253,7 +1253,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCSDBundle",
       "name": "DVCSDBundle",
-      "file": "resources/StructureDefinition/DVCSDBundle--c9911b30.json",
+      "file": "resources/StructureDefinition/DVCSDBundle.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCSDBundle.json"
     },
     {
@@ -1263,7 +1263,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCSDComposition",
       "name": "DVCSDComposition",
-      "file": "resources/StructureDefinition/DVCSDComposition--5a8ccef5.json",
+      "file": "resources/StructureDefinition/DVCSDComposition.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCSDComposition.json"
     },
     {
@@ -1273,7 +1273,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCSDImmunization",
       "name": "DVCSDImmunization",
-      "file": "resources/StructureDefinition/DVCSDImmunization--fa5f3a9a.json",
+      "file": "resources/StructureDefinition/DVCSDImmunization.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCSDImmunization.json"
     },
     {
@@ -1283,7 +1283,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCSDPatient",
       "name": "DVCSDPatient",
-      "file": "resources/StructureDefinition/DVCSDPatient--5cba1ccf.json",
+      "file": "resources/StructureDefinition/DVCSDPatient.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCSDPatient.json"
     },
     {
@@ -1293,7 +1293,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCSD",
       "name": "DVCSD",
-      "file": "resources/StructureDefinition/DVCSD--138eadc1.json",
+      "file": "resources/StructureDefinition/DVCSD.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCSD.json"
     },
     {
@@ -1303,7 +1303,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCVaccineDetailsPreQual",
       "name": "DVCVaccineDetailsPreQual",
-      "file": "resources/StructureDefinition/DVCVaccineDetailsPreQual--e046b2ec.json",
+      "file": "resources/StructureDefinition/DVCVaccineDetailsPreQual.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCVaccineDetailsPreQual.json"
     },
     {
@@ -1313,7 +1313,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVCVaccineDetails",
       "name": "DVCVaccineDetails",
-      "file": "resources/StructureDefinition/DVCVaccineDetails--f626378e.json",
+      "file": "resources/StructureDefinition/DVCVaccineDetails.json",
       "source": "fsh-generated/resources/StructureDefinition-DVCVaccineDetails.json"
     },
     {
@@ -1323,7 +1323,7 @@
       "resourceType": "StructureDefinition",
       "id": "DVC",
       "name": "DVC",
-      "file": "resources/StructureDefinition/DVC--1df5d2c7.json",
+      "file": "resources/StructureDefinition/DVC.json",
       "source": "fsh-generated/resources/StructureDefinition-DVC.json"
     },
     {
@@ -1333,7 +1333,7 @@
       "resourceType": "StructureDefinition",
       "id": "DoseNumberCodeableConcept",
       "name": "DoseNumberCodeableConcept",
-      "file": "resources/StructureDefinition/DoseNumberCodeableConcept--63fe4a12.json",
+      "file": "resources/StructureDefinition/DoseNumberCodeableConcept.json",
       "source": "fsh-generated/resources/StructureDefinition-DoseNumberCodeableConcept.json"
     },
     {
@@ -1343,7 +1343,7 @@
       "resourceType": "StructureDefinition",
       "id": "HealthLinkPayload",
       "name": "HealthLinkPayload",
-      "file": "resources/StructureDefinition/HealthLinkPayload--e7577dce.json",
+      "file": "resources/StructureDefinition/HealthLinkPayload.json",
       "source": "fsh-generated/resources/StructureDefinition-HealthLinkPayload.json"
     },
     {
@@ -1353,7 +1353,7 @@
       "resourceType": "StructureDefinition",
       "id": "Immunization-uv-ips-DVC",
       "name": "Immunization-uv-ips-DVC",
-      "file": "resources/StructureDefinition/Immunization-uv-ips-DVC--4710ca66.json",
+      "file": "resources/StructureDefinition/Immunization-uv-ips-DVC.json",
       "source": "fsh-generated/resources/StructureDefinition-Immunization-uv-ips-DVC.json"
     },
     {
@@ -1363,7 +1363,7 @@
       "resourceType": "StructureDefinition",
       "id": "Immunization-uv-ips-PreQual",
       "name": "Immunization-uv-ips-PreQual",
-      "file": "resources/StructureDefinition/Immunization-uv-ips-PreQual--a4b4d67b.json",
+      "file": "resources/StructureDefinition/Immunization-uv-ips-PreQual.json",
       "source": "fsh-generated/resources/StructureDefinition-Immunization-uv-ips-PreQual.json"
     },
     {
@@ -1373,7 +1373,7 @@
       "resourceType": "StructureDefinition",
       "id": "PHWConsent",
       "name": "PHWConsent",
-      "file": "resources/StructureDefinition/PHWConsent--0773a325.json",
+      "file": "resources/StructureDefinition/PHWConsent.json",
       "source": "fsh-generated/resources/StructureDefinition-PHWConsent.json"
     },
     {
@@ -1383,7 +1383,7 @@
       "resourceType": "StructureDefinition",
       "id": "PHWDocumentWithConsent",
       "name": "PHWDocumentWithConsent",
-      "file": "resources/StructureDefinition/PHWDocumentWithConsent--48488735.json",
+      "file": "resources/StructureDefinition/PHWDocumentWithConsent.json",
       "source": "fsh-generated/resources/StructureDefinition-PHWDocumentWithConsent.json"
     },
     {
@@ -1393,7 +1393,7 @@
       "resourceType": "StructureDefinition",
       "id": "PHWExplicitConsent",
       "name": "PHWExplicitConsent",
-      "file": "resources/StructureDefinition/PHWExplicitConsent--760b8881.json",
+      "file": "resources/StructureDefinition/PHWExplicitConsent.json",
       "source": "fsh-generated/resources/StructureDefinition-PHWExplicitConsent.json"
     },
     {
@@ -1403,7 +1403,7 @@
       "resourceType": "StructureDefinition",
       "id": "PHWImpliedConsent",
       "name": "PHWImpliedConsent",
-      "file": "resources/StructureDefinition/PHWImpliedConsent--489c5f86.json",
+      "file": "resources/StructureDefinition/PHWImpliedConsent.json",
       "source": "fsh-generated/resources/StructureDefinition-PHWImpliedConsent.json"
     },
     {
@@ -1413,7 +1413,7 @@
       "resourceType": "StructureDefinition",
       "id": "SGActorExt",
       "name": "SGActorExt",
-      "file": "resources/StructureDefinition/SGActorExt--7d35c841.json",
+      "file": "resources/StructureDefinition/SGActorExt.json",
       "source": "fsh-generated/resources/StructureDefinition-SGActorExt.json"
     },
     {
@@ -1423,7 +1423,7 @@
       "resourceType": "StructureDefinition",
       "id": "SMARTHealthLinkPayload",
       "name": "SMARTHealthLinkPayload",
-      "file": "resources/StructureDefinition/SMARTHealthLinkPayload--48237971.json",
+      "file": "resources/StructureDefinition/SMARTHealthLinkPayload.json",
       "source": "fsh-generated/resources/StructureDefinition-SMARTHealthLinkPayload.json"
     },
     {
@@ -1433,7 +1433,7 @@
       "resourceType": "StructureDefinition",
       "id": "SelectiveDisclosure",
       "name": "SelectiveDisclosure",
-      "file": "resources/StructureDefinition/SelectiveDisclosure--67b1af3b.json",
+      "file": "resources/StructureDefinition/SelectiveDisclosure.json",
       "source": "fsh-generated/resources/StructureDefinition-SelectiveDisclosure.json"
     },
     {
@@ -1443,7 +1443,7 @@
       "resourceType": "StructureDefinition",
       "id": "SmartHealthLink",
       "name": "SmartHealthLink",
-      "file": "resources/StructureDefinition/SmartHealthLink--3de55cae.json",
+      "file": "resources/StructureDefinition/SmartHealthLink.json",
       "source": "fsh-generated/resources/StructureDefinition-SmartHealthLink.json"
     },
     {
@@ -1453,7 +1453,7 @@
       "resourceType": "StructureDefinition",
       "id": "VaccineDetailsSD",
       "name": "VaccineDetailsSD",
-      "file": "resources/StructureDefinition/VaccineDetailsSD--2eeb75cc.json",
+      "file": "resources/StructureDefinition/VaccineDetailsSD.json",
       "source": "fsh-generated/resources/StructureDefinition-VaccineDetailsSD.json"
     },
     {
@@ -1463,7 +1463,7 @@
       "resourceType": "StructureDefinition",
       "id": "VerifiableHealthLinkPayload",
       "name": "VerifiableHealthLinkPayload",
-      "file": "resources/StructureDefinition/VerifiableHealthLinkPayload--c12e0d04.json",
+      "file": "resources/StructureDefinition/VerifiableHealthLinkPayload.json",
       "source": "fsh-generated/resources/StructureDefinition-VerifiableHealthLinkPayload.json"
     },
     {
@@ -1473,7 +1473,7 @@
       "resourceType": "ValueSet",
       "id": "DVCRelationshipStatus",
       "name": "DVCRelationshipStatus",
-      "file": "resources/ValueSet/DVCRelationshipStatus--a461c63e.json",
+      "file": "resources/ValueSet/DVCRelationshipStatus.json",
       "source": "fsh-generated/resources/ValueSet-DVCRelationshipStatus.json"
     },
     {
@@ -1483,7 +1483,7 @@
       "resourceType": "ValueSet",
       "id": "DVCVaccines",
       "name": "DVCVaccines",
-      "file": "resources/ValueSet/DVCVaccines--2cef16f9.json",
+      "file": "resources/ValueSet/DVCVaccines.json",
       "source": "fsh-generated/resources/ValueSet-DVCVaccines.json"
     },
     {
@@ -1493,7 +1493,7 @@
       "resourceType": "ValueSet",
       "id": "DisclosureStatements",
       "name": "DisclosureStatements",
-      "file": "resources/ValueSet/DisclosureStatements--b95fd0cb.json",
+      "file": "resources/ValueSet/DisclosureStatements.json",
       "source": "fsh-generated/resources/ValueSet-DisclosureStatements.json"
     },
     {
@@ -1503,7 +1503,7 @@
       "resourceType": "ValueSet",
       "id": "HL.TYPE",
       "name": "HL_TYPE",
-      "file": "resources/ValueSet/HL.TYPE--bb094bed.json",
+      "file": "resources/ValueSet/HL.TYPE.json",
       "source": "fsh-generated/resources/ValueSet-HL.TYPE.json"
     },
     {
@@ -1513,7 +1513,7 @@
       "resourceType": "ValueSet",
       "id": "PHWExplicitConsentKind",
       "name": "PHWExplicitConsentKind",
-      "file": "resources/ValueSet/PHWExplicitConsentKind--363f110e.json",
+      "file": "resources/ValueSet/PHWExplicitConsentKind.json",
       "source": "fsh-generated/resources/ValueSet-PHWExplicitConsentKind.json"
     },
     {
@@ -1523,7 +1523,7 @@
       "resourceType": "ValueSet",
       "id": "PHWImpliedConsentKind",
       "name": "PHWImpliedConsentKind",
-      "file": "resources/ValueSet/PHWImpliedConsentKind--26518376.json",
+      "file": "resources/ValueSet/PHWImpliedConsentKind.json",
       "source": "fsh-generated/resources/ValueSet-PHWImpliedConsentKind.json"
     }
   ]

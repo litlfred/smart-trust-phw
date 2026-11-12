@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OpenAPI Documentation - DAK API</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"
+          href="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui.css">
+    <style>
+      body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+      /* Definition selector bar below the header */
+      #definition-selector-bar {
+        background-color: #0070a1;
+        color: #ffffff;
+        padding: 0.5rem 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+      }
+      #definition-selector-bar label {
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      #definition-select {
+        font-size: 0.9rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: 3px;
+        border: 1px solid rgba(255,255,255,0.6);
+        background-color: #ffffff;
+        color: #00477d;
+        min-width: 200px;
+        max-width: 100%;
+        flex: 1;
+      }
+      /* Hide Swagger UI topbar entirely */
+      .swagger-ui .topbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+  <!-- No header of its own: the site gives every page the IG's one bar. -->
+
+  <div id="definition-selector-bar">
+    <label for="definition-select">Select a definition:</label>
+    <select id="definition-select" onchange="switchDefinition(this.value)">
+    </select>
+  </div>
+  <div id="swagger-ui"></div>
+  <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-bundle.js"></script>
+  <script>
+  var swaggerUrls = [
+  {
+    "url": "../StructureDefinition-DVC.openapi.json",
+    "name": "DVC"
+  },
+  {
+    "url": "../StructureDefinition-DVCMin.openapi.json",
+    "name": "DVC HCERT Payload"
+  },
+  {
+    "url": "../StructureDefinition-DVCMinPreQual.openapi.json",
+    "name": ""
+  },
+  {
+    "url": "../StructureDefinition-DVCMinVaccineDetails.openapi.json",
+    "name": "DVC HCert Vaccine Details (Minimal)"
+  },
+  {
+    "url": "../StructureDefinition-DVCMinVaccineDetailsPreQual.openapi.json",
+    "name": "DVC HCERT Payload for PreQual DB"
+  },
+  {
+    "url": "../StructureDefinition-DVCPreQual.openapi.json",
+    "name": "PreQual"
+  },
+  {
+    "url": "../StructureDefinition-DVCSD.openapi.json",
+    "name": "DVC with Selective Disclosure"
+  },
+  {
+    "url": "../StructureDefinition-DVCVaccineDetails.openapi.json",
+    "name": "DVC - Vaccine Details"
+  },
+  {
+    "url": "../StructureDefinition-DVCVaccineDetailsPreQual.openapi.json",
+    "name": "PreQual - Vaccine Details"
+  },
+  {
+    "url": "../StructureDefinition-HealthLinkPayload.openapi.json",
+    "name": "Health Link Payload (DRAFT)"
+  },
+  {
+    "url": "../StructureDefinition-SMARTHealthLinkPayload.openapi.json",
+    "name": "SMART Health Link Payload (DRAFT)"
+  },
+  {
+    "url": "../StructureDefinition-SmartHealthLink.openapi.json",
+    "name": "Smart Health Link (DRAFT)"
+  },
+  {
+    "url": "../StructureDefinition-VaccineDetailsSD.openapi.json",
+    "name": "DVC Vaccine Details with Selective Disclosure"
+  },
+  {
+    "url": "../StructureDefinition-VerifiableHealthLinkPayload.openapi.json",
+    "name": "Verifiable Health Link Payload (DRAFT)"
+  }
+];
+  var ui;
+  window.onload = function() {
+    var select = document.getElementById('definition-select');
+    swaggerUrls.forEach(function(item, idx) {
+      var opt = document.createElement('option');
+      opt.value = item.url;
+      opt.textContent = item.name;
+      select.appendChild(opt);
+    });
+    ui = SwaggerUIBundle({
+      url: "../StructureDefinition-DVC.openapi.json",
+      dom_id: '#swagger-ui',
+      presets: [SwaggerUIBundle.presets.apis],
+      layout: "BaseLayout"
+    });
+  };
+  function switchDefinition(url) {
+    ui.specActions.updateUrl(url);
+    ui.specActions.download(url);
+  }
+  </script>
+
+  </body>
+</html>
