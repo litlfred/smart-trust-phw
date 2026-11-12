@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "41b3ac486d9fce87ea16aa1ab8e0a5bad9140b41",
+          "ref": "419a8743eddc988fc079f54be3f371219b69d808",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -42,9 +42,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "41b3ac486d9fce87ea16aa1ab8e0a5bad9140b41",
-              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "on": "2026-11-12",
+              "ref": "419a8743eddc988fc079f54be3f371219b69d808",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -55,7 +55,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "bdbf3b5a83c39091d2046396bb3b0caecbbd2e3c",
+          "ref": "f3bf0a902e5def280e049b76f94443d87dbb6db2",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -79,9 +79,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "bdbf3b5a83c39091d2046396bb3b0caecbbd2e3c",
-              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "on": "2026-11-12",
+              "ref": "f3bf0a902e5def280e049b76f94443d87dbb6db2",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "94b649add2d4202b6a3dbe6b6d14f4b7b28fbfa2",
+          "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -101,9 +101,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "94b649add2d4202b6a3dbe6b6d14f4b7b28fbfa2",
-              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "on": "2026-11-12",
+              "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -114,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "1035ced2fd526cfc3ddcc78c1bd2b58ebed206f0",
+          "ref": "4a1a1650bf6568865a9bcf9305f9e718a6adbc02",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -129,9 +129,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "1035ced2fd526cfc3ddcc78c1bd2b58ebed206f0",
-              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "on": "2026-11-12",
+              "ref": "4a1a1650bf6568865a9bcf9305f9e718a6adbc02",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "5ae4a75fbed7d048dbe81c57a4cdbc2f6a54a413",
+          "ref": "362c087a7b12dd39969be3ba11959a2ccb0da81e",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -157,9 +157,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "5ae4a75fbed7d048dbe81c57a4cdbc2f6a54a413",
-              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "on": "2026-11-12",
+              "ref": "362c087a7b12dd39969be3ba11959a2ccb0da81e",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 (cat-harness moved during the re-pin); Q-CONSENT-1 A, Q-WIN-1 C. Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "ca2dac8cc75d777041d75bb16af6b15b525cb0c3",
+          "ref": "1509dbb42ea29023870e51e8ade70704509d25d0",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -182,9 +182,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "ca2dac8cc75d777041d75bb16af6b15b525cb0c3",
-              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "on": "2026-11-12",
+              "ref": "1509dbb42ea29023870e51e8ade70704509d25d0",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -195,7 +195,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "fdc84b22c30ace4b9476e56fa1cac2117e5aaf0a",
+          "ref": "531a96d2adddec62c2363e125c19d6648a07fc11",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -204,9 +204,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "fdc84b22c30ace4b9476e56fa1cac2117e5aaf0a",
-              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "on": "2026-11-12",
+              "ref": "531a96d2adddec62c2363e125c19d6648a07fc11",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
@@ -217,7 +217,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "0dea4fa94b6a66706c537d4586fefdaf5e768eef",
+          "ref": "b31c5346b0b2803354423511b6d18b599b7bdc41",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -229,9 +229,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-11",
-              "ref": "0dea4fa94b6a66706c537d4586fefdaf5e768eef",
-              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "on": "2026-11-12",
+              "ref": "b31c5346b0b2803354423511b6d18b599b7bdc41",
+              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
             }
           }
         }
