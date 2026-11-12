@@ -4780,9 +4780,3 @@ msgstr ""
 msgid "YY5] / [ITI-68]"
 msgstr ""
 
-#. Source: input/images/PHW.D.svg:0
-#. URL: http://smart.who.int/trust-phw/PHW.D.svg
-#: input/images/PHW.D.svg:0
-msgid "§3)"
-msgstr ""
-
