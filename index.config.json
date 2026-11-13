@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "419a8743eddc988fc079f54be3f371219b69d808",
+          "ref": "6f578c3b3db89d80c896133935bdd294903bea83",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -42,9 +42,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-12",
-              "ref": "419a8743eddc988fc079f54be3f371219b69d808",
-              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
+              "on": "2026-11-13",
+              "ref": "6f578c3b3db89d80c896133935bdd294903bea83",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68')."
             }
           }
         }
@@ -55,7 +55,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "f3bf0a902e5def280e049b76f94443d87dbb6db2",
+          "ref": "6cc38d7a618de57a9a69f6f555c65bd95f089cc5",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -79,9 +79,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-12",
-              "ref": "f3bf0a902e5def280e049b76f94443d87dbb6db2",
-              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
+              "on": "2026-11-13",
+              "ref": "6cc38d7a618de57a9a69f6f555c65bd95f089cc5",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68')."
             }
           }
         }
@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
+          "ref": "3ef4b4fe35953bbca3777f1dd19243cfa7b8748a",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -101,9 +101,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-12",
-              "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
-              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
+              "on": "2026-11-13",
+              "ref": "3ef4b4fe35953bbca3777f1dd19243cfa7b8748a",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68')."
             }
           }
         }
@@ -114,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "4a1a1650bf6568865a9bcf9305f9e718a6adbc02",
+          "ref": "4f46ca7cd19c51efc3cf1f327e78638fdf720800",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -129,9 +129,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-12",
-              "ref": "4a1a1650bf6568865a9bcf9305f9e718a6adbc02",
-              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
+              "on": "2026-11-13",
+              "ref": "4f46ca7cd19c51efc3cf1f327e78638fdf720800",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68')."
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "362c087a7b12dd39969be3ba11959a2ccb0da81e",
+          "ref": "13ce2d92bdad8baed9d331c685f1d9273447ff3e",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -157,9 +157,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-12",
-              "ref": "362c087a7b12dd39969be3ba11959a2ccb0da81e",
-              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 (cat-harness moved during the re-pin); Q-CONSENT-1 A, Q-WIN-1 C. Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
+              "on": "2026-11-13",
+              "ref": "13ce2d92bdad8baed9d331c685f1d9273447ff3e",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68')."
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "1509dbb42ea29023870e51e8ade70704509d25d0",
+          "ref": "51d9a7796a3d5d864171ace40faff2dbe1c7e267",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -182,9 +182,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-12",
-              "ref": "1509dbb42ea29023870e51e8ade70704509d25d0",
-              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
+              "on": "2026-11-13",
+              "ref": "51d9a7796a3d5d864171ace40faff2dbe1c7e267",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68')."
             }
           }
         }
@@ -195,7 +195,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "531a96d2adddec62c2363e125c19d6648a07fc11",
+          "ref": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -204,9 +204,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-12",
-              "ref": "531a96d2adddec62c2363e125c19d6648a07fc11",
-              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
+              "on": "2026-11-13",
+              "ref": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68')."
             }
           }
         }
@@ -217,7 +217,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "b31c5346b0b2803354423511b6d18b599b7bdc41",
+          "ref": "295f0ccea3b0239c565978ce978eef807a692d52",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -229,9 +229,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-12",
-              "ref": "b31c5346b0b2803354423511b6d18b599b7bdc41",
-              "evidence": "litlfred, 2026-11-12: re-pin smart-trust-phw#60 to current mains; owner prioritised smart-trust(-*) PRs; Q-CONSENT-1 A, merge window to ~21:05Z (Q-WIN-1 C). Coordinator session session_01EucfRpkvK7d4FJyuqypQzm."
+              "on": "2026-11-13",
+              "ref": "295f0ccea3b0239c565978ce978eef807a692d52",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68')."
             }
           }
         }
