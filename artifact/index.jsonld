@@ -17,7 +17,7 @@
   "schema:numberOfItems": 106,
   "schema:hasPart": [
     {
-      "@id": "ActorDefinition-ConsentRegistry.jsonld",
+      "@id": "ActorDefinition-ConsentRegistry",
       "@type": "fhir:ActorDefinition",
       "dcterms:identifier": "ActorDefinition/ConsentRegistry",
       "dcterms:title": "Consent Registry",
@@ -25,10 +25,13 @@
       "dcterms:type": "Requirements: Actor Definitions",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ActorDefinition/ConsentRegistry"
+      },
+      "schema:contentUrl": {
+        "@id": "../ActorDefinition-ConsentRegistry.json"
       }
     },
     {
-      "@id": "ActorDefinition-Holder.jsonld",
+      "@id": "ActorDefinition-Holder",
       "@type": "fhir:ActorDefinition",
       "dcterms:identifier": "ActorDefinition/Holder",
       "dcterms:title": "Holder",
@@ -36,10 +39,13 @@
       "dcterms:type": "Requirements: Actor Definitions",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ActorDefinition/Holder"
+      },
+      "schema:contentUrl": {
+        "@id": "../ActorDefinition-Holder.json"
       }
     },
     {
-      "@id": "ActorDefinition-Issuer.jsonld",
+      "@id": "ActorDefinition-Issuer",
       "@type": "fhir:ActorDefinition",
       "dcterms:identifier": "ActorDefinition/Issuer",
       "dcterms:title": "Issuer",
@@ -47,10 +53,13 @@
       "dcterms:type": "Requirements: Actor Definitions",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ActorDefinition/Issuer"
+      },
+      "schema:contentUrl": {
+        "@id": "../ActorDefinition-Issuer.json"
       }
     },
     {
-      "@id": "ActorDefinition-Receiver.jsonld",
+      "@id": "ActorDefinition-Receiver",
       "@type": "fhir:ActorDefinition",
       "dcterms:identifier": "ActorDefinition/Receiver",
       "dcterms:title": "Receiver",
@@ -58,10 +67,13 @@
       "dcterms:type": "Requirements: Actor Definitions",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ActorDefinition/Receiver"
+      },
+      "schema:contentUrl": {
+        "@id": "../ActorDefinition-Receiver.json"
       }
     },
     {
-      "@id": "ActorDefinition-TrustNetworkAnchor.jsonld",
+      "@id": "ActorDefinition-TrustNetworkAnchor",
       "@type": "fhir:ActorDefinition",
       "dcterms:identifier": "ActorDefinition/TrustNetworkAnchor",
       "dcterms:title": "Trust Network Anchor",
@@ -69,10 +81,13 @@
       "dcterms:type": "Requirements: Actor Definitions",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkAnchor"
+      },
+      "schema:contentUrl": {
+        "@id": "../ActorDefinition-TrustNetworkAnchor.json"
       }
     },
     {
-      "@id": "ActorDefinition-TrustNetworkParticipant.jsonld",
+      "@id": "ActorDefinition-TrustNetworkParticipant",
       "@type": "fhir:ActorDefinition",
       "dcterms:identifier": "ActorDefinition/TrustNetworkParticipant",
       "dcterms:title": "Trust Network Participant",
@@ -80,10 +95,13 @@
       "dcterms:type": "Requirements: Actor Definitions",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ActorDefinition/TrustNetworkParticipant"
+      },
+      "schema:contentUrl": {
+        "@id": "../ActorDefinition-TrustNetworkParticipant.json"
       }
     },
     {
-      "@id": "Basic-DSAPermissionExample.jsonld",
+      "@id": "Basic-DSAPermissionExample",
       "@type": "fhir:Basic",
       "dcterms:identifier": "Basic/DSAPermissionExample",
       "dcterms:title": "DSAPermissionExample",
@@ -97,17 +115,23 @@
             "@id": "http://hl7.org/fhir/fhir-types"
           }
         }
-      ]
+      ],
+      "schema:contentUrl": {
+        "@id": "../Basic-DSAPermissionExample.json"
+      }
     },
     {
-      "@id": "Binary-DVCExample.jsonld",
+      "@id": "Binary-DVCExample",
       "@type": "fhir:Binary",
       "dcterms:identifier": "Binary/DVCExample",
       "dcterms:title": "DVCExample",
-      "dcterms:type": "Other"
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Binary-DVCExample.json"
+      }
     },
     {
-      "@id": "Bundle-DVCDocExample.jsonld",
+      "@id": "Bundle-DVCDocExample",
       "@type": "fhir:Bundle",
       "dcterms:identifier": "Bundle/DVCDocExample",
       "dcterms:title": "DVCDocExample",
@@ -116,10 +140,13 @@
         {
           "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle"
         }
-      ]
+      ],
+      "schema:contentUrl": {
+        "@id": "../Bundle-DVCDocExample.json"
+      }
     },
     {
-      "@id": "Bundle-DVCDocSDExample.jsonld",
+      "@id": "Bundle-DVCDocSDExample",
       "@type": "fhir:Bundle",
       "dcterms:identifier": "Bundle/DVCDocSDExample",
       "dcterms:title": "DVCDocSDExample",
@@ -128,10 +155,13 @@
         {
           "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle"
         }
-      ]
+      ],
+      "schema:contentUrl": {
+        "@id": "../Bundle-DVCDocSDExample.json"
+      }
     },
     {
-      "@id": "Bundle-LinaSummaryWithConsent.jsonld",
+      "@id": "Bundle-LinaSummaryWithConsent",
       "@type": "fhir:Bundle",
       "dcterms:identifier": "Bundle/LinaSummaryWithConsent",
       "dcterms:title": "LinaSummaryWithConsent",
@@ -140,10 +170,13 @@
         {
           "@id": "http://smart.who.int/trust-phw/StructureDefinition/PHWDocumentWithConsent"
         }
-      ]
+      ],
+      "schema:contentUrl": {
+        "@id": "../Bundle-LinaSummaryWithConsent.json"
+      }
     },
     {
-      "@id": "Consent-LinaExplicitConsent.jsonld",
+      "@id": "Consent-LinaExplicitConsent",
       "@type": "fhir:Consent",
       "dcterms:identifier": "Consent/LinaExplicitConsent",
       "dcterms:title": "LinaExplicitConsent",
@@ -152,10 +185,13 @@
         {
           "@id": "http://smart.who.int/trust-phw/StructureDefinition/PHWExplicitConsent"
         }
-      ]
+      ],
+      "schema:contentUrl": {
+        "@id": "../Consent-LinaExplicitConsent.json"
+      }
     },
     {
-      "@id": "Consent-LinaImpliedConsent.jsonld",
+      "@id": "Consent-LinaImpliedConsent",
       "@type": "fhir:Consent",
       "dcterms:identifier": "Consent/LinaImpliedConsent",
       "dcterms:title": "LinaImpliedConsent",
@@ -164,10 +200,13 @@
         {
           "@id": "http://smart.who.int/trust-phw/StructureDefinition/PHWImpliedConsent"
         }
-      ]
+      ],
+      "schema:contentUrl": {
+        "@id": "../Consent-LinaImpliedConsent.json"
+      }
     },
     {
-      "@id": "Consent-PilgrimConsentHostUse.jsonld",
+      "@id": "Consent-PilgrimConsentHostUse",
       "@type": "fhir:Consent",
       "dcterms:identifier": "Consent/PilgrimConsentHostUse",
       "dcterms:title": "PilgrimConsentHostUse",
@@ -176,10 +215,13 @@
         {
           "@id": "http://smart.who.int/trust-phw/StructureDefinition/PHWExplicitConsent"
         }
-      ]
+      ],
+      "schema:contentUrl": {
+        "@id": "../Consent-PilgrimConsentHostUse.json"
+      }
     },
     {
-      "@id": "Consent-PilgrimConsentOriginRelease.jsonld",
+      "@id": "Consent-PilgrimConsentOriginRelease",
       "@type": "fhir:Consent",
       "dcterms:identifier": "Consent/PilgrimConsentOriginRelease",
       "dcterms:title": "PilgrimConsentOriginRelease",
@@ -188,79 +230,109 @@
         {
           "@id": "http://smart.who.int/trust-phw/StructureDefinition/PHWExplicitConsent"
         }
-      ]
+      ],
+      "schema:contentUrl": {
+        "@id": "../Consent-PilgrimConsentOriginRelease.json"
+      }
     },
     {
-      "@id": "DocumentReference-LinaWalletConfirmation.jsonld",
+      "@id": "DocumentReference-LinaWalletConfirmation",
       "@type": "fhir:DocumentReference",
       "dcterms:identifier": "DocumentReference/LinaWalletConfirmation",
       "dcterms:title": "LinaWalletConfirmation",
-      "dcterms:type": "Other"
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../DocumentReference-LinaWalletConfirmation.json"
+      }
     },
     {
-      "@id": "Organization-ExampleManufacturerOrg.jsonld",
+      "@id": "Organization-ExampleManufacturerOrg",
       "@type": "fhir:Organization",
       "dcterms:identifier": "Organization/ExampleManufacturerOrg",
       "dcterms:title": "ExampleManufacturerOrg",
       "dcterms:description": "Manufacturer A",
-      "dcterms:type": "Other"
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Organization-ExampleManufacturerOrg.json"
+      }
     },
     {
-      "@id": "Organization-HomeHIE.jsonld",
+      "@id": "Organization-HomeHIE",
       "@type": "fhir:Organization",
       "dcterms:identifier": "Organization/HomeHIE",
       "dcterms:title": "HomeHIE",
       "dcterms:description": "Home Health Information Exchange (example)",
-      "dcterms:type": "Other"
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Organization-HomeHIE.json"
+      }
     },
     {
-      "@id": "Organization-HostMoHExample.jsonld",
+      "@id": "Organization-HostMoHExample",
       "@type": "fhir:Organization",
       "dcterms:identifier": "Organization/HostMoHExample",
       "dcterms:title": "HostMoHExample",
       "dcterms:description": "Ministry of Health Saudi Arabia (example)",
-      "dcterms:type": "Other"
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Organization-HostMoHExample.json"
+      }
     },
     {
-      "@id": "Organization-InstituteI.jsonld",
+      "@id": "Organization-InstituteI",
       "@type": "fhir:Organization",
       "dcterms:identifier": "Organization/InstituteI",
       "dcterms:title": "InstituteI",
       "dcterms:description": "Institute I",
-      "dcterms:type": "Other"
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Organization-InstituteI.json"
+      }
     },
     {
-      "@id": "Organization-MinistryM.jsonld",
+      "@id": "Organization-MinistryM",
       "@type": "fhir:Organization",
       "dcterms:identifier": "Organization/MinistryM",
       "dcterms:title": "MinistryM",
       "dcterms:description": "Ministry M",
-      "dcterms:type": "Other"
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Organization-MinistryM.json"
+      }
     },
     {
-      "@id": "Organization-OriginHIEExample.jsonld",
+      "@id": "Organization-OriginHIEExample",
       "@type": "fhir:Organization",
       "dcterms:identifier": "Organization/OriginHIEExample",
       "dcterms:title": "OriginHIEExample",
       "dcterms:description": "Ministry of Health Malaysia Health Information Exchange (example)",
-      "dcterms:type": "Other"
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Organization-OriginHIEExample.json"
+      }
     },
     {
-      "@id": "Patient-LinaPatient.jsonld",
+      "@id": "Patient-LinaPatient",
       "@type": "fhir:Patient",
       "dcterms:identifier": "Patient/LinaPatient",
       "dcterms:title": "LinaPatient",
-      "dcterms:type": "Other"
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Patient-LinaPatient.json"
+      }
     },
     {
-      "@id": "Patient-PilgrimExample.jsonld",
+      "@id": "Patient-PilgrimExample",
       "@type": "fhir:Patient",
       "dcterms:identifier": "Patient/PilgrimExample",
       "dcterms:title": "PilgrimExample",
-      "dcterms:type": "Other"
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Patient-PilgrimExample.json"
+      }
     },
     {
-      "@id": "Questionnaire-PreQual.jsonld",
+      "@id": "Questionnaire-PreQual",
       "@type": "fhir:Questionnaire",
       "dcterms:identifier": "Questionnaire/PreQual",
       "dcterms:title": "DVC Model Questionnaire",
@@ -268,10 +340,13 @@
       "dcterms:type": "Other",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/Questionnaire/PreQual"
+      },
+      "schema:contentUrl": {
+        "@id": "../Questionnaire-PreQual.json"
       }
     },
     {
-      "@id": "CodeSystem-DVCRelationshipStatus.jsonld",
+      "@id": "CodeSystem-DVCRelationshipStatus",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DVCRelationshipStatus",
       "dcterms:title": "Relationship Status for Contact in Patient",
@@ -279,65 +354,88 @@
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DVCRelationshipStatus.json"
       }
     },
     {
-      "@id": "CodeSystem-DVCRelationshipStatus-ar.jsonld",
+      "@id": "CodeSystem-DVCRelationshipStatus-ar",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DVCRelationshipStatus-ar",
       "dcterms:title": "حالة العلاقة بجهة الاتصال لدى المريض",
+      "schema:name": "DVCRelationshipStatusAr",
       "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز DVCRelationshipStatus: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DVCRelationshipStatus-ar.json"
       }
     },
     {
-      "@id": "CodeSystem-DVCRelationshipStatus-es.jsonld",
+      "@id": "CodeSystem-DVCRelationshipStatus-es",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DVCRelationshipStatus-es",
       "dcterms:title": "DVCRelationshipStatus (es displays, unofficial)",
+      "schema:name": "DVCRelationshipStatusEs",
       "dcterms:description": "Unofficial Spanish displays for DVCRelationshipStatus: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DVCRelationshipStatus-es.json"
       }
     },
     {
-      "@id": "CodeSystem-DVCRelationshipStatus-fr.jsonld",
+      "@id": "CodeSystem-DVCRelationshipStatus-fr",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DVCRelationshipStatus-fr",
       "dcterms:title": "DVCRelationshipStatus (fr displays, unofficial)",
+      "schema:name": "DVCRelationshipStatusFr",
       "dcterms:description": "Unofficial French displays for DVCRelationshipStatus: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DVCRelationshipStatus-fr.json"
       }
     },
     {
-      "@id": "CodeSystem-DVCRelationshipStatus-ru.jsonld",
+      "@id": "CodeSystem-DVCRelationshipStatus-ru",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DVCRelationshipStatus-ru",
       "dcterms:title": "DVCRelationshipStatus (ru displays, unofficial)",
+      "schema:name": "DVCRelationshipStatusRu",
       "dcterms:description": "Unofficial Russian displays for DVCRelationshipStatus: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DVCRelationshipStatus-ru.json"
       }
     },
     {
-      "@id": "CodeSystem-DVCRelationshipStatus-zh.jsonld",
+      "@id": "CodeSystem-DVCRelationshipStatus-zh",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DVCRelationshipStatus-zh",
       "dcterms:title": "DVCRelationshipStatus — Chinese (zh) supplement",
+      "schema:name": "DVCRelationshipStatusZh",
       "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the DVCRelationshipStatus code system, drafted by an agent and not signed off by a human.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DVCRelationshipStatus-zh.json"
       }
     },
     {
-      "@id": "CodeSystem-DisclosureStatements.jsonld",
+      "@id": "CodeSystem-DisclosureStatements",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DisclosureStatements",
       "dcterms:title": "Disclosure Statements",
@@ -345,65 +443,88 @@
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DisclosureStatements.json"
       }
     },
     {
-      "@id": "CodeSystem-DisclosureStatements-ar.jsonld",
+      "@id": "CodeSystem-DisclosureStatements-ar",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DisclosureStatements-ar",
       "dcterms:title": "بيانات الإفصاح",
+      "schema:name": "DisclosureStatementsAr",
       "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز DisclosureStatements: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DisclosureStatements-ar.json"
       }
     },
     {
-      "@id": "CodeSystem-DisclosureStatements-es.jsonld",
+      "@id": "CodeSystem-DisclosureStatements-es",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DisclosureStatements-es",
       "dcterms:title": "DisclosureStatements (es displays, unofficial)",
+      "schema:name": "DisclosureStatementsEs",
       "dcterms:description": "Unofficial Spanish displays for DisclosureStatements: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DisclosureStatements-es.json"
       }
     },
     {
-      "@id": "CodeSystem-DisclosureStatements-fr.jsonld",
+      "@id": "CodeSystem-DisclosureStatements-fr",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DisclosureStatements-fr",
       "dcterms:title": "DisclosureStatements (fr displays, unofficial)",
+      "schema:name": "DisclosureStatementsFr",
       "dcterms:description": "Unofficial French displays for DisclosureStatements: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DisclosureStatements-fr.json"
       }
     },
     {
-      "@id": "CodeSystem-DisclosureStatements-ru.jsonld",
+      "@id": "CodeSystem-DisclosureStatements-ru",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DisclosureStatements-ru",
       "dcterms:title": "DisclosureStatements (ru displays, unofficial)",
+      "schema:name": "DisclosureStatementsRu",
       "dcterms:description": "Unofficial Russian displays for DisclosureStatements: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DisclosureStatements-ru.json"
       }
     },
     {
-      "@id": "CodeSystem-DisclosureStatements-zh.jsonld",
+      "@id": "CodeSystem-DisclosureStatements-zh",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DisclosureStatements-zh",
       "dcterms:title": "DisclosureStatements — Chinese (zh) supplement",
+      "schema:name": "DisclosureStatementsZh",
       "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the DisclosureStatements code system, drafted by an agent and not signed off by a human.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DisclosureStatements-zh.json"
       }
     },
     {
-      "@id": "CodeSystem-DocumentationSections.jsonld",
+      "@id": "CodeSystem-DocumentationSections",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DocumentationSections",
       "dcterms:title": "Smart Guidelines Documentation Section",
@@ -411,208 +532,283 @@
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DocumentationSections.json"
       }
     },
     {
-      "@id": "CodeSystem-DocumentationSections-ar.jsonld",
+      "@id": "CodeSystem-DocumentationSections-ar",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DocumentationSections-ar",
       "dcterms:title": "قسم توثيق إرشادات SMART",
+      "schema:name": "DocumentationSectionsAr",
       "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز DocumentationSections: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DocumentationSections-ar.json"
       }
     },
     {
-      "@id": "CodeSystem-DocumentationSections-es.jsonld",
+      "@id": "CodeSystem-DocumentationSections-es",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DocumentationSections-es",
       "dcterms:title": "DocumentationSections (es displays, unofficial)",
+      "schema:name": "DocumentationSectionsEs",
       "dcterms:description": "Unofficial Spanish displays for DocumentationSections: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DocumentationSections-es.json"
       }
     },
     {
-      "@id": "CodeSystem-DocumentationSections-fr.jsonld",
+      "@id": "CodeSystem-DocumentationSections-fr",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DocumentationSections-fr",
       "dcterms:title": "DocumentationSections (fr displays, unofficial)",
+      "schema:name": "DocumentationSectionsFr",
       "dcterms:description": "Unofficial French displays for DocumentationSections: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DocumentationSections-fr.json"
       }
     },
     {
-      "@id": "CodeSystem-DocumentationSections-ru.jsonld",
+      "@id": "CodeSystem-DocumentationSections-ru",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DocumentationSections-ru",
       "dcterms:title": "DocumentationSections (ru displays, unofficial)",
+      "schema:name": "DocumentationSectionsRu",
       "dcterms:description": "Unofficial Russian displays for DocumentationSections: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DocumentationSections-ru.json"
       }
     },
     {
-      "@id": "CodeSystem-DocumentationSections-zh.jsonld",
+      "@id": "CodeSystem-DocumentationSections-zh",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/DocumentationSections-zh",
       "dcterms:title": "DocumentationSections — Chinese (zh) supplement",
+      "schema:name": "DocumentationSectionsZh",
       "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the DocumentationSections code system, drafted by an agent and not signed off by a human.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/DocumentationSections-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DocumentationSections-zh.json"
       }
     },
     {
-      "@id": "CodeSystem-HL-TYPE-es.jsonld",
+      "@id": "CodeSystem-HL-TYPE-es",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/HL-TYPE-es",
       "dcterms:title": "HL.TYPE (es displays, unofficial)",
+      "schema:name": "HLTYPEEs",
       "dcterms:description": "Unofficial Spanish displays for HL.TYPE: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/HL-TYPE-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-HL-TYPE-es.json"
       }
     },
     {
-      "@id": "CodeSystem-HL-TYPE-fr.jsonld",
+      "@id": "CodeSystem-HL-TYPE-fr",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/HL-TYPE-fr",
       "dcterms:title": "HL.TYPE (fr displays, unofficial)",
+      "schema:name": "HLTYPEFr",
       "dcterms:description": "Unofficial French displays for HL.TYPE: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/HL-TYPE-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-HL-TYPE-fr.json"
       }
     },
     {
-      "@id": "CodeSystem-HL-TYPE-ru.jsonld",
+      "@id": "CodeSystem-HL-TYPE-ru",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/HL-TYPE-ru",
       "dcterms:title": "HL.TYPE (ru displays, unofficial)",
+      "schema:name": "HLTYPERu",
       "dcterms:description": "Unofficial Russian displays for HL.TYPE: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/HL-TYPE-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-HL-TYPE-ru.json"
       }
     },
     {
-      "@id": "CodeSystem-HL.TYPE.jsonld",
+      "@id": "CodeSystem-HL.TYPE",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/HL.TYPE",
       "dcterms:title": "HL Type CodeSystem",
+      "schema:name": "HL_TYPE",
       "dcterms:description": "CodeSystem for Health Link Type that has codes classifying type of Smart Health Link",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-HL.TYPE.json"
       }
     },
     {
-      "@id": "CodeSystem-HL.TYPE-ar.jsonld",
+      "@id": "CodeSystem-HL.TYPE-ar",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/HL.TYPE-ar",
       "dcterms:title": "نظام رموز أنواع الروابط الصحية (HL)",
+      "schema:name": "HLTYPEAr",
       "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز HL.TYPE: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-HL.TYPE-ar.json"
       }
     },
     {
-      "@id": "CodeSystem-HL.TYPE-zh.jsonld",
+      "@id": "CodeSystem-HL.TYPE-zh",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/HL.TYPE-zh",
       "dcterms:title": "HL.TYPE — Chinese (zh) supplement",
+      "schema:name": "HLTYPEZh",
       "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the HL.TYPE code system, drafted by an agent and not signed off by a human.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/HL.TYPE-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-HL.TYPE-zh.json"
       }
     },
     {
-      "@id": "CodeSystem-ICVP-Core-es.jsonld",
+      "@id": "CodeSystem-ICVP-Core-es",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/ICVP-Core-es",
       "dcterms:title": "ICVP.Core (es displays, unofficial)",
+      "schema:name": "ICVPCoreEs",
       "dcterms:description": "Unofficial Spanish displays for ICVP.Core: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/ICVP-Core-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-ICVP-Core-es.json"
       }
     },
     {
-      "@id": "CodeSystem-ICVP-Core-fr.jsonld",
+      "@id": "CodeSystem-ICVP-Core-fr",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/ICVP-Core-fr",
       "dcterms:title": "ICVP.Core (fr displays, unofficial)",
+      "schema:name": "ICVPCoreFr",
       "dcterms:description": "Unofficial French displays for ICVP.Core: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/ICVP-Core-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-ICVP-Core-fr.json"
       }
     },
     {
-      "@id": "CodeSystem-ICVP-Core-ru.jsonld",
+      "@id": "CodeSystem-ICVP-Core-ru",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/ICVP-Core-ru",
       "dcterms:title": "ICVP.Core (ru displays, unofficial)",
+      "schema:name": "ICVPCoreRu",
       "dcterms:description": "Unofficial Russian displays for ICVP.Core: an agent translation that no person has signed off.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/ICVP-Core-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-ICVP-Core-ru.json"
       }
     },
     {
-      "@id": "CodeSystem-ICVP.Core.jsonld",
+      "@id": "CodeSystem-ICVP.Core",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/ICVP.Core",
       "dcterms:title": "ICVP.Core CodeSystem for Data Elements",
+      "schema:name": "ICVP_Core",
       "dcterms:description": "CodeSystem for ICVP.Core Data Elements from the Digital ICVP Core Data Dictionary",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-ICVP.Core.json"
       }
     },
     {
-      "@id": "CodeSystem-ICVP.Core-ar.jsonld",
+      "@id": "CodeSystem-ICVP.Core-ar",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/ICVP.Core-ar",
       "dcterms:title": "نظام الرموز ICVP.Core لعناصر البيانات",
+      "schema:name": "ICVPCoreAr",
       "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز ICVP.Core: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-ICVP.Core-ar.json"
       }
     },
     {
-      "@id": "CodeSystem-ICVP.Core-zh.jsonld",
+      "@id": "CodeSystem-ICVP.Core-zh",
       "@type": "fhir:CodeSystem",
       "dcterms:identifier": "CodeSystem/ICVP.Core-zh",
       "dcterms:title": "ICVP.Core — Chinese (zh) supplement",
+      "schema:name": "ICVPCoreZh",
       "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the ICVP.Core code system, drafted by an agent and not signed off by a human.",
       "dcterms:type": "Terminology: Code Systems",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-ICVP.Core-zh.json"
       }
     },
     {
-      "@id": "ConceptMap-ICVP.Core.ConceptMap.jsonld",
+      "@id": "ConceptMap-ICVP.Core.ConceptMap",
       "@type": "fhir:ConceptMap",
       "dcterms:identifier": "ConceptMap/ICVP.Core.ConceptMap",
       "dcterms:title": "ConceptMap to and from ICVP.Core Data Elements",
+      "schema:name": "ICVP_Core_ConceptMap",
       "dcterms:description": "Mapping to and from ICVP.Core Data Dictionary to other code systems.",
       "dcterms:type": "Terminology: Concept Maps",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ConceptMap/ICVP.Core.ConceptMap"
+      },
+      "schema:contentUrl": {
+        "@id": "../ConceptMap-ICVP.Core.ConceptMap.json"
       }
     },
     {
-      "@id": "Requirements-accept-mtls-connection.jsonld",
+      "@id": "Requirements-accept-mtls-connection",
       "@type": "fhir:Requirements",
       "dcterms:identifier": "Requirements/accept-mtls-connection",
       "dcterms:title": "Accept mTLS",
@@ -620,10 +816,13 @@
       "dcterms:type": "Requirements: Formal Requirements",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/Requirements/accept-mtls-connection"
+      },
+      "schema:contentUrl": {
+        "@id": "../Requirements-accept-mtls-connection.json"
       }
     },
     {
-      "@id": "Requirements-distribute-pki-material.jsonld",
+      "@id": "Requirements-distribute-pki-material",
       "@type": "fhir:Requirements",
       "dcterms:identifier": "Requirements/distribute-pki-material",
       "dcterms:title": "Distribute PKI material",
@@ -631,10 +830,13 @@
       "dcterms:type": "Requirements: Formal Requirements",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/Requirements/distribute-pki-material"
+      },
+      "schema:contentUrl": {
+        "@id": "../Requirements-distribute-pki-material.json"
       }
     },
     {
-      "@id": "Requirements-initiate-mtls-connection.jsonld",
+      "@id": "Requirements-initiate-mtls-connection",
       "@type": "fhir:Requirements",
       "dcterms:identifier": "Requirements/initiate-mtls-connection",
       "dcterms:title": "Initiate mTLS",
@@ -642,10 +844,13 @@
       "dcterms:type": "Requirements: Formal Requirements",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/Requirements/initiate-mtls-connection"
+      },
+      "schema:contentUrl": {
+        "@id": "../Requirements-initiate-mtls-connection.json"
       }
     },
     {
-      "@id": "Requirements-provide-a-vhl-to-a-receiver.jsonld",
+      "@id": "Requirements-provide-a-vhl-to-a-receiver",
       "@type": "fhir:Requirements",
       "dcterms:identifier": "Requirements/provide-a-vhl-to-a-receiver",
       "dcterms:title": "Provide VHL or VDHC",
@@ -653,10 +858,13 @@
       "dcterms:type": "Requirements: Formal Requirements",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/Requirements/provide-a-vhl-to-a-receiver"
+      },
+      "schema:contentUrl": {
+        "@id": "../Requirements-provide-a-vhl-to-a-receiver.json"
       }
     },
     {
-      "@id": "Requirements-publish-pki-material.jsonld",
+      "@id": "Requirements-publish-pki-material",
       "@type": "fhir:Requirements",
       "dcterms:identifier": "Requirements/publish-pki-material",
       "dcterms:title": "Publish PKI material",
@@ -664,10 +872,13 @@
       "dcterms:type": "Requirements: Formal Requirements",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/Requirements/publish-pki-material"
+      },
+      "schema:contentUrl": {
+        "@id": "../Requirements-publish-pki-material.json"
       }
     },
     {
-      "@id": "Requirements-receive-a-vhl.jsonld",
+      "@id": "Requirements-receive-a-vhl",
       "@type": "fhir:Requirements",
       "dcterms:identifier": "Requirements/receive-a-vhl",
       "dcterms:title": "Receive VHL or VDHC",
@@ -675,10 +886,13 @@
       "dcterms:type": "Requirements: Formal Requirements",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/Requirements/receive-a-vhl"
+      },
+      "schema:contentUrl": {
+        "@id": "../Requirements-receive-a-vhl.json"
       }
     },
     {
-      "@id": "Requirements-receive-pki-material.jsonld",
+      "@id": "Requirements-receive-pki-material",
       "@type": "fhir:Requirements",
       "dcterms:identifier": "Requirements/receive-pki-material",
       "dcterms:title": "Receive PKI material",
@@ -686,10 +900,13 @@
       "dcterms:type": "Requirements: Formal Requirements",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/Requirements/receive-pki-material"
+      },
+      "schema:contentUrl": {
+        "@id": "../Requirements-receive-pki-material.json"
       }
     },
     {
-      "@id": "Requirements-retrieve-pki-material.jsonld",
+      "@id": "Requirements-retrieve-pki-material",
       "@type": "fhir:Requirements",
       "dcterms:identifier": "Requirements/retrieve-pki-material",
       "dcterms:title": "Retrieve PKI material",
@@ -697,10 +914,13 @@
       "dcterms:type": "Requirements: Formal Requirements",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/Requirements/retrieve-pki-material"
+      },
+      "schema:contentUrl": {
+        "@id": "../Requirements-retrieve-pki-material.json"
       }
     },
     {
-      "@id": "StructureDefinition-Bundle-uv-ips-DVC.jsonld",
+      "@id": "StructureDefinition-Bundle-uv-ips-DVC",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/Bundle-uv-ips-DVC",
       "dcterms:title": "DVC Certificate - DVC Bundle for Digital Vaccine Certificates",
@@ -708,10 +928,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-DVC"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-Bundle-uv-ips-DVC.json"
       }
     },
     {
-      "@id": "StructureDefinition-Bundle-uv-ips-PreQual.jsonld",
+      "@id": "StructureDefinition-Bundle-uv-ips-PreQual",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/Bundle-uv-ips-PreQual",
       "dcterms:title": "DVC Certificate - IPS Bundle for WHO PreQual Databae",
@@ -719,10 +942,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-PreQual"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-Bundle-uv-ips-PreQual.json"
       }
     },
     {
-      "@id": "StructureDefinition-Composition-uv-ips-DVC.jsonld",
+      "@id": "StructureDefinition-Composition-uv-ips-DVC",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/Composition-uv-ips-DVC",
       "dcterms:title": "DVC Certificate - IPS Composition ",
@@ -730,10 +956,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-DVC"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-Composition-uv-ips-DVC.json"
       }
     },
     {
-      "@id": "StructureDefinition-Composition-uv-ips-PreQual.jsonld",
+      "@id": "StructureDefinition-Composition-uv-ips-PreQual",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/Composition-uv-ips-PreQual",
       "dcterms:title": "DVC Certificate - IPS Composition for WHO PreQual Database",
@@ -741,10 +970,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-PreQual"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-Composition-uv-ips-PreQual.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCBundle.jsonld",
+      "@id": "StructureDefinition-DVCBundle",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCBundle",
       "dcterms:title": "Digital Vaccination Certificate - Bundle",
@@ -752,10 +984,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCBundle"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCBundle.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCComposition.jsonld",
+      "@id": "StructureDefinition-DVCComposition",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCComposition",
       "dcterms:title": "Digital Vaccination Certificate - Composition",
@@ -763,10 +998,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCComposition"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCComposition.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCImmunization.jsonld",
+      "@id": "StructureDefinition-DVCImmunization",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCImmunization",
       "dcterms:title": "DVC Immunization",
@@ -774,10 +1012,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCImmunization.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCPatient.jsonld",
+      "@id": "StructureDefinition-DVCPatient",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCPatient",
       "dcterms:title": "DVC Patient",
@@ -785,10 +1026,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCPatient"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCPatient.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCSDBundle.jsonld",
+      "@id": "StructureDefinition-DVCSDBundle",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCSDBundle",
       "dcterms:title": "DVC document Bundle with Selective Disclosure",
@@ -796,10 +1040,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDBundle"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCSDBundle.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCSDComposition.jsonld",
+      "@id": "StructureDefinition-DVCSDComposition",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCSDComposition",
       "dcterms:title": "Digital Vaccination Certificate - Composition",
@@ -807,10 +1054,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDComposition"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCSDComposition.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCSDImmunization.jsonld",
+      "@id": "StructureDefinition-DVCSDImmunization",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCSDImmunization",
       "dcterms:title": "DVC Immunization with Selective Disclosure",
@@ -818,10 +1068,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDImmunization"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCSDImmunization.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCSDPatient.jsonld",
+      "@id": "StructureDefinition-DVCSDPatient",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCSDPatient",
       "dcterms:title": "DVC Patient with Selective Disclosure",
@@ -829,10 +1082,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCSDPatient"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCSDPatient.json"
       }
     },
     {
-      "@id": "StructureDefinition-Immunization-uv-ips-DVC.jsonld",
+      "@id": "StructureDefinition-Immunization-uv-ips-DVC",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/Immunization-uv-ips-DVC",
       "dcterms:title": "DVC - Profile for Digital Vaccination Cards for Immunization for IPS.  Note that no Product Catalog has been set",
@@ -840,10 +1096,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-Immunization-uv-ips-DVC.json"
       }
     },
     {
-      "@id": "StructureDefinition-Immunization-uv-ips-PreQual.jsonld",
+      "@id": "StructureDefinition-Immunization-uv-ips-PreQual",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/Immunization-uv-ips-PreQual",
       "dcterms:title": "DVC - WHO PreQual Immunization for IPS",
@@ -851,10 +1110,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-PreQual"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-Immunization-uv-ips-PreQual.json"
       }
     },
     {
-      "@id": "StructureDefinition-PHWConsent.jsonld",
+      "@id": "StructureDefinition-PHWConsent",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/PHWConsent",
       "dcterms:title": "PHW Consent",
@@ -862,10 +1124,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/PHWConsent"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-PHWConsent.json"
       }
     },
     {
-      "@id": "StructureDefinition-PHWDocumentWithConsent.jsonld",
+      "@id": "StructureDefinition-PHWDocumentWithConsent",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/PHWDocumentWithConsent",
       "dcterms:title": "IPS document that carries its consent directives",
@@ -873,10 +1138,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/PHWDocumentWithConsent"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-PHWDocumentWithConsent.json"
       }
     },
     {
-      "@id": "StructureDefinition-PHWExplicitConsent.jsonld",
+      "@id": "StructureDefinition-PHWExplicitConsent",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/PHWExplicitConsent",
       "dcterms:title": "PHW Explicit Consent",
@@ -884,10 +1152,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/PHWExplicitConsent"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-PHWExplicitConsent.json"
       }
     },
     {
-      "@id": "StructureDefinition-PHWImpliedConsent.jsonld",
+      "@id": "StructureDefinition-PHWImpliedConsent",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/PHWImpliedConsent",
       "dcterms:title": "PHW Implied Consent",
@@ -895,10 +1166,13 @@
       "dcterms:type": "Structures: Resource Profiles",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/PHWImpliedConsent"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-PHWImpliedConsent.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVC.jsonld",
+      "@id": "StructureDefinition-DVC",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVC",
       "dcterms:title": "DVC",
@@ -906,10 +1180,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVC"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVC.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCMin.jsonld",
+      "@id": "StructureDefinition-DVCMin",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCMin",
       "dcterms:title": "DVC HCERT Payload",
@@ -917,10 +1194,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCMin.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCMinPreQual.jsonld",
+      "@id": "StructureDefinition-DVCMinPreQual",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCMinPreQual",
       "dcterms:title": "DVCMinPreQual",
@@ -928,10 +1208,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinPreQual"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCMinPreQual.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCMinVaccineDetails.jsonld",
+      "@id": "StructureDefinition-DVCMinVaccineDetails",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCMinVaccineDetails",
       "dcterms:title": "DVC HCert Vaccine Details (Minimal)",
@@ -939,10 +1222,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCMinVaccineDetails.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCMinVaccineDetailsPreQual.jsonld",
+      "@id": "StructureDefinition-DVCMinVaccineDetailsPreQual",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCMinVaccineDetailsPreQual",
       "dcterms:title": "DVC HCERT Payload for PreQual DB",
@@ -950,10 +1236,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetailsPreQual"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCMinVaccineDetailsPreQual.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCPreQual.jsonld",
+      "@id": "StructureDefinition-DVCPreQual",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCPreQual",
       "dcterms:title": "PreQual",
@@ -961,10 +1250,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCPreQual"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCPreQual.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCSD.jsonld",
+      "@id": "StructureDefinition-DVCSD",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCSD",
       "dcterms:title": "DVC with Selective Disclosure",
@@ -972,10 +1264,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCSD"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCSD.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCVaccineDetails.jsonld",
+      "@id": "StructureDefinition-DVCVaccineDetails",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCVaccineDetails",
       "dcterms:title": "DVC - Vaccine Details",
@@ -983,10 +1278,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetails"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCVaccineDetails.json"
       }
     },
     {
-      "@id": "StructureDefinition-DVCVaccineDetailsPreQual.jsonld",
+      "@id": "StructureDefinition-DVCVaccineDetailsPreQual",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DVCVaccineDetailsPreQual",
       "dcterms:title": "PreQual - Vaccine Details",
@@ -994,10 +1292,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCVaccineDetailsPreQual"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DVCVaccineDetailsPreQual.json"
       }
     },
     {
-      "@id": "StructureDefinition-HealthLinkPayload.jsonld",
+      "@id": "StructureDefinition-HealthLinkPayload",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/HealthLinkPayload",
       "dcterms:title": "Health Link Payload (DRAFT)",
@@ -1005,10 +1306,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/HealthLinkPayload"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-HealthLinkPayload.json"
       }
     },
     {
-      "@id": "StructureDefinition-SMARTHealthLinkPayload.jsonld",
+      "@id": "StructureDefinition-SMARTHealthLinkPayload",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/SMARTHealthLinkPayload",
       "dcterms:title": "SMART Health Link Payload (DRAFT)",
@@ -1016,10 +1320,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/SMARTHealthLinkPayload"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-SMARTHealthLinkPayload.json"
       }
     },
     {
-      "@id": "StructureDefinition-SmartHealthLink.jsonld",
+      "@id": "StructureDefinition-SmartHealthLink",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/SmartHealthLink",
       "dcterms:title": "Smart Health Link (DRAFT)",
@@ -1027,10 +1334,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/SmartHealthLink"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-SmartHealthLink.json"
       }
     },
     {
-      "@id": "StructureDefinition-VaccineDetailsSD.jsonld",
+      "@id": "StructureDefinition-VaccineDetailsSD",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/VaccineDetailsSD",
       "dcterms:title": "DVC Vaccine Details with Selective Disclosure",
@@ -1038,10 +1348,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/VaccineDetailsSD"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-VaccineDetailsSD.json"
       }
     },
     {
-      "@id": "StructureDefinition-VerifiableHealthLinkPayload.jsonld",
+      "@id": "StructureDefinition-VerifiableHealthLinkPayload",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/VerifiableHealthLinkPayload",
       "dcterms:title": "Verifiable Health Link Payload (DRAFT)",
@@ -1049,10 +1362,13 @@
       "dcterms:type": "Structures: Logical Models",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/VerifiableHealthLinkPayload"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-VerifiableHealthLinkPayload.json"
       }
     },
     {
-      "@id": "StructureDefinition-DoseNumberCodeableConcept.jsonld",
+      "@id": "StructureDefinition-DoseNumberCodeableConcept",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/DoseNumberCodeableConcept",
       "dcterms:title": "DoseNumberCodeableConcept",
@@ -1060,10 +1376,13 @@
       "dcterms:type": "Structures: Extension Definitions",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/DoseNumberCodeableConcept"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-DoseNumberCodeableConcept.json"
       }
     },
     {
-      "@id": "StructureDefinition-SGActorExt.jsonld",
+      "@id": "StructureDefinition-SGActorExt",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/SGActorExt",
       "dcterms:title": "SGActorExt",
@@ -1071,10 +1390,13 @@
       "dcterms:type": "Structures: Extension Definitions",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/SGActorExt"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-SGActorExt.json"
       }
     },
     {
-      "@id": "StructureDefinition-SelectiveDisclosure.jsonld",
+      "@id": "StructureDefinition-SelectiveDisclosure",
       "@type": "fhir:StructureDefinition",
       "dcterms:identifier": "StructureDefinition/SelectiveDisclosure",
       "dcterms:title": "SelectiveDisclosure",
@@ -1082,10 +1404,13 @@
       "dcterms:type": "Structures: Extension Definitions",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-SelectiveDisclosure.json"
       }
     },
     {
-      "@id": "ValueSet-DVCRelationshipStatus.jsonld",
+      "@id": "ValueSet-DVCRelationshipStatus",
       "@type": "fhir:ValueSet",
       "dcterms:identifier": "ValueSet/DVCRelationshipStatus",
       "dcterms:title": "Relationship Status for Contact in Patient",
@@ -1093,10 +1418,13 @@
       "dcterms:type": "Terminology: Value Sets",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-DVCRelationshipStatus.json"
       }
     },
     {
-      "@id": "ValueSet-DVCVaccines.jsonld",
+      "@id": "ValueSet-DVCVaccines",
       "@type": "fhir:ValueSet",
       "dcterms:identifier": "ValueSet/DVCVaccines",
       "dcterms:title": "DVC - Vaccines",
@@ -1104,10 +1432,13 @@
       "dcterms:type": "Terminology: Value Sets",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ValueSet/DVCVaccines"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-DVCVaccines.json"
       }
     },
     {
-      "@id": "ValueSet-DisclosureStatements.jsonld",
+      "@id": "ValueSet-DisclosureStatements",
       "@type": "fhir:ValueSet",
       "dcterms:identifier": "ValueSet/DisclosureStatements",
       "dcterms:title": "Disclosure Statements",
@@ -1115,21 +1446,28 @@
       "dcterms:type": "Terminology: Value Sets",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ValueSet/DisclosureStatements"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-DisclosureStatements.json"
       }
     },
     {
-      "@id": "ValueSet-HL.TYPE.jsonld",
+      "@id": "ValueSet-HL.TYPE",
       "@type": "fhir:ValueSet",
       "dcterms:identifier": "ValueSet/HL.TYPE",
       "dcterms:title": "HL.TYPE ValueSet ",
+      "schema:name": "HL_TYPE",
       "dcterms:description": "ValueSet of HL Type Codes",
       "dcterms:type": "Terminology: Value Sets",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ValueSet/HL.TYPE"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-HL.TYPE.json"
       }
     },
     {
-      "@id": "ValueSet-PHWExplicitConsentKind.jsonld",
+      "@id": "ValueSet-PHWExplicitConsentKind",
       "@type": "fhir:ValueSet",
       "dcterms:identifier": "ValueSet/PHWExplicitConsentKind",
       "dcterms:title": "Kinds of explicit consent (HL7 ActConsentDirective)",
@@ -1137,10 +1475,13 @@
       "dcterms:type": "Terminology: Value Sets",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ValueSet/PHWExplicitConsentKind"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-PHWExplicitConsentKind.json"
       }
     },
     {
-      "@id": "ValueSet-PHWImpliedConsentKind.jsonld",
+      "@id": "ValueSet-PHWImpliedConsentKind",
       "@type": "fhir:ValueSet",
       "dcterms:identifier": "ValueSet/PHWImpliedConsentKind",
       "dcterms:title": "Kinds of implied consent (HL7 ActConsentDirective)",
@@ -1148,16 +1489,23 @@
       "dcterms:type": "Terminology: Value Sets",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ValueSet/PHWImpliedConsentKind"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-PHWImpliedConsentKind.json"
       }
     },
     {
-      "@id": "ImplementationGuide-smart.who.int.trust-phw.jsonld",
+      "@id": "ImplementationGuide-smart.who.int.trust-phw",
       "@type": "fhir:ImplementationGuide",
       "dcterms:identifier": "ImplementationGuide/smart.who.int.trust-phw",
       "dcterms:title": "GDHCN Trust Network - Personal Health Wallet",
+      "schema:name": "trust-phw",
       "dcterms:description": "Describes common workflows and specifications for usage of personal health wallets on the WHO GDHCN Trust Network",
       "schema:sameAs": {
         "@id": "http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw"
+      },
+      "schema:contentUrl": {
+        "@id": "../ImplementationGuide-smart.who.int.trust-phw.json"
       }
     }
   ]

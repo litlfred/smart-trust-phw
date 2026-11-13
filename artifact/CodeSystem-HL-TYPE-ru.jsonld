@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "CodeSystem-HL-TYPE-ru.jsonld",
+  "@id": "CodeSystem-HL-TYPE-ru",
   "@type": "fhir:CodeSystem",
   "dcterms:identifier": "CodeSystem/HL-TYPE-ru",
   "schema:name": "HLTYPERu",
@@ -22,16 +22,24 @@
     {
       "@type": "schema:MediaObject",
       "schema:contentUrl": {
-        "@id": "../ast-data/resources/CodeSystem/HL-TYPE-ru--6db5ac1c.json"
+        "@id": "../CodeSystem-HL-TYPE-ru.json"
       },
       "schema:encodingFormat": "application/fhir+json",
       "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/623054de170a5013a5b5d84527a7822cb8d9a3c6/resources/CodeSystem/HL-TYPE-ru.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
     }
   ],
   "prov:wasGeneratedBy": {
     "@type": "prov:Activity",
     "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
-    "prov:used": "326fe21fae55cc6349697cba1233ea817d7dd741"
+    "prov:used": "7ced3cd639ff427f20fe0106cb09b2f724bdbc79"
   },
   "dcterms:isPartOf": {
     "@type": "fhir:ImplementationGuide",

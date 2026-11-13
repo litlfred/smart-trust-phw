@@ -1,0 +1,66 @@
+{
+ "$schema": "site-link-report/v1",
+ "pages": 510,
+ "unresolved": [],
+ "selfAddress": [],
+ "content": [
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "favicon.ico"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "main.dd0ec5f4ab3ef14c.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "polyfills.741ec81967e9c9c3.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "runtime.821ff28674267dd4.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "scripts.5c83cbb4dbb11a83.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "styles.29b9bdb6e634f66b.css"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "webcomponents/webcomponents-loader.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "favicon.ico"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "main.dd0ec5f4ab3ef14c.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "polyfills.741ec81967e9c9c3.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "runtime.821ff28674267dd4.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "scripts.5c83cbb4dbb11a83.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "styles.29b9bdb6e634f66b.css"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "webcomponents/webcomponents-loader.js"
+  }
+ ],
+ "diagrams": 35,
+ "inDiagrams": []
+}

@@ -26,5 +26,5 @@
   "fhir:displays": "http://smart.who.int/trust-phw/ValueSet-DVCRelationshipStatus.displays.json",
   "fhir:valueSet": "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus",
   "fhir:version": "0.2.0-litlfred",
-  "fhir:expansionTimestamp": "2026-11-10T20:00:37+00:00"
+  "fhir:expansionTimestamp": "2026-11-13T17:41:40+00:00"
 }

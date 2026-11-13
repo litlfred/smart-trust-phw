@@ -829,7 +829,10 @@
     "html.fa-bp .main-content .anchor-heading{right:-3rem;width:2.25rem;padding:0 .375rem}" +
     "html.fa-bp .main-content .anchor-heading svg{width:1.5rem;height:1.5rem}" +
     "html.fa-bp .main-content .block-actions{width:2.25rem;margin-right:-4rem}" +
-    "html.fa-bp .main-content .fa-sec-actions{right:-3rem}" +
+    // A section box is placed by its right offset, not by the margin above, so it
+    // must not pick up that -4rem margin too: with both, it sat 7rem past the
+    // text and off the right edge of the window (smart-trust-demo, 11-11).
+    "html.fa-bp .main-content .fa-sec-actions{right:-3rem;margin:0}" +
     "html.fa-bp .fa-page-main.main-content:has(>.fa-sec-actions){margin-right:3.25rem}" +
     "html.fa-bp .block-actions>.ba-trigger,html.fa-bp .block-actions>.ba-bookmark{width:30px;height:30px;font-size:20px}" +
     "html.fa-bp .block-actions>.ba-trigger .ba-n{top:-5px;right:-8px;font-size:12px;padding:0 4px}}" +
@@ -1213,15 +1216,3 @@
       if (a && a.dataset.faLink === "suggest") editorBundle().catch(() => {});
     }, { passive: true });
 })();
-(function(){var d=document.getElementById("ig-source-lines");if(!d)return;var m;try{m=JSON.parse(d.textContent)}catch(e){return}
-var repo=(m.blob.match(/^https:\/\/github\.com\/[^/]+\/[^/]+/)||[])[0];
-var n=function(s){return s.toLowerCase().replace(/[^a-z0-9]+/g," ").trim()};var used={};
-var link=function(h,cls,href,title,glyph){var a=document.createElement("a");a.className=cls;a.href=href;a.title=title;a.textContent=glyph;a.rel="noopener";a.target="_blank";h.appendChild(document.createTextNode(" "));h.appendChild(a)};
-document.querySelectorAll("#main-content h1,#main-content h2,#main-content h3,#main-content h4,#main-content h5,#main-content h6").forEach(function(h){
-var text=h.textContent.trim(),k=n(text),line,file;for(var i=0;i<m.lines.length;i++){if(!used[i]&&n(m.lines[i].t)===k){used[i]=1;line=m.lines[i].l;file=m.lines[i].b;break}}
-var src=line?(file||m.blob)+"#L"+line:m.blob;
-if(line)link(h,"ig-src",src,"This section's source, line "+line+", on GitHub","\u270E");
-if(repo){var here=location.href.split("#")[0]+(h.id?"#"+h.id:"");
-var pt=document.title.split(" | ")[0].trim();
-var body="**Page:** "+here+"\n**Section:** "+text+(h.id?" (#"+h.id+")":"")+"\n**Source:** "+src+"\n\n**Feedback:**\n\n";
-link(h,"ig-feedback",repo+"/issues/new?title="+encodeURIComponent("Feedback on \u201C"+text+"\u201D"+(pt&&n(pt)!==k?" (page: "+pt+")":""))+"&body="+encodeURIComponent(body),"Give feedback on this section (opens a GitHub issue)","\uD83D\uDCE3")}})})();
