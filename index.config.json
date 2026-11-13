@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "6f578c3b3db89d80c896133935bdd294903bea83",
+          "ref": "79e67d427f7dfd411ee702912ec5df42c5249c76",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -43,8 +43,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "6f578c3b3db89d80c896133935bdd294903bea83",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68')."
+              "ref": "79e67d427f7dfd411ee702912ec5df42c5249c76",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
             }
           }
         }
@@ -55,7 +55,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "6cc38d7a618de57a9a69f6f555c65bd95f089cc5",
+          "ref": "00200f9832645a0d942c19e12593d751bfbede6e",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -80,8 +80,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "6cc38d7a618de57a9a69f6f555c65bd95f089cc5",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68')."
+              "ref": "00200f9832645a0d942c19e12593d751bfbede6e",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
             }
           }
         }
@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "3ef4b4fe35953bbca3777f1dd19243cfa7b8748a",
+          "ref": "c25c0d92363c8d5c84334335de4636777f6b9d39",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -102,8 +102,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "3ef4b4fe35953bbca3777f1dd19243cfa7b8748a",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68')."
+              "ref": "c25c0d92363c8d5c84334335de4636777f6b9d39",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
             }
           }
         }
@@ -114,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "cb77a096cc22e00cdb6ea172d0ff6a4eb485187b",
+          "ref": "5ee67091fcfc45f05cf53e7de1262988e5ae394e",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -130,8 +130,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "cb77a096cc22e00cdb6ea172d0ff6a4eb485187b",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84); refreshed after two mains moved. Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68', 'mark ready for merge whats green')."
+              "ref": "5ee67091fcfc45f05cf53e7de1262988e5ae394e",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "c9c951af360c5b9c68a931b2e8346967d6689863",
+          "ref": "21c29a7e3a2192baa47ee957430b8d4d76e6f7a9",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -158,8 +158,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "c9c951af360c5b9c68a931b2e8346967d6689863",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84); refreshed as mains moved. Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68', 'work todo')."
+              "ref": "21c29a7e3a2192baa47ee957430b8d4d76e6f7a9",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "81e814758dad9f92e962ea5a52f6568dd0c0c1a3",
+          "ref": "c55f2f2b1755e2e7ec12fcaa56f72dfcc5d65283",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -183,8 +183,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "81e814758dad9f92e962ea5a52f6568dd0c0c1a3",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84); refreshed as mains moved. Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68', 'work todo')."
+              "ref": "c55f2f2b1755e2e7ec12fcaa56f72dfcc5d65283",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
             }
           }
         }
@@ -217,7 +217,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "295f0ccea3b0239c565978ce978eef807a692d52",
+          "ref": "c51ad489aa42e1f6ce9cd18208eef1b5e286f502",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -230,8 +230,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "295f0ccea3b0239c565978ce978eef807a692d52",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68')."
+              "ref": "c51ad489aa42e1f6ce9cd18208eef1b5e286f502",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
             }
           }
         }
