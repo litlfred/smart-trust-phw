@@ -3063,7 +3063,7 @@ msgstr "<a0>الشخصيات الافتراضية العامة</a0>: الأشخ�
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
 #: input/pagecontent/business-requirements.md:7
 msgid "<a0>Worked Example: IPS Pilgrimage (Hajj)</a0>: processes A, B, C, F and I applied to one case."
-msgstr ""
+msgstr "<a0>مثال تطبيقي: الحج باستخدام IPS</a0>: العمليات A وB وC وF وI مطبَّقة على حالة واحدة."
 
 #. Source: input/pagecontent/business-requirements.md:1
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
