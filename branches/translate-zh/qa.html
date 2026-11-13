@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" dir="/">
+<head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QA Report — GDHCN Trust Network - Personal Health Wallet</title>
+<link rel="canonical" href="./qa.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23276749'/%3E%3C/svg%3E">
+<meta name="folio-navbar" content="linked">
+<meta name="fa-visualiser-label" content="GDHCN Trust Network - Personal Health Wallet">
+<link rel="stylesheet" href="./assets/page-layout.css" data-fa-page-layout>
+<script src="./assets/page-layout.js" defer data-fa-page-layout></script>
+<link rel="stylesheet" href="./assets/ig-artifact.css">
+<link rel="stylesheet" href="./assets/css/docs-ui.css" data-fa-folio-mount>
+<script src="./assets/navbar/row-2acuhncsmbg.js" defer></script><script src="./assets/js/docs-ui.js" defer data-fa-folio-mount></script>
+<script type="application/json" id="fa-translation-meta">{"lang":"en","translationStatus":"","translationSource":"","supportedLocales":["ar","zh","en","fr","ru","es"],"availableLocales":[]}</script><link rel="stylesheet" href="./assets/css/navbar.css"><script src="./assets/navbar/rail-13lmt0dczej.js" defer></script><script src="./assets/js/navbar.js" defer></script><link rel="stylesheet" href="./assets/css/navbar-row.css"><script src="./assets/js/navbar-row.js" defer></script><meta name="fa-pinned-data" content="."></head>
+<body><div data-fa-staging-banner lang="en" dir="ltr" style="background:#4F6F52;color:#fff;padding:8px 16px;font-size:14px;text-align:center;position:fixed;top:0;left:0;right:0;box-sizing:border-box;z-index:2147483001;font-family:system-ui">🔀 <b>FEATURE BRANCH</b> <span data-fa-staging-detail>— loading build details…</span></div><style>:root{--fa-staging-offset:0px}body{margin:0}.side-bar,.fa-nav{top:var(--fa-staging-offset,0px)!important}html{padding-top:var(--fa-staging-offset,0px)}</style><script>(function(){
+var b=document.querySelector('[data-fa-staging-banner]'),d=document.querySelector('[data-fa-staging-detail]');
+if(b)document.documentElement.style.setProperty('--fa-staging-offset',b.getBoundingClientRect().height+'px');
+var m=location.pathname.match(/^(.*\/(?:branches|STAGING)\/[^/]+\/)/);
+if(!m){if(d)d.textContent='\u2014 build details unavailable (not served from a preview path)';return;}
+var s=document.createElement('script');s.src=m[1]+'staging-banner.js';
+s.onerror=function(){if(d)d.textContent='\u2014 build details unavailable';};
+(document.head||document.documentElement).appendChild(s);
+})();</script><script type="application/json" id="fa-navbar-row" data-fa-root="." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root=".">{"data":"rail-13lmt0dczej","here":"/qa.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="./">GDHCN Trust Network - Personal Health Wallet</a></nav>
+
+<div class="ig-topbar fa-page-bar" role="navigation" aria-label="GDHCN Trust Network - Personal Health Wallet menu"><a class="ig-topbar-home" href="./index.html">GDHCN Trust Network - Personal Health Wallet</a><details class="ig-topbar-group"><summary>Home</summary><ul><li><a href="./index.html">Summary</a></li><li><a href="./changes.html">Changes</a></li><li><a href="./dependencies.html">Dependencies</a></li><li><a href="https://litlfred.github.io/folio-assistant/en/folio-assistant-core/bibliography/">Bibliography</a></li><li><a href="./adapting.html">Adapting Guidelines for Country use</a></li></ul></details><details class="ig-topbar-group"><summary>Business Requirements</summary><ul><li><a href="./concepts.html">Concepts</a></li><li><a href="./personas.html">Generic Personas</a></li><li><a href="./consent.html">Consent</a></li><li><a href="./business-processes.html">Business Processes</a></li><li><a href="./example-pilgrimage.html">Worked Example: IPS Pilgrimage (Hajj)</a></li><li><a href="./decision-logic.html">Decision-support Logic</a></li></ul></details><details class="ig-topbar-group"><summary>Data Models and Exchange</summary><ul><li><a href="./system-actors.html">System Actors</a></li><li><a href="./sequence-diagrams.html">Sequence Diagrams</a></li><li><a href="./transactions.html">Transactions</a></li><li><a href="./codings.html">Codings</a></li></ul></details><details class="ig-topbar-group"><summary>Deployment</summary><ul><li><a href="./security-privacy.html">Security and Privacy Considerations</a></li><li><a href="./testing.html">Testing</a></li><li><a href="./reference-implementations.html">Reference Implementations</a></li><li><a href="./downloads.html">Downloads</a></li></ul></details><details class="ig-topbar-group"><summary>Indices</summary><ul><li><a href="./artifacts.html">Artifact Index</a></li></ul></details><form class="ig-search" role="search" data-ig-search-index="./assets/ig-search.json"><label class="ig-search-label" for="search-input">Search GDHCN Trust Network - Personal Health Wallet</label><input type="search" id="search-input" class="ig-search-input" placeholder="Search pages and artefacts" autocomplete="off" aria-controls="ig-search-results" aria-expanded="false"><ul id="ig-search-results" class="ig-search-results" hidden></ul></form><span class="ig-locale-slot" data-fa-slot="locale"></span><script src="./assets/ig-search.js" defer></script></div>
+<main class="ig-main main-content fa-page-main" id="main-content">
+<p><span hidden="" data-fa-figure-images="ig"></span></p>
+
+<h1 id="qa-report">QA Report</h1>
+
+<p>Two halves: the FHIR QA of this implementation guide, and the knowledge graph’s QA, the harness’s checks over the instances this site is built from. A finding is a gap a check reports, not a failure of the build.</p>
+
+<h2 id="fhir-qa">FHIR QA</h2>
+
+<h3 id="ig-publisher">IG Publisher</h3>
+
+<p>The Publisher’s own QA summary for the run this AST came from (IG Publisher 6.0.0-snapshot1 (3), FHIR 4.0.1, on Fri, 13 Nov, 2026 17:39:29 +0000). <a href="assets/fhir-qa/qa.json">Summary (JSON)</a></p>
+
+<p>Every message the Publisher reported, laid out as its own <code class="language-plaintext highlighter-rouge">qa.html</code> lays them out. <a href="assets/fhir-qa/qa-messages.json">Messages (JSON)</a></p>
+
+<div class="ig-qa-publisher" data-summary="assets/fhir-qa/qa.json" data-messages="assets/fhir-qa/qa-messages.json" data-pages="assets/ast-pages.json" data-artifacts="artifact/" data-source="https://github.com/litlfred/smart-trust-phw/blob/7ced3cd639ff427f20fe0106cb09b2f724bdbc79/"><p>Loading the Publisher's messages…</p><noscript><p>The messages are drawn in the browser; without JavaScript, read the JSON above.</p></noscript></div>
+<script src="assets/fhir-qa/qa-messages.js"></script>
+
+<h3 id="the-igs-ast">The IG’s AST</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>field</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>generated</td>
+      <td><code class="language-plaintext highlighter-rouge">2026-11-13T17:43:45.231597360Z</code></td>
+    </tr>
+    <tr>
+      <td>authority</td>
+      <td><code class="language-plaintext highlighter-rouge">cache</code></td>
+    </tr>
+    <tr>
+      <td>publisher</td>
+      <td><code class="language-plaintext highlighter-rouge">3.0.0</code></td>
+    </tr>
+    <tr>
+      <td>core</td>
+      <td><code class="language-plaintext highlighter-rouge">7.0.1</code></td>
+    </tr>
+    <tr>
+      <td>sushi</td>
+      <td><code class="language-plaintext highlighter-rouge">SUSHI v3.21.0 (implements FHIR Shorthand specification v3.0.0)</code></td>
+    </tr>
+    <tr>
+      <td>java</td>
+      <td><code class="language-plaintext highlighter-rouge">17.0.21</code></td>
+    </tr>
+    <tr>
+      <td>resources</td>
+      <td>106</td>
+    </tr>
+    <tr>
+      <td>provisional</td>
+      <td><code class="language-plaintext highlighter-rouge">indices</code>, <code class="language-plaintext highlighter-rouge">dependencies</code>, <code class="language-plaintext highlighter-rouge">versions</code>, until a full IG Publisher run</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Validity for this checkout:</strong> <code class="language-plaintext highlighter-rouge">valid</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>recorded in the AST</th>
+      <th>this checkout</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>toolchain</td>
+      <td><code class="language-plaintext highlighter-rouge">ig-publisher 3.0.0 / core 7.0.1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ig-publisher 3.0.0 / core 7.0.1</code></td>
+    </tr>
+    <tr>
+      <td>sourceRevision</td>
+      <td><code class="language-plaintext highlighter-rouge">7ced3cd639ff427f20fe0106cb09b2f724bdbc79</code></td>
+      <td><code class="language-plaintext highlighter-rouge">7ced3cd639ff427f20fe0106cb09b2f724bdbc79</code></td>
+    </tr>
+    <tr>
+      <td>inputDigest</td>
+      <td><code class="language-plaintext highlighter-rouge">faec621744bf24292c304b6b4ff0f15d341eefb842fd2c8f569835e1634bd060</code></td>
+      <td><code class="language-plaintext highlighter-rouge">faec621744bf24292c304b6b4ff0f15d341eefb842fd2c8f569835e1634bd060</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="markdown-rendering">Markdown rendering</h3>
+
+<p>Each markdown field the artefact pages draw (<code class="language-plaintext highlighter-rouge">description</code>, <code class="language-plaintext highlighter-rouge">definition</code>, <code class="language-plaintext highlighter-rouge">comment</code>, <code class="language-plaintext highlighter-rouge">requirements</code>, <code class="language-plaintext highlighter-rouge">valueMarkdown</code>), drawn by the pages’ own renderer, checked for markup left as plain text. 107 resource(s) scanned.</p>
+
+<p><strong>Findings:</strong> 11 field(s) show markup as text.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>resource</th>
+      <th>field</th>
+      <th>left as text</th>
+      <th>starts with</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">StructureDefinition/Composition-uv-ips-DVC</code></td>
+      <td><code class="language-plaintext highlighter-rouge">snapshot.element[68].definition</code></td>
+      <td>list marker</td>
+      <td>The medication summary section contains a description of the patient’s medicatio</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">StructureDefinition/Composition-uv-ips-DVC</code></td>
+      <td><code class="language-plaintext highlighter-rouge">snapshot.element[117].definition</code></td>
+      <td>list marker</td>
+      <td>The History of Procedures Section contains a description of the patient past pro</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">StructureDefinition/Composition-uv-ips-DVC</code></td>
+      <td><code class="language-plaintext highlighter-rouge">snapshot.element[129].definition</code></td>
+      <td>list marker</td>
+      <td>It lists the patient past procedures that are pertinent to the scope of this doc</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">StructureDefinition/Immunization-uv-ips-DVC</code></td>
+      <td><code class="language-plaintext highlighter-rouge">snapshot.element[13].definition</code></td>
+      <td>list marker</td>
+      <td>Vaccine that was administered or was to be administered. Several kinds of vaccin</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">StructureDefinition/Composition-uv-ips-PreQual</code></td>
+      <td><code class="language-plaintext highlighter-rouge">snapshot.element[68].definition</code></td>
+      <td>list marker</td>
+      <td>The medication summary section contains a description of the patient’s medicatio</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">StructureDefinition/Composition-uv-ips-PreQual</code></td>
+      <td><code class="language-plaintext highlighter-rouge">snapshot.element[117].definition</code></td>
+      <td>list marker</td>
+      <td>The History of Procedures Section contains a description of the patient past pro</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">StructureDefinition/Composition-uv-ips-PreQual</code></td>
+      <td><code class="language-plaintext highlighter-rouge">snapshot.element[129].definition</code></td>
+      <td>list marker</td>
+      <td>It lists the patient past procedures that are pertinent to the scope of this doc</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">StructureDefinition/DVCSDPatient</code></td>
+      <td><code class="language-plaintext highlighter-rouge">snapshot.element[10].comment</code></td>
+      <td>HTML tag</td>
+      <td>The contents of the html element are an XHTML fragment containing only the basic</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">StructureDefinition/DVCSDImmunization</code></td>
+      <td><code class="language-plaintext highlighter-rouge">snapshot.element[10].comment</code></td>
+      <td>HTML tag</td>
+      <td>The contents of the html element are an XHTML fragment containing only the basic</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">StructureDefinition/DVCSDComposition</code></td>
+      <td><code class="language-plaintext highlighter-rouge">snapshot.element[10].comment</code></td>
+      <td>HTML tag</td>
+      <td>The contents of the html element are an XHTML fragment containing only the basic</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">StructureDefinition/Immunization-uv-ips-PreQual</code></td>
+      <td><code class="language-plaintext highlighter-rouge">snapshot.element[13].definition</code></td>
+      <td>list marker</td>
+      <td>Vaccine that was administered or was to be administered. Several kinds of vaccin</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="page-scan">Page scan</h3>
+
+<p>Every page of this site opened in a headless browser after the build, and its text checked for markup shown as text. <a href="assets/fhir-qa/page-render.json">Results (JSON)</a></p>
+
+<div class="ig-qa-render" data-src="assets/fhir-qa/page-render.json" data-root=""><p>Loading the page scan…</p><noscript><p>The results are drawn in the browser; without JavaScript, read the JSON above.</p></noscript></div>
+<script src="assets/fhir-qa/page-render.js" defer=""></script>
+
+<h3 id="injection-scan">Injection scan</h3>
+
+<p>Every resource narrative, markdown field and IG page this site publishes (10041 text(s)) is checked for injection attempts before publication: a pattern scan, and an agent’s review kept in the IG’s <code class="language-plaintext highlighter-rouge">qa/ig-content-qa.json</code>. The browser checks each narrative again before drawing it. <a href="assets/fhir-qa/ig-content-qa.json">Verdict (JSON)</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>field</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>state</td>
+      <td>reviewed, no pattern hit and no open finding</td>
+    </tr>
+    <tr>
+      <td>content</td>
+      <td><code class="language-plaintext highlighter-rouge">sha256:3c64d8b9b5becbf1cc0d0b9ebcff56339ec736328de6852a29006805470da13f</code></td>
+    </tr>
+    <tr>
+      <td>reviewed</td>
+      <td><code class="language-plaintext highlighter-rouge">sha256:3c64d8b9b5becbf1cc0d0b9ebcff56339ec736328de6852a29006805470da13f</code> by agent <code class="language-plaintext highlighter-rouge">Claude</code> at <code class="language-plaintext highlighter-rouge">2026-11-12T13:08:38.967Z</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="knowledge-graph-qa">Knowledge-graph QA</h2>
+
+<p>The harness’s checks over the knowledge graph, as each instance recorded them. <a href="en/cat-harness/qa/">Every instance’s QA</a> is the harness’s own view of the same graph.</p>
+
+<p>An instance with no records in this checkout keeps them on its own QA store, keyed by commit; its view says what that store holds.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>instance</th>
+      <th>records</th>
+      <th>findings</th>
+      <th>view</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">smart-trust-phw</code></td>
+      <td>declares no <code class="language-plaintext highlighter-rouge">qa</code> directory</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cat-harness</code></td>
+      <td>none in this checkout</td>
+      <td>—</td>
+      <td><a href="https://litlfred.github.io/folio-assistant/en/cat-harness/qa/cat-harness/">cat-harness</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fhir-harness</code></td>
+      <td>none in this checkout</td>
+      <td>—</td>
+      <td><a href="https://litlfred.github.io/folio-assistant/en/cat-harness/qa/fhir-harness/">fhir-harness</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">folio-assistant-core</code></td>
+      <td>none in this checkout</td>
+      <td>—</td>
+      <td><a href="https://litlfred.github.io/folio-assistant/en/cat-harness/qa/folio-assistant-core/">folio-assistant-core</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">smart-base</code></td>
+      <td>none in this checkout</td>
+      <td>—</td>
+      <td><a href="https://litlfred.github.io/folio-assistant/en/cat-harness/qa/smart-base/">smart-base</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">who-iris</code></td>
+      <td>none in this checkout</td>
+      <td>—</td>
+      <td><a href="https://litlfred.github.io/folio-assistant/en/cat-harness/qa/who-iris/">who-iris</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<script>(function(){
+var f=document.querySelector("#main-content .pt-diagram[data-panel]");
+if(!f||window.__igTaskPanel)return;
+var p=f.getAttribute("data-panel")||"";
+if(!/^[A-Za-z0-9._-][A-Za-z0-9._/-]*[.]tasks[.]json$/.test(p)||p.indexOf("//")>=0)return;
+window.__igTaskPanel=1;
+var dir=p.replace(/[^/]*$/,"");
+var l=document.createElement("link");l.rel="stylesheet";l.href=dir+"task-panel.css";document.head.appendChild(l);
+var s=document.createElement("script");s.src=dir+"task-panel.js";document.body.appendChild(s);
+})();</script>
+<script>(function(){
+var main=document.getElementById("main-content");
+if(!main||main.querySelector(".igi-contents"))return;
+var hs=Array.prototype.filter.call(main.querySelectorAll("h2"),function(h){return !h.closest(".igi-contents,#ig-footer,.ig-edit")&&h.textContent.trim();});
+if(hs.length<2)return;
+var used={};
+function slug(t){var b=t.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"section",s=b,i=1;while(used[s]||document.getElementById(s))s=b+"-"+(++i);used[s]=1;return s;}
+var nav=document.createElement("nav");nav.className="igi-contents";nav.setAttribute("aria-label","Contents");
+var t=document.createElement("p");t.className="igi-contents-title";t.textContent="Contents";nav.appendChild(t);
+var ul=document.createElement("ul");
+hs.forEach(function(h){if(!h.id)h.id=slug(h.textContent);var li=document.createElement("li"),a=document.createElement("a");a.href="#"+h.id;
+var c=h.cloneNode(true);Array.prototype.forEach.call(c.querySelectorAll(".anchor-heading,.fa-sec-box,svg,button"),function(n){n.remove();});
+a.textContent=c.textContent.replace(/\s+/g," ").trim();li.appendChild(a);ul.appendChild(li);});
+nav.appendChild(ul);
+var h1=main.querySelector("h1");
+if(h1&&h1.parentNode===main)h1.insertAdjacentElement("afterend",nav);else main.insertBefore(nav,main.firstChild);
+})();</script>
+</main>
+<link rel="stylesheet" href="assets/ig-pages.css">
+<footer id="ig-footer">
+<p class="ig-footer-nav"><a href="#">top</a></p>
+<p class="ig-footer-band">IG © 2023+ <a href="http://who.int" rel="external">WHO</a>. Package <code>smart.who.int.trust-phw#0.2.0-litlfred</code> based on <a href="http://hl7.org/fhir/R4/" rel="external">FHIR 4.0.1</a>. Generated 2026-11-13</p>
+<p class="ig-footer-links">Links: <a href="toc.html">Table of Contents</a> | <a href="qa.html">QA Report</a> | <a href="https://spdx.org/licenses/CC-BY-SA-3.0-IGO.html" rel="external">License</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,467 @@
+{
+  "$schema": "folio-library-index/v1",
+  "tile": {
+    "uploads": {
+      "count": 4,
+      "unit": "waiting"
+    }
+  },
+  "entries": [
+    {
+      "id": "ihe-iti-pcf-1-1-0",
+      "instance": "smart-trust-phw",
+      "dir": "library/ihe-iti-pcf-1-1-0",
+      "title": "IHE IT Infrastructure Technical Framework Supplement — Privacy Consent on FHIR (PCF)",
+      "catalogue": {
+        "record": "catalogue/records/ihe-iti-pcf-1-1-0.dc.json",
+        "node": "catalogue/nodes/item-ihe-iti-pcf-1-1-0.json"
+      },
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "ihe-iti-pcf-1-1-0",
+      "sourceFile": "ihe-iti-pcf-1-1-0.md",
+      "sourceSha256": "c0b86193d6ac3abb2addfdf6bdc4c8bbf8397f168546e4e14b7cc8ad16af3822",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 12,
+      "blocks": 12,
+      "images": 0,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": null,
+      "pageEnd": null,
+      "words": 1256,
+      "chars": 11721,
+      "bytes": 73862,
+      "upload": "absent",
+      "uploadInstance": "",
+      "readme": "https://github.com/litlfred/smart-trust-phw/blob/main/library/ihe-iti-pcf-1-1-0/README.md",
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "smart-trust-phw",
+          "from": "catalogue/nodes/item-ihe-iti-pcf-1-1-0.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 12,
+        "summarised": 12,
+        "backlog": 0,
+        "draft": 12,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/smart-trust-phw/ihe-iti-pcf-1-1-0/"
+    },
+    {
+      "id": "ihe-iti-vhl-1-0-0-comment",
+      "instance": "smart-trust-phw",
+      "dir": "library/ihe-iti-vhl-1-0-0-comment",
+      "title": "IHE IT Infrastructure Technical Framework Supplement — Verifiable Health Links (VHL)",
+      "catalogue": {
+        "record": "catalogue/records/ihe-iti-vhl-1-0-0-comment.dc.json",
+        "node": "catalogue/nodes/item-ihe-iti-vhl-1-0-0-comment.json"
+      },
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "ihe-iti-vhl-1-0-0-comment",
+      "sourceFile": "ihe-iti-vhl-1-0-0-comment.md",
+      "sourceSha256": "e2775b089a9763ffcf84a7af86cdebc12a50899927a67ed7d7719b91cb21cb5e",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 10,
+      "blocks": 10,
+      "images": 0,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": null,
+      "pageEnd": null,
+      "words": 1151,
+      "chars": 9858,
+      "bytes": 65082,
+      "upload": "absent",
+      "uploadInstance": "",
+      "readme": "https://github.com/litlfred/smart-trust-phw/blob/main/library/ihe-iti-vhl-1-0-0-comment/README.md",
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "smart-trust-phw",
+          "from": "catalogue/nodes/item-ihe-iti-vhl-1-0-0-comment.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 10,
+        "summarised": 10,
+        "backlog": 0,
+        "draft": 10,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/smart-trust-phw/ihe-iti-vhl-1-0-0-comment/"
+    },
+    {
+      "id": "9789240010567-eng",
+      "instance": "smart-trust-phw",
+      "dir": "library/9789240010567-eng",
+      "title": "Digital implementation investment guide (DIIG): integrating digital interventions into health programmes",
+      "provenance": "catalogued",
+      "rung": "none",
+      "docId": "9789240010567-eng",
+      "sourceFile": "9789240010567-eng.html",
+      "sourceSha256": "",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 0,
+      "blocks": 0,
+      "images": 0,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": false,
+      "hasStructure": false,
+      "hasImagesJson": false,
+      "pageStart": null,
+      "pageEnd": null,
+      "words": 0,
+      "chars": 0,
+      "bytes": 0,
+      "upload": "unknown",
+      "uploadInstance": "",
+      "catalogue": {
+        "record": "catalogue/records/9789240010567-eng.dc.json",
+        "node": "catalogue/nodes/item-9789240010567-eng.json"
+      },
+      "upstream": [
+        {
+          "label": "9789240010567-eng.html",
+          "href": "https://www.who.int/publications/i/item/9789240010567"
+        }
+      ],
+      "referencedBy": [
+        {
+          "kind": "docs",
+          "instance": "smart-base",
+          "from": "smart-base/findings/dth-term-alternatives.json",
+          "count": 3
+        },
+        {
+          "kind": "skills",
+          "instance": "smart-base",
+          "from": "smart-base/skills/voices/who-digital-health/voice.json",
+          "count": 5
+        },
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-9789240010567-eng.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 0,
+        "summarised": 0,
+        "backlog": 0,
+        "draft": 0,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/smart-trust-phw/9789240010567-eng/"
+    },
+    {
+      "id": "openhie-architecture-specification",
+      "instance": "smart-trust-phw",
+      "dir": "library/openhie-architecture-specification",
+      "title": "Open Health Information Exchange (OpenHIE) Specification and Architecture",
+      "provenance": "catalogued",
+      "rung": "none",
+      "docId": "openhie-architecture-specification",
+      "sourceFile": "",
+      "sourceSha256": "",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 0,
+      "blocks": 0,
+      "images": 0,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": false,
+      "hasStructure": false,
+      "hasImagesJson": false,
+      "pageStart": null,
+      "pageEnd": null,
+      "words": 0,
+      "chars": 0,
+      "bytes": 0,
+      "upload": "unknown",
+      "uploadInstance": "",
+      "catalogue": {
+        "record": "catalogue/records/openhie-architecture-specification.dc.json",
+        "node": "catalogue/nodes/item-openhie-architecture-specification.json"
+      },
+      "referencedBy": [],
+      "summaries": {
+        "prose": 0,
+        "summarised": 0,
+        "backlog": 0,
+        "draft": 0,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/smart-trust-phw/openhie-architecture-specification/"
+    },
+    {
+      "id": "smart-ig-starter-kit-references",
+      "instance": "smart-trust-phw",
+      "dir": "library/smart-ig-starter-kit-references",
+      "title": "References section of the SMART IG starter kit",
+      "provenance": "catalogued",
+      "rung": "none",
+      "docId": "smart-ig-starter-kit-references",
+      "sourceFile": "",
+      "sourceSha256": "",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 0,
+      "blocks": 0,
+      "images": 0,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": false,
+      "hasStructure": false,
+      "hasImagesJson": false,
+      "pageStart": null,
+      "pageEnd": null,
+      "words": 0,
+      "chars": 0,
+      "bytes": 0,
+      "upload": "unknown",
+      "uploadInstance": "",
+      "catalogue": {
+        "record": "catalogue/records/smart-ig-starter-kit-references.dc.json",
+        "node": "catalogue/nodes/item-smart-ig-starter-kit-references.json"
+      },
+      "referencedBy": [],
+      "summaries": {
+        "prose": 0,
+        "summarised": 0,
+        "backlog": 0,
+        "draft": 0,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/smart-trust-phw/smart-ig-starter-kit-references/"
+    },
+    {
+      "id": "who-guideline-handbook",
+      "instance": "smart-trust-phw",
+      "dir": "library/who-guideline-handbook",
+      "title": "Handbook for guideline development",
+      "provenance": "catalogued",
+      "rung": "none",
+      "docId": "who-guideline-handbook",
+      "sourceFile": "who-guideline-handbook.html",
+      "sourceSha256": "",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 0,
+      "blocks": 0,
+      "images": 0,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": false,
+      "hasStructure": false,
+      "hasImagesJson": false,
+      "pageStart": null,
+      "pageEnd": null,
+      "words": 0,
+      "chars": 0,
+      "bytes": 0,
+      "upload": "unknown",
+      "uploadInstance": "",
+      "catalogue": {
+        "record": "catalogue/records/who-guideline-handbook.dc.json",
+        "node": "catalogue/nodes/item-who-guideline-handbook.json"
+      },
+      "upstream": [
+        {
+          "label": "who-guideline-handbook.html",
+          "href": "https://www.who.int/publications/i/item/9789241548960"
+        }
+      ],
+      "referencedBy": [],
+      "summaries": {
+        "prose": 0,
+        "summarised": 0,
+        "backlog": 0,
+        "draft": 0,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/smart-trust-phw/who-guideline-handbook/"
+    },
+    {
+      "id": "who-smart-guidelines",
+      "instance": "smart-trust-phw",
+      "dir": "library/who-smart-guidelines",
+      "title": "SMART Guidelines",
+      "provenance": "catalogued",
+      "rung": "none",
+      "docId": "who-smart-guidelines",
+      "sourceFile": "who-smart-guidelines.html",
+      "sourceSha256": "",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 0,
+      "blocks": 0,
+      "images": 0,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": false,
+      "hasStructure": false,
+      "hasImagesJson": false,
+      "pageStart": null,
+      "pageEnd": null,
+      "words": 0,
+      "chars": 0,
+      "bytes": 0,
+      "upload": "unknown",
+      "uploadInstance": "",
+      "catalogue": {
+        "record": "catalogue/records/who-smart-guidelines.dc.json",
+        "node": "catalogue/nodes/item-who-smart-guidelines.json"
+      },
+      "upstream": [
+        {
+          "label": "who-smart-guidelines.html",
+          "href": "https://www.who.int/teams/digital-health-and-innovation/smart-guidelines"
+        }
+      ],
+      "referencedBy": [],
+      "summaries": {
+        "prose": 0,
+        "summarised": 0,
+        "backlog": 0,
+        "draft": 0,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/smart-trust-phw/who-smart-guidelines/"
+    }
+  ],
+  "uploads": [
+    {
+      "file": "9789240010567-eng",
+      "kind": "intake",
+      "instance": "smart-trust-phw",
+      "path": "uploads/9789240010567-eng",
+      "bytes": 1291,
+      "ext": "",
+      "ingestedBy": "9789240010567-eng",
+      "docId": "9789240010567-eng",
+      "title": "Digital implementation investment guide (DIIG): integrating digital interventions into health programmes",
+      "declaredFiles": 1
+    },
+    {
+      "file": "openhie-architecture-specification",
+      "kind": "intake",
+      "instance": "smart-trust-phw",
+      "path": "uploads/openhie-architecture-specification",
+      "bytes": 991,
+      "ext": "",
+      "ingestedBy": "",
+      "docId": "openhie-architecture-specification",
+      "title": "Open Health Information Exchange (OpenHIE) Specification and Architecture",
+      "declaredFiles": 0
+    },
+    {
+      "file": "smart-ig-starter-kit-references",
+      "kind": "intake",
+      "instance": "smart-trust-phw",
+      "path": "uploads/smart-ig-starter-kit-references",
+      "bytes": 916,
+      "ext": "",
+      "ingestedBy": "",
+      "docId": "smart-ig-starter-kit-references",
+      "title": "References section of the SMART IG starter kit",
+      "declaredFiles": 0
+    },
+    {
+      "file": "who-guideline-handbook",
+      "kind": "intake",
+      "instance": "smart-trust-phw",
+      "path": "uploads/who-guideline-handbook",
+      "bytes": 1311,
+      "ext": "",
+      "ingestedBy": "",
+      "docId": "who-guideline-handbook",
+      "title": "Handbook for guideline development",
+      "declaredFiles": 1
+    },
+    {
+      "file": "who-smart-guidelines",
+      "kind": "intake",
+      "instance": "smart-trust-phw",
+      "path": "uploads/who-smart-guidelines",
+      "bytes": 1205,
+      "ext": "",
+      "ingestedBy": "",
+      "docId": "who-smart-guidelines",
+      "title": "SMART Guidelines",
+      "declaredFiles": 1
+    }
+  ],
+  "queues": [
+    {
+      "instance": "smart-trust-phw",
+      "dir": "uploads",
+      "total": 5,
+      "ingested": 1,
+      "uningested": 4
+    }
+  ],
+  "refScan": {
+    "unreadable": []
+  }
+}

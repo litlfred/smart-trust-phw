@@ -1,0 +1,18 @@
+{
+  "$schema": "folio-site-build/v1",
+  "instance": "smart-trust-phw",
+  "platform": {
+    "commit": "1509dbb42ea29023870e51e8ade70704509d25d0"
+  },
+  "source": {
+    "repo": "litlfred/smart-trust-phw",
+    "ref": "claude/translate-zh",
+    "commit": "7ced3cd639ff427f20fe0106cb09b2f724bdbc79"
+  },
+  "builtAt": "2026-11-13T18:00:00.272Z",
+  "ast": {
+    "commit": "7ced3cd639ff427f20fe0106cb09b2f724bdbc79",
+    "verdict": "valid",
+    "kind": "full"
+  }
+}

@@ -1,0 +1,1 @@
+{"resourceType":"Patient","id":"LinaPatient","identifier":[{"system":"https://hie.home.example.org/fhir/sid/health-id","value":"HID-0000-0042"}],"name":[{"family":"Example","given":["Lina"]}],"gender":"female","birthDate":"1992-03-14"}
