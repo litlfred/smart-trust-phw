@@ -17,13 +17,13 @@ msgstr ""
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "& persist Consent +"
-msgstr ""
+msgstr "y guardar Consent +"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "& versionId [ITI-108]"
-msgstr ""
+msgstr "registrados [ITI-108]"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -44,43 +44,43 @@ msgstr "(administrador + punto de decisión)"
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "(certificate registry)"
-msgstr ""
+msgstr "(registro de certificados)"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "(code and"
-msgstr ""
+msgstr "(código y"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "(Consent.id +"
-msgstr ""
+msgstr "activo (Consent.id +"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "(CRL)"
-msgstr ""
+msgstr "(CRL)"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "(DID document, X.509"
-msgstr ""
+msgstr "(documento DID, raíces X.509"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "(enforcement point)"
-msgstr ""
+msgstr "(punto de aplicación)"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "(final) or"
-msgstr ""
+msgstr "(definitivo) o"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -95,19 +95,19 @@ msgstr "(GDHCN u otra"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "(no agreement"
-msgstr ""
+msgstr "(no se aplica ningún"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "(odrl:obtainConsent"
-msgstr ""
+msgstr "(odrl:obtainConsent"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "(person)"
-msgstr ""
+msgstr "(persona)"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
@@ -140,7 +140,7 @@ msgstr "(proceso F)"
 #: input/images/PHW.F.svg:0
 #: input/images/PHW.H.svg:0
 msgid "(process G)"
-msgstr ""
+msgstr "(proceso G)"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -149,13 +149,13 @@ msgstr ""
 #: input/images/PHW.B.svg:0
 #: input/images/PHW.J.svg:0
 msgid "(process M,"
-msgstr ""
+msgstr "(proceso M,"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "(PUT / DELETE)"
-msgstr ""
+msgstr "(PUT / DELETE)"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
@@ -173,19 +173,19 @@ msgstr "(RFC 7591)"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "(RFC 8414)"
-msgstr ""
+msgstr "(RFC 8414)"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "(W3C PROV-O,"
-msgstr ""
+msgstr "(W3C PROV-O,"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "/ unknown"
-msgstr ""
+msgstr "/ unknown"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -197,7 +197,7 @@ msgstr "201/200 OK"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "7591)"
-msgstr ""
+msgstr "7591)"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -239,7 +239,7 @@ msgstr "[ITI-108] Access"
 #: input/images/PHW.G.svg:0
 #: input/images/PHW.I.svg:0
 msgid "[ITI-20] Record"
-msgstr ""
+msgstr "[ITI-20] Record"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -251,7 +251,7 @@ msgstr "[ITI-YY1]"
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "[ITI-YY1] Submit"
-msgstr ""
+msgstr "[ITI-YY1] Submit"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -266,7 +266,7 @@ msgstr "[ITI-YY2]"
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "[ITI-YY2] Retrieve"
-msgstr ""
+msgstr "[ITI-YY2] Retrieve"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -278,7 +278,7 @@ msgstr "[ITI-YY3]"
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "[ITI-YY3] Generate"
-msgstr ""
+msgstr "[ITI-YY3] Generate"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -308,13 +308,13 @@ msgstr "[ITI-YY5] (deny o"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "[ITI-YY5] / [ITI-68]"
-msgstr ""
+msgstr "[ITI-YY5] / [ITI-68]"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "[ITI-YY5] 200 OK"
-msgstr ""
+msgstr "[ITI-YY5] 200 OK"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -326,7 +326,7 @@ msgstr "[ITI-YY5] 403"
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "[ITI-YY5] response"
-msgstr "[ITI-YY5] respuesta"
+msgstr "de la respuesta [ITI-YY5]"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -344,7 +344,7 @@ msgstr "A. Registrar y gestionar el consentimiento de privacidad del paciente"
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "A1. Select base"
-msgstr ""
+msgstr "A1. Elegir política"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -356,13 +356,13 @@ msgstr "A1. Elegir política base y alcance de divulgación (PCF Basic / Interme
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "A2. Construct FHIR"
-msgstr "A2. Construir FHIR"
+msgstr "A2. Construir los recursos"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "A2. Construct FHIR Consent & Provenance (IHE. PCF.consentBasic / Intermediate)"
-msgstr ""
+msgstr "A2. Construir los recursos FHIR Consent y Provenance (IHE. PCF.consentBasic / Intermediate)"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -380,7 +380,7 @@ msgstr "A3. Crear directiva de consentimiento [ITI-108] Access Consent: Post"
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "A4. Update or"
-msgstr ""
+msgstr "A4. Actualizar o"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -392,7 +392,7 @@ msgstr "A4. Actualizar o revocar directiva [ITI-108] Access Consent: Put / Delet
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "A5. Validate, version"
-msgstr ""
+msgstr "A5. Validar, versionar"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -404,7 +404,7 @@ msgstr "A5. Validar, versionar y guardar Consent + Provenance [ITI-108] Access C
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "A6. Confirm"
-msgstr ""
+msgstr "A6. Confirmar"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -419,13 +419,13 @@ msgstr "A6. Confirmar Consent.id y versionId registrados [ITI-108] respuesta de 
 #: input/images/PHW.D.svg:0
 #: input/images/PHW.F.svg:0
 msgid "accepted anchor)"
-msgstr ""
+msgstr "ancla aceptada)"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "accepted trust"
-msgstr ""
+msgstr "al ancla de"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -479,13 +479,13 @@ msgstr "token de acceso"
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "active Consents"
-msgstr ""
+msgstr "Consents activos"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "against the"
-msgstr ""
+msgstr "del cliente frente"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -497,7 +497,7 @@ msgstr "frente al ancla"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "against the trust"
-msgstr ""
+msgstr "frente a la lista"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -539,7 +539,7 @@ msgstr "Publicador de acuerdos (catálogo DCAT)"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "Agreement signed; recipient"
-msgstr ""
+msgstr "Acuerdo firmado; el receptor"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -551,7 +551,7 @@ msgstr "Acuerdo firmado; el receptor llamará a la API del proveedor"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "agreement text"
-msgstr ""
+msgstr "acuerdo firmado"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -563,13 +563,13 @@ msgstr "versión del acuerdo,"
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "agreement, plus"
-msgstr "acuerdo, más"
+msgstr "acuerdo, más una"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "AgreementAccess"
-msgstr ""
+msgstr "AgreementAccess"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -581,13 +581,13 @@ msgstr "acuerdos y"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "anchor"
-msgstr ""
+msgstr "confianza aceptada"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "Anchor key list"
-msgstr ""
+msgstr "claves del ancla de confianza"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -602,43 +602,43 @@ msgstr "ancla)"
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "and decide"
-msgstr ""
+msgstr "y decidir"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "and documents"
-msgstr ""
+msgstr "y los documentos"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "and find the"
-msgstr ""
+msgstr "y hallar el"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "and provenance"
-msgstr ""
+msgstr "y la procedencia"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "and redeem"
-msgstr ""
+msgstr "y canjear"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "and report to the"
-msgstr ""
+msgstr "e informe al"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "and return it"
-msgstr ""
+msgstr "y devolverlo"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -653,13 +653,13 @@ msgstr "y revisada"
 #: input/images/PHW.H.svg:0
 #: input/images/PHW.K.svg:0
 msgid "another accepted anchor)"
-msgstr ""
+msgstr "otra ancla aceptada)"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "Any agreement or"
-msgstr ""
+msgstr "¿Se aplica algún"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -677,7 +677,7 @@ msgstr "Llamada a la API"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "applies)"
-msgstr ""
+msgstr "acuerdo)"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
@@ -695,7 +695,7 @@ msgstr "Como VHL"
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "as an implied"
-msgstr ""
+msgstr "como implícito, en un"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -713,7 +713,7 @@ msgstr "ATNA Audit Record Repository"
 #: input/images/PHW.G.svg:0
 #: input/images/PHW.I.svg:0
 msgid "Audit Event"
-msgstr ""
+msgstr "Audit Event"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -722,7 +722,7 @@ msgstr ""
 #: input/images/PHW.G.svg:0
 #: input/images/PHW.I.svg:0
 msgid "audit event citing"
-msgstr ""
+msgstr "evento de auditoría ATNA que cita"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -734,19 +734,19 @@ msgstr "Auditor (persona)"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "authenticated by"
-msgstr ""
+msgstr "autenticado mediante"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "authorization"
-msgstr ""
+msgstr "metadatos del servidor"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "authorized"
-msgstr ""
+msgstr "autorizado: el"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
@@ -764,7 +764,7 @@ msgstr "B. Emitir enlace sanitario verificable respaldado por consentimiento"
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "B1. Submit Sharer"
-msgstr ""
+msgstr "B1. Enviar la clave"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -776,19 +776,19 @@ msgstr "B1. Enviar clave de firma PKI de quien comparte [ITI-YY1] Submit PKI Mat
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "B2. Publish key in"
-msgstr ""
+msgstr "B2. Publicar la clave"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "B2. Publish key in Trust Anchor trust list [ITI-YY1] (GDHCN or other anchor)"
-msgstr ""
+msgstr "B2. Publicar la clave en la lista de confianza del ancla de confianza [ITI-YY1] (GDHCN u otra ancla)"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "B3. Request VHL"
-msgstr "B3. Solicitar generación"
+msgstr "B3. Solicitar la generación"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -800,19 +800,19 @@ msgstr "B3. Solicitar generación de VHL [ITI-YY3] Generate VHL ($generate-vhl)"
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "B4. Query or"
-msgstr ""
+msgstr "B4. Consultar o"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "B4. Query or record active Consent [ITI-108] Access Consent: Search / Post"
-msgstr ""
+msgstr "B4. Consultar o registrar el Consent activo [ITI-108] Access Consent: Search / Post"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "B5. Return active"
-msgstr ""
+msgstr "B5. Devolver el"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -824,7 +824,7 @@ msgstr "B5. Devolver Consent PCF activo (Consent.id + versionId) [ITI-108] Acces
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "B5a. Add the"
-msgstr ""
+msgstr "B5a. Añadir las"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -836,7 +836,7 @@ msgstr "B5a. Añadir las directivas de consentimiento a los documentos compartid
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "B6. Assemble &"
-msgstr ""
+msgstr "B6. Ensamblar y"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -848,7 +848,7 @@ msgstr "B6. Ensamblar y firmar carga útil VHL vinculada a Consent [ITI-YY3] Gen
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "B7. Store signed"
-msgstr ""
+msgstr "B7. Guardar el VHL"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -860,19 +860,19 @@ msgstr "B7. Guardar VHL firmado en la billetera de salud personal [ITI-YY3] Gene
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "Bitstring Status"
-msgstr ""
+msgstr "Bitstring Status"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "bound to Consent"
-msgstr ""
+msgstr "vinculada al Consent"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "Breach, project end,"
-msgstr ""
+msgstr "Brecha de seguridad, fin del proyecto,"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
@@ -884,7 +884,7 @@ msgstr "Brecha, fin del proyecto, clave comprometida o salida de personal"
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "Bundle [ITI-108]"
-msgstr ""
+msgstr "activos [ITI-108]"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -902,7 +902,7 @@ msgstr "C. Presentar y canjear enlace sanitario verificable con aplicación del 
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "C1. Present VHL"
-msgstr "C1. Presentar carga útil"
+msgstr "C1. Presentar la carga"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -914,7 +914,7 @@ msgstr "C1. Presentar carga útil VHL al receptor [ITI-YY4] Provide VHL"
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "C10. Process"
-msgstr ""
+msgstr "C10. Procesar los"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -926,13 +926,13 @@ msgstr "C10. Procesar documentos clínicos o aviso de denegación [ITI-YY5] resp
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "C2. Request Trust"
-msgstr "C2. Solicitar claves"
+msgstr "C2. Solicitar la lista de"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "C2. Request Trust Anchor key list [ITI-YY2] Retrieve Trust List with DID"
-msgstr ""
+msgstr "C2. Solicitar la lista de claves del ancla de confianza [ITI-YY2] Retrieve Trust List with DID"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -950,7 +950,7 @@ msgstr "C3. Devolver lista de confianza firmada [ITI-YY2] (GDHCN u otra ancla de
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "C4. Verify VHL"
-msgstr "C4. Verificar firma VHL"
+msgstr "C4. Verificar la firma"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -962,31 +962,31 @@ msgstr "C4. Verificar firma VHL y solicitar manifiesto [ITI-YY5] Retrieve Manife
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "C5. Query active"
-msgstr "C5. Consultar Consent"
+msgstr "C5. Consultar el Consent"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "C5. Query active patient Consent [ITI-108] Access Consent: Search"
-msgstr ""
+msgstr "C5. Consultar el Consent activo del paciente [ITI-108] Access Consent: Search"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "C6. Return active"
-msgstr ""
+msgstr "C6. Devolver el Bundle de"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "C6. Return active PCF Consent Bundle [ITI-108] Access Consent"
-msgstr ""
+msgstr "C6. Devolver el Bundle de Consent PCF activos [ITI-108] Access Consent"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "C7. Evaluate PCF"
-msgstr "C7. Evaluar Consent PCF"
+msgstr "C7. Evaluar el Consent"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -998,7 +998,7 @@ msgstr "C7. Evaluar Consent PCF (decisión ODRL: permit / deny / unknown) y regi
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "C8. Return"
-msgstr ""
+msgstr "C8. Devolver lo"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -1010,7 +1010,7 @@ msgstr "C8. Devolver manifiesto y documentos autorizados [ITI-YY5] Retrieve Mani
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "C9. Refuse"
-msgstr ""
+msgstr "C9. Denegar la"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -1022,7 +1022,7 @@ msgstr "C9. Denegar divulgación con OperationOutcome [ITI-YY5] (deny o unknown)
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "Carry consent"
-msgstr ""
+msgstr "¿Incluir directivas"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
@@ -1037,7 +1037,7 @@ msgstr "¿Incluir directivas de consentimiento?"
 #: input/images/PHW.J.svg:0
 #: input/images/PHW.K.svg:0
 msgid "Certificate Holder (person /"
-msgstr ""
+msgstr "Titular del certificado (persona /"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
@@ -1052,7 +1052,7 @@ msgstr "Titular del certificado (persona / billetera de salud personal)"
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "certificate in"
-msgstr ""
+msgstr "certificado en"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
@@ -1070,19 +1070,19 @@ msgstr "Servicio de emisión de certificados"
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "Certificate Issuance Service)"
-msgstr ""
+msgstr "servicio de emisión de certificados)"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "Certificate issued"
-msgstr ""
+msgstr "Certificado emitido"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "Certificate Issuer (health worker"
-msgstr ""
+msgstr "Emisor del certificado (trabajador de salud"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
@@ -1094,13 +1094,13 @@ msgstr "Emisor del certificado (trabajador de salud o sistema emisor)"
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "Certificate presented"
-msgstr ""
+msgstr "Certificado presentado"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "Certificate requested"
-msgstr ""
+msgstr "Certificado solicitado"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -1112,7 +1112,7 @@ msgstr "comprobar SHA-256 y"
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "Checking application"
-msgstr ""
+msgstr "¿Hay aplicación de verificación"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
@@ -1124,7 +1124,7 @@ msgstr "¿Aplicación de verificación disponible?"
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "citing the"
-msgstr ""
+msgstr "que cite el"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
@@ -1148,7 +1148,7 @@ msgstr "cliente"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "Client registered under"
-msgstr ""
+msgstr "Cliente registrado bajo"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -1160,7 +1160,7 @@ msgstr "Cliente registrado bajo el acuerdo"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "client registration"
-msgstr "registro de cliente"
+msgstr "de registro dinámico"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
@@ -1178,13 +1178,13 @@ msgstr "client_id"
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "clinical documents"
-msgstr ""
+msgstr "documentos clínicos"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "combine with DMN"
-msgstr "combinar con DMN"
+msgstr "combinar con la DMN"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -1196,13 +1196,13 @@ msgstr "¿Decisión combinada = permit?"
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "Communicate"
-msgstr ""
+msgstr "Comunicar"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "complete"
-msgstr "completo"
+msgstr "completado"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -1214,37 +1214,37 @@ msgstr "completo"
 #: input/images/PHW.L.svg:0
 #: input/images/PHW.M.svg:0
 msgid "Consent"
-msgstr "Consentimiento"
+msgstr "Consent"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Consent &"
-msgstr ""
+msgstr "FHIR Consent y"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "Consent (ODRL"
-msgstr ""
+msgstr "PCF (decisión ODRL:"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "Consent [ITI-108]"
-msgstr "Consent [ITI-108]"
+msgstr "activo [ITI-108]"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "Consent applies?"
-msgstr ""
+msgstr "acuerdo o Consent?"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Consent directive"
-msgstr ""
+msgstr "Directiva de consentimiento"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -1259,7 +1259,7 @@ msgstr "Directiva de consentimiento registrada"
 #: input/images/PHW.B.svg:0
 #: input/images/PHW.J.svg:0
 msgid "consent directives"
-msgstr ""
+msgstr "directivas de consentimiento"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
@@ -1277,19 +1277,19 @@ msgstr "Se necesita consentimiento"
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "Consent Recorder)"
-msgstr ""
+msgstr "Consent Recorder)"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "consent text"
-msgstr ""
+msgstr "del ámbito de confianza"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "consent to issue"
-msgstr ""
+msgstr "consentimiento para emitir"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -1301,55 +1301,55 @@ msgstr "Consent)"
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "Consent-backed"
-msgstr ""
+msgstr "VHL emitido con"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "consent-backed"
-msgstr ""
+msgstr "VHL respaldado por"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "Consent-backed VHL issued"
-msgstr ""
+msgstr "VHL emitido con respaldo de consentimiento"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "Consent-based"
-msgstr ""
+msgstr "¿Se basa en consentimiento el"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "Consent-based agreement (odrl:obtainConsent duty)?"
-msgstr ""
+msgstr "¿Se basa en consentimiento el acuerdo (odrl:obtainConsent como obligación)?"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "Consent.id and"
-msgstr ""
+msgstr "Consent.id y"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Consent: Put /"
-msgstr ""
+msgstr "Consent: Put /"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "Consent: Search"
-msgstr ""
+msgstr "Consent: Search"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "Consent; return"
-msgstr ""
+msgstr "Consent; devolver"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -1361,7 +1361,7 @@ msgstr "Consents [ITI-108]"
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "Consents for the"
-msgstr ""
+msgstr "activos del"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -1385,7 +1385,7 @@ msgstr "¿Crear o"
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Create vs Update/Revoke?"
-msgstr ""
+msgstr "¿Crear o actualizar/revocar?"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -1418,7 +1418,7 @@ msgstr "D1. Preparar clave o certificado del cliente bajo un ancla de confianza 
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "D10. Send UDAP"
-msgstr "D10. Enviar solicitud"
+msgstr "D10. Enviar la solicitud"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -1430,7 +1430,7 @@ msgstr "D10. Enviar solicitud de registro UDAP con declaración de software firm
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "D2. Send dynamic"
-msgstr "D2. Enviar solicitud"
+msgstr "D2. Enviar una solicitud"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -1442,7 +1442,7 @@ msgstr "D2. Enviar solicitud de registro dinámico de cliente (RFC 7591)"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "D3. Enter client by"
-msgstr "D3. Introducir cliente"
+msgstr "D3. Introducir el cliente"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -1454,7 +1454,7 @@ msgstr "D3. Introducir cliente a mano, ámbitos según el texto del acuerdo firm
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "D4. Validate client"
-msgstr "D4. Validar clave"
+msgstr "D4. Validar la"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -1466,7 +1466,7 @@ msgstr "D4. Validar clave o certificado del cliente frente al ancla de confianza
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "D5. Return trust"
-msgstr ""
+msgstr "D5. Devolver la lista de confianza"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -1478,7 +1478,7 @@ msgstr "D5. Devolver lista de confianza o estado del certificado"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "D6. Record which"
-msgstr "D6. Registrar las versiones"
+msgstr "D6. Registrar bajo qué versiones del"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -1502,7 +1502,7 @@ msgstr "D7. Emitir client_id (RFC 7591)"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "D8. Read"
-msgstr "D8. Leer"
+msgstr "D8. Leer los"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -1514,7 +1514,7 @@ msgstr "D8. Leer metadatos del servidor de autorización (RFC 8414)"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "D9. Discover"
-msgstr ""
+msgstr "D9. Descubrir los"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -1526,7 +1526,7 @@ msgstr "D9. Descubrir metadatos del servidor UDAP (SSRAA §2)"
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "data covered by"
-msgstr ""
+msgstr "datos cubiertos por"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
@@ -1538,7 +1538,7 @@ msgstr "Proveedor de datos (decide)"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "Data Provider Administrator"
-msgstr ""
+msgstr "Administrador del proveedor de datos"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -1550,7 +1550,7 @@ msgstr "Administrador del proveedor de datos (persona)"
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "Data Provider Resource Server"
-msgstr ""
+msgstr "Servidor de recursos del proveedor de datos"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
@@ -1583,19 +1583,19 @@ msgstr "Sistema receptor de datos (cliente OAuth)"
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "data the certificate"
-msgstr ""
+msgstr "datos que requiere el"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "decide the"
-msgstr ""
+msgstr "sobre la"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "decide: permit /"
-msgstr ""
+msgstr "permit /"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -1610,7 +1610,7 @@ msgstr "¿Decisión = permit?"
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "Decision made, duty"
-msgstr ""
+msgstr "Decisión tomada, obligación"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -1652,61 +1652,61 @@ msgstr "deny / unknown"
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "deny / unknown) &"
-msgstr ""
+msgstr "deny / unknown) y"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "deny or unknown; hand"
-msgstr ""
+msgstr "deny o unknown; pasar"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "details"
-msgstr ""
+msgstr "concedidos"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "details naming the"
-msgstr ""
+msgstr "details que indiquen el"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "DID"
-msgstr ""
+msgstr "DID"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "directive [ITI-108]"
-msgstr "directiva [ITI-108]"
+msgstr "de consentimiento [ITI-108]"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "Directives section"
-msgstr ""
+msgstr "Advance Directives"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "directives?"
-msgstr "directivas?"
+msgstr "de consentimiento?"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "disable the client"
-msgstr ""
+msgstr "desactivar el cliente"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "disclosure with"
-msgstr ""
+msgstr "divulgación con"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -1718,7 +1718,7 @@ msgstr "distribución con"
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "Document assembled,"
-msgstr ""
+msgstr "Documento ensamblado,"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
@@ -1730,7 +1730,7 @@ msgstr "Documento ensamblado, aún sin firmar"
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "Document source (VHL Sharer or"
-msgstr ""
+msgstr "Fuente de documentos (VHL Sharer o"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
@@ -1745,19 +1745,19 @@ msgstr "Fuente de documentos (VHL Sharer o servicio de emisión de certificados)
 #: input/images/PHW.B.svg:0
 #: input/images/PHW.C.svg:0
 msgid "documents"
-msgstr ""
+msgstr "documentos"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "documents or"
-msgstr ""
+msgstr "documentos o el"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "domain's default"
-msgstr ""
+msgstr "del ámbito de confianza"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
@@ -1769,25 +1769,25 @@ msgstr "prueba DPoP"
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "DPoP proof or"
-msgstr ""
+msgstr "prueba DPoP o"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "due, or review period"
-msgstr ""
+msgstr "vencida o periodo de revisión"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "duties with"
-msgstr ""
+msgstr "obligaciones con los"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "duty)?"
-msgstr "obligación)?"
+msgstr "como obligación)?"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -1799,13 +1799,13 @@ msgstr "dinámico (RFC 7591)"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "dynamic (UDAP,"
-msgstr ""
+msgstr "dinámico (UDAP,"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "dynamic (UDAP, SSRAA)"
-msgstr ""
+msgstr "dinámico (UDAP, SSRAA)"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
@@ -1817,13 +1817,13 @@ msgstr "E. Acceso de servidor a servidor bajo un acuerdo de intercambio de datos
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "E1. Request token"
-msgstr "E1. Solicitar token"
+msgstr "E1. Solicitar un token"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "E1. Request token with authorization_ details naming the agreement, plus DPoP proof or mTLS"
-msgstr ""
+msgstr "E1. Solicitar un token con authorization_ details que indiquen el acuerdo, más una prueba DPoP o mTLS"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
@@ -1865,7 +1865,7 @@ msgstr "E3. Decidir acceso según el acuerdo (proceso F)"
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "E4. Issue"
-msgstr ""
+msgstr "E4. Emitir un token"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
@@ -1889,7 +1889,7 @@ msgstr "E5. Rechazar la solicitud de token (deny o unknown)"
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "E6. Call the API"
-msgstr ""
+msgstr "E6. Llamar a la API"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
@@ -1913,7 +1913,7 @@ msgstr "E7. Validar token, vinculación de clave y detalles concedidos en cada l
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "E8. Record audit"
-msgstr ""
+msgstr "E8. Registrar la auditoría"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
@@ -1955,7 +1955,7 @@ msgstr "cada llamada"
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "evidence"
-msgstr ""
+msgstr "como evidencia"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -1973,13 +1973,13 @@ msgstr "Intercambio completado"
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "explicit Consent"
-msgstr ""
+msgstr "Consent explícito"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "Explicit consent"
-msgstr ""
+msgstr "Decisión explícita de consentimiento"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
@@ -1991,7 +1991,7 @@ msgstr "Consentimiento explícito registrado"
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "explicit Consents,"
-msgstr ""
+msgstr "Consents explícitos,"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -2015,13 +2015,13 @@ msgstr "F1. Reunir entradas: solicitante verificado, versión del acuerdo, conce
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "F10. Evaluate permits()"
-msgstr ""
+msgstr "F10. Evaluar permits()"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "F10. Evaluate permits() per applicable policy; combine with DMN PHW.DT. AgreementAccess"
-msgstr ""
+msgstr "F10. Evaluar permits() según cada política aplicable; combinar con la DMN PHW.DT. AgreementAccess"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -2051,7 +2051,7 @@ msgstr "F2. Verificar la concesión con smart-trust-tools frente al ancla de con
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "F3. Return trust list"
-msgstr "F3. Devolver lista de confianza"
+msgstr "F3. Devolver la lista de confianza"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -2063,7 +2063,7 @@ msgstr "F3. Devolver lista de confianza (documento DID, raíces X.509 o lista lo
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "F4. Check grant status"
-msgstr ""
+msgstr "F4. Comprobar el estado de la concesión"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -2141,7 +2141,7 @@ msgstr "URL de versión fija;"
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "from trust list or"
-msgstr ""
+msgstr "de la lista de confianza o"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -2159,7 +2159,7 @@ msgstr "G. Auditoría, procedencia y control de obligaciones en virtud de un acu
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "G1. Write"
-msgstr ""
+msgstr "G1. Escribir un"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -2171,7 +2171,7 @@ msgstr "G1. Escribir registro PROV-O que cita el acuerdo"
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "G3. Send ATNA"
-msgstr ""
+msgstr "G3. Enviar un"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -2195,7 +2195,7 @@ msgstr "G5. Registrar cumplimiento de obligación con hash de la evidencia"
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "G6. Compare"
-msgstr ""
+msgstr "G6. Comparar las"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -2207,7 +2207,7 @@ msgstr "G6. Comparar obligaciones con registros"
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "G7. Periodic"
-msgstr ""
+msgstr "G7. Revisión"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -2219,7 +2219,7 @@ msgstr "G7. Revisión humana periódica e informe al proveedor"
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "generation"
-msgstr ""
+msgstr "del VHL"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
@@ -2237,7 +2237,7 @@ msgstr "credencial de concesión"
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "Grant Issuer (W3C Bitstring"
-msgstr ""
+msgstr "Emisor de concesiones (W3C Bitstring"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
@@ -2249,7 +2249,7 @@ msgstr "Emisor de concesiones (W3C Bitstring Status List)"
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "Grant Issuer Status List (W3C Bitstring"
-msgstr ""
+msgstr "Lista de estado del emisor de concesiones (W3C Bitstring"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -2261,7 +2261,7 @@ msgstr "Lista de estado del emisor de concesiones (W3C Bitstring Status List)"
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "grant's bit in the"
-msgstr ""
+msgstr "bit de la concesión en la"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -2285,7 +2285,7 @@ msgstr "H. Revocación y suspensión en virtud de un acuerdo de intercambio de d
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "H1. Decide what"
-msgstr ""
+msgstr "H1. Decidir qué"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
@@ -2297,7 +2297,7 @@ msgstr "H1. Decidir qué detener: revocar (definitivo) o suspender (reversible)"
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "H2. Set the"
-msgstr ""
+msgstr "H2. Activar el"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
@@ -2309,7 +2309,7 @@ msgstr "H2. Activar el bit de la concesión en la Bitstring Status List"
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "H3. Revoke"
-msgstr ""
+msgstr "H3. Revocar"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
@@ -2321,7 +2321,7 @@ msgstr "H3. Revocar tokens y desactivar el cliente"
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "H4. Remove key"
-msgstr ""
+msgstr "H4. Quitar la clave"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
@@ -2345,25 +2345,25 @@ msgstr "H5. Registrar la revocación o suspensión (proceso G)"
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "hand and"
-msgstr ""
+msgstr "mano y decidir"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "hand, scopes from"
-msgstr "mano, alcances de"
+msgstr "a mano, ámbitos según"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "hash-chained)"
-msgstr ""
+msgstr "encadenado por hash)"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "Health Wallet"
-msgstr ""
+msgstr "de salud personal"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -2393,7 +2393,7 @@ msgstr "Titular (persona / billetera de salud personal)"
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "holder [ITI-108]"
-msgstr ""
+msgstr "titular [ITI-108]"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
@@ -2405,13 +2405,13 @@ msgstr "¿Acepta el titular?"
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "holder and ask for"
-msgstr ""
+msgstr "titular y pedir"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "holder's act as"
-msgstr ""
+msgstr "acto del titular"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
@@ -2423,7 +2423,7 @@ msgstr "¿Cómo se presentó?"
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "human review"
-msgstr ""
+msgstr "humana periódica"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -2447,7 +2447,7 @@ msgstr "I1. Enviar Retrieve Manifest autenticado por la opción VHL en uso [ITI-
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "I11. Process"
-msgstr "I11. Procesar"
+msgstr "I11. Procesar los"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -2459,7 +2459,7 @@ msgstr "I11. Procesar documentos o rechazo [ITI-YY5] respuesta"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "I2. Authenticate"
-msgstr ""
+msgstr "I2. Autenticar"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -2507,13 +2507,13 @@ msgstr "I5. Decidir según cada acuerdo aplicable (proceso F)"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "I6. Return manifest"
-msgstr "I6. Devolver manifiesto"
+msgstr "I6. Devolver el manifiesto"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "I6. Return manifest and documents [ITI-YY5] / [ITI-68]"
-msgstr ""
+msgstr "I6. Devolver el manifiesto y los documentos [ITI-YY5] / [ITI-68]"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -2531,7 +2531,7 @@ msgstr "I7. Rechazar con OperationOutcome [ITI-YY5] (deny o unknown)"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "I8. Apply the"
-msgstr ""
+msgstr "I8. Aplicar las"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -2543,7 +2543,7 @@ msgstr "I8. Aplicar las reglas VHL normales (no aplica ningún acuerdo)"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "I9. Send ATNA"
-msgstr ""
+msgstr "I9. Enviar un"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -2555,7 +2555,7 @@ msgstr "I9. Enviar evento de auditoría ATNA que cita el acuerdo [ITI-20] Record
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "Implied: the default"
-msgstr ""
+msgstr "Implícito: se aplica"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
@@ -2573,31 +2573,31 @@ msgstr "en la Bitstring Status"
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "in the wallet"
-msgstr ""
+msgstr "en la billetera"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Intermediate"
-msgstr ""
+msgstr "Intermediate"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Intermediate)"
-msgstr "Intermedio)"
+msgstr "Intermediate)"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "issuer's public"
-msgstr ""
+msgstr "información pública del emisor: su"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "Issuing Public Health Authority"
-msgstr ""
+msgstr "Autoridad de salud pública emisora"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
@@ -2615,7 +2615,7 @@ msgstr "J. Emitir un certificado digital de salud verificable (bloque compartido
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "J1. Inform the"
-msgstr ""
+msgstr "J1. Informar al"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
@@ -2627,7 +2627,7 @@ msgstr "J1. Informar al titular y pedir consentimiento para emitir"
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "J2. Collect the"
-msgstr ""
+msgstr "J2. Reunir los"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
@@ -2639,7 +2639,7 @@ msgstr "J2. Reunir los datos que requiere el perfil del certificado"
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "J2a. Add the"
-msgstr ""
+msgstr "J2a. Añadir las"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
@@ -2651,7 +2651,7 @@ msgstr "J2a. Añadir las directivas de consentimiento al certificado (proceso M,
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "J3. Issue and sign"
-msgstr ""
+msgstr "J3. Emitir y firmar"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
@@ -2663,19 +2663,19 @@ msgstr "J3. Emitir y firmar el certificado"
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "J4. Issue a"
-msgstr ""
+msgstr "J4. Emitir un"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "J4. Issue a consent-backed VHL (process B)"
-msgstr ""
+msgstr "J4. Emitir un VHL respaldado por consentimiento (proceso B)"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "J5. Generate the"
-msgstr ""
+msgstr "J5. Generar el"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
@@ -2705,7 +2705,7 @@ msgstr "K. Verificar un certificado y su estado (bloque compartido B7)"
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "K1. Receive"
-msgstr ""
+msgstr "K1. Recibir"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
@@ -2717,7 +2717,7 @@ msgstr "K1. Recibir la declaración"
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "K2. Present"
-msgstr ""
+msgstr "K2. Presentar"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
@@ -2729,7 +2729,7 @@ msgstr "K2. Presentar y canjear el VHL (proceso C)"
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "K3. Check by"
-msgstr ""
+msgstr "K3. Comprobar a"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
@@ -2741,7 +2741,7 @@ msgstr "K3. Comprobar a mano y decidir sobre la declaración"
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "K4. Decode"
-msgstr ""
+msgstr "K4. Decodificar"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
@@ -2789,7 +2789,7 @@ msgstr "K7. Buscar el certificado en el registro y devolverlo"
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "K8."
-msgstr ""
+msgstr "K8."
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
@@ -2828,13 +2828,13 @@ msgstr "¿Clave en caché local?"
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "key compromise, or"
-msgstr ""
+msgstr "compromiso de clave o"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "key id"
-msgstr ""
+msgstr "identificador de clave"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -2846,7 +2846,7 @@ msgstr "clave o certificado"
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "key-bound token"
-msgstr ""
+msgstr "vinculado a una clave"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
@@ -2858,7 +2858,7 @@ msgstr "L. Registrar el consentimiento explícito"
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "L1. Show the"
-msgstr ""
+msgstr "L1. Mostrar el"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
@@ -2870,7 +2870,7 @@ msgstr "L1. Mostrar el texto de consentimiento del Ámbito de confianza (código
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "L2. Read the text"
-msgstr ""
+msgstr "L2. Leer el texto"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
@@ -2882,7 +2882,7 @@ msgstr "L2. Leer el texto y decidir"
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "L3. Record the"
-msgstr ""
+msgstr "L3. Registrar el"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
@@ -2894,7 +2894,7 @@ msgstr "L3. Registrar el acto del titular como evidencia"
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "L4. Post the"
-msgstr ""
+msgstr "L4. Publicar el"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
@@ -2906,7 +2906,7 @@ msgstr "L4. Publicar el Consent explícito [ITI-108] Access Consent"
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "L5. Store the"
-msgstr ""
+msgstr "L5. Guardar el"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
@@ -2918,7 +2918,7 @@ msgstr "L5. Guardar el Consent; devolver Consent.id y versionId [ITI-108]"
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "L6. Keep a copy"
-msgstr ""
+msgstr "L6. Guardar una copia"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
@@ -2939,19 +2939,19 @@ msgstr "List"
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "list [ITI-YY1]"
-msgstr ""
+msgstr "del ancla de confianza [ITI-YY1]"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "list [ITI-YY5]"
-msgstr ""
+msgstr "de confianza [ITI-YY5]"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "list or certificate"
-msgstr ""
+msgstr "o, del certificado, su"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
@@ -2963,7 +2963,7 @@ msgstr "M. Añadir directivas de consentimiento a un documento compartido o emit
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "M1. Search active"
-msgstr "M1. Buscar Consents"
+msgstr "M1. Buscar los Consents"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
@@ -2975,7 +2975,7 @@ msgstr "M1. Buscar Consents activos del titular [ITI-108] Access Consent"
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "M2. Return the"
-msgstr ""
+msgstr "M2. Devolver los"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
@@ -2987,7 +2987,7 @@ msgstr "M2. Devolver los Consents activos [ITI-108]"
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "M3. Add the"
-msgstr ""
+msgstr "M3. Añadir los"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
@@ -2999,7 +2999,7 @@ msgstr "M3. Añadir los Consents explícitos, o el predeterminado del Ámbito de
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "M4. List them in"
-msgstr ""
+msgstr "M4. Enumerarlos en"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
@@ -3011,7 +3011,7 @@ msgstr "M4. Listarlos en la sección Advance Directives"
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "management"
-msgstr "gestión"
+msgstr "consentimiento"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -3026,13 +3026,13 @@ msgstr "Manifest"
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "manifest &"
-msgstr ""
+msgstr "manifiesto y los"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "Manifest (permit)"
-msgstr "Manifiesto (permit)"
+msgstr "Manifest (permit)"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -3044,19 +3044,19 @@ msgstr "marcar cuáles aplican"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "may act under"
-msgstr ""
+msgstr "el cliente"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "metadata (SSRAA"
-msgstr ""
+msgstr "UDAP (SSRAA"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "mTLS"
-msgstr ""
+msgstr "mTLS"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
@@ -3107,7 +3107,7 @@ msgstr "No"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "normal VHL rules"
-msgstr ""
+msgstr "reglas normales del VHL"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
@@ -3119,7 +3119,7 @@ msgstr "No emitido"
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "not yet signed"
-msgstr ""
+msgstr "aún sin firmar"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -3143,49 +3143,49 @@ msgstr "opcional)"
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "or health worker)"
-msgstr ""
+msgstr "o trabajador de salud)"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "or issuing system)"
-msgstr ""
+msgstr "o sistema emisor)"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "or refusal notice"
-msgstr ""
+msgstr "o el aviso de denegación"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "or the trust"
-msgstr ""
+msgstr "o el predeterminado"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "organisation or application)"
-msgstr ""
+msgstr "o aplicación receptora)"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "Party)"
-msgstr ""
+msgstr "que confía)"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "patient Consent"
-msgstr ""
+msgstr "activo del paciente"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "payload to"
-msgstr ""
+msgstr "útil del VHL al"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -3194,13 +3194,13 @@ msgstr ""
 #: input/images/PHW.B.svg:0
 #: input/images/PHW.C.svg:0
 msgid "PCF Consent"
-msgstr ""
+msgstr "Consent PCF"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "PCF Consent Recorder (wallet"
-msgstr ""
+msgstr "PCF Consent Recorder (billetera"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -3239,13 +3239,13 @@ msgstr "PCF Consent Registry"
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "PCF.consentBasic /"
-msgstr ""
+msgstr "PCF.consentBasic /"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "per applicable policy;"
-msgstr ""
+msgstr "según cada política aplicable;"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -3263,7 +3263,7 @@ msgstr "permit"
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "permit / deny"
-msgstr ""
+msgstr "permit / deny"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -3284,31 +3284,31 @@ msgstr "billetera de salud personal)"
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "PHW.DT."
-msgstr ""
+msgstr "PHW.DT."
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "PKI Material with"
-msgstr ""
+msgstr "PKI Material with"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "PKI signing key"
-msgstr ""
+msgstr "de firma PKI de quien comparte"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "policy & disclosure"
-msgstr ""
+msgstr "base y alcance de"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "policy applies"
-msgstr ""
+msgstr "la política por defecto"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -3320,7 +3320,7 @@ msgstr "Punto de decisión de políticas (permits())"
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "Policy Enforcement Point (authorization"
-msgstr ""
+msgstr "Punto de aplicación de políticas (servidor de autorización,"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -3332,61 +3332,61 @@ msgstr "Punto de aplicación de políticas (servidor de autorización, servidor 
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Post"
-msgstr ""
+msgstr "Post"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "profile needs"
-msgstr ""
+msgstr "perfil del certificado"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "PROV-O log"
-msgstr ""
+msgstr "registro PROV-O"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "PROV-O record"
-msgstr ""
+msgstr "registro PROV-O"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Provenance"
-msgstr "Procedencia"
+msgstr "Provenance"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Provenance (IHE."
-msgstr ""
+msgstr "Provenance (IHE."
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "Provenance Log"
-msgstr ""
+msgstr "Registro de procedencia"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "Provenance Log (W3C PROV-O, hash-chained)"
-msgstr ""
+msgstr "Registro de procedencia (W3C PROV-O, encadenado por hash)"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "Provide VHL"
-msgstr ""
+msgstr "Provide VHL"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "provider"
-msgstr ""
+msgstr "proveedor"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -3413,7 +3413,7 @@ msgstr "Servidor de autorización del proveedor (administrador + punto de decisi
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "QR code"
-msgstr ""
+msgstr "código QR"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -3431,13 +3431,13 @@ msgstr "Listo para firmar"
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "Receiver [ITI-YY4]"
-msgstr ""
+msgstr "receptor [ITI-YY4]"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "Receiver holds a"
-msgstr ""
+msgstr "El receptor dispone de un"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -3449,7 +3449,7 @@ msgstr "El receptor tiene un VHL verificado"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "Receiver identity"
-msgstr ""
+msgstr "¿Identidad del receptor"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -3461,7 +3461,7 @@ msgstr "¿Identidad del receptor verificada?"
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "Recipient needs"
-msgstr ""
+msgstr "El destinatario necesita"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
@@ -3473,7 +3473,7 @@ msgstr "El destinatario necesita datos cubiertos por el acuerdo"
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "record active"
-msgstr ""
+msgstr "registrar el Consent"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -3482,19 +3482,19 @@ msgstr ""
 #: input/images/PHW.A.svg:0
 #: input/images/PHW.L.svg:0
 msgid "recorded"
-msgstr "registrado"
+msgstr "registrada"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "recorded Consent.id"
-msgstr ""
+msgstr "Consent.id y versionId"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
 #: input/images/PHW.G.svg:0
 msgid "records"
-msgstr ""
+msgstr "registros"
 
 #. Source: input/images/PHW.G.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.G.svg
@@ -3518,13 +3518,13 @@ msgstr "rechazo"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "refusal [ITI-YY5]"
-msgstr ""
+msgstr "rechazo de la [ITI-YY5]"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "registration"
-msgstr ""
+msgstr "de registro UDAP"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -3542,19 +3542,19 @@ msgstr "solicitud (deny o"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "request (RFC"
-msgstr ""
+msgstr "de cliente (RFC"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "request manifest"
-msgstr ""
+msgstr "manifiesto"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "request with"
-msgstr ""
+msgstr "con una declaración"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -3584,13 +3584,13 @@ msgstr "revocación o"
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "revoke certificate"
-msgstr ""
+msgstr "revocar el certificado"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "revoke directive"
-msgstr ""
+msgstr "revocar directiva"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -3602,13 +3602,13 @@ msgstr "RFC 7591"
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "roots or local list)"
-msgstr ""
+msgstr "o lista local)"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "scope (PCF Basic /"
-msgstr ""
+msgstr "divulgación (PCF Basic /"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -3626,43 +3626,43 @@ msgstr "Search / Post"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "server metadata"
-msgstr "metadatos del servidor"
+msgstr "de autorización"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "server, resource server or VHL Sharer)"
-msgstr ""
+msgstr "servidor de recursos o VHL Sharer)"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "short-lived"
-msgstr ""
+msgstr "de corta duración"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "sign VHL payload"
-msgstr ""
+msgstr "firmar la carga útil del VHL"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "signature &"
-msgstr ""
+msgstr "del VHL y solicitar el"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "signature and"
-msgstr ""
+msgstr "firma y"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "signed software"
-msgstr ""
+msgstr "de software"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -3686,13 +3686,13 @@ msgstr "SSRAA)"
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "staff leaving"
-msgstr ""
+msgstr "salida de personal"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Start consent"
-msgstr ""
+msgstr "Iniciar la gestión del"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -3716,7 +3716,7 @@ msgstr "Iniciar presentación de VHL"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "statement (SSRAA"
-msgstr "de software (SSRAA"
+msgstr "firmada (SSRAA"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -3734,25 +3734,25 @@ msgstr "estado"
 #: input/images/PHW.F.svg:0
 #: input/images/PHW.H.svg:0
 msgid "Status List)"
-msgstr ""
+msgstr "Status List)"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "suspend"
-msgstr ""
+msgstr "suspender"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "suspension"
-msgstr ""
+msgstr "suspensión"
 
 #. Source: input/images/PHW.M.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.M.svg
 #: input/images/PHW.M.svg:0
 msgid "the Advance"
-msgstr ""
+msgstr "la sección"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -3767,85 +3767,85 @@ msgstr ""
 #: input/images/PHW.G.svg:0
 #: input/images/PHW.I.svg:0
 msgid "the agreement"
-msgstr ""
+msgstr "el acuerdo"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "the certificate"
-msgstr ""
+msgstr "el certificado"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "the claim"
-msgstr ""
+msgstr "la declaración"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
 #: input/images/PHW.F.svg:0
 msgid "the decision to audit"
-msgstr ""
+msgstr "la decisión a auditoría"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "the QR code"
-msgstr ""
+msgstr "el código QR"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "the receiver"
-msgstr ""
+msgstr "al receptor"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "the registry"
-msgstr ""
+msgstr "el registro"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "the result"
-msgstr ""
+msgstr "el resultado"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "the signed"
-msgstr ""
+msgstr "el texto del"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
 #: input/images/PHW.K.svg:0
 msgid "the VHL"
-msgstr ""
+msgstr "el VHL"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "the VHL option in"
-msgstr ""
+msgstr "la opción VHL en"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "to stop: revoke"
-msgstr ""
+msgstr "detener: revocar"
 
 #. Source: input/images/PHW.J.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "to the certificate"
-msgstr ""
+msgstr "al certificado"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "to the shared"
-msgstr ""
+msgstr "al conjunto compartido de"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
@@ -3863,7 +3863,7 @@ msgstr "solicitud de token"
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
 #: input/images/PHW.H.svg:0
 msgid "tokens and"
-msgstr ""
+msgstr "tokens y"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -3911,7 +3911,7 @@ msgstr "Ancla de confianza (GDHCN u"
 #: input/images/PHW.F.svg:0
 #: input/images/PHW.I.svg:0
 msgid "Trust Anchor (GDHCN or another"
-msgstr ""
+msgstr "Ancla de confianza (GDHCN u otra"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -3938,7 +3938,7 @@ msgstr "Ancla de confianza (GDHCN u otra ancla)"
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "Trust Anchor trust"
-msgstr ""
+msgstr "en la lista de confianza"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -3950,7 +3950,7 @@ msgstr "Ancla de confianza)"
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "trust domain's"
-msgstr ""
+msgstr "texto de consentimiento"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -3962,13 +3962,13 @@ msgstr "lista de confianza [ITI-YY2]"
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "Trust List with DID"
-msgstr ""
+msgstr "Trust List with DID"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "UDAP server"
-msgstr ""
+msgstr "metadatos del servidor"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
@@ -3998,7 +3998,7 @@ msgstr "unknown)"
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Update / Revoke"
-msgstr ""
+msgstr "Actualizar / Revocar"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -4010,13 +4010,13 @@ msgstr "Actualizar / Revocar (PUT / DELETE)"
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Update/Revoke?"
-msgstr ""
+msgstr "actualizar/revocar?"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "use [ITI-YY5]"
-msgstr ""
+msgstr "uso [ITI-YY5]"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -4034,7 +4034,7 @@ msgstr "VHL verificado"
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
 #: input/images/PHW.I.svg:0
 msgid "verified?"
-msgstr "¿verificado?"
+msgstr "verificada?"
 
 #. Source: input/images/PHW.K.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.K.svg
@@ -4046,13 +4046,13 @@ msgstr "Verificador (con o sin aplicación de comprobación de estado)"
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "version)"
-msgstr ""
+msgstr "versión)"
 
 #. Source: input/images/PHW.L.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.L.svg
 #: input/images/PHW.L.svg:0
 msgid "versionId"
-msgstr ""
+msgstr "versionId"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -4064,7 +4064,7 @@ msgstr "versionId) [ITI-108]"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "versions the client"
-msgstr ""
+msgstr "puede actuar"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -4076,7 +4076,7 @@ msgstr "VHL"
 #. URL: http://smart.who.int/trust-phw/PHW.J.svg
 #: input/images/PHW.J.svg:0
 msgid "VHL (process B)"
-msgstr ""
+msgstr "consentimiento (proceso B)"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
@@ -4085,13 +4085,13 @@ msgstr ""
 #: input/images/PHW.B.svg:0
 #: input/images/PHW.C.svg:0
 msgid "VHL Holder (Patient / Personal"
-msgstr ""
+msgstr "Titular del VHL (paciente / billetera"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "VHL Holder (Patient / Personal Health"
-msgstr ""
+msgstr "Titular del VHL (paciente / billetera de salud"
 
 #. Source: input/images/PHW.A.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
@@ -4109,13 +4109,13 @@ msgstr "Titular del VHL (paciente / billetera de salud personal)"
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "VHL in Personal"
-msgstr ""
+msgstr "firmado en la billetera"
 
 #. Source: input/images/PHW.B.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.B.svg
 #: input/images/PHW.B.svg:0
 msgid "VHL issued"
-msgstr ""
+msgstr "respaldo de consentimiento"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -4133,7 +4133,7 @@ msgstr "Receptor del VHL (organización o aplicación receptora)"
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "VHL Receiver (Verifier / Relying"
-msgstr ""
+msgstr "Receptor del VHL (verificador / parte"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -4145,7 +4145,7 @@ msgstr "Receptor del VHL (verificador / parte que confía)"
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
 #: input/images/PHW.C.svg:0
 msgid "VHL redemption"
-msgstr ""
+msgstr "Canje del VHL"
 
 #. Source: input/images/PHW.C.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.C.svg
@@ -4193,7 +4193,7 @@ msgstr "billetera"
 #. URL: http://smart.who.int/trust-phw/PHW.A.svg
 #: input/images/PHW.A.svg:0
 msgid "Wallet)"
-msgstr ""
+msgstr "personal)"
 
 #. Source: input/images/PHW.H.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.H.svg
@@ -4205,13 +4205,13 @@ msgstr "¿Qué se va a detener?"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "will call the provider's API"
-msgstr ""
+msgstr "llamará a la API del proveedor"
 
 #. Source: input/images/PHW.E.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "with authorization_"
-msgstr ""
+msgstr "con authorization_"
 
 #. Source: input/images/PHW.I.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.I.svg
@@ -4223,7 +4223,7 @@ msgstr "with DID"
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "with granted"
-msgstr ""
+msgstr "con los detalles"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -4235,7 +4235,7 @@ msgstr "con smart-trust-tools"
 #. URL: http://smart.who.int/trust-phw/PHW.E.svg
 #: input/images/PHW.E.svg:0
 msgid "with token and"
-msgstr ""
+msgstr "con el token y la"
 
 #. Source: input/images/PHW.F.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.F.svg
@@ -4265,7 +4265,7 @@ msgstr "Sí"
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
 #: input/images/PHW.D.svg:0
 msgid "§2)"
-msgstr ""
+msgstr "§2)"
 
 #. Source: input/images/PHW.D.svg:0
 #. URL: http://smart.who.int/trust-phw/PHW.D.svg
