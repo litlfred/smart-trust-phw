@@ -53,6 +53,30 @@
   <script>
   var swaggerUrls = [
   {
+    "url": "../ValueSet-DVCRelationshipStatus.openapi.json",
+    "name": "Relationship Status for Contact in Patient Schema"
+  },
+  {
+    "url": "../ValueSet-DVCVaccines.openapi.json",
+    "name": "DVC - Vaccines Schema"
+  },
+  {
+    "url": "../ValueSet-DisclosureStatements.openapi.json",
+    "name": "Disclosure Statements Schema"
+  },
+  {
+    "url": "../ValueSet-HL.TYPE.openapi.json",
+    "name": "HL.TYPE ValueSet  Schema"
+  },
+  {
+    "url": "../ValueSet-PHWExplicitConsentKind.openapi.json",
+    "name": "Kinds of explicit consent (HL7 ActConsentDirective) Schema"
+  },
+  {
+    "url": "../ValueSet-PHWImpliedConsentKind.openapi.json",
+    "name": "Kinds of implied consent (HL7 ActConsentDirective) Schema"
+  },
+  {
     "url": "../StructureDefinition-DVC.openapi.json",
     "name": "DVC"
   },
@@ -119,7 +143,7 @@
       select.appendChild(opt);
     });
     ui = SwaggerUIBundle({
-      url: "../StructureDefinition-DVC.openapi.json",
+      url: "../ValueSet-DVCRelationshipStatus.openapi.json",
       dom_id: '#swagger-ui',
       presets: [SwaggerUIBundle.presets.apis],
       layout: "BaseLayout"
