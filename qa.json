@@ -6,8 +6,8 @@
   "status" : "draft",
   "package-id" : "smart.who.int.trust-phw",
   "ig-ver" : "0.2.0-litlfred",
-  "date" : "Fri, 13 Nov, 2026 17:39:29 +0000",
-  "dateISO8601" : "2026-11-13T17:39:29+00:00",
+  "date" : "Fri, 13 Nov, 2026 18:21:43 +0000",
+  "dateISO8601" : "2026-11-13T18:21:43+00:00",
   "errs" : 104,
   "warnings" : 205,
   "hints" : 404,
@@ -16,5 +16,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "6.0.0-snapshot1 (3)",
-  "maxMemory" : 4454659856
+  "maxMemory" : 4764271408
 }
