@@ -1,0 +1,395 @@
+{
+  "$schema": "glossary-sense/v1",
+  "verdicts": [
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "449995c4fe8fab389053dac72d77798c094dd4a3b7b3cfe69c4d78d119308dce",
+      "msgid": "Actor",
+      "verdict": "other-sense",
+      "reason": "IHE/FHIR actors (Trust Anchor actor, the actors a transaction names, the BPMN lane/actor heading) are the guide's own actor concept, not the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "46d9f41860d03699ca410a210b872b8028f4edc95e1659f7fc0ca3a83bd8469b",
+      "msgid": "<a0>Transactions</a0>: the transactions each actor takes part in.",
+      "verdict": "other-sense",
+      "reason": "IHE/FHIR actors (Trust Anchor actor, the actors a transaction names, the BPMN lane/actor heading) are the guide's own actor concept, not the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "7b518a10ef3650aa06f45c66f3bc994fac5e0b34843b58736824b61842eff71f",
+      "msgid": "Lane / Actor",
+      "verdict": "other-sense",
+      "reason": "IHE/FHIR actors (Trust Anchor actor, the actors a transaction names, the BPMN lane/actor heading) are the guide's own actor concept, not the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "e61b75683791cd39bac474542fb337cafcb6b4895817d73e8adc5504cfac8f56",
+      "msgid": "Trust-Anchor Neutrality: Every process models PKI key publication ({code0}) and trust list retrieval ({code1}) against an abstract Trust Anchor actor ({code2}). The WHO Global Digital Health Certification Network (GDHCN) is one possible Trust Anchor implementation among others (such as national health PKI roots, regional cross-border trust networks, or bilateral federation anchors).",
+      "verdict": "other-sense",
+      "reason": "IHE/FHIR actors (Trust Anchor actor, the actors a transaction names, the BPMN lane/actor heading) are the guide's own actor concept, not the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "e82a950109f6a3723235b16cd3da97a2226ef8dfc18925ba6980cdca242cef91",
+      "msgid": "the KSA Ministry of Health, as verified by trust in the {code0} trust domain, is the consented actor ({code1});",
+      "verdict": "other-sense",
+      "reason": "IHE/FHIR actors (Trust Anchor actor, the actors a transaction names, the BPMN lane/actor heading) are the guide's own actor concept, not the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Content",
+      "label": "Content",
+      "msgidSha256": "0f74475140da20563db23982727c8ee5f8085a0606ee46e2a0748ceebc321375",
+      "msgid": "These files should be the first choice whenever generating any implementation artifacts since they contain all of the rules about what makes these profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation. See the overview on <a0>validating FHIR profiles and resources</a0> for more information about validating profiles and how to use these artifacts.",
+      "verdict": "other-sense",
+      "reason": "'content' is ordinary (the guide's or IPS content, 'Content' as a page heading), not the harness's Content node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Content",
+      "label": "Content",
+      "msgidSha256": "47bd29075f8b8019f0beec6d86beda7c9bf67aaf05053dcbe0b3bcb63968517f",
+      "msgid": "Content",
+      "verdict": "other-sense",
+      "reason": "'content' is ordinary (the guide's or IPS content, 'Content' as a page heading), not the harness's Content node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Content",
+      "label": "Content",
+      "msgidSha256": "5ddc8f9a93ab7b521b5a3f680fdd3f3aa1cb049db3d0a7365ec936a40eed7bbe",
+      "msgid": "No reference implementation of this guide is published yet. Content is for demonstration purposes only.",
+      "verdict": "other-sense",
+      "reason": "'content' is ordinary (the guide's or IPS content, 'Content' as a page heading), not the harness's Content node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Content",
+      "label": "Content",
+      "msgidSha256": "6a6336b41407a5ecf5aaceb4837f42ab72840609476fde9eb62139e861b64f7d",
+      "msgid": "Under the terms of this licence, you may copy, redistribute and adapt the work for noncommercial purposes provided the work is appropriately cited, as indicated below. In any use of this work, there should be no suggestion that WHO endorses any specific organizations, products or services. The use of the WHO logo is not permitted. If you adapt the work, then you must license your work under the same or equivalent Creative Commons licence. If you create a translation of this work, you should add the following disclaimer along with the suggested citation: \"This translation was not created by the World Health Organization (WHO). WHO is not responsible for the content or accuracy of this translation. The original English edition shall be the binding and authentic edition.\" Any mediation relating to disputes arising under the licence shall be conducted in accordance with the mediation rules of the World Intellectual Property Organization. (http://www.wipo.int/amc/en/mediation/rules/).",
+      "verdict": "other-sense",
+      "reason": "'content' is ordinary (the guide's or IPS content, 'Content' as a page heading), not the harness's Content node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Content",
+      "label": "Content",
+      "msgidSha256": "9da2c4a5f28459e0c500811eb04b9b05e48a125d55fa50b5620a6519c9f1772c",
+      "msgid": "Feel free to modify this index page with your own awesome content!",
+      "verdict": "other-sense",
+      "reason": "'content' is ordinary (the guide's or IPS content, 'Content' as a page heading), not the harness's Content node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Content",
+      "label": "Content",
+      "msgidSha256": "ea5dd8e6711b1fc9832218badecfc52f5650e8ee6cc559f577b1cac3149c6976",
+      "msgid": "This implementation guide is still being developed. Its content is for demonstration purposes only. {:.stu-note}",
+      "verdict": "other-sense",
+      "reason": "'content' is ordinary (the guide's or IPS content, 'Content' as a page heading), not the harness's Content node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Declaration",
+      "label": "Declaration",
+      "msgidSha256": "1999bf88302007907d7d1a0ee501aca9039949c576b11f91e11391d2c28aea98",
+      "msgid": "Override 1: the policies. ODRL 2.2 lets each policy declare a conflict strategy with {code0}: {code1} (permissions override prohibitions), {code2} (prohibitions override permissions) or {code3} (the policy is void if any conflict is detected). These terms were checked against the ODRL 2.2 vocabulary and the pinned JSON-LD context (folio-assistant-core {code4}). When every applicable policy declares the same strategy, the table uses it. A policy that declares none counts as {code5}, the owner's default D. If the applicable policies declare different strategies, {code6} is {code7}. ODRL 2.2 says a policy with several conflict values (after a merge or inheritance) is void when its rules conflict (W3C ODRL Information Model 2.2, Policy Conflict Strategy). This IG treats the applicable policies of one request as merged. The only declaration that changes an outcome is {code8} declared by every applicable policy. ODRL's own default when nothing is declared is {code9}, but the outcome is the same: with a conflict, {code10} voids the policy and {code11} denies, and both are refused.",
+      "verdict": "other-sense",
+      "reason": "an agreement's declaration in the guide's policy merge is not the harness's Declaration node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Harness",
+      "label": "Harness",
+      "msgidSha256": "8589fc3abbc20fa2e34f3191fa6af9d0020560dddfbc7ef7e76abc9b28499a4b",
+      "msgid": "The consent path follows consent rules 1, 2 and 4 under process A. An agreement carries {code0} only when consent is its legal basis. The harness's non-strict mode, which allows {code1} and logs it, must not be used on data gated by an agreement.",
+      "verdict": "other-sense",
+      "reason": "'the harness's non-strict mode' is a test harness of the decision logic, not the bootstrap Harness (a Knowledge Graph of Skills, Roles and Processes).",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Node",
+      "label": "Node",
+      "msgidSha256": "91bc6fb4b884a75a082c0fe8359b9136e8f49367deb5f9df0820b6cf2630ba22",
+      "msgid": "<a0>Audit Trail and Node Authentication (ATNA) Profile</a0>",
+      "verdict": "other-sense",
+      "reason": "ATNA node authentication: an IHE Secure Node, not a harness Node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Node",
+      "label": "Node",
+      "msgidSha256": "a9c61b81bc4392b4329ef643f5c6d43f8fc8cdfca8a70c66bc3766b3778487d2",
+      "msgid": "The KSA EMR sends Retrieve Manifest with the passcode, authenticated by one VHL option. The IPS Pilgrimage guide uses mTLS node authentication ({code0}) today, which is not one of VHL's options.",
+      "verdict": "other-sense",
+      "reason": "ATNA node authentication: an IHE Secure Node, not a harness Node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "0543b1a9f31cb31b3b420452196fca609d96d0a16a59ea982913996050fa97a2",
+      "msgid": "E10. Process",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "073e2a3d0551543d4633a5875bba4d4fda5e0c53af88d7d165c291a0d0a2181d",
+      "msgid": "Process response",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "21813dd7d23a1629bf8abcbc8c20e826f52d9cecba0b1b6976f08bb3f3cd02ff",
+      "msgid": "Choose one VHL option: OAuth with SSRAA (UDAP), approved for process D and I, which is X.509-based like mTLS; or HTTP Message Signatures (RFC 9421). KSA publishes the matching key in the trust domain ({code0}).",
+      "verdict": "exception",
+      "reason": "In sense: processes D and I are the guide's BPMN processes. The ar dual «العمليتين» is the fixed «العملية» inflected, which the matcher does not reach.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "2892c1cb060794d081abe0fe34ddd807783c8ae226d3e6f10a0cce5e6419bef5",
+      "msgid": "Process documents or refusal {code0} response",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "4ffa7aceb28aa7dd748b947e06c13602f45d22c35ccffb430b53b68dbac01ed0",
+      "msgid": "Process documents or refusal  response",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "5361844b576334f609c44f1fbfa08f41c483cd8eb26677a73bf499a1d08c73d0",
+      "msgid": "C10. Process clinical",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "6a294b92c51253117104473bf325ff08657a95960a0d0da98f8f6b65ef56d652",
+      "msgid": "E10. Process response",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "708e7b17c63199a7c75716cf2b4e15ad8f603bb559a79010095cef41126247c6",
+      "msgid": "Process clinical documents or refusal notice  response",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "94152e4e443da505a8b2e4c69a3f9bd22ad25d9d36b73225348c139e9e3e18aa",
+      "msgid": "Process any selective disclosure directives\\\nto redact content\\\nwhen generating doc",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "9c0d59a23ff8368a9bfae193663b0ec3b3a85d2599ccdc6aa42bab8430cf6d69",
+      "msgid": "C10. Process",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "aae6dc95b4337c2507bc0d3f1a5b9f0a3f045029aefcd2a3c18fbd0e366a06b0",
+      "msgid": "I11. Process documents or refusal [ITI-YY5] response",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "c53ce3c4b64e3997c90c493d82e31a460a9bd6b203f63dd36e6e5f63442eced9",
+      "msgid": "C10. Process clinical documents or refusal notice [ITI-YY5] response",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "c9c5384e70a63b033c83d0a38cefc76401178d08439ff5d61106cf1ae892a29a",
+      "msgid": "I11. Process",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "edfdcf32c146327a062e7157b910771b5e9d8e92456db790ca06aedcbe4fac17",
+      "msgid": "Process clinical documents or refusal notice {code0} response",
+      "verdict": "other-sense",
+      "reason": "'Process' here is the verb (process documents, process a response), not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "2ce078e86a55d94166493bcc78bc6a1bb3f4dd624a1bdd91796d4dd50575c714",
+      "msgid": "Composition.section (LOINC 42348-3) entries reference each consent entry, with a human-readable summary in the section text.",
+      "verdict": "other-sense",
+      "reason": "'reference implementation', 'reference software', 'provides a reference' and a FHIR entry reference are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "4caade0e0c150a11ed3edf9a3e901e654c218582b691df151255fb48fe0a21ed",
+      "msgid": "The fourth layer (L4: Executable—reference applications and services) focuses on software applications and services within a digital ecosystem. It is intended to include executable reference software that accurately represents the intentions, operational, and functional requirements of the WHO recommendations; addresses user and health system needs; and comprises machine-readable data and calculations within interoperability standards, as documented in the L1–L3 layers. As a fully functional application, it is intended to serve as a generic starting point, ready to be localised to the specific operational context of the users, population, and health system within which it is deployed. Additional products at this layer include terminology services to support consistent data representation for interoperability; reusable software libraries including software development kits; application programming interfaces; and function as a service to support updates to FHIR content and capabilities across subscribed digital systems.",
+      "verdict": "other-sense",
+      "reason": "'reference implementation', 'reference software', 'provides a reference' and a FHIR entry reference are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "5ddc8f9a93ab7b521b5a3f680fdd3f3aa1cb049db3d0a7365ec936a40eed7bbe",
+      "msgid": "No reference implementation of this guide is published yet. Content is for demonstration purposes only.",
+      "verdict": "other-sense",
+      "reason": "'reference implementation', 'reference software', 'provides a reference' and a FHIR entry reference are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "9d9a98415a71d021e42abadd9b77843f6205a978c8003fc4c5d702c785407e96",
+      "msgid": "The link carries no agreement. The VHL payload has no reference to an agreement and needs none. The person who shares the link does not bind the receiver to anything.",
+      "verdict": "other-sense",
+      "reason": "'reference implementation', 'reference software', 'provides a reference' and a FHIR entry reference are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "f1600b5830deae9e91a6eb827919a1f907023d34261dcce5420864f000be91bf",
+      "msgid": "Deployment: security and privacy, testing, reference implementations and downloads.",
+      "verdict": "other-sense",
+      "reason": "'reference implementation', 'reference software', 'provides a reference' and a FHIR entry reference are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "ff43cd4f3931c52ec87972b38a584adc1e7e29d875f4f4fd73cbca115535a710",
+      "msgid": "The following page provides a reference to resources that can guide countries in adapting the guidelines for country use.",
+      "verdict": "other-sense",
+      "reason": "'reference implementation', 'reference software', 'provides a reference' and a FHIR entry reference are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Role",
+      "label": "Role",
+      "msgidSha256": "14d48e580715918360215adf53b790dbad7403ed04ae3e1c247992e49ba0e510",
+      "msgid": "Counselling and consent. A counsellor explains the plain-language text of each consent (consent rule 3). The wallet records both Consents in the origin's Consent Registry. Each Consent's {code0} names which Hajj consent it is ({code1} or {code2}), and its {code3} names the {code4} version whose text the pilgrim was shown. That version pins the text, which is the role consent rule 2 gives {code5} elsewhere.",
+      "verdict": "other-sense",
+      "reason": "'the role consent rule 2 gives' is ordinary use, not a harness Role.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/permission",
+      "label": "permission",
+      "msgidSha256": "635c6d5cffd73f7535e0d97e72cb7dbf68c7ff60d9cc67c96470d66cfc6181c2",
+      "msgid": "Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+      "verdict": "other-sense",
+      "reason": "'prior written permission' in the BSD licence text is ordinary use, not an ODRL permission.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "49beb35fd7ab56674c5390d99e7264530762934575ebb68f00869d268bdbde7f",
+      "msgid": "A1. Select base policy & disclosure scope (PCF Basic / Intermediate Consent)",
+      "verdict": "other-sense",
+      "reason": "a consent policy (PCF base policy) is the guide's governance, not the harness's ODRL access policy.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "823412d1eacb67956220e532959f0104603057c88704863ca38e7cd188fda812",
+      "msgid": "policy",
+      "verdict": "other-sense",
+      "reason": "a consent policy (PCF base policy) is the guide's governance, not the harness's ODRL access policy.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    }
+  ]
+}

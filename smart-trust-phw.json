@@ -123,6 +123,15 @@
         "scenarios"
       ],
       "description": "The roles the lanes of the business processes name (roles.json, each pointing to its ActorDefinition in input/fsh/actors/actors.fsh where one exists), and example people and systems that play them (actors/, each person with a meta.persona). tools/personas/gen_personas.ts writes the Generic Personas page from them. Every person is fictional."
+    },
+    {
+      "id": "smart-trust-phw-translations",
+      "path": "translations/",
+      "graphTypologies": [
+        "translation-sources"
+      ],
+      "catalogues": "input/*/translations/{locale}.po",
+      "description": "The harness side of this IG's translations. The catalogues themselves stay where smart-base's injector reads them, one per locale per source directory: input/pagecontent/, input/images/ and input/images-source/translations/<locale>.po, from the .pot templates smart-base's extract_translations.py writes beside them (`catalogues` names that pattern). This directory holds what the harness keeps per layer: glossary-sense.json, the adjudicator's sense verdicts for translation:glossary:check. Agent translations are unofficial until a person signs them off; FHIR terms use CodeSystem supplements in input/fsh/translations/<locale>.fsh."
     }
   ],
   "avatar": {
