@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "8cba0eb0a3ae8dad47c219839df64bfe2c66893e",
+          "ref": "c9c951af360c5b9c68a931b2e8346967d6689863",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -158,8 +158,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "8cba0eb0a3ae8dad47c219839df64bfe2c66893e",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84); refreshed as mains moved. Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68', 'mark ready for merge whats green')."
+              "ref": "c9c951af360c5b9c68a931b2e8346967d6689863",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84); refreshed as mains moved. Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68', 'work todo')."
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "1c21b148ebd367dfa857a7ac9c9ddd91804c2686",
+          "ref": "81e814758dad9f92e962ea5a52f6568dd0c0c1a3",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -183,8 +183,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "1c21b148ebd367dfa857a7ac9c9ddd91804c2686",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84); refreshed as mains moved. Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68', 'mark ready for merge whats green')."
+              "ref": "81e814758dad9f92e962ea5a52f6568dd0c0c1a3",
+              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw to current mains in #68 so translation:glossary:check reads the declared catalogues pattern (cat-harness-tools#2056, merged by litlfred as 8299f84); refreshed as mains moved. Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Re-pin in #68', 'work todo')."
             }
           }
         }
