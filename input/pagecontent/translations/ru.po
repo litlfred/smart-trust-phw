@@ -3063,7 +3063,7 @@ msgstr "<a0>Обобщённые персоны</a0>: люди и системы
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
 #: input/pagecontent/business-requirements.md:7
 msgid "<a0>Worked Example: IPS Pilgrimage (Hajj)</a0>: processes A, B, C, F and I applied to one case."
-msgstr ""
+msgstr "<a0>Разобранный пример: IPS для паломничества (хадж)</a0>: процессы A, B, C, F и I применительно к одному случаю."
 
 #. Source: input/pagecontent/business-requirements.md:1
 #. URL: http://smart.who.int/trust-phw/business-requirements.html
