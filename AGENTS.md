@@ -61,7 +61,7 @@ README as declared assets. The IG source (`input/`) is not mounted.
 |---|---|---|
 | `library/` | IHE PCF and IHE VHL snapshots | yes |
 | `catalogue/` | records for `library/` and every work the IG cites | yes |
-| `fhir-artifact-index/` | the artefact index | `ig-identity.json` only |
+| `fhir-artifact-index/` | the artefact index | its README only |
 | `document-kinds/` | the DAK coverage report | no |
 
 Also declared, but not mounted by the index:
