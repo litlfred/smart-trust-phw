@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "79e67d427f7dfd411ee702912ec5df42c5249c76",
+          "ref": "cc7ca6eb98e35c3793e72e0751b8aa962bbeed35",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -42,9 +42,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "79e67d427f7dfd411ee702912ec5df42c5249c76",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
+              "on": "2026-11-14",
+              "ref": "cc7ca6eb98e35c3793e72e0751b8aa962bbeed35",
+              "evidence": "owner litlfred, 2026-11-14 ~05:50Z and 13 Nov ~20:56Z, in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf: 'send to you as merge manager to handle merge AND repin'; 'A. Renew 6h + re-pin' (every layer at main); needed so the merge-guard caller can pin tools >= #2118"
             }
           }
         }
@@ -55,7 +55,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "00200f9832645a0d942c19e12593d751bfbede6e",
+          "ref": "3be9ddb3a2ffb9ddafd4aaabe32829469a82416f",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -79,9 +79,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "00200f9832645a0d942c19e12593d751bfbede6e",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
+              "on": "2026-11-14",
+              "ref": "3be9ddb3a2ffb9ddafd4aaabe32829469a82416f",
+              "evidence": "owner litlfred, 2026-11-14 ~05:50Z and 13 Nov ~20:56Z, in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf: 'send to you as merge manager to handle merge AND repin'; 'A. Renew 6h + re-pin' (every layer at main); needed so the merge-guard caller can pin tools >= #2118"
             }
           }
         }
@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "c25c0d92363c8d5c84334335de4636777f6b9d39",
+          "ref": "9c04b6fa237c2ab5f6217ffcb42c760f3783b2f3",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -101,9 +101,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "c25c0d92363c8d5c84334335de4636777f6b9d39",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
+              "on": "2026-11-14",
+              "ref": "9c04b6fa237c2ab5f6217ffcb42c760f3783b2f3",
+              "evidence": "owner litlfred, 2026-11-14 ~05:50Z and 13 Nov ~20:56Z, in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf: 'send to you as merge manager to handle merge AND repin'; 'A. Renew 6h + re-pin' (every layer at main); needed so the merge-guard caller can pin tools >= #2118"
             }
           }
         }
@@ -114,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "5ee67091fcfc45f05cf53e7de1262988e5ae394e",
+          "ref": "9d2388dba8d4fe4727b40067470fa5c543c7166c",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -129,9 +129,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "5ee67091fcfc45f05cf53e7de1262988e5ae394e",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
+              "on": "2026-11-14",
+              "ref": "9d2388dba8d4fe4727b40067470fa5c543c7166c",
+              "evidence": "owner litlfred, 2026-11-14 ~05:50Z and 13 Nov ~20:56Z, in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf: 'send to you as merge manager to handle merge AND repin'; 'A. Renew 6h + re-pin' (every layer at main); needed so the merge-guard caller can pin tools >= #2118"
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "21c29a7e3a2192baa47ee957430b8d4d76e6f7a9",
+          "ref": "18370a525f163e994ef8823d0266e47df8bc0a1e",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -157,9 +157,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "21c29a7e3a2192baa47ee957430b8d4d76e6f7a9",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
+              "on": "2026-11-14",
+              "ref": "18370a525f163e994ef8823d0266e47df8bc0a1e",
+              "evidence": "owner litlfred, 2026-11-14 ~05:50Z and 13 Nov ~20:56Z, in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf: 'send to you as merge manager to handle merge AND repin'; 'A. Renew 6h + re-pin' (every layer at main); needed so the merge-guard caller can pin tools >= #2118"
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "c55f2f2b1755e2e7ec12fcaa56f72dfcc5d65283",
+          "ref": "b31b1104cdfa9c352f7e7f515f8367d6afef0f2e",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -182,9 +182,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "c55f2f2b1755e2e7ec12fcaa56f72dfcc5d65283",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
+              "on": "2026-11-14",
+              "ref": "b31b1104cdfa9c352f7e7f515f8367d6afef0f2e",
+              "evidence": "owner litlfred, 2026-11-14 ~05:50Z and 13 Nov ~20:56Z, in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf: 'send to you as merge manager to handle merge AND repin'; 'A. Renew 6h + re-pin' (every layer at main); needed so the merge-guard caller can pin tools >= #2118"
             }
           }
         }
@@ -217,7 +217,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "c51ad489aa42e1f6ce9cd18208eef1b5e286f502",
+          "ref": "b653e0577a1649969319196ec738353fe2068793",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -229,9 +229,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "c51ad489aa42e1f6ce9cd18208eef1b5e286f502",
-              "evidence": "litlfred, 2026-11-13: re-pin smart-trust-phw in #68 to current mains, so smart-base includes smart-base#379 (the l1-extraction-pages Tool moved back to the always-on tools/), which fixes the 'No new failures' unknown-tool finding; and so the glossary check reads the catalogues pattern (cat-harness-tools#2056). Asked in session session_01VQDpPgATUQNDVATzkwq4DE ('Fix smart-base', 'when green, mark ready for merge')."
+              "on": "2026-11-14",
+              "ref": "b653e0577a1649969319196ec738353fe2068793",
+              "evidence": "owner litlfred, 2026-11-14 ~05:50Z and 13 Nov ~20:56Z, in Claude Code session https://claude.ai/code/session_01VQDpPffYARDQ8juksAZScf: 'send to you as merge manager to handle merge AND repin'; 'A. Renew 6h + re-pin' (every layer at main); needed so the merge-guard caller can pin tools >= #2118"
             }
           }
         }
