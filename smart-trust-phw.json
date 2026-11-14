@@ -44,7 +44,7 @@
     {
       "id": "smart-trust-phw-artifact-index",
       "path": "fhir-artifact-index/",
-      "description": "The artefact index for smart-trust-phw. fhir-harness's `ig-index:build` writes `index.json`, `menu.json`, `releases.json` and `package.tgz` at publish from the IG's AST; they are not committed. `ig-identity.json` and the README are.",
+      "description": "The artefact index for smart-trust-phw. fhir-harness's `ig-index:build` writes `index.json`, `menu.json`, `releases.json` and `package.tgz` at publish from the IG's AST; they are not committed. Only the README is.",
       "graphTypologies": [
         "fhir-artifact-index"
       ],
