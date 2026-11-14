@@ -1,6 +1,6 @@
 {
  "$schema": "site-link-report/v1",
- "pages": 510,
+ "pages": 1217,
  "unresolved": [],
  "selfAddress": [],
  "content": [
@@ -61,6 +61,6 @@
    "href": "webcomponents/webcomponents-loader.js"
   }
  ],
- "diagrams": 35,
+ "diagrams": 38,
  "inDiagrams": []
 }

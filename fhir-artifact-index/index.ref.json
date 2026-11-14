@@ -1,7 +1,7 @@
 {
   "$schema": "fhir-artifact-index-ref/v1",
-  "index": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/623054de170a5013a5b5d84527a7822cb8d9a3c6/fhir-artifact-index/index.json",
-  "base": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/623054de170a5013a5b5d84527a7822cb8d9a3c6/",
+  "index": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/fhir-artifact-index/index.json",
+  "base": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/",
   "repository": "litlfred/smart-trust-phw",
-  "commit": "623054de170a5013a5b5d84527a7822cb8d9a3c6"
+  "commit": "1663c2d4a5faa016f409927c0c2d796e1ad15702"
 }

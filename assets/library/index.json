@@ -60,7 +60,8 @@
         "unreadable": 0,
         "empty": 0
       },
-      "view": "/en/cat-harness/library/smart-trust-phw/ihe-iti-pcf-1-1-0/"
+      "view": "/en/cat-harness/library/smart-trust-phw/ihe-iti-pcf-1-1-0/",
+      "lang": "en"
     },
     {
       "id": "ihe-iti-vhl-1-0-0-comment",
@@ -115,7 +116,8 @@
         "unreadable": 0,
         "empty": 0
       },
-      "view": "/en/cat-harness/library/smart-trust-phw/ihe-iti-vhl-1-0-0-comment/"
+      "view": "/en/cat-harness/library/smart-trust-phw/ihe-iti-vhl-1-0-0-comment/",
+      "lang": "en"
     },
     {
       "id": "9789240010567-eng",

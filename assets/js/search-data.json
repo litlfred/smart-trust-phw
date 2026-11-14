@@ -888,804 +888,790 @@
     
     "relUrl": "/feedback.html"
   },"127": {
-    "doc": "QA checkers",
-    "title": "QA checkers",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/smart-trust-phw/en/cat-harness/qa-checkers/#qa-checkers",
-    
-    "relUrl": "/en/cat-harness/qa-checkers/#qa-checkers"
-  },"128": {
-    "doc": "QA checkers",
-    "title": "QA checkers",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/qa-checkers/",
-    
-    "relUrl": "/en/cat-harness/qa-checkers/"
-  },"129": {
-    "doc": "smart-trust-phw — Code",
-    "title": "Code: smart-trust-phw",
-    "content": "smart-trust-phw · 1 declared code directory · This instance is not a pinned mount here, so files are listed without links. tools/ tools . This layer's generators, each with a --check that CI runs: render-bpmn draws input/business-processes/*.bpmn into input/images/; personas writes input/pagecontent/personas.md from scenarios/. The site is published by the harness's stage-local.ts --fresh. 3 files . | README.md | personas/gen_personas.ts | render-bpmn/render_bpmn.ts | . ",
-    "url": "/smart-trust-phw/en/cat-harness/code/smart-trust-phw/#code-smart-trust-phw",
-    
-    "relUrl": "/en/cat-harness/code/smart-trust-phw/#code-smart-trust-phw"
-  },"130": {
-    "doc": "smart-trust-phw — Code",
-    "title": "Instances holding code",
-    "content": ". | smart-trust-phw | . ",
-    "url": "/smart-trust-phw/en/cat-harness/code/smart-trust-phw/",
-    
-    "relUrl": "/en/cat-harness/code/smart-trust-phw/"
-  },"131": {
-    "doc": "smart-trust-phw — Code",
-    "title": "smart-trust-phw — Code",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/code/smart-trust-phw/",
-    
-    "relUrl": "/en/cat-harness/code/smart-trust-phw/"
-  },"132": {
-    "doc": "Code",
-    "title": "Code",
-    "content": "One page per instance in this checkout holding a directory of this kind. | smart-trust-phw · tools/ | . ",
-    "url": "/smart-trust-phw/en/cat-harness/code/#code",
-    
-    "relUrl": "/en/cat-harness/code/#code"
-  },"133": {
-    "doc": "Code",
-    "title": "Code",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/code/",
-    
-    "relUrl": "/en/cat-harness/code/"
-  },"134": {
-    "doc": "Test plans",
-    "title": "Test plans",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/smart-trust-phw/en/cat-harness/test-plans/#test-plans",
-    
-    "relUrl": "/en/cat-harness/test-plans/#test-plans"
-  },"135": {
-    "doc": "Test plans",
-    "title": "Test plans",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/test-plans/",
-    
-    "relUrl": "/en/cat-harness/test-plans/"
-  },"136": {
-    "doc": "Validators",
-    "title": "Validators",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/smart-trust-phw/en/cat-harness/validators/#validators",
-    
-    "relUrl": "/en/cat-harness/validators/#validators"
-  },"137": {
-    "doc": "Validators",
-    "title": "Validators",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/validators/",
-    
-    "relUrl": "/en/cat-harness/validators/"
-  },"138": {
-    "doc": "Memory",
-    "title": "Memory",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/smart-trust-phw/en/cat-harness/memory/#memory",
-    
-    "relUrl": "/en/cat-harness/memory/#memory"
-  },"139": {
-    "doc": "Memory",
-    "title": "Memory",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/memory/",
-    
-    "relUrl": "/en/cat-harness/memory/"
-  },"140": {
-    "doc": "Substrate snapshots",
-    "title": "Substrate snapshots",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/smart-trust-phw/en/cat-harness/substrate-snapshots/#substrate-snapshots",
-    
-    "relUrl": "/en/cat-harness/substrate-snapshots/#substrate-snapshots"
-  },"141": {
-    "doc": "Substrate snapshots",
-    "title": "Substrate snapshots",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/substrate-snapshots/",
-    
-    "relUrl": "/en/cat-harness/substrate-snapshots/"
-  },"142": {
-    "doc": "health — state",
-    "title": "health",
-    "content": "test/health/results/ · health . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/health/cat-harness/index.html (not published by this site). The directory is test/health/results/. ",
-    "url": "/smart-trust-phw/en/cat-harness/health/#health",
-    
-    "relUrl": "/en/cat-harness/health/#health"
-  },"143": {
-    "doc": "health — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
-    "url": "/smart-trust-phw/en/cat-harness/health/",
-    
-    "relUrl": "/en/cat-harness/health/"
-  },"144": {
-    "doc": "health — state",
-    "title": "health — state",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/health/",
-    
-    "relUrl": "/en/cat-harness/health/"
-  },"145": {
-    "doc": "Pipeline plugins",
-    "title": "Pipeline plugins",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/smart-trust-phw/en/cat-harness/pipeline-plugins/#pipeline-plugins",
-    
-    "relUrl": "/en/cat-harness/pipeline-plugins/#pipeline-plugins"
-  },"146": {
-    "doc": "Pipeline plugins",
-    "title": "Pipeline plugins",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/pipeline-plugins/",
-    
-    "relUrl": "/en/cat-harness/pipeline-plugins/"
-  },"147": {
-    "doc": "uploads — state",
-    "title": "uploads",
-    "content": "uploads/ · uploads . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/uploads/cat-harness/index.html (not published by this site). The directory is uploads/. ",
-    "url": "/smart-trust-phw/en/cat-harness/uploads-queue/#uploads",
-    
-    "relUrl": "/en/cat-harness/uploads-queue/#uploads"
-  },"148": {
-    "doc": "uploads — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
-    "url": "/smart-trust-phw/en/cat-harness/uploads-queue/",
-    
-    "relUrl": "/en/cat-harness/uploads-queue/"
-  },"149": {
-    "doc": "uploads — state",
-    "title": "uploads — state",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/uploads-queue/",
-    
-    "relUrl": "/en/cat-harness/uploads-queue/"
-  },"150": {
-    "doc": "beans — state",
-    "title": "beans",
-    "content": "beans/ · beans . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/beans/index.html (not published by this site). The directory is beans/. ",
-    "url": "/smart-trust-phw/en/cat-harness/beans/#beans",
-    
-    "relUrl": "/en/cat-harness/beans/#beans"
-  },"151": {
-    "doc": "beans — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
-    "url": "/smart-trust-phw/en/cat-harness/beans/",
-    
-    "relUrl": "/en/cat-harness/beans/"
-  },"152": {
-    "doc": "beans — state",
-    "title": "beans — state",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/beans/",
-    
-    "relUrl": "/en/cat-harness/beans/"
-  },"153": {
-    "doc": "smart-trust-phw — library",
-    "title": "Library — the L1 corpus",
-    "content": "loading… . Listing Desktop ",
-    "url": "/smart-trust-phw/en/cat-harness/library/smart-trust-phw/#lib-title",
-    
-    "relUrl": "/en/cat-harness/library/smart-trust-phw/#lib-title"
-  },"154": {
-    "doc": "smart-trust-phw — library",
-    "title": "Uploads — the queue feeding this",
-    "content": "A source sitting here reads as absent to every consumer while the file is on disk. Queues are counted per declaring instance and never merged. ",
-    "url": "/smart-trust-phw/en/cat-harness/library/smart-trust-phw/",
-    
-    "relUrl": "/en/cat-harness/library/smart-trust-phw/"
-  },"155": {
-    "doc": "smart-trust-phw — library",
-    "title": "Source JSON-LD and assets",
-    "content": "The published files this page is a rendering of. | index.json library projection (JSON) | source/ihe-iti-pcf-1-1-0.jsonld entry JSON-LD | source/ihe-iti-vhl-1-0-0-comment.jsonld entry JSON-LD | . This page loads its entries from the library projection; it needs JavaScript to draw them. ",
-    "url": "/smart-trust-phw/en/cat-harness/library/smart-trust-phw/",
-    
-    "relUrl": "/en/cat-harness/library/smart-trust-phw/"
-  },"156": {
-    "doc": "smart-trust-phw — library",
-    "title": "smart-trust-phw — library",
-    "content": "| ",
-    "url": "/smart-trust-phw/en/cat-harness/library/smart-trust-phw/",
-    
-    "relUrl": "/en/cat-harness/library/smart-trust-phw/"
-  },"157": {
-    "doc": "Library — the L1 corpus",
-    "title": "Library — the L1 corpus",
-    "content": "loading… . Listing Desktop ",
-    "url": "/smart-trust-phw/en/cat-harness/library/#lib-title",
-    
-    "relUrl": "/en/cat-harness/library/#lib-title"
-  },"158": {
-    "doc": "Library — the L1 corpus",
-    "title": "Uploads — the queue feeding this",
-    "content": "A source sitting here reads as absent to every consumer while the file is on disk. Queues are counted per declaring instance and never merged. ",
-    "url": "/smart-trust-phw/en/cat-harness/library/",
-    
-    "relUrl": "/en/cat-harness/library/"
-  },"159": {
-    "doc": "Library — the L1 corpus",
-    "title": "Source JSON-LD and assets",
-    "content": "The published files this page is a rendering of. | index.json library projection (JSON) | . Library subgraphs in this checkout . | Instance | Entries | Library page | Subgraph JSON-LD | . | cat-harness | 0 | — | not published | . | fhir-harness | 0 | — | not published | . | folio-assistant-core | 0 | — | not published | . | smart-base | 0 | — | not published | . | smart-trust-phw | 7 | smart-trust-phw | not published | . | who-iris | 0 | — | not published | . This page loads its entries from the library projection; it needs JavaScript to draw them. ",
-    "url": "/smart-trust-phw/en/cat-harness/library/",
-    
-    "relUrl": "/en/cat-harness/library/"
-  },"160": {
-    "doc": "Library — the L1 corpus",
-    "title": "Library — the L1 corpus",
-    "content": "| ",
-    "url": "/smart-trust-phw/en/cat-harness/library/",
-    
-    "relUrl": "/en/cat-harness/library/"
-  },"161": {
-    "doc": "qa — state",
-    "title": "qa",
-    "content": "test/results/ · qa . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/lsi/index.html (not published by this site). The directory is test/results/. ",
-    "url": "/smart-trust-phw/en/cat-harness/qa/#qa",
-    
-    "relUrl": "/en/cat-harness/qa/#qa"
-  },"162": {
-    "doc": "qa — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
-    "url": "/smart-trust-phw/en/cat-harness/qa/",
-    
-    "relUrl": "/en/cat-harness/qa/"
-  },"163": {
-    "doc": "qa — state",
-    "title": "qa — state",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/qa/",
-    
-    "relUrl": "/en/cat-harness/qa/"
-  },"164": {
-    "doc": "attestations — state",
-    "title": "attestations",
-    "content": "test/attestations/ · attestations . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/attestations/cat-harness/index.html (not published by this site). The directory is test/attestations/. ",
-    "url": "/smart-trust-phw/en/cat-harness/attestations/#attestations",
-    
-    "relUrl": "/en/cat-harness/attestations/#attestations"
-  },"165": {
-    "doc": "attestations — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
-    "url": "/smart-trust-phw/en/cat-harness/attestations/",
-    
-    "relUrl": "/en/cat-harness/attestations/"
-  },"166": {
-    "doc": "attestations — state",
-    "title": "attestations — state",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/attestations/",
-    
-    "relUrl": "/en/cat-harness/attestations/"
-  },"167": {
-    "doc": "Merge reviews",
-    "title": "Merge reviews",
-    "content": "merge-reviews/ · merge-reviews . merge-reviews/ is not mounted in this build, so its verdicts are unknown, not none. bun run cat state:mount mounts it. ",
-    "url": "/smart-trust-phw/en/cat-harness/merge-reviews/#merge-reviews",
-    
-    "relUrl": "/en/cat-harness/merge-reviews/#merge-reviews"
-  },"168": {
-    "doc": "Merge reviews",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
-    "url": "/smart-trust-phw/en/cat-harness/merge-reviews/",
-    
-    "relUrl": "/en/cat-harness/merge-reviews/"
-  },"169": {
-    "doc": "Merge reviews",
-    "title": "Merge reviews",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/merge-reviews/",
-    
-    "relUrl": "/en/cat-harness/merge-reviews/"
-  },"170": {
-    "doc": "smart-trust-phw — Scenarios",
-    "title": "Scenarios: smart-trust-phw",
-    "content": "smart-trust-phw · scenarios/ · every instance's Scenarios . ",
-    "url": "/smart-trust-phw/en/cat-harness/scenarios/smart-trust-phw/#scenarios-smart-trust-phw",
-    
-    "relUrl": "/en/cat-harness/scenarios/smart-trust-phw/#scenarios-smart-trust-phw"
-  },"171": {
-    "doc": "smart-trust-phw — Scenarios",
-    "title": "Families — 0, over 11 document(s)",
-    "content": "Documents are grouped by the $schema each one declares; there is no total across families. 11 document(s) carry no $schema (could not determine); 0 would not parse. ",
-    "url": "/smart-trust-phw/en/cat-harness/scenarios/smart-trust-phw/",
-    
-    "relUrl": "/en/cat-harness/scenarios/smart-trust-phw/"
-  },"172": {
-    "doc": "smart-trust-phw — Scenarios",
-    "title": "Nodes — 11",
-    "content": "| id | title or summary | $schema | file | . | ana | Ana (data provider administrator) | | actors/ana.json | . | dr-mei | Dr Mei (receiving clinician) | | actors/dr-mei.json | . | health-information-exchange | Home health information exchange | | actors/health-information-exchange.json | . | kofi | Kofi (auditor) | | actors/kofi.json | . | lina-wallet | Lina's personal health wallet | | actors/lina-wallet.json | . | lina | Lina (wallet holder) | | actors/lina.json | . | nurse-tomas | Nurse Tomás (clinic nurse) | | actors/nurse-tomas.json | . | provider-authorization-service | Provider authorization service | | actors/provider-authorization-service.json | . | receiving-clinic-system | Receiving clinic's record system | | actors/receiving-clinic-system.json | . | trust-anchor-service | Trust anchor service | | actors/trust-anchor-service.json | . | smart-trust-phw | | | roles.json | . ",
-    "url": "/smart-trust-phw/en/cat-harness/scenarios/smart-trust-phw/",
-    
-    "relUrl": "/en/cat-harness/scenarios/smart-trust-phw/"
-  },"173": {
-    "doc": "smart-trust-phw — Scenarios",
-    "title": "Instances holding Scenarios",
-    "content": ". | smart-trust-phw | . ",
-    "url": "/smart-trust-phw/en/cat-harness/scenarios/smart-trust-phw/",
-    
-    "relUrl": "/en/cat-harness/scenarios/smart-trust-phw/"
-  },"174": {
-    "doc": "smart-trust-phw — Scenarios",
-    "title": "smart-trust-phw — Scenarios",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/scenarios/smart-trust-phw/",
-    
-    "relUrl": "/en/cat-harness/scenarios/smart-trust-phw/"
-  },"175": {
-    "doc": "Scenarios",
-    "title": "Scenarios",
-    "content": "One page per instance in this checkout holding a directory of this kind. | smart-trust-phw · scenarios/ | . ",
-    "url": "/smart-trust-phw/en/cat-harness/scenarios/#scenarios",
-    
-    "relUrl": "/en/cat-harness/scenarios/#scenarios"
-  },"176": {
-    "doc": "Scenarios",
-    "title": "Scenarios",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/scenarios/",
-    
-    "relUrl": "/en/cat-harness/scenarios/"
-  },"177": {
-    "doc": "swimlane-glossary — state",
-    "title": "swimlane-glossary",
-    "content": "glossary/ · swimlane-glossary . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/swimlane-glossary/index.html (not published by this site). The directory is glossary/. ",
-    "url": "/smart-trust-phw/en/cat-harness/swimlane-glossary/#swimlane-glossary",
-    
-    "relUrl": "/en/cat-harness/swimlane-glossary/#swimlane-glossary"
-  },"178": {
-    "doc": "swimlane-glossary — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
-    "url": "/smart-trust-phw/en/cat-harness/swimlane-glossary/",
-    
-    "relUrl": "/en/cat-harness/swimlane-glossary/"
-  },"179": {
-    "doc": "swimlane-glossary — state",
-    "title": "swimlane-glossary — state",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/swimlane-glossary/",
-    
-    "relUrl": "/en/cat-harness/swimlane-glossary/"
-  },"180": {
-    "doc": "Graph typologies",
-    "title": "Graph typologies",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/smart-trust-phw/en/cat-harness/graph-typologies/#graph-typologies",
-    
-    "relUrl": "/en/cat-harness/graph-typologies/#graph-typologies"
-  },"181": {
-    "doc": "Graph typologies",
-    "title": "Graph typologies",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/graph-typologies/",
-    
-    "relUrl": "/en/cat-harness/graph-typologies/"
-  },"182": {
-    "doc": "todos — state",
-    "title": "todos",
-    "content": "todos/ · todos . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/todos/index.html (not published by this site). The directory is todos/. ",
-    "url": "/smart-trust-phw/en/cat-harness/todos/#todos",
-    
-    "relUrl": "/en/cat-harness/todos/#todos"
-  },"183": {
-    "doc": "todos — state",
-    "title": "State graphs this harness declares",
-    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
-    "url": "/smart-trust-phw/en/cat-harness/todos/",
-    
-    "relUrl": "/en/cat-harness/todos/"
-  },"184": {
-    "doc": "todos — state",
-    "title": "todos — state",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/todos/",
-    
-    "relUrl": "/en/cat-harness/todos/"
-  },"185": {
-    "doc": "Content adapters",
-    "title": "Content adapters",
-    "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/smart-trust-phw/en/cat-harness/content-adapters/#content-adapters",
-    
-    "relUrl": "/en/cat-harness/content-adapters/#content-adapters"
-  },"186": {
-    "doc": "Content adapters",
-    "title": "Content adapters",
-    "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/content-adapters/",
-    
-    "relUrl": "/en/cat-harness/content-adapters/"
-  },"187": {
     "doc": "Block kinds",
     "title": "Block kinds",
     "content": "One page per instance in this checkout holding a directory of this kind. ",
     "url": "/smart-trust-phw/en/cat-harness/block-kinds/#block-kinds",
     
     "relUrl": "/en/cat-harness/block-kinds/#block-kinds"
-  },"188": {
+  },"128": {
     "doc": "Block kinds",
     "title": "Block kinds",
     "content": " ",
     "url": "/smart-trust-phw/en/cat-harness/block-kinds/",
     
     "relUrl": "/en/cat-harness/block-kinds/"
-  },"189": {
-    "doc": "Code lists",
-    "title": "Code lists",
+  },"129": {
+    "doc": "Validators",
+    "title": "Validators",
     "content": "One page per instance in this checkout holding a directory of this kind. ",
-    "url": "/smart-trust-phw/en/cat-harness/code-lists/#code-lists",
+    "url": "/smart-trust-phw/en/cat-harness/validators/#validators",
     
-    "relUrl": "/en/cat-harness/code-lists/#code-lists"
-  },"190": {
-    "doc": "Code lists",
-    "title": "Code lists",
+    "relUrl": "/en/cat-harness/validators/#validators"
+  },"130": {
+    "doc": "Validators",
+    "title": "Validators",
     "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/code-lists/",
+    "url": "/smart-trust-phw/en/cat-harness/validators/",
     
-    "relUrl": "/en/cat-harness/code-lists/"
-  },"191": {
+    "relUrl": "/en/cat-harness/validators/"
+  },"131": {
+    "doc": "Test plans",
+    "title": "Test plans",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/smart-trust-phw/en/cat-harness/test-plans/#test-plans",
+    
+    "relUrl": "/en/cat-harness/test-plans/#test-plans"
+  },"132": {
+    "doc": "Test plans",
+    "title": "Test plans",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/test-plans/",
+    
+    "relUrl": "/en/cat-harness/test-plans/"
+  },"133": {
+    "doc": "Memory",
+    "title": "Memory",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/smart-trust-phw/en/cat-harness/memory/#memory",
+    
+    "relUrl": "/en/cat-harness/memory/#memory"
+  },"134": {
+    "doc": "Memory",
+    "title": "Memory",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/memory/",
+    
+    "relUrl": "/en/cat-harness/memory/"
+  },"135": {
     "doc": "Tool releases",
     "title": "Tool releases",
     "content": "One page per instance in this checkout holding a directory of this kind. ",
     "url": "/smart-trust-phw/en/cat-harness/tool-releases/#tool-releases",
     
     "relUrl": "/en/cat-harness/tool-releases/#tool-releases"
-  },"192": {
+  },"136": {
     "doc": "Tool releases",
     "title": "Tool releases",
     "content": " ",
     "url": "/smart-trust-phw/en/cat-harness/tool-releases/",
     
     "relUrl": "/en/cat-harness/tool-releases/"
-  },"193": {
-    "doc": "issue-marks — state",
-    "title": "issue-marks",
-    "content": "issue-marks/ · issue-marks . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/issue-marks/index.html (not published by this site). The directory is issue-marks/. ",
-    "url": "/smart-trust-phw/en/cat-harness/issue-marks/#issue-marks",
+  },"137": {
+    "doc": "smart-trust-phw — Code",
+    "title": "Code: smart-trust-phw",
+    "content": "smart-trust-phw · 1 declared code directory · This instance is not a pinned mount here, so files are listed without links. tools/ tools . This layer's generators, each with a --check that CI runs: render-bpmn draws input/business-processes/*.bpmn into input/images/; personas writes input/pagecontent/personas.md from scenarios/. The site is published by the harness's stage-local.ts --fresh. 3 files . | README.md | personas/gen_personas.ts | render-bpmn/render_bpmn.ts | . ",
+    "url": "/smart-trust-phw/en/cat-harness/code/smart-trust-phw/#code-smart-trust-phw",
     
-    "relUrl": "/en/cat-harness/issue-marks/#issue-marks"
-  },"194": {
-    "doc": "issue-marks — state",
+    "relUrl": "/en/cat-harness/code/smart-trust-phw/#code-smart-trust-phw"
+  },"138": {
+    "doc": "smart-trust-phw — Code",
+    "title": "Instances holding code",
+    "content": ". | smart-trust-phw | . ",
+    "url": "/smart-trust-phw/en/cat-harness/code/smart-trust-phw/",
+    
+    "relUrl": "/en/cat-harness/code/smart-trust-phw/"
+  },"139": {
+    "doc": "smart-trust-phw — Code",
+    "title": "smart-trust-phw — Code",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/code/smart-trust-phw/",
+    
+    "relUrl": "/en/cat-harness/code/smart-trust-phw/"
+  },"140": {
+    "doc": "Code",
+    "title": "Code",
+    "content": "One page per instance in this checkout holding a directory of this kind. | smart-trust-phw · tools/ | . ",
+    "url": "/smart-trust-phw/en/cat-harness/code/#code",
+    
+    "relUrl": "/en/cat-harness/code/#code"
+  },"141": {
+    "doc": "Code",
+    "title": "Code",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/code/",
+    
+    "relUrl": "/en/cat-harness/code/"
+  },"142": {
+    "doc": "Code lists",
+    "title": "Code lists",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/smart-trust-phw/en/cat-harness/code-lists/#code-lists",
+    
+    "relUrl": "/en/cat-harness/code-lists/#code-lists"
+  },"143": {
+    "doc": "Code lists",
+    "title": "Code lists",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/code-lists/",
+    
+    "relUrl": "/en/cat-harness/code-lists/"
+  },"144": {
+    "doc": "health — state",
+    "title": "health",
+    "content": "test/health/results/ · health . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/health/cat-harness/index.html (not published by this site). The directory is test/health/results/. ",
+    "url": "/smart-trust-phw/en/cat-harness/health/#health",
+    
+    "relUrl": "/en/cat-harness/health/#health"
+  },"145": {
+    "doc": "health — state",
     "title": "State graphs this harness declares",
     "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
-    "url": "/smart-trust-phw/en/cat-harness/issue-marks/",
+    "url": "/smart-trust-phw/en/cat-harness/health/",
     
-    "relUrl": "/en/cat-harness/issue-marks/"
-  },"195": {
-    "doc": "issue-marks — state",
-    "title": "issue-marks — state",
+    "relUrl": "/en/cat-harness/health/"
+  },"146": {
+    "doc": "health — state",
+    "title": "health — state",
     "content": " ",
-    "url": "/smart-trust-phw/en/cat-harness/issue-marks/",
+    "url": "/smart-trust-phw/en/cat-harness/health/",
     
-    "relUrl": "/en/cat-harness/issue-marks/"
-  },"196": {
+    "relUrl": "/en/cat-harness/health/"
+  },"147": {
+    "doc": "Graph typologies",
+    "title": "Graph typologies",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/smart-trust-phw/en/cat-harness/graph-typologies/#graph-typologies",
+    
+    "relUrl": "/en/cat-harness/graph-typologies/#graph-typologies"
+  },"148": {
+    "doc": "Graph typologies",
+    "title": "Graph typologies",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/graph-typologies/",
+    
+    "relUrl": "/en/cat-harness/graph-typologies/"
+  },"149": {
+    "doc": "Substrate snapshots",
+    "title": "Substrate snapshots",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/smart-trust-phw/en/cat-harness/substrate-snapshots/#substrate-snapshots",
+    
+    "relUrl": "/en/cat-harness/substrate-snapshots/#substrate-snapshots"
+  },"150": {
+    "doc": "Substrate snapshots",
+    "title": "Substrate snapshots",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/substrate-snapshots/",
+    
+    "relUrl": "/en/cat-harness/substrate-snapshots/"
+  },"151": {
+    "doc": "smart-trust-phw — library",
+    "title": "Library",
+    "content": "loading… . Listing Desktop ",
+    "url": "/smart-trust-phw/en/cat-harness/library/smart-trust-phw/#lib-title",
+    
+    "relUrl": "/en/cat-harness/library/smart-trust-phw/#lib-title"
+  },"152": {
+    "doc": "smart-trust-phw — library",
+    "title": "Source JSON-LD and assets",
+    "content": "The published files this page is a rendering of. | index.json library projection (JSON) | source/ihe-iti-pcf-1-1-0.jsonld entry JSON-LD | source/ihe-iti-vhl-1-0-0-comment.jsonld entry JSON-LD | . This page loads its entries from the library projection; it needs JavaScript to draw them. ",
+    "url": "/smart-trust-phw/en/cat-harness/library/smart-trust-phw/",
+    
+    "relUrl": "/en/cat-harness/library/smart-trust-phw/"
+  },"153": {
+    "doc": "smart-trust-phw — library",
+    "title": "smart-trust-phw — library",
+    "content": "| ",
+    "url": "/smart-trust-phw/en/cat-harness/library/smart-trust-phw/",
+    
+    "relUrl": "/en/cat-harness/library/smart-trust-phw/"
+  },"154": {
+    "doc": "Library",
+    "title": "Library",
+    "content": "loading… . Listing Desktop ",
+    "url": "/smart-trust-phw/en/cat-harness/library/#lib-title",
+    
+    "relUrl": "/en/cat-harness/library/#lib-title"
+  },"155": {
+    "doc": "Library",
+    "title": "Source JSON-LD and assets",
+    "content": "The published files this page is a rendering of. | index.json library projection (JSON) | . Library subgraphs in this checkout . | Instance | Entries | Library page | Subgraph JSON-LD | . | cat-harness | 0 | — | not published | . | fhir-harness | 0 | — | not published | . | smart-base | 0 | — | not published | . | smart-trust-phw | 7 | smart-trust-phw | not published | . | who-iris | 0 | — | not published | . This page loads its entries from the library projection; it needs JavaScript to draw them. ",
+    "url": "/smart-trust-phw/en/cat-harness/library/",
+    
+    "relUrl": "/en/cat-harness/library/"
+  },"156": {
+    "doc": "Library",
+    "title": "Library",
+    "content": "| ",
+    "url": "/smart-trust-phw/en/cat-harness/library/",
+    
+    "relUrl": "/en/cat-harness/library/"
+  },"157": {
+    "doc": "smart-trust-phw — Scenarios",
+    "title": "Scenarios: smart-trust-phw",
+    "content": "smart-trust-phw · scenarios/ · every instance's Scenarios . ",
+    "url": "/smart-trust-phw/en/cat-harness/scenarios/smart-trust-phw/#scenarios-smart-trust-phw",
+    
+    "relUrl": "/en/cat-harness/scenarios/smart-trust-phw/#scenarios-smart-trust-phw"
+  },"158": {
+    "doc": "smart-trust-phw — Scenarios",
+    "title": "Families — 0, over 11 document(s)",
+    "content": "Documents are grouped by the $schema each one declares; there is no total across families. 11 document(s) carry no $schema (could not determine); 0 would not parse. ",
+    "url": "/smart-trust-phw/en/cat-harness/scenarios/smart-trust-phw/",
+    
+    "relUrl": "/en/cat-harness/scenarios/smart-trust-phw/"
+  },"159": {
+    "doc": "smart-trust-phw — Scenarios",
+    "title": "Nodes — 11",
+    "content": "| id | title or summary | $schema | file | . | ana | Ana (data provider administrator) | | actors/ana.json | . | dr-mei | Dr Mei (receiving clinician) | | actors/dr-mei.json | . | health-information-exchange | Home health information exchange | | actors/health-information-exchange.json | . | kofi | Kofi (auditor) | | actors/kofi.json | . | lina-wallet | Lina's personal health wallet | | actors/lina-wallet.json | . | lina | Lina (wallet holder) | | actors/lina.json | . | nurse-tomas | Nurse Tomás (clinic nurse) | | actors/nurse-tomas.json | . | provider-authorization-service | Provider authorization service | | actors/provider-authorization-service.json | . | receiving-clinic-system | Receiving clinic's record system | | actors/receiving-clinic-system.json | . | trust-anchor-service | Trust anchor service | | actors/trust-anchor-service.json | . | smart-trust-phw | | | roles.json | . ",
+    "url": "/smart-trust-phw/en/cat-harness/scenarios/smart-trust-phw/",
+    
+    "relUrl": "/en/cat-harness/scenarios/smart-trust-phw/"
+  },"160": {
+    "doc": "smart-trust-phw — Scenarios",
+    "title": "Instances holding Scenarios",
+    "content": ". | smart-trust-phw | . ",
+    "url": "/smart-trust-phw/en/cat-harness/scenarios/smart-trust-phw/",
+    
+    "relUrl": "/en/cat-harness/scenarios/smart-trust-phw/"
+  },"161": {
+    "doc": "smart-trust-phw — Scenarios",
+    "title": "smart-trust-phw — Scenarios",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/scenarios/smart-trust-phw/",
+    
+    "relUrl": "/en/cat-harness/scenarios/smart-trust-phw/"
+  },"162": {
+    "doc": "Scenarios",
+    "title": "Scenarios",
+    "content": "One page per instance in this checkout holding a directory of this kind. | smart-trust-phw · scenarios/ | . ",
+    "url": "/smart-trust-phw/en/cat-harness/scenarios/#scenarios",
+    
+    "relUrl": "/en/cat-harness/scenarios/#scenarios"
+  },"163": {
+    "doc": "Scenarios",
+    "title": "Scenarios",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/scenarios/",
+    
+    "relUrl": "/en/cat-harness/scenarios/"
+  },"164": {
+    "doc": "qa — state",
+    "title": "qa",
+    "content": "test/results/ · qa . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/lsi/index.html (not published by this site). The directory is test/results/. ",
+    "url": "/smart-trust-phw/en/cat-harness/qa/#qa",
+    
+    "relUrl": "/en/cat-harness/qa/#qa"
+  },"165": {
+    "doc": "qa — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/smart-trust-phw/en/cat-harness/qa/",
+    
+    "relUrl": "/en/cat-harness/qa/"
+  },"166": {
+    "doc": "qa — state",
+    "title": "qa — state",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/qa/",
+    
+    "relUrl": "/en/cat-harness/qa/"
+  },"167": {
+    "doc": "Pipeline plugins",
+    "title": "Pipeline plugins",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/smart-trust-phw/en/cat-harness/pipeline-plugins/#pipeline-plugins",
+    
+    "relUrl": "/en/cat-harness/pipeline-plugins/#pipeline-plugins"
+  },"168": {
+    "doc": "Pipeline plugins",
+    "title": "Pipeline plugins",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/pipeline-plugins/",
+    
+    "relUrl": "/en/cat-harness/pipeline-plugins/"
+  },"169": {
+    "doc": "swimlane-glossary — state",
+    "title": "swimlane-glossary",
+    "content": "glossary/ · swimlane-glossary . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/swimlane-glossary/index.html (not published by this site). The directory is glossary/. ",
+    "url": "/smart-trust-phw/en/cat-harness/swimlane-glossary/#swimlane-glossary",
+    
+    "relUrl": "/en/cat-harness/swimlane-glossary/#swimlane-glossary"
+  },"170": {
+    "doc": "swimlane-glossary — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/smart-trust-phw/en/cat-harness/swimlane-glossary/",
+    
+    "relUrl": "/en/cat-harness/swimlane-glossary/"
+  },"171": {
+    "doc": "swimlane-glossary — state",
+    "title": "swimlane-glossary — state",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/swimlane-glossary/",
+    
+    "relUrl": "/en/cat-harness/swimlane-glossary/"
+  },"172": {
+    "doc": "Merge reviews",
+    "title": "Merge reviews",
+    "content": "merge-reviews/ · merge-reviews . merge-reviews/ is not mounted in this build, so its verdicts are unknown, not none. bun run cat state:mount mounts it. ",
+    "url": "/smart-trust-phw/en/cat-harness/merge-reviews/#merge-reviews",
+    
+    "relUrl": "/en/cat-harness/merge-reviews/#merge-reviews"
+  },"173": {
+    "doc": "Merge reviews",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/smart-trust-phw/en/cat-harness/merge-reviews/",
+    
+    "relUrl": "/en/cat-harness/merge-reviews/"
+  },"174": {
+    "doc": "Merge reviews",
+    "title": "Merge reviews",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/merge-reviews/",
+    
+    "relUrl": "/en/cat-harness/merge-reviews/"
+  },"175": {
+    "doc": "Content adapters",
+    "title": "Content adapters",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/smart-trust-phw/en/cat-harness/content-adapters/#content-adapters",
+    
+    "relUrl": "/en/cat-harness/content-adapters/#content-adapters"
+  },"176": {
+    "doc": "Content adapters",
+    "title": "Content adapters",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/content-adapters/",
+    
+    "relUrl": "/en/cat-harness/content-adapters/"
+  },"177": {
+    "doc": "todos — state",
+    "title": "todos",
+    "content": "todos/ · todos . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/todos/index.html (not published by this site). The directory is todos/. ",
+    "url": "/smart-trust-phw/en/cat-harness/todos/#todos",
+    
+    "relUrl": "/en/cat-harness/todos/#todos"
+  },"178": {
+    "doc": "todos — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/smart-trust-phw/en/cat-harness/todos/",
+    
+    "relUrl": "/en/cat-harness/todos/"
+  },"179": {
+    "doc": "todos — state",
+    "title": "todos — state",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/todos/",
+    
+    "relUrl": "/en/cat-harness/todos/"
+  },"180": {
     "doc": "Policies",
     "title": "Policies",
     "content": "One page per instance in this checkout holding a directory of this kind. ",
     "url": "/smart-trust-phw/en/cat-harness/policies/#policies",
     
     "relUrl": "/en/cat-harness/policies/#policies"
-  },"197": {
+  },"181": {
     "doc": "Policies",
     "title": "Policies",
     "content": " ",
     "url": "/smart-trust-phw/en/cat-harness/policies/",
     
     "relUrl": "/en/cat-harness/policies/"
-  },"198": {
+  },"182": {
+    "doc": "issue-marks — state",
+    "title": "issue-marks",
+    "content": "issue-marks/ · issue-marks . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/issue-marks/index.html (not published by this site). The directory is issue-marks/. ",
+    "url": "/smart-trust-phw/en/cat-harness/issue-marks/#issue-marks",
+    
+    "relUrl": "/en/cat-harness/issue-marks/#issue-marks"
+  },"183": {
+    "doc": "issue-marks — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/smart-trust-phw/en/cat-harness/issue-marks/",
+    
+    "relUrl": "/en/cat-harness/issue-marks/"
+  },"184": {
+    "doc": "issue-marks — state",
+    "title": "issue-marks — state",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/issue-marks/",
+    
+    "relUrl": "/en/cat-harness/issue-marks/"
+  },"185": {
     "doc": "Vocab mappings",
     "title": "Vocab mappings",
     "content": "One page per instance in this checkout holding a directory of this kind. ",
     "url": "/smart-trust-phw/en/cat-harness/vocab-mappings/#vocab-mappings",
     
     "relUrl": "/en/cat-harness/vocab-mappings/#vocab-mappings"
-  },"199": {
+  },"186": {
     "doc": "Vocab mappings",
     "title": "Vocab mappings",
     "content": " ",
     "url": "/smart-trust-phw/en/cat-harness/vocab-mappings/",
     
     "relUrl": "/en/cat-harness/vocab-mappings/"
-  },"200": {
+  },"187": {
+    "doc": "uploads — state",
+    "title": "uploads",
+    "content": "uploads/ · uploads . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/uploads/cat-harness/index.html (not published by this site). The directory is uploads/. ",
+    "url": "/smart-trust-phw/en/cat-harness/uploads-queue/#uploads",
+    
+    "relUrl": "/en/cat-harness/uploads-queue/#uploads"
+  },"188": {
+    "doc": "uploads — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/smart-trust-phw/en/cat-harness/uploads-queue/",
+    
+    "relUrl": "/en/cat-harness/uploads-queue/"
+  },"189": {
+    "doc": "uploads — state",
+    "title": "uploads — state",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/uploads-queue/",
+    
+    "relUrl": "/en/cat-harness/uploads-queue/"
+  },"190": {
+    "doc": "attestations — state",
+    "title": "attestations",
+    "content": "test/attestations/ · attestations . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/attestations/cat-harness/index.html (not published by this site). The directory is test/attestations/. ",
+    "url": "/smart-trust-phw/en/cat-harness/attestations/#attestations",
+    
+    "relUrl": "/en/cat-harness/attestations/#attestations"
+  },"191": {
+    "doc": "attestations — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/smart-trust-phw/en/cat-harness/attestations/",
+    
+    "relUrl": "/en/cat-harness/attestations/"
+  },"192": {
+    "doc": "attestations — state",
+    "title": "attestations — state",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/attestations/",
+    
+    "relUrl": "/en/cat-harness/attestations/"
+  },"193": {
+    "doc": "beans — state",
+    "title": "beans",
+    "content": "beans/ · beans . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/beans/index.html (not published by this site). The directory is beans/. ",
+    "url": "/smart-trust-phw/en/cat-harness/beans/#beans",
+    
+    "relUrl": "/en/cat-harness/beans/#beans"
+  },"194": {
+    "doc": "beans — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/smart-trust-phw/en/cat-harness/beans/",
+    
+    "relUrl": "/en/cat-harness/beans/"
+  },"195": {
+    "doc": "beans — state",
+    "title": "beans — state",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/beans/",
+    
+    "relUrl": "/en/cat-harness/beans/"
+  },"196": {
+    "doc": "QA checkers",
+    "title": "QA checkers",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/smart-trust-phw/en/cat-harness/qa-checkers/#qa-checkers",
+    
+    "relUrl": "/en/cat-harness/qa-checkers/#qa-checkers"
+  },"197": {
+    "doc": "QA checkers",
+    "title": "QA checkers",
+    "content": " ",
+    "url": "/smart-trust-phw/en/cat-harness/qa-checkers/",
+    
+    "relUrl": "/en/cat-harness/qa-checkers/"
+  },"198": {
     "doc": "Processes — smart-trust-phw",
     "title": "Processes — smart-trust-phw",
     "content": "The diagrams smart-trust-phw holds in its declared processes directories — one sub-graph’s slice of every instance’s processes. The skills, lanes and findings below count these diagrams only. Generated by cat-harness-tools/scripts/gen-processes-viz.ts. Every number here is counted from the directory, never carried in prose — bpmn-processes’ own rule, and the bean that asked for this page had two different counts in its title and its body. 13 diagram(s), 13 parsed, 0 that would not load. | where | diagrams | . | input/business-processes/ | 13 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/"
-  },"201": {
+  },"199": {
     "doc": "Processes — smart-trust-phw",
     "title": "Every process — one page each",
     "content": "Each page shows the diagram, what it is for, who acts in it, every step with the skill it runs, and which processes call it. kg:audit’s process-diagram-published fails a diagram no page shows — 45 of 62 were in that state before these pages existed (bean ooq3). Running instances links each workflow instance’s own page — the diagram with its token, its stuck states, its beans and todos — for every instance running this process or calling it as a subprocess. Links and counts only: where an instance IS lives in its file under beans/workflows/. | process | steps | undocumented steps | running instances | . | A. Record and Manage Patient Privacy Consent | 6 | — | none recorded | . | B. Issue Consent-Backed Verifiable Health Link | 8 | — | none recorded | . | C. Present and Redeem Verifiable Health Link with PCF Consent Enforcement | 9 | — | none recorded | . | D. Register a Server Client under a Data Sharing Agreement (DSA P4) | 9 | — | none recorded | . | E. Server-to-Server Access under a Data Sharing Agreement (DSA P5) | 10 | — | none recorded | . | F. Access Decision under a Data Sharing Agreement (DSA P11) | 10 | — | none recorded | . | G. Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12) | 4 | — | none recorded | . | H. Revocation and Suspension under a Data Sharing Agreement (DSA P13) | 5 | — | none recorded | . | I. Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement | 9 | — | none recorded | . | J. Issue a Verifiable Digital Health Certificate (shared block B4) | 7 | — | none recorded | . | K. Verify a Certificate and its Status (shared block B7) | 8 | — | none recorded | . | L. Record Explicit Consent | 6 | — | none recorded | . | M. Add Consent Directives to a Shared or Issued Document | 4 | — | none recorded | . Instances of cat-harness could not be read in this build, so “none recorded” above does not cover them. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/#every-process--one-page-each",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/#every-process--one-page-each"
-  },"202": {
+  },"200": {
     "doc": "Processes — smart-trust-phw",
     "title": "What runs this skill?",
-    "content": "The reverse of &lt;bootstrap.processes:skill ref&gt;, which is the join nothing else exposes: a skill says what to do, and until now nothing said which processes ask for it. 0 distinct skill(s) are named by an activity. | skill | run by |—|—| . Names an ⓘ task panel shows without a link are listed on Task panel links: QA. ",
+    "content": "The reverse of &lt;bootstrap.processes:skill ref&gt;, which is the join nothing else exposes: a skill says what to do, and until now nothing said which processes ask for it. 0 distinct skill(s) are named by an activity. No activity names a skill. Names an ⓘ task panel shows without a link are listed on Task panel links: QA. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/#what-runs-this-skill",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/#what-runs-this-skill"
-  },"203": {
+  },"201": {
     "doc": "Processes — smart-trust-phw",
     "title": "Who appears in a process?",
     "content": "A lane NAMES the Role its tasks are performed in; it is not itself a Role. The NAME is free text — process-model.ts notes that sixty lanes spell two dozen positions — so the lane’s partitionElementRef (or the legacy &lt;bootstrap.processes:role ref&gt;) is the join that does not depend on spelling, and it is reported separately below rather than merged into the name. 32 distinct lane name(s). | lane | in | . | PCF Consent Registry | 6 | . | Trust Anchor (GDHCN or another accepted anchor) | 4 | . | Provider Authorization Server (administrator + decision point) | 3 | . | VHL Holder (Patient / Personal Health Wallet) | 3 | . | Certificate Holder (person / Personal Health Wallet) | 2 | . | Data Recipient System (OAuth client) | 2 | . | Trust Anchor (e.g. GDHCN, national, or regional anchor) | 2 | . | Agreement Publisher (DCAT catalogue) | 1 | . | Auditor (person) | 1 | . | Certificate Issuance Service | 1 | . | Certificate Issuer (health worker or issuing system) | 1 | . | Data Provider (decides) | 1 | . | Data Provider Administrator (person) | 1 | . | Data Provider Resource Server (enforcement point) | 1 | . | Data Recipient (duty performer) | 1 | . | Document source (VHL Sharer or Certificate Issuance Service) | 1 | . | Enforcement and Decision Points (audit writers) | 1 | . | Grant Issuer (W3C Bitstring Status List) | 1 | . | Grant Issuer Status List (W3C Bitstring Status List) | 1 | . | Holder (person / Personal Health Wallet) | 1 | . | Issuing Public Health Authority (certificate registry) | 1 | . | PCF Consent Recorder (Wallet / VHL Sharer) | 1 | . | PCF Consent Recorder (wallet or health worker) | 1 | . | Policy Decision Point (permits()) | 1 | . | Policy Enforcement Point (authorization server, resource server or VHL Sharer) | 1 | . | Trust Anchor (GDHCN or another anchor) | 1 | . | Verifier (with or without a status checking application) | 1 | . | VHL Receiver (receiving organisation or application) | 1 | . | VHL Receiver (Verifier / Relying Party) | 1 | . | VHL Sharer (enforcement and decision point) | 1 | . | VHL Sharer (grouped with PCF Consent Authorization Server) | 1 | . | VHL Sharer (grouped with PCF Consent Recorder) | 1 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/#who-appears-in-a-process",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/#who-appears-in-a-process"
-  },"204": {
+  },"202": {
     "doc": "Processes — smart-trust-phw",
     "title": "Which steps touch the work plan?",
-    "content": "&lt;cat-harness.processes:bean op&gt; — the audit trail for who reserves and resolves work. | op | diagrams |—|—| . ",
+    "content": "&lt;cat-harness.processes:bean op&gt; — the audit trail for who reserves and resolves work. No step names a bean op. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/#which-steps-touch-the-work-plan",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/#which-steps-touch-the-work-plan"
-  },"205": {
+  },"203": {
     "doc": "Processes — smart-trust-phw",
     "title": "Strict, advisory — and nobody said",
     "content": "Three states, not two. loadProcessModel reads an undeclared policy as strict, which is right for the engine — “a process that forgot to say is governed, not exempt” — and hides a fact a reader wants. Somebody chose strict and nobody said, so the engine assumed strict are different, and the second is 13 of 13 here. | enforcement | declared | defaulted | . | strict | 0 | 13 | . | advisory | 0 | 0 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/#strict-advisory--and-nobody-said",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/#strict-advisory--and-nobody-said"
-  },"206": {
+  },"204": {
     "doc": "Processes — smart-trust-phw",
     "title": "Findings",
     "content": "5 diagram(s) draw elements the engine does not run. Each has its page, with the elements listed; workflow_start refuses to run them. | input/business-processes/PHW.C.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.D.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.F.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.G.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.I.bpmn — bpmn:BusinessRuleTask | . Every one of the 13 diagrams has a rendered SVG. Activities carrying no &lt;bootstrap.processes:skill ref&gt; — a census, not a gap list . 95 across 13 diagram(s). This section reported them as defects in its first version, and that was wrong: beans luke and uuhu worked this corpus from 90 down to this remainder and settled what is left. luke: “coverage is deliberately NOT gated — a human sign-off step has no skill”. uuhu added the call-activity exemption and recorded that its own remainder “are not gaps”. 8 are call activities, which delegate to a subprocess — the skill is named there, and naming it twice would be one fact in two places. The other 87 are listed by lane, because the lane is what says whether a person, a pipeline or an agent performs the step, and only the last of those has a skill to run. | lane | steps | . | Data Recipient System (OAuth client) | 8 | . | PCF Consent Registry | 6 | . | Provider Authorization Server (administrator + decision point) | 6 | . | Policy Decision Point (permits()) | 5 | . | Verifier (with or without a status checking application) | 5 | . | VHL Holder (Patient / Personal Health Wallet) | 5 | . | VHL Sharer (enforcement and decision point) | 5 | . | Trust Anchor (GDHCN or another accepted anchor) | 4 | . | Document source (VHL Sharer or Certificate Issuance Service) | 3 | . | PCF Consent Recorder (Wallet / VHL Sharer) | 3 | . | PCF Consent Recorder (wallet or health worker) | 3 | . | VHL Receiver (Verifier / Relying Party) | 3 | . | VHL Sharer (grouped with PCF Consent Authorization Server) | 3 | . | VHL Sharer (grouped with PCF Consent Recorder) | 3 | . | Certificate Issuance Service | 2 | . | Certificate Issuer (health worker or issuing system) | 2 | . | Data Provider Resource Server (enforcement point) | 2 | . | Enforcement and Decision Points (audit writers) | 2 | . | Holder (person / Personal Health Wallet) | 2 | . | Trust Anchor (e.g. GDHCN, national, or regional anchor) | 2 | . | VHL Receiver (receiving organisation or application) | 2 | . | Agreement Publisher (DCAT catalogue) | 1 | . | Auditor (person) | 1 | . | Certificate Holder (person / Personal Health Wallet) | 1 | . | Data Provider (decides) | 1 | . | Data Provider Administrator (person) | 1 | . | Data Recipient (duty performer) | 1 | . | Grant Issuer (W3C Bitstring Status List) | 1 | . | Grant Issuer Status List (W3C Bitstring Status List) | 1 | . | Issuing Public Health Authority (certificate registry) | 1 | . | Policy Enforcement Point (authorization server, resource server or VHL Sharer) | 1 | . | Trust Anchor (GDHCN or another anchor) | 1 | . No verdict is offered on which of these is a gap, and that is the honest state rather than a hedge: distinguishing a person’s judgement step from an agent step somebody forgot needs the lane’s actor KIND, which a free-text lane name does not give — process-model.ts notes sixty lanes spell two dozen positions. The lane’s partitionElementRef is the join that would answer it, and it is present on 0 of these 87 steps — which is the measurement, not an impression. An earlier draft of this sentence said few of these and was counting whether the lane had a NAME, a different question with a different answer. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/#findings",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/#findings"
-  },"207": {
+  },"205": {
     "doc": "Processes",
     "title": "Processes — every executable diagram, searchable",
     "content": "Generated by cat-harness-tools/scripts/gen-processes-viz.ts. Every number here is counted from the directory, never carried in prose — bpmn-processes’ own rule, and the bean that asked for this page had two different counts in its title and its body. 13 diagram(s), 13 parsed, 0 that would not load. | where | diagrams | . | input/business-processes/ | 13 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#processes--every-executable-diagram-searchable",
     
     "relUrl": "/en/cat-harness/processes/#processes--every-executable-diagram-searchable"
-  },"208": {
+  },"206": {
     "doc": "Processes",
     "title": "By subgraph",
     "content": "Each instance that holds diagrams has its own page, listing only its processes. | subgraph | diagrams | . | smart-trust-phw | 13 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#by-subgraph",
     
     "relUrl": "/en/cat-harness/processes/#by-subgraph"
-  },"209": {
+  },"207": {
     "doc": "Processes",
     "title": "Every process — one page each",
     "content": "Each page shows the diagram, what it is for, who acts in it, every step with the skill it runs, and which processes call it. kg:audit’s process-diagram-published fails a diagram no page shows — 45 of 62 were in that state before these pages existed (bean ooq3). Running instances links each workflow instance’s own page — the diagram with its token, its stuck states, its beans and todos — for every instance running this process or calling it as a subprocess. Links and counts only: where an instance IS lives in its file under beans/workflows/. | process | steps | undocumented steps | running instances | . | A. Record and Manage Patient Privacy Consent | 6 | — | none recorded | . | B. Issue Consent-Backed Verifiable Health Link | 8 | — | none recorded | . | C. Present and Redeem Verifiable Health Link with PCF Consent Enforcement | 9 | — | none recorded | . | D. Register a Server Client under a Data Sharing Agreement (DSA P4) | 9 | — | none recorded | . | E. Server-to-Server Access under a Data Sharing Agreement (DSA P5) | 10 | — | none recorded | . | F. Access Decision under a Data Sharing Agreement (DSA P11) | 10 | — | none recorded | . | G. Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12) | 4 | — | none recorded | . | H. Revocation and Suspension under a Data Sharing Agreement (DSA P13) | 5 | — | none recorded | . | I. Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement | 9 | — | none recorded | . | J. Issue a Verifiable Digital Health Certificate (shared block B4) | 7 | — | none recorded | . | K. Verify a Certificate and its Status (shared block B7) | 8 | — | none recorded | . | L. Record Explicit Consent | 6 | — | none recorded | . | M. Add Consent Directives to a Shared or Issued Document | 4 | — | none recorded | . Instances of cat-harness could not be read in this build, so “none recorded” above does not cover them. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#every-process--one-page-each",
     
     "relUrl": "/en/cat-harness/processes/#every-process--one-page-each"
-  },"210": {
+  },"208": {
     "doc": "Processes",
     "title": "What runs this skill?",
-    "content": "The reverse of &lt;bootstrap.processes:skill ref&gt;, which is the join nothing else exposes: a skill says what to do, and until now nothing said which processes ask for it. 0 distinct skill(s) are named by an activity. | skill | run by |—|—| . Names an ⓘ task panel shows without a link are listed on Task panel links: QA. ",
+    "content": "The reverse of &lt;bootstrap.processes:skill ref&gt;, which is the join nothing else exposes: a skill says what to do, and until now nothing said which processes ask for it. 0 distinct skill(s) are named by an activity. No activity names a skill. Names an ⓘ task panel shows without a link are listed on Task panel links: QA. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#what-runs-this-skill",
     
     "relUrl": "/en/cat-harness/processes/#what-runs-this-skill"
-  },"211": {
+  },"209": {
     "doc": "Processes",
     "title": "Who appears in a process?",
     "content": "A lane NAMES the Role its tasks are performed in; it is not itself a Role. The NAME is free text — process-model.ts notes that sixty lanes spell two dozen positions — so the lane’s partitionElementRef (or the legacy &lt;bootstrap.processes:role ref&gt;) is the join that does not depend on spelling, and it is reported separately below rather than merged into the name. 32 distinct lane name(s). | lane | in | . | PCF Consent Registry | 6 | . | Trust Anchor (GDHCN or another accepted anchor) | 4 | . | Provider Authorization Server (administrator + decision point) | 3 | . | VHL Holder (Patient / Personal Health Wallet) | 3 | . | Certificate Holder (person / Personal Health Wallet) | 2 | . | Data Recipient System (OAuth client) | 2 | . | Trust Anchor (e.g. GDHCN, national, or regional anchor) | 2 | . | Agreement Publisher (DCAT catalogue) | 1 | . | Auditor (person) | 1 | . | Certificate Issuance Service | 1 | . | Certificate Issuer (health worker or issuing system) | 1 | . | Data Provider (decides) | 1 | . | Data Provider Administrator (person) | 1 | . | Data Provider Resource Server (enforcement point) | 1 | . | Data Recipient (duty performer) | 1 | . | Document source (VHL Sharer or Certificate Issuance Service) | 1 | . | Enforcement and Decision Points (audit writers) | 1 | . | Grant Issuer (W3C Bitstring Status List) | 1 | . | Grant Issuer Status List (W3C Bitstring Status List) | 1 | . | Holder (person / Personal Health Wallet) | 1 | . | Issuing Public Health Authority (certificate registry) | 1 | . | PCF Consent Recorder (Wallet / VHL Sharer) | 1 | . | PCF Consent Recorder (wallet or health worker) | 1 | . | Policy Decision Point (permits()) | 1 | . | Policy Enforcement Point (authorization server, resource server or VHL Sharer) | 1 | . | Trust Anchor (GDHCN or another anchor) | 1 | . | Verifier (with or without a status checking application) | 1 | . | VHL Receiver (receiving organisation or application) | 1 | . | VHL Receiver (Verifier / Relying Party) | 1 | . | VHL Sharer (enforcement and decision point) | 1 | . | VHL Sharer (grouped with PCF Consent Authorization Server) | 1 | . | VHL Sharer (grouped with PCF Consent Recorder) | 1 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#who-appears-in-a-process",
     
     "relUrl": "/en/cat-harness/processes/#who-appears-in-a-process"
-  },"212": {
+  },"210": {
     "doc": "Processes",
     "title": "Which steps touch the work plan?",
-    "content": "&lt;cat-harness.processes:bean op&gt; — the audit trail for who reserves and resolves work. | op | diagrams |—|—| . ",
+    "content": "&lt;cat-harness.processes:bean op&gt; — the audit trail for who reserves and resolves work. No step names a bean op. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#which-steps-touch-the-work-plan",
     
     "relUrl": "/en/cat-harness/processes/#which-steps-touch-the-work-plan"
-  },"213": {
+  },"211": {
     "doc": "Processes",
     "title": "Strict, advisory — and nobody said",
     "content": "Three states, not two. loadProcessModel reads an undeclared policy as strict, which is right for the engine — “a process that forgot to say is governed, not exempt” — and hides a fact a reader wants. Somebody chose strict and nobody said, so the engine assumed strict are different, and the second is 13 of 13 here. | enforcement | declared | defaulted | . | strict | 0 | 13 | . | advisory | 0 | 0 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#strict-advisory--and-nobody-said",
     
     "relUrl": "/en/cat-harness/processes/#strict-advisory--and-nobody-said"
-  },"214": {
+  },"212": {
     "doc": "Processes",
     "title": "Findings",
     "content": "5 diagram(s) draw elements the engine does not run. Each has its page, with the elements listed; workflow_start refuses to run them. | input/business-processes/PHW.C.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.D.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.F.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.G.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.I.bpmn — bpmn:BusinessRuleTask | . Every one of the 13 diagrams has a rendered SVG. Activities carrying no &lt;bootstrap.processes:skill ref&gt; — a census, not a gap list . 95 across 13 diagram(s). This section reported them as defects in its first version, and that was wrong: beans luke and uuhu worked this corpus from 90 down to this remainder and settled what is left. luke: “coverage is deliberately NOT gated — a human sign-off step has no skill”. uuhu added the call-activity exemption and recorded that its own remainder “are not gaps”. 8 are call activities, which delegate to a subprocess — the skill is named there, and naming it twice would be one fact in two places. The other 87 are listed by lane, because the lane is what says whether a person, a pipeline or an agent performs the step, and only the last of those has a skill to run. | lane | steps | . | Data Recipient System (OAuth client) | 8 | . | PCF Consent Registry | 6 | . | Provider Authorization Server (administrator + decision point) | 6 | . | Policy Decision Point (permits()) | 5 | . | Verifier (with or without a status checking application) | 5 | . | VHL Holder (Patient / Personal Health Wallet) | 5 | . | VHL Sharer (enforcement and decision point) | 5 | . | Trust Anchor (GDHCN or another accepted anchor) | 4 | . | Document source (VHL Sharer or Certificate Issuance Service) | 3 | . | PCF Consent Recorder (Wallet / VHL Sharer) | 3 | . | PCF Consent Recorder (wallet or health worker) | 3 | . | VHL Receiver (Verifier / Relying Party) | 3 | . | VHL Sharer (grouped with PCF Consent Authorization Server) | 3 | . | VHL Sharer (grouped with PCF Consent Recorder) | 3 | . | Certificate Issuance Service | 2 | . | Certificate Issuer (health worker or issuing system) | 2 | . | Data Provider Resource Server (enforcement point) | 2 | . | Enforcement and Decision Points (audit writers) | 2 | . | Holder (person / Personal Health Wallet) | 2 | . | Trust Anchor (e.g. GDHCN, national, or regional anchor) | 2 | . | VHL Receiver (receiving organisation or application) | 2 | . | Agreement Publisher (DCAT catalogue) | 1 | . | Auditor (person) | 1 | . | Certificate Holder (person / Personal Health Wallet) | 1 | . | Data Provider (decides) | 1 | . | Data Provider Administrator (person) | 1 | . | Data Recipient (duty performer) | 1 | . | Grant Issuer (W3C Bitstring Status List) | 1 | . | Grant Issuer Status List (W3C Bitstring Status List) | 1 | . | Issuing Public Health Authority (certificate registry) | 1 | . | Policy Enforcement Point (authorization server, resource server or VHL Sharer) | 1 | . | Trust Anchor (GDHCN or another anchor) | 1 | . No verdict is offered on which of these is a gap, and that is the honest state rather than a hedge: distinguishing a person’s judgement step from an agent step somebody forgot needs the lane’s actor KIND, which a free-text lane name does not give — process-model.ts notes sixty lanes spell two dozen positions. The lane’s partitionElementRef is the join that would answer it, and it is present on 0 of these 87 steps — which is the measurement, not an impression. An earlier draft of this sentence said few of these and was counting whether the lane had a NAME, a different question with a different answer. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#findings",
     
     "relUrl": "/en/cat-harness/processes/#findings"
-  },"215": {
+  },"213": {
     "doc": "Processes",
     "title": "Processes",
     "content": " ",
     "url": "/smart-trust-phw/en/cat-harness/processes/",
     
     "relUrl": "/en/cat-harness/processes/"
-  },"216": {
+  },"214": {
     "doc": "GDHCN Trust Network - Personal Health Wallet",
     "title": "GDHCN Trust Network - Personal Health Wallet",
     "content": ". This implementation guide is still being developed. Its content is for demonstration purposes only. Summary . This implementation guide specifies how a Personal Health Wallet (PHW) lets a person record privacy consent, share health information through verifiable health links, and have that consent enforced when the information is used. It uses IHE Privacy Consent on FHIR (PCF) 1.1.0 for consent directives and IHE Verifiable Health Links (VHL) 1.0.0-comment for the links. Every process is trust-anchor neutral: keys are published to, and trust lists read from, an abstract Trust Anchor. The WHO Global Digital Health Certification Network (GDHCN) is one possible Trust Anchor among others. The guide makes no claim of conformance to IHE Internet User Authorization (IUA). Supporting guidance, recommendations, resources and standards are listed in the Bibliography and on the Dependencies page. What this guide contains . | Consent: explicit and implied consent (IHE PCF), trust domains’ consent codes, and consent directives in shared and issued documents. | Business Processes: thirteen BPMN 2.0 processes: . | Consent and verifiable health links: A record and manage consent, B issue a consent-backed link, C present and redeem a link. | Data sharing agreements between servers: D register a client, E server-to-server access, F access decision, G audit and provenance, H revocation and suspension, I decide a link request under an agreement. | Shared certificate processes: J issue a certificate, K verify a certificate and its status. | Consent: L record explicit consent, M add consent directives to a shared or issued document. | . | Decision-support Logic: the DMN decision PHW.DT.AgreementAccess, which combines several agreements for one receiver. | Worked Example: IPS Pilgrimage (Hajj): processes A, B, C, F and I applied to one case. | System Actors, Sequence Diagrams and Transactions. | The logical models, profiles, value sets and examples are listed in the Artifact Index. An offline copy of the guide is on the Downloads page. | . How this guide is organised . This guide follows the levels of knowledge representation: . | Business Requirements: concepts, personas, business processes and decision logic. | Data Models and Exchange: actors, sequence diagrams, transactions and codings. | Deployment: security and privacy, testing, reference implementations and downloads. | . Disclaimer . This specification is a working draft for demonstration and may not be used for any implementation purposes. It is provided without warranty of completeness or consistency, and the official publication supersedes it. No liability can be inferred from the use or misuse of this specification or its consequences. Dependencies . | IG | Package | FHIR | Comment | . | hl7.terminology | hl7.terminology#5.5.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.extensions.r4 | hl7.fhir.uv.extensions.r4#5.3.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.xver-r5.r4 | hl7.fhir.uv.xver-r5.r4#0.1.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.tools.r4 | hl7.fhir.uv.tools.r4#1.3.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.cql | hl7.fhir.uv.cql#1.0.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.crmi | hl7.fhir.uv.crmi#1.0.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.sdc | hl7.fhir.uv.sdc#3.0.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.cpg | hl7.fhir.uv.cpg#2.0.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.us.cqfmeasures | hl7.fhir.us.cqfmeasures#5.0.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.ips | hl7.fhir.uv.ips#2.0.0-ballot | | not in the package cache this build read, so what it depends on is not shown | . | ihe.iti.mcsd | ihe.iti.mcsd#3.8.0 | | not in the package cache this build read, so what it depends on is not shown | . | ihe.iti.pcf | ihe.iti.pcf#1.1.0 | | not in the package cache this build read, so what it depends on is not shown | . | ihe.iti.vhl | ihe.iti.vhl#1.0.0-comment | | not in the package cache this build read, so what it depends on is not shown | . | smart.who.int.pcmt | smart.who.int.pcmt#0.1.0 | | not in the package cache this build read, so what it depends on is not shown | . | smart.who.int.base | smart.who.int.base#0.2.0 | | not in the package cache this build read, so what it depends on is not shown | . | smart.who.int.pcmt-vaxprequal | smart.who.int.pcmt-vaxprequal#current | | not in the package cache this build read, so what it depends on is not shown | . Cross Version Analysis . ⟦not rendered: cross-version-analysis.xhtml⟧ — the IG Publisher renders it from a source this build does not hold; no renderer was given to this build. Global Profiles . There are no Global profiles defined. IP Statements . ⟦not rendered: ip-statements.xhtml⟧ — the IG Publisher renders it from a source this build does not hold; no renderer was given to this build. Edit this page on GitHub . ",
     "url": "/smart-trust-phw/",
     
     "relUrl": "/"
-  },"217": {
+  },"215": {
     "doc": "indices",
     "title": "indices",
     "content": ". Edit this page on GitHub . ",
     "url": "/smart-trust-phw/indices.html",
     
     "relUrl": "/indices.html"
-  },"218": {
+  },"216": {
     "doc": "license",
     "title": "license",
     "content": ". SMART Guidelines, including this one, are required to express the license their copyright license. All WHO-authored SMART Guidelines shall be subject to the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License. This includes all commons and dependencies authored by the WHO and this current guidance. SMART Guidelines license details . This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License. Copyright(c) 2022 World Health Organization Some rights reserved. Under the terms of this licence, you may copy, redistribute and adapt the work for noncommercial purposes provided the work is appropriately cited, as indicated below. In any use of this work, there should be no suggestion that WHO endorses any specific organizations, products or services. The use of the WHO logo is not permitted. If you adapt the work, then you must license your work under the same or equivalent Creative Commons licence. If you create a translation of this work, you should add the following disclaimer along with the suggested citation: \"This translation was not created by the World Health Organization (WHO). WHO is not responsible for the content or accuracy of this translation. The original English edition shall be the binding and authentic edition.\" Any mediation relating to disputes arising under the licence shall be conducted in accordance with the mediation rules of the World Intellectual Property Organization. (http://www.wipo.int/amc/en/mediation/rules/). License details for Software . Copyright(c) 2022 World Health Organization All rights reserved. 3-clause BSD license . Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: . | Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. | Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. | Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. | . THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &lt;/div&gt; Edit this page on GitHub . ",
     "url": "/smart-trust-phw/license.html",
     
     "relUrl": "/license.html"
-  },"219": {
+  },"217": {
     "doc": "Business Requirements",
     "title": "Business Requirements",
     "content": " ",
     "url": "/smart-trust-phw/menu-business-requirements.html#business-requirements",
     
     "relUrl": "/menu-business-requirements.html#business-requirements"
-  },"220": {
+  },"218": {
     "doc": "Business Requirements",
     "title": "Business Requirements",
     "content": ". ",
     "url": "/smart-trust-phw/menu-business-requirements.html",
     
     "relUrl": "/menu-business-requirements.html"
-  },"221": {
+  },"219": {
     "doc": "Data Models and Exchange",
     "title": "Data Models and Exchange",
     "content": " ",
     "url": "/smart-trust-phw/menu-data-models-and-exchange.html#data-models-and-exchange",
     
     "relUrl": "/menu-data-models-and-exchange.html#data-models-and-exchange"
-  },"222": {
+  },"220": {
     "doc": "Data Models and Exchange",
     "title": "Data Models and Exchange",
     "content": ". ",
     "url": "/smart-trust-phw/menu-data-models-and-exchange.html",
     
     "relUrl": "/menu-data-models-and-exchange.html"
-  },"223": {
+  },"221": {
     "doc": "Deployment",
     "title": "Deployment",
     "content": " ",
     "url": "/smart-trust-phw/menu-deployment.html#deployment",
     
     "relUrl": "/menu-deployment.html#deployment"
-  },"224": {
+  },"222": {
     "doc": "Deployment",
     "title": "Deployment",
     "content": ". ",
     "url": "/smart-trust-phw/menu-deployment.html",
     
     "relUrl": "/menu-deployment.html"
-  },"225": {
+  },"223": {
     "doc": "Home",
     "title": "Home",
     "content": ". | Bibliography: generated by the IG Publisher, not part of this build | . ",
     "url": "/smart-trust-phw/menu-home.html#home",
     
     "relUrl": "/menu-home.html#home"
-  },"226": {
+  },"224": {
     "doc": "Home",
     "title": "Home",
     "content": ". ",
     "url": "/smart-trust-phw/menu-home.html",
     
     "relUrl": "/menu-home.html"
-  },"227": {
+  },"225": {
     "doc": "Indices",
     "title": "Indices",
     "content": " ",
     "url": "/smart-trust-phw/menu-indices.html#indices",
     
     "relUrl": "/menu-indices.html#indices"
-  },"228": {
+  },"226": {
     "doc": "Indices",
     "title": "Indices",
     "content": ". ",
     "url": "/smart-trust-phw/menu-indices.html",
     
     "relUrl": "/menu-indices.html"
-  },"229": {
+  },"227": {
     "doc": "Task panel links: QA",
     "title": "Task panel links: QA",
     "content": "Every name an ⓘ task panel shows as plain text, with the tooltip “no page for this one”, because nothing it could link to was found: no instruction page or source file for a skill, no page for a role, methodology, lane or step. Every name in every panel links to a page. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/panel-links-qa.html#task-panel-links-qa",
     
     "relUrl": "/en/cat-harness/processes/panel-links-qa.html#task-panel-links-qa"
-  },"230": {
+  },"228": {
     "doc": "Task panel links: QA",
     "title": "Task panel links: QA",
     "content": "Generated by gen-processes-viz.ts from the ⓘ task panels’ data — do not edit here. All processes . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/panel-links-qa.html",
     
     "relUrl": "/en/cat-harness/processes/panel-links-qa.html"
-  },"231": {
+  },"229": {
     "doc": "Generic Personas",
     "title": "Generic Personas",
     "content": ". This page lists the roles the business processes of this guide name, and the example people and systems that play them. Every person is fictional. Roles . | Role | Played by | Description | . | Holder | person | The person who holds a Personal Health Wallet, records consent, and presents verifiable health links and certificates. Specializes the ActorDefinition Holder (input/fsh/actors/actors.fsh). | . | Consent Recorder | person, system | The person or system that records a consent directive for the holder (IHE PCF Consent Recorder): the wallet itself, or a health worker on the holder’s behalf. | . | Consent Registry | system | Holds consent directives and answers IHE PCF [ITI-108] Access Consent. Specializes the ActorDefinition ConsentRegistry (input/fsh/actors/actors.fsh). | . | VHL Sharer | system | Holds the health information, generates verifiable health links, and enforces consent when a link is redeemed. Specializes the ActorDefinition Issuer (input/fsh/actors/actors.fsh). | . | Document Source | system | The system that assembles a document about the holder before it is signed: the VHL Sharer when a document is shared, the Certificate Issuance Service when a certificate is issued. Adds the consent directives to it (process M). | . | VHL Receiver | system | Receives a verifiable health link, checks its signature against the trust list, and retrieves the information. Specializes the ActorDefinition Receiver (input/fsh/actors/actors.fsh). | . | Trust Anchor | system | Publishes the trust list of keys that participants use to check signatures. GDHCN is one possible anchor among others. Specializes the ActorDefinition TrustNetworkAnchor (input/fsh/actors/actors.fsh). | . | Certificate Issuer | person, system | A health worker or issuing system that issues a verifiable digital health certificate. Specializes the ActorDefinition Issuer (input/fsh/actors/actors.fsh). | . | Verifier | person, system | Checks a certificate and its status, with or without a status checking application. Specializes the ActorDefinition Receiver (input/fsh/actors/actors.fsh). | . | Data Provider Administrator | person | The person at a data provider who registers clients under a data sharing agreement. | . | Data Recipient System | system | A server that accesses data under a data sharing agreement (OAuth client) and performs the agreement’s duties. | . | Provider Authorization Server | system | Registers clients and decides access under a data sharing agreement (policy decision and enforcement). | . | Auditor | person | The person who reviews audit and provenance records under a data sharing agreement. | . Example people . Ana (data provider administrator) . Persona: the administrator who registers partner servers under the data sharing agreements her health information exchange signs. Fictional. Roles: Data Provider Administrator. Goal. Register only the clients an agreement allows, and revoke them the moment it ends. Needs . | The agreement’s terms in a form the server can check | One place to suspend a client | . Frustrations . | Agreements that exist only as PDFs | . Dr Mei (receiving clinician) . Persona: an emergency physician who treats visitors from other countries and reads their records through verifiable health links. Fictional. Roles: Verifier. Goal. Read a visitor’s record quickly and know it is genuine and that she is allowed to read it. Needs . | A clear answer: allowed, refused, or unknown | A record she can trust, signed by a known issuer | . Frustrations . | Links that fail without saying why | . Kofi (auditor) . Persona: an auditor who checks that every access under a data sharing agreement was allowed and its duties were done. Fictional. Roles: Auditor. Goal. Show, for any access, which consent and which agreement allowed it. Needs . | Provenance that cites the consent and its version | Duty checks he can run himself | . Frustrations . | Logs that say who, but not why | . Lina (wallet holder) . Persona: a 34-year-old teacher who keeps her health records in a personal health wallet on her phone and travels for work. Fictional. Roles: Holder, Consent Recorder. Goal. Share her health information only with the people who need it, for as long as they need it. Needs . | To see who can read her record, and to withdraw that at any time | One link that works abroad as well as at home | To know when her record was read, and by whom | . Frustrations . | Consent forms she cannot read back later | Not knowing whether a withdrawal took effect | . Nurse Tomás (clinic nurse) . Persona: a nurse at a community clinic who vaccinates, issues certificates, and records consent for patients who ask for help with the wallet. Fictional. Roles: Certificate Issuer, Consent Recorder. Goal. Issue certificates that are accepted wherever his patients go, without extra paperwork. Needs . | To record a patient’s consent in one step, and show it back to them | To know a certificate was issued correctly | . Frustrations . | Patients who were never asked what they agreed to | . Example systems . | System | Roles | Description | . | Home health information exchange | VHL Sharer, Consent Registry, Document Source | The health information exchange that holds Lina’s record: it records her consent in its Consent Registry, generates her links and enforces consent when a link is redeemed. | . | Lina’s personal health wallet | Holder, Consent Recorder | The wallet app on Lina’s phone: records her consent, holds her verifiable health links and certificates, and presents them as QR codes. | . | Provider authorization service | Provider Authorization Server | The authorization server of the health information exchange: registers clients and decides access under data sharing agreements. | . | Receiving clinic’s record system | VHL Receiver, Data Recipient System | The record system of Dr Mei’s clinic: reads verifiable health links, and as a registered client accesses data under a data sharing agreement. | . | Trust anchor service | Trust Anchor | A trust anchor that publishes the trust list of participants’ keys; GDHCN or another accepted anchor. | . Edit this page on GitHub . ",
     "url": "/smart-trust-phw/personas.html",
     
     "relUrl": "/personas.html"
-  },"232": {
+  },"230": {
     "doc": "QA Report",
     "title": "QA Report",
     "content": "Two halves: the FHIR QA of this implementation guide, and the knowledge graph’s QA, the harness’s checks over the instances this site is built from. A finding is a gap a check reports, not a failure of the build. ",
     "url": "/smart-trust-phw/qa.html#qa-report",
     
     "relUrl": "/qa.html#qa-report"
-  },"233": {
+  },"231": {
     "doc": "QA Report",
     "title": "FHIR QA",
-    "content": "IG Publisher . The Publisher’s own QA summary for the run this AST came from (IG Publisher 6.0.0-snapshot1 (3), FHIR 4.0.1, on Fri, 13 Nov, 2026 17:39:29 +0000). Summary (JSON) . Every message the Publisher reported, laid out as its own qa.html lays them out. Messages (JSON) . Loading the Publisher's messages… . The messages are drawn in the browser; without JavaScript, read the JSON above. The IG’s AST . | field | value | . | generated | 2026-11-13T17:43:45.231597360Z | . | authority | cache | . | publisher | 3.0.0 | . | core | 7.0.1 | . | sushi | SUSHI v3.21.0 (implements FHIR Shorthand specification v3.0.0) | . | java | 17.0.21 | . | resources | 106 | . | provisional | indices, dependencies, versions, until a full IG Publisher run | . Validity for this checkout: valid. |   | recorded in the AST | this checkout | . | toolchain | ig-publisher 3.0.0 / core 7.0.1 | ig-publisher 3.0.0 / core 7.0.1 | . | sourceRevision | 7ced3cd639ff427f20fe0106cb09b2f724bdbc79 | 7ced3cd639ff427f20fe0106cb09b2f724bdbc79 | . | inputDigest | faec621744bf24292c304b6b4ff0f15d341eefb842fd2c8f569835e1634bd060 | faec621744bf24292c304b6b4ff0f15d341eefb842fd2c8f569835e1634bd060 | . Markdown rendering . Each markdown field the artefact pages draw (description, definition, comment, requirements, valueMarkdown), drawn by the pages’ own renderer, checked for markup left as plain text. 107 resource(s) scanned. Findings: 11 field(s) show markup as text. | resource | field | left as text | starts with | . | StructureDefinition/DVCSDComposition | snapshot.element[10].comment | HTML tag | The contents of the html element are an XHTML fragment containing only the basic | . | StructureDefinition/Immunization-uv-ips-DVC | snapshot.element[13].definition | list marker | Vaccine that was administered or was to be administered. Several kinds of vaccin | . | StructureDefinition/DVCSDPatient | snapshot.element[10].comment | HTML tag | The contents of the html element are an XHTML fragment containing only the basic | . | StructureDefinition/Immunization-uv-ips-PreQual | snapshot.element[13].definition | list marker | Vaccine that was administered or was to be administered. Several kinds of vaccin | . | StructureDefinition/Composition-uv-ips-DVC | snapshot.element[68].definition | list marker | The medication summary section contains a description of the patient’s medicatio | . | StructureDefinition/Composition-uv-ips-DVC | snapshot.element[117].definition | list marker | The History of Procedures Section contains a description of the patient past pro | . | StructureDefinition/Composition-uv-ips-DVC | snapshot.element[129].definition | list marker | It lists the patient past procedures that are pertinent to the scope of this doc | . | StructureDefinition/Composition-uv-ips-PreQual | snapshot.element[68].definition | list marker | The medication summary section contains a description of the patient’s medicatio | . | StructureDefinition/Composition-uv-ips-PreQual | snapshot.element[117].definition | list marker | The History of Procedures Section contains a description of the patient past pro | . | StructureDefinition/Composition-uv-ips-PreQual | snapshot.element[129].definition | list marker | It lists the patient past procedures that are pertinent to the scope of this doc | . | StructureDefinition/DVCSDImmunization | snapshot.element[10].comment | HTML tag | The contents of the html element are an XHTML fragment containing only the basic | . Page scan . Every page of this site opened in a headless browser after the build, and its text checked for markup shown as text. Results (JSON) . Loading the page scan… . The results are drawn in the browser; without JavaScript, read the JSON above. Injection scan . Every resource narrative, markdown field and IG page this site publishes (10041 text(s)) is checked for injection attempts before publication: a pattern scan, and an agent’s review kept in the IG’s qa/ig-content-qa.json. The browser checks each narrative again before drawing it. Verdict (JSON) . | field | value | . | state | reviewed, no pattern hit and no open finding | . | content | sha256:3c64d8b9b5becbf1cc0d0b9ebcff56339ec736328de6852a29006805470da13f | . | reviewed | sha256:3c64d8b9b5becbf1cc0d0b9ebcff56339ec736328de6852a29006805470da13f by agent Claude at 2026-11-12T13:08:38.967Z | . ",
+    "content": "IG Publisher . The Publisher’s own QA summary for the run this AST came from (IG Publisher 6.0.0-snapshot1 (3), FHIR 4.0.1, on Fri, 13 Nov, 2026 18:21:43 +0000). Summary (JSON) . Every message the Publisher reported, laid out as its own qa.html lays them out. Messages (JSON) . Loading the Publisher's messages… . The messages are drawn in the browser; without JavaScript, read the JSON above. The IG’s AST . | field | value | . | generated | 2026-11-13T18:26:22.178871297Z | . | authority | cache | . | publisher | 3.0.0 | . | core | 7.0.1 | . | sushi | SUSHI v3.21.0 (implements FHIR Shorthand specification v3.0.0) | . | java | 17.0.21 | . | resources | 106 | . | provisional | indices, dependencies, versions, until a full IG Publisher run | . Validity for this checkout: valid. |   | recorded in the AST | this checkout | . | toolchain | ig-publisher 3.0.0 / core 7.0.1 | ig-publisher 3.0.0 / core 7.0.1 | . | sourceRevision | 8f98b8ee968072fb54ca150d3850beee57b52d94 | 8f98b8ee968072fb54ca150d3850beee57b52d94 | . | inputDigest | 41c3e1441014f89c81536a8e216d86ffbbf7017c617fb7972eab92ee1a91b885 | 41c3e1441014f89c81536a8e216d86ffbbf7017c617fb7972eab92ee1a91b885 | . Markdown rendering . Each markdown field the artefact pages draw (description, definition, comment, requirements, valueMarkdown), drawn by the pages’ own renderer, checked for markup left as plain text. 107 resource(s) scanned. Findings: 11 field(s) show markup as text. | resource | field | left as text | starts with | . | StructureDefinition/DVCSDImmunization | snapshot.element[10].comment | HTML tag | The contents of the html element are an XHTML fragment containing only the basic | . | StructureDefinition/Composition-uv-ips-DVC | snapshot.element[68].definition | list marker | The medication summary section contains a description of the patient’s medicatio | . | StructureDefinition/Composition-uv-ips-DVC | snapshot.element[117].definition | list marker | The History of Procedures Section contains a description of the patient past pro | . | StructureDefinition/Composition-uv-ips-DVC | snapshot.element[129].definition | list marker | It lists the patient past procedures that are pertinent to the scope of this doc | . | StructureDefinition/Immunization-uv-ips-PreQual | snapshot.element[13].definition | list marker | Vaccine that was administered or was to be administered. Several kinds of vaccin | . | StructureDefinition/DVCSDPatient | snapshot.element[10].comment | HTML tag | The contents of the html element are an XHTML fragment containing only the basic | . | StructureDefinition/Immunization-uv-ips-DVC | snapshot.element[13].definition | list marker | Vaccine that was administered or was to be administered. Several kinds of vaccin | . | StructureDefinition/DVCSDComposition | snapshot.element[10].comment | HTML tag | The contents of the html element are an XHTML fragment containing only the basic | . | StructureDefinition/Composition-uv-ips-PreQual | snapshot.element[68].definition | list marker | The medication summary section contains a description of the patient’s medicatio | . | StructureDefinition/Composition-uv-ips-PreQual | snapshot.element[117].definition | list marker | The History of Procedures Section contains a description of the patient past pro | . | StructureDefinition/Composition-uv-ips-PreQual | snapshot.element[129].definition | list marker | It lists the patient past procedures that are pertinent to the scope of this doc | . Page scan . Every page of this site opened in a headless browser after the build, and its text checked for markup shown as text. Results (JSON) . Loading the page scan… . The results are drawn in the browser; without JavaScript, read the JSON above. Injection scan . Every resource narrative, markdown field and IG page this site publishes (10041 text(s)) is checked for injection attempts before publication: a pattern scan, and an agent’s review kept in the IG’s qa/ig-content-qa.json. The browser checks each narrative again before drawing it. Verdict (JSON) . | field | value | . | state | reviewed, no pattern hit and no open finding | . | content | sha256:102b22886f6deb42c37d866e657a15c99c9c6195476a4a52c31fe132f88eb5c4 | . | reviewed | sha256:102b22886f6deb42c37d866e657a15c99c9c6195476a4a52c31fe132f88eb5c4 by agent Claude at 2026-11-14T16:10:24.763Z | . ",
     "url": "/smart-trust-phw/qa.html#fhir-qa",
     
     "relUrl": "/qa.html#fhir-qa"
-  },"234": {
+  },"232": {
     "doc": "QA Report",
     "title": "Knowledge-graph QA",
     "content": "The harness’s checks over the knowledge graph, as each instance recorded them. Every instance’s QA is the harness’s own view of the same graph. An instance with no records in this checkout keeps them on its own QA store, keyed by commit; its view says what that store holds. | instance | records | findings | view | . | smart-trust-phw | declares no qa directory | — | — | . | cat-harness | none in this checkout | — | cat-harness | . | fhir-harness | none in this checkout | — | fhir-harness | . | folio-assistant-core | none in this checkout | — | folio-assistant-core | . | smart-base | none in this checkout | — | smart-base | . | who-iris | none in this checkout | — | who-iris | . ",
     "url": "/smart-trust-phw/qa.html#knowledge-graph-qa",
     
     "relUrl": "/qa.html#knowledge-graph-qa"
-  },"235": {
+  },"233": {
     "doc": "QA Report",
     "title": "QA Report",
     "content": ". ",
     "url": "/smart-trust-phw/qa.html",
     
     "relUrl": "/qa.html"
-  },"236": {
+  },"234": {
     "doc": "Reference Implementations",
     "title": "Reference Implementations",
     "content": ". No reference implementation of this guide is published yet. Content is for demonstration purposes only. Related resources are listed in the Bibliography and on the Dependencies page. Edit this page on GitHub . ",
     "url": "/smart-trust-phw/reference-implementations.html",
     
     "relUrl": "/reference-implementations.html"
-  },"237": {
+  },"235": {
     "doc": "Security and Privacy Considerations",
     "title": "Security and Privacy Considerations",
     "content": ". Security and privacy are part of each process in this guide, not a separate layer: . | Consent is enforced where the data is held. The VHL Sharer enforces the consent in its own Consent Registry (IHE PCF [ITI-108]). A copy of a consent carried inside a document is evidence only. See Process A and Process C. | No silent permit. A consent decision is permit, deny or unknown. A missing, expired or unreachable consent never gives permit. | Trust is checked against a Trust Anchor. Signatures on links and certificates are verified against the trust list of an abstract Trust Anchor ([ITI-YY2]). The guide does not depend on one particular anchor. | Decisions are recorded. Each access decision is recorded as W3C PROV-O provenance that cites Consent.id and Consent.meta.versionId. Process G covers audit under a data sharing agreement. | Revocation. Process H covers revoking and suspending access. | . Edit this page on GitHub . ",
     "url": "/smart-trust-phw/security-privacy.html",
     
     "relUrl": "/security-privacy.html"
-  },"238": {
+  },"236": {
     "doc": "Sequence Diagrams",
     "title": "Sequence Diagrams",
     "content": ". Consent Selection . Holder | Issuer | Consent Repository | ConsentRepository | Holder(as VHL Holder)Issuer(as PCF Consent Recorder,as VHL Sharer)Consent RepositoryConsentRepository | Select consent directives | PCF transaction Access Consent request [ITI-108](Issuer as PCF Consent Recorder) | PCF transaction Access Consent response [ITI-108](Issuer as PCF Consent Recorder) Generate and Use VHL - Unsigned documents . Holder | Holder | | | | Issuer | Issuer | Consent Repository | Consent Repository | Receiver | Receiver | ConsentRepository | ConsentRepository | DocumentGenerator | DocumentGenerator | Holder(as VHL Holder)Issuer(as PCF Consent Recorder,as VHL Sharer)Consent RepositoryReceiver(as VHL Receiver)ConsentRepositoryDocumentGeneratoroptional consent selection | Select consent directives | PCF transaction Access Consent request [ITI-108](Issuer as PCF Consent Recorder) | PCF transaction Access Consent response [ITI-108](Issuer as PCF Consent Recorder) | | Select VHL authorization mechanism parameters (e.g. expiration, PIN) | Generate VHL request [ITI-YY3](as VHL Holder and VHL Sharer)alt[use reference architecture] | Generate document requestIPA [DocumentReference/$docref] | Generate document responseIPA [DocumentReference/$docref] | [use bespoke means] | | generate document | | Generate VHL authorization mechanism(e.g. create the signed HCERT QR code) | Generate VHL response [ITI-YY3](as VHL Sharer and VHL Holder)time passes | Provide VHL [ITI-YY6](as VHL Holder and VHL Receiver) | Request VHL Documents request [ITI-YY4](as VHL Receiver and VHL Sharer) | Request VHL Documents response [ITI-YY4](as VHL Receiver and VHL Sharer)loop | Request VHL Document request [ITI-YY5](as VHL Receiver and VHL Sharer) | Request VHL Document response [ITI-YY5](as VHL Sharer and VHL Receiver) Generate and Use VHL - Consent and Selctive Disclosure . Generate and Use VHL with Consent and Selective Disclosure..system-actors.html.Holder Holder.. | ..system-actors.html.Holder Holder.. | | | | ..system-actors.html.Issuer Issuer.. | ..system-actors.html.Issuer Issuer.. | ..system-actors.html.ConsentRegistry Consent Registry.. | ..system-actors.html.ConsentRegistry Consent Registry.. | ..system-actors.html.Receiver Receiver.. | ..system-actors.html.Receiver Receiver.. | DocumentGenerator | DocumentGenerator | DocumentSigner | DocumentSigner | Holder(as VHL Holder)Issuer(as PCF Consent Recorder,as VHL Sharer)Consent RegistryReceiver(as VHL Receiver)DocumentGeneratorDocumentSigner | (Optional)Select consent directives | Generate VHL request [ITI-YY3](as VHL Holder and VHL Sharer)alt[use reference architecture] | Generate document requestIPA [DocumentReference/$docref] | Generate document responseIPA [DocumentReference/$docref] | | Process any selective disclosure directivesto redact contentwhen generating doc | [use bespoke means] | | generate documentoptional signingalt[use reference architecture] | Sign document request | | generate digital signaturesfor verification andselective disclosure | return document manifest containingredacted generated doc, signed collateral | [use bespoke means] | | generate doc and signed collateral | | generate VHL authorization mechanism | Generate VHL response [ITI-YY3](as VHL Sharer and VHL Holder)time passes | Provide VHL [ITI-YY6](as VHL Holder and VHL Receiver) | Request VHL Documents request [ITI-YY4](as VHL Receiver and VHL Sharer) | Request VHL Documents response [ITI-YY4](as VHL Receiver and VHL Sharer)loop | Request VHL Document request [ITI-YY5](as VHL Receiver and VHL Sharer) | Request VHL Document response [ITI-YY5](as VHL Sharer and VHL Receiver) Generate and Use VHL with Consent and Selective Disclosure ..system-actors.html.Holder Holder.. | ..system-actors.html.Holder Holder.. | | | | ..system-actors.html.Issuer Issuer.. | ..system-actors.html.Issuer Issuer.. | ..system-actors.html.ConsentRegistry Consent Registry.. | ..system-actors.html.ConsentRegistry Consent Registry.. | Document Generator | Document Generator | Document Signer | Document Signer | ..system-actors.html.Receiver Receiver.. | ..system-actors.html.Receiver Receiver.. | Holder(as VHL Holder)Issuer(as PCF Consent Recorder,as VHL Sharer)Consent RegistryDocument GeneratorDocument SignerReceiver(as VHL Receiver) | (Optional)Select consent directives | Generate VHL request [ITI-YY3](as VHL Holder and VHL Sharer)alt[use reference architecture] | Generate document request[DocumentReference/$docref] | Generate document response[DocumentReference/$docref] | [use bespoke means] | | generate documentoptional signingalt[use reference architecture] | Sign document request | | generate digital signaturesfor verification | return document manifest containinggenerated doc, signed collateral | [use bespoke means] | | generate doc and signed collateral | | generate VHL authorization mechanism | Generate VHL response [ITI-YY3](as VHL Sharer and VHL Holder)time passes | Provide VHL [ITI-YY6](as VHL Holder and VHL Receiver) | Request VHL Documents request [ITI-YY4](as VHL Receiver and VHL Sharer) | Request VHL Documents response [ITI-YY4](as VHL Receiver and VHL Sharer)loop | Request VHL Document request [ITI-YY5](as VHL Receiver and VHL Sharer) | Request VHL Document response [ITI-YY5](as VHL Sharer and VHL Receiver) Generate and Use VHL . Issuer | Holder | Receiver | IssuerHolder(as VHL Holder)Receiver(as VHL Receiver) | Generate VHL request [ITI-YY3](as VHL Holder and VHL Sharer) | Generate VHL response [ITI-YY3](as VHL Sharere and VHL Holder) | Provide VHL [ITI-YY6](as VHL Holder and VHL Receiver) | Request VHL Documents request [ITI-YY4](as VHL Receiver and VHL Sharer) | Request VHL Documents response [ITI-YY4](as VHL Receiver and VHL Sharer)loop | Request VHL Document request [ITI-YY5](as VHL Receiver and VHL Sharer) | Request VHL Document response [ITI-YY5](as VHL Sharer and VHL Receiver) Edit this page on GitHub . ",
     "url": "/smart-trust-phw/sequence-diagrams.html",
     
     "relUrl": "/sequence-diagrams.html"
-  },"239": {
+  },"237": {
     "doc": "System Actors",
     "title": "System Actors",
     "content": ". Trust Anchor . Trust Anchor which receives and distributes PKI-material within a Trust Network . Trust Network Participant . Trust Network Participant which publishes and or receives PKI-material within a Trust Network . Holder . Holder (person) of Verifiable Health Certificate or Verifiable Health Link . Receiver . Receiver (system) of Verifiable Health Certificate or Verifiable Health Link . Issuer . Issuer (system) of Verifiable Health Certificate or Verifiable Health Link . Consent Registry . Edit this page on GitHub . ",
     "url": "/smart-trust-phw/system-actors.html",
     
     "relUrl": "/system-actors.html"
-  },"240": {
+  },"238": {
     "doc": "system-requirements",
     "title": "system-requirements",
     "content": ". Functional Requirements . ⟦not rendered: functional-requirements.md⟧ — the IG Publisher renders it from a source this build does not hold; no renderer was given to this build. Non-functional Requirements . ⟦not rendered: non-functional-requirements.md⟧ — the IG Publisher renders it from a source this build does not hold; no renderer was given to this build. Edit this page on GitHub . ",
     "url": "/smart-trust-phw/system-requirements.html",
     
     "relUrl": "/system-requirements.html"
-  },"241": {
+  },"239": {
     "doc": "Transactions",
     "title": "Transactions",
     "content": ". Generate VHL Request . A Holder requests an Issuer to generate a VHL. | Source: Holder | Target: Issuer | . Request Trigger . A Holder wishes to request a VHL from an Issuer. Optionally: The holder has selected consent and selective disclosure directives. Request Semantics . none defined. up to a content profile to define . Request Actions . The Issuer will generate a VHL . Response Trigger . Issuer has performed any necessary document generation, digital signatures and has generated a VHL according to a content profile . Response Semantics . none defined. up to content profile to define . Response Actions . The Holder accepts the VHL for storage on wallet or other utilization . Security Considerations . Depends on the content profile . Edit this page on GitHub . ",

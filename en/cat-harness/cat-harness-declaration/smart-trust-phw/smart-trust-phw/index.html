@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GDHCN Trust Network - Personal Health Wallet — cat-harness-declaration</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1b1b1b; --bg:#fdfdfb; --muted:#5b5b5b; --line:#d6d6d0; --link:#0b5cad; --panel:#f3f4f2; }
+  @media (prefers-color-scheme: dark) { :root:not([data-fa-scheme="light"]) { --fg:#e8e8e6; --bg:#161616; --muted:#a8a8a4; --line:#3a3a38; --link:#7db4ff; --panel:#1f2124; } }
+  :root[data-fa-scheme="dark"] { --fg:#e8e8e6; --bg:#161616; --muted:#a8a8a4; --line:#3a3a38; --link:#7db4ff; --panel:#1f2124; }
+  :root[data-fa-scheme="light"] { color-scheme: light; } :root[data-fa-scheme="dark"] { color-scheme: dark; }
+  body { margin:0; font:1rem/1.5 system-ui,sans-serif; color:var(--fg); background:var(--bg); }
+  main { max-width:80rem; margin:0 auto; padding:1.5rem 1.5rem 4rem; min-width:0; overflow-wrap:anywhere; }
+  h1 { font-size:1.35rem; margin:0 0 .25rem; } h2 { font-size:1.05rem; margin:1.5rem 0 .5rem; }
+  a { color:var(--link); } a:focus-visible, select:focus-visible { outline:3px solid var(--link); outline-offset:2px; }
+  .m { color:var(--muted); font-size:.9rem; }
+  .tiles { display:flex; flex-wrap:wrap; gap:.5rem; margin:.5rem 0; padding:0; list-style:none; }
+  .tiles li { border:1px solid var(--line); border-radius:.4rem; padding:.35rem .7rem; }
+  .tiles b { font-size:1.2rem; margin-right:.3rem; }
+  .clip { width:100%; overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; font-size:.92rem; }
+  th, td { text-align:left; vertical-align:top; padding:.35rem .5rem; border-bottom:1px solid var(--line); }
+  th { background:var(--panel); white-space:nowrap; }
+  /* Only the node's path and long text may break mid-word; a status or a date
+     broken across lines ("in_pr ogres s") is unreadable. */
+  td { overflow-wrap:normal; } td.p, td.t { overflow-wrap:anywhere; } td.s { white-space:nowrap; }
+  dl { display:grid; grid-template-columns:minmax(8rem,14rem) 1fr; gap:.25rem 1rem; }
+  dt { font-weight:600; } dd { margin:0; }
+  pre { background:var(--panel); padding:.75rem; overflow-x:auto; font-size:.85rem; }
+  label { margin-right:1rem; }
+  @media (max-width:40rem) { dl { grid-template-columns:1fr; } }
+</style>
+<link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-29bsmdrl2vm.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><style data-folio-narrow-viewport>
+/* Narrow viewports: nothing may widen the PAGE — bean `2r2n`.
+ *
+ * At 390 px, 105 of 249 built pages scrolled sideways (measured 2026-09-24).
+ * The rule here is the bean's: wide content scrolls INSIDE ITS OWN BOX with a
+ * visible cue, and the page itself never pans.
+ *
+ * ONE FILE, TWO WAYS IN. Themed pages link it from `_includes/head_custom.html`.
+ * The standalone viewer pages carry no theme stylesheet at all, so
+ * `withViewerNav` in `scripts/viewer-page.ts` inlines this same file when it
+ * adds the rail. A copy of these rules in each place would be two answers to
+ * "what does a table do at 390 px", free to drift apart.
+ *
+ * Every selector here is written to be safe on both kinds of page: no
+ * `.main-content` scope (a standalone page has none), the navbar excluded by
+ * name, and the theme's own `.table-wrapper` left alone, since it already does
+ * this job for Markdown tables. */
+
+@media (max-width: 799.98px) {
+  /* A table the theme did not wrap: raw HTML from a generator, or one built at
+   * runtime. `display: block` makes the table its own scroll box. Its cells
+   * still lay out as a table inside the anonymous table box. */
+  table:not(.table-wrapper > table):not(.fa-nav table) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* THE CUE: the edge that has more content past it fades out. The fade is a
+   * MASK over the table's own pixels, driven by its own scroll position, so
+   * it needs no knowledge of the page's background. A painted cover (the
+   * usual `background-attachment: local` trick) does: the first version used
+   * `Canvas`, and on a page that is dark under a LIGHT scheme it laid a white
+   * band over the first column.
+   *
+   * A table that does not overflow has an inactive scroll timeline, so the
+   * animation has no effect and both fades stay at their initial 0: no cue
+   * where there is nothing to scroll to. A browser without scroll-driven
+   * animations shows no fade, and the table still scrolls. */
+  @supports (animation-timeline: scroll()) {
+    table:not(.table-wrapper > table):not(.fa-nav table) {
+      mask-image: linear-gradient(to right,
+        transparent 0, #000 var(--fa-cue-l),
+        #000 calc(100% - var(--fa-cue-r)), transparent 100%);
+      animation: fa-scroll-cue linear both;
+      animation-timeline: scroll(self inline);
+    }
+  }
+
+  /* A code block scrolls in its own box, which is what `pre` is for. Mermaid
+   * SOURCE sits in a `pre` until the renderer replaces it, and at 390 px a
+   * diagram's source line is longer than the screen. */
+  pre {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Prose that has no break opportunity: a long path in inline code, or a
+   * glossary definition naming one. Breaking the string is better than
+   * widening the page it sits on. */
+  :not(pre) > code,
+  dd {
+    overflow-wrap: anywhere;
+  }
+}
+
+@property --fa-cue-l { syntax: "<length>"; inherits: false; initial-value: 0px; }
+@property --fa-cue-r { syntax: "<length>"; inherits: false; initial-value: 0px; }
+
+@keyframes fa-scroll-cue {
+  0%   { --fa-cue-l: 0px;    --fa-cue-r: 2.5rem; }
+  12%  { --fa-cue-l: 2.5rem; }
+  88%  { --fa-cue-r: 2.5rem; }
+  100% { --fa-cue-l: 2.5rem; --fa-cue-r: 0px; }
+}
+
+</style>
+<script type="application/json" id="fa-translation-meta">{"lang":"en","translationStatus":"","translationSource":"","supportedLocales":["ar","zh","en","fr","ru","es"],"availableLocales":[]}</script><link rel="stylesheet" href="../../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../../assets/page-layout.js" defer data-fa-page-layout></script><link rel="stylesheet" href="../../../../../assets/ig-artifact.css"></head>
+<body data-fa-node-kind-page>
+<header class="ig-search-top fa-page-bar"><a class="ig-search-home" href="../../../../../index.html">GDHCN Trust Network - Personal Health Wallet</a><form class="ig-search" role="search" data-ig-search-index="../../../../../assets/ig-search.json"><label class="ig-search-label" for="search-input">Search GDHCN Trust Network - Personal Health Wallet</label><input type="search" id="search-input" class="ig-search-input" placeholder="Search pages and artefacts" autocomplete="off" aria-controls="ig-search-results" aria-expanded="false"><ul id="ig-search-results" class="ig-search-results" hidden></ul></form><span class="ig-locale-slot" data-fa-slot="locale"></span></header><script type="application/json" id="fa-rail" data-fa-root="../../../../.." data-fa-to-root="../../../../..">{"data":"rail-29bsmdrl2vm","here":"/en/cat-harness/cat-harness-declaration/smart-trust-phw/smart-trust-phw/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">folio-assistant</a></nav>
+<main>
+<h1 id="nk-title">GDHCN Trust Network - Personal Health Wallet</h1>
+<p class="m">A <a href="../../">cat-harness-declaration</a> node held by <a href="../">smart-trust-phw</a>, at <code>smart-trust-phw.json</code>.</p>
+
+<h2 id="fields">Fields</h2>
+<dl>
+<dt>$schema</dt><dd>cat-harness-declaration/1.0.0</dd>
+<dt>name</dt><dd>smart-trust-phw</dd>
+<dt>version</dt><dd>0.2.0</dd>
+<dt>repository</dt><dd>litlfred/smart-trust-phw</dd>
+<dt>iriBase</dt><dd>https://litlfred.github.io/smart-trust-phw/</dd>
+<dt>title</dt><dd>GDHCN Trust Network - Personal Health Wallet</dd>
+<dt>description</dt><dd>The WHO SMART Guidelines Personal Health Wallet (PHW) implementation guide on the GDHCN Trust Network (FHIR IG source under input/), a layer on smart-base.</dd>
+<dt>needs</dt><dd><pre>[
+  &quot;smart-base&quot;
+]</pre></dd>
+<dt>assets</dt><dd><pre>[
+  {
+    &quot;id&quot;: &quot;agent-instructions&quot;,
+    &quot;src&quot;: &quot;AGENTS.md&quot;,
+    &quot;role&quot;: &quot;agent-instructions&quot;,
+    &quot;title&quot;: &quot;AGENTS.md — smart-trust-phw&quot;,
+    &quot;description&quot;: &quot;Cold start for work here, and its one rule: fhir-artifact-index/ and document-kinds/ are generated at publish from the IG&#39;s AST, never authored by hand.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;instance-readme&quot;,
+    &quot;src&quot;: &quot;README.md&quot;,
+    &quot;role&quot;: &quot;instance-readme&quot;,
+    &quot;title&quot;: &quot;GDHCN Trust Network - Personal Health Wallet&quot;,
+    &quot;description&quot;: &quot;The WHO SMART Guidelines Personal Health Wallet implementation guide: where it is published and where its issues are managed.&quot;
+  }
+]</pre></dd>
+<dt>directories</dt><dd><pre>[
+  {
+    &quot;id&quot;: &quot;smart-trust-phw-ast&quot;,
+    &quot;path&quot;: &quot;fhir-ast/&quot;,
+    &quot;description&quot;: &quot;The Personal Health Wallet IG&#39;s IG Publisher AST, ingested although the IG source is not. Read from the branch family cat/fhir-harness/fhir-ast/ on litlfred/smart-trust-phw, one branch per IG package id; this IG&#39;s branch is cat/fhir-harness/fhir-ast/smart.who.int.trust-phw. Restored by fhir-harness/scripts/ig-cache.sh; absent from the checkout.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;ig-ast&quot;
+    ],
+    &quot;storage&quot;: {
+      &quot;branchPrefix&quot;: &quot;cat/fhir-harness/fhir-ast/&quot;,
+      &quot;keyedBy&quot;: &quot;family&quot;,
+      &quot;keyFrom&quot;: &quot;the IG&#39;s package id&quot;,
+      &quot;repository&quot;: &quot;litlfred/smart-trust-phw&quot;,
+      &quot;tool&quot;: &quot;ig-cache&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;smart-trust-phw-artifact-index&quot;,
+    &quot;path&quot;: &quot;fhir-artifact-index/&quot;,
+    &quot;description&quot;: &quot;The artefact index for smart-trust-phw. fhir-harness&#39;s `ig-index:build` writes `index.json`, `menu.json`, `releases.json` and `package.tgz` at publish from the IG&#39;s AST; they are not committed. Only the README is.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;fhir-artifact-index&quot;
+    ],
+    &quot;readOnly&quot;: true,
+    &quot;readOnlyBasis&quot;: &quot;Generated: fhir-harness&#39;s `ig-index:build` writes this index at publish from the IG&#39;s AST. A hand edit changes what this repository claims upstream published; `check:materialized-fixity` catches one.&quot;,
+    &quot;served&quot;: true
+  },
+  {
+    &quot;id&quot;: &quot;smart-trust-phw-document-kinds&quot;,
+    &quot;path&quot;: &quot;document-kinds/&quot;,
+    &quot;description&quot;: &quot;How this IG realises the document kinds of the layers it needs: `dak.coverage.smart-trust-phw.json`, the DAK view of `fhir-artifact-index/`, which places each artefact in one of the ten DAK components by its FHIR resource type and lists what no rule places. Generated at publish by `bun run cat smart-base:document-kinds` (`gen-document-kinds.ts`), after the index it reads, and not committed.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;document-kinds&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;smart-trust-phw-docs&quot;,
+    &quot;path&quot;: &quot;docs/&quot;,
+    &quot;instanceRoot&quot;: true,
+    &quot;description&quot;: &quot;The artefact pages of smart-trust-phw&#39;s IG site, generated at publish from `fhir-artifact-index/index.json` by `smart-trust-phw:pages` (`fhir-harness/scripts/gen-ig-pages.ts`) and built under `/smart-trust-phw/` in the IG&#39;s menu. Never authored or committed.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;docs&quot;,
+      &quot;ig-pages&quot;
+    ],
+    &quot;derivedFrom&quot;: [
+      &quot;smart-trust-phw-artifact-index&quot;,
+      &quot;smart-base-themes&quot;
+    ],
+    &quot;writer&quot;: [
+      &quot;fhir-harness/scripts/gen-ig-pages.ts&quot;,
+      &quot;fhir-harness/scripts/templates/ig-pages/&quot;
+    ],
+    &quot;igSite&quot;: true,
+    &quot;tile&quot;: {
+      &quot;icon&quot;: &quot;docs&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;library&quot;,
+    &quot;path&quot;: &quot;library/&quot;,
+    &quot;description&quot;: &quot;L1 normative specification snapshots materialized for smart-trust-phw: IHE ITI Privacy Consent on FHIR (PCF) 1.1.0 (`ihe-iti-pcf-1-1-0`, CC BY 4.0) and IHE ITI Verifiable Health Links (VHL) 1.0.0-comment (`ihe-iti-vhl-1-0-0-comment`, CC BY 4.0). Every knowledge-graph reference to these IHE specifications resolves through here, and `check:materialized-fixity` verifies their SHA-256 digests against `catalogue/`.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;library&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;smart-trust-phw-catalogue&quot;,
+    &quot;path&quot;: &quot;catalogue/&quot;,
+    &quot;description&quot;: &quot;Qualified Dublin Core (`folio-dublin-core/v1`) and catalogue node (`folio-catalogue-node/v1`) records for two kinds of item: the IHE ITI specifications materialized in `library/` (PCF 1.1.0 and VHL 1.0.0-comment), and every work the IG cites that is not ingested, as a `referenced` item whose record is the IG&#39;s bibliography entry, keyed by the citation&#39;s `#ref-&lt;slug&gt;`. A capture of a cited work, when one exists, is in the repository&#39;s `uploads/` data store, which is not part of the KG. `bun run cat check:catalogue` and `bun run cat check:materialized-fixity` verify every node, metadataRef, libraryId, localPath and SHA-256 digest.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;catalogue&quot;
+    ],
+    &quot;readOnly&quot;: true,
+    &quot;readOnlyBasis&quot;: &quot;Records of IHE ITI supplements (`profiles.ihe.net`), whose SHA-256 digests `check:materialized-fixity` verifies against `library/`, and the IG&#39;s bibliography records for the works it cites: change a citation&#39;s record here, never on a page.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;business-processes&quot;,
+    &quot;path&quot;: &quot;input/business-processes/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;business-processes&quot;
+    ],
+    &quot;description&quot;: &quot;The guide&#39;s business processes PHW.A to PHW.K (BPMN 2.0), the IG source the IG Publisher renders; the processes viewer draws them for this layer. Each is drawn to input/images/PHW.&lt;id&gt;.svg by tools/render-bpmn/render_bpmn.ts (bootstrap-tools&#39; renderer); CI fails when a drawing is stale. Never edit a drawing: change the BPMN.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;tools&quot;,
+    &quot;path&quot;: &quot;tools/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;code&quot;
+    ],
+    &quot;description&quot;: &quot;This layer&#39;s generators, each with a --check that CI runs: render-bpmn draws input/business-processes/*.bpmn into input/images/; personas writes input/pagecontent/personas.md from scenarios/. The site is published by the harness&#39;s stage-local.ts --fresh.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;scenarios&quot;,
+    &quot;path&quot;: &quot;scenarios/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;scenarios&quot;
+    ],
+    &quot;description&quot;: &quot;The roles the lanes of the business processes name (roles.json, each pointing to its ActorDefinition in input/fsh/actors/actors.fsh where one exists), and example people and systems that play them (actors/, each person with a meta.persona). tools/personas/gen_personas.ts writes the Generic Personas page from them. Every person is fictional.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;smart-trust-phw-translations&quot;,
+    &quot;path&quot;: &quot;translations/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;translation-sources&quot;
+    ],
+    &quot;catalogues&quot;: &quot;input/*/translations/{locale}.po&quot;,
+    &quot;description&quot;: &quot;The harness side of this IG&#39;s translations. The catalogues themselves stay where smart-base&#39;s injector reads them, one per locale per source directory: input/pagecontent/, input/images/ and input/images-source/translations/&lt;locale&gt;.po, from the .pot templates smart-base&#39;s extract_translations.py writes beside them (`catalogues` names that pattern). This directory holds what the harness keeps per layer: glossary-sense.json, the adjudicator&#39;s sense verdicts for translation:glossary:check. Agent translations are unofficial until a person signs them off; FHIR terms use CodeSystem supplements in input/fsh/translations/&lt;locale&gt;.fsh.&quot;
+  }
+]</pre></dd>
+<dt>avatar</dt><dd><pre>{
+  &quot;glyph&quot;: &quot;M3 7h15a2 2 0 012 2v8a2 2 0 01-2 2H3V7zM3 7l2-3h11l2 3M15 13h3v2h-3z&quot;,
+  &quot;tone&quot;: 199,
+  &quot;reads&quot;: &quot;a bifold wallet with a clasp — the personal health wallet, in WHO blue&quot;
+}</pre></dd>
+<dt>_avatar_comment</dt><dd>A bifold wallet with a clasp — the personal health wallet (PHW) on the GDHCN Trust Network, in WHO blue (tone 199, matching smart-base and smart-trust).</dd>
+<dt>_builtAtPublish_comment</dt><dd>Owner, 2026-10-14 (B1; schemas/built-at-publish.ts in cat-harness). The artefact index, DAK coverage report, JSON-LD @context, and IG pages are computed at the checkout&#39;s pins at publish and never committed.</dd>
+<dt>builtAtPublish</dt><dd><pre>[
+  {
+    &quot;path&quot;: &quot;fhir-artifact-index/index.json&quot;,
+    &quot;writer&quot;: [
+      &quot;ig-index:build&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the IG&#39;s artefact index: built by fhir-harness&#39;s ig-index:build from the IG&#39;s AST (restored from the IG repository&#39;s AST cache) and its own sushi-config.yaml, so it moves when the IG&#39;s default branch or its AST cache moves, not with a commit of this layer&quot;
+  },
+  {
+    &quot;path&quot;: &quot;fhir-artifact-index/menu.json&quot;,
+    &quot;writer&quot;: [
+      &quot;ig-index:build&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the IG&#39;s menu: built by fhir-harness&#39;s ig-index:build from the IG&#39;s AST (restored from the IG repository&#39;s AST cache) and its own sushi-config.yaml, so it moves when the IG&#39;s default branch or its AST cache moves, not with a commit of this layer&quot;
+  },
+  {
+    &quot;path&quot;: &quot;fhir-artifact-index/releases.json&quot;,
+    &quot;writer&quot;: [
+      &quot;ig-index:build&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the IG&#39;s release list: built by fhir-harness&#39;s ig-index:build from the IG&#39;s AST (restored from the IG repository&#39;s AST cache) and its own sushi-config.yaml, so it moves when the IG&#39;s default branch or its AST cache moves, not with a commit of this layer&quot;
+  },
+  {
+    &quot;path&quot;: &quot;fhir-artifact-index/package.tgz&quot;,
+    &quot;writer&quot;: [
+      &quot;ig-index:build&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the Publisher-shaped package the JSON view pages read each resource from: built by fhir-harness&#39;s ig-index:build from the IG&#39;s AST (restored from the IG repository&#39;s AST cache) and its own sushi-config.yaml, so it moves when the IG&#39;s default branch or its AST cache moves, not with a commit of this layer&quot;
+  },
+  {
+    &quot;path&quot;: &quot;fhir-artifact-index/sidecars/&quot;,
+    &quot;writer&quot;: [
+      &quot;ig-index:build&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the IG API sidecars bound to each artefact: copied by fhir-harness&#39;s ig-index:build from what a mounted layer&#39;s ig-site:sidecars leaves in its work directory, so it moves with the checkout&#39;s layers and the IG&#39;s AST cache, not with a commit of this layer&quot;
+  },
+  {
+    &quot;path&quot;: &quot;document-kinds/dak.coverage.smart-trust-phw.json&quot;,
+    &quot;writer&quot;: [
+      &quot;smart-base:document-kinds&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;directory&quot;: &quot;smart-trust-phw-document-kinds&quot;,
+    &quot;reason&quot;: &quot;the DAK view of this IG&#39;s artefact index, which is itself built at publish (fhir-artifact-index/index.json above), so the report moves with the index and is built after it&quot;
+  },
+  {
+    &quot;path&quot;: &quot;ns/context/v1.jsonld&quot;,
+    &quot;writer&quot;: [
+      &quot;jsonld:contexts&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the prefixes and content-context terms its documents use, flattened with the jsonldPrefixes of the layers it needs at the checkout&#39;s pins&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/&quot;,
+    &quot;writer&quot;: [
+      &quot;smart-trust-phw:pages&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;directory&quot;: &quot;smart-trust-phw-docs&quot;,
+    &quot;reason&quot;: &quot;the artefact pages gen-ig-pages renders from this layer&#39;s artefact index with the IG-page templates and the smart-base themes and chrome, all read at the checkout&#39;s pins&quot;
+  }
+]</pre></dd>
+</dl>
+</main>
+<script src="../../../../../assets/ig-search.js" defer></script>
+</body>
+</html>
