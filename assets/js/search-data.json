@@ -1595,419 +1595,293 @@
     
     "relUrl": "/en/cat-harness/library/"
   },"228": {
-    "doc": "Handbook for guideline development",
-    "title": "Handbook for guideline development",
-    "content": "World Health Organization. Handbook for guideline development. TitleHandbook for guideline development AuthorsWorld Health Organization Typebook Sources . | www.who.int/publications/i/item/9789241548960 (canonical) | . In the knowledge graph . | IRI references/who-guideline-handbook | provenance: catalogue | read from catalogue/records/who-guideline-handbook.dc.json (smart-trust-phw, sub-graph smart-trust-phw-catalogue) | . Export: BibTeX · RIS · CSL-JSON · DC XML . All references of smart-trust-phw-catalogue . ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/who-guideline-handbook/#handbook-for-guideline-development",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/who-guideline-handbook/#handbook-for-guideline-development"
-  },"229": {
-    "doc": "Handbook for guideline development",
-    "title": "Handbook for guideline development",
-    "content": " ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/who-guideline-handbook/",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/who-guideline-handbook/"
-  },"230": {
-    "doc": "IHE IT Infrastructure Technical Framework Supplement — Privacy Consent on FHIR (PCF)",
-    "title": "IHE IT Infrastructure Technical Framework Supplement — Privacy Consent on FHIR (PCF)",
-    "content": "IHE IT Infrastructure Technical Committee (2023). IHE IT Infrastructure Technical Framework Supplement — Privacy Consent on FHIR (PCF). Integrating the Healthcare Enterprise (IHE). TitleIHE IT Infrastructure Technical Framework Supplement — Privacy Consent on FHIR (PCF) AuthorsIHE IT Infrastructure Technical Committee Issued2023-8-4 Typedocument PublisherIntegrating the Healthcare Enterprise (IHE) Languageen AbstractThe Privacy Consent on FHIR (PCF) Profile supports the use of a FHIR Consent resource to capture, discover, and enforce patient privacy consent directives across healthcare actors using the Access Consent [ITI-108] transaction and progressive Basic, Intermediate, and Advanced Consent profiles. Sources . | profiles.ihe.net/ITI/PCF/1.1.0/ (canonical) | profiles.ihe.net/ITI/PCF/ImplementationGuide/ihe.iti.pcf (handle) | repository record (repository) | . In the knowledge graph . | IRI references/ihe-iti-pcf-1-1-0 | provenance: catalogue | read from catalogue/records/ihe-iti-pcf-1-1-0.dc.json (smart-trust-phw, sub-graph smart-trust-phw-catalogue) | library copy: library/ihe-iti-pcf-1-1-0 | . Export: BibTeX · RIS · CSL-JSON · DC XML . All references of smart-trust-phw-catalogue . ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/ihe-iti-pcf-1-1-0/#ihe-it-infrastructure-technical-framework-supplement--privacy-consent-on-fhir-pcf",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/ihe-iti-pcf-1-1-0/#ihe-it-infrastructure-technical-framework-supplement--privacy-consent-on-fhir-pcf"
-  },"231": {
-    "doc": "IHE IT Infrastructure Technical Framework Supplement — Privacy Consent on FHIR (PCF)",
-    "title": "IHE IT Infrastructure Technical Framework Supplement — Privacy Consent on FHIR (PCF)",
-    "content": " ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/ihe-iti-pcf-1-1-0/",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/ihe-iti-pcf-1-1-0/"
-  },"232": {
-    "doc": "Open Health Information Exchange (OpenHIE) Specification and Architecture",
-    "title": "Open Health Information Exchange (OpenHIE) Specification and Architecture",
-    "content": "OpenHIE. Open Health Information Exchange (OpenHIE) Specification and Architecture. TitleOpen Health Information Exchange (OpenHIE) Specification and Architecture AuthorsOpenHIE Typewebpage Sources . | guides.ohie.org/arch-spec/architecture-specification/overview-of-the-architecture (canonical) | . In the knowledge graph . | IRI references/openhie-architecture-specification | provenance: catalogue | read from catalogue/records/openhie-architecture-specification.dc.json (smart-trust-phw, sub-graph smart-trust-phw-catalogue) | . Export: BibTeX · RIS · CSL-JSON · DC XML . All references of smart-trust-phw-catalogue . ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/openhie-architecture-specification/#open-health-information-exchange-openhie-specification-and-architecture",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/openhie-architecture-specification/#open-health-information-exchange-openhie-specification-and-architecture"
-  },"233": {
-    "doc": "Open Health Information Exchange (OpenHIE) Specification and Architecture",
-    "title": "Open Health Information Exchange (OpenHIE) Specification and Architecture",
-    "content": " ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/openhie-architecture-specification/",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/openhie-architecture-specification/"
-  },"234": {
-    "doc": "SMART Guidelines",
-    "title": "SMART Guidelines",
-    "content": "World Health Organization. SMART Guidelines. TitleSMART Guidelines AuthorsWorld Health Organization Typewebpage Sources . | www.who.int/teams/digital-health-and-innovation/smart-guidelines (canonical) | . In the knowledge graph . | IRI references/who-smart-guidelines | provenance: catalogue | read from catalogue/records/who-smart-guidelines.dc.json (smart-trust-phw, sub-graph smart-trust-phw-catalogue) | . Export: BibTeX · RIS · CSL-JSON · DC XML . All references of smart-trust-phw-catalogue . ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/who-smart-guidelines/#smart-guidelines",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/who-smart-guidelines/#smart-guidelines"
-  },"235": {
-    "doc": "SMART Guidelines",
-    "title": "SMART Guidelines",
-    "content": " ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/who-smart-guidelines/",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/who-smart-guidelines/"
-  },"236": {
-    "doc": "References section of the SMART IG starter kit",
-    "title": "References section of the SMART IG starter kit",
-    "content": "World Health Organization. References section of the SMART IG starter kit. TitleReferences section of the SMART IG starter kit AuthorsWorld Health Organization Typewebpage Sources . | worldhealthorganization.github.io/smart-ig-starter-kit/references.html#2 (canonical) | . In the knowledge graph . | IRI references/smart-ig-starter-kit-references | provenance: catalogue | read from catalogue/records/smart-ig-starter-kit-references.dc.json (smart-trust-phw, sub-graph smart-trust-phw-catalogue) | . Export: BibTeX · RIS · CSL-JSON · DC XML . All references of smart-trust-phw-catalogue . ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/smart-ig-starter-kit-references/#references-section-of-the-smart-ig-starter-kit",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/smart-ig-starter-kit-references/#references-section-of-the-smart-ig-starter-kit"
-  },"237": {
-    "doc": "References section of the SMART IG starter kit",
-    "title": "References section of the SMART IG starter kit",
-    "content": " ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/smart-ig-starter-kit-references/",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/smart-ig-starter-kit-references/"
-  },"238": {
-    "doc": "Digital implementation investment guide (DIIG): integrating digital interventions into health programmes",
-    "title": "Digital implementation investment guide (DIIG): integrating digital interventions into health programmes",
-    "content": "World Health Organization (2020). Digital implementation investment guide (DIIG): integrating digital interventions into health programmes. TitleDigital implementation investment guide (DIIG): integrating digital interventions into health programmes AuthorsWorld Health Organization Issued2020 Typebook ISBN9789240010567 Sources . | www.who.int/publications/i/item/9789240010567 (canonical) | . In the knowledge graph . | IRI references/9789240010567-eng | provenance: catalogue | read from catalogue/records/9789240010567-eng.dc.json (smart-trust-phw, sub-graph smart-trust-phw-catalogue) | . Export: BibTeX · RIS · CSL-JSON · DC XML . All references of smart-trust-phw-catalogue . ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/9789240010567-eng/#digital-implementation-investment-guide-diig-integrating-digital-interventions-into-health-programmes",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/9789240010567-eng/#digital-implementation-investment-guide-diig-integrating-digital-interventions-into-health-programmes"
-  },"239": {
-    "doc": "Digital implementation investment guide (DIIG): integrating digital interventions into health programmes",
-    "title": "Digital implementation investment guide (DIIG): integrating digital interventions into health programmes",
-    "content": " ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/9789240010567-eng/",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/9789240010567-eng/"
-  },"240": {
-    "doc": "IHE IT Infrastructure Technical Framework Supplement — Verifiable Health Links (VHL)",
-    "title": "IHE IT Infrastructure Technical Framework Supplement — Verifiable Health Links (VHL)",
-    "content": "IHE IT Infrastructure Technical Committee (2026). IHE IT Infrastructure Technical Framework Supplement — Verifiable Health Links (VHL). Integrating the Healthcare Enterprise (IHE). TitleIHE IT Infrastructure Technical Framework Supplement — Verifiable Health Links (VHL) AuthorsIHE IT Infrastructure Technical Committee Issued2026-6-14 Typedocument PublisherIntegrating the Healthcare Enterprise (IHE) Languageen AbstractThe Verifiable Health Links (VHL) Profile specifies actors (VHL Holder, VHL Sharer, VHL Receiver, Trust Anchor) and transactions ([ITI-YY1] Submit PKI Material with DID, [ITI-YY2] Retrieve Trust List with DID, [ITI-YY3] Generate VHL, [ITI-YY4] Provide VHL, [ITI-YY5] Retrieve Manifest) for issuing, presenting, verifying, and redeeming cryptographically verifiable links to health documents in a trust-anchor-neutral manner. Sources . | profiles.ihe.net/ITI/VHL/1.0.0-comment/ (canonical) | profiles.ihe.net/ITI/VHL/ImplementationGuide/ihe.iti.vhl (handle) | repository record (repository) | . In the knowledge graph . | IRI references/ihe-iti-vhl-1-0-0-comment | provenance: catalogue | read from catalogue/records/ihe-iti-vhl-1-0-0-comment.dc.json (smart-trust-phw, sub-graph smart-trust-phw-catalogue) | library copy: library/ihe-iti-vhl-1-0-0-comment | . Export: BibTeX · RIS · CSL-JSON · DC XML . All references of smart-trust-phw-catalogue . ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/ihe-iti-vhl-1-0-0-comment/#ihe-it-infrastructure-technical-framework-supplement--verifiable-health-links-vhl",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/ihe-iti-vhl-1-0-0-comment/#ihe-it-infrastructure-technical-framework-supplement--verifiable-health-links-vhl"
-  },"241": {
-    "doc": "IHE IT Infrastructure Technical Framework Supplement — Verifiable Health Links (VHL)",
-    "title": "IHE IT Infrastructure Technical Framework Supplement — Verifiable Health Links (VHL)",
-    "content": " ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/ihe-iti-vhl-1-0-0-comment/",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/ihe-iti-vhl-1-0-0-comment/"
-  },"242": {
-    "doc": "Bibliography: smart-trust-phw-catalogue",
-    "title": "Bibliography: smart-trust-phw-catalogue",
-    "content": "The references of catalogue/ (smart-trust-phw, a catalogue directory). All references. Export these 7 references: BibTeX · CSL-JSON · RIS · Dublin Core XML · Dublin Core / BIBO JSON-LD . ✍ + Add reference (standalone node) Build a standalone folio-reference/v1 node at references/reference.jsonld from fields or pasted BibTeX / CSL-JSON. Paste BibTeX or CSL-JSON (optional) Parse BibTeX / CSL-JSON Key (id) Type article-journalbookreportwebpagepaper-conferencechapterthesismanuscriptstandarddocument Title Authors Issued (year or YYYY-MM-DD) Container title DOI URL arXiv Abstract ✍ Add reference · ✍ Create standalone node on GitHub · Download .jsonld · Download .csl.json · Copy .jsonld . Filter references . 7 shown . | IHE IT Infrastructure Technical Committee (2023). IHE IT Infrastructure Technical Framework Supplement — Privacy Consent on FHIR (PCF). Integrating the Healthcare Enterprise (IHE). ihe-iti-pcf-1-1-0 · catalogue · link · profiles.ihe.net/ITI/PCF/ImplementationGuide/ihe.iti.pcf · repository record · source: catalogue/records/ihe-iti-pcf-1-1-0.dc.json · held: library/ihe-iti-pcf-1-1-0 export: BibTeX · RIS · CSL-JSON · DC XML | IHE IT Infrastructure Technical Committee (2026). IHE IT Infrastructure Technical Framework Supplement — Verifiable Health Links (VHL). Integrating the Healthcare Enterprise (IHE). ihe-iti-vhl-1-0-0-comment · catalogue · link · profiles.ihe.net/ITI/VHL/ImplementationGuide/ihe.iti.vhl · repository record · source: catalogue/records/ihe-iti-vhl-1-0-0-comment.dc.json · held: library/ihe-iti-vhl-1-0-0-comment export: BibTeX · RIS · CSL-JSON · DC XML | OpenHIE. Open Health Information Exchange (OpenHIE) Specification and Architecture. openhie-architecture-specification · catalogue · link · source: catalogue/records/openhie-architecture-specification.dc.json export: BibTeX · RIS · CSL-JSON · DC XML | World Health Organization. Handbook for guideline development. who-guideline-handbook · catalogue · link · source: catalogue/records/who-guideline-handbook.dc.json export: BibTeX · RIS · CSL-JSON · DC XML | World Health Organization. References section of the SMART IG starter kit. smart-ig-starter-kit-references · catalogue · link · source: catalogue/records/smart-ig-starter-kit-references.dc.json export: BibTeX · RIS · CSL-JSON · DC XML | World Health Organization. SMART Guidelines. who-smart-guidelines · catalogue · link · source: catalogue/records/who-smart-guidelines.dc.json export: BibTeX · RIS · CSL-JSON · DC XML | World Health Organization (2020). Digital implementation investment guide (DIIG): integrating digital interventions into health programmes. 9789240010567-eng · catalogue · link · ISBN 9789240010567 · source: catalogue/records/9789240010567-eng.dc.json export: BibTeX · RIS · CSL-JSON · DC XML | . ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/#bibliography-smart-trust-phw-catalogue",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/#bibliography-smart-trust-phw-catalogue"
-  },"243": {
-    "doc": "Bibliography: smart-trust-phw-catalogue",
-    "title": "Bibliography: smart-trust-phw-catalogue",
-    "content": " ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/smart-trust-phw-catalogue/"
-  },"244": {
-    "doc": "Bibliography",
-    "title": "Bibliography",
-    "content": "Every reference in the knowledge graph: the bibliographies folios declare (references directories, one folio-reference/v1 node each), the Dublin Core records of catalogues (catalogue directories), and the ingested items of libraries (library directories), as one list. Each reference sits at references/&lt;key&gt;, the IRI a \\cite{key} resolves to. Export these 7 references: BibTeX · CSL-JSON · RIS · Dublin Core XML · Dublin Core / BIBO JSON-LD . By sub-graph: smart-trust-phw-catalogue (7) . ✍ + Add reference (standalone node) Build a standalone folio-reference/v1 node at references/reference.jsonld from fields or pasted BibTeX / CSL-JSON. Paste BibTeX or CSL-JSON (optional) Parse BibTeX / CSL-JSON Key (id) Type article-journalbookreportwebpagepaper-conferencechapterthesismanuscriptstandarddocument Title Authors Issued (year or YYYY-MM-DD) Container title DOI URL arXiv Abstract ✍ Add reference · ✍ Create standalone node on GitHub · Download .jsonld · Download .csl.json · Copy .jsonld . Filter references . 7 shown . | IHE IT Infrastructure Technical Committee (2023). IHE IT Infrastructure Technical Framework Supplement — Privacy Consent on FHIR (PCF). Integrating the Healthcare Enterprise (IHE). ihe-iti-pcf-1-1-0 · catalogue · link · profiles.ihe.net/ITI/PCF/ImplementationGuide/ihe.iti.pcf · repository record · source: catalogue/records/ihe-iti-pcf-1-1-0.dc.json · held: library/ihe-iti-pcf-1-1-0 export: BibTeX · RIS · CSL-JSON · DC XML | IHE IT Infrastructure Technical Committee (2026). IHE IT Infrastructure Technical Framework Supplement — Verifiable Health Links (VHL). Integrating the Healthcare Enterprise (IHE). ihe-iti-vhl-1-0-0-comment · catalogue · link · profiles.ihe.net/ITI/VHL/ImplementationGuide/ihe.iti.vhl · repository record · source: catalogue/records/ihe-iti-vhl-1-0-0-comment.dc.json · held: library/ihe-iti-vhl-1-0-0-comment export: BibTeX · RIS · CSL-JSON · DC XML | OpenHIE. Open Health Information Exchange (OpenHIE) Specification and Architecture. openhie-architecture-specification · catalogue · link · source: catalogue/records/openhie-architecture-specification.dc.json export: BibTeX · RIS · CSL-JSON · DC XML | World Health Organization. Handbook for guideline development. who-guideline-handbook · catalogue · link · source: catalogue/records/who-guideline-handbook.dc.json export: BibTeX · RIS · CSL-JSON · DC XML | World Health Organization. References section of the SMART IG starter kit. smart-ig-starter-kit-references · catalogue · link · source: catalogue/records/smart-ig-starter-kit-references.dc.json export: BibTeX · RIS · CSL-JSON · DC XML | World Health Organization. SMART Guidelines. who-smart-guidelines · catalogue · link · source: catalogue/records/who-smart-guidelines.dc.json export: BibTeX · RIS · CSL-JSON · DC XML | World Health Organization (2020). Digital implementation investment guide (DIIG): integrating digital interventions into health programmes. 9789240010567-eng · catalogue · link · ISBN 9789240010567 · source: catalogue/records/9789240010567-eng.dc.json export: BibTeX · RIS · CSL-JSON · DC XML | . ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/#bibliography",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/#bibliography"
-  },"245": {
-    "doc": "Bibliography",
-    "title": "Bibliography",
-    "content": " ",
-    "url": "/smart-trust-phw/en/folio-assistant-core/bibliography/",
-    
-    "relUrl": "/en/folio-assistant-core/bibliography/"
-  },"246": {
     "doc": "Processes — smart-trust-phw",
     "title": "Processes — smart-trust-phw",
     "content": "The diagrams smart-trust-phw holds in its declared processes directories — one sub-graph’s slice of every instance’s processes. The skills, lanes and findings below count these diagrams only. Generated by cat-harness-tools/scripts/gen-processes-viz.ts. Every number here is counted from the directory, never carried in prose — bpmn-processes’ own rule, and the bean that asked for this page had two different counts in its title and its body. 13 diagram(s), 13 parsed, 0 that would not load. | where | diagrams | . | input/business-processes/ | 13 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/"
-  },"247": {
+  },"229": {
     "doc": "Processes — smart-trust-phw",
     "title": "Every process — one page each",
     "content": "Each page shows the diagram, what it is for, who acts in it, every step with the skill it runs, and which processes call it. kg:audit’s process-diagram-published fails a diagram no page shows — 45 of 62 were in that state before these pages existed (bean ooq3). Running instances links each workflow instance’s own page — the diagram with its token, its stuck states, its beans and todos — for every instance running this process or calling it as a subprocess. Links and counts only: where an instance IS lives in its file under beans/workflows/. | process | steps | undocumented steps | running instances | . | A. Record and Manage Patient Privacy Consent · IRI · JSON-LD | 6 | — | none recorded | . | B. Issue Consent-Backed Verifiable Health Link · IRI · JSON-LD | 8 | — | none recorded | . | C. Present and Redeem Verifiable Health Link with PCF Consent Enforcement · IRI · JSON-LD | 9 | — | none recorded | . | D. Register a Server Client under a Data Sharing Agreement (DSA P4) · IRI · JSON-LD | 9 | — | none recorded | . | E. Server-to-Server Access under a Data Sharing Agreement (DSA P5) · IRI · JSON-LD | 10 | — | none recorded | . | F. Access Decision under a Data Sharing Agreement (DSA P11) · IRI · JSON-LD | 10 | — | none recorded | . | G. Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12) · IRI · JSON-LD | 4 | — | none recorded | . | H. Revocation and Suspension under a Data Sharing Agreement (DSA P13) · IRI · JSON-LD | 5 | — | none recorded | . | I. Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement · IRI · JSON-LD | 9 | — | none recorded | . | J. Issue a Verifiable Digital Health Certificate (shared block B4) · IRI · JSON-LD | 7 | — | none recorded | . | K. Verify a Certificate and its Status (shared block B7) · IRI · JSON-LD | 8 | — | none recorded | . | L. Record Explicit Consent · IRI · JSON-LD | 6 | — | none recorded | . | M. Add Consent Directives to a Shared or Issued Document · IRI · JSON-LD | 4 | — | none recorded | . Instances of cat-harness could not be read in this build, so “none recorded” above does not cover them. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/#every-process--one-page-each",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/#every-process--one-page-each"
-  },"248": {
+  },"230": {
     "doc": "Processes — smart-trust-phw",
     "title": "What runs this skill?",
     "content": "The reverse of &lt;bootstrap.processes:skill ref&gt;, which is the join nothing else exposes: a skill says what to do, and until now nothing said which processes ask for it. 0 distinct skill(s) are named by an activity. No activity names a skill. Names an ⓘ task panel shows without a link are listed on Task panel links: QA. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/#what-runs-this-skill",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/#what-runs-this-skill"
-  },"249": {
+  },"231": {
     "doc": "Processes — smart-trust-phw",
     "title": "Who appears in a process?",
     "content": "A lane NAMES the Role its tasks are performed in; it is not itself a Role. The NAME is free text — process-model.ts notes that sixty lanes spell two dozen positions — so the lane’s partitionElementRef (or the legacy &lt;bootstrap.processes:role ref&gt;) is the join that does not depend on spelling, and it is reported separately below rather than merged into the name. 32 distinct lane name(s). | lane | in | . | PCF Consent Registry | 6 | . | Trust Anchor (GDHCN or another accepted anchor) | 4 | . | Provider Authorization Server (administrator + decision point) | 3 | . | VHL Holder (Patient / Personal Health Wallet) | 3 | . | Certificate Holder (person / Personal Health Wallet) | 2 | . | Data Recipient System (OAuth client) | 2 | . | Trust Anchor (e.g. GDHCN, national, or regional anchor) | 2 | . | Agreement Publisher (DCAT catalogue) | 1 | . | Auditor (person) | 1 | . | Certificate Issuance Service | 1 | . | Certificate Issuer (health worker or issuing system) | 1 | . | Data Provider (decides) | 1 | . | Data Provider Administrator (person) | 1 | . | Data Provider Resource Server (enforcement point) | 1 | . | Data Recipient (duty performer) | 1 | . | Document source (VHL Sharer or Certificate Issuance Service) | 1 | . | Enforcement and Decision Points (audit writers) | 1 | . | Grant Issuer (W3C Bitstring Status List) | 1 | . | Grant Issuer Status List (W3C Bitstring Status List) | 1 | . | Holder (person / Personal Health Wallet) | 1 | . | Issuing Public Health Authority (certificate registry) | 1 | . | PCF Consent Recorder (Wallet / VHL Sharer) | 1 | . | PCF Consent Recorder (wallet or health worker) | 1 | . | Policy Decision Point (permits()) | 1 | . | Policy Enforcement Point (authorization server, resource server or VHL Sharer) | 1 | . | Trust Anchor (GDHCN or another anchor) | 1 | . | Verifier (with or without a status checking application) | 1 | . | VHL Receiver (receiving organisation or application) | 1 | . | VHL Receiver (Verifier / Relying Party) | 1 | . | VHL Sharer (enforcement and decision point) | 1 | . | VHL Sharer (grouped with PCF Consent Authorization Server) | 1 | . | VHL Sharer (grouped with PCF Consent Recorder) | 1 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/#who-appears-in-a-process",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/#who-appears-in-a-process"
-  },"250": {
+  },"232": {
     "doc": "Processes — smart-trust-phw",
     "title": "Which steps touch the work plan?",
     "content": "&lt;cat-harness.processes:bean op&gt; — the audit trail for who reserves and resolves work. No step names a bean op. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/#which-steps-touch-the-work-plan",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/#which-steps-touch-the-work-plan"
-  },"251": {
+  },"233": {
     "doc": "Processes — smart-trust-phw",
     "title": "Strict, advisory — and nobody said",
     "content": "Three states, not two. loadProcessModel reads an undeclared policy as strict, which is right for the engine — “a process that forgot to say is governed, not exempt” — and hides a fact a reader wants. Somebody chose strict and nobody said, so the engine assumed strict are different, and the second is 13 of 13 here. | enforcement | declared | defaulted | . | strict | 0 | 13 | . | advisory | 0 | 0 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/#strict-advisory--and-nobody-said",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/#strict-advisory--and-nobody-said"
-  },"252": {
+  },"234": {
     "doc": "Processes — smart-trust-phw",
     "title": "Findings",
     "content": "5 diagram(s) draw elements the engine does not run. Each has its page, with the elements listed; workflow_start refuses to run them. | input/business-processes/PHW.C.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.D.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.F.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.G.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.I.bpmn — bpmn:BusinessRuleTask | . Every one of the 13 diagrams has a rendered SVG. Activities carrying no &lt;bootstrap.processes:skill ref&gt; — a census, not a gap list . 95 across 13 diagram(s). This section reported them as defects in its first version, and that was wrong: beans luke and uuhu worked this corpus from 90 down to this remainder and settled what is left. luke: “coverage is deliberately NOT gated — a human sign-off step has no skill”. uuhu added the call-activity exemption and recorded that its own remainder “are not gaps”. 8 are call activities, which delegate to a subprocess — the skill is named there, and naming it twice would be one fact in two places. The other 87 are listed by lane, because the lane is what says whether a person, a pipeline or an agent performs the step, and only the last of those has a skill to run. | lane | steps | . | Data Recipient System (OAuth client) | 8 | . | PCF Consent Registry | 6 | . | Provider Authorization Server (administrator + decision point) | 6 | . | Policy Decision Point (permits()) | 5 | . | Verifier (with or without a status checking application) | 5 | . | VHL Holder (Patient / Personal Health Wallet) | 5 | . | VHL Sharer (enforcement and decision point) | 5 | . | Trust Anchor (GDHCN or another accepted anchor) | 4 | . | Document source (VHL Sharer or Certificate Issuance Service) | 3 | . | PCF Consent Recorder (Wallet / VHL Sharer) | 3 | . | PCF Consent Recorder (wallet or health worker) | 3 | . | VHL Receiver (Verifier / Relying Party) | 3 | . | VHL Sharer (grouped with PCF Consent Authorization Server) | 3 | . | VHL Sharer (grouped with PCF Consent Recorder) | 3 | . | Certificate Issuance Service | 2 | . | Certificate Issuer (health worker or issuing system) | 2 | . | Data Provider Resource Server (enforcement point) | 2 | . | Enforcement and Decision Points (audit writers) | 2 | . | Holder (person / Personal Health Wallet) | 2 | . | Trust Anchor (e.g. GDHCN, national, or regional anchor) | 2 | . | VHL Receiver (receiving organisation or application) | 2 | . | Agreement Publisher (DCAT catalogue) | 1 | . | Auditor (person) | 1 | . | Certificate Holder (person / Personal Health Wallet) | 1 | . | Data Provider (decides) | 1 | . | Data Provider Administrator (person) | 1 | . | Data Recipient (duty performer) | 1 | . | Grant Issuer (W3C Bitstring Status List) | 1 | . | Grant Issuer Status List (W3C Bitstring Status List) | 1 | . | Issuing Public Health Authority (certificate registry) | 1 | . | Policy Enforcement Point (authorization server, resource server or VHL Sharer) | 1 | . | Trust Anchor (GDHCN or another anchor) | 1 | . No verdict is offered on which of these is a gap, and that is the honest state rather than a hedge: distinguishing a person’s judgement step from an agent step somebody forgot needs the lane’s actor KIND, which a free-text lane name does not give — process-model.ts notes sixty lanes spell two dozen positions. The lane’s partitionElementRef is the join that would answer it, and it is present on 0 of these 87 steps — which is the measurement, not an impression. An earlier draft of this sentence said few of these and was counting whether the lane had a NAME, a different question with a different answer. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/smart-trust-phw/#findings",
     
     "relUrl": "/en/cat-harness/processes/smart-trust-phw/#findings"
-  },"253": {
+  },"235": {
     "doc": "Processes",
     "title": "Processes — every executable diagram, searchable",
     "content": "Generated by cat-harness-tools/scripts/gen-processes-viz.ts. Every number here is counted from the directory, never carried in prose — bpmn-processes’ own rule, and the bean that asked for this page had two different counts in its title and its body. 13 diagram(s), 13 parsed, 0 that would not load. | where | diagrams | . | input/business-processes/ | 13 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#processes--every-executable-diagram-searchable",
     
     "relUrl": "/en/cat-harness/processes/#processes--every-executable-diagram-searchable"
-  },"254": {
+  },"236": {
     "doc": "Processes",
     "title": "By subgraph",
     "content": "Each instance that holds diagrams has its own page, listing only its processes. | subgraph | diagrams | . | smart-trust-phw | 13 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#by-subgraph",
     
     "relUrl": "/en/cat-harness/processes/#by-subgraph"
-  },"255": {
+  },"237": {
     "doc": "Processes",
     "title": "Every process — one page each",
     "content": "Each page shows the diagram, what it is for, who acts in it, every step with the skill it runs, and which processes call it. kg:audit’s process-diagram-published fails a diagram no page shows — 45 of 62 were in that state before these pages existed (bean ooq3). Running instances links each workflow instance’s own page — the diagram with its token, its stuck states, its beans and todos — for every instance running this process or calling it as a subprocess. Links and counts only: where an instance IS lives in its file under beans/workflows/. | process | steps | undocumented steps | running instances | . | A. Record and Manage Patient Privacy Consent · IRI · JSON-LD | 6 | — | none recorded | . | B. Issue Consent-Backed Verifiable Health Link · IRI · JSON-LD | 8 | — | none recorded | . | C. Present and Redeem Verifiable Health Link with PCF Consent Enforcement · IRI · JSON-LD | 9 | — | none recorded | . | D. Register a Server Client under a Data Sharing Agreement (DSA P4) · IRI · JSON-LD | 9 | — | none recorded | . | E. Server-to-Server Access under a Data Sharing Agreement (DSA P5) · IRI · JSON-LD | 10 | — | none recorded | . | F. Access Decision under a Data Sharing Agreement (DSA P11) · IRI · JSON-LD | 10 | — | none recorded | . | G. Audit, Provenance and Duty Checks under a Data Sharing Agreement (DSA P12) · IRI · JSON-LD | 4 | — | none recorded | . | H. Revocation and Suspension under a Data Sharing Agreement (DSA P13) · IRI · JSON-LD | 5 | — | none recorded | . | I. Decide a Verifiable Health Link Request under an Existing Data Sharing Agreement · IRI · JSON-LD | 9 | — | none recorded | . | J. Issue a Verifiable Digital Health Certificate (shared block B4) · IRI · JSON-LD | 7 | — | none recorded | . | K. Verify a Certificate and its Status (shared block B7) · IRI · JSON-LD | 8 | — | none recorded | . | L. Record Explicit Consent · IRI · JSON-LD | 6 | — | none recorded | . | M. Add Consent Directives to a Shared or Issued Document · IRI · JSON-LD | 4 | — | none recorded | . Instances of cat-harness could not be read in this build, so “none recorded” above does not cover them. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#every-process--one-page-each",
     
     "relUrl": "/en/cat-harness/processes/#every-process--one-page-each"
-  },"256": {
+  },"238": {
     "doc": "Processes",
     "title": "What runs this skill?",
     "content": "The reverse of &lt;bootstrap.processes:skill ref&gt;, which is the join nothing else exposes: a skill says what to do, and until now nothing said which processes ask for it. 0 distinct skill(s) are named by an activity. No activity names a skill. Names an ⓘ task panel shows without a link are listed on Task panel links: QA. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#what-runs-this-skill",
     
     "relUrl": "/en/cat-harness/processes/#what-runs-this-skill"
-  },"257": {
+  },"239": {
     "doc": "Processes",
     "title": "Who appears in a process?",
     "content": "A lane NAMES the Role its tasks are performed in; it is not itself a Role. The NAME is free text — process-model.ts notes that sixty lanes spell two dozen positions — so the lane’s partitionElementRef (or the legacy &lt;bootstrap.processes:role ref&gt;) is the join that does not depend on spelling, and it is reported separately below rather than merged into the name. 32 distinct lane name(s). | lane | in | . | PCF Consent Registry | 6 | . | Trust Anchor (GDHCN or another accepted anchor) | 4 | . | Provider Authorization Server (administrator + decision point) | 3 | . | VHL Holder (Patient / Personal Health Wallet) | 3 | . | Certificate Holder (person / Personal Health Wallet) | 2 | . | Data Recipient System (OAuth client) | 2 | . | Trust Anchor (e.g. GDHCN, national, or regional anchor) | 2 | . | Agreement Publisher (DCAT catalogue) | 1 | . | Auditor (person) | 1 | . | Certificate Issuance Service | 1 | . | Certificate Issuer (health worker or issuing system) | 1 | . | Data Provider (decides) | 1 | . | Data Provider Administrator (person) | 1 | . | Data Provider Resource Server (enforcement point) | 1 | . | Data Recipient (duty performer) | 1 | . | Document source (VHL Sharer or Certificate Issuance Service) | 1 | . | Enforcement and Decision Points (audit writers) | 1 | . | Grant Issuer (W3C Bitstring Status List) | 1 | . | Grant Issuer Status List (W3C Bitstring Status List) | 1 | . | Holder (person / Personal Health Wallet) | 1 | . | Issuing Public Health Authority (certificate registry) | 1 | . | PCF Consent Recorder (Wallet / VHL Sharer) | 1 | . | PCF Consent Recorder (wallet or health worker) | 1 | . | Policy Decision Point (permits()) | 1 | . | Policy Enforcement Point (authorization server, resource server or VHL Sharer) | 1 | . | Trust Anchor (GDHCN or another anchor) | 1 | . | Verifier (with or without a status checking application) | 1 | . | VHL Receiver (receiving organisation or application) | 1 | . | VHL Receiver (Verifier / Relying Party) | 1 | . | VHL Sharer (enforcement and decision point) | 1 | . | VHL Sharer (grouped with PCF Consent Authorization Server) | 1 | . | VHL Sharer (grouped with PCF Consent Recorder) | 1 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#who-appears-in-a-process",
     
     "relUrl": "/en/cat-harness/processes/#who-appears-in-a-process"
-  },"258": {
+  },"240": {
     "doc": "Processes",
     "title": "Which steps touch the work plan?",
     "content": "&lt;cat-harness.processes:bean op&gt; — the audit trail for who reserves and resolves work. No step names a bean op. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#which-steps-touch-the-work-plan",
     
     "relUrl": "/en/cat-harness/processes/#which-steps-touch-the-work-plan"
-  },"259": {
+  },"241": {
     "doc": "Processes",
     "title": "Strict, advisory — and nobody said",
     "content": "Three states, not two. loadProcessModel reads an undeclared policy as strict, which is right for the engine — “a process that forgot to say is governed, not exempt” — and hides a fact a reader wants. Somebody chose strict and nobody said, so the engine assumed strict are different, and the second is 13 of 13 here. | enforcement | declared | defaulted | . | strict | 0 | 13 | . | advisory | 0 | 0 | . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#strict-advisory--and-nobody-said",
     
     "relUrl": "/en/cat-harness/processes/#strict-advisory--and-nobody-said"
-  },"260": {
+  },"242": {
     "doc": "Processes",
     "title": "Findings",
     "content": "5 diagram(s) draw elements the engine does not run. Each has its page, with the elements listed; workflow_start refuses to run them. | input/business-processes/PHW.C.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.D.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.F.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.G.bpmn — bpmn:BusinessRuleTask | input/business-processes/PHW.I.bpmn — bpmn:BusinessRuleTask | . Every one of the 13 diagrams has a rendered SVG. Activities carrying no &lt;bootstrap.processes:skill ref&gt; — a census, not a gap list . 95 across 13 diagram(s). This section reported them as defects in its first version, and that was wrong: beans luke and uuhu worked this corpus from 90 down to this remainder and settled what is left. luke: “coverage is deliberately NOT gated — a human sign-off step has no skill”. uuhu added the call-activity exemption and recorded that its own remainder “are not gaps”. 8 are call activities, which delegate to a subprocess — the skill is named there, and naming it twice would be one fact in two places. The other 87 are listed by lane, because the lane is what says whether a person, a pipeline or an agent performs the step, and only the last of those has a skill to run. | lane | steps | . | Data Recipient System (OAuth client) | 8 | . | PCF Consent Registry | 6 | . | Provider Authorization Server (administrator + decision point) | 6 | . | Policy Decision Point (permits()) | 5 | . | Verifier (with or without a status checking application) | 5 | . | VHL Holder (Patient / Personal Health Wallet) | 5 | . | VHL Sharer (enforcement and decision point) | 5 | . | Trust Anchor (GDHCN or another accepted anchor) | 4 | . | Document source (VHL Sharer or Certificate Issuance Service) | 3 | . | PCF Consent Recorder (Wallet / VHL Sharer) | 3 | . | PCF Consent Recorder (wallet or health worker) | 3 | . | VHL Receiver (Verifier / Relying Party) | 3 | . | VHL Sharer (grouped with PCF Consent Authorization Server) | 3 | . | VHL Sharer (grouped with PCF Consent Recorder) | 3 | . | Certificate Issuance Service | 2 | . | Certificate Issuer (health worker or issuing system) | 2 | . | Data Provider Resource Server (enforcement point) | 2 | . | Enforcement and Decision Points (audit writers) | 2 | . | Holder (person / Personal Health Wallet) | 2 | . | Trust Anchor (e.g. GDHCN, national, or regional anchor) | 2 | . | VHL Receiver (receiving organisation or application) | 2 | . | Agreement Publisher (DCAT catalogue) | 1 | . | Auditor (person) | 1 | . | Certificate Holder (person / Personal Health Wallet) | 1 | . | Data Provider (decides) | 1 | . | Data Provider Administrator (person) | 1 | . | Data Recipient (duty performer) | 1 | . | Grant Issuer (W3C Bitstring Status List) | 1 | . | Grant Issuer Status List (W3C Bitstring Status List) | 1 | . | Issuing Public Health Authority (certificate registry) | 1 | . | Policy Enforcement Point (authorization server, resource server or VHL Sharer) | 1 | . | Trust Anchor (GDHCN or another anchor) | 1 | . No verdict is offered on which of these is a gap, and that is the honest state rather than a hedge: distinguishing a person’s judgement step from an agent step somebody forgot needs the lane’s actor KIND, which a free-text lane name does not give — process-model.ts notes sixty lanes spell two dozen positions. The lane’s partitionElementRef is the join that would answer it, and it is present on 0 of these 87 steps — which is the measurement, not an impression. An earlier draft of this sentence said few of these and was counting whether the lane had a NAME, a different question with a different answer. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/#findings",
     
     "relUrl": "/en/cat-harness/processes/#findings"
-  },"261": {
+  },"243": {
     "doc": "Processes",
     "title": "Processes",
     "content": " ",
     "url": "/smart-trust-phw/en/cat-harness/processes/",
     
     "relUrl": "/en/cat-harness/processes/"
-  },"262": {
+  },"244": {
     "doc": "GDHCN Trust Network - Personal Health Wallet",
     "title": "GDHCN Trust Network - Personal Health Wallet",
     "content": ". This implementation guide is still being developed. Its content is for demonstration purposes only. Summary . This implementation guide specifies how a Personal Health Wallet (PHW) lets a person record privacy consent, share health information through verifiable health links, and have that consent enforced when the information is used. It uses IHE Privacy Consent on FHIR (PCF) 1.1.0 for consent directives and IHE Verifiable Health Links (VHL) 1.0.0-comment for the links. Every process is trust-anchor neutral: keys are published to, and trust lists read from, an abstract Trust Anchor. The WHO Global Digital Health Certification Network (GDHCN) is one possible Trust Anchor among others. The guide makes no claim of conformance to IHE Internet User Authorization (IUA). Supporting guidance, recommendations, resources and standards are listed in the Bibliography and on the Dependencies page. What this guide contains . | Consent: explicit and implied consent (IHE PCF), trust domains’ consent codes, and consent directives in shared and issued documents. | Business Processes: thirteen BPMN 2.0 processes: . | Consent and verifiable health links: A record and manage consent, B issue a consent-backed link, C present and redeem a link. | Data sharing agreements between servers: D register a client, E server-to-server access, F access decision, G audit and provenance, H revocation and suspension, I decide a link request under an agreement. | Shared certificate processes: J issue a certificate, K verify a certificate and its status. | Consent: L record explicit consent, M add consent directives to a shared or issued document. | . | Decision-support Logic: the DMN decision PHW.DT.AgreementAccess, which combines several agreements for one receiver. | Worked Example: IPS Pilgrimage (Hajj): processes A, B, C, F and I applied to one case. | System Actors, Sequence Diagrams and Transactions. | The logical models, profiles, value sets and examples are listed in the Artifact Index. An offline copy of the guide is on the Downloads page. | . How this guide is organised . This guide follows the levels of knowledge representation: . | Business Requirements: concepts, personas, business processes and decision logic. | Data Models and Exchange: actors, sequence diagrams, transactions and codings. | Deployment: security and privacy, testing, reference implementations and downloads. | . Disclaimer . This specification is a working draft for demonstration and may not be used for any implementation purposes. It is provided without warranty of completeness or consistency, and the official publication supersedes it. No liability can be inferred from the use or misuse of this specification or its consequences. Dependencies . | IG | Package | FHIR | Comment | . | hl7.terminology | hl7.terminology#5.5.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.extensions.r4 | hl7.fhir.uv.extensions.r4#5.3.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.xver-r5.r4 | hl7.fhir.uv.xver-r5.r4#0.1.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.tools.r4 | hl7.fhir.uv.tools.r4#1.3.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.cql | hl7.fhir.uv.cql#1.0.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.crmi | hl7.fhir.uv.crmi#1.0.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.sdc | hl7.fhir.uv.sdc#3.0.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.cpg | hl7.fhir.uv.cpg#2.0.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.us.cqfmeasures | hl7.fhir.us.cqfmeasures#5.0.0 | | not in the package cache this build read, so what it depends on is not shown | . | hl7.fhir.uv.ips | hl7.fhir.uv.ips#2.0.0-ballot | | not in the package cache this build read, so what it depends on is not shown | . | ihe.iti.mcsd | ihe.iti.mcsd#3.8.0 | | not in the package cache this build read, so what it depends on is not shown | . | ihe.iti.pcf | ihe.iti.pcf#1.1.0 | | not in the package cache this build read, so what it depends on is not shown | . | ihe.iti.vhl | ihe.iti.vhl#1.0.0-comment | | not in the package cache this build read, so what it depends on is not shown | . | smart.who.int.pcmt | smart.who.int.pcmt#0.1.0 | | not in the package cache this build read, so what it depends on is not shown | . | smart.who.int.base | smart.who.int.base#0.2.0 | | not in the package cache this build read, so what it depends on is not shown | . | smart.who.int.pcmt-vaxprequal | smart.who.int.pcmt-vaxprequal#current | | not in the package cache this build read, so what it depends on is not shown | . Cross Version Analysis . ⟦not rendered: cross-version-analysis.xhtml⟧ — the IG Publisher renders it from a source this build does not hold; no renderer was given to this build. Global Profiles . There are no Global profiles defined. IP Statements . ⟦not rendered: ip-statements.xhtml⟧ — the IG Publisher renders it from a source this build does not hold; no renderer was given to this build. Edit this page on GitHub . ",
     "url": "/smart-trust-phw/",
     
     "relUrl": "/"
-  },"263": {
+  },"245": {
     "doc": "indices",
     "title": "indices",
     "content": ". Edit this page on GitHub . ",
     "url": "/smart-trust-phw/indices.html",
     
     "relUrl": "/indices.html"
-  },"264": {
+  },"246": {
     "doc": "license",
     "title": "license",
     "content": ". SMART Guidelines, including this one, are required to express the license their copyright license. All WHO-authored SMART Guidelines shall be subject to the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License. This includes all commons and dependencies authored by the WHO and this current guidance. SMART Guidelines license details . This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License. Copyright(c) 2022 World Health Organization Some rights reserved. Under the terms of this licence, you may copy, redistribute and adapt the work for noncommercial purposes provided the work is appropriately cited, as indicated below. In any use of this work, there should be no suggestion that WHO endorses any specific organizations, products or services. The use of the WHO logo is not permitted. If you adapt the work, then you must license your work under the same or equivalent Creative Commons licence. If you create a translation of this work, you should add the following disclaimer along with the suggested citation: \"This translation was not created by the World Health Organization (WHO). WHO is not responsible for the content or accuracy of this translation. The original English edition shall be the binding and authentic edition.\" Any mediation relating to disputes arising under the licence shall be conducted in accordance with the mediation rules of the World Intellectual Property Organization. (http://www.wipo.int/amc/en/mediation/rules/). License details for Software . Copyright(c) 2022 World Health Organization All rights reserved. 3-clause BSD license . Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: . | Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. | Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. | Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. | . THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &lt;/div&gt; Edit this page on GitHub . ",
     "url": "/smart-trust-phw/license.html",
     
     "relUrl": "/license.html"
-  },"265": {
+  },"247": {
     "doc": "Business Requirements",
     "title": "Business Requirements",
     "content": " ",
     "url": "/smart-trust-phw/menu-business-requirements.html#business-requirements",
     
     "relUrl": "/menu-business-requirements.html#business-requirements"
-  },"266": {
+  },"248": {
     "doc": "Business Requirements",
     "title": "Business Requirements",
     "content": ". ",
     "url": "/smart-trust-phw/menu-business-requirements.html",
     
     "relUrl": "/menu-business-requirements.html"
-  },"267": {
+  },"249": {
     "doc": "Data Models and Exchange",
     "title": "Data Models and Exchange",
     "content": " ",
     "url": "/smart-trust-phw/menu-data-models-and-exchange.html#data-models-and-exchange",
     
     "relUrl": "/menu-data-models-and-exchange.html#data-models-and-exchange"
-  },"268": {
+  },"250": {
     "doc": "Data Models and Exchange",
     "title": "Data Models and Exchange",
     "content": ". ",
     "url": "/smart-trust-phw/menu-data-models-and-exchange.html",
     
     "relUrl": "/menu-data-models-and-exchange.html"
-  },"269": {
+  },"251": {
     "doc": "Deployment",
     "title": "Deployment",
     "content": " ",
     "url": "/smart-trust-phw/menu-deployment.html#deployment",
     
     "relUrl": "/menu-deployment.html#deployment"
-  },"270": {
+  },"252": {
     "doc": "Deployment",
     "title": "Deployment",
     "content": ". ",
     "url": "/smart-trust-phw/menu-deployment.html",
     
     "relUrl": "/menu-deployment.html"
-  },"271": {
+  },"253": {
     "doc": "Home",
     "title": "Home",
     "content": ". | Bibliography: generated by the IG Publisher, not part of this build | . ",
     "url": "/smart-trust-phw/menu-home.html#home",
     
     "relUrl": "/menu-home.html#home"
-  },"272": {
+  },"254": {
     "doc": "Home",
     "title": "Home",
     "content": ". ",
     "url": "/smart-trust-phw/menu-home.html",
     
     "relUrl": "/menu-home.html"
-  },"273": {
+  },"255": {
     "doc": "Indices",
     "title": "Indices",
     "content": " ",
     "url": "/smart-trust-phw/menu-indices.html#indices",
     
     "relUrl": "/menu-indices.html#indices"
-  },"274": {
+  },"256": {
     "doc": "Indices",
     "title": "Indices",
     "content": ". ",
     "url": "/smart-trust-phw/menu-indices.html",
     
     "relUrl": "/menu-indices.html"
-  },"275": {
+  },"257": {
     "doc": "Task panel links: QA",
     "title": "Task panel links: QA",
     "content": "Every name an ⓘ task panel shows as plain text, with the tooltip “no page for this one”, because nothing it could link to was found: no instruction page or source file for a skill, no page for a role, methodology, lane or step. Every name in every panel links to a page. ",
     "url": "/smart-trust-phw/en/cat-harness/processes/panel-links-qa.html#task-panel-links-qa",
     
     "relUrl": "/en/cat-harness/processes/panel-links-qa.html#task-panel-links-qa"
-  },"276": {
+  },"258": {
     "doc": "Task panel links: QA",
     "title": "Task panel links: QA",
     "content": "Generated by gen-processes-viz.ts from the ⓘ task panels’ data — do not edit here. All processes . ",
     "url": "/smart-trust-phw/en/cat-harness/processes/panel-links-qa.html",
     
     "relUrl": "/en/cat-harness/processes/panel-links-qa.html"
-  },"277": {
+  },"259": {
     "doc": "Generic Personas",
     "title": "Generic Personas",
     "content": ". This page lists the roles the business processes of this guide name, and the example people and systems that play them. Every person is fictional. Roles . | Role | Played by | Description | . | Holder | person | The person who holds a Personal Health Wallet, records consent, and presents verifiable health links and certificates. Specializes the ActorDefinition Holder (input/fsh/actors/actors.fsh). | . | Consent Recorder | person, system | The person or system that records a consent directive for the holder (IHE PCF Consent Recorder): the wallet itself, or a health worker on the holder’s behalf. | . | Consent Registry | system | Holds consent directives and answers IHE PCF [ITI-108] Access Consent. Specializes the ActorDefinition ConsentRegistry (input/fsh/actors/actors.fsh). | . | VHL Sharer | system | Holds the health information, generates verifiable health links, and enforces consent when a link is redeemed. Specializes the ActorDefinition Issuer (input/fsh/actors/actors.fsh). | . | Document Source | system | The system that assembles a document about the holder before it is signed: the VHL Sharer when a document is shared, the Certificate Issuance Service when a certificate is issued. Adds the consent directives to it (process M). | . | VHL Receiver | system | Receives a verifiable health link, checks its signature against the trust list, and retrieves the information. Specializes the ActorDefinition Receiver (input/fsh/actors/actors.fsh). | . | Trust Anchor | system | Publishes the trust list of keys that participants use to check signatures. GDHCN is one possible anchor among others. Specializes the ActorDefinition TrustNetworkAnchor (input/fsh/actors/actors.fsh). | . | Certificate Issuer | person, system | A health worker or issuing system that issues a verifiable digital health certificate. Specializes the ActorDefinition Issuer (input/fsh/actors/actors.fsh). | . | Verifier | person, system | Checks a certificate and its status, with or without a status checking application. Specializes the ActorDefinition Receiver (input/fsh/actors/actors.fsh). | . | Data Provider Administrator | person | The person at a data provider who registers clients under a data sharing agreement. | . | Data Recipient System | system | A server that accesses data under a data sharing agreement (OAuth client) and performs the agreement’s duties. | . | Provider Authorization Server | system | Registers clients and decides access under a data sharing agreement (policy decision and enforcement). | . | Auditor | person | The person who reviews audit and provenance records under a data sharing agreement. | . Example people . Ana (data provider administrator) . Persona: the administrator who registers partner servers under the data sharing agreements her health information exchange signs. Fictional. Roles: Data Provider Administrator. Goal. Register only the clients an agreement allows, and revoke them the moment it ends. Needs . | The agreement’s terms in a form the server can check | One place to suspend a client | . Frustrations . | Agreements that exist only as PDFs | . Dr Mei (receiving clinician) . Persona: an emergency physician who treats visitors from other countries and reads their records through verifiable health links. Fictional. Roles: Verifier. Goal. Read a visitor’s record quickly and know it is genuine and that she is allowed to read it. Needs . | A clear answer: allowed, refused, or unknown | A record she can trust, signed by a known issuer | . Frustrations . | Links that fail without saying why | . Kofi (auditor) . Persona: an auditor who checks that every access under a data sharing agreement was allowed and its duties were done. Fictional. Roles: Auditor. Goal. Show, for any access, which consent and which agreement allowed it. Needs . | Provenance that cites the consent and its version | Duty checks he can run himself | . Frustrations . | Logs that say who, but not why | . Lina (wallet holder) . Persona: a 34-year-old teacher who keeps her health records in a personal health wallet on her phone and travels for work. Fictional. Roles: Holder, Consent Recorder. Goal. Share her health information only with the people who need it, for as long as they need it. Needs . | To see who can read her record, and to withdraw that at any time | One link that works abroad as well as at home | To know when her record was read, and by whom | . Frustrations . | Consent forms she cannot read back later | Not knowing whether a withdrawal took effect | . Nurse Tomás (clinic nurse) . Persona: a nurse at a community clinic who vaccinates, issues certificates, and records consent for patients who ask for help with the wallet. Fictional. Roles: Certificate Issuer, Consent Recorder. Goal. Issue certificates that are accepted wherever his patients go, without extra paperwork. Needs . | To record a patient’s consent in one step, and show it back to them | To know a certificate was issued correctly | . Frustrations . | Patients who were never asked what they agreed to | . Example systems . | System | Roles | Description | . | Home health information exchange | VHL Sharer, Consent Registry, Document Source | The health information exchange that holds Lina’s record: it records her consent in its Consent Registry, generates her links and enforces consent when a link is redeemed. | . | Lina’s personal health wallet | Holder, Consent Recorder | The wallet app on Lina’s phone: records her consent, holds her verifiable health links and certificates, and presents them as QR codes. | . | Provider authorization service | Provider Authorization Server | The authorization server of the health information exchange: registers clients and decides access under data sharing agreements. | . | Receiving clinic’s record system | VHL Receiver, Data Recipient System | The record system of Dr Mei’s clinic: reads verifiable health links, and as a registered client accesses data under a data sharing agreement. | . | Trust anchor service | Trust Anchor | A trust anchor that publishes the trust list of participants’ keys; GDHCN or another accepted anchor. | . Edit this page on GitHub . ",
     "url": "/smart-trust-phw/personas.html",
     
     "relUrl": "/personas.html"
-  },"278": {
+  },"260": {
     "doc": "QA Report",
     "title": "QA Report",
     "content": "Two halves: the FHIR QA of this implementation guide, and the knowledge graph’s QA, the harness’s checks over the instances this site is built from. A finding is a gap a check reports, not a failure of the build. ",
     "url": "/smart-trust-phw/qa.html#qa-report",
     
     "relUrl": "/qa.html#qa-report"
-  },"279": {
+  },"261": {
     "doc": "QA Report",
     "title": "FHIR QA",
     "content": "IG Publisher . The Publisher’s own QA summary for the run this AST came from (IG Publisher 6.0.0-snapshot1 (3), FHIR 4.0.1, on Sun, 15 Nov, 2026 08:42:25 +0000). Summary (JSON) . Every message the Publisher reported, laid out as its own qa.html lays them out. Messages (JSON) . Loading the Publisher's messages… . The messages are drawn in the browser; without JavaScript, read the JSON above. The IG’s AST . | field | value | . | generated | 2026-11-15T08:48:45.134756736Z | . | authority | cache | . | publisher | 3.0.0 | . | core | 7.0.1 | . | sushi | SUSHI v3.21.0 (implements FHIR Shorthand specification v3.0.0) | . | java | 17.0.21 | . | resources | 106 | . | provisional | indices, dependencies, versions, until a full IG Publisher run | . Validity for this checkout: valid. |   | recorded in the AST | this checkout | . | toolchain | ig-publisher 3.0.0 / core 7.0.1 | ig-publisher 3.0.0 / core 7.0.1 | . | sourceRevision | 2f52835b15f4c622dfeded3233cb08111882247d | 2f52835b15f4c622dfeded3233cb08111882247d | . | inputDigest | d0bdc97323be6311ec983f6ba12a09a35c9b2fe8158ed7978f6140ce36e81e92 | d0bdc97323be6311ec983f6ba12a09a35c9b2fe8158ed7978f6140ce36e81e92 | . Markdown rendering . Each markdown field the artefact pages draw (description, definition, comment, requirements, valueMarkdown), drawn by the pages’ own renderer, checked for markup left as plain text. 107 resource(s) scanned. Findings: 11 field(s) show markup as text. | resource | field | left as text | starts with | . | StructureDefinition/Composition-uv-ips-DVC | snapshot.element[68].definition | list marker | The medication summary section contains a description of the patient’s medicatio | . | StructureDefinition/Composition-uv-ips-DVC | snapshot.element[117].definition | list marker | The History of Procedures Section contains a description of the patient past pro | . | StructureDefinition/Composition-uv-ips-DVC | snapshot.element[129].definition | list marker | It lists the patient past procedures that are pertinent to the scope of this doc | . | StructureDefinition/DVCSDComposition | snapshot.element[10].comment | HTML tag | The contents of the html element are an XHTML fragment containing only the basic | . | StructureDefinition/DVCSDImmunization | snapshot.element[10].comment | HTML tag | The contents of the html element are an XHTML fragment containing only the basic | . | StructureDefinition/DVCSDPatient | snapshot.element[10].comment | HTML tag | The contents of the html element are an XHTML fragment containing only the basic | . | StructureDefinition/Immunization-uv-ips-DVC | snapshot.element[13].definition | list marker | Vaccine that was administered or was to be administered. Several kinds of vaccin | . | StructureDefinition/Composition-uv-ips-PreQual | snapshot.element[68].definition | list marker | The medication summary section contains a description of the patient’s medicatio | . | StructureDefinition/Composition-uv-ips-PreQual | snapshot.element[117].definition | list marker | The History of Procedures Section contains a description of the patient past pro | . | StructureDefinition/Composition-uv-ips-PreQual | snapshot.element[129].definition | list marker | It lists the patient past procedures that are pertinent to the scope of this doc | . | StructureDefinition/Immunization-uv-ips-PreQual | snapshot.element[13].definition | list marker | Vaccine that was administered or was to be administered. Several kinds of vaccin | . Page scan . Every page of this site opened in a headless browser after the build, and its text checked for markup shown as text. Results (JSON) . Loading the page scan… . The results are drawn in the browser; without JavaScript, read the JSON above. Injection scan . Every resource narrative, markdown field and IG page this site publishes (10041 text(s)) is checked for injection attempts before publication: a pattern scan, and an agent’s review kept in the IG’s qa/ig-content-qa.json. The browser checks each narrative again before drawing it. Verdict (JSON) . | field | value | . | state | reviewed, no pattern hit and no open finding | . | content | sha256:28fd993f8325ce78aecdbfa48bf42167b499e146f7e1e2b3ee8095b3e05af91f | . | reviewed | sha256:28fd993f8325ce78aecdbfa48bf42167b499e146f7e1e2b3ee8095b3e05af91f by agent Claude at 2026-11-15T09:45:22.057Z | . ",
     "url": "/smart-trust-phw/qa.html#fhir-qa",
     
     "relUrl": "/qa.html#fhir-qa"
-  },"280": {
+  },"262": {
     "doc": "QA Report",
     "title": "Knowledge-graph QA",
     "content": "The harness’s checks over the knowledge graph, as each instance recorded them. Every instance’s QA is the harness’s own view of the same graph. An instance with no records in this checkout keeps them on its own QA store, keyed by commit; its view says what that store holds. | instance | records | findings | view | . | smart-trust-phw | declares no qa directory | — | — | . | cat-harness | none in this checkout | — | cat-harness | . | fhir-harness | none in this checkout | — | fhir-harness | . | folio-assistant-core | none in this checkout | — | folio-assistant-core | . | smart-base | none in this checkout | — | smart-base | . | who-iris | none in this checkout | — | who-iris | . ",
     "url": "/smart-trust-phw/qa.html#knowledge-graph-qa",
     
     "relUrl": "/qa.html#knowledge-graph-qa"
-  },"281": {
+  },"263": {
     "doc": "QA Report",
     "title": "QA Report",
     "content": ". ",
     "url": "/smart-trust-phw/qa.html",
     
     "relUrl": "/qa.html"
-  },"282": {
+  },"264": {
     "doc": "Reference Implementations",
     "title": "Reference Implementations",
     "content": ". No reference implementation of this guide is published yet. Content is for demonstration purposes only. Related resources are listed in the Bibliography and on the Dependencies page. Edit this page on GitHub . ",
     "url": "/smart-trust-phw/reference-implementations.html",
     
     "relUrl": "/reference-implementations.html"
-  },"283": {
+  },"265": {
     "doc": "Security and Privacy Considerations",
     "title": "Security and Privacy Considerations",
     "content": ". Security and privacy are part of each process in this guide, not a separate layer: . | Consent is enforced where the data is held. The VHL Sharer enforces the consent in its own Consent Registry (IHE PCF [ITI-108]). A copy of a consent carried inside a document is evidence only. See Process A and Process C. | No silent permit. A consent decision is permit, deny or unknown. A missing, expired or unreachable consent never gives permit. | Trust is checked against a Trust Anchor. Signatures on links and certificates are verified against the trust list of an abstract Trust Anchor ([ITI-YY2]). The guide does not depend on one particular anchor. | Decisions are recorded. Each access decision is recorded as W3C PROV-O provenance that cites Consent.id and Consent.meta.versionId. Process G covers audit under a data sharing agreement. | Revocation. Process H covers revoking and suspending access. | . Edit this page on GitHub . ",
     "url": "/smart-trust-phw/security-privacy.html",
     
     "relUrl": "/security-privacy.html"
-  },"284": {
+  },"266": {
     "doc": "Sequence Diagrams",
     "title": "Sequence Diagrams",
     "content": ". Consent Selection . Holder | Issuer | Consent Repository | ConsentRepository | Holder(as VHL Holder)Issuer(as PCF Consent Recorder,as VHL Sharer)Consent RepositoryConsentRepository | Select consent directives | PCF transaction Access Consent request [ITI-108](Issuer as PCF Consent Recorder) | PCF transaction Access Consent response [ITI-108](Issuer as PCF Consent Recorder) Generate and Use VHL - Unsigned documents . Holder | Holder | | | | Issuer | Issuer | Consent Repository | Consent Repository | Receiver | Receiver | ConsentRepository | ConsentRepository | DocumentGenerator | DocumentGenerator | Holder(as VHL Holder)Issuer(as PCF Consent Recorder,as VHL Sharer)Consent RepositoryReceiver(as VHL Receiver)ConsentRepositoryDocumentGeneratoroptional consent selection | Select consent directives | PCF transaction Access Consent request [ITI-108](Issuer as PCF Consent Recorder) | PCF transaction Access Consent response [ITI-108](Issuer as PCF Consent Recorder) | | Select VHL authorization mechanism parameters (e.g. expiration, PIN) | Generate VHL request [ITI-YY3](as VHL Holder and VHL Sharer)alt[use reference architecture] | Generate document requestIPA [DocumentReference/$docref] | Generate document responseIPA [DocumentReference/$docref] | [use bespoke means] | | generate document | | Generate VHL authorization mechanism(e.g. create the signed HCERT QR code) | Generate VHL response [ITI-YY3](as VHL Sharer and VHL Holder)time passes | Provide VHL [ITI-YY6](as VHL Holder and VHL Receiver) | Request VHL Documents request [ITI-YY4](as VHL Receiver and VHL Sharer) | Request VHL Documents response [ITI-YY4](as VHL Receiver and VHL Sharer)loop | Request VHL Document request [ITI-YY5](as VHL Receiver and VHL Sharer) | Request VHL Document response [ITI-YY5](as VHL Sharer and VHL Receiver) Generate and Use VHL - Consent and Selctive Disclosure . Generate and Use VHL with Consent and Selective Disclosure..system-actors.html.Holder Holder.. | ..system-actors.html.Holder Holder.. | | | | ..system-actors.html.Issuer Issuer.. | ..system-actors.html.Issuer Issuer.. | ..system-actors.html.ConsentRegistry Consent Registry.. | ..system-actors.html.ConsentRegistry Consent Registry.. | ..system-actors.html.Receiver Receiver.. | ..system-actors.html.Receiver Receiver.. | DocumentGenerator | DocumentGenerator | DocumentSigner | DocumentSigner | Holder(as VHL Holder)Issuer(as PCF Consent Recorder,as VHL Sharer)Consent RegistryReceiver(as VHL Receiver)DocumentGeneratorDocumentSigner | (Optional)Select consent directives | Generate VHL request [ITI-YY3](as VHL Holder and VHL Sharer)alt[use reference architecture] | Generate document requestIPA [DocumentReference/$docref] | Generate document responseIPA [DocumentReference/$docref] | | Process any selective disclosure directivesto redact contentwhen generating doc | [use bespoke means] | | generate documentoptional signingalt[use reference architecture] | Sign document request | | generate digital signaturesfor verification andselective disclosure | return document manifest containingredacted generated doc, signed collateral | [use bespoke means] | | generate doc and signed collateral | | generate VHL authorization mechanism | Generate VHL response [ITI-YY3](as VHL Sharer and VHL Holder)time passes | Provide VHL [ITI-YY6](as VHL Holder and VHL Receiver) | Request VHL Documents request [ITI-YY4](as VHL Receiver and VHL Sharer) | Request VHL Documents response [ITI-YY4](as VHL Receiver and VHL Sharer)loop | Request VHL Document request [ITI-YY5](as VHL Receiver and VHL Sharer) | Request VHL Document response [ITI-YY5](as VHL Sharer and VHL Receiver) Generate and Use VHL with Consent and Selective Disclosure ..system-actors.html.Holder Holder.. | ..system-actors.html.Holder Holder.. | | | | ..system-actors.html.Issuer Issuer.. | ..system-actors.html.Issuer Issuer.. | ..system-actors.html.ConsentRegistry Consent Registry.. | ..system-actors.html.ConsentRegistry Consent Registry.. | Document Generator | Document Generator | Document Signer | Document Signer | ..system-actors.html.Receiver Receiver.. | ..system-actors.html.Receiver Receiver.. | Holder(as VHL Holder)Issuer(as PCF Consent Recorder,as VHL Sharer)Consent RegistryDocument GeneratorDocument SignerReceiver(as VHL Receiver) | (Optional)Select consent directives | Generate VHL request [ITI-YY3](as VHL Holder and VHL Sharer)alt[use reference architecture] | Generate document request[DocumentReference/$docref] | Generate document response[DocumentReference/$docref] | [use bespoke means] | | generate documentoptional signingalt[use reference architecture] | Sign document request | | generate digital signaturesfor verification | return document manifest containinggenerated doc, signed collateral | [use bespoke means] | | generate doc and signed collateral | | generate VHL authorization mechanism | Generate VHL response [ITI-YY3](as VHL Sharer and VHL Holder)time passes | Provide VHL [ITI-YY6](as VHL Holder and VHL Receiver) | Request VHL Documents request [ITI-YY4](as VHL Receiver and VHL Sharer) | Request VHL Documents response [ITI-YY4](as VHL Receiver and VHL Sharer)loop | Request VHL Document request [ITI-YY5](as VHL Receiver and VHL Sharer) | Request VHL Document response [ITI-YY5](as VHL Sharer and VHL Receiver) Generate and Use VHL . Issuer | Holder | Receiver | IssuerHolder(as VHL Holder)Receiver(as VHL Receiver) | Generate VHL request [ITI-YY3](as VHL Holder and VHL Sharer) | Generate VHL response [ITI-YY3](as VHL Sharere and VHL Holder) | Provide VHL [ITI-YY6](as VHL Holder and VHL Receiver) | Request VHL Documents request [ITI-YY4](as VHL Receiver and VHL Sharer) | Request VHL Documents response [ITI-YY4](as VHL Receiver and VHL Sharer)loop | Request VHL Document request [ITI-YY5](as VHL Receiver and VHL Sharer) | Request VHL Document response [ITI-YY5](as VHL Sharer and VHL Receiver) Edit this page on GitHub . ",
     "url": "/smart-trust-phw/sequence-diagrams.html",
     
     "relUrl": "/sequence-diagrams.html"
-  },"285": {
+  },"267": {
     "doc": "System Actors",
     "title": "System Actors",
     "content": ". Trust Anchor . Trust Anchor which receives and distributes PKI-material within a Trust Network . Trust Network Participant . Trust Network Participant which publishes and or receives PKI-material within a Trust Network . Holder . Holder (person) of Verifiable Health Certificate or Verifiable Health Link . Receiver . Receiver (system) of Verifiable Health Certificate or Verifiable Health Link . Issuer . Issuer (system) of Verifiable Health Certificate or Verifiable Health Link . Consent Registry . Edit this page on GitHub . ",
     "url": "/smart-trust-phw/system-actors.html",
     
     "relUrl": "/system-actors.html"
-  },"286": {
+  },"268": {
     "doc": "system-requirements",
     "title": "system-requirements",
     "content": ". Functional Requirements . ⟦not rendered: functional-requirements.md⟧ — the IG Publisher renders it from a source this build does not hold; no renderer was given to this build. Non-functional Requirements . ⟦not rendered: non-functional-requirements.md⟧ — the IG Publisher renders it from a source this build does not hold; no renderer was given to this build. Edit this page on GitHub . ",
     "url": "/smart-trust-phw/system-requirements.html",
     
     "relUrl": "/system-requirements.html"
-  },"287": {
+  },"269": {
     "doc": "Transactions",
     "title": "Transactions",
     "content": ". Generate VHL Request . A Holder requests an Issuer to generate a VHL. | Source: Holder | Target: Issuer | . Request Trigger . A Holder wishes to request a VHL from an Issuer. Optionally: The holder has selected consent and selective disclosure directives. Request Semantics . none defined. up to a content profile to define . Request Actions . The Issuer will generate a VHL . Response Trigger . Issuer has performed any necessary document generation, digital signatures and has generated a VHL according to a content profile . Response Semantics . none defined. up to content profile to define . Response Actions . The Holder accepts the VHL for storage on wallet or other utilization . Security Considerations . Depends on the content profile . Edit this page on GitHub . ",

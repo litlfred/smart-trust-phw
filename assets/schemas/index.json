@@ -3239,6 +3239,14 @@
       "isTest": false
     },
     {
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "instance": "fhir-harness",
+      "name": "fhir-core",
+      "graphNode": "schema",
+      "summary": "fhir-core.ts — the FHIR core specification's StructureDefinitions, one graph",
+      "isTest": false
+    },
+    {
       "module": "fhir-harness/schemas/ig-annexes.ts",
       "instance": "fhir-harness",
       "name": "ig-annexes",
@@ -3327,22 +3335,6 @@
       "name": "ig-content-type",
       "graphNode": "schema",
       "summary": "The `ig` content type: a repository declares itself the source of a FHIR",
-      "isTest": false
-    },
-    {
-      "module": "fhir-harness/schemas/ig-identity.test.ts",
-      "instance": "fhir-harness",
-      "name": "ig-identity.test",
-      "graphNode": "undeclared",
-      "summary": "`ig-identity.json` — an IG's own identity and status, refused when it names",
-      "isTest": true
-    },
-    {
-      "module": "fhir-harness/schemas/ig-identity.ts",
-      "instance": "fhir-harness",
-      "name": "ig-identity",
-      "graphNode": "schema",
-      "summary": "An IG's identity, as its own `sushi-config.yaml` states it — id, canonical,",
       "isTest": false
     },
     {
@@ -4611,6 +4603,14 @@
       "name": "dak",
       "graphNode": "schema",
       "summary": "The **DAK** content type — a repository that is a WHO SMART Guidelines",
+      "isTest": false
+    },
+    {
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "instance": "smart-base",
+      "name": "dth-planning-schemas",
+      "graphNode": "schema",
+      "summary": "Proposed WHO Digital Transformation Handbook (DTH) governance and planning",
       "isTest": false
     },
     {
@@ -101902,6 +101902,18 @@
           }
         },
         {
+          "name": "status",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "The IG's own publication status (`draft`, `active`, `retired`), from its ImplementationGuide resource."
+        },
+        {
           "name": "fhirVersion",
           "type": "z.array(z.string().min(1)).optional()",
           "optional": true,
@@ -102849,6 +102861,1308 @@
       "refs": [],
       "unresolved": [],
       "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#AttributeTypeSchema",
+      "name": "AttributeTypeSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "doc": "One element type, as HL7's `ElementDefinition.type` states it.",
+      "fields": [
+        {
+          "name": "code",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "`type.code`, verbatim (a core type, or a FHIRPath system type URL on a primitive's value)."
+        },
+        {
+          "name": "targets",
+          "type": "z.array(z.string().min(1)).min(1).optional()",
+          "optional": true,
+          "array": true,
+          "card": "0..*",
+          "utype": "string[]",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "The classes a `Reference`/`canonical` may point to, from `type.targetProfile`, by core type name."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#ClassAttribute",
+      "name": "ClassAttribute",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#ClassAttributeSchema",
+      "name": "ClassAttributeSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "doc": "One attribute of a class: one element of HL7's differential, one level below the class's element.",
+      "fields": [
+        {
+          "name": "name",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          }
+        },
+        {
+          "name": "element",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "The element's id in the definition the class cites: the attribute's source."
+        },
+        {
+          "name": "min",
+          "type": "z.number().int().nonnegative()",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "number",
+          "links": {
+            "number": "https://zod.dev/api#numbers"
+          }
+        },
+        {
+          "name": "max",
+          "type": "z.string().regex(/^(\\*|\\d+)$/)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          }
+        },
+        {
+          "name": "types",
+          "type": "z.array(AttributeTypeSchema).min(1).optional()",
+          "optional": true,
+          "array": true,
+          "card": "0..*",
+          "utype": "AttributeTypeSchema[]",
+          "doc": "Absent when the element re-uses another's structure ({@link contentReference}), or when it only prohibits an inherited element (`max` 0, as `xhtml.extension`)."
+        },
+        {
+          "name": "contentReference",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "`ElementDefinition.contentReference`'s target, as a class name (`Questionnaire.item`)."
+        },
+        {
+          "name": "isModifier",
+          "type": "z.literal(true).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "true"
+        },
+        {
+          "name": "isSummary",
+          "type": "z.literal(true).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "true"
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#AttributeTypeSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#ClassStereotypeSchema",
+      "name": "ClassStereotypeSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-enum",
+      "fields": [],
+      "extendsNames": [],
+      "values": [
+        "primitive-type",
+        "complex-type",
+        "resource",
+        "backbone"
+      ],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#CoreDefinition",
+      "name": "CoreDefinition",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#CoreDefinitionSchema",
+      "name": "CoreDefinitionSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "doc": "One StructureDefinition read from HL7's package, keyed by its canonical URL.",
+      "fields": [
+        {
+          "name": "url",
+          "type": "z.string().startsWith(CORE_SD_BASE)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          }
+        },
+        {
+          "name": "id",
+          "type": "z.string().regex(/^[A-Za-z0-9\\-.]{1,64}$/)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          }
+        },
+        {
+          "name": "name",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          }
+        },
+        {
+          "name": "version",
+          "type": "StableVersion",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "The SD's own `version`, which is the release's FHIR version."
+        },
+        {
+          "name": "kind",
+          "type": "SdKindSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "type",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          }
+        },
+        {
+          "name": "abstract",
+          "type": "z.boolean()",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "boolean",
+          "links": {
+            "boolean": "https://zod.dev/api#booleans"
+          }
+        },
+        {
+          "name": "derivation",
+          "type": "z.literal(\"specialization\").optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "\"specialization\"",
+          "doc": "Absent on a root type: `Element` and `Resource` in R4/R4B, `Base` in R5."
+        },
+        {
+          "name": "baseDefinition",
+          "type": "z.string().startsWith(CORE_SD_BASE).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          }
+        },
+        {
+          "name": "published",
+          "type": "z.string().regex(/^https:\\/\\/hl7\\.org\\/fhir\\/R[0-9]+B?\\/[a-z0-9\\-.]+\\.profile\\.json$/)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "HL7's published JSON of this definition ({@link publishedDefinition}): where a reader is sent."
+        },
+        {
+          "name": "file",
+          "type": "z.string().regex(/^StructureDefinition-[A-Za-z0-9\\-.]+\\.json$/)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "The file in HL7's package (under `package/`) the definition was read from; a cached copy has the same name."
+        },
+        {
+          "name": "sha256",
+          "type": "Sha256Hex",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "sha256 of that file's bytes in HL7's package."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#SdKindSchema",
+        "fhir-harness/schemas/fhir-core.ts#Sha256Hex",
+        "fhir-harness/schemas/fhir-core.ts#StableVersion"
+      ],
+      "unresolved": [],
+      "external": [
+        "CORE_SD_BASE",
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#CountsSchema",
+      "name": "CountsSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "primitive-type",
+          "type": "z.number().int().nonnegative()",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "number",
+          "links": {
+            "number": "https://zod.dev/api#numbers"
+          }
+        },
+        {
+          "name": "complex-type",
+          "type": "z.number().int().nonnegative()",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "number",
+          "links": {
+            "number": "https://zod.dev/api#numbers"
+          }
+        },
+        {
+          "name": "resource",
+          "type": "z.number().int().nonnegative()",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "number",
+          "links": {
+            "number": "https://zod.dev/api#numbers"
+          }
+        },
+        {
+          "name": "excluded",
+          "type": "z.number().int().nonnegative()",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "number",
+          "links": {
+            "number": "https://zod.dev/api#numbers"
+          },
+          "doc": "StructureDefinitions in the package the selection left out (profiles, extensions, logical models)."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCoreClassModel",
+      "name": "FhirCoreClassModel",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCoreClassModelObject",
+      "name": "FhirCoreClassModelObject",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(FHIR_CORE_CLASS_MODEL_TAG)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "FHIR_CORE_CLASS_MODEL_TAG"
+        },
+        {
+          "name": "release",
+          "type": "FhirReleaseSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "fhirVersion",
+          "type": "StableVersion",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "spec",
+          "type": "z.string().regex(/^https:\\/\\/hl7\\.org\\/fhir\\/R[0-9]+B?\\/$/)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          }
+        },
+        {
+          "name": "derivedFrom",
+          "type": "z.object({ tarball: FhirCorePackageSchema.shape.tarball, shasum: Sha1Hex }).strict()",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "object",
+          "links": {
+            "object": "https://zod.dev/api#objects"
+          },
+          "doc": "HL7's package every class is read from, by URL and sha1."
+        },
+        {
+          "name": "derivation",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "The rule the writer applies, in words."
+        },
+        {
+          "name": "counts",
+          "type": "z .object({ classes: z.number().int().nonnegative(), backbones: z.number().int().nonnegative(), attributes: z.number().…",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "z .object({ classes: number().int().nonnegative(), backbones: number().int().nonnegative(), attributes: number().…"
+        },
+        {
+          "name": "classes",
+          "type": "z.array(UmlClassSchema).min(1)",
+          "optional": false,
+          "array": true,
+          "card": "1..*",
+          "utype": "UmlClassSchema[]"
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#FhirCorePackageSchema",
+        "fhir-harness/schemas/fhir-core.ts#FhirReleaseSchema",
+        "fhir-harness/schemas/fhir-core.ts#Sha1Hex",
+        "fhir-harness/schemas/fhir-core.ts#StableVersion",
+        "fhir-harness/schemas/fhir-core.ts#UmlClassSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "FHIR_CORE_CLASS_MODEL_TAG",
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCoreClassModelSchema",
+      "name": "FhirCoreClassModelSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "fields": [],
+      "extendsNames": [
+        "FhirCoreClassModelObject"
+      ],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#FhirCoreClassModelObject"
+      ],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCoreMirror",
+      "name": "FhirCoreMirror",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCoreMirrorSchema",
+      "name": "FhirCoreMirrorSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "doc": "A copy of the package served somewhere other than hl7.org (the FHIR package",
+      "fields": [
+        {
+          "name": "tarball",
+          "type": "z.string().regex(/^https:\\/\\/[a-z0-9.-]+\\/\\S+$/)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          }
+        },
+        {
+          "name": "shasum",
+          "type": "Sha1Hex",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "integrity",
+          "type": "Sha512Integrity",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "note",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "How this copy relates to HL7's bytes, as checked when the mirror was pinned."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#Sha1Hex",
+        "fhir-harness/schemas/fhir-core.ts#Sha512Integrity"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCorePackage",
+      "name": "FhirCorePackage",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCorePackageSchema",
+      "name": "FhirCorePackageSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "doc": "HL7's package for one release, at the URL HL7 publishes it, and what its bytes hash to.",
+      "fields": [
+        {
+          "name": "name",
+          "type": "z.string().regex(/^hl7\\.fhir\\.r[0-9]+b?\\.core$/, \"an hl7.fhir.<release>.core package\")",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          }
+        },
+        {
+          "name": "version",
+          "type": "StableVersion",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "tarball",
+          "type": "z.string().regex(/^https:\\/\\/hl7\\.org\\/fhir\\/R[0-9]+B?\\/hl7\\.fhir\\.r[0-9]+b?\\.core\\.tgz$/, \"HL7's own published package…",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string().regex(/^https:\\/\\/hl7\\.org\\/fhir\\/R[0-9]+B?\\/hl7\\.fhir\\.r[0-9]+b?\\.core\\.tgz$/, \"HL7's own published package…",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "HL7's own URL for the package: `https://hl7.org/fhir/<release>/hl7.fhir.<r>.core.tgz`."
+        },
+        {
+          "name": "shasum",
+          "type": "Sha1Hex",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "sha1 of HL7's bytes, hex."
+        },
+        {
+          "name": "integrity",
+          "type": "Sha512Integrity",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "sha512 of HL7's bytes."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#Sha1Hex",
+        "fhir-harness/schemas/fhir-core.ts#Sha512Integrity",
+        "fhir-harness/schemas/fhir-core.ts#StableVersion"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCorePin",
+      "name": "FhirCorePin",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCorePinObject",
+      "name": "FhirCorePinObject",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "release",
+          "type": "FhirReleaseSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "fhirVersion",
+          "type": "StableVersion",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "spec",
+          "type": "z.string().regex(/^https:\\/\\/hl7\\.org\\/fhir\\/R[0-9]+B?\\/$/)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "HL7's published specification for this release."
+        },
+        {
+          "name": "package",
+          "type": "FhirCorePackageSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "mirrors",
+          "type": "z.array(FhirCoreMirrorSchema).optional()",
+          "optional": true,
+          "array": true,
+          "card": "0..*",
+          "utype": "FhirCoreMirrorSchema[]"
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#FhirCoreMirrorSchema",
+        "fhir-harness/schemas/fhir-core.ts#FhirCorePackageSchema",
+        "fhir-harness/schemas/fhir-core.ts#FhirReleaseSchema",
+        "fhir-harness/schemas/fhir-core.ts#StableVersion"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCorePins",
+      "name": "FhirCorePins",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCorePinSchema",
+      "name": "FhirCorePinSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "fields": [],
+      "extendsNames": [
+        "FhirCorePinObject"
+      ],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#FhirCorePinObject"
+      ],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCorePinsObject",
+      "name": "FhirCorePinsObject",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(FHIR_CORE_PINS_TAG)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "FHIR_CORE_PINS_TAG"
+        },
+        {
+          "name": "authority",
+          "type": "z.literal(HL7_FHIR)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "HL7_FHIR",
+          "doc": "Whose publication the definitions are: HL7's, always."
+        },
+        {
+          "name": "note",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "What a reviewer needs to re-check the pins by hand."
+        },
+        {
+          "name": "releases",
+          "type": "z.array(FhirCorePinObject).min(1)",
+          "optional": false,
+          "array": true,
+          "card": "1..*",
+          "utype": "FhirCorePinObject[]"
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#FhirCorePinObject"
+      ],
+      "unresolved": [],
+      "external": [
+        "FHIR_CORE_PINS_TAG",
+        "HL7_FHIR",
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCorePinsSchema",
+      "name": "FhirCorePinsSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "fields": [],
+      "extendsNames": [
+        "FhirCorePinsObject"
+      ],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#FhirCorePinsObject"
+      ],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCoreRead",
+      "name": "FhirCoreRead",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCoreReleaseManifest",
+      "name": "FhirCoreReleaseManifest",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCoreReleaseObject",
+      "name": "FhirCoreReleaseObject",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "doc": "One object rather than a discriminated union, so the node kind can be made",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(FHIR_CORE_RELEASE_TAG)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "FHIR_CORE_RELEASE_TAG"
+        },
+        {
+          "name": "release",
+          "type": "FhirReleaseSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "fhirVersion",
+          "type": "StableVersion",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "spec",
+          "type": "z.string().regex(/^https:\\/\\/hl7\\.org\\/fhir\\/R[0-9]+B?\\/$/)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "HL7's published specification for this release: the authority."
+        },
+        {
+          "name": "package",
+          "type": "FhirCorePackageSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "HL7's package the manifest was read from: always HL7's own bytes, never a mirror's."
+        },
+        {
+          "name": "selection",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "The rule {@link isCoreDefinition} applies, in words."
+        },
+        {
+          "name": "status",
+          "type": "z.enum([\"read\", \"unread\"])",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "enum",
+          "links": {
+            "enum": "https://zod.dev/api#enums"
+          }
+        },
+        {
+          "name": "reason",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "`unread` only: why the package could not be read."
+        },
+        {
+          "name": "counts",
+          "type": "CountsSchema.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "CountsSchema",
+          "doc": "`read` only."
+        },
+        {
+          "name": "definitions",
+          "type": "z.array(CoreDefinitionSchema).min(1).optional()",
+          "optional": true,
+          "array": true,
+          "card": "0..*",
+          "utype": "CoreDefinitionSchema[]",
+          "doc": "`read` only, and never empty. An `unread` release has NO `definitions`: unread is not empty."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#CoreDefinitionSchema",
+        "fhir-harness/schemas/fhir-core.ts#CountsSchema",
+        "fhir-harness/schemas/fhir-core.ts#FhirCorePackageSchema",
+        "fhir-harness/schemas/fhir-core.ts#FhirReleaseSchema",
+        "fhir-harness/schemas/fhir-core.ts#StableVersion"
+      ],
+      "unresolved": [],
+      "external": [
+        "FHIR_CORE_RELEASE_TAG",
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCoreReleaseSchema",
+      "name": "FhirCoreReleaseSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "fields": [],
+      "extendsNames": [
+        "FhirCoreReleaseObject"
+      ],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#FhirCoreReleaseObject"
+      ],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirCoreUnread",
+      "name": "FhirCoreUnread",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirRelease",
+      "name": "FhirRelease",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#FhirReleaseSchema",
+      "name": "FhirReleaseSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-enum",
+      "doc": "The stable releases, and the directory each is kept in.",
+      "fields": [],
+      "extendsNames": [],
+      "values": [
+        "R4",
+        "R4B",
+        "R5"
+      ],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#ReleaseHead",
+      "name": "ReleaseHead",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": false
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#SdKindSchema",
+      "name": "SdKindSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-enum",
+      "fields": [],
+      "extendsNames": [],
+      "values": [
+        "primitive-type",
+        "complex-type",
+        "resource"
+      ],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#Sha1Hex",
+      "name": "Sha1Hex",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-scalar",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": false
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#Sha256Hex",
+      "name": "Sha256Hex",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-scalar",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": false
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#Sha512Integrity",
+      "name": "Sha512Integrity",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-scalar",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": false
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#StableVersion",
+      "name": "StableVersion",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-scalar",
+      "doc": "A stable FHIR version: three numbers, no ballot or snapshot suffix.",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": false
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#UmlClass",
+      "name": "UmlClass",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "fhir-harness/schemas/fhir-core.ts#UmlClassSchema",
+      "name": "UmlClassSchema",
+      "module": "fhir-harness/schemas/fhir-core.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "name",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "The type's name, or `<Type>.<path>` for a backbone element's class."
+        },
+        {
+          "name": "stereotype",
+          "type": "ClassStereotypeSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "abstract",
+          "type": "z.boolean()",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "boolean",
+          "links": {
+            "boolean": "https://zod.dev/api#booleans"
+          }
+        },
+        {
+          "name": "generalization",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "The class it specialises: the base definition's type, or the backbone element's own type. Absent on a root type."
+        },
+        {
+          "name": "owner",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Backbone classes only: the class whose attribute this structure is."
+        },
+        {
+          "name": "definition",
+          "type": "z.string().startsWith(CORE_SD_BASE)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "The canonical URL of the HL7 definition this class is read from."
+        },
+        {
+          "name": "published",
+          "type": "z.string().startsWith(`${HL7_FHIR}/`)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "HL7's published JSON of that definition."
+        },
+        {
+          "name": "element",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "The element id in that definition this class is: the type itself, or the backbone element."
+        },
+        {
+          "name": "attributes",
+          "type": "z.array(ClassAttributeSchema)",
+          "optional": false,
+          "array": true,
+          "card": "0..*",
+          "utype": "ClassAttributeSchema[]"
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "fhir-harness/schemas/fhir-core.ts#ClassAttributeSchema",
+        "fhir-harness/schemas/fhir-core.ts#ClassStereotypeSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "CORE_SD_BASE",
+        "HL7_FHIR",
         "z"
       ],
       "source": "zod",
@@ -105346,116 +106660,6 @@
       "unresolved": [],
       "external": [],
       "source": "typescript",
-      "exported": true
-    },
-    {
-      "id": "fhir-harness/schemas/ig-identity.ts#IgIdentity",
-      "name": "IgIdentity",
-      "module": "fhir-harness/schemas/ig-identity.ts",
-      "kind": "type-alias",
-      "fields": [],
-      "extendsNames": [],
-      "values": [],
-      "refs": [],
-      "unresolved": [],
-      "external": [],
-      "source": "typescript",
-      "exported": true
-    },
-    {
-      "id": "fhir-harness/schemas/ig-identity.ts#IgIdentitySchema",
-      "name": "IgIdentitySchema",
-      "module": "fhir-harness/schemas/ig-identity.ts",
-      "kind": "zod-object",
-      "fields": [
-        {
-          "name": "$schema",
-          "type": "z.literal(IG_IDENTITY_SCHEMA_TAG)",
-          "optional": false,
-          "array": false,
-          "card": "1..1",
-          "utype": "IG_IDENTITY_SCHEMA_TAG"
-        },
-        {
-          "name": "id",
-          "type": "z.string().min(1)",
-          "optional": false,
-          "array": false,
-          "card": "1..1",
-          "utype": "string",
-          "links": {
-            "string": "https://zod.dev/api#strings"
-          },
-          "doc": "The IG's `id` from `sushi-config.yaml`; SUSHI's `packageId` defaults to it."
-        },
-        {
-          "name": "canonical",
-          "type": "z.string().url()",
-          "optional": false,
-          "array": false,
-          "card": "1..1",
-          "utype": "string",
-          "links": {
-            "string": "https://zod.dev/api#strings"
-          }
-        },
-        {
-          "name": "status",
-          "type": "z.string().min(1)",
-          "optional": false,
-          "array": false,
-          "card": "1..1",
-          "utype": "string",
-          "links": {
-            "string": "https://zod.dev/api#strings"
-          },
-          "doc": "`draft`, `active`, `retired` … — what selects the template's watermark."
-        },
-        {
-          "name": "version",
-          "type": "z.string().min(1).optional()",
-          "optional": true,
-          "array": false,
-          "card": "0..1",
-          "utype": "string",
-          "links": {
-            "string": "https://zod.dev/api#strings"
-          }
-        },
-        {
-          "name": "readFrom",
-          "type": "z.string().min(1)",
-          "optional": false,
-          "array": false,
-          "card": "1..1",
-          "utype": "string",
-          "links": {
-            "string": "https://zod.dev/api#strings"
-          },
-          "doc": "Where it was read: a repository and file, so the claim can be re-checked."
-        },
-        {
-          "name": "readAt",
-          "type": "z.string().regex(/^\\d{4}-\\d{2}-\\d{2}$/)",
-          "optional": false,
-          "array": false,
-          "card": "1..1",
-          "utype": "string",
-          "links": {
-            "string": "https://zod.dev/api#strings"
-          },
-          "doc": "When it was read. A status is a fact at a moment, not forever."
-        }
-      ],
-      "extendsNames": [],
-      "values": [],
-      "refs": [],
-      "unresolved": [],
-      "external": [
-        "IG_IDENTITY_SCHEMA_TAG",
-        "z"
-      ],
-      "source": "zod",
       "exported": true
     },
     {
@@ -114314,6 +115518,15 @@
             "string": "https://zod.dev/api#strings"
           },
           "doc": "A note for the editors, not part of the meaning (`skos:editorialNote`):"
+        },
+        {
+          "name": "example",
+          "type": "LangTextSchema.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "LangTextSchema",
+          "doc": "An instance of the concept (`skos:example`), such as \"The Client"
         },
         {
           "name": "broader",
@@ -150245,6 +151458,1409 @@
       "exported": true
     },
     {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#BarrierSolutionEntry",
+      "name": "BarrierSolutionEntry",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#BarrierSolutionEntrySchema",
+      "name": "BarrierSolutionEntrySchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-object",
+      "doc": "Single barrier-to-candidate-solution entry in a {@link BarrierSolutionMapSchema}.",
+      "fields": [
+        {
+          "name": "barrierId",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Stable identifier for the barrier entry (e.g. `\"SFP-BAR-01\"` or `\"PHC-BAR-01\"`)."
+        },
+        {
+          "name": "category",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Barrier category (e.g. `\"Awareness and reporting culture\"`, `\"Connectivity\"`, `\"Feedback loop\"`)."
+        },
+        {
+          "name": "barrier",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Statement of the barrier or root cause identified in the handbook."
+        },
+        {
+          "name": "affectedRoleIris",
+          "type": "z.array(RoleOrElementIriSchema).min(1)",
+          "optional": false,
+          "array": true,
+          "card": "1..*",
+          "utype": "RoleOrElementIriSchema[]",
+          "doc": "Persona or governance-role IRIs affected by this barrier."
+        },
+        {
+          "name": "candidateSolutions",
+          "type": "z.array(z.string().min(1)).min(1)",
+          "optional": false,
+          "array": true,
+          "card": "1..*",
+          "utype": "string[]",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Candidate digital or operational solutions addressing this barrier."
+        },
+        {
+          "name": "relatedRequirementIds",
+          "type": "z.array(z.string().min(1)).default([])",
+          "optional": true,
+          "array": true,
+          "card": "0..*",
+          "utype": "string[]",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Identifiers of functional or non-functional requirements that realise the candidate solutions."
+        },
+        {
+          "name": "archimateAssessmentIri",
+          "type": "RoleOrElementIriSchema.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "RoleOrElementIriSchema",
+          "doc": "Optional `smart-ra` ArchiMate Motivation `Assessment` or `Driver` element IRI."
+        },
+        {
+          "name": "sourceRef",
+          "type": "DthSourceRefSchema.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "DthSourceRefSchema",
+          "doc": "Optional row-level L1 handbook citation."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+        "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#BarrierSolutionMap",
+      "name": "BarrierSolutionMap",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#BarrierSolutionMapInput",
+      "name": "BarrierSolutionMapInput",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#BarrierSolutionMapSchema",
+      "name": "BarrierSolutionMapSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-object",
+      "doc": "Barrier-to-candidate-solution mapping (`dth-barrier-map/v1`).",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(BARRIER_SOLUTION_MAP_SCHEMA_TAG).default(BARRIER_SOLUTION_MAP_SCHEMA_TAG)",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "BARRIER_SOLUTION_MAP_SCHEMA_TAG"
+        },
+        {
+          "name": "id",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Stable identifier for the barrier-solution map."
+        },
+        {
+          "name": "title",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Human-readable title of the barrier-solution map."
+        },
+        {
+          "name": "entries",
+          "type": "z.array(BarrierSolutionEntrySchema).min(1)",
+          "optional": false,
+          "array": true,
+          "card": "1..*",
+          "utype": "BarrierSolutionEntrySchema[]",
+          "doc": "Barrier-to-candidate-solution mapping entries."
+        },
+        {
+          "name": "sourceRef",
+          "type": "DthSourceRefSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "L1 handbook citation for the barrier map."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "smart-base/schemas/dth-planning-schemas.ts#BarrierSolutionEntrySchema",
+        "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "BARRIER_SOLUTION_MAP_SCHEMA_TAG",
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#DthPlanningArtefact",
+      "name": "DthPlanningArtefact",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#DthPlanningArtefactSchema",
+      "name": "DthPlanningArtefactSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-union",
+      "doc": "Union of all five proposed DTH governance and planning artefacts.",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#DthPlanningSchemaTag",
+      "name": "DthPlanningSchemaTag",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#DthSourceRef",
+      "name": "DthSourceRef",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+      "name": "DthSourceRefSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-union",
+      "doc": "Source reference anchoring a DTH planning artefact or entry to its L1",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#DthStructuredSourceRef",
+      "name": "DthStructuredSourceRef",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#DthStructuredSourceRefSchema",
+      "name": "DthStructuredSourceRefSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-object",
+      "doc": "Structured L1 source reference anchoring a DTH planning artefact or row to",
+      "fields": [
+        {
+          "name": "libraryId",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Publication identifier in `who-iris/library/`, e.g. `\"9789240120747-eng\"`."
+        },
+        {
+          "name": "sectionId",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Section identifier in the ingested L1 entry, e.g. `\"sec-008\"`."
+        },
+        {
+          "name": "pages",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Printed page range in the source handbook, e.g. `\"14-17\"`."
+        },
+        {
+          "name": "tableOrAnnex",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Table, figure, section, or annex label, e.g. `\"Table 5\"` or `\"Annex 4\"`."
+        },
+        {
+          "name": "quote",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Optional verbatim quote from the L1 source passage."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#GovernanceRole",
+      "name": "GovernanceRole",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#GovernanceRoleInput",
+      "name": "GovernanceRoleInput",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#GovernanceRoleSchema",
+      "name": "GovernanceRoleSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-object",
+      "doc": "Organisational governance body or leadership role (`dth-governance-role/v1`).",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(GOVERNANCE_ROLE_SCHEMA_TAG).default(GOVERNANCE_ROLE_SCHEMA_TAG)",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "GOVERNANCE_ROLE_SCHEMA_TAG"
+        },
+        {
+          "name": "id",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Stable identifier for the governance role or body (e.g. `\"SFP-GOV-01\"`)."
+        },
+        {
+          "name": "name",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Human-readable name of the governance body or leadership role."
+        },
+        {
+          "name": "roleType",
+          "type": "GovernanceRoleTypeSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "Classification of the governance body or leadership role."
+        },
+        {
+          "name": "mandate",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Mandate, terms of reference, or core responsibility statement."
+        },
+        {
+          "name": "chairOrLeadRoleIri",
+          "type": "RoleOrElementIriSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "IRI of the chairing or leading role/actor."
+        },
+        {
+          "name": "memberRoleIris",
+          "type": "z.array(RoleOrElementIriSchema).min(1)",
+          "optional": false,
+          "array": true,
+          "card": "1..*",
+          "utype": "RoleOrElementIriSchema[]",
+          "doc": "IRIs of constituent member roles or stakeholder organisations."
+        },
+        {
+          "name": "meetingCadence",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Stated meeting cadence or review frequency (e.g. `\"Quarterly\"`, `\"Monthly during rollout\"`)."
+        },
+        {
+          "name": "decisionRights",
+          "type": "z.array(z.string().min(1)).min(1)",
+          "optional": false,
+          "array": true,
+          "card": "1..*",
+          "utype": "string[]",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Explicit decision rights or approval authorities held by this body/role."
+        },
+        {
+          "name": "archimateElementIri",
+          "type": "RoleOrElementIriSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "Link to the corresponding `smart-ra` ArchiMate Business Role, Actor, or Collaboration IRI."
+        },
+        {
+          "name": "sourceRef",
+          "type": "DthSourceRefSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "L1 handbook citation from which this governance role was extracted."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+        "smart-base/schemas/dth-planning-schemas.ts#GovernanceRoleTypeSchema",
+        "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "GOVERNANCE_ROLE_SCHEMA_TAG",
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#GovernanceRoleType",
+      "name": "GovernanceRoleType",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#GovernanceRoleTypeSchema",
+      "name": "GovernanceRoleTypeSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-enum",
+      "doc": "Zod enum for {@link GOVERNANCE_ROLE_TYPES}.",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RaciActivity",
+      "name": "RaciActivity",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RaciActivitySchema",
+      "name": "RaciActivitySchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-object",
+      "doc": "Single activity row in a {@link RaciMatrixSchema}.",
+      "fields": [
+        {
+          "name": "activityId",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Stable identifier for the activity row (e.g. `\"SFP-RACI-ACT-01\"`)."
+        },
+        {
+          "name": "activity",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Description of the activity, deliverable, or decision task."
+        },
+        {
+          "name": "phase",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Implementation or DIIG phase name/number (e.g. `\"Phase 1: Assess current state\"`)."
+        },
+        {
+          "name": "assignments",
+          "type": "z.record(z.string().min(1), z.array(RaciCodeSchema))",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "record",
+          "links": {
+            "record": "https://zod.dev/api#records"
+          },
+          "doc": "Map from `roleId` (or role IRI) to one or more RACI codes (`\"R\"`, `\"A\"`,"
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "smart-base/schemas/dth-planning-schemas.ts#RaciCodeSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RaciCode",
+      "name": "RaciCode",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RaciCodeSchema",
+      "name": "RaciCodeSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-enum",
+      "doc": "Zod enum for {@link RACI_CODES}.",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RaciMatrix",
+      "name": "RaciMatrix",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RaciMatrixInput",
+      "name": "RaciMatrixInput",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RaciMatrixSchema",
+      "name": "RaciMatrixSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-object",
+      "doc": "Responsibility assignment (RACI) matrix (`dth-raci-matrix/v1`).",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(RACI_MATRIX_SCHEMA_TAG).default(RACI_MATRIX_SCHEMA_TAG)",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "RACI_MATRIX_SCHEMA_TAG"
+        },
+        {
+          "name": "id",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Stable identifier for the RACI matrix (e.g. `\"SFP-RACI-ANNEX-04\"`)."
+        },
+        {
+          "name": "title",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Human-readable title of the RACI matrix."
+        },
+        {
+          "name": "mode",
+          "type": "z.enum([\"template\", \"populated\"]).default(\"populated\")",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "enum",
+          "links": {
+            "enum": "https://zod.dev/api#enums"
+          },
+          "doc": "Whether this matrix is fully populated (`\"populated\"`) or a blank/partial"
+        },
+        {
+          "name": "roles",
+          "type": "z.array(RaciRoleRefSchema).min(1)",
+          "optional": false,
+          "array": true,
+          "card": "1..*",
+          "utype": "RaciRoleRefSchema[]",
+          "doc": "Declared roles (persona IRIs or governance-role IRIs) participating in the matrix."
+        },
+        {
+          "name": "activities",
+          "type": "z.array(RaciActivitySchema).min(1)",
+          "optional": false,
+          "array": true,
+          "card": "1..*",
+          "utype": "RaciActivitySchema[]",
+          "doc": "Sequenced activities with per-role RACI assignments."
+        },
+        {
+          "name": "sourceRef",
+          "type": "DthSourceRefSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "L1 handbook citation for the RACI matrix."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+        "smart-base/schemas/dth-planning-schemas.ts#RaciActivitySchema",
+        "smart-base/schemas/dth-planning-schemas.ts#RaciRoleRefSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "RACI_MATRIX_SCHEMA_TAG",
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RaciRoleColumn",
+      "name": "RaciRoleColumn",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RaciRoleColumnSchema",
+      "name": "RaciRoleColumnSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-object",
+      "doc": "Role column declaration in a RACI matrix, binding a short column key",
+      "fields": [
+        {
+          "name": "roleId",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Short role key used as a key in `activity.assignments` (e.g. `\"nmra-lead\"`)."
+        },
+        {
+          "name": "label",
+          "type": "z.string().min(1).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Display label for the role column header."
+        },
+        {
+          "name": "roleIri",
+          "type": "RoleOrElementIriSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "Formal persona or governance-role IRI."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RaciRoleRef",
+      "name": "RaciRoleRef",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RaciRoleRefSchema",
+      "name": "RaciRoleRefSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-union",
+      "doc": "Role entry in `RaciMatrix.roles[]`: either a structured {@link RaciRoleColumn}",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RiskEntry",
+      "name": "RiskEntry",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RiskEntrySchema",
+      "name": "RiskEntrySchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-object",
+      "doc": "Single risk and mitigation row in a {@link RiskRegisterSchema}: a",
+      "fields": [
+        {
+          "name": "category",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Risk category or domain (e.g. `\"Governance\"`, `\"Technical\"`, `\"Data privacy\"`)."
+        },
+        {
+          "name": "likelihood",
+          "type": "RiskLevelSchema.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "RiskLevelSchema",
+          "doc": "Qualitative likelihood rating, optional when unstated in L1."
+        },
+        {
+          "name": "impact",
+          "type": "RiskLevelSchema.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "RiskLevelSchema",
+          "doc": "Qualitative impact rating, optional when unstated in L1."
+        },
+        {
+          "name": "priority",
+          "type": "RiskPrioritySchema.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "RiskPrioritySchema",
+          "doc": "Qualitative overall priority rating."
+        },
+        {
+          "name": "sourceRef",
+          "type": "DthSourceRefSchema.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "DthSourceRefSchema",
+          "doc": "Optional row-level L1 handbook citation."
+        }
+      ],
+      "extendsNames": [
+        "DthRiskMitigationRowSchema"
+      ],
+      "values": [],
+      "refs": [
+        "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+        "smart-base/schemas/dth-planning-schemas.ts#RiskLevelSchema",
+        "smart-base/schemas/dth-planning-schemas.ts#RiskPrioritySchema",
+        "smart-base/schemas/dth-step-table.ts#DthRiskMitigationRowSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RiskLevel",
+      "name": "RiskLevel",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RiskLevelSchema",
+      "name": "RiskLevelSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-enum",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RiskPriority",
+      "name": "RiskPriority",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RiskPrioritySchema",
+      "name": "RiskPrioritySchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-enum",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RiskRegister",
+      "name": "RiskRegister",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RiskRegisterInput",
+      "name": "RiskRegisterInput",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RiskRegisterSchema",
+      "name": "RiskRegisterSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-object",
+      "doc": "Risk and mitigation register (`dth-risk-register/v1`).",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(RISK_REGISTER_SCHEMA_TAG).default(RISK_REGISTER_SCHEMA_TAG)",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "RISK_REGISTER_SCHEMA_TAG"
+        },
+        {
+          "name": "id",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Stable identifier for the risk register (e.g. `\"PC-RISK-REG-CH02\"`)."
+        },
+        {
+          "name": "title",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Human-readable title of the risk register."
+        },
+        {
+          "name": "mode",
+          "type": "z.enum([\"template\", \"populated\"])",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "enum",
+          "links": {
+            "enum": "https://zod.dev/api#enums"
+          },
+          "doc": "Whether this register is populated with concrete risks or is a worksheet template."
+        },
+        {
+          "name": "entries",
+          "type": "z.array(RiskEntrySchema)",
+          "optional": false,
+          "array": true,
+          "card": "0..*",
+          "utype": "RiskEntrySchema[]",
+          "doc": "Risk and mitigation entries (must be non-empty when `mode === \"populated\"`)."
+        },
+        {
+          "name": "sourceRef",
+          "type": "DthSourceRefSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "L1 handbook citation for the risk register."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+        "smart-base/schemas/dth-planning-schemas.ts#RiskEntrySchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "RISK_REGISTER_SCHEMA_TAG",
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema",
+      "name": "RoleOrElementIriSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-scalar",
+      "doc": "Non-empty IRI or CURIE string referencing a persona, governance role, or",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#StakeholderAnalysis",
+      "name": "StakeholderAnalysis",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#StakeholderAnalysisInput",
+      "name": "StakeholderAnalysisInput",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#StakeholderAnalysisSchema",
+      "name": "StakeholderAnalysisSchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-object",
+      "doc": "Multi-sectoral stakeholder mapping and analysis (`dth-stakeholder-analysis/v1`).",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(STAKEHOLDER_ANALYSIS_SCHEMA_TAG).default(STAKEHOLDER_ANALYSIS_SCHEMA_TAG)",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "STAKEHOLDER_ANALYSIS_SCHEMA_TAG"
+        },
+        {
+          "name": "id",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Stable identifier for the stakeholder analysis table."
+        },
+        {
+          "name": "title",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Human-readable title of the stakeholder analysis table."
+        },
+        {
+          "name": "stakeholders",
+          "type": "z.array(StakeholderEntrySchema).min(1)",
+          "optional": false,
+          "array": true,
+          "card": "1..*",
+          "utype": "StakeholderEntrySchema[]",
+          "doc": "Stakeholder mapping rows."
+        },
+        {
+          "name": "sourceRef",
+          "type": "DthSourceRefSchema",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "L1 handbook citation for the stakeholder analysis table."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+        "smart-base/schemas/dth-planning-schemas.ts#StakeholderEntrySchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "STAKEHOLDER_ANALYSIS_SCHEMA_TAG",
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#StakeholderEntry",
+      "name": "StakeholderEntry",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "smart-base/schemas/dth-planning-schemas.ts#StakeholderEntrySchema",
+      "name": "StakeholderEntrySchema",
+      "module": "smart-base/schemas/dth-planning-schemas.ts",
+      "kind": "zod-object",
+      "doc": "Single stakeholder row in a {@link StakeholderAnalysisSchema}.",
+      "fields": [
+        {
+          "name": "stakeholderId",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Stable identifier for the stakeholder entry (e.g. `\"SFP-STK-01\"`)."
+        },
+        {
+          "name": "name",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Name of the stakeholder group or institution (e.g. `\"National Medicines Regulatory Authority (NMRA)\"`)."
+        },
+        {
+          "name": "sector",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Sector classification (e.g. `\"Public health & regulation\"`, `\"Law enforcement & customs\"`, `\"Supply chain & industry\"`, `\"Civil society & patients\"`)."
+        },
+        {
+          "name": "roleInSystem",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Description of the stakeholder's functional role in the health/regulatory system."
+        },
+        {
+          "name": "interestOrInfluence",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Statement of the stakeholder's interest, motivation, or influence in the digital transformation."
+        },
+        {
+          "name": "engagementMechanism",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Mechanism or channel for engaging this stakeholder across DIIG phases."
+        },
+        {
+          "name": "roleIri",
+          "type": "RoleOrElementIriSchema.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "RoleOrElementIriSchema",
+          "doc": "Optional link to a DAK persona or `GovernanceRole` IRI when this stakeholder also acts in a workflow lane or governance body."
+        },
+        {
+          "name": "archimateStakeholderIri",
+          "type": "RoleOrElementIriSchema.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "RoleOrElementIriSchema",
+          "doc": "Optional link to the `smart-ra` ArchiMate Motivation `Stakeholder` or Business `Actor`/`Role` IRI."
+        },
+        {
+          "name": "sourceRef",
+          "type": "DthSourceRefSchema.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "DthSourceRefSchema",
+          "doc": "Optional row-level L1 handbook citation."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+        "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
       "id": "smart-base/schemas/dth-step-table.ts#DthBpmnLaneStub",
       "name": "DthBpmnLaneStub",
       "module": "smart-base/schemas/dth-step-table.ts",
@@ -164535,6 +167151,246 @@
       "array": false
     },
     {
+      "from": "fhir-harness/schemas/fhir-core.ts#ClassAttributeSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#AttributeTypeSchema",
+      "via": "types",
+      "kind": "field",
+      "optional": true,
+      "array": true
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#CoreDefinitionSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#SdKindSchema",
+      "via": "kind",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#CoreDefinitionSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#Sha256Hex",
+      "via": "sha256",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#CoreDefinitionSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#StableVersion",
+      "via": "version",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreClassModelObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#FhirCorePackageSchema",
+      "via": "derivedFrom",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreClassModelObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#FhirReleaseSchema",
+      "via": "release",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreClassModelObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#Sha1Hex",
+      "via": "derivedFrom",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreClassModelObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#StableVersion",
+      "via": "fhirVersion",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreClassModelObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#UmlClassSchema",
+      "via": "classes",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreClassModelSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#FhirCoreClassModelObject",
+      "via": "",
+      "kind": "extends",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreMirrorSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#Sha1Hex",
+      "via": "shasum",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreMirrorSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#Sha512Integrity",
+      "via": "integrity",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCorePackageSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#Sha1Hex",
+      "via": "shasum",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCorePackageSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#Sha512Integrity",
+      "via": "integrity",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCorePackageSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#StableVersion",
+      "via": "version",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCorePinObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#FhirCoreMirrorSchema",
+      "via": "mirrors",
+      "kind": "field",
+      "optional": true,
+      "array": true
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCorePinObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#FhirCorePackageSchema",
+      "via": "package",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCorePinObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#FhirReleaseSchema",
+      "via": "release",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCorePinObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#StableVersion",
+      "via": "fhirVersion",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCorePinSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#FhirCorePinObject",
+      "via": "",
+      "kind": "extends",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCorePinsObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#FhirCorePinObject",
+      "via": "releases",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCorePinsSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#FhirCorePinsObject",
+      "via": "",
+      "kind": "extends",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreReleaseObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#CoreDefinitionSchema",
+      "via": "definitions",
+      "kind": "field",
+      "optional": true,
+      "array": true
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreReleaseObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#CountsSchema",
+      "via": "counts",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreReleaseObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#FhirCorePackageSchema",
+      "via": "package",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreReleaseObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#FhirReleaseSchema",
+      "via": "release",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreReleaseObject",
+      "to": "fhir-harness/schemas/fhir-core.ts#StableVersion",
+      "via": "fhirVersion",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#FhirCoreReleaseSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#FhirCoreReleaseObject",
+      "via": "",
+      "kind": "extends",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#UmlClassSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#ClassAttributeSchema",
+      "via": "attributes",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "fhir-harness/schemas/fhir-core.ts#UmlClassSchema",
+      "to": "fhir-harness/schemas/fhir-core.ts#ClassStereotypeSchema",
+      "via": "stereotype",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
       "from": "fhir-harness/schemas/ig-annexes.ts#IgAnnexesSchema",
       "to": "fhir-harness/schemas/ig-annexes.ts#IgAnnexRecordSchema",
       "via": "annexes",
@@ -165642,6 +168498,14 @@
       "from": "folio-assistant-core/schemas/glossary.ts#TermSchema",
       "to": "folio-assistant-core/schemas/glossary.ts#LangTextSchema",
       "via": "definition",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/glossary.ts#TermSchema",
+      "to": "folio-assistant-core/schemas/glossary.ts#LangTextSchema",
+      "via": "example",
       "kind": "field",
       "optional": true,
       "array": false
@@ -175223,6 +178087,222 @@
       "array": false
     },
     {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#BarrierSolutionEntrySchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+      "via": "sourceRef",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#BarrierSolutionEntrySchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema",
+      "via": "affectedRoleIris",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#BarrierSolutionEntrySchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema",
+      "via": "archimateAssessmentIri",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#BarrierSolutionMapSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#BarrierSolutionEntrySchema",
+      "via": "entries",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#BarrierSolutionMapSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+      "via": "sourceRef",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#GovernanceRoleSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+      "via": "sourceRef",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#GovernanceRoleSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#GovernanceRoleTypeSchema",
+      "via": "roleType",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#GovernanceRoleSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema",
+      "via": "archimateElementIri",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#GovernanceRoleSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema",
+      "via": "chairOrLeadRoleIri",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#GovernanceRoleSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema",
+      "via": "memberRoleIris",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#RaciActivitySchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RaciCodeSchema",
+      "via": "assignments",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#RaciMatrixSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+      "via": "sourceRef",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#RaciMatrixSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RaciActivitySchema",
+      "via": "activities",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#RaciMatrixSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RaciRoleRefSchema",
+      "via": "roles",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#RaciRoleColumnSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema",
+      "via": "roleIri",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#RiskEntrySchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+      "via": "sourceRef",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#RiskEntrySchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RiskLevelSchema",
+      "via": "impact",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#RiskEntrySchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RiskLevelSchema",
+      "via": "likelihood",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#RiskEntrySchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RiskPrioritySchema",
+      "via": "priority",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#RiskEntrySchema",
+      "to": "smart-base/schemas/dth-step-table.ts#DthRiskMitigationRowSchema",
+      "via": "",
+      "kind": "extends",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#RiskRegisterSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+      "via": "sourceRef",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#RiskRegisterSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RiskEntrySchema",
+      "via": "entries",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#StakeholderAnalysisSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+      "via": "sourceRef",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#StakeholderAnalysisSchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#StakeholderEntrySchema",
+      "via": "stakeholders",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#StakeholderEntrySchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#DthSourceRefSchema",
+      "via": "sourceRef",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#StakeholderEntrySchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema",
+      "via": "archimateStakeholderIri",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "smart-base/schemas/dth-planning-schemas.ts#StakeholderEntrySchema",
+      "to": "smart-base/schemas/dth-planning-schemas.ts#RoleOrElementIriSchema",
+      "via": "roleIri",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
       "from": "smart-base/schemas/dth-step-table.ts#DthBpmnLaneStub",
       "to": "smart-base/schemas/dth-step-table.ts#DthBpmnTaskStub",
       "via": "tasks",
@@ -175429,7 +178509,8 @@
     "http://purl.org/spar/deo/: not read — no @vocabulary/deo package: the SPAR ontologies are not in the @zazuko/vocabularies bundle",
     "http://purl.org/spar/doco/: not read — no @vocabulary/doco package: the SPAR ontologies are not in the @zazuko/vocabularies bundle",
     "http://purl.org/spar/fabio/: not read — no @vocabulary/fabio package: the SPAR ontologies are not in the @zazuko/vocabularies bundle",
-    "http://www.w3.org/ns/odrl/2/: not read — no @vocabulary/odrl package: ODRL is not in the @zazuko/vocabularies bundle (bean cat-tools-xfd4)"
+    "http://www.w3.org/ns/odrl/2/: not read — no @vocabulary/odrl package: ODRL is not in the @zazuko/vocabularies bundle (bean cat-tools-xfd4)",
+    "fhir-harness/fhir-core/r4: 12 referenced definition(s) not materialised (run fhir-core:materialise)"
   ],
   "nodeKinds": [
     {
@@ -175916,6 +178997,42 @@
       ]
     },
     {
+      "id": "folio-fhir-core-class-model",
+      "source": "node-kind",
+      "instance": "fhir-harness",
+      "parents": [],
+      "subclasses": [],
+      "typologies": [
+        "fhir-core-definitions"
+      ],
+      "page": "en/fhir-harness/folio-fhir-core-class-model/",
+      "note": "fhir-harness/schemas/fhir-core.ts#FhirCoreClassModelKind — an export this reader does not model as a declaration"
+    },
+    {
+      "id": "folio-fhir-core-pins",
+      "source": "node-kind",
+      "instance": "fhir-harness",
+      "parents": [],
+      "subclasses": [],
+      "typologies": [
+        "fhir-core-definitions"
+      ],
+      "page": "en/fhir-harness/folio-fhir-core-pins/",
+      "note": "fhir-harness/schemas/fhir-core.ts#FhirCorePinsKind — an export this reader does not model as a declaration"
+    },
+    {
+      "id": "folio-fhir-core-release",
+      "source": "node-kind",
+      "instance": "fhir-harness",
+      "parents": [],
+      "subclasses": [],
+      "typologies": [
+        "fhir-core-definitions"
+      ],
+      "page": "en/fhir-harness/folio-fhir-core-release/",
+      "note": "fhir-harness/schemas/fhir-core.ts#FhirCoreReleaseKind — an export this reader does not model as a declaration"
+    },
+    {
       "id": "folio-figure-descriptions/v1",
       "source": "family",
       "instance": "cat-harness",
@@ -175985,15 +179102,6 @@
       "id": "folio-ig-chrome/v2",
       "source": "family",
       "decl": "fhir-harness/schemas/ig-chrome.ts#IgChromeSchema",
-      "instance": "fhir-harness",
-      "typologies": [
-        "fhir-artifact-index"
-      ]
-    },
-    {
-      "id": "folio-ig-identity/v1",
-      "source": "family",
-      "decl": "fhir-harness/schemas/ig-identity.ts#IgIdentitySchema",
       "instance": "fhir-harness",
       "typologies": [
         "fhir-artifact-index"
