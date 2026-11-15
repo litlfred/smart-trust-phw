@@ -384,12 +384,32 @@
     {
       "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
       "label": "policy",
+      "msgidSha256": "4a3a04cab22266675c148df56ef4299b63e233a42b3efd05a88961db6197a7cf",
+      "msgid": "policy applies",
+      "verdict": "other-sense",
+      "reason": "a consent policy (PCF base policy) is the guide's governance, not the harness's ODRL access policy.",
+      "decidedBy": "pfng-adjudicator",
+      "decidedAt": "2026-11-15"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
       "msgidSha256": "823412d1eacb67956220e532959f0104603057c88704863ca38e7cd188fda812",
       "msgid": "policy",
       "verdict": "other-sense",
       "reason": "a consent policy (PCF base policy) is the guide's governance, not the harness's ODRL access policy.",
       "decidedBy": "en-lead-adjudicator",
       "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "a5a20d141e8fcbdc2374bd0cba5eebfc25476754435abd044424fcc22374f7b9",
+      "msgid": "policy & disclosure",
+      "verdict": "other-sense",
+      "reason": "a consent policy (PCF base policy) is the guide's governance, not the harness's ODRL access policy.",
+      "decidedBy": "pfng-adjudicator",
+      "decidedAt": "2026-11-15"
     }
   ]
 }
