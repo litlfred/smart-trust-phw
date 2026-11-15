@@ -35,13 +35,13 @@
   }
  },
  "candidate": {
-  "pages": 1217,
+  "pages": 8526,
   "counts": {
    "siteNav": 0,
-   "search": 935,
-   "navbarRow": 51,
-   "rail": 935,
-   "translationMeta": 935
+   "search": 8234,
+   "navbarRow": 227,
+   "rail": 8234,
+   "translationMeta": 8234
   },
   "dirs": [
    "artifact",
@@ -58,11 +58,47 @@
   ],
   "index": [
    "search",
+   "navbarRow",
    "rail",
    "translationMeta"
   ],
   "stamp": {
    "present": true
   }
+ },
+ "baseline": {
+  "features": {
+   "pages": 8526,
+   "counts": {
+    "siteNav": 0,
+    "search": 8234,
+    "navbarRow": 227,
+    "rail": 8234,
+    "translationMeta": 8234
+   },
+   "dirs": [
+    "artifact",
+    "assets",
+    "cat-harness",
+    "en",
+    "fhir-artifact-index",
+    "id-lookup",
+    "openapi",
+    "questionnaires",
+    "smart-base",
+    "smart-trust-phw",
+    "translations"
+   ],
+   "index": [
+    "search",
+    "navbarRow",
+    "rail",
+    "translationMeta"
+   ],
+   "stamp": {
+    "present": true
+   }
+  },
+  "from": "dd97df7cc545"
  }
 }

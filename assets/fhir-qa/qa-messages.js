@@ -11,10 +11,35 @@
       ".ig-qa-publisher table.grid td.plain{color:inherit}" +
       ".ig-qa-publisher .mid{font-size:8px;color:navy;display:none}" +
       ".ig-qa-publisher.show-ids .mid{display:inline}" +
+      ".ig-qa-publisher .en{display:none;font-weight:normal;font-size:.9em;color:#333}" +
+      ".ig-qa-publisher.show-en .en{display:block}" +
+      ".ig-qa-publisher .mt{font-size:.75em;font-weight:normal;color:#555;margin-inline-start:.5em}" +
+      ".ig-qa-publisher tr:target td{outline:2px solid #276749}" +
       ".ig-qa-publisher .grid-wrap{overflow-x:auto}";
     document.head.appendChild(css);
   }
   for (var i = 0; i < boxes.length; i++) run(boxes[i]);
+
+  /** The box's words, in the page's language (data-labels, ig-qa-page-i18n.ts), English otherwise. */
+  function labels(box) {
+    var EN = {
+      jsResultsFor: "Validation Results for {title}", jsThisIg: "this IG", jsGenerated: "Generated {date}, FHIR version {version} for ",
+      jsCanonical: " (canonical = ", jsQualityChecks: "Quality Checks", jsPublisherVersion: "Publisher Version:", jsSummary: "Summary:",
+      jsCounts: " errors = {errs}, warn = {warn}, info = {info}, broken links = {links}.  ", jsShowIds: "Show Message Ids", jsHideIds: "Hide Message Ids",
+      jsShowEnglish: "Show English", jsHideEnglish: "Hide English", jsFilename: "Filename", jsErrors: "Errors", jsWarnings: "Warnings", jsHints: "Hints",
+      jsBuildErrors: "Build Errors", jsPage: "(page)", jsSource: "(source)", jsUpFiles: "\u2191 files", jsGroupCounts: "  ({err} errors, {warn} warnings, {info} hints) ",
+      jsPath: "Path", jsSeverity: "Severity", jsMessage: "Message", jsNoMessages: "No messages: {why}.", jsNoneReported: "The Publisher reported no messages.",
+      jsCouldNotLoad: "Could not load the Publisher's messages ({error}).", jsMachine: "machine translation",
+      jsSevFatal: "fatal", jsSevError: "error", jsSevWarning: "warning", jsSevInformation: "information"
+    };
+    var given = {};
+    try { given = JSON.parse(box.getAttribute("data-labels") || "{}") || {}; } catch (e) { given = {}; }
+    return function (k, vars) {
+      var s = typeof given[k] === "string" ? given[k] : EN[k] || k;
+      return s.replace(/\{([A-Za-z]\w*)\}/g, function (m, n) { return vars && Object.prototype.hasOwnProperty.call(vars, n) ? String(vars[n]) : m; });
+    };
+  }
+  var SEV = { fatal: "jsSevFatal", error: "jsSevError", warning: "jsSevWarning", information: "jsSevInformation" };
 
   function el(tag, text, attrs) {
     var e = document.createElement(tag);
@@ -66,7 +91,7 @@
         (Array.isArray(r[2]) ? r[2] : []).forEach(function (p) { pages[p] = true; });
         var q = r[0] || {};
         var canon = typeof q.url === "string" ? q.url.replace(/\/ImplementationGuide\/[^\/]+$/, "") : "";
-        draw(box, q, r[1] || {}, {
+        draw(box, q, r[1] || {}, labels(box), {
           pages: pages,
           artifacts: box.getAttribute("data-artifacts") || "artifact/",
           source: box.getAttribute("data-source") || "",
@@ -75,7 +100,7 @@
       })
       .catch(function (e) {
         box.textContent = "";
-        box.appendChild(el("p", "Could not load the Publisher's messages (" + e.message + ")."));
+        box.appendChild(el("p", labels(box)("jsCouldNotLoad", { error: e.message })));
       });
   }
 
@@ -84,14 +109,14 @@
     return L.pages[name + ".html"] ? L.artifacts + name + ".html" : null;
   }
   /** A message file: its artifact page on this site, and its source at the built commit when it is tracked (input/...). */
-  function fileCell(L, file, label) {
-    var span = el("span");
+  function fileCell(L, file, label, T) {
+    var span = el("span", null, file ? { dir: "ltr" } : null);
     var base = file ? file.replace(/^.*\//, "").replace(/\.(json|xml|fsh)$/, "") : "";
     var page = base && pageFor(L, base);
     span.appendChild(page ? el("a", label, { href: page }) : document.createTextNode(label));
     if (file && L.source && /^input\//.test(file)) {
       span.appendChild(document.createTextNode(" "));
-      span.appendChild(el("a", "(source)", { href: L.source + file.split("/").map(encodeURIComponent).join("/") }));
+      span.appendChild(el("a", T("jsSource"), { href: L.source + file.split("/").map(encodeURIComponent).join("/") }));
     }
     return span;
   }
@@ -116,17 +141,18 @@
     return out;
   }
 
-  function draw(box, q, m, L) {
+  function draw(box, q, m, T, L) {
     box.textContent = "";
     var groups = Array.isArray(m.groups) ? m.groups : [];
-    box.appendChild(el("h4", "Validation Results for " + (q.title || q.name || "this IG")));
+    var hasEn = groups.some(function (g) { return g.messages.some(function (x) { return typeof x.en === "string"; }); });
+    box.appendChild(el("h4", T("jsResultsFor", { title: q.title || q.name || T("jsThisIg") })));
     var p = el("p");
-    p.appendChild(document.createTextNode("Generated " + (q.date || q.dateISO8601 || "?") + ", FHIR version " + (q.version || "?") + " for "));
+    p.appendChild(document.createTextNode(T("jsGenerated", { date: q.date || q.dateISO8601 || "?", version: q.version || "?" })));
     var igName = (q["package-id"] || "?") + "#" + (q["ig-ver"] || "?");
     var igPage = q["package-id"] && pageFor(L, "ImplementationGuide-" + q["package-id"]);
     p.appendChild(igPage ? el("a", igName, { href: igPage }) : document.createTextNode(igName));
     if (q.url) {
-      p.appendChild(document.createTextNode(" (canonical = "));
+      p.appendChild(document.createTextNode(T("jsCanonical")));
       var a = el("a", q.url, { href: q.url });
       p.appendChild(a);
       p.appendChild(document.createTextNode(")"));
@@ -137,60 +163,75 @@
     var qc = el("table", null, { "class": "grid" });
     var head = el("tr");
     var th = el("td", null, { colspan: "2", "class": "plain" });
-    th.appendChild(el("b", "Quality Checks"));
+    th.appendChild(el("b", T("jsQualityChecks")));
     head.appendChild(th);
     qc.appendChild(head);
-    qc.appendChild(row(["Publisher Version:", q.tool || "?"]));
-    var btn = el("button", "Show Message Ids", { type: "button" });
-    btn.addEventListener("click", function () {
-      var on = box.className.indexOf("show-ids") < 0;
-      box.className = on ? box.className + " show-ids" : box.className.replace(/ ?show-ids/, "");
-      btn.textContent = on ? "Hide Message Ids" : "Show Message Ids";
-    });
+    qc.appendChild(row([T("jsPublisherVersion"), q.tool || "?"]));
+    function toggle(cls, on1, off1) {
+      var b = el("button", T(off1), { type: "button" });
+      b.addEventListener("click", function () {
+        var on = (" " + box.className + " ").indexOf(" " + cls + " ") < 0;
+        box.className = on ? box.className + " " + cls : box.className.replace(new RegExp(" ?" + cls + "\\b"), "");
+        b.textContent = T(on ? on1 : off1);
+      });
+      return b;
+    }
     var sum = el("span");
-    sum.appendChild(document.createTextNode(" errors = " + (q.errs != null ? q.errs : "?") + ", warn = " + (q.warnings != null ? q.warnings : "?") + ", info = " + (q.hints != null ? q.hints : "?") + ", broken links = " + (q["broken-links"] != null ? q["broken-links"] : "?") + ".  "));
-    sum.appendChild(btn);
-    qc.appendChild(row(["Summary:", sum]));
+    var na = function (v) { return v != null ? v : "?"; };
+    sum.appendChild(document.createTextNode(T("jsCounts", { errs: na(q.errs), warn: na(q.warnings), info: na(q.hints), links: na(q["broken-links"]) })));
+    sum.appendChild(toggle("show-ids", "jsHideIds", "jsShowIds"));
+    if (hasEn) {
+      sum.appendChild(document.createTextNode(" "));
+      sum.appendChild(toggle("show-en", "jsHideEnglish", "jsShowEnglish"));
+    }
+    qc.appendChild(row([T("jsSummary"), sum]));
     box.appendChild(wrap(qc));
 
     var files = el("table", null, { "class": "grid", id: "qa-files" });
-    files.appendChild(row(["Filename", "Errors", "Warnings", "Hints"], null, true));
+    files.appendChild(row([T("jsFilename"), T("jsErrors"), T("jsWarnings"), T("jsHints")], null, true));
     groups.forEach(function (g, i) {
       var c = counts(g);
       var b = el("b");
-      b.appendChild(el("a", g.file || "Build Errors", { href: "#qa-f" + i }));
+      b.appendChild(el("a", g.file || T("jsBuildErrors"), g.file ? { href: "#qa-f" + i, dir: "ltr" } : { href: "#qa-f" + i }));
       var base = g.file ? g.file.replace(/^.*\//, "").replace(/\.(json|xml|fsh)$/, "") : "";
       var page = base && pageFor(L, base);
       if (page) {
         b.appendChild(document.createTextNode(" "));
-        b.appendChild(el("a", "(page)", { href: page }));
+        b.appendChild(el("a", T("jsPage"), { href: page }));
       }
       files.appendChild(row([b, String(c.err), String(c.warn), String(c.info)], c.err ? COLOR.error : "#EFFFEF"));
     });
     box.appendChild(wrap(files));
-    if (!groups.length) box.appendChild(el("p", m.absent ? "No messages: " + m.absent + "." : "The Publisher reported no messages."));
+    if (!groups.length) box.appendChild(el("p", m.absent ? T("jsNoMessages", { why: m.absent }) : T("jsNoneReported")));
 
     groups.forEach(function (g, i) {
       box.appendChild(el("hr"));
       var c = counts(g);
       var h = el("h5", null, { id: "qa-f" + i });
-      h.appendChild(fileCell(L, g.file, g.file || "Build Errors"));
-      h.appendChild(document.createTextNode("  (" + c.err + " errors, " + c.warn + " warnings, " + c.info + " hints) "));
-      h.appendChild(el("a", "\u2191 files", { href: "#qa-files" }));
+      h.appendChild(fileCell(L, g.file, g.file || T("jsBuildErrors"), T));
+      h.appendChild(document.createTextNode(T("jsGroupCounts", { err: c.err, warn: c.warn, info: c.info })));
+      h.appendChild(el("a", T("jsUpFiles"), { href: "#qa-files" }));
       box.appendChild(h);
       var t = el("table", null, { "class": "grid" });
-      t.appendChild(row(["Path", "Severity", "Message"], null, true));
-      g.messages.forEach(function (msg) {
+      t.appendChild(row([T("jsPath"), T("jsSeverity"), T("jsMessage")], null, true));
+      g.messages.forEach(function (msg, j) {
         var where = (msg.path || "") + (msg.line > 0 ? " (l" + msg.line + "/c" + msg.col + ")" : "");
         var text = el("span");
         text.appendChild(linkText(L, msg.text));
+        if (msg.origin === "machine") text.appendChild(el("span", T("jsMachine"), { "class": "mt" }));
         if (msg.messageId) {
           text.appendChild(document.createTextNode(" "));
           text.appendChild(el("span", msg.messageId, { "class": "mid" }));
         }
-        var pw = el("b", where);
-        var sv = el("b", msg.severity);
-        t.appendChild(row([pw, sv, text], COLOR[msg.severity] || COLOR.information));
+        // The Publisher's own words, for a reader checking the translation ("Show English").
+        if (typeof msg.en === "string") text.appendChild(el("span", msg.en, { "class": "en", lang: "en", dir: "ltr" }));
+        // Paths and file names are Latin text: isolated left-to-right, so a right-to-left page does not flip their punctuation.
+        var pw = el("b", where, { dir: "ltr" });
+        var sv = el("b", SEV[msg.severity] ? T(SEV[msg.severity]) : msg.severity);
+        var tr = row([pw, sv, text], COLOR[msg.severity] || COLOR.information);
+        // Each row addressable, so a catalogue's "rendered at" link and the where-used report land on it.
+        tr.id = "qa-m" + i + "-" + j;
+        t.appendChild(tr);
       });
       box.appendChild(wrap(t));
     });

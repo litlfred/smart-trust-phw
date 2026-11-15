@@ -11,7 +11,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVC.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVC.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVC.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVC.html",
         "schema:identifier": "StructureDefinition/DVC"
@@ -21,7 +21,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVC.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVC.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVC.schema.json",
       "schema:url": "artifact/StructureDefinition-DVC.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVC.html",
@@ -32,7 +32,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCMin.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCMin.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCMin.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCMin.html",
         "schema:identifier": "StructureDefinition/DVCMin"
@@ -42,7 +42,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCMin.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCMin.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCMin.schema.json",
       "schema:url": "artifact/StructureDefinition-DVCMin.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCMin.html",
@@ -53,7 +53,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCMinPreQual.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCMinPreQual.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCMinPreQual.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCMinPreQual.html",
         "schema:identifier": "StructureDefinition/DVCMinPreQual"
@@ -63,7 +63,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCMinPreQual.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCMinPreQual.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCMinPreQual.schema.json",
       "schema:url": "artifact/StructureDefinition-DVCMinPreQual.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCMinPreQual.html",
@@ -74,7 +74,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCMinVaccineDetails.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCMinVaccineDetails.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCMinVaccineDetails.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCMinVaccineDetails.html",
         "schema:identifier": "StructureDefinition/DVCMinVaccineDetails"
@@ -84,7 +84,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCMinVaccineDetails.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCMinVaccineDetails.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCMinVaccineDetails.schema.json",
       "schema:url": "artifact/StructureDefinition-DVCMinVaccineDetails.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCMinVaccineDetails.html",
@@ -95,7 +95,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCMinVaccineDetailsPreQual.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCMinVaccineDetailsPreQual.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCMinVaccineDetailsPreQual.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCMinVaccineDetailsPreQual.html",
         "schema:identifier": "StructureDefinition/DVCMinVaccineDetailsPreQual"
@@ -105,7 +105,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCMinVaccineDetailsPreQual.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCMinVaccineDetailsPreQual.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCMinVaccineDetailsPreQual.schema.json",
       "schema:url": "artifact/StructureDefinition-DVCMinVaccineDetailsPreQual.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCMinVaccineDetailsPreQual.html",
@@ -116,7 +116,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCPreQual.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCPreQual.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCPreQual.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCPreQual.html",
         "schema:identifier": "StructureDefinition/DVCPreQual"
@@ -126,7 +126,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCPreQual.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCPreQual.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCPreQual.schema.json",
       "schema:url": "artifact/StructureDefinition-DVCPreQual.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCPreQual.html",
@@ -137,7 +137,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCSD.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCSD.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCSD.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCSD.html",
         "schema:identifier": "StructureDefinition/DVCSD"
@@ -147,7 +147,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCSD.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCSD.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCSD.schema.json",
       "schema:url": "artifact/StructureDefinition-DVCSD.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCSD.html",
@@ -158,7 +158,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCVaccineDetails.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCVaccineDetails.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCVaccineDetails.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCVaccineDetails.html",
         "schema:identifier": "StructureDefinition/DVCVaccineDetails"
@@ -168,7 +168,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCVaccineDetails.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCVaccineDetails.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCVaccineDetails.schema.json",
       "schema:url": "artifact/StructureDefinition-DVCVaccineDetails.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCVaccineDetails.html",
@@ -179,7 +179,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCVaccineDetailsPreQual.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCVaccineDetailsPreQual.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCVaccineDetailsPreQual.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCVaccineDetailsPreQual.html",
         "schema:identifier": "StructureDefinition/DVCVaccineDetailsPreQual"
@@ -189,7 +189,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-DVCVaccineDetailsPreQual.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-DVCVaccineDetailsPreQual.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-DVCVaccineDetailsPreQual.schema.json",
       "schema:url": "artifact/StructureDefinition-DVCVaccineDetailsPreQual.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-DVCVaccineDetailsPreQual.html",
@@ -200,7 +200,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-HealthLinkPayload.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-HealthLinkPayload.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-HealthLinkPayload.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-HealthLinkPayload.html",
         "schema:identifier": "StructureDefinition/HealthLinkPayload"
@@ -210,7 +210,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-HealthLinkPayload.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-HealthLinkPayload.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-HealthLinkPayload.schema.json",
       "schema:url": "artifact/StructureDefinition-HealthLinkPayload.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-HealthLinkPayload.html",
@@ -221,7 +221,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-SmartHealthLink.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-SmartHealthLink.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-SmartHealthLink.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-SmartHealthLink.html",
         "schema:identifier": "StructureDefinition/SmartHealthLink"
@@ -231,7 +231,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-SmartHealthLink.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-SmartHealthLink.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-SmartHealthLink.schema.json",
       "schema:url": "artifact/StructureDefinition-SmartHealthLink.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-SmartHealthLink.html",
@@ -242,7 +242,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-SMARTHealthLinkPayload.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-SMARTHealthLinkPayload.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-SMARTHealthLinkPayload.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-SMARTHealthLinkPayload.html",
         "schema:identifier": "StructureDefinition/SMARTHealthLinkPayload"
@@ -252,7 +252,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-SMARTHealthLinkPayload.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-SMARTHealthLinkPayload.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-SMARTHealthLinkPayload.schema.json",
       "schema:url": "artifact/StructureDefinition-SMARTHealthLinkPayload.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-SMARTHealthLinkPayload.html",
@@ -263,7 +263,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-VaccineDetailsSD.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-VaccineDetailsSD.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-VaccineDetailsSD.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-VaccineDetailsSD.html",
         "schema:identifier": "StructureDefinition/VaccineDetailsSD"
@@ -273,7 +273,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-VaccineDetailsSD.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-VaccineDetailsSD.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-VaccineDetailsSD.schema.json",
       "schema:url": "artifact/StructureDefinition-VaccineDetailsSD.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-VaccineDetailsSD.html",
@@ -284,7 +284,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-VerifiableHealthLinkPayload.openapi.json",
       "schema:additionalType": "OpenAPI",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-VerifiableHealthLinkPayload.openapi.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-VerifiableHealthLinkPayload.openapi.json",
       "schema:about": {
         "@id": "artifact/StructureDefinition-VerifiableHealthLinkPayload.html",
         "schema:identifier": "StructureDefinition/VerifiableHealthLinkPayload"
@@ -294,7 +294,7 @@
       "@type": "schema:DigitalDocument",
       "schema:name": "StructureDefinition-VerifiableHealthLinkPayload.schema.json",
       "schema:additionalType": "JSON Schema",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/sidecars/StructureDefinition-VerifiableHealthLinkPayload.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/sidecars/StructureDefinition-VerifiableHealthLinkPayload.schema.json",
       "schema:url": "artifact/StructureDefinition-VerifiableHealthLinkPayload.schema.json.html",
       "schema:about": {
         "@id": "artifact/StructureDefinition-VerifiableHealthLinkPayload.html",
@@ -306,7 +306,7 @@
     {
       "@type": "schema:DigitalDocument",
       "schema:name": "LogicalModels.schema.json",
-      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/1663c2d4a5faa016f409927c0c2d796e1ad15702/ig-api/site/LogicalModels.schema.json"
+      "schema:contentUrl": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/ig-api/site/LogicalModels.schema.json"
     }
   ]
 }
