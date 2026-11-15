@@ -1,18 +1,16 @@
 {
  "$schema": "site-parity-report/v1",
- "outcome": "published-with-shortfall",
- "shortfall": [
-  "the harness icon row (#fa-navbar-row): on the current root's index.html, not on the candidate's"
- ],
+ "outcome": "carries-everything",
+ "shortfall": [],
  "droppedByRuling": [],
  "current": {
-  "pages": 510,
+  "pages": 1217,
   "counts": {
    "siteNav": 0,
-   "search": 217,
-   "navbarRow": 217,
-   "rail": 217,
-   "translationMeta": 217
+   "search": 935,
+   "navbarRow": 51,
+   "rail": 935,
+   "translationMeta": 935
   },
   "dirs": [
    "artifact",
@@ -29,7 +27,6 @@
   ],
   "index": [
    "search",
-   "navbarRow",
    "rail",
    "translationMeta"
   ],
