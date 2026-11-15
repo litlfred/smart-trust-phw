@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "b14de76e-0446-49d8-971b-2f02ac9d62f6",
+  "id" : "c14c9f2a-748b-4388-8a2b-0f180df46a02",
   "meta" : {
-    "lastUpdated" : "2026-11-13T18:21:43.598+00:00"
+    "lastUpdated" : "2026-11-15T08:42:25.483+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,7 +18,7 @@
       "name" : "DVCRelationshipStatus",
       "title" : "Relationship Status for Contact in Patient",
       "status" : "draft",
-      "date" : "2026-11-13T18:21:43+00:00",
+      "date" : "2026-11-15T08:42:25+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:154874ef-067a-49b7-a4d1-0488edc21a27",
-        "timestamp" : "2026-11-13T18:24:14+00:00",
+        "identifier" : "urn:uuid:b47b17c2-1f4a-4245-9ff3-f29e55a56fe7",
+        "timestamp" : "2026-11-15T08:46:26+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -77,7 +77,7 @@
       "name" : "DVCVaccines",
       "title" : "DVC - Vaccines",
       "status" : "active",
-      "date" : "2026-11-13T18:21:43+00:00",
+      "date" : "2026-11-15T08:42:25+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -86,8 +86,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7809eede-f516-4cc6-baea-7bbd66bec96f",
-        "timestamp" : "2026-11-13T18:24:14+00:00",
+        "identifier" : "urn:uuid:370a1df1-3eb1-4a73-81a9-586bc3123b2f",
+        "timestamp" : "2026-11-15T08:46:26+00:00",
         "total" : 110,
         "offset" : 0,
         "parameter" : [{
@@ -684,7 +684,7 @@
       "name" : "DisclosureStatements",
       "title" : "Disclosure Statements",
       "status" : "active",
-      "date" : "2026-11-13T18:21:43+00:00",
+      "date" : "2026-11-15T08:42:25+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -693,8 +693,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:da4ff8e2-5c38-408f-baff-ecd650d0a6dc",
-        "timestamp" : "2026-11-13T18:24:14+00:00",
+        "identifier" : "urn:uuid:3ad639dc-01eb-4308-a7ba-f761b68f5be1",
+        "timestamp" : "2026-11-15T08:46:26+00:00",
         "total" : 13,
         "offset" : 0,
         "parameter" : [{
@@ -799,7 +799,7 @@
       "title" : "HL.TYPE ValueSet ",
       "status" : "active",
       "experimental" : true,
-      "date" : "2026-11-13T18:21:43+00:00",
+      "date" : "2026-11-15T08:42:25+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -808,8 +808,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:629e0cc4-9438-4eea-a6b0-468035579af5",
-        "timestamp" : "2026-11-13T18:24:14+00:00",
+        "identifier" : "urn:uuid:e540d4dc-1bdb-4774-8d58-2dde23801197",
+        "timestamp" : "2026-11-15T08:46:26+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -859,7 +859,7 @@
       "title" : "Kinds of explicit consent (HL7 ActConsentDirective)",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-13T18:21:43+00:00",
+      "date" : "2026-11-15T08:42:25+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -868,8 +868,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fb1c67f3-485d-4782-8e44-61f795701a98",
-        "timestamp" : "2026-11-13T18:24:14+00:00",
+        "identifier" : "urn:uuid:96a0868d-0fe3-4697-bb5b-ac76cee53d0f",
+        "timestamp" : "2026-11-15T08:46:26+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -929,7 +929,7 @@
       "title" : "Kinds of implied consent (HL7 ActConsentDirective)",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-13T18:21:43+00:00",
+      "date" : "2026-11-15T08:42:25+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -938,8 +938,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0241dad4-68b7-4e07-93ff-333eec91dd1e",
-        "timestamp" : "2026-11-13T18:24:14+00:00",
+        "identifier" : "urn:uuid:0e6a87d4-02ed-4674-a7ab-4582a744a338",
+        "timestamp" : "2026-11-15T08:46:26+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
