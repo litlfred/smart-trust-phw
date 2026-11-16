@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/smart-trust-phw/en/cat-harness/harness/smart-trust-phw/",
+  "url": "https://litlfred.github.io/smart-trust-phw/en/cat-harness/harness/smart-trust-phw/",
+  "@type": "WebPage",
+  "name": "GDHCN Trust Network - Personal Health Wallet on GDHCN Trust Network - Personal Health Wallet",
+  "about": {
+    "@id": "https://litlfred.github.io/smart-trust-phw/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "smart-trust-phw",
+    "name": "GDHCN Trust Network - Personal Health Wallet",
+    "description": "The WHO SMART Guidelines Personal Health Wallet (PHW) implementation guide on the GDHCN Trust Network (FHIR IG source under input/), a layer on smart-base.",
+    "version": "0.2.0",
+    "codeRepository": "https://github.com/litlfred/smart-trust-phw",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/smart-base/"
+      }
+    ]
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/smart-trust-phw/",
+    "name": "GDHCN Trust Network - Personal Health Wallet"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/#harness-smart-trust-phw",
+    "https://github.com/litlfred/smart-trust-phw/tree/d461cf332b0c773ffaf9ec03bcf51c3e4d14f81f",
+    "https://github.com/litlfred/smart-trust-phw/blob/d461cf332b0c773ffaf9ec03bcf51c3e4d14f81f/README.md",
+    "https://github.com/litlfred/smart-trust-phw/blob/d461cf332b0c773ffaf9ec03bcf51c3e4d14f81f/AGENTS.md"
+  ]
+}
