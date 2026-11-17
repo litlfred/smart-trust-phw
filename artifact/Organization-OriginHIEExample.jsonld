@@ -25,7 +25,7 @@
     {
       "@type": "schema:MediaObject",
       "schema:contentUrl": {
-        "@id": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/0d34726a619305093eefbed9d2f2bd132aa81041/resources/Organization/OriginHIEExample.json"
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-trust-phw/4ba24632e0e8c9eed1517e6b31a3a3e92f4ee606/resources/Organization/OriginHIEExample.json"
       },
       "schema:encodingFormat": "application/fhir+json",
       "dcterms:source": "mirror"
@@ -34,7 +34,7 @@
   "prov:wasGeneratedBy": {
     "@type": "prov:Activity",
     "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
-    "prov:used": "2f52835b15f4c622dfeded3233cb08111882247d"
+    "prov:used": "abfd0112446db25a77450f9e9686f8981b3f72e6"
   },
   "dcterms:isPartOf": {
     "@type": "fhir:ImplementationGuide",
