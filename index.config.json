@@ -134,7 +134,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "b699993ab043af4154c4f4c4e51c66224d0dbb9e",
+          "ref": "0ff7269f40f2a9d21005b0c6546a73a7536d254b",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -149,9 +149,14 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "b699993ab043af4154c4f4c4e51c66224d0dbb9e",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "0ff7269f40f2a9d21005b0c6546a73a7536d254b",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -204,7 +209,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "8dbf8023d8563ea023be0d8c153f7a0d39e888c0",
+          "ref": "136b44372c35cb64cf1d11b66e13ee312d597638",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -216,9 +221,14 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "8dbf8023d8563ea023be0d8c153f7a0d39e888c0",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "136b44372c35cb64cf1d11b66e13ee312d597638",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
