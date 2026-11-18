@@ -3,7 +3,7 @@
   "name": "smart-trust-phw",
   "version": "0.2.0",
   "repository": "litlfred/smart-trust-phw",
-  "iriBase": "https://litlfred.github.io/smart-trust-phw/",
+  "iriBase": "https://worldhealthorganization.github.io/smart-trust-phw/",
   "title": "GDHCN Trust Network - Personal Health Wallet",
   "description": "The WHO SMART Guidelines Personal Health Wallet (PHW) implementation guide on the GDHCN Trust Network (FHIR IG source under input/), a layer on smart-base.",
   "needs": [

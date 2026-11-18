@@ -13,9 +13,10 @@ The FHIR IG source is under `input/`; `_genonce.sh` builds it with the IG
 Publisher.
 
 - Canonical: <http://smart.who.int/trust-phw>
-- Continuous build: <https://worldhealthorganization.github.io/smart-trust-phw>
+- Site: <https://worldhealthorganization.github.io/smart-trust-phw/>, the
+  harnessed folio site published from `main` (branch previews beside it)
 - Issues: <https://github.com/WorldHealthOrganization/smart-trust-phw/issues>
-- This fork's harnessed site: <https://litlfred.github.io/smart-trust-phw/>,
-  published from `main` by an agent (branch previews beside it)
+- Development line: <https://github.com/litlfred/smart-trust-phw>, migrated
+  here by PR (its site: <https://litlfred.github.io/smart-trust-phw/>)
 
 Agents start at [`AGENTS.md`](AGENTS.md).
