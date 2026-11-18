@@ -7,9 +7,9 @@
   "source": {
     "repo": "litlfred/smart-trust-phw",
     "ref": "main",
-    "commit": "abfd0112446db25a77450f9e9686f8981b3f72e6"
+    "commit": "232ee09e0e82880e04eb9075dbf129c36a3bf023"
   },
-  "builtAt": "2026-11-17T07:20:28.247Z",
+  "builtAt": "2026-11-18T18:26:13.463Z",
   "ast": {
     "commit": "abfd0112446db25a77450f9e9686f8981b3f72e6",
     "verdict": "valid",

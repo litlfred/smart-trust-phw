@@ -7,7 +7,7 @@
   "@type": "WebPage",
   "name": "GDHCN Trust Network - Personal Health Wallet on GDHCN Trust Network - Personal Health Wallet",
   "about": {
-    "@id": "https://litlfred.github.io/smart-trust-phw/",
+    "@id": "https://worldhealthorganization.github.io/smart-trust-phw/",
     "@type": "SoftwareSourceCode",
     "identifier": "smart-trust-phw",
     "name": "GDHCN Trust Network - Personal Health Wallet",
@@ -26,8 +26,8 @@
   },
   "significantLink": [
     "https://litlfred.github.io/folio-assistant/#harness-smart-trust-phw",
-    "https://github.com/litlfred/smart-trust-phw/tree/abfd0112446db25a77450f9e9686f8981b3f72e6",
-    "https://github.com/litlfred/smart-trust-phw/blob/abfd0112446db25a77450f9e9686f8981b3f72e6/README.md",
-    "https://github.com/litlfred/smart-trust-phw/blob/abfd0112446db25a77450f9e9686f8981b3f72e6/AGENTS.md"
+    "https://github.com/litlfred/smart-trust-phw/tree/232ee09e0e82880e04eb9075dbf129c36a3bf023",
+    "https://github.com/litlfred/smart-trust-phw/blob/232ee09e0e82880e04eb9075dbf129c36a3bf023/README.md",
+    "https://github.com/litlfred/smart-trust-phw/blob/232ee09e0e82880e04eb9075dbf129c36a3bf023/AGENTS.md"
   ]
 }
