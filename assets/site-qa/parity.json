@@ -4,13 +4,13 @@
  "shortfall": [],
  "droppedByRuling": [],
  "current": {
-  "pages": 1477,
+  "pages": 1505,
   "counts": {
    "siteNav": 0,
-   "search": 1176,
-   "navbarRow": 246,
-   "rail": 1176,
-   "translationMeta": 1176
+   "search": 1204,
+   "navbarRow": 269,
+   "rail": 1204,
+   "translationMeta": 1204
   },
   "dirs": [
    "artifact",
@@ -21,10 +21,13 @@
    "folio-assistant-core",
    "id-lookup",
    "openapi",
+   "payload",
    "questionnaires",
+   "slices",
    "smart-base",
    "smart-trust-phw",
-   "translations"
+   "translations",
+   "v0"
   ],
   "index": [
    "search",
@@ -109,6 +112,6 @@
     "present": true
    }
   },
-  "from": "b96607f93e77"
+  "from": "51522d0a87ac"
  }
 }
