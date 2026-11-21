@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   adjudicate:
-    uses: litlfred/cat-harness-tools/.github/workflows/layer-translation-adjudication.yml@8dbf8023d8563ea023be0d8c153f7a0d39e888c0 # index.lock.json
+    uses: litlfred/cat-harness-tools/.github/workflows/layer-translation-adjudication.yml@8691b09acc175c43e569a51e36dac14412d8b8cf # index.lock.json
     with:
       path-in-repo: .
       # The script at the same commit as the workflow, until the re-pin.
